@@ -1,0 +1,237 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © d0m999
+//@version=6
+indicator("Integrated Adaptive Resonance with Dual Squeeze", overlay=false, shorttitle="[d0m999]Adaptive Resonance + Squeeze")
+import TradingView/ta/9
+
+// =================================================================================
+// Adaptive Resonance Oscillator 参数
+// =================================================================================
+aro_group = "Adaptive Resonance Oscillator"
+smooth = input.bool(title="Enable Smoothing", defval=true, group=aro_group)
+smoothlength = input.int(title="Smoothing Length", defval=12, minval=1, group=aro_group)
+medianLength = input.int(title="Frequency Detection Length", defval=100, minval=1, group=aro_group)
+
+// 背离设置参数
+plotBullish = input(title="Plot Bullish Divergences", defval=true, group=aro_group)
+plotBear = input(title="Plot Bearish Divergences", defval=true, group=aro_group)
+lbL = input(title="Divergence Pivot Detection Length", defval=20, group=aro_group, tooltip = "The larger this number, the less sensitive the divergence detecion is. A smaller number will detect smaller and/or shorter term divergences", display = display.data_window)
+lbR = 1
+
+// 计算设置参数
+calc_group = "Calculation Settings"
+useVolume = input.bool(title="Use Volume Adjustment", defval=false, group=calc_group, tooltip="如果启用，RSI的计算将考虑成交量，使其对高成交量的价格变动更加敏感。")
+
+// =================================================================================
+// Dual Channel Squeeze 参数
+// =================================================================================
+squeeze_group = "Dual Channel Squeeze"
+bbLength = input.int(20, "BB Length", group=squeeze_group)
+bbMult = input.float(2.0, "BB Multiplier", group=squeeze_group)
+kcLength = input.int(20, "KC Length", group=squeeze_group)
+kcMult = input.float(1.5, "KC Multiplier", group=squeeze_group)
+useEmaForKC = input.bool(true, "Use EMA for KC Basis", group=squeeze_group)
+momentumLength = input.int(12, "Momentum Length", group=squeeze_group)
+
+// =================================================================================
+// 颜色设置参数
+// =================================================================================
+color_group = "Colors"
+white = input.color(defval = color.white, title = "Bullish Color (上涨/看涨颜色)", group = color_group)
+blue = input.color(defval = color.blue, title = "Bearish Color (下跌/看跌颜色)", group = color_group)
+bullishSqueezeColor = input.color(color.new(color.white, 85), "Bullish Squeeze Background (看涨挤压背景)", group=color_group)
+bearishSqueezeColor = input.color(color.new(color.blue, 85), "Bearish Squeeze Background (看跌挤压背景)", group=color_group)
+// 注释：颜色配置 - 白色代表上涨/看涨信号，蓝色代表下跌/看跌信号
+
+// =================================================================================
+// Adaptive Resonance Oscillator 核心计算
+// =================================================================================
+
+// 自定义RSI计算函数
+pine_rsi(x, y) => 
+    u = math.max(x - x[1], 0)
+    d = math.max(x[1] - x, 0)
+    alpha = 1 / y
+    sum_u = 0.0
+    sum_d = 0.0
+    sum_u := alpha * u + (1 - alpha) * nz(sum_u[1])
+    sum_d := alpha * d + (1 - alpha) * nz(sum_d[1])
+    rs = sum_u / sum_d
+    res = 100 - 100 / (1 + rs)
+    res
+
+// 成交量加权RSI计算函数
+pine_rsi_volume_adjusted(x, y) =>
+    u = math.max(x - x[1], 0)
+    d = math.max(x[1] - x, 0)
+    u_vol = u * volume
+    d_vol = d * volume
+    alpha = 1 / y
+    sum_u_vol = 0.0
+    sum_d_vol = 0.0
+    sum_u_vol := alpha * u_vol + (1 - alpha) * nz(sum_u_vol[1])
+    sum_d_vol := alpha * d_vol + (1 - alpha) * nz(sum_d_vol[1])
+    rs_vol = sum_u_vol / sum_d_vol
+    res = 100 - 100 / (1 + rs_vol)
+    res
+
+// 反正切函数实现
+f_atan2(y, x) =>
+    ret = x > 0 ? math.atan(y / x) :
+          x < 0 and y >= 0 ? math.atan(y / x) + math.pi :
+          x < 0 and y < 0  ? math.atan(y / x) - math.pi :
+          y > 0 ? math.pi / 2 : y < 0 ? -math.pi / 2 : 0.0
+    ret
+
+// 价格数据准备和处理
+price = close
+priceSmooth = (price + price[1] + price[2] + price[3]) / 4
+
+// 去趋势处理
+detrender = (0.0962 * priceSmooth 
+             + 0.5769 * priceSmooth[2] 
+             - 0.5769 * priceSmooth[4] 
+             - 0.0962 * priceSmooth[6])
+
+// 希尔伯特变换
+I1 = detrender[3]
+Q1 = (0.0962 * detrender 
+      + 0.5769 * detrender[2] 
+      - 0.5769 * detrender[4] 
+      - 0.0962 * detrender[6])
+    
+jI = I1[3]
+jQ = Q1[3]
+
+I2 = I1 - jQ
+Q2 = Q1 + jI
+
+Re = I2 * nz(I2[1]) + Q2 * nz(Q2[1])
+Im = I2 * nz(Q2[1]) - Q2 * nz(I2[1])
+
+phaseAngle = math.todegrees(f_atan2(Im, Re))
+phaseAngle := phaseAngle < 0 ? phaseAngle + 360 : phaseAngle
+
+minPhase = 1.0
+phaseAngleClamped = math.max(phaseAngle, minPhase)
+
+hilbertPeriodRaw = 360 / phaseAngleClamped
+market_frequency = ta.median(hilbertPeriodRaw, medianLength)
+period = int(market_frequency / 2)
+
+// 计算RSI
+base_rsi = useVolume ? pine_rsi_volume_adjusted(close, period) : pine_rsi(close, period)
+rsi_v = smooth ? ta.hma(base_rsi, smoothlength) : base_rsi
+
+// =================================================================================
+// Dual Channel Squeeze 核心计算
+// =================================================================================
+
+// 布林带计算
+bbBasis = ta.sma(close, bbLength)
+bbDev = bbMult * ta.stdev(close, bbLength)
+bbUpper = bbBasis + bbDev
+bbLower = bbBasis - bbDev
+
+// 肯特纳通道计算
+kcBasis = useEmaForKC ? ta.ema(close, kcLength) : ta.sma(close, kcLength)
+kcDev = kcMult * ta.atr(kcLength)
+kcUpper = kcBasis + kcDev
+kcLower = kcBasis - kcDev
+
+// 识别挤压状态
+isSqueeze = (bbUpper < kcUpper) and (bbLower > kcLower)
+squeezeFired = isSqueeze[1] and not isSqueeze
+
+// 计算动量
+momentum = ta.linreg(close, momentumLength, 0) - ta.linreg(close, momentumLength, 1)
+
+// =================================================================================
+// 绘图 - Adaptive Resonance Oscillator
+// =================================================================================
+
+// 绘制超买超卖区域的RSI值
+plot(rsi_v > 80 or rsi_v < 20 ? rsi_v : na, color = smooth ? (rsi_v > rsi_v[1] ? white : blue) : color.white, linewidth = 4, style=plot.style_steplinebr)
+// 注释：当RSI在超买(>80)或超卖(<20)区域时，上涨显示白色，下跌显示蓝色
+
+// 绘制主RSI线
+rsi_plot = plot(rsi_v, color = smooth ? color.new((rsi_v > rsi_v[1] ? white : blue), 50) : color.white, linewidth = 1, style=plot.style_stepline)
+rsi_plot1 = plot(rsi_v[1], color = smooth ? color.new((rsi_v > rsi_v[1] ? white : blue), 100) : color.new(color.white, 100), linewidth = 1, style=plot.style_stepline)
+// 注释：主RSI线，上涨趋势显示白色，下跌趋势显示蓝色
+
+// 绘制上下阈值带
+upper_band = plot(80, "Upper Band", color.new(color.gray, 50), 2)
+lower_band = plot(20, "Lower Band", color.new(color.gray, 50), 2)
+
+// 设置颜色
+col = rsi_v > 50 ? white : blue  // 修改：RSI>50时用白色(看涨)，RSI<50时用蓝色(看跌)
+
+// 绘制信号标记
+plotchar(ta.crossover(rsi_v, rsi_v[1]) and (rsi_v[1] < 20) ? rsi_v - 7 : na, char='▲', location=location.absolute, color=white, textcolor=color.black, title="Strong Bullish", display= smooth ? display.all : display.none, size=size.tiny)
+// 注释：强看涨信号，从超卖区域向上突破时显示白色三角形
+plotchar(ta.crossunder(rsi_v, rsi_v[1]) and (rsi_v[1] > 80) ? rsi_v + 7 : na, char='▼', location=location.absolute, color=blue, textcolor=color.white, title="Strong Bearish", display= smooth ? display.all : display.none, size=size.tiny)
+// 注释：强看跌信号，从超买区域向下突破时显示蓝色倒三角形
+
+// =================================================================================
+// 背离检测
+// =================================================================================
+
+// 颜色定义
+bullColor = white  // 修改：看涨背离用白色
+bearColor = blue   // 修改：看跌背离用蓝色
+hiddenBullColor = color.new(white, 80)  // 修改：隐藏看涨背离用半透明白色
+hiddenBearColor = color.new(blue, 80)   // 修改：隐藏看跌背离用半透明蓝色
+textColor = color.white
+noneColor = color.new(color.white, 100)
+
+// 检测RSI的低点和高点
+plFound = na(ta.pivotlow(rsi_v, lbL, lbR)) ? false : true
+phFound = na(ta.pivothigh(rsi_v, lbL, lbR)) ? false : true
+
+// 辅助函数
+_inRange(cond) =>
+	bars = ta.barssince(cond == true)
+	-80 <= bars and bars <= 80
+
+// 检测常规看涨背离
+oscHL = rsi_v[lbR] > ta.valuewhen(plFound, rsi_v[lbR], 1) and _inRange(plFound[1])
+priceLL = low[lbR] < ta.valuewhen(plFound, low[lbR], 1)
+bullCond = plotBullish and priceLL and oscHL and plFound
+plot(plFound  ? rsi_v[lbR] : na, offset=-lbR, title="Regular Bullish", linewidth=2, color=(bullCond ? bullColor : noneColor))
+// 注释：常规看涨背离检测，价格创新低但RSI未创新低时显示白色线条
+
+// 检测常规看跌背离
+oscLH = rsi_v[lbR] < ta.valuewhen(phFound, rsi_v[lbR], 1) and _inRange(phFound[1])
+priceHH = high[lbR] > ta.valuewhen(phFound, high[lbR], 1)
+bearCond = plotBear and priceHH and oscLH and phFound
+plot(phFound  ? rsi_v[lbR] : na, offset=-lbR, title="Regular Bearish", linewidth=2, color=(bearCond ? bearColor : noneColor))
+// 注释：常规看跌背离检测，价格创新高但RSI未创新高时显示蓝色线条
+
+// =================================================================================
+// Dual Channel Squeeze 背景色显示
+// =================================================================================
+
+// 根据动量方向和挤压状态设置背景色
+// 修改：多头时背景色为白色，空头时背景色为蓝色
+squeezeBackgroundColor = isSqueeze ? (momentum >= 0 ? bullishSqueezeColor : bearishSqueezeColor) : na
+bgcolor(squeezeBackgroundColor, title="Squeeze Background")
+// 注释：挤压状态背景色，正动量时显示白色背景(看涨)，负动量时显示蓝色背景(看跌)
+
+// =================================================================================
+// 警报
+// =================================================================================
+
+// 背离警报
+alertcondition(bullCond, title="Bullish Divergence", message="Bullish Divergence Detected")
+alertcondition(bearCond, title="Bearish Divergence", message="Bearish Divergence Detected")
+alertcondition(bullCond or bearCond, title="Divergence", message="Divergence Detected")
+
+// 强烈信号警报
+alertcondition(ta.crossover(rsi_v, rsi_v[1]) and (rsi_v[1] < 20), title="Strong Bullish")
+alertcondition(ta.crossunder(rsi_v, rsi_v[1]) and (rsi_v[1] > 80), title="Strong Bearish")
+
+// 挤压警报
+if squeezeFired
+    string dir = momentum > 0 ? "Upward" : "Downward"
+    string alertMessage = "Dual-Channel Squeeze has fired. Momentum is " + dir + " on " + syminfo.ticker + "."
+    alert(alertMessage, alert.freq_once_per_bar)

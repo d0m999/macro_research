@@ -1,0 +1,30 @@
+{
+  "enabled": true,
+  "name": "Code Quality Analyzer",
+  "description": "Monitors source code files for changes and provides automated code quality analysis, suggesting improvements for readability, maintainability, and performance while identifying code smells and design pattern opportunities",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "*.py",
+      "*.js",
+      "*.ts",
+      "*.java",
+      "*.cpp",
+      "*.c",
+      "*.h",
+      "*.cs",
+      "*.go",
+      "*.rs",
+      "*.rb",
+      "*.php",
+      "*.scala",
+      "*.kt",
+      "*.swift"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A source code file has been modified. Please analyze the changed code for potential improvements including:\n\n1. **Code Smells Detection**: Identify any code smells such as long methods, large classes, duplicate code, or complex conditionals\n2. **Design Patterns**: Suggest appropriate design patterns that could improve the code structure\n3. **Best Practices**: Check adherence to language-specific best practices and coding standards\n4. **Readability**: Suggest improvements for variable naming, code organization, and documentation\n5. **Maintainability**: Identify areas that could be refactored for better maintainability\n6. **Performance**: Suggest optimizations that could improve performance without changing functionality\n\nFocus on actionable suggestions that maintain existing functionality while improving code quality. Provide specific examples and explain the reasoning behind each recommendation. Consider the context of crypto algorithmic trading development if applicable."
+  }
+}

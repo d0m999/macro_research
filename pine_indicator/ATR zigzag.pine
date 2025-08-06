@@ -1,0 +1,255 @@
+// © ediboy888
+//@version=6
+indicator("LengthWave ATR ZigZag", "ZigZag ATR", true, max_lines_count = 500, max_labels_count = 500)
+
+// Parameters
+errorMsgToggle       = input.bool(true, "Show Pivot Point Length Error Message")
+// --- TEXT DISPLAY SETTINGS ---
+showPivotValueText   = input.bool(false, "Show:", inline="Show Text")
+showZigZagSizeText   = input.bool(false, "Size", inline="Show Text")
+showZigZagLengthText = input.bool(true, "Length", inline="Show Text")
+showAvgLengthText    = input.bool(true, "AvgL", inline="Show Text")
+
+atrLength            = input.int(10, "ATR/Pivot Point Period", minval=1, inline="Lengths")
+avgLengthPeriod      = input.int(3, "AvgL N", minval=1, inline="Lengths")
+pivotLength          = input.int(3, "", minval=3, maxval=501, step=2, tooltip="Pivot point length must be an odd number; Looks for middle bar of period to be highest/lowest, with preceding and succeeding lower/higher and lower/higher highs/lows", inline="Lengths")
+atrMultiplier        = input.float(2, "ATR Multiplier Minimum Threshold", minval=0, tooltip = "A pivot is only recognised if it is at least N ATRs away from the prior pivot")
+maxLines             = input.int(497,  "Show the last N ZigZag lines", minval=2, maxval=497)
+
+// --- PIVOT LABEL SETTINGS ---
+pivotLabelSize       = input.string("Normal", "Label Size", ["Normal", "Tiny"], group="Pivot Label Settings")
+highPivotStyle       = input.string("Label Down", "High/Low Pivot Label Style", ["Circle", "Triangle Down", "Label Down"], inline="Label Style", group="Pivot Label Settings")
+lowPivotStyle        = input.string("Label Up", "", ["Circle", "Triangle Up", "Label Up"], inline="Label Style", group="Pivot Label Settings")
+confirmedPivotColor  = input.color(color.new(color.orange, 80), "Pivot Color", group="Pivot Label Settings")
+pivotTextColor       = input.color(color.new(color.white, 0), "Text Color", group="Pivot Label Settings")
+
+// --- ZIGZAG LINE SETTINGS ---
+lineColor            = input.color(color.new(color.yellow, 20), "Line Color", group = "ZigZag Line Settings")
+lineWidth            = input.int(1, "Line Width/Style", minval=1, inline="Line WS", group="ZigZag Line Settings")
+lineStyle            = input.string("Solid", "", ["Solid", "Dashed"], inline="Line WS", group="ZigZag Line Settings")
+
+// --- RETAINED POTENTIAL ZIGZAG LABEL SETTINGS ---
+livePZZLabelColorU       = input.color(color.new(color.green, 90), "Up/Down Label Colors", inline="Potential L Colors", group="Potential ZigZag Label Settings")
+livePZZLabelColorD       = input.color(color.new(color.red, 90), "", inline="Potential L Colors", group="Potential ZigZag Label Settings")
+
+// Arrays
+var pivotIndices = array.new<int>()
+var pivotValues  = array.new<float>()
+var pivotTypes   = array.new<string>()
+var avgLengths   = array.new<float>()
+var pivotLabels  = array.new<label>()
+var zigZagLines  = array.new<line>()
+
+// Potential line and label
+var line potentialLine = na
+var label potentialLabel = na
+
+// --- NEW --- Average Length Calculation function
+calculateAvgLength() =>
+    size = pivotIndices.size()
+    if size < 2 * avgLengthPeriod
+        na
+    else
+        totalLength = 0.0
+        for i = 0 to avgLengthPeriod - 1
+            endPivotIndexInArray = size - 1 - (2 * i)
+            startPivotIndexInArray = size - 2 - (2 * i)
+            
+            endBarIndex = pivotIndices.get(endPivotIndexInArray)
+            startBarIndex = pivotIndices.get(startPivotIndexInArray)
+            
+            segmentLength = endBarIndex - startBarIndex + 1
+            totalLength += segmentLength
+        
+        math.floor(totalLength / avgLengthPeriod)
+
+// --- CORRECTED --- Label text function (added explicit type for avgLength)
+labelText(arrayIndex, pivotIndex, value, float avgLength) =>
+    string finalText = ""
+    if showPivotValueText
+        finalText := str.tostring(value, format.mintick)
+    if arrayIndex > 0
+        lastPivotIndex = pivotIndices.get(arrayIndex - 1)
+        if showZigZagSizeText
+            if str.length(finalText) > 0
+                finalText += "\nS: "
+            else
+                finalText := "S: "
+            finalText += str.tostring(math.abs(value - pivotValues.get(arrayIndex - 1)), format.mintick)
+        if showZigZagLengthText
+            if str.length(finalText) > 0
+                finalText += "\nL: "
+            else
+                finalText := "L: "
+            finalText += str.tostring(pivotIndex - lastPivotIndex + 1)
+    
+    if showAvgLengthText and not na(avgLength)
+        if str.length(finalText) > 0
+            finalText += "\n"
+        finalText += "A: " + str.tostring(avgLength, "#")
+    finalText
+
+// Label type function
+labelType(choice) =>
+    switch choice
+        "Circle"            => label.style_circle
+        "Triangle Up"       => label.style_triangleup
+        "Triangle Down"     => label.style_triangledown
+        "Label Up"          => label.style_label_up
+        "Label Down"        => label.style_label_down
+        => label.style_label_up
+
+// Label size function
+labelSizing() =>
+    switch pivotLabelSize
+        "Normal" => size.normal
+        => size.tiny
+
+// Line style function
+lineStyling(choice) =>
+    switch choice
+        "Dashed"      => line.style_dashed
+        => line.style_solid
+
+// Store pivot function
+storePivot(pivot) =>
+    // Garbage logic
+    if zigZagLines.size() == maxLines
+        pivotLabels.first().delete()
+        zigZagLines.first().delete()
+        pivotIndices.shift()
+        pivotValues.shift()
+        pivotTypes.shift()
+        avgLengths.shift()
+        pivotLabels.shift()
+        zigZagLines.shift()
+    // Store data
+    pivotIndices.push(bar_index - (pivotLength - 1) / 2)
+    pivotValues.push(pivot == "high" ? high[(pivotLength - 1) / 2] : low[(pivotLength - 1) / 2])
+    pivotTypes.push(pivot == "high" ? "High" : "Low")
+    pivotLabels.push(label.new(na, na, style=pivot == "high" ? labelType(highPivotStyle) : labelType(lowPivotStyle), size=labelSizing()))
+    if pivotLabels.size() > 1
+        zigZagLines.push(line.new(na, na, na, na))
+    // Calculate and store average length
+    avgLengths.push(calculateAvgLength())
+
+// Update pivot function
+updatePivot(pivot) =>
+    // Update data
+    pivotIndices.set(pivotIndices.size() - 1, bar_index - (pivotLength - 1) / 2)
+    pivotValues.set(pivotValues.size() - 1, pivot == "high" ? high[(pivotLength - 1) / 2] : low[(pivotLength - 1) / 2])
+    // Recalculate and update average length
+    avgLengths.set(avgLengths.size() - 1, calculateAvgLength())
+
+// Error message
+noError = true
+table error = table.new(position.top_right, 1, 1, bgcolor=color.red)
+if pivotLength % 2 != 1
+    if errorMsgToggle
+        error.cell(0, 0, "ERROR: Please input an odd number pivot point period", text_color=color.white)
+    noError := false
+if bar_index < pivotLength - 1
+    if errorMsgToggle
+        error.cell(0, 0, "ERROR: Not enough bars on the chart. Please lower pivot point period", text_color=color.white)
+    noError := false
+
+// Volatilty filter
+atr = ta.atr(atrLength)
+
+// 1) CHECK FOR PIVOTS
+if noError
+    // Check variables
+    noHighPivot = false
+    noLowPivot = false
+    for i = pivotLength - 1 to 1
+        if i > (pivotLength - 1) / 2
+            if high[i] > high[i - 1]
+                noHighPivot := true
+            if low[i] < low[i - 1]
+                noLowPivot := true
+        if i <= (pivotLength - 1) / 2
+            if high[i] < high[i - 1]
+                noHighPivot := true
+            if low[i] > low[i - 1]
+                noLowPivot := true
+    // 2) STORE OR UPDATE PIVOTS
+    updateLast = false
+    if pivotIndices.size() != 0
+        if pivotTypes.last() == "High"
+            if not noHighPivot and high[(pivotLength - 1) / 2] > pivotValues.last()
+                updatePivot("high")
+                updateLast := true
+            if not noLowPivot and not na(atr[(pivotLength - 1) / 2]) and math.abs(low[(pivotLength - 1) / 2] - pivotValues.last()) >= atr[(pivotLength - 1) / 2] * atrMultiplier and bar_index - (pivotLength - 1) / 2 != pivotIndices.last() and low[(pivotLength - 1) / 2] < pivotValues.last()
+                storePivot("low")
+        else
+            if not noLowPivot and low[(pivotLength - 1) / 2] < pivotValues.last()
+                updatePivot("low")
+                updateLast := true
+            if not noHighPivot and not na(atr[(pivotLength - 1) / 2]) and math.abs(high[(pivotLength - 1) / 2] - pivotValues.last()) >= atr[(pivotLength - 1) / 2] * atrMultiplier and bar_index - (pivotLength - 1) / 2 != pivotIndices.last() and high[(pivotLength - 1) / 2] > pivotValues.last()
+                storePivot("high")
+    else
+        if not noHighPivot
+            storePivot("high")
+        if not noLowPivot
+            storePivot("low")
+    // 3) PLOT PIVOTS
+    if pivotLabels.size() > 0
+        for i = 0 to pivotLabels.size() - 1
+            if na(pivotLabels.get(i).get_x()) or i == pivotLabels.size() - 1 and updateLast
+                // Plot labels
+                currentLabel = pivotLabels.get(i)
+                currentLabel.set_x(pivotIndices.get(i))
+                currentLabel.set_y(pivotValues.get(i))
+                // --- MODIFIED --- Get value from avgLengths array and pass to labelText
+                avgLen = avgLengths.get(i)
+                currentLabel.set_text(labelText(i, pivotIndices.get(i), pivotValues.get(i), avgLen))
+                currentLabel.set_color(confirmedPivotColor)
+                currentLabel.set_textcolor(pivotTextColor)
+                // If there are 2+ pivots
+                if i != 0
+                    // Plot lines
+                    currentLine = zigZagLines.get(i - 1)
+                    currentLine.set_xy1(pivotIndices.get(i - 1), pivotValues.get(i - 1))
+                    currentLine.set_xy2(pivotIndices.get(i), pivotValues.get(i))
+                    currentLine.set_color(lineColor)
+                    currentLine.set_style(lineStyling(lineStyle))
+                    currentLine.set_width(lineWidth)
+        // Create potential line and label
+        if na(potentialLine)
+            potentialLine := line.new(na, na, na, na, style=lineStyling(lineStyle), width=lineWidth)
+            potentialLabel := label.new(na, na, size=labelSizing())
+        // Plot potential line and label
+        if pivotIndices.size() > 0 and pivotIndices.last() == bar_index - (pivotLength - 1) / 2
+            potentialLine.set_xy1(na, na)
+            potentialLine.set_xy2(na, na)
+            potentialLabel.set_xy(na, na)
+        else if pivotIndices.size() > 0
+            if close > pivotValues.last()
+                if pivotTypes.last() == "High" and pivotLabels.size() > 1
+                    potentialLine.set_xy1(pivotIndices.get(-2), pivotValues.get(-2))
+                else
+                    potentialLine.set_xy1(pivotIndices.last(), pivotValues.last())
+                potentialLine.set_xy2(bar_index, high)
+                potentialLabel.set_xy(bar_index, high)
+                // Pass `na` for avgLength for the potential label
+                potentialLabel.set_text(labelText(pivotTypes.last() == "High" and pivotLabels.size() > 1 ? pivotLabels.size() - 1 : pivotLabels.size(), bar_index, high, na))
+                potentialLabel.set_style(labelType(highPivotStyle))
+                potentialLabel.set_color(livePZZLabelColorU)
+            else if close == pivotValues.last()
+                potentialLine.set_xy1(pivotIndices.last(), pivotValues.last())
+                potentialLine.set_xy2(bar_index, close)
+                potentialLabel.set_xy(na, na)
+            else
+                if pivotTypes.last() == "Low" and pivotLabels.size() > 1
+                    potentialLine.set_xy1(pivotIndices.get(-2), pivotValues.get(-2))
+                else
+                    potentialLine.set_xy1(pivotIndices.last(), pivotValues.last())
+                potentialLine.set_xy2(bar_index, low)
+                potentialLabel.set_xy(bar_index, low)
+                // Pass `na` for avgLength for the potential label
+                potentialLabel.set_text(labelText(pivotTypes.last() == "Low" and pivotLabels.size() > 1 ? pivotLabels.size() - 1 : pivotLabels.size(), bar_index, low, na))
+                potentialLabel.set_style(labelType(lowPivotStyle))
+                potentialLabel.set_color(livePZZLabelColorD)
+            
+            potentialLine.set_color(lineColor)
+            potentialLabel.set_textcolor(pivotTextColor)
