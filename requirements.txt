@@ -1,31 +1,45 @@
-# FreqTrade 相关依赖
-# freqtrade  # 已包含在基础镜像中
+# FreqTrade 核心依赖
+freqtrade[plot]==2024.1
 
-# 交易所和数据相关
-ccxt>=4.0.0
-pandas>=1.5.0
-numpy>=1.21.0
+# 技术分析库
+TA-Lib==0.6.4
+technical==1.4.2
 
-# 技术分析
-talib-binary>=0.4.19
-ta>=0.10.2
+# 数据处理和科学计算
+numpy==1.24.4
+pandas==2.3.1
+
+# 机器学习和统计（FreqAI 相关）
+scikit-learn==1.7.1
+scipy==1.16.0
+
+# 绘图和可视化
+matplotlib==3.10.5
+plotly==5.17.0
+
+# 交易所连接
+ccxt==4.2.25
 
 # 数据库
-sqlalchemy>=1.4.0
+SQLAlchemy==2.0.25
 
-# 机器学习（如果需要）
-scikit-learn>=1.0.0
-# tensorflow>=2.8.0  # 取消注释如果需要
+# HTTP 请求
+requests==2.32.4
 
-# 通知和API
-requests>=2.28.0
-python-telegram-bot>=20.0
+# 配置和日志
+colorama==0.4.6
+tabulate==0.9.0
 
-# 开发工具
-jupyter>=1.0.0
-matplotlib>=3.5.0
-plotly>=5.0.0
+# 开发和测试工具
+pytest==7.4.4
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+pytest-mock==3.12.0
 
-# 其他工具
-python-dotenv>=0.19.0
-pyyaml>=6.0
+# 代码质量
+flake8==6.1.0
+mypy==1.8.0
+
+# Jupyter notebook 支持（用于策略分析）
+jupyter==1.1.1
+ipykernel==6.30.1

@@ -1,4 +1,3 @@
-
 {
     "max_open_trades": 3,
     "stake_currency": "USDT",
@@ -26,7 +25,7 @@
             "bids_to_ask_delta": 1
         }
     },
-    "exit_pricing":{
+    "exit_pricing": {
         "price_side": "same",
         "use_order_book": true,
         "order_book_top": 1
@@ -39,13 +38,14 @@
         "ccxt_async_config": {},
         "pair_whitelist": [
             "BTC/USDT:USDT",
-            "ETH/USDT:USDT",
-            "SOL/USDT:USDT"
+            "ETH/USDT:USDT"
         ],
-        "pair_blacklist": [
-        ]
+        "pair_blacklist": []
     },
     "pairlists": [
+        {
+            "method": "StaticPairList"
+        }
     ],
     "telegram": {
         "enabled": false,
@@ -53,16 +53,16 @@
         "chat_id": ""
     },
     "api_server": {
-        "enabled": false,
-        "listen_ip_address": "127.0.0.1",
-        "listen_port": 8080,
+        "enabled": true,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 8081,
         "verbosity": "error",
-        "enable_openapi": false,
+        "enable_openapi": true,
         "jwt_secret_key": "bafd78c53750bb39079983ca7c6b7c61aa44aa30463979a4d6d15345b841d608",
         "ws_token": "BS5QfNYaeZutNyu46Sm4ucmjrCVLAB9JQg",
         "CORS_origins": [],
-        "username": "",
-        "password": ""
+        "username": "freqtrader",
+        "password": "freqtrader123"
     },
     "bot_name": "freqtrade",
     "initial_state": "running",
