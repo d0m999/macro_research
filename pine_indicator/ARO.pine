@@ -211,11 +211,16 @@ plot(phFound  ? rsi_v[lbR] : na, offset=-lbR, title="Regular Bearish", linewidth
 // Dual Channel Squeeze 背景色显示
 // =================================================================================
 
-// 根据动量方向和挤压状态设置背景色
-// 修改：多头时背景色为白色，空头时背景色为蓝色
-squeezeBackgroundColor = isSqueeze ? (momentum >= 0 ? bullishSqueezeColor : bearishSqueezeColor) : na
-bgcolor(squeezeBackgroundColor, title="Squeeze Background")
-// 注释：挤压状态背景色，正动量时显示白色背景(看涨)，负动量时显示蓝色背景(看跌)
+// 创建背景色边界线（隐藏），限制背景色在RSI上下阈值线范围显示
+squeeze_bg_top = plot(80, color=color.new(color.white, 100), display=display.none, title="Squeeze BG Top")
+squeeze_bg_bottom = plot(20, color=color.new(color.white, 100), display=display.none, title="Squeeze BG Bottom")
+
+// 根据动量方向和挤压状态在RSI阈值线范围内填充背景色
+// 修改：多头时背景色为白色，空头时背景色为蓝色，在20-80范围内显示
+fill(squeeze_bg_bottom, squeeze_bg_top, 
+     color = isSqueeze ? (momentum >= 0 ? bullishSqueezeColor : bearishSqueezeColor) : na,
+     title="Squeeze Background")
+// 注释：挤压状态背景色，正动量时显示白色背景(看涨)，负动量时显示蓝色背景(看跌)，范围限制在RSI上下阈值线之间（20-80）
 
 // =================================================================================
 // 警报

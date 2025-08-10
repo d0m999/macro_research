@@ -1,0 +1,396 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © d0m999
+//@version=6
+indicator("Enhanced Adaptive Resonance with Volume & Multi-Level OB/OS", overlay=false, shorttitle="[d0m999]ARO-Vol-Enhanced")
+import TradingView/ta/9
+
+// =================================================================================
+// Adaptive Resonance Oscillator 参数
+// =================================================================================
+aro_group = "Adaptive Resonance Oscillator"
+smooth = input.bool(title="Enable Smoothing", defval=true, group=aro_group)
+smoothlength = input.int(title="Smoothing Length", defval=12, minval=1, group=aro_group)
+medianLength = input.int(title="Frequency Detection Length", defval=100, minval=1, group=aro_group)
+
+// 背离设置参数
+plotBullish = input(title="Plot Bullish Divergences", defval=true, group=aro_group)
+plotBear = input(title="Plot Bearish Divergences", defval=true, group=aro_group)
+lbL = input(title="Divergence Pivot Detection Length", defval=20, group=aro_group, tooltip = "The larger this number, the less sensitive the divergence detecion is. A smaller number will detect smaller and/or shorter term divergences", display = display.data_window)
+lbR = 1
+
+// 计算设置参数
+calc_group = "Calculation Settings"
+useVolume = input.bool(title="Use Volume Adjustment", defval=false, group=calc_group, tooltip="如果启用，RSI的计算将考虑成交量，使其对高成交量的价格变动更加敏感。")
+
+// =================================================================================
+// 成交量异常检测参数
+// =================================================================================
+volume_group = "Volume Analysis"
+volume_ma_length = input.int(title="Volume MA Length", defval=20, minval=1, group=volume_group)
+volume_spike_multiplier = input.float(title="Volume Spike Multiplier", defval=1.5, minval=1.0, step=0.1, group=volume_group)
+enable_volume_analysis = input.bool(title="Enable Volume Analysis", defval=true, group=volume_group)
+
+// =================================================================================
+// HTF RSI 参数
+// =================================================================================
+htf_group = "Higher Time Frame RSI"
+htf_multiplier = input.int(title="HTF Multiplier", defval=4, minval=2, maxval=10, group=htf_group, tooltip="HTF时间框架倍数，例如：当前1小时图，倍数4=4小时图")
+htf_rsi_length = input.int(title="HTF RSI Length", defval=14, minval=2, group=htf_group)
+enable_htf_analysis = input.bool(title="Enable HTF Analysis", defval=true, group=htf_group)
+
+// =================================================================================
+// Dual Channel Squeeze 参数
+// =================================================================================
+squeeze_group = "Dual Channel Squeeze"
+bbLength = input.int(20, "BB Length", group=squeeze_group)
+bbMult = input.float(2.0, "BB Multiplier", group=squeeze_group)
+kcLength = input.int(20, "KC Length", group=squeeze_group)
+kcMult = input.float(1.5, "KC Multiplier", group=squeeze_group)
+useEmaForKC = input.bool(true, "Use EMA for KC Basis", group=squeeze_group)
+momentumLength = input.int(12, "Momentum Length", group=squeeze_group)
+
+// =================================================================================
+// 多级超买超卖颜色设置
+// =================================================================================
+color_group = "Multi-Level OB/OS Colors"
+// 原有颜色（一级）
+white = input.color(defval = color.white, title = "Level 1 - Bullish Color (一级看涨)", group = color_group)
+blue = input.color(defval = color.blue, title = "Level 1 - Bearish Color (一级看跌)", group = color_group)
+// 二级颜色（成交量异常）
+level2_color = input.color(defval = color.new(color.yellow, 0), title = "Level 2 - Volume Spike Color (二级-成交量异常)", group = color_group)
+// 三级颜色（HTF确认）
+level3_color = input.color(defval = color.new(color.purple, 0), title = "Level 3 - HTF Confirmed Color (三级-HTF确认)", group = color_group)
+
+// 其他颜色
+bullishSqueezeColor = input.color(color.new(color.white, 85), "Bullish Squeeze Background (看涨挤压背景)", group=color_group)
+bearishSqueezeColor = input.color(color.new(color.blue, 85), "Bearish Squeeze Background (看跌挤压背景)", group=color_group)
+
+// =================================================================================
+// 核心计算函数
+// =================================================================================
+
+// 自定义RSI计算函数
+pine_rsi(x, y) => 
+    u = math.max(x - x[1], 0)
+    d = math.max(x[1] - x, 0)
+    alpha = 1 / y
+    sum_u = 0.0
+    sum_d = 0.0
+    sum_u := alpha * u + (1 - alpha) * nz(sum_u[1])
+    sum_d := alpha * d + (1 - alpha) * nz(sum_d[1])
+    rs = sum_u / sum_d
+    res = 100 - 100 / (1 + rs)
+    res
+
+// 成交量加权RSI计算函数
+pine_rsi_volume_adjusted(x, y) =>
+    u = math.max(x - x[1], 0)
+    d = math.max(x[1] - x, 0)
+    u_vol = u * volume
+    d_vol = d * volume
+    alpha = 1 / y
+    sum_u_vol = 0.0
+    sum_d_vol = 0.0
+    sum_u_vol := alpha * u_vol + (1 - alpha) * nz(sum_u_vol[1])
+    sum_d_vol := alpha * d_vol + (1 - alpha) * nz(sum_d_vol[1])
+    rs_vol = sum_u_vol / sum_d_vol
+    res = 100 - 100 / (1 + rs_vol)
+    res
+
+// 反正切函数实现
+f_atan2(y, x) =>
+    ret = x > 0 ? math.atan(y / x) :
+          x < 0 and y >= 0 ? math.atan(y / x) + math.pi :
+          x < 0 and y < 0  ? math.atan(y / x) - math.pi :
+          y > 0 ? math.pi / 2 : y < 0 ? -math.pi / 2 : 0.0
+    ret
+
+// =================================================================================
+// Adaptive Resonance Oscillator 核心计算
+// =================================================================================
+
+// 价格数据准备和处理
+price = close
+priceSmooth = (price + price[1] + price[2] + price[3]) / 4
+
+// 去趋势处理
+detrender = (0.0962 * priceSmooth 
+             + 0.5769 * priceSmooth[2] 
+             - 0.5769 * priceSmooth[4] 
+             - 0.0962 * priceSmooth[6])
+
+// 希尔伯特变换
+I1 = detrender[3]
+Q1 = (0.0962 * detrender 
+      + 0.5769 * detrender[2] 
+      - 0.5769 * detrender[4] 
+      - 0.0962 * detrender[6])
+    
+jI = I1[3]
+jQ = Q1[3]
+
+I2 = I1 - jQ
+Q2 = Q1 + jI
+
+Re = I2 * nz(I2[1]) + Q2 * nz(Q2[1])
+Im = I2 * nz(Q2[1]) - Q2 * nz(I2[1])
+
+phaseAngle = math.todegrees(f_atan2(Im, Re))
+phaseAngle := phaseAngle < 0 ? phaseAngle + 360 : phaseAngle
+
+minPhase = 1.0
+phaseAngleClamped = math.max(phaseAngle, minPhase)
+
+hilbertPeriodRaw = 360 / phaseAngleClamped
+market_frequency = ta.median(hilbertPeriodRaw, medianLength)
+period = int(market_frequency / 2)
+
+// 计算主RSI
+base_rsi = useVolume ? pine_rsi_volume_adjusted(close, period) : pine_rsi(close, period)
+rsi_v = smooth ? ta.hma(base_rsi, smoothlength) : base_rsi
+
+// =================================================================================
+// 成交量异常检测计算
+// =================================================================================
+
+// 成交量移动平均和异常检测
+volume_ma = ta.ema(volume, volume_ma_length)
+volume_spike = enable_volume_analysis ? (volume > volume_ma * volume_spike_multiplier) : false
+
+// =================================================================================
+// HTF RSI 计算
+// =================================================================================
+
+// 计算HTF时间框架
+htf_timeframe = timeframe.multiplier * htf_multiplier
+htf_tf_string = str.tostring(htf_timeframe) + timeframe.period
+
+// 获取HTF RSI数据
+htf_rsi = enable_htf_analysis ? request.security(syminfo.tickerid, htf_tf_string, ta.rsi(close, htf_rsi_length), lookahead=barmerge.lookahead_off) : 50
+
+// =================================================================================
+// 多级超买超卖条件判断
+// =================================================================================
+
+// 基础超买超卖条件
+is_overbought = rsi_v > 80
+is_oversold = rsi_v < 20
+is_ob_os = is_overbought or is_oversold
+
+// HTF同方向确认条件
+htf_overbought_confirm = enable_htf_analysis ? (htf_rsi > 80) : false
+htf_oversold_confirm = enable_htf_analysis ? (htf_rsi < 20) : false
+htf_same_direction = (is_overbought and htf_overbought_confirm) or (is_oversold and htf_oversold_confirm)
+
+// 三级分级条件
+level_1_condition = is_ob_os and not volume_spike
+level_2_condition = is_ob_os and volume_spike and not htf_same_direction  
+level_3_condition = is_ob_os and volume_spike and htf_same_direction
+
+// =================================================================================
+// Dual Channel Squeeze 核心计算
+// =================================================================================
+
+// 布林带计算
+bbBasis = ta.sma(close, bbLength)
+bbDev = bbMult * ta.stdev(close, bbLength)
+bbUpper = bbBasis + bbDev
+bbLower = bbBasis - bbDev
+
+// 肯特纳通道计算
+kcBasis = useEmaForKC ? ta.ema(close, kcLength) : ta.sma(close, kcLength)
+kcDev = kcMult * ta.atr(kcLength)
+kcUpper = kcBasis + kcDev
+kcLower = kcBasis - kcDev
+
+// 识别挤压状态
+isSqueeze = (bbUpper < kcUpper) and (bbLower > kcLower)
+squeezeFired = isSqueeze[1] and not isSqueeze
+
+// 计算动量
+momentum = ta.linreg(close, momentumLength, 0) - ta.linreg(close, momentumLength, 1)// ====
+=============================================================================
+// 绘图 - 多级超买超卖RSI线条
+// =================================================================================
+
+// 确定RSI线条颜色（基于分级系统）
+rsi_line_color = level_3_condition ? level3_color :
+                 level_2_condition ? level2_color :
+                 level_1_condition ? (is_overbought ? white : blue) :
+                 smooth ? (rsi_v > rsi_v[1] ? color.new(white, 50) : color.new(blue, 50)) : color.new(color.white, 50)
+
+// 绘制超买超卖区域的加粗RSI线（多级颜色）
+plot(is_ob_os ? rsi_v : na, 
+     color = rsi_line_color, 
+     linewidth = 4, 
+     style=plot.style_steplinebr,
+     title="Multi-Level OB/OS RSI")
+
+// 绘制主RSI线（正常区域）
+rsi_plot = plot(rsi_v, 
+                color = smooth ? color.new((rsi_v > rsi_v[1] ? white : blue), 50) : color.white, 
+                linewidth = 1, 
+                style=plot.style_stepline,
+                title="Main RSI Line")
+
+rsi_plot1 = plot(rsi_v[1], 
+                 color = smooth ? color.new((rsi_v > rsi_v[1] ? white : blue), 100) : color.new(color.white, 100), 
+                 linewidth = 1, 
+                 style=plot.style_stepline,
+                 title="RSI Previous")
+
+// 绘制上下阈值带
+upper_band = plot(80, "Upper Band", color.new(color.gray, 50), 2)
+lower_band = plot(20, "Lower Band", color.new(color.gray, 50), 2)
+
+// 设置颜色
+col = rsi_v > 50 ? white : blue
+
+// 绘制强信号标记（保持原有逻辑，但添加分级信息）
+plotchar(ta.crossover(rsi_v, rsi_v[1]) and (rsi_v[1] < 20) ? rsi_v - 7 : na, 
+         char='▲', 
+         location=location.absolute, 
+         color=level_3_condition and is_oversold ? level3_color : 
+               level_2_condition and is_oversold ? level2_color : white, 
+         textcolor=color.black, 
+         title="Strong Bullish", 
+         display= smooth ? display.all : display.none, 
+         size=size.tiny)
+
+plotchar(ta.crossunder(rsi_v, rsi_v[1]) and (rsi_v[1] > 80) ? rsi_v + 7 : na, 
+         char='▼', 
+         location=location.absolute, 
+         color=level_3_condition and is_overbought ? level3_color : 
+               level_2_condition and is_overbought ? level2_color : blue, 
+         textcolor=color.white, 
+         title="Strong Bearish", 
+         display= smooth ? display.all : display.none, 
+         size=size.tiny)
+
+// =================================================================================
+// 背离检测（保持原有逻辑）
+// =================================================================================
+
+// 颜色定义
+bullColor = white
+bearColor = blue
+hiddenBullColor = color.new(white, 80)
+hiddenBearColor = color.new(blue, 80)
+textColor = color.white
+noneColor = color.new(color.white, 100)
+
+// 检测RSI的低点和高点
+plFound = na(ta.pivotlow(rsi_v, lbL, lbR)) ? false : true
+phFound = na(ta.pivothigh(rsi_v, lbL, lbR)) ? false : true
+
+// 辅助函数
+_inRange(cond) =>
+	bars = ta.barssince(cond == true)
+	-80 <= bars and bars <= 80
+
+// 检测常规看涨背离
+oscHL = rsi_v[lbR] > ta.valuewhen(plFound, rsi_v[lbR], 1) and _inRange(plFound[1])
+priceLL = low[lbR] < ta.valuewhen(plFound, low[lbR], 1)
+bullCond = plotBullish and priceLL and oscHL and plFound
+plot(plFound  ? rsi_v[lbR] : na, 
+     offset=-lbR, 
+     title="Regular Bullish", 
+     linewidth=2, 
+     color=(bullCond ? bullColor : noneColor))
+
+// 检测常规看跌背离
+oscLH = rsi_v[lbR] < ta.valuewhen(phFound, rsi_v[lbR], 1) and _inRange(phFound[1])
+priceHH = high[lbR] > ta.valuewhen(phFound, high[lbR], 1)
+bearCond = plotBear and priceHH and oscLH and phFound
+plot(phFound  ? rsi_v[lbR] : na, 
+     offset=-lbR, 
+     title="Regular Bearish", 
+     linewidth=2, 
+     color=(bearCond ? bearColor : noneColor))
+
+// =================================================================================
+// Dual Channel Squeeze 背景色显示
+// =================================================================================
+
+// 创建背景色边界线（隐藏），限制背景色在RSI上下阈值线范围显示
+squeeze_bg_top = plot(80, color=color.new(color.white, 100), display=display.none, title="Squeeze BG Top")
+squeeze_bg_bottom = plot(20, color=color.new(color.white, 100), display=display.none, title="Squeeze BG Bottom")
+
+// 根据动量方向和挤压状态在RSI阈值线范围内填充背景色
+fill(squeeze_bg_bottom, squeeze_bg_top, 
+     color = isSqueeze ? (momentum >= 0 ? bullishSqueezeColor : bearishSqueezeColor) : na,
+     title="Squeeze Background")
+
+// =================================================================================
+// 信息显示表格
+// =================================================================================
+
+// 创建信息显示表格
+if barstate.islast and enable_volume_analysis and enable_htf_analysis
+    var table info_table = table.new(position.top_right, 3, 6, bgcolor=color.new(color.black, 80), border_width=1)
+    
+    // 表头
+    table.cell(info_table, 0, 0, "指标", text_color=color.white, text_size=size.small)
+    table.cell(info_table, 1, 0, "当前值", text_color=color.white, text_size=size.small)
+    table.cell(info_table, 2, 0, "状态", text_color=color.white, text_size=size.small)
+    
+    // RSI信息
+    table.cell(info_table, 0, 1, "RSI", text_color=color.white, text_size=size.small)
+    table.cell(info_table, 1, 1, str.tostring(math.round(rsi_v, 2)), text_color=color.white, text_size=size.small)
+    table.cell(info_table, 2, 1, is_overbought ? "超买" : is_oversold ? "超卖" : "正常", 
+               text_color=is_overbought ? color.red : is_oversold ? color.lime : color.white, text_size=size.small)
+    
+    // HTF RSI信息
+    table.cell(info_table, 0, 2, "HTF RSI", text_color=color.white, text_size=size.small)
+    table.cell(info_table, 1, 2, str.tostring(math.round(htf_rsi, 2)), text_color=color.white, text_size=size.small)
+    table.cell(info_table, 2, 2, htf_overbought_confirm ? "超买" : htf_oversold_confirm ? "超卖" : "正常", 
+               text_color=htf_overbought_confirm ? color.red : htf_oversold_confirm ? color.lime : color.white, text_size=size.small)
+    
+    // 成交量信息
+    table.cell(info_table, 0, 3, "成交量", text_color=color.white, text_size=size.small)
+    table.cell(info_table, 1, 3, volume_spike ? "异常" : "正常", text_color=color.white, text_size=size.small)
+    table.cell(info_table, 2, 3, volume_spike ? "⚠️" : "✓", 
+               text_color=volume_spike ? color.yellow : color.lime, text_size=size.small)
+    
+    // 分级信息
+    table.cell(info_table, 0, 4, "信号级别", text_color=color.white, text_size=size.small)
+    level_text = level_3_condition ? "三级" : level_2_condition ? "二级" : level_1_condition ? "一级" : "无"
+    level_color = level_3_condition ? level3_color : level_2_condition ? level2_color : level_1_condition ? color.white : color.gray
+    table.cell(info_table, 1, 4, level_text, text_color=level_color, text_size=size.small)
+    table.cell(info_table, 2, 4, level_3_condition ? "🔥" : level_2_condition ? "⚡" : level_1_condition ? "📊" : "-", 
+               text_color=level_color, text_size=size.small)
+    
+    // 挤压状态
+    table.cell(info_table, 0, 5, "挤压状态", text_color=color.white, text_size=size.small)
+    table.cell(info_table, 1, 5, isSqueeze ? "挤压中" : "释放", text_color=color.white, text_size=size.small)
+    table.cell(info_table, 2, 5, isSqueeze ? "🔒" : "🚀", 
+               text_color=isSqueeze ? color.orange : color.lime, text_size=size.small)
+
+// =================================================================================
+// 警报系统
+// =================================================================================
+
+// 背离警报（保持原有）
+alertcondition(bullCond, title="Bullish Divergence", message="Bullish Divergence Detected")
+alertcondition(bearCond, title="Bearish Divergence", message="Bearish Divergence Detected")
+alertcondition(bullCond or bearCond, title="Divergence", message="Divergence Detected")
+
+// 强烈信号警报（保持原有）
+alertcondition(ta.crossover(rsi_v, rsi_v[1]) and (rsi_v[1] < 20), title="Strong Bullish")
+alertcondition(ta.crossunder(rsi_v, rsi_v[1]) and (rsi_v[1] > 80), title="Strong Bearish")
+
+// 新增：多级信号警报
+alertcondition(level_2_condition, title="Level 2 Signal", message="Level 2 OB/OS Signal with Volume Spike")
+alertcondition(level_3_condition, title="Level 3 Signal", message="Level 3 OB/OS Signal with Volume Spike and HTF Confirmation")
+
+// 成交量异常警报
+alertcondition(volume_spike, title="Volume Spike", message="Volume Spike Detected")
+
+// 挤压警报（保持原有）
+if squeezeFired
+    string dir = momentum > 0 ? "Upward" : "Downward"
+    string alertMessage = "Dual-Channel Squeeze has fired. Momentum is " + dir + " on " + syminfo.ticker + "."
+    alert(alertMessage, alert.freq_once_per_bar)
+
+// HTF确认警报
+alertcondition(htf_same_direction and is_ob_os, title="HTF Confirmation", message="HTF RSI confirms current timeframe OB/OS condition")

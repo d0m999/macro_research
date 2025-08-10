@@ -1,0 +1,117 @@
+// © mempAw
+//@version=6
+indicator("Multi-Touch Support/Resistance Zones", "S/R Zones", overlay=true)
+
+// --- 输入参数 ---
+pivot_lookback = input.int(15, "Pivot Lookback Period", tooltip="寻找枢轴点的左右侧K线数量")
+price_tolerance_mult = input.float(0.5, "Price Zone Tolerance (ATR Mult)", step=0.1, tooltip=
+  "区域厚度的ATR乘数。值越小，区域越窄，要求越精确。")
+min_touches = input.int(3, "Minimum Touches to Show Zone", tooltip="一个区域至少需要被触及多少次才会被显示")
+max_bars_back = input.int(500, "Max Bars Back for Display", tooltip="显示区域的最大回溯K线数，防止绘图错误")
+zone_extension = input.int(50, "Zone Extension Bars", tooltip="区域向未来延伸的K线数量")
+
+// --- 自定义数据结构 ---
+// 使用 'type' 关键字创建一个自定义对象来存储每个S/R区域的信息
+type SR_Zone
+    float top_price       // 区域的顶部价格
+    float bottom_price    // 区域的底部价格
+    int touch_count       // 触及次数
+    int first_touch_bar   // 第一次触及的K线索引
+    int last_touch_bar    // 最后一次触及的K线索引
+    string zone_type     // "R" 代表阻力, "S" 代表支撑
+
+// --- 数组初始化 ---
+// 创建一个数组来存储所有检测到的 S/R 区域
+var zones = array.new<SR_Zone>()
+
+// --- 计算所需指标 ---
+atr = ta.atr(14)
+
+// --- 核心逻辑 ---
+
+// 1. 检测新的枢轴点 (高点和低点)
+// ta.pivothigh 返回枢轴高点的价格，如果当前K线不是枢轴点，则返回 na
+float pivot_high_price = ta.pivothigh(high, pivot_lookback, pivot_lookback)
+// ta.pivotlow 返回枢轴低点的价格
+float pivot_low_price = ta.pivotlow(low, pivot_lookback, pivot_lookback)
+
+// 2. 定义区域厚度 (动态容差)
+float zone_thickness = atr * price_tolerance_mult
+
+// 3. 聚类算法：处理新的枢轴高点
+if not na(pivot_high_price)
+    bool merged = false
+    // 遍历所有已存在的区域，检查是否可以合并
+    for z in zones
+        // 如果新的高点落在某个已存在的阻力区域内
+        if z.zone_type == "R" and pivot_high_price >= z.bottom_price and pivot_high_price <= z.top_price
+            // 合并成功！更新区域信息
+            z.touch_count := z.touch_count + 1
+            z.last_touch_bar := bar_index
+            // 可以选择性地微调区域边界，这里为简化省略
+            merged := true
+            break // 找到并合并后，跳出循环
+    // 如果遍历完所有区域都无法合并，则创建一个新区域
+    if not merged
+        new_zone = SR_Zone.new(
+          top_price = pivot_high_price + zone_thickness / 2,
+          bottom_price = pivot_high_price - zone_thickness / 2,
+          touch_count = 1,
+          first_touch_bar = bar_index,
+          last_touch_bar = bar_index,看
+          zone_type = "R"
+          )
+        zones.push(new_zone)
+
+// 4. 聚类算法：处理新的枢轴低点 (逻辑同上)
+if not na(pivot_low_price)
+    bool merged = false
+    for z in zones
+        if z.zone_type == "S" and pivot_low_price >= z.bottom_price and pivot_low_price <= z.top_price
+            z.touch_count := z.touch_count + 1
+            z.last_touch_bar := bar_index
+            merged := true
+            break
+    if not merged
+        new_zone = SR_Zone.new(
+          top_price = pivot_low_price + zone_thickness / 2,
+          bottom_price = pivot_low_price - zone_thickness / 2,
+          touch_count = 1,
+          first_touch_bar = bar_index,
+          last_touch_bar = bar_index,
+          zone_type = "S"
+          )
+        zones.push(new_zone)
+
+// 5. 清理过旧的区域数据，提高性能并避免绘图错误
+if barstate.islast
+    // 清理距离当前时间太远的区域
+    for i = array.size(zones) - 1 to 0
+        z = array.get(zones, i)
+        if bar_index - z.last_touch_bar > max_bars_back * 2
+            array.remove(zones, i)
+
+// 6. 绘图逻辑：只在最后一根K线上执行，以提高性能
+if barstate.islast
+    for z in zones
+        // 筛选出触及次数达标的区域
+        if z.touch_count >= min_touches
+            // 根据区域类型选择颜色
+            color zone_color = z.zone_type == "R" ? color.new(color.red, 80) : color.new(color.green, 80)
+            
+            // 限制 left 参数，防止距离当前 bar 太远导致错误
+            int safe_left = math.max(z.first_touch_bar, bar_index - max_bars_back)
+            
+            // 绘制区域盒子，并将其延伸到图表右侧
+            box.new(
+              left = safe_left,
+              top = z.top_price,
+              right = bar_index + zone_extension, // 使用用户定义的延伸长度
+              bottom = z.bottom_price,
+              bgcolor = zone_color,
+              border_color = na,
+              text = "Touches: " + str.tostring(z.touch_count),
+              text_halign = text.align_right,
+              text_valign = text.align_top,
+              text_color = color.white
+              )

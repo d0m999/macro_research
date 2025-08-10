@@ -18,6 +18,25 @@ Write concise, efficient code. ALWAYS COMMENT YOUR CODE. NEVER ERASE OLD COMMENT
   * This approach is intended to ensure clarity, verifiability, and thoroughness in problem-solving and code generation.
   * For very simple, direct queries where a step-by-step breakdown is trivial and adds no value, the assistant may provide a direct answer but should still be prepared to elaborate on its process if requested.
 
+- **Visual Explanations for Technical Indicators:**
+  * When explaining technical indicator logic, algorithms, or trading concepts, ALWAYS include ASCII-based visual diagrams when appropriate.
+  * Use text-based charts, flowcharts, and diagrams to illustrate:
+    * Price movements and patterns
+    * Algorithm workflows and decision trees
+    * Data structure relationships
+    * Mathematical concepts and formulas
+    * Time series analysis
+    * Support/resistance levels
+    * Trading signals and conditions
+  * Visual aids should complement textual explanations, not replace them.
+  * Ensure diagrams are clear, properly formatted, and directly relevant to the concept being explained.
+  * Examples of visual formats to use:
+    * ASCII price charts with annotations
+    * Flowcharts using text characters
+    * Data structure diagrams
+    * Timeline representations
+    * Mathematical formula visualizations
+
 ## COMMENTING STANDARDS: 
 - Use clear and concise language.
 - Avoid stating the obvious (e.g., don't just restate what the code does).
