@@ -1,0 +1,78 @@
+//@ediboy888
+//@version=6
+indicator("TDI Squeeze", shorttitle="TDI S", overlay=false)
+
+// ── Settings
+groupSet   = "Settings"
+srcOpt = input.string("close", "Source", options=["close", "(H+L)/2", "(O+H+L+C)/4"], group=groupSet)
+src = switch srcOpt
+    "close"         => close
+    "(H+L)/2"       => (high + low) / 2
+    "(O+H+L+C)/4"   => (open + high + low + close) / 4
+rsiLen     = input.int(14,         "RSI Length",   minval=1, group=groupSet)   // 常见 13 或 21
+bandLen    = input.int(34,         "Band Length", minval=1, group=groupSet)   // 经典 34
+stdevMult  = input.float(1.6185,   "Band Multiplier",       group=groupSet, step=0.0001)
+fastLen    = input.int(1,          "Fast MA on RSI",minval=1, group=groupSet) // 快 2
+slowLen    = input.int(7,          "Slow MA on RSI",minval=1, group=groupSet) // 慢 7
+rsiU       = input.float(80.0,     "RSI Uband",   minval=0, maxval=100, group=groupSet)
+rsiL       = input.float(20.0,     "RSI Lband",   minval=0, maxval=100, group=groupSet)
+
+// ── Core RSI & Bands
+r   = ta.rsi(src, rsiLen)
+ma  = ta.sma(r, bandLen)
+sd  = ta.stdev(r, bandLen)
+ofs = stdevMult * sd
+
+up  = ma + ofs
+dn  = ma - ofs
+
+// ── Price/Signal lines on RSI
+priceLine  = ta.sma(r, fastLen)   // Fast（Price Line）
+signalLine = ta.sma(r, slowLen)   // Slow（Trade Signal Line）
+
+// ── Plots
+// 1) 可调的 RSI 上/下水平线
+plot(rsiU, "RSI Uband", color=color.new(color.gray, 0), linewidth=1)
+plot(rsiL, "RSI Lband", color=color.new(color.gray, 0), linewidth=1)
+
+// 2) 波动带与中线
+pUp  = plot(up,  "Volatility Upper Band", color=color.new(color.blue,  20), linewidth=1)
+pDn  = plot(dn,  "Volatility Lower Band", color=color.new(color.blue,  20), linewidth=1)
+fill(pUp, pDn, color=color.new(color.blue, 85))
+
+// 3) RSI 快/慢线
+plot(priceLine,  "RSI Price Line (Fast)",   color=color.new(color.white, 20), linewidth=1, style = plot.style_stepline)
+plot(signalLine, "Trade Signal Line (Slow)", color=color.new(color.orange, 20), linewidth=1, style = plot.style_stepline)
+
+// 4）中线
+hline (50, "Middle Line")
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ⬇️ Dual Channel Squeeze（DCS）
+// ─────────────────────────────────────────────────────────────────────────────
+dcs_group = "Dual Channel Squeeze"
+dcs_showBg      = input.bool(true,  "Show Squeeze Background", group=dcs_group)
+dcs_bbLength    = input.int(21,     "BB Length",           minval=1, group=dcs_group)
+dcs_bbMult      = input.float(2.0,  "BB Multiplier",       minval=0.1, step=0.1, group=dcs_group)
+dcs_kcLength    = input.int(21,     "KC Length (ATR)",     minval=1, group=dcs_group)
+dcs_kcMult      = input.float(1.2,  "KC ATR Multiplier",   minval=0.1, step=0.1, group=dcs_group)
+dcs_useEmaForKC = input.bool(true,  "KC Baseline uses EMA (if false, SMA)", group=dcs_group)
+
+// —— BB（基于 src）
+dcs_bbBasis = ta.sma(src, dcs_bbLength)
+dcs_bbDev   = dcs_bbMult * ta.stdev(src, dcs_bbLength)
+dcs_bbUpper = dcs_bbBasis + dcs_bbDev
+dcs_bbLower = dcs_bbBasis - dcs_bbDev
+
+// —— KC（基于 src）
+dcs_kcBasis = dcs_useEmaForKC ? ta.ema(src, dcs_kcLength) : ta.sma(src, dcs_kcLength)
+dcs_kcDev   = dcs_kcMult * ta.atr(dcs_kcLength)
+dcs_kcUpper = dcs_kcBasis + dcs_kcDev
+dcs_kcLower = dcs_kcBasis - dcs_kcDev
+
+// —— 挤压：BB 完全被 KC 包裹
+dcs_isSqueeze = (dcs_bbUpper < dcs_kcUpper) and (dcs_bbLower > dcs_kcLower)
+
+// —— 背景色（仅挤压期；可通过 dcs_showBg 开关隐藏）
+dcs_bg = dcs_showBg and dcs_isSqueeze ? color.new(color.orange, 80) : na
+bgcolor(dcs_bg, title="Squeeze Background")

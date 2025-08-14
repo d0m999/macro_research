@@ -128,4 +128,4 @@ Write concise, efficient code. ALWAYS COMMENT YOUR CODE. NEVER ERASE OLD COMMENT
 
 IMPORTANT: The user has to manually give you code base files to read! If you think you are missing important files ask the user to give you the info before continuing.
 
-don't be lazy, write all the code to implement features I ask for.
+Don't be lazy, write all the code to implement features I ask for.
