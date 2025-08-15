@@ -1,45 +1,61 @@
-# FreqTrade 核心依赖
-freqtrade[plot]==2024.1
-
-# 技术分析库
-TA-Lib==0.6.4
-technical==1.4.2
-
-# 数据处理和科学计算
-numpy==1.24.4
+numpy==2.3.2
 pandas==2.3.1
+bottleneck==1.5.0
+numexpr==2.11.0
+# Indicator libraries
+ft-pandas-ta==0.3.15
+ta-lib==0.6.5
+technical==1.5.2
 
-# 机器学习和统计（FreqAI 相关）
-scikit-learn==1.7.1
-scipy==1.16.0
-
-# 绘图和可视化
-matplotlib==3.10.5
-plotly==5.17.0
-
-# 交易所连接
-ccxt==4.2.25
-
-# 数据库
-SQLAlchemy==2.0.25
-
-# HTTP 请求
+ccxt==4.4.99
+cryptography==45.0.6
+aiohttp==3.12.15
+SQLAlchemy==2.0.42
+python-telegram-bot==22.3
+# can't be hard-pinned due to telegram-bot pinning httpx with ~
+httpx>=0.24.1
+humanize==4.12.3
+cachetools==6.1.0
 requests==2.32.4
-
-# 配置和日志
-colorama==0.4.6
+urllib3==2.5.0
+certifi==2025.8.3
+jsonschema==4.25.0
 tabulate==0.9.0
+pycoingecko==3.2.0
+jinja2==3.1.6
+joblib==1.5.1
+rich==14.1.0
+pyarrow==21.0.0; platform_machine != 'armv7l'
 
-# 开发和测试工具
-pytest==7.4.4
-pytest-asyncio==0.21.1
-pytest-cov==4.1.0
-pytest-mock==3.12.0
+# Load ticker files 30% faster
+python-rapidjson==1.21
+# Properly format api responses
+orjson==3.11.1
 
-# 代码质量
-flake8==6.1.0
-mypy==1.8.0
+# Notify systemd
+sdnotify==0.3.2
 
-# Jupyter notebook 支持（用于策略分析）
-jupyter==1.1.1
-ipykernel==6.30.1
+# API Server
+fastapi==0.116.1
+pydantic==2.11.7
+uvicorn==0.35.0
+pyjwt==2.10.1
+aiofiles==24.1.0
+psutil==7.0.0
+
+# Building config files interactively
+questionary==2.1.0
+prompt-toolkit==3.0.51
+# Extensions to datetime library
+python-dateutil==2.9.0.post0
+pytz==2025.2
+
+#Futures
+schedule==1.2.2
+
+#WS Messages
+websockets==15.0.1
+janus==2.0.0
+
+ast-comments==1.2.3
+packaging==25.0

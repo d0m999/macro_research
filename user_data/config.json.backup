@@ -32,8 +32,8 @@
     },
     "exchange": {
         "name": "binance",
-        "key": "${EXCHANGE_API_KEY}",
-        "secret": "${EXCHANGE_API_SECRET}",
+        "key": "",
+        "secret": "",
         "ccxt_config": {},
         "ccxt_async_config": {},
         "pair_whitelist": [
@@ -49,20 +49,20 @@
     ],
     "telegram": {
         "enabled": false,
-        "token": "${TELEGRAM_TOKEN}",
-        "chat_id": "${TELEGRAM_CHAT_ID}"
+        "token": "",
+        "chat_id": ""
     },
     "api_server": {
         "enabled": true,
-        "listen_ip_address": "127.0.0.1",
+        "listen_ip_address": "0.0.0.0",
         "listen_port": 8081,
         "verbosity": "error",
         "enable_openapi": true,
-        "jwt_secret_key": "${JWT_SECRET_KEY}",
-        "ws_token": "${WS_TOKEN}",
+        "jwt_secret_key": "bafd78c53750bb39079983ca7c6b7c61aa44aa30463979a4d6d15345b841d608",
+        "ws_token": "BS5QfNYaeZutNyu46Sm4ucmjrCVLAB9JQg",
         "CORS_origins": [],
-        "username": "${API_USERNAME}",
-        "password": "${API_PASSWORD}"
+        "username": "freqtrader",
+        "password": "freqtrader123"
     },
     "bot_name": "freqtrade",
     "initial_state": "running",
