@@ -1,10 +1,10 @@
-// This work is licensed under a Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) https://creativecommons.org/licenses/by-nc-sa/4.0/
+// 本作品采用 Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) 许可协议 https://creativecommons.org/licenses/by-nc-sa/4.0/
 // © LuxAlgo
 
 //@version=5
-indicator('Smart Money Concepts [LuxAlgo]', 'LuxAlgo - Smart Money Concepts', overlay = true, max_labels_count = 500, max_lines_count = 500, max_boxes_count = 500)
+indicator('Smart Money Concepts [LuxAlgo]', 'LuxAlgo - 智能资金概念', overlay = true, max_labels_count = 500, max_lines_count = 500, max_boxes_count = 500)
 //---------------------------------------------------------------------------------------------------------------------}
-//CONSTANTS & STRINGS & INPUTS
+//常量、字符串和输入参数
 //---------------------------------------------------------------------------------------------------------------------{
 BULLISH_LEG                     = 1
 BEARISH_LEG                     = 0
@@ -43,116 +43,116 @@ SOLID                           = '⎯⎯⎯'
 DASHED                          = '----'
 DOTTED                          = '····'
 
-SMART_GROUP                     = 'Smart Money Concepts'
-INTERNAL_GROUP                  = 'Real Time Internal Structure'
-SWING_GROUP                     = 'Real Time Swing Structure'
-BLOCKS_GROUP                    = 'Order Blocks'
-EQUAL_GROUP                     = 'EQH/EQL'
-GAPS_GROUP                      = 'Fair Value Gaps'
-LEVELS_GROUP                    = 'Highs & Lows MTF'
-ZONES_GROUP                     = 'Premium & Discount Zones'
+SMART_GROUP                     = '智能资金概念'
+INTERNAL_GROUP                  = '实时内部结构'
+SWING_GROUP                     = '实时摆动结构'
+BLOCKS_GROUP                    = '订单块'
+EQUAL_GROUP                     = '等高/等低'
+GAPS_GROUP                      = '公允价值缺口'
+LEVELS_GROUP                    = '高低点 MTF'
+ZONES_GROUP                     = '溢价和折价区域'
 
-modeTooltip                     = 'Allows to display historical Structure or only the recent ones'
-styleTooltip                    = 'Indicator color theme'
-showTrendTooltip                = 'Display additional candles with a color reflecting the current trend detected by structure'
-showInternalsTooltip            = 'Display internal market structure'
-internalFilterConfluenceTooltip = 'Filter non significant internal structure breakouts'
-showStructureTooltip            = 'Display swing market Structure'
-showSwingsTooltip               = 'Display swing point as labels on the chart'
-showHighLowSwingsTooltip        = 'Highlight most recent strong and weak high/low points on the chart'
-showInternalOrderBlocksTooltip  = 'Display internal order blocks on the chart\n\nNumber of internal order blocks to display on the chart'
-showSwingOrderBlocksTooltip     = 'Display swing order blocks on the chart\n\nNumber of internal swing blocks to display on the chart'
-orderBlockFilterTooltip         = 'Method used to filter out volatile order blocks \n\nIt is recommended to use the cumulative mean range method when a low amount of data is available'
-orderBlockMitigationTooltip     = 'Select what values to use for order block mitigation'
-showEqualHighsLowsTooltip       = 'Display equal highs and equal lows on the chart'
-equalHighsLowsLengthTooltip     = 'Number of bars used to confirm equal highs and equal lows'
-equalHighsLowsThresholdTooltip  = 'Sensitivity threshold in a range (0, 1) used for the detection of equal highs & lows\n\nLower values will return fewer but more pertinent results'
-showFairValueGapsTooltip        = 'Display fair values gaps on the chart'
-fairValueGapsThresholdTooltip   = 'Filter out non significant fair value gaps'
-fairValueGapsTimeframeTooltip   = 'Fair value gaps timeframe'
-fairValueGapsExtendTooltip      = 'Determine how many bars to extend the Fair Value Gap boxes on chart'
-showPremiumDiscountZonesTooltip = 'Display premium, discount, and equilibrium zones on chart'
+modeTooltip                     = '允许显示历史结构或仅显示最近的结构'
+styleTooltip                    = '指标颜色主题'
+showTrendTooltip                = '显示额外的K线，颜色反映结构检测到的当前趋势'
+showInternalsTooltip            = '显示内部市场结构'
+internalFilterConfluenceTooltip = '过滤非重要的内部结构突破'
+showStructureTooltip            = '显示摆动市场结构'
+showSwingsTooltip               = '在图表上显示摆动点作为标签'
+showHighLowSwingsTooltip        = '在图表上突出显示最近的强弱高低点'
+showInternalOrderBlocksTooltip  = '在图表上显示内部订单块\n\n在图表上显示的内部订单块数量'
+showSwingOrderBlocksTooltip     = '在图表上显示摆动订单块\n\n在图表上显示的内部摆动块数量'
+orderBlockFilterTooltip         = '用于过滤高波动性订单块的方法\n\n当可用数据较少时，建议使用累积平均范围方法'
+orderBlockMitigationTooltip     = '选择用于订单块缓解的数值'
+showEqualHighsLowsTooltip       = '在图表上显示等高和等低'
+equalHighsLowsLengthTooltip     = '用于确认等高和等低的K线数量'
+equalHighsLowsThresholdTooltip  = '用于检测等高和等低的敏感度阈值，范围(0, 1)\n\n较低的数值将返回更少但更相关的结果'
+showFairValueGapsTooltip        = '在图表上显示公允价值缺口'
+fairValueGapsThresholdTooltip   = '过滤非重要的公允价值缺口'
+fairValueGapsTimeframeTooltip   = '公允价值缺口时间框架'
+fairValueGapsExtendTooltip      = '确定在图表上将公允价值缺口框扩展多少个K线'
+showPremiumDiscountZonesTooltip = '在图表上显示溢价、折价和平衡区域'
 
-modeInput                       = input.string( HISTORICAL, 'Mode',                     group = SMART_GROUP,    tooltip = modeTooltip, options = [HISTORICAL, PRESENT])
-styleInput                      = input.string( COLORED,    'Style',                    group = SMART_GROUP,    tooltip = styleTooltip,options = [COLORED, MONOCHROME])
-showTrendInput                  = input(        false,      'Color Candles',            group = SMART_GROUP,    tooltip = showTrendTooltip)
+modeInput                       = input.string( HISTORICAL, '模式',                     group = SMART_GROUP,    tooltip = modeTooltip, options = [HISTORICAL, PRESENT])
+styleInput                      = input.string( COLORED,    '风格',                    group = SMART_GROUP,    tooltip = styleTooltip,options = [COLORED, MONOCHROME])
+showTrendInput                  = input(        false,      'K线颜色',            group = SMART_GROUP,    tooltip = showTrendTooltip)
 
-showInternalsInput              = input(        true,       'Show Internal Structure',  group = INTERNAL_GROUP, tooltip = showInternalsTooltip)
-showInternalBullInput           = input.string( ALL,        'Bullish Structure',        group = INTERNAL_GROUP, inline = 'ibull', options = [ALL,BOS,CHOCH])
+showInternalsInput              = input(        true,       '显示内部结构',  group = INTERNAL_GROUP, tooltip = showInternalsTooltip)
+showInternalBullInput           = input.string( ALL,        '看涨结构',        group = INTERNAL_GROUP, inline = 'ibull', options = [ALL,BOS,CHOCH])
 internalBullColorInput          = input(        GREEN,      '',                         group = INTERNAL_GROUP, inline = 'ibull')
-showInternalBearInput           = input.string( ALL,        'Bearish Structure' ,       group = INTERNAL_GROUP, inline = 'ibear', options = [ALL,BOS,CHOCH])
+showInternalBearInput           = input.string( ALL,        '看跌结构' ,       group = INTERNAL_GROUP, inline = 'ibear', options = [ALL,BOS,CHOCH])
 internalBearColorInput          = input(        RED,        '',                         group = INTERNAL_GROUP, inline = 'ibear')
-internalFilterConfluenceInput   = input(        false,      'Confluence Filter',        group = INTERNAL_GROUP, tooltip = internalFilterConfluenceTooltip)
-internalStructureSize           = input.string( TINY,       'Internal Label Size',      group = INTERNAL_GROUP, options = [TINY,SMALL,NORMAL])
+internalFilterConfluenceInput   = input(        false,      '融合过滤器',        group = INTERNAL_GROUP, tooltip = internalFilterConfluenceTooltip)
+internalStructureSize           = input.string( TINY,       '内部标签大小',      group = INTERNAL_GROUP, options = [TINY,SMALL,NORMAL])
 
-showStructureInput              = input(        true,       'Show Swing Structure',     group = SWING_GROUP,    tooltip = showStructureTooltip)
-showSwingBullInput              = input.string( ALL,        'Bullish Structure',        group = SWING_GROUP,    inline = 'bull',    options = [ALL,BOS,CHOCH])
+showStructureInput              = input(        true,       '显示摆动结构',     group = SWING_GROUP,    tooltip = showStructureTooltip)
+showSwingBullInput              = input.string( ALL,        '看涨结构',        group = SWING_GROUP,    inline = 'bull',    options = [ALL,BOS,CHOCH])
 swingBullColorInput             = input(        GREEN,      '',                         group = SWING_GROUP,    inline = 'bull')
-showSwingBearInput              = input.string( ALL,        'Bearish Structure',        group = SWING_GROUP,    inline = 'bear',    options = [ALL,BOS,CHOCH])
+showSwingBearInput              = input.string( ALL,        '看跌结构',        group = SWING_GROUP,    inline = 'bear',    options = [ALL,BOS,CHOCH])
 swingBearColorInput             = input(        RED,        '',                         group = SWING_GROUP,    inline = 'bear')
-swingStructureSize              = input.string( SMALL,      'Swing Label Size',         group = SWING_GROUP,    options = [TINY,SMALL,NORMAL])
-showSwingsInput                 = input(        false,      'Show Swings Points',       group = SWING_GROUP,    tooltip = showSwingsTooltip,inline = 'swings')
+swingStructureSize              = input.string( SMALL,      '摆动标签大小',         group = SWING_GROUP,    options = [TINY,SMALL,NORMAL])
+showSwingsInput                 = input(        false,      '显示摆动点',       group = SWING_GROUP,    tooltip = showSwingsTooltip,inline = 'swings')
 swingsLengthInput               = input.int(    50,         '',                         group = SWING_GROUP,    minval = 10,                inline = 'swings')
-showHighLowSwingsInput          = input(        true,       'Show Strong/Weak High/Low',group = SWING_GROUP,    tooltip = showHighLowSwingsTooltip)
+showHighLowSwingsInput          = input(        true,       '显示强/弱高/低点',group = SWING_GROUP,    tooltip = showHighLowSwingsTooltip)
 
-showInternalOrderBlocksInput    = input(        true,       'Internal Order Blocks' ,   group = BLOCKS_GROUP,   tooltip = showInternalOrderBlocksTooltip,   inline = 'iob')
+showInternalOrderBlocksInput    = input(        true,       '内部订单块' ,   group = BLOCKS_GROUP,   tooltip = showInternalOrderBlocksTooltip,   inline = 'iob')
 internalOrderBlocksSizeInput    = input.int(    5,          '',                         group = BLOCKS_GROUP,   minval = 1, maxval = 20,                    inline = 'iob')
-showSwingOrderBlocksInput       = input(        false,      'Swing Order Blocks',       group = BLOCKS_GROUP,   tooltip = showSwingOrderBlocksTooltip,      inline = 'ob')
+showSwingOrderBlocksInput       = input(        false,      '摆动订单块',       group = BLOCKS_GROUP,   tooltip = showSwingOrderBlocksTooltip,      inline = 'ob')
 swingOrderBlocksSizeInput       = input.int(    5,          '',                         group = BLOCKS_GROUP,   minval = 1, maxval = 20,                    inline = 'ob') 
-orderBlockFilterInput           = input.string( 'Atr',      'Order Block Filter',       group = BLOCKS_GROUP,   tooltip = orderBlockFilterTooltip,          options = [ATR, RANGE])
-orderBlockMitigationInput       = input.string( HIGHLOW,    'Order Block Mitigation',   group = BLOCKS_GROUP,   tooltip = orderBlockMitigationTooltip,      options = [CLOSE,HIGHLOW])
-internalBullishOrderBlockColor  = input.color(color.new(#3179f5, 80), 'Internal Bullish OB',    group = BLOCKS_GROUP)
-internalBearishOrderBlockColor  = input.color(color.new(#f77c80, 80), 'Internal Bearish OB',    group = BLOCKS_GROUP)
-swingBullishOrderBlockColor     = input.color(color.new(#1848cc, 80), 'Bullish OB',             group = BLOCKS_GROUP)
-swingBearishOrderBlockColor     = input.color(color.new(#b22833, 80), 'Bearish OB',             group = BLOCKS_GROUP)
+orderBlockFilterInput           = input.string( 'Atr',      '订单块过滤器',       group = BLOCKS_GROUP,   tooltip = orderBlockFilterTooltip,          options = [ATR, RANGE])
+orderBlockMitigationInput       = input.string( HIGHLOW,    '订单块缓解',   group = BLOCKS_GROUP,   tooltip = orderBlockMitigationTooltip,      options = [CLOSE,HIGHLOW])
+internalBullishOrderBlockColor  = input.color(color.new(#3179f5, 80), '内部看涨订单块',    group = BLOCKS_GROUP)
+internalBearishOrderBlockColor  = input.color(color.new(#f77c80, 80), '内部看跌订单块',    group = BLOCKS_GROUP)
+swingBullishOrderBlockColor     = input.color(color.new(#1848cc, 80), '看涨订单块',             group = BLOCKS_GROUP)
+swingBearishOrderBlockColor     = input.color(color.new(#b22833, 80), '看跌订单块',             group = BLOCKS_GROUP)
 
-showEqualHighsLowsInput         = input(        true,       'Equal High/Low',           group = EQUAL_GROUP,    tooltip = showEqualHighsLowsTooltip)
-equalHighsLowsLengthInput       = input.int(    3,          'Bars Confirmation',        group = EQUAL_GROUP,    tooltip = equalHighsLowsLengthTooltip,      minval = 1)
-equalHighsLowsThresholdInput    = input.float(  0.1,        'Threshold',                group = EQUAL_GROUP,    tooltip = equalHighsLowsThresholdTooltip,   minval = 0, maxval = 0.5, step = 0.1)
-equalHighsLowsSizeInput         = input.string( TINY,       'Label Size',               group = EQUAL_GROUP,    options = [TINY,SMALL,NORMAL])
+showEqualHighsLowsInput         = input(        true,       '等高/等低',           group = EQUAL_GROUP,    tooltip = showEqualHighsLowsTooltip)
+equalHighsLowsLengthInput       = input.int(    3,          'K线确认',        group = EQUAL_GROUP,    tooltip = equalHighsLowsLengthTooltip,      minval = 1)
+equalHighsLowsThresholdInput    = input.float(  0.1,        '阈值',                group = EQUAL_GROUP,    tooltip = equalHighsLowsThresholdTooltip,   minval = 0, maxval = 0.5, step = 0.1)
+equalHighsLowsSizeInput         = input.string( TINY,       '标签大小',               group = EQUAL_GROUP,    options = [TINY,SMALL,NORMAL])
 
-showFairValueGapsInput          = input(        false,      'Fair Value Gaps',          group = GAPS_GROUP,     tooltip = showFairValueGapsTooltip)
-fairValueGapsThresholdInput     = input(        true,       'Auto Threshold',           group = GAPS_GROUP,     tooltip = fairValueGapsThresholdTooltip)
-fairValueGapsTimeframeInput     = input.timeframe('',       'Timeframe',                group = GAPS_GROUP,     tooltip = fairValueGapsTimeframeTooltip)
-fairValueGapsBullColorInput     = input.color(color.new(#00ff68, 70), 'Bullish FVG' , group = GAPS_GROUP)
-fairValueGapsBearColorInput     = input.color(color.new(#ff0008, 70), 'Bearish FVG' , group = GAPS_GROUP)
-fairValueGapsExtendInput        = input.int(    1,          'Extend FVG',               group = GAPS_GROUP,     tooltip = fairValueGapsExtendTooltip,       minval = 0)
+showFairValueGapsInput          = input(        false,      '公允价值缺口',          group = GAPS_GROUP,     tooltip = showFairValueGapsTooltip)
+fairValueGapsThresholdInput     = input(        true,       '自动阈值',           group = GAPS_GROUP,     tooltip = fairValueGapsThresholdTooltip)
+fairValueGapsTimeframeInput     = input.timeframe('',       '时间框架',                group = GAPS_GROUP,     tooltip = fairValueGapsTimeframeTooltip)
+fairValueGapsBullColorInput     = input.color(color.new(#00ff68, 70), '看涨FVG' , group = GAPS_GROUP)
+fairValueGapsBearColorInput     = input.color(color.new(#ff0008, 70), '看跌FVG' , group = GAPS_GROUP)
+fairValueGapsExtendInput        = input.int(    1,          '扩展FVG',               group = GAPS_GROUP,     tooltip = fairValueGapsExtendTooltip,       minval = 0)
 
-showDailyLevelsInput            = input(        false,      'Daily',    group = LEVELS_GROUP,   inline = 'daily')
+showDailyLevelsInput            = input(        false,      '日线',    group = LEVELS_GROUP,   inline = 'daily')
 dailyLevelsStyleInput           = input.string( SOLID,      '',         group = LEVELS_GROUP,   inline = 'daily',   options = [SOLID,DASHED,DOTTED])
 dailyLevelsColorInput           = input(        BLUE,       '',         group = LEVELS_GROUP,   inline = 'daily')
-showWeeklyLevelsInput           = input(        false,      'Weekly',   group = LEVELS_GROUP,   inline = 'weekly')
+showWeeklyLevelsInput           = input(        false,      '周线',   group = LEVELS_GROUP,   inline = 'weekly')
 weeklyLevelsStyleInput          = input.string( SOLID,      '',         group = LEVELS_GROUP,   inline = 'weekly',  options = [SOLID,DASHED,DOTTED])
 weeklyLevelsColorInput          = input(        BLUE,       '',         group = LEVELS_GROUP,   inline = 'weekly')
-showMonthlyLevelsInput          = input(        false,      'Monthly',   group = LEVELS_GROUP,   inline = 'monthly')
+showMonthlyLevelsInput          = input(        false,      '月线',   group = LEVELS_GROUP,   inline = 'monthly')
 monthlyLevelsStyleInput         = input.string( SOLID,      '',         group = LEVELS_GROUP,   inline = 'monthly', options = [SOLID,DASHED,DOTTED])
 monthlyLevelsColorInput         = input(        BLUE,       '',         group = LEVELS_GROUP,   inline = 'monthly')
 
-showPremiumDiscountZonesInput   = input(        false,      'Premium/Discount Zones',   group = ZONES_GROUP , tooltip = showPremiumDiscountZonesTooltip)
-premiumZoneColorInput           = input.color(  RED,        'Premium Zone',             group = ZONES_GROUP)
-equilibriumZoneColorInput       = input.color(  GRAY,       'Equilibrium Zone',         group = ZONES_GROUP)
-discountZoneColorInput          = input.color(  GREEN,      'Discount Zone',            group = ZONES_GROUP)
+showPremiumDiscountZonesInput   = input(        false,      '溢价/折价区域',   group = ZONES_GROUP , tooltip = showPremiumDiscountZonesTooltip)
+premiumZoneColorInput           = input.color(  RED,        '溢价区域',             group = ZONES_GROUP)
+equilibriumZoneColorInput       = input.color(  GRAY,       '平衡区域',         group = ZONES_GROUP)
+discountZoneColorInput          = input.color(  GREEN,      '折价区域',            group = ZONES_GROUP)
 
 //---------------------------------------------------------------------------------------------------------------------}
-//DATA STRUCTURES & VARIABLES
+//数据结构和变量
 //---------------------------------------------------------------------------------------------------------------------{
-// @type                            UDT representing alerts as bool fields
-// @field internalBullishBOS        internal structure custom alert
-// @field internalBearishBOS        internal structure custom alert
-// @field internalBullishCHoCH      internal structure custom alert
-// @field internalBearishCHoCH      internal structure custom alert
-// @field swingBullishBOS           swing structure custom alert
-// @field swingBearishBOS           swing structure custom alert
-// @field swingBullishCHoCH         swing structure custom alert
-// @field swingBearishCHoCH         swing structure custom alert
-// @field internalBullishOrderBlock internal order block custom alert
-// @field internalBearishOrderBlock internal order block custom alert
-// @field swingBullishOrderBlock    swing order block custom alert
-// @field swingBearishOrderBlock    swing order block custom alert
-// @field equalHighs                equal high low custom alert
-// @field equalLows                 equal high low custom alert
-// @field bullishFairValueGap       fair value gap custom alert
-// @field bearishFairValueGap       fair value gap custom alert
+// @type                            警报UDT，以布尔字段表示
+// @field internalBullishBOS        内部结构自定义警报
+// @field internalBearishBOS        内部结构自定义警报
+// @field internalBullishCHoCH      内部结构自定义警报
+// @field internalBearishCHoCH      内部结构自定义警报
+// @field swingBullishBOS           摆动结构自定义警报
+// @field swingBearishBOS           摆动结构自定义警报
+// @field swingBullishCHoCH         摆动结构自定义警报
+// @field swingBearishCHoCH         摆动结构自定义警报
+// @field internalBullishOrderBlock 内部订单块自定义警报
+// @field internalBearishOrderBlock 内部订单块自定义警报
+// @field swingBullishOrderBlock    摆动订单块自定义警报
+// @field swingBearishOrderBlock    摆动订单块自定义警报
+// @field equalHighs                等高等低自定义警报
+// @field equalLows                 等高等低自定义警报
+// @field bullishFairValueGap       公允价值缺口自定义警报
+// @field bearishFairValueGap       公允价值缺口自定义警报
 type alerts
     bool internalBullishBOS         = false
     bool internalBearishBOS         = false
@@ -171,13 +171,13 @@ type alerts
     bool bullishFairValueGap        = false
     bool bearishFairValueGap        = false
 
-// @type                            UDT representing last swing extremes (top & bottom)
-// @field top                       last top swing price
-// @field bottom                    last bottom swing price
-// @field barTime                   last swing bar time
-// @field barIndex                  last swing bar index
-// @field lastTopTime               last top swing time
-// @field lastBottomTime            last bottom swing time
+// @type                            表示最后摆动极值（顶部和底部）的UDT
+// @field top                       最后顶部摆动价格
+// @field bottom                    最后底部摆动价格
+// @field barTime                   最后摆动K线时间
+// @field barIndex                  最后摆动K线索引
+// @field lastTopTime               最后顶部摆动时间
+// @field lastBottomTime            最后底部摆动时间
 type trailingExtremes
     float top
     float bottom
@@ -330,9 +330,9 @@ lows.push(low)
 times.push(time)
 
 //---------------------------------------------------------------------------------------------------------------------}
-//USER-DEFINED FUNCTIONS
+//用户定义函数
 //---------------------------------------------------------------------------------------------------------------------{
-// @function            Get the value of the current leg, it can be 0 (bearish) or 1 (bullish)
+// @function            获取当前腿的数值，可以是0（看跌）或1（看涨）
 // @returns             int
 leg(int size) =>
     var leg     = 0    
@@ -345,18 +345,18 @@ leg(int size) =>
         leg := BULLISH_LEG
     leg
 
-// @function            Identify whether the current value is the start of a new leg (swing)
-// @param leg           (int) Current leg value
+// @function            识别当前数值是否是新腿（摆动）的开始
+// @param leg           (int) 当前腿数值
 // @returns             bool
 startOfNewLeg(int leg)      => ta.change(leg) != 0
 
-// @function            Identify whether the current level is the start of a new bearish leg (swing)
-// @param leg           (int) Current leg value
+// @function            识别当前水平是否是新看跌腿（摆动）的开始
+// @param leg           (int) 当前腿数值
 // @returns             bool
 startOfBearishLeg(int leg)  => ta.change(leg) == -1
 
-// @function            Identify whether the current level is the start of a new bullish leg (swing)
-// @param leg           (int) Current leg value
+// @function            识别当前水平是否是新看涨腿（摆动）的开始
+// @param leg           (int) 当前腿数值
 // @returns             bool
 startOfBullishLeg(int leg)  => ta.change(leg) == +1
 
@@ -759,7 +759,7 @@ drawPremiumDiscountZones() =>
     drawZone(trailing.bottom, math.round(0.5*(trailing.barIndex + last_bar_index)), 0.95*trailing.bottom + 0.05*trailing.top, trailing.bottom, 'Discount', discountZoneColor, label.style_label_up)
 
 //---------------------------------------------------------------------------------------------------------------------}
-//MUTABLE VARIABLES & EXECUTION
+//可变变量和执行
 //---------------------------------------------------------------------------------------------------------------------{
 parsedOpen  = showTrendInput ? open : na
 candleColor = internalTrend.bias == BULLISH ? swingBullishColor : swingBearishColor
@@ -820,17 +820,17 @@ if barstate.islastconfirmedhistory or (barstate.isrealtime and newBar)
         drawLevels('M',timeframe.ismonthly,monthlyLevelsStyleInput,monthlyLevelsColorInput)
 
 //---------------------------------------------------------------------------------------------------------------------}
-//ALERTS
+//警报
 //---------------------------------------------------------------------------------------------------------------------{
-alertcondition(currentAlerts.internalBullishBOS,        'Internal Bullish BOS',         'Internal Bullish BOS formed')
-alertcondition(currentAlerts.internalBullishCHoCH,      'Internal Bullish CHoCH',       'Internal Bullish CHoCH formed')
-alertcondition(currentAlerts.internalBearishBOS,        'Internal Bearish BOS',         'Internal Bearish BOS formed')
-alertcondition(currentAlerts.internalBearishCHoCH,      'Internal Bearish CHoCH',       'Internal Bearish CHoCH formed')
+alertcondition(currentAlerts.internalBullishBOS,        '内部看涨BOS',         '内部看涨BOS形成')
+alertcondition(currentAlerts.internalBullishCHoCH,      '内部看涨CHoCH',       '内部看涨CHoCH形成')
+alertcondition(currentAlerts.internalBearishBOS,        '内部看跌BOS',         '内部看跌BOS形成')
+alertcondition(currentAlerts.internalBearishCHoCH,      '内部看跌CHoCH',       '内部看跌CHoCH形成')
 
-alertcondition(currentAlerts.swingBullishBOS,           'Bullish BOS',                  'Internal Bullish BOS formed')
-alertcondition(currentAlerts.swingBullishCHoCH,         'Bullish CHoCH',                'Internal Bullish CHoCH formed')
-alertcondition(currentAlerts.swingBearishBOS,           'Bearish BOS',                  'Bearish BOS formed')
-alertcondition(currentAlerts.swingBearishCHoCH,         'Bearish CHoCH',                'Bearish CHoCH formed')
+alertcondition(currentAlerts.swingBullishBOS,           '看涨BOS',                  '摆动看涨BOS形成')
+alertcondition(currentAlerts.swingBullishCHoCH,         '看涨CHoCH',                '摆动看涨CHoCH形成')
+alertcondition(currentAlerts.swingBearishBOS,           '看跌BOS',                  '看跌BOS形成')
+alertcondition(currentAlerts.swingBearishCHoCH,         '看跌CHoCH',                '看跌CHoCH形成')
 
 alertcondition(currentAlerts.internalBullishOrderBlock, 'Bullish Internal OB Breakout', 'Price broke bullish internal OB')
 alertcondition(currentAlerts.internalBearishOrderBlock, 'Bearish Internal OB Breakout', 'Price broke bearish internal OB')

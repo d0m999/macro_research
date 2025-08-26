@@ -68,3 +68,6 @@ user_data/data/
 config.json
 config_*.json
 .env
+
+# 说明文档和 rules
+*.md
