@@ -1,0 +1,362 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © d0m999
+//@version=6
+indicator("Adaptive Resonance with GARCH-Enhanced Dual Squeeze", overlay=false, shorttitle="mempAw | ARO-GARCH")
+import TradingView/ta/9
+
+// =================================================================================
+// Adaptive Resonance Oscillator 参数
+// =================================================================================
+aro_group = "Adaptive Resonance Oscillator"
+smooth = input.bool(title="Enable Smoothing", defval=true, group=aro_group)
+smoothlength = input.int(title="Smoothing Length", defval=12, minval=1, group=aro_group)
+medianLength = input.int(title="Frequency Detection Length", defval=100, minval=1, group=aro_group)
+
+// 背离设置参数
+plotBullish = input(title="Plot Bullish Divergences", defval=true, group=aro_group)
+plotBear = input(title="Plot Bearish Divergences", defval=true, group=aro_group)
+lbL = input(title="Divergence Pivot Detection Length", defval=20, group=aro_group, tooltip = "The larger this number, the less sensitive the divergence detecion is. A smaller number will detect smaller and/or shorter term divergences", display = display.data_window)
+lbR = 1
+
+// 精简自适应参数调整（防过拟合版）
+enable_regime_adaptive = input.bool(false, "Regime-Adaptive Period", group=aro_group, 
+                                   tooltip="根据波动率制度自动调整RSI周期：高波动率时缩短周期(+20%)，低波动率时延长周期(-15%)，基于理论固定比例避免过拟合")
+
+// =================================================================================
+// Dual Channel Squeeze 参数
+// =================================================================================
+squeeze_group = "Dual Channel Squeeze"
+bbLength = input.int(20, "BB Length", group=squeeze_group)
+bbMult = input.float(2.0, "BB Multiplier", group=squeeze_group)
+kcLength = input.int(20, "KC Length", group=squeeze_group)
+kcMult = input.float(1.5, "KC Multiplier", group=squeeze_group)
+useEmaForKC = input.bool(true, "Use EMA for KC Basis", group=squeeze_group)
+momentumLength = input.int(12, "Momentum Length", group=squeeze_group)
+
+// 自适应挤压长度设置
+enable_adaptive_squeeze = input.bool(false, "Adaptive Squeeze Lengths", group=squeeze_group, 
+                                    tooltip="根据市场主导周期自动调整BB和KC长度，与RSI周期保持同步。基于period与默认值的比例调整，限制在0.5-2.5倍范围内避免极端值")
+
+// =================================================================================
+// GARCH-like 波动率建模参数
+// =================================================================================
+volatility_group = "GARCH-like Volatility Modeling"
+// 启用GARCH建模的总开关，控制是否使用条件波动率模型
+enable_garch = input.bool(true, "Enable GARCH-like Modeling", group=volatility_group, tooltip="启用GARCH类波动率建模，考虑波动率聚集效应")
+// GARCH模型中的α参数，控制新冲击对条件波动率的影响权重，范围0.01-0.3
+garch_alpha = input.float(0.1, "GARCH Alpha (冲击权重)", minval=0.01, maxval=0.3, group=volatility_group, tooltip="控制新的价格冲击对条件波动率的影响程度，值越大对新冲击越敏感")
+// GARCH模型中的β参数，控制历史波动率的持续性，范围0.5-0.99
+garch_beta = input.float(0.85, "GARCH Beta (持续性权重)", minval=0.5, maxval=0.99, group=volatility_group, tooltip="控制历史波动率的持续性，值越大波动率聚集效应越强")
+// 波动率制度检测的敏感度参数，用于识别高低波动率制度
+regime_sensitivity = input.float(1.5, "Regime Sensitivity (制度敏感度)", minval=1.0, maxval=3.0, group=volatility_group, tooltip="波动率制度识别的敏感度，值越大越容易识别制度转换")
+// 自适应调整强度，控制GARCH波动率对挤压参数的影响程度
+adaptation_strength = input.float(0.5, "Adaptation Strength (自适应强度)", minval=0.1, maxval=1.0, group=volatility_group, tooltip="GARCH波动率对挤压检测参数的调整强度")
+
+// =================================================================================
+// 颜色设置参数
+// =================================================================================
+color_group = "Colors"
+white = input.color(defval = color.white, title = "Bullish Color (上涨/看涨颜色)", group = color_group)
+blue = input.color(defval = color.blue, title = "Bearish Color (下跌/看跌颜色)", group = color_group)
+bullishSqueezeColor = input.color(color.new(color.white, 85), "Bullish Squeeze Background (看涨挤压背景)", group=color_group)
+bearishSqueezeColor = input.color(color.new(color.blue, 85), "Bearish Squeeze Background (看跌挤压背景)", group=color_group)
+// 注释：颜色配置 - 白色代表上涨/看涨信号，蓝色代表下跌/看跌信号
+
+// =================================================================================
+// Adaptive Resonance Oscillator 核心计算
+// =================================================================================
+
+// 自定义RSI计算函数
+pine_rsi(x, y) => 
+    u = math.max(x - x[1], 0)
+    d = math.max(x[1] - x, 0)
+    alpha = 1 / y
+    sum_u = 0.0
+    sum_d = 0.0
+    sum_u := alpha * u + (1 - alpha) * nz(sum_u[1])
+    sum_d := alpha * d + (1 - alpha) * nz(sum_d[1])
+    rs = sum_u / sum_d
+    res = 100 - 100 / (1 + rs)
+    res
+
+// 反正切函数实现
+f_atan2(y, x) =>
+    ret = x > 0 ? math.atan(y / x) :
+          x < 0 and y >= 0 ? math.atan(y / x) + math.pi :
+          x < 0 and y < 0  ? math.atan(y / x) - math.pi :
+          y > 0 ? math.pi / 2 : y < 0 ? -math.pi / 2 : 0.0
+    ret
+
+// 价格数据准备和处理
+price = close
+priceSmooth = (price + price[1] + price[2] + price[3]) / 4
+
+// 去趋势处理
+detrender = (0.0962 * priceSmooth 
+             + 0.5769 * priceSmooth[2] 
+             - 0.5769 * priceSmooth[4] 
+             - 0.0962 * priceSmooth[6])
+
+// 希尔伯特变换
+I1 = detrender[3]
+Q1 = (0.0962 * detrender 
+      + 0.5769 * detrender[2] 
+      - 0.5769 * detrender[4] 
+      - 0.0962 * detrender[6])
+    
+jI = I1[3]
+jQ = Q1[3]
+
+I2 = I1 - jQ
+Q2 = Q1 + jI
+
+Re = I2 * nz(I2[1]) + Q2 * nz(Q2[1])
+Im = I2 * nz(Q2[1]) - Q2 * nz(I2[1])
+
+phaseAngle = math.todegrees(f_atan2(Im, Re))
+phaseAngle := phaseAngle < 0 ? phaseAngle + 360 : phaseAngle
+
+minPhase = 1.0
+phaseAngleClamped = math.max(phaseAngle, minPhase)
+
+hilbertPeriodRaw = 360 / phaseAngleClamped
+market_frequency = ta.median(hilbertPeriodRaw, medianLength)
+
+// 基于波动率制度的简单二元调整（防过拟合设计）
+// 注释：使用固定调整比例，基于金融理论而非数据拟合，最大程度避免过拟合风险
+regime_adjusted_divisor = if enable_regime_adaptive
+    // 高波动率制度：除数增加20%，使RSI周期更短，更敏感地响应快速价格变化
+    // 低波动率制度：除数减少15%，使RSI周期更长，更好地过滤噪声和假信号
+    // 调整幅度基于技术分析理论，限制在合理范围内避免过度优化
+    high_vol_regime ? 2.4 : low_vol_regime ? 1.7 : 2.0
+else
+    2.0  // 默认除数，基于Nyquist定理
+
+period = int(market_frequency / regime_adjusted_divisor)
+
+// 计算RSI
+base_rsi = pine_rsi(close, period)
+rsi_v = smooth ? ta.hma(base_rsi, smoothlength) : base_rsi
+
+// =================================================================================
+// GARCH-like 波动率建模核心计算
+// =================================================================================
+
+// 计算对数收益率，这是GARCH模型的标准输入
+// 使用对数收益率而非简单收益率，因为对数收益率具有更好的统计性质
+returns = math.log(close / close[1])
+
+// 计算平方收益率，代表当期的价格冲击强度
+// 在GARCH模型中，平方收益率被用作波动率的代理变量
+squared_returns = returns * returns
+
+// 初始化条件波动率变量，使用var关键字确保变量在K线间保持状态
+// 条件波动率是GARCH模型的核心输出，代表当前时点的预期波动率
+var float conditional_vol = na
+
+// GARCH(1,1)模型的核心计算公式：σ²ₜ = α·ε²ₜ₋₁ + β·σ²ₜ₋₁
+// 如果启用GARCH建模，则使用GARCH公式；否则使用简单的平方收益率
+if enable_garch
+    // 第一次计算时，使用当前平方收益率作为初始值
+    // 后续计算使用GARCH公式：α×新冲击 + β×历史波动率
+    conditional_vol := na(conditional_vol[1]) ? squared_returns : 
+                       garch_alpha * squared_returns + garch_beta * conditional_vol[1]
+else
+    // 如果未启用GARCH，直接使用平方收益率作为波动率代理
+    conditional_vol := squared_returns
+
+// 计算波动率制度识别指标
+// 短期波动率移动平均，捕捉近期波动率变化
+vol_ma_short = ta.sma(conditional_vol, 10)
+// 长期波动率移动平均，代表波动率的基准水平
+vol_ma_long = ta.sma(conditional_vol, 50)
+// 波动率比率，用于识别当前处于高波动率还是低波动率制度
+vol_ratio = vol_ma_short / vol_ma_long
+
+// 波动率制度分类
+// 高波动率制度：短期波动率显著高于长期水平
+high_vol_regime = vol_ratio > regime_sensitivity
+// 低波动率制度：短期波动率显著低于长期水平  
+low_vol_regime = vol_ratio < (2 - regime_sensitivity)
+// 过渡制度：波动率处于正常范围内
+transition_regime = not high_vol_regime and not low_vol_regime
+
+// 计算基准波动率，用于标准化条件波动率
+// 使用20期标准差作为基准，这是一个常用的波动率测量窗口
+base_vol = ta.stdev(returns, 20)
+// 波动率调整因子，衡量当前条件波动率相对于基准波动率的偏离程度
+vol_adjustment = conditional_vol / base_vol
+
+// 计算自适应乘数，根据GARCH波动率动态调整布林带和肯特纳通道的宽度
+// 布林带自适应乘数：在高波动率时收窄通道，在低波动率时扩宽通道
+adaptive_bb_mult = bbMult * (1 + vol_adjustment * adaptation_strength)
+// 肯特纳通道自适应乘数：调整幅度相对较小，保持通道的稳定性
+adaptive_kc_mult = kcMult * (1 + vol_adjustment * adaptation_strength * 0.6)
+
+// =================================================================================
+// 自适应挤压长度计算
+// =================================================================================
+
+// 计算自适应挤压长度的核心函数
+// 基于period与默认值20的比例进行调整，确保与RSI周期同步
+adaptive_squeeze_length() =>
+    if enable_adaptive_squeeze
+        // 计算period相对于默认值20的比例
+        base_ratio = period / 20.0
+        // 限制调整范围在0.5-2.5倍之间，避免极端值
+        // 0.5倍 = 最小10期，2.5倍 = 最大50期，保持在合理的技术分析范围内
+        clamped_ratio = math.max(math.min(base_ratio, 2.5), 0.5)
+        // 四舍五入到整数，确保长度参数的有效性
+        math.round(20 * clamped_ratio)
+    else
+        // 未启用自适应时，使用传统固定值20
+        20
+
+// 计算最终使用的自适应长度
+adaptive_bb_length = enable_adaptive_squeeze ? adaptive_squeeze_length() : bbLength
+adaptive_kc_length = enable_adaptive_squeeze ? adaptive_squeeze_length() : kcLength
+
+// =================================================================================
+// Dual Channel Squeeze 核心计算（GARCH增强版 + 自适应长度）
+// =================================================================================
+
+// 布林带计算（使用自适应长度和自适应乘数）
+bbBasis = ta.sma(close, adaptive_bb_length)
+// 使用GARCH调整后的乘数和自适应长度计算布林带偏差
+bbDev = adaptive_bb_mult * ta.stdev(close, adaptive_bb_length)
+bbUpper = bbBasis + bbDev
+bbLower = bbBasis - bbDev
+
+// 肯特纳通道计算（使用自适应长度和自适应乘数）
+kcBasis = useEmaForKC ? ta.ema(close, adaptive_kc_length) : ta.sma(close, adaptive_kc_length)
+// 使用GARCH调整后的乘数和自适应长度计算肯特纳通道偏差
+kcDev = adaptive_kc_mult * ta.atr(adaptive_kc_length)
+kcUpper = kcBasis + kcDev
+kcLower = kcBasis - kcDev
+
+// GARCH增强的挤压检测逻辑
+// 根据波动率制度调整挤压识别的敏感度
+enhanced_squeeze = if enable_garch
+    switch
+        // 高波动率制度：提高挤压识别门槛，减少假信号
+        high_vol_regime => (bbUpper < kcUpper * 0.9) and (bbLower > kcLower * 1.1)
+        // 低波动率制度：降低挤压识别门槛，增加信号敏感度
+        low_vol_regime => (bbUpper < kcUpper * 1.1) and (bbLower > kcLower * 0.9)
+        // 过渡制度：使用标准挤压检测逻辑
+        => (bbUpper < kcUpper) and (bbLower > kcLower)
+else
+    // 如果未启用GARCH，使用传统挤压检测
+    (bbUpper < kcUpper) and (bbLower > kcLower)
+
+// 使用增强的挤压检测替代原始逻辑
+isSqueeze = enhanced_squeeze
+squeezeFired = isSqueeze[1] and not isSqueeze
+
+// 计算动量
+momentum = ta.linreg(close, momentumLength, 0) - ta.linreg(close, momentumLength, 1)
+
+// 挤压强度量化（基于波动率制度）
+// 在不同波动率制度下，挤压信号的可信度不同
+squeeze_strength = high_vol_regime ? 0.7 : low_vol_regime ? 1.3 : 1.0
+
+// =================================================================================
+// 绘图 - Adaptive Resonance Oscillator
+// =================================================================================
+
+// 绘制超买超卖区域的RSI值
+plot(rsi_v > 80 or rsi_v < 20 ? rsi_v : na, color = smooth ? (rsi_v > rsi_v[1] ? white : blue) : color.white, linewidth = 4, style=plot.style_steplinebr)
+// 注释：当RSI在超买(>80)或超卖(<20)区域时，上涨显示白色，下跌显示蓝色
+
+// 绘制主RSI线
+rsi_plot = plot(rsi_v, color = smooth ? color.new((rsi_v > rsi_v[1] ? white : blue), 50) : color.white, linewidth = 1, style=plot.style_stepline)
+rsi_plot1 = plot(rsi_v[1], color = smooth ? color.new((rsi_v > rsi_v[1] ? white : blue), 100) : color.new(color.white, 100), linewidth = 1, style=plot.style_stepline)
+// 注释：主RSI线，上涨趋势显示白色，下跌趋势显示蓝色
+
+// 绘制上下阈值带
+upper_band = plot(80, "Upper Band", color.new(color.gray, 50), 2)
+lower_band = plot(20, "Lower Band", color.new(color.gray, 50), 2)
+
+// 设置颜色
+col = rsi_v > 50 ? white : blue  // 修改：RSI>50时用白色(看涨)，RSI<50时用蓝色(看跌)
+
+// 绘制信号标记
+plotchar(ta.crossover(rsi_v, rsi_v[1]) and (rsi_v[1] < 20) ? rsi_v - 7 : na, char='▲', location=location.absolute, color=white, textcolor=color.black, title="Strong Bullish", display= smooth ? display.all : display.none, size=size.tiny)
+// 注释：强看涨信号，从超卖区域向上突破时显示白色三角形
+plotchar(ta.crossunder(rsi_v, rsi_v[1]) and (rsi_v[1] > 80) ? rsi_v + 7 : na, char='▼', location=location.absolute, color=blue, textcolor=color.white, title="Strong Bearish", display= smooth ? display.all : display.none, size=size.tiny)
+// 注释：强看跌信号，从超买区域向下突破时显示蓝色倒三角形
+
+// =================================================================================
+// 背离检测
+// =================================================================================
+
+// 颜色定义
+bullColor = white  // 修改：看涨背离用白色
+bearColor = blue   // 修改：看跌背离用蓝色
+hiddenBullColor = color.new(white, 80)  // 修改：隐藏看涨背离用半透明白色
+hiddenBearColor = color.new(blue, 80)   // 修改：隐藏看跌背离用半透明蓝色
+textColor = color.white
+noneColor = color.new(color.white, 100)
+
+// 检测RSI的低点和高点
+plFound = na(ta.pivotlow(rsi_v, lbL, lbR)) ? false : true
+phFound = na(ta.pivothigh(rsi_v, lbL, lbR)) ? false : true
+
+// 辅助函数
+_inRange(cond) =>
+	bars = ta.barssince(cond == true)
+	-80 <= bars and bars <= 80
+
+// 检测常规看涨背离
+oscHL = rsi_v[lbR] > ta.valuewhen(plFound, rsi_v[lbR], 1) and _inRange(plFound[1])
+priceLL = low[lbR] < ta.valuewhen(plFound, low[lbR], 1)
+bullCond = plotBullish and priceLL and oscHL and plFound
+plot(plFound  ? rsi_v[lbR] : na, offset=-lbR, title="Regular Bullish", linewidth=2, color=(bullCond ? bullColor : noneColor))
+// 注释：常规看涨背离检测，价格创新低但RSI未创新低时显示白色线条
+
+// 检测常规看跌背离
+oscLH = rsi_v[lbR] < ta.valuewhen(phFound, rsi_v[lbR], 1) and _inRange(phFound[1])
+priceHH = high[lbR] > ta.valuewhen(phFound, high[lbR], 1)
+bearCond = plotBear and priceHH and oscLH and phFound
+plot(phFound  ? rsi_v[lbR] : na, offset=-lbR, title="Regular Bearish", linewidth=2, color=(bearCond ? bearColor : noneColor))
+// 注释：常规看跌背离检测，价格创新高但RSI未创新高时显示蓝色线条
+
+// =================================================================================
+// GARCH增强的Dual Channel Squeeze 背景色显示
+// =================================================================================
+
+// 创建背景色边界线（隐藏），限制背景色在RSI上下阈值线范围显示
+squeeze_bg_top = plot(80, color=color.new(color.white, 100), display=display.none, title="Squeeze BG Top")
+squeeze_bg_bottom = plot(20, color=color.new(color.white, 100), display=display.none, title="Squeeze BG Bottom")
+
+// GARCH增强的背景色逻辑
+// 根据波动率制度调整背景色的透明度，反映信号强度
+garch_bullish_color = high_vol_regime ? color.new(bullishSqueezeColor, 90) : 
+                      low_vol_regime ? color.new(bullishSqueezeColor, 70) : bullishSqueezeColor
+garch_bearish_color = high_vol_regime ? color.new(bearishSqueezeColor, 90) : 
+                      low_vol_regime ? color.new(bearishSqueezeColor, 70) : bearishSqueezeColor
+
+// 根据动量方向、挤压状态和波动率制度在RSI阈值线范围内填充背景色
+fill(squeeze_bg_bottom, squeeze_bg_top, 
+     color = isSqueeze ? (momentum >= 0 ? garch_bullish_color : garch_bearish_color) : na,
+     title="GARCH Enhanced Squeeze Background")
+// 注释：GARCH增强的挤压状态背景色，考虑波动率制度的信号强度调整
+
+// =================================================================================
+// 警报（GARCH增强版）
+// =================================================================================
+
+// 背离警报（考虑波动率制度的信号强度）
+alertcondition(bullCond or bearCond, title="Divergence", message="Divergence Detected")
+
+// 强烈信号警报
+alertcondition((ta.crossover(rsi_v, rsi_v[1]) and (rsi_v[1] < 20)) or (ta.crossunder(rsi_v, rsi_v[1]) and (rsi_v[1] > 80)), title="Strong Signal", message="Strong Bullish or Bearish Signal Detected")
+
+// GARCH增强的挤压警报（包含自适应信息）
+if squeezeFired
+    string dir = momentum > 0 ? "Upward" : "Downward"
+    string regime = high_vol_regime ? "High-Vol" : low_vol_regime ? "Low-Vol" : "Normal"
+    string strength = str.tostring(squeeze_strength, "#.##")
+    string adaptive_period_info = enable_regime_adaptive ? " (RSI Period: " + str.tostring(regime_adjusted_divisor, "#.#") + ")" : ""
+    string adaptive_squeeze_info = enable_adaptive_squeeze ? " (Squeeze Length: " + str.tostring(adaptive_squeeze_length(), "#") + ")" : ""
+    string alertMessage = "GARCH-Enhanced Squeeze fired: " + dir + " momentum in " + regime + " regime (strength: " + strength + ")" + adaptive_period_info + adaptive_squeeze_info + " on " + syminfo.ticker
+    alert(alertMessage, alert.freq_once_per_bar)

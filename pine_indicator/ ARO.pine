@@ -1,7 +1,7 @@
 // This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
 // © d0m999
 //@version=6
-indicator("Integrated Adaptive Resonance with Dual Squeeze", overlay=false, shorttitle="[d0m999]Adaptive Resonance + Squeeze")
+indicator("Integrated Adaptive Resonance with Dual Squeeze", overlay=false, shorttitle="mempAw | Adaptive Oscillator")
 import TradingView/ta/9
 
 // =================================================================================
@@ -18,9 +18,7 @@ plotBear = input(title="Plot Bearish Divergences", defval=true, group=aro_group)
 lbL = input(title="Divergence Pivot Detection Length", defval=20, group=aro_group, tooltip = "The larger this number, the less sensitive the divergence detecion is. A smaller number will detect smaller and/or shorter term divergences", display = display.data_window)
 lbR = 1
 
-// 计算设置参数
-calc_group = "Calculation Settings"
-useVolume = input.bool(title="Use Volume Adjustment", defval=false, group=calc_group, tooltip="如果启用，RSI的计算将考虑成交量，使其对高成交量的价格变动更加敏感。")
+
 
 // =================================================================================
 // Dual Channel Squeeze 参数
@@ -60,20 +58,7 @@ pine_rsi(x, y) =>
     res = 100 - 100 / (1 + rs)
     res
 
-// 成交量加权RSI计算函数
-pine_rsi_volume_adjusted(x, y) =>
-    u = math.max(x - x[1], 0)
-    d = math.max(x[1] - x, 0)
-    u_vol = u * volume
-    d_vol = d * volume
-    alpha = 1 / y
-    sum_u_vol = 0.0
-    sum_d_vol = 0.0
-    sum_u_vol := alpha * u_vol + (1 - alpha) * nz(sum_u_vol[1])
-    sum_d_vol := alpha * d_vol + (1 - alpha) * nz(sum_d_vol[1])
-    rs_vol = sum_u_vol / sum_d_vol
-    res = 100 - 100 / (1 + rs_vol)
-    res
+
 
 // 反正切函数实现
 f_atan2(y, x) =>
@@ -120,7 +105,7 @@ market_frequency = ta.median(hilbertPeriodRaw, medianLength)
 period = int(market_frequency / 2)
 
 // 计算RSI
-base_rsi = useVolume ? pine_rsi_volume_adjusted(close, period) : pine_rsi(close, period)
+base_rsi = pine_rsi(close, period)
 rsi_v = smooth ? ta.hma(base_rsi, smoothlength) : base_rsi
 
 // =================================================================================
@@ -227,13 +212,9 @@ fill(squeeze_bg_bottom, squeeze_bg_top,
 // =================================================================================
 
 // 背离警报
-alertcondition(bullCond, title="Bullish Divergence", message="Bullish Divergence Detected")
-alertcondition(bearCond, title="Bearish Divergence", message="Bearish Divergence Detected")
 alertcondition(bullCond or bearCond, title="Divergence", message="Divergence Detected")
 
 // 强烈信号警报
-alertcondition(ta.crossover(rsi_v, rsi_v[1]) and (rsi_v[1] < 20), title="Strong Bullish")
-alertcondition(ta.crossunder(rsi_v, rsi_v[1]) and (rsi_v[1] > 80), title="Strong Bearish")
 alertcondition((ta.crossover(rsi_v, rsi_v[1]) and (rsi_v[1] < 20)) or (ta.crossunder(rsi_v, rsi_v[1]) and (rsi_v[1] > 80)), title="Strong Signal", message="Strong Bullish or Bearish Signal Detected")
 
 // 挤压警报
