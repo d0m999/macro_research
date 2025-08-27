@@ -1,7 +1,7 @@
 // This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
 // © d0m999
 //@version=6
-indicator("Integrated Adaptive Resonance with Dual Squeeze", overlay=false, shorttitle="mempAw | Adaptive Oscillator")
+indicator("Adaptive RSI-vol+", overlay=false, shorttitle="mempAw | Adaptive RSI")
 import TradingView/ta/9
 
 // =================================================================================
@@ -9,7 +9,7 @@ import TradingView/ta/9
 // =================================================================================
 aro_group = "Adaptive Resonance Oscillator"
 smooth = input.bool(title="Enable Smoothing", defval=true, group=aro_group)
-smoothlength = input.int(title="Smoothing Length", defval=12, minval=1, group=aro_group)
+smoothlength = input.int(title="Smoothing Length", defval=21, minval=1, group=aro_group)
 medianLength = input.int(title="Frequency Detection Length", defval=100, minval=1, group=aro_group)
 
 // 背离设置参数
@@ -27,9 +27,8 @@ squeeze_group = "Dual Channel Squeeze"
 bbLength = input.int(20, "BB Length", group=squeeze_group)
 bbMult = input.float(2.0, "BB Multiplier", group=squeeze_group)
 kcLength = input.int(20, "KC Length", group=squeeze_group)
-kcMult = input.float(1.5, "KC Multiplier", group=squeeze_group)
+kcMult = input.float(1.2, "KC Multiplier", group=squeeze_group)
 useEmaForKC = input.bool(true, "Use EMA for KC Basis", group=squeeze_group)
-momentumLength = input.int(12, "Momentum Length", group=squeeze_group)
 
 // =================================================================================
 // 颜色设置参数
@@ -37,9 +36,7 @@ momentumLength = input.int(12, "Momentum Length", group=squeeze_group)
 color_group = "Colors"
 white = input.color(defval = color.white, title = "Bullish Color (上涨/看涨颜色)", group = color_group)
 blue = input.color(defval = color.blue, title = "Bearish Color (下跌/看跌颜色)", group = color_group)
-bullishSqueezeColor = input.color(color.new(color.white, 85), "Bullish Squeeze Background (看涨挤压背景)", group=color_group)
-bearishSqueezeColor = input.color(color.new(color.blue, 85), "Bearish Squeeze Background (看跌挤压背景)", group=color_group)
-// 注释：颜色配置 - 白色代表上涨/看涨信号，蓝色代表下跌/看跌信号
+bullishSqueezeColor = input.color(color.new(color.white, 50), "Squeeze Background (挤压背景)", group=color_group)
 
 // =================================================================================
 // Adaptive Resonance Oscillator 核心计算
@@ -57,7 +54,6 @@ pine_rsi(x, y) =>
     rs = sum_u / sum_d
     res = 100 - 100 / (1 + rs)
     res
-
 
 
 // 反正切函数实现
@@ -128,9 +124,6 @@ kcLower = kcBasis - kcDev
 isSqueeze = (bbUpper < kcUpper) and (bbLower > kcLower)
 squeezeFired = isSqueeze[1] and not isSqueeze
 
-// 计算动量
-momentum = ta.linreg(close, momentumLength, 0) - ta.linreg(close, momentumLength, 1)
-
 // =================================================================================
 // 绘图 - Adaptive Resonance Oscillator
 // =================================================================================
@@ -142,14 +135,12 @@ plot(rsi_v > 80 or rsi_v < 20 ? rsi_v : na, color = smooth ? (rsi_v > rsi_v[1] ?
 // 绘制主RSI线
 rsi_plot = plot(rsi_v, color = smooth ? color.new((rsi_v > rsi_v[1] ? white : blue), 50) : color.white, linewidth = 1, style=plot.style_stepline)
 rsi_plot1 = plot(rsi_v[1], color = smooth ? color.new((rsi_v > rsi_v[1] ? white : blue), 100) : color.new(color.white, 100), linewidth = 1, style=plot.style_stepline)
-// 注释：主RSI线，上涨趋势显示白色，下跌趋势显示蓝色
 
 // 绘制上下阈值带
 upper_band = plot(80, "Upper Band", color.new(color.gray, 50), 2)
 lower_band = plot(20, "Lower Band", color.new(color.gray, 50), 2)
 
-// 设置颜色
-col = rsi_v > 50 ? white : blue  // 修改：RSI>50时用白色(看涨)，RSI<50时用蓝色(看跌)
+
 
 // 绘制信号标记
 plotchar(ta.crossover(rsi_v, rsi_v[1]) and (rsi_v[1] < 20) ? rsi_v - 7 : na, char='▲', location=location.absolute, color=white, textcolor=color.black, title="Strong Bullish", display= smooth ? display.all : display.none, size=size.tiny)
@@ -164,9 +155,6 @@ plotchar(ta.crossunder(rsi_v, rsi_v[1]) and (rsi_v[1] > 80) ? rsi_v + 7 : na, ch
 // 颜色定义
 bullColor = white  // 修改：看涨背离用白色
 bearColor = blue   // 修改：看跌背离用蓝色
-hiddenBullColor = color.new(white, 80)  // 修改：隐藏看涨背离用半透明白色
-hiddenBearColor = color.new(blue, 80)   // 修改：隐藏看跌背离用半透明蓝色
-textColor = color.white
 noneColor = color.new(color.white, 100)
 
 // 检测RSI的低点和高点
@@ -200,12 +188,11 @@ plot(phFound  ? rsi_v[lbR] : na, offset=-lbR, title="Regular Bearish", linewidth
 squeeze_bg_top = plot(80, color=color.new(color.white, 100), display=display.none, title="Squeeze BG Top")
 squeeze_bg_bottom = plot(20, color=color.new(color.white, 100), display=display.none, title="Squeeze BG Bottom")
 
-// 根据动量方向和挤压状态在RSI阈值线范围内填充背景色
-// 修改：多头时背景色为白色，空头时背景色为蓝色，在20-80范围内显示
+// 在挤压状态时在RSI阈值线范围内填充白色背景色
 fill(squeeze_bg_bottom, squeeze_bg_top, 
-     color = isSqueeze ? (momentum >= 0 ? bullishSqueezeColor : bearishSqueezeColor) : na,
+     color = isSqueeze ? bullishSqueezeColor : na,
      title="Squeeze Background")
-// 注释：挤压状态背景色，正动量时显示白色背景(看涨)，负动量时显示蓝色背景(看跌)，范围限制在RSI上下阈值线之间（20-80）
+// 注释：挤压状态背景色，显示白色背景，范围限制在RSI上下阈值线之间（20-80）
 
 // =================================================================================
 // 警报
@@ -219,6 +206,5 @@ alertcondition((ta.crossover(rsi_v, rsi_v[1]) and (rsi_v[1] < 20)) or (ta.crossu
 
 // 挤压警报
 if squeezeFired
-    string dir = momentum > 0 ? "Upward" : "Downward"
-    string alertMessage = "Dual-Channel Squeeze has fired. Momentum is " + dir + " on " + syminfo.ticker + "."
+    string alertMessage = "Dual-Channel Squeeze has fired on " + syminfo.ticker + "."
     alert(alertMessage, alert.freq_once_per_bar)

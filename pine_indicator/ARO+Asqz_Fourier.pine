@@ -1,0 +1,286 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © d0m999
+//@version=6
+indicator("Integrated Adaptive Resonance with Fourier Squeeze", overlay=false, shorttitle="mempAw | Adaptive Oscillator (Fourier)")
+import TradingView/ta/9
+
+// =================================================================================
+// Adaptive Resonance Oscillator 参数
+// =================================================================================
+aro_group = "Adaptive Resonance Oscillator"
+smooth = input.bool(title="Enable Smoothing", defval=true, group=aro_group)
+smoothlength = input.int(title="Smoothing Length", defval=12, minval=1, group=aro_group)
+medianLength = input.int(title="Frequency Detection Length", defval=100, minval=1, group=aro_group)
+
+// 背离设置参数
+plotBullish = input(title="Plot Bullish Divergences", defval=true, group=aro_group)
+plotBear = input(title="Plot Bearish Divergences", defval=true, group=aro_group)
+lbL = input(title="Divergence Pivot Detection Length", defval=20, group=aro_group, tooltip = "The larger this number, the less sensitive the divergence detecion is. A smaller number will detect smaller and/or shorter term divergences", display = display.data_window)
+lbR = 1
+
+// =================================================================================
+// Fourier Domain Squeeze 参数
+// =================================================================================
+fourier_group = "Fourier Domain Squeeze"
+fft_length = input.int(32, "Analysis Window Length", minval=16, maxval=64, group=fourier_group, 
+                       tooltip="傅里叶分析的窗口长度，越大越平滑但延迟越高")
+num_harmonics = input.int(8, "Number of Harmonics", minval=4, maxval=16, group=fourier_group,
+                          tooltip="分析的谐波数量，影响频域分辨率")
+high_freq_threshold = input.float(0.25, "High Frequency Threshold", minval=0.1, maxval=0.5, step=0.05, group=fourier_group,
+                                  tooltip="高频能量占比阈值，低于此值触发挤压信号")
+low_freq_threshold = input.float(0.45, "Low Frequency Threshold", minval=0.3, maxval=0.7, step=0.05, group=fourier_group,
+                                 tooltip="低频能量占比阈值，高于此值触发挤压信号")
+enable_adaptive_fourier = input.bool(false, "Adaptive Fourier Parameters", group=fourier_group,
+                                     tooltip="根据市场主导周期自动调整傅里叶分析参数")
+show_fourier_debug = input.bool(false, "Show Fourier Debug Table", group=fourier_group,
+                                tooltip="显示频域分析的调试信息")
+
+// =================================================================================
+// 颜色设置参数
+// =================================================================================
+color_group = "Colors"
+white = input.color(defval = color.white, title = "Bullish Color (上涨/看涨颜色)", group = color_group)
+blue = input.color(defval = color.blue, title = "Bearish Color (下跌/看跌颜色)", group = color_group)
+squeezeColor = input.color(color.new(color.orange, 85), "Fourier Squeeze Background (傅里叶挤压背景)", group=color_group)
+
+// =================================================================================
+// Adaptive Resonance Oscillator 核心计算 (保持不变)
+// =================================================================================
+
+// 自定义RSI计算函数
+pine_rsi(x, y) => 
+    u = math.max(x - x[1], 0)
+    d = math.max(x[1] - x, 0)
+    alpha = 1 / y
+    sum_u = 0.0
+    sum_d = 0.0
+    sum_u := alpha * u + (1 - alpha) * nz(sum_u[1])
+    sum_d := alpha * d + (1 - alpha) * nz(sum_d[1])
+    rs = sum_u / sum_d
+    res = 100 - 100 / (1 + rs)
+    res
+
+// 反正切函数实现
+f_atan2(y, x) =>
+    ret = x > 0 ? math.atan(y / x) :
+          x < 0 and y >= 0 ? math.atan(y / x) + math.pi :
+          x < 0 and y < 0  ? math.atan(y / x) - math.pi :
+          y > 0 ? math.pi / 2 : y < 0 ? -math.pi / 2 : 0.0
+    ret
+
+// 价格数据准备和处理
+price = close
+priceSmooth = (price + price[1] + price[2] + price[3]) / 4
+
+// 去趋势处理
+detrender = (0.0962 * priceSmooth 
+             + 0.5769 * priceSmooth[2] 
+             - 0.5769 * priceSmooth[4] 
+             - 0.0962 * priceSmooth[6])
+
+// 希尔伯特变换
+I1 = detrender[3]
+Q1 = (0.0962 * detrender 
+      + 0.5769 * detrender[2] 
+      - 0.5769 * detrender[4] 
+      - 0.0962 * detrender[6])
+    
+jI = I1[3]
+jQ = Q1[3]
+
+I2 = I1 - jQ
+Q2 = Q1 + jI
+
+Re = I2 * nz(I2[1]) + Q2 * nz(Q2[1])
+Im = I2 * nz(Q2[1]) - Q2 * nz(I2[1])
+
+phaseAngle = math.todegrees(f_atan2(Im, Re))
+phaseAngle := phaseAngle < 0 ? phaseAngle + 360 : phaseAngle
+
+minPhase = 1.0
+phaseAngleClamped = math.max(phaseAngle, minPhase)
+
+hilbertPeriodRaw = 360 / phaseAngleClamped
+market_frequency = ta.median(hilbertPeriodRaw, medianLength)
+period = int(market_frequency / 2)
+
+// 计算RSI
+base_rsi = pine_rsi(close, period)
+rsi_v = smooth ? ta.hma(base_rsi, smoothlength) : base_rsi
+
+// =================================================================================
+// Fourier Domain Squeeze 核心计算
+// =================================================================================
+
+// 自适应参数调整
+adaptive_fft_length = enable_adaptive_fourier ? math.max(16, math.min(64, period)) : fft_length
+adaptive_harmonics = enable_adaptive_fourier ? math.max(4, math.min(16, period / 4)) : num_harmonics
+
+// 数据预处理：使用对数价格并去趋势
+log_price = math.log(close)
+// 使用简单移动平均去趋势，避免未来数据泄露
+trend = ta.sma(log_price, adaptive_fft_length)
+detrended_price = log_price - trend
+
+// 应用汉宁窗函数减少频谱泄漏
+hanning_window(n, N) => 0.5 * (1 - math.cos(2 * math.pi * n / (N - 1)))
+
+// 简化的离散傅里叶变换实现
+// 由于Pine Script循环限制，我们展开计算前8个主要谐波
+var float[] magnitude = array.new<float>(9, 0.0)  // 索引0不使用，1-8对应谐波1-8
+
+// 计算每个谐波的幅度
+calc_harmonic_magnitude(k, window_length) =>
+    real_part = 0.0
+    imag_part = 0.0
+    
+    // 展开循环计算DFT (优化性能)
+    for i = 0 to window_length - 1
+        if i < 32  // 限制循环次数避免Pine Script限制
+            windowed_data = detrended_price[i] * hanning_window(i, window_length)
+            angle = 2 * math.pi * k * i / window_length
+            real_part += windowed_data * math.cos(angle)
+            imag_part += windowed_data * math.sin(angle)
+    
+    math.sqrt(real_part * real_part + imag_part * imag_part)
+
+// 计算前8个谐波的幅度
+if barstate.isconfirmed
+    for k = 1 to math.min(8, adaptive_harmonics)
+        mag = calc_harmonic_magnitude(k, adaptive_fft_length)
+        array.set(magnitude, k, mag)
+
+// 频域能量分布分析
+low_freq_energy = array.get(magnitude, 1) + array.get(magnitude, 2)  // 长周期分量
+mid_freq_energy = array.get(magnitude, 3) + array.get(magnitude, 4) + array.get(magnitude, 5)  // 中等周期分量
+high_freq_energy = array.get(magnitude, 6) + array.get(magnitude, 7) + array.get(magnitude, 8)  // 短周期分量
+
+total_energy = low_freq_energy + mid_freq_energy + high_freq_energy
+
+// 计算能量占比
+high_freq_ratio = total_energy > 0 ? high_freq_energy / total_energy : 0
+low_freq_ratio = total_energy > 0 ? low_freq_energy / total_energy : 0
+mid_freq_ratio = total_energy > 0 ? mid_freq_energy / total_energy : 0
+
+// 傅里叶挤压检测逻辑
+// 挤压条件：高频能量占比低 + 低频能量占比高 = 市场进入低波动状态
+isSqueeze = high_freq_ratio < high_freq_threshold and low_freq_ratio > low_freq_threshold
+squeezeFired = isSqueeze[1] and not isSqueeze
+
+// =================================================================================
+// 绘图 - Adaptive Resonance Oscillator (保持不变)
+// =================================================================================
+
+// 绘制超买超卖区域的RSI值
+plot(rsi_v > 80 or rsi_v < 20 ? rsi_v : na, color = smooth ? (rsi_v > rsi_v[1] ? white : blue) : color.white, linewidth = 4, style=plot.style_steplinebr)
+
+// 绘制主RSI线
+rsi_plot = plot(rsi_v, color = smooth ? color.new((rsi_v > rsi_v[1] ? white : blue), 50) : color.white, linewidth = 1, style=plot.style_stepline)
+rsi_plot1 = plot(rsi_v[1], color = smooth ? color.new((rsi_v > rsi_v[1] ? white : blue), 100) : color.new(color.white, 100), linewidth = 1, style=plot.style_stepline)
+
+// 绘制上下阈值带
+upper_band = plot(80, "Upper Band", color.new(color.gray, 50), 2)
+lower_band = plot(20, "Lower Band", color.new(color.gray, 50), 2)
+
+// 设置颜色
+col = rsi_v > 50 ? white : blue
+
+// 绘制信号标记
+plotchar(ta.crossover(rsi_v, rsi_v[1]) and (rsi_v[1] < 20) ? rsi_v - 7 : na, char='▲', location=location.absolute, color=white, textcolor=color.black, title="Strong Bullish", display= smooth ? display.all : display.none, size=size.tiny)
+plotchar(ta.crossunder(rsi_v, rsi_v[1]) and (rsi_v[1] > 80) ? rsi_v + 7 : na, char='▼', location=location.absolute, color=blue, textcolor=color.white, title="Strong Bearish", display= smooth ? display.all : display.none, size=size.tiny)
+
+// =================================================================================
+// 背离检测 (保持不变)
+// =================================================================================
+
+// 颜色定义
+bullColor = white
+bearColor = blue
+hiddenBullColor = color.new(white, 80)
+hiddenBearColor = color.new(blue, 80)
+textColor = color.white
+noneColor = color.new(color.white, 100)
+
+// 检测RSI的低点和高点
+plFound = na(ta.pivotlow(rsi_v, lbL, lbR)) ? false : true
+phFound = na(ta.pivothigh(rsi_v, lbL, lbR)) ? false : true
+
+// 辅助函数
+_inRange(cond) =>
+	bars = ta.barssince(cond == true)
+	-80 <= bars and bars <= 80
+
+// 检测常规看涨背离
+oscHL = rsi_v[lbR] > ta.valuewhen(plFound, rsi_v[lbR], 1) and _inRange(plFound[1])
+priceLL = low[lbR] < ta.valuewhen(plFound, low[lbR], 1)
+bullCond = plotBullish and priceLL and oscHL and plFound
+plot(plFound  ? rsi_v[lbR] : na, offset=-lbR, title="Regular Bullish", linewidth=2, color=(bullCond ? bullColor : noneColor))
+
+// 检测常规看跌背离
+oscLH = rsi_v[lbR] < ta.valuewhen(phFound, rsi_v[lbR], 1) and _inRange(phFound[1])
+priceHH = high[lbR] > ta.valuewhen(phFound, high[lbR], 1)
+bearCond = plotBear and priceHH and oscLH and phFound
+plot(phFound  ? rsi_v[lbR] : na, offset=-lbR, title="Regular Bearish", linewidth=2, color=(bearCond ? bearColor : noneColor))
+
+// =================================================================================
+// Fourier Squeeze 背景色显示
+// =================================================================================
+
+// 创建背景色边界线（隐藏）
+fourier_bg_top = plot(80, color=color.new(color.white, 100), display=display.none, title="Fourier Squeeze BG Top")
+fourier_bg_bottom = plot(20, color=color.new(color.white, 100), display=display.none, title="Fourier Squeeze BG Bottom")
+
+// 傅里叶挤压状态背景色显示
+fill(fourier_bg_bottom, fourier_bg_top, 
+     color = isSqueeze ? squeezeColor : na,
+     title="Fourier Squeeze Background")
+
+// =================================================================================
+// 警报
+// =================================================================================
+
+// 背离警报
+alertcondition(bullCond or bearCond, title="Divergence", message="Divergence Detected")
+
+// 强烈信号警报
+alertcondition((ta.crossover(rsi_v, rsi_v[1]) and (rsi_v[1] < 20)) or (ta.crossunder(rsi_v, rsi_v[1]) and (rsi_v[1] > 80)), title="Strong Signal", message="Strong Bullish or Bearish Signal Detected")
+
+// 傅里叶挤压警报
+if squeezeFired
+    string adaptive_info = enable_adaptive_fourier ? " (Adaptive: FFT=" + str.tostring(adaptive_fft_length, "#") + ", Harmonics=" + str.tostring(adaptive_harmonics, "#") + ")" : ""
+    string alertMessage = "Fourier-Domain Squeeze has fired" + adaptive_info + " on " + syminfo.ticker + ". High-freq ratio: " + str.tostring(high_freq_ratio, "#.###") + ", Low-freq ratio: " + str.tostring(low_freq_ratio, "#.###")
+    alert(alertMessage, alert.freq_once_per_bar)
+
+// =================================================================================
+// 调试信息表格
+// =================================================================================
+
+// 创建傅里叶分析调试信息表格
+if show_fourier_debug and barstate.islast
+    var fourier_table = table.new(position.top_right, 2, 8, bgcolor=color.new(color.navy, 80), border_width=1)
+    
+    // 表格标题
+    table.cell(fourier_table, 0, 0, "Fourier Parameter", text_color=color.white, text_size=size.small, bgcolor=color.new(color.blue, 50))
+    table.cell(fourier_table, 1, 0, "Value", text_color=color.white, text_size=size.small, bgcolor=color.new(color.blue, 50))
+    
+    // 显示当前参数值
+    table.cell(fourier_table, 0, 1, "Market Period", text_color=color.white, text_size=size.tiny)
+    table.cell(fourier_table, 1, 1, str.tostring(period, "#"), text_color=color.yellow, text_size=size.tiny)
+    
+    table.cell(fourier_table, 0, 2, "FFT Length", text_color=color.white, text_size=size.tiny)
+    table.cell(fourier_table, 1, 2, str.tostring(adaptive_fft_length, "#"), text_color=enable_adaptive_fourier ? color.lime : color.gray, text_size=size.tiny)
+    
+    table.cell(fourier_table, 0, 3, "Harmonics", text_color=color.white, text_size=size.tiny)
+    table.cell(fourier_table, 1, 3, str.tostring(adaptive_harmonics, "#"), text_color=enable_adaptive_fourier ? color.lime : color.gray, text_size=size.tiny)
+    
+    table.cell(fourier_table, 0, 4, "High-Freq Ratio", text_color=color.white, text_size=size.tiny)
+    table.cell(fourier_table, 1, 4, str.tostring(high_freq_ratio, "#.###"), text_color=high_freq_ratio < high_freq_threshold ? color.red : color.green, text_size=size.tiny)
+    
+    table.cell(fourier_table, 0, 5, "Low-Freq Ratio", text_color=color.white, text_size=size.tiny)
+    table.cell(fourier_table, 1, 5, str.tostring(low_freq_ratio, "#.###"), text_color=low_freq_ratio > low_freq_threshold ? color.red : color.green, text_size=size.tiny)
+    
+    table.cell(fourier_table, 0, 6, "Mid-Freq Ratio", text_color=color.white, text_size=size.tiny)
+    table.cell(fourier_table, 1, 6, str.tostring(mid_freq_ratio, "#.###"), text_color=color.orange, text_size=size.tiny)
+    
+    table.cell(fourier_table, 0, 7, "Squeeze Status", text_color=color.white, text_size=size.tiny)
+    table.cell(fourier_table, 1, 7, isSqueeze ? "ACTIVE" : "INACTIVE", text_color=isSqueeze ? color.red : color.green, text_size=size.tiny)
