@@ -234,6 +234,7 @@ alertcondition(bullCond or bearCond, title="Divergence", message="Divergence Det
 // 强烈信号警报
 alertcondition(ta.crossover(rsi_v, rsi_v[1]) and (rsi_v[1] < 20), title="Strong Bullish")
 alertcondition(ta.crossunder(rsi_v, rsi_v[1]) and (rsi_v[1] > 80), title="Strong Bearish")
+alertcondition((ta.crossover(rsi_v, rsi_v[1]) and (rsi_v[1] < 20)) or (ta.crossunder(rsi_v, rsi_v[1]) and (rsi_v[1] > 80)), title="Strong Signal", message="Strong Bullish or Bearish Signal Detected")
 
 // 挤压警报
 if squeezeFired
