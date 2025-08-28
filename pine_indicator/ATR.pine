@@ -1,0 +1,95 @@
+//@version=6
+indicator("ATR实时止损线", "ATR Stop Lines", overlay=true)
+
+// 输入参数
+atr_length = input.int(14, "ATR周期", minval=1, maxval=100)
+atr_multiplier = input.float(2.0, "ATR倍数", minval=0.1, maxval=10.0, step=0.1)
+line_length = input.int(20, "止损线长度(K柱数)", minval=1, maxval=100)
+
+// 线条样式设置
+upper_line_color = input.color(color.red, "上止损线颜色")
+lower_line_color = input.color(color.green, "下止损线颜色")
+line_style = input.string("solid", "线条样式", options=["solid", "dashed", "dotted"])
+line_width = input.int(2, "线条宽度", minval=1, maxval=5)
+
+// 计算ATR值和止损宽度
+atr_value = ta.atr(atr_length)
+stop_width = atr_value * atr_multiplier
+
+// 获取当前价格（实时）
+current_price = close
+
+// 计算上下止损位
+upper_stop = current_price + stop_width
+lower_stop = current_price - stop_width
+
+// 转换线条样式
+get_line_style(style_str) =>
+    switch style_str
+        "solid" => line.style_solid
+        "dashed" => line.style_dashed
+        "dotted" => line.style_dotted
+        => line.style_solid
+
+// 删除旧线条和标签的函数
+var line upper_line = na
+var line lower_line = na
+var label upper_label = na
+var label lower_label = na
+
+// 在每个新K柱时删除旧线条并绘制新线条
+if barstate.islast
+    // 删除之前的线条和标签
+    if not na(upper_line)
+        line.delete(upper_line)
+    if not na(lower_line)
+        line.delete(lower_line)
+    if not na(upper_label)
+        label.delete(upper_label)
+    if not na(lower_label)
+        label.delete(lower_label)
+    
+    // 计算线条起始位置
+    start_bar = bar_index - line_length
+    end_bar = bar_index
+    
+    // 绘制上止损线
+    upper_line := line.new(
+         x1=start_bar, y1=upper_stop,
+         x2=end_bar, y2=upper_stop,
+         color=upper_line_color,
+         style=get_line_style(line_style),
+         width=line_width,
+         extend=extend.none)
+    
+    // 绘制下止损线
+    lower_line := line.new(
+         x1=start_bar, y1=lower_stop,
+         x2=end_bar, y2=lower_stop,
+         color=lower_line_color,
+         style=get_line_style(line_style),
+         width=line_width,
+         extend=extend.none)
+    
+    // 在止损线右侧添加价格标签
+    upper_label := label.new(
+         x=end_bar, y=upper_stop,
+         text=str.tostring(upper_stop, "#.##"),
+         style=label.style_label_left,
+         color=color.new(upper_line_color, 20),
+         textcolor=color.white,
+         size=size.small)
+    
+    lower_label := label.new(
+         x=end_bar, y=lower_stop,
+         text=str.tostring(lower_stop, "#.##"),
+         style=label.style_label_left,
+         color=color.new(lower_line_color, 20),
+         textcolor=color.white,
+         size=size.small)
+
+// 在数据窗口显示数值
+plot(atr_value, "ATR值", color=color.blue, display=display.data_window)
+plot(stop_width, "止损宽度", color=color.orange, display=display.data_window)
+plot(upper_stop, "上止损位", color=upper_line_color, display=display.data_window)
+plot(lower_stop, "下止损位", color=lower_line_color, display=display.data_window)
