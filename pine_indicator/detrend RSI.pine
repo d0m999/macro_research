@@ -1,7 +1,7 @@
 // This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
 // © d0m999
 //@version=6
-indicator("Adaptive RSI-vol+", overlay=false, shorttitle="mempAw | Adaptive RSI")
+indicator("Adaptive RSI-vol+", overlay=false, shorttitle="mempAw | detrend RSI")
 import TradingView/ta/9
 
 // =================================================================================
@@ -152,8 +152,8 @@ plotchar(ta.crossunder(rsi_v, rsi_v[1]) and (rsi_v[1] > 80) ? rsi_v + 7 : na, ch
 // =================================================================================
 
 // 颜色定义
-bullColor = white  // 修改：看涨背离用白色
-bearColor = blue   // 修改：看跌背离用蓝色
+bullColor = white 
+bearColor = blue  
 noneColor = color.new(color.white, 100)
 
 // 检测RSI的低点和高点
