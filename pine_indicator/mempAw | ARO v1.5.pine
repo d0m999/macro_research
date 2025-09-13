@@ -9,13 +9,13 @@ import TradingView/ta/9
 // =================================================================================
 aro_group = "Adaptive Resonance Oscillator"
 smooth = input.bool(title="Enable Smoothing", defval=true, group=aro_group)
-smoothlength = input.int(title="Smoothing Length", defval=21, minval=1, group=aro_group)
+smoothlength = input.int(title="Smoothing Length", defval=12, minval=1, group=aro_group)
 medianLength = input.int(title="Frequency Detection Length", defval=100, minval=1, group=aro_group)
 
 // 背离设置参数
 plotBullish = input(title="Plot Bullish Divergences", defval=true, group=aro_group)
 plotBear = input(title="Plot Bearish Divergences", defval=true, group=aro_group)
-lbL = input(title="Divergence Pivot Detection Length", defval=20, group=aro_group, tooltip = "The larger this number, the less sensitive the divergence detecion is. A smaller number will detect smaller and/or shorter term divergences", display = display.data_window)
+lbL = input(title="Divergence Pivot Detection Length", defval=12, group=aro_group, tooltip = "The larger this number, the less sensitive the divergence detecion is. A smaller number will detect smaller and/or shorter term divergences", display = display.data_window)
 lbR = 1
 
 
