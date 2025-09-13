@@ -1,36 +1,45 @@
 // © d0m999
 //@version=6
-indicator("ATR ZigZag", "mempAw | ZigZag ATR", true, max_lines_count = 100, max_labels_count = 100)
+indicator("ATR ZigZag", "mempAw | ZigZag ATR", true, max_lines_count = 500, max_labels_count = 500)
 
-// --- 参数输入 ---
-atrLength            = input.int(10, "ATR/枢轴点周期", minval=1, inline="Lengths")
-pivotLength          = input.int(3, "", minval=3, maxval=501, step=2, tooltip="枢轴点周期必须是奇数。", inline="Lengths")
-atrMultiplier        = input.float(2, "ATR 乘数 (最小阈值)", minval=0, tooltip="一个新的枢轴点必须与前一个点的距离超过 N倍 ATR。")
-maxLines             = input.int(497,  "显示最近 N 条 ZigZag 线", minval=2, maxval=497)
-lineColor            = input.color(color.new(color.yellow, 20), "线条颜色")
-lineWidth            = input.int(1, "线条宽度")
-lineStyle            = input.string("实线", "线条样式", options=["实线", "虚线"])
-pivotDotColor        = input.color(color.new(color.orange, 40), "枢轴点颜色")
+// =================================================================================
+// 参数输入
+// =================================================================================
+// 核心参数
+param_core = "核心参数"
+atrLength            = input.int(10, title="ATR/枢轴点周期", minval=1, inline="Lengths", group=param_core)
+pivotLength          = input.int(3, title="", minval=3, maxval=501, step=2, tooltip="枢轴点周期必须是奇数。", inline="Lengths", group=param_core)
+atrMultiplier        = input.float(2, title="ATR 乘数 (最小阈值)", minval=0, tooltip="一个新的枢轴点必须与前一个点的距离超过 N倍 ATR。", group=param_core)
+maxLines             = input.int(100,  title="显示最近 N 条 ZigZag 线", minval=2, maxval=497, group=param_core)
+
+// 样式设置
+param_style = "样式设置"
+lineColor            = input.color(color.new(color.yellow, 20), title="线条颜色", group=param_style)
+lineWidth            = input.int(1, title="线条宽度", group=param_style)
+lineStyle            = input.string("实线", title="线条样式", options=["实线", "虚线"], group=param_style)
+pivotDotColor        = input.color(color.new(color.orange, 40), title="枢轴点颜色", group=param_style)
 
 
-// --- 数据结构 ---
+// =================================================================================
+// 数据结构
+// =================================================================================
 var pivotIndices = array.new<int>()
 var pivotValues  = array.new<float>()
 var pivotTypes   = array.new<string>()
 var zigZagLines  = array.new<line>()
-var pivotDots    = array.new<label>() // 重新引入label数组来正确管理“点”
+var pivotDots    = array.new<label>()
 
 
-// --- 计算与辅助函数 ---
-// 转换线条样式选择
+// =================================================================================
+// 计算与辅助函数
+// =================================================================================
 lineStyling(choice) =>
     switch choice
         "虚线"      => line.style_dashed
         => line.style_solid
 
-// 存储新的枢轴点
 storePivot(pivot) =>
-    // 垃圾回收逻辑
+    // 垃圾回收逻辑: 当达到上限时，移除最旧的元素
     if zigZagLines.size() == maxLines
         zigZagLines.first().delete()
         pivotDots.first().delete()
@@ -40,7 +49,6 @@ storePivot(pivot) =>
         zigZagLines.shift()
         pivotDots.shift()
     
-    // 存储新枢轴点的数据
     pivotIndex = bar_index - (pivotLength - 1) / 2
     pivotValue = pivot == "high" ? high[(pivotLength - 1) / 2] : low[(pivotLength - 1) / 2]
     pivotIndices.push(pivotIndex)
@@ -48,7 +56,7 @@ storePivot(pivot) =>
     pivotTypes.push(pivot == "high" ? "High" : "Low")
 
     // 创建一个新的“点”
-    newDot = label.new(pivotIndex, pivotValue, "", style=label.style_circle, color=pivotDotColor, size=size.tiny, textcolor=color.new(color.white, 100))
+    newDot = label.new(pivotIndex, pivotValue, "", style=label.style_circle, color=pivotDotColor, size=size.tiny, textcolor=na)
     pivotDots.push(newDot)
     
     // 如果存在超过两个点，则创建并绘制一条新线
@@ -56,16 +64,14 @@ storePivot(pivot) =>
         newLine = line.new(
           x1=pivotIndices.get(pivotIndices.size() - 2), 
           y1=pivotValues.get(pivotValues.size() - 2), 
-          x2=pivotIndices.last(), 
-          y2=pivotValues.last(),
+          x2=pivotIndex, 
+          y2=pivotValue,
           color=lineColor,
           style=lineStyling(lineStyle),
           width=lineWidth)
         zigZagLines.push(newLine)
 
-// 更新最后一个枢轴点
 updatePivot(pivot) =>
-    // 更新数据
     pivotIndex = bar_index - (pivotLength - 1) / 2
     pivotValue = pivot == "high" ? high[(pivotLength - 1) / 2] : low[(pivotLength - 1) / 2]
     pivotIndices.set(pivotIndices.size() - 1, pivotIndex)
@@ -78,12 +84,14 @@ updatePivot(pivot) =>
         pivotDots.last().set_xy(pivotIndex, pivotValue)
 
 
-// --- 核心逻辑 ---
+// =================================================================================
+// 核心逻辑
+// =================================================================================
 noError = pivotLength % 2 == 1 and bar_index >= pivotLength - 1
 atr = ta.atr(atrLength)
 
 if noError
-    // 检测枢轴点的几何形状
+    // 1. 检测枢轴点的几何形状
     noHighPivot = false
     noLowPivot = false
     for i = pivotLength - 1 to 1
@@ -98,21 +106,27 @@ if noError
             if low[i] > low[i - 1]
                 noLowPivot := true
 
-    // 存储或更新枢轴点
+    // 2. 存储或更新枢轴点
     if pivotIndices.size() == 0
+        // A. 第一个枢轴点
         if not noHighPivot
             storePivot("high")
         if not noLowPivot
             storePivot("low")
     else
         if pivotTypes.last() == "High"
+            // B. 最后一个点是高点
             if not noHighPivot and high[(pivotLength - 1) / 2] > pivotValues.last()
+                // 更新逻辑: 价格创出新高，但未转向
                 updatePivot("high")
             if not noLowPivot and not na(atr[(pivotLength - 1) / 2]) and math.abs(low[(pivotLength - 1) / 2] - pivotValues.last()) >= atr[(pivotLength - 1) / 2] * atrMultiplier and bar_index - (pivotLength - 1) / 2 != pivotIndices.last() and low[(pivotLength - 1) / 2] < pivotValues.last()
+                // 存储逻辑: 价格转向，且幅度超过ATR阈值
                 storePivot("low")
-        else // last pivot was Low
+        else // C. 最后一个点是低点
             if not noLowPivot and low[(pivotLength - 1) / 2] < pivotValues.last()
+                // 更新逻辑: 价格创出新低，但未转向
                 updatePivot("low")
             if not noHighPivot and not na(atr[(pivotLength - 1) / 2]) and math.abs(high[(pivotLength - 1) / 2] - pivotValues.last()) >= atr[(pivotLength - 1) / 2] * atrMultiplier and bar_index - (pivotLength - 1) / 2 != pivotIndices.last() and high[(pivotLength - 1) / 2] > pivotValues.last()
+                // 存储逻辑: 价格转向，且幅度超过ATR阈值
                 storePivot("high")
 
