@@ -1,4 +1,4 @@
-# Intelligent Rules Decision Tree 🌳
+# Intelligent Rules Decision Tree
 
 **Always respond in Chinese | Default sequential thinking analysis**
 
