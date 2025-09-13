@@ -1,6 +1,6 @@
 // © d0m999
 //@version=6
-indicator("ATR ZigZag", "mempAw | ZigZag ATR", true, max_lines_count = 500, max_labels_count = 500)
+indicator("ATR ZigZag", "mempAw | ZigZag ATR", true, max_lines_count = 100, max_labels_count = 100)
 
 // --- 参数输入 ---
 atrLength            = input.int(10, "ATR/枢轴点周期", minval=1, inline="Lengths")
