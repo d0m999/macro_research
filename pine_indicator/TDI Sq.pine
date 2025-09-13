@@ -1,6 +1,10 @@
 //@ediboy888
 //@version=6
-indicator("TDI Squeeze", shorttitle="TDI S", overlay=false)
+indicator("TDI Toolkit V2", shorttitle="TDI Kits", overlay=false)
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 超买超卖模块 Overbought & Oversold Module
+// ─────────────────────────────────────────────────────────────────────────────
 
 // ── Settings
 groupSet   = "Settings"
@@ -9,13 +13,15 @@ src = switch srcOpt
     "close"         => close
     "(H+L)/2"       => (high + low) / 2
     "(O+H+L+C)/4"   => (open + high + low + close) / 4
-rsiLen     = input.int(14,         "RSI Length",   minval=1, group=groupSet)   // 常见 13 或 21
-bandLen    = input.int(34,         "Band Length", minval=1, group=groupSet)   // 经典 34
-stdevMult  = input.float(1.6185,   "Band Multiplier",       group=groupSet, step=0.0001)
-fastLen    = input.int(1,          "Fast MA on RSI",minval=1, group=groupSet) // 快 2
+rsiLen     = input.int(13,         "RSI Length",   minval=1, group=groupSet)   // 常用 13 或 21
+bandLen    = input.int(34,         "Band Length", minval=1, group=groupSet)   // 经典 34 斐波那契
+stdevMult  = input.float(1.6185,   "Band Multiplier",       group=groupSet, step=0.0001) //斐波那契
+fastLen    = input.int(1,          "Fast MA on RSI",minval=1, group=groupSet) // 快 1无延迟；2有延迟
 slowLen    = input.int(7,          "Slow MA on RSI",minval=1, group=groupSet) // 慢 7
-rsiU       = input.float(80.0,     "RSI Uband",   minval=0, maxval=100, group=groupSet)
-rsiL       = input.float(20.0,     "RSI Lband",   minval=0, maxval=100, group=groupSet)
+rsiU       = input.float(70.0,     "RSI Uband",   minval=0, maxval=100, group=groupSet) //超买线
+rsiL       = input.float(30.0,     "RSI Lband",   minval=0, maxval=100, group=groupSet) //超卖线
+lookback = input.int(7, "Screener Lookback Bars", minval=1) //Pine Screener过滤区间设置
+htfMult    = input.int(4,          "HTF Multiplier", minval=1, group=groupSet) // HTF OB/OS 倍数
 
 // ── Core RSI & Bands
 r   = ta.rsi(src, rsiLen)
@@ -27,8 +33,86 @@ up  = ma + ofs
 dn  = ma - ofs
 
 // ── Price/Signal lines on RSI
-priceLine  = ta.sma(r, fastLen)   // Fast（Price Line）
-signalLine = ta.sma(r, slowLen)   // Slow（Trade Signal Line）
+priceLine  = ta.sma(r, fastLen)   // Fastline 快线
+signalLine = ta.sma(r, slowLen)   // Slowline 慢线
+
+// ── HTF Calculation
+// Note: This timeframe calculation works best on intraday charts
+htfTimeframe = str.tostring(timeframe.multiplier * htfMult)
+
+// Expressions to be calculated in the HTF context
+htf_r_expr = ta.rsi(src, rsiLen)
+htf_ma_expr = ta.sma(htf_r_expr, bandLen)
+htf_sd_expr = ta.stdev(htf_r_expr, bandLen)
+htf_ofs_expr = stdevMult * htf_sd_expr
+htf_up_expr = htf_ma_expr + htf_ofs_expr
+htf_dn_expr = htf_ma_expr - htf_ofs_expr
+htf_priceLine_expr = ta.sma(htf_r_expr, fastLen)
+htf_signalLine_expr = ta.sma(htf_r_expr, slowLen)
+
+// Request security data from the HTF
+[htf_priceLine, htf_signalLine, htf_up, htf_dn] = request.security(syminfo.tickerid, htfTimeframe, [htf_priceLine_expr, htf_signalLine_expr, htf_up_expr, htf_dn_expr])
+
+// ── HTF Signal Logic
+bool htf_OB = htf_priceLine > rsiU and htf_priceLine > htf_signalLine and htf_priceLine > htf_up
+bool htf_OS = htf_priceLine < rsiL and htf_priceLine < htf_signalLine and htf_priceLine < htf_dn
+
+
+// FALLBACK & REBOUND SIGNAL CHAIN LOGIC 超买超卖回落判定信号链
+
+// 1. State Management Variables
+var bool inOverboughtChain = false
+var bool inOversoldChain = false
+// Variables to store the trigger level of Signal 1
+var float overboughtTriggerLevel = na
+var float oversoldTriggerLevel = na
+
+// State changes happen only on bar confirmation
+if barstate.isconfirmed
+
+// 2. Break Conditions (on close)
+// Using >= and <= to detect price line breakouts 使用大于等于或小于等于判定
+    if inOverboughtChain and priceLine >= overboughtTriggerLevel
+        inOverboughtChain := false
+        overboughtTriggerLevel := na // Reset trigger level
+
+    if inOversoldChain and priceLine <= oversoldTriggerLevel
+        inOversoldChain := false
+        oversoldTriggerLevel := na // Reset trigger level
+
+// 3. Signal 1 Calculation (on close)
+    bool isSignal1_OB = not inOverboughtChain and (priceLine >= rsiU and priceLine >= signalLine and priceLine >= up)
+    bool isSignal1_OS = not inOversoldChain and (priceLine <= rsiL and priceLine <= signalLine and priceLine <= dn)
+
+// 4. Update State (on close)
+    if isSignal1_OB
+        inOverboughtChain := true
+        overboughtTriggerLevel := priceLine //Record the priceLine value when Signal 1 occurs
+    if isSignal1_OS
+        inOversoldChain := true
+        oversoldTriggerLevel := priceLine //Record the priceLine value when Signal 1 occurs
+
+    // Reset the state on a confirmed Signal 3 from the previous bar close
+    bool wasSignal3_OB_confirmed = inOverboughtChain[1] and (priceLine[1] <= signalLine[1] and priceLine[1] <= up[1])
+    bool wasSignal3_OS_confirmed = inOversoldChain[1] and (priceLine[1] >= signalLine[1] and priceLine[1] >= dn[1])
+
+    if wasSignal3_OB_confirmed
+        inOverboughtChain := false
+        overboughtTriggerLevel := na // Reset trigger level
+
+    if wasSignal3_OS_confirmed
+        inOversoldChain := false
+        oversoldTriggerLevel := na // Reset trigger level
+
+// 5. Realtime Signal 3 Calculation (allows repainting)
+// This logic runs on every tick, checking the stable state against the current price.
+bool isSignal3_OB_realtime = inOverboughtChain and (priceLine <= signalLine and priceLine <= up)
+bool isSignal3_OS_realtime = inOversoldChain and (priceLine >= signalLine and priceLine >= dn)
+
+//Pine Screener过滤器设置
+seriesLen = math.min(lookback, bar_index + 1)
+ob_hit_lastN = math.sum(isSignal3_OB_realtime ? 1 : 0, seriesLen) > 0
+os_hit_lastN = math.sum(isSignal3_OS_realtime ? 1 : 0, seriesLen) > 0
 
 // ── Plots
 // 1) 可调的 RSI 上/下水平线
@@ -36,19 +120,31 @@ plot(rsiU, "RSI Uband", color=color.new(color.gray, 0), linewidth=1)
 plot(rsiL, "RSI Lband", color=color.new(color.gray, 0), linewidth=1)
 
 // 2) 波动带与中线
-pUp  = plot(up,  "Volatility Upper Band", color=color.new(color.blue,  20), linewidth=1)
-pDn  = plot(dn,  "Volatility Lower Band", color=color.new(color.blue,  20), linewidth=1)
+pUp  = plot(up,  "Volatility Upper Band", color=color.new(color.blue, 20), linewidth=1)
+pDn  = plot(dn,  "Volatility Lower Band", color=color.new(color.blue, 20), linewidth=1)
 fill(pUp, pDn, color=color.new(color.blue, 85))
 
 // 3) RSI 快/慢线
-plot(priceLine,  "RSI Price Line (Fast)",   color=color.new(color.white, 20), linewidth=1, style = plot.style_stepline)
-plot(signalLine, "Trade Signal Line (Slow)", color=color.new(color.orange, 20), linewidth=1, style = plot.style_stepline)
+plot(priceLine,  "RSI Price Line (Fast)",   color=color.new(color.white, 20), linewidth=1)
+plot(signalLine, "Trade Signal Line (Slow)", color=color.new(color.orange, 20), linewidth=1)
 
 // 4）中线
 hline (50, "Middle Line")
 
+// 5) HTF 超买和超卖信号 (先绘制，因此在下一层)
+plotshape(htf_OB ? rsiU : na, title="HTF Overbought", style=shape.square, location=location.absolute, color=color.new(color.red, 60), size=size.tiny)
+plotshape(htf_OS ? rsiL : na, title="HTF Oversold",   style=shape.square, location=location.absolute, color=color.new(color.red, 60), size=size.tiny)
+
+// 6) 超卖和超卖回落信号
+plotshape(isSignal3_OB_realtime ? rsiU : na, title="Overbought Fallback", style=shape.circle, location=location.absolute, color=color.new(color.yellow, 30), size=size.tiny)
+plotshape(isSignal3_OS_realtime ? rsiL : na, title="Oversold Rebound", style=shape.circle, location=location.absolute, color=color.new(color.yellow, 30), size=size.tiny)
+
+// 7）Pine Screener & Alert conditions
+alertcondition(ob_hit_lastN, title="OB_fallback", message="OB FALLBACK")
+alertcondition(os_hit_lastN, title="OS_rebound", message="OS REBOUND")
+
 // ─────────────────────────────────────────────────────────────────────────────
-// ⬇️ Dual Channel Squeeze（DCS）
+// 双通道挤压模块 Dual Channel Squeeze Module（DCS）
 // ─────────────────────────────────────────────────────────────────────────────
 dcs_group = "Dual Channel Squeeze"
 dcs_showBg      = input.bool(true,  "Show Squeeze Background", group=dcs_group)
@@ -76,3 +172,7 @@ dcs_isSqueeze = (dcs_bbUpper < dcs_kcUpper) and (dcs_bbLower > dcs_kcLower)
 // —— 背景色（仅挤压期；可通过 dcs_showBg 开关隐藏）
 dcs_bg = dcs_showBg and dcs_isSqueeze ? color.new(color.orange, 80) : na
 bgcolor(dcs_bg, title="Squeeze Background")
+
+// 7）Pine Screener & Alert conditions
+alertcondition(ob_hit_lastN, title="OB_fallback", message="OB FALLBACK")
+alertcondition(os_hit_lastN, title="OS_rebound", message="OS REBOUND")
