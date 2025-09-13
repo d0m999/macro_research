@@ -1,0 +1,33 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © d0m999
+//@version=6
+indicator(title="6EMA", shorttitle="mempAw | EMA", overlay=true)
+Display_Length = input.int(200, minval=1, title="Number of Bars to Display")
+len1 = input.int(21, minval=1, title="EMA 1")
+len2 = input.int(55, minval=1, title="EMA 2")
+len3 = input.int(100, minval=1, title="EMA 3")
+len4 = input.int(200, minval=1, title="EMA 4")
+len5 = input.int(300, minval=1, title="EMA 5")
+len6 = input.int(400, minval=1, title="EMA 6")
+
+src1 = input(close, title="EMA 1 Source")
+src2 = input(close, title="EMA 2 Source")
+src3 = input(close, title="EMA 3 Source")
+src4 = input(close, title="EMA 4 Source")
+src5 = input(close, title="EMA 5 Source")
+src6 = input(close, title="EMA 6 Source")
+
+ema1 = ta.ema(src1, len1)
+ema2 = ta.ema(src2, len2)
+ema3 = ta.ema(src3, len3)
+ema4 = ta.ema(src4, len4)
+ema5 = ta.ema(src5, len5)
+ema6 = ta.ema(src6, len6)
+
+// Plot only the latest N bars
+plot(bar_index >= last_bar_index - Display_Length ? ema1 : na, color=color.yellow, linewidth=2, title="EMA 1")
+plot(bar_index >= last_bar_index - Display_Length ? ema2 : na, color=color.lime, linewidth=2, title="EMA 2")
+plot(bar_index >= last_bar_index - Display_Length ? ema3 : na, color=color.aqua, linewidth=2, title="EMA 3")
+plot(bar_index >= last_bar_index - Display_Length ? ema4 : na, color=color.purple, linewidth=2, title="EMA 4")
+plot(bar_index >= last_bar_index - Display_Length ? ema5 : na, color=color.aqua, linewidth=2, title="EMA 5")
+plot(bar_index >= last_bar_index - Display_Length ? ema6 : na, color=color.purple, linewidth=2, title="EMA 6")
