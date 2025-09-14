@@ -70,4 +70,8 @@ config_*.json
 .env
 
 # 说明文档和 rules
-*.md
+# 只忽略根目录下的 .md 文件, 但 GEMINI.md 除外
+/*.md
+!/GEMINI.md
+!/IFLOW.md
+
