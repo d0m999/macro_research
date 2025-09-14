@@ -4,7 +4,6 @@
 
 ## Quick Rules Routing Guide
 
-<!-- 安全风险：自动规则路由可能绕过安全审查，建议添加人工确认机制 -->
 Based on user request type, intelligently load corresponding rule modules:
 
 ```
@@ -14,6 +13,12 @@ User Request Analysis
 │   ├── Visual explanation requirements
 │   ├── Expert identity confirmation
 │   └── Core competency framework
+│
+├── ASCII Art & Visualization → Use GEMINI_RULES/ASCII-art.md
+│   ├── System architecture
+│   ├── Data structures & Algorithms
+│   ├── Financial indicators
+│   └── Conceptual relationships
 │
 ├── Code Development → Use GEMINI_RULES/coding-standards.md
 │   ├── Writing new features
@@ -58,11 +63,10 @@ User Request Analysis
 ## Execution Principles
 1. **Sequential Thinking Priority** - Complex tasks must be analyzed step by step
 2. **On-Demand Rule Loading** - Call appropriate modules based on task type
-3. **Visual Explanations** - Use ASCII charts for technical concepts
+3. **Visual Explanations** - Use ASCII art charts for technical concepts
 4. **Code Quality Assurance** - Comments, logging, error handling
 
 ## Usage Instructions
-<!-- 安全风险：AI自动判断规则模块可能导致未经授权的功能执行 -->
 - I will automatically determine which rule modules are needed based on your request
 - For specific rules, you can manually call using the file path in conversation
 - Complex tasks may require combination of multiple modules
