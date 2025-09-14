@@ -1,0 +1,137 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © Gemini
+//@version=6
+indicator("RSI Monitor", "RSI Monitor", overlay = true)
+
+// =================================================================================
+// 参数
+// =================================================================================
+aro_group = "ARO RSI Settings"
+smooth = input.bool(title="Enable Smoothing", defval=true, group=aro_group)
+smoothlength = input.int(title="Smoothing Length", defval=12, minval=1, group=aro_group)
+medianLength = input.int(title="Frequency Detection Length", defval=100, minval=1, group=aro_group)
+
+// =================================================================================
+// 代币列表
+// =================================================================================
+symbol_group = "Symbol List"
+s1 = input.symbol("OKX:BTCUSDT.P", title="Symbol 1", group=symbol_group)
+s2 = input.symbol("OKX:ETHUSDT.P", title="Symbol 2", group=symbol_group)
+s3 = input.symbol("OKX:SOLUSDT.P", title="Symbol 3", group=symbol_group)
+s4 = input.symbol("OKX:AAVEUSDT.P", title="Symbol 4", group=symbol_group)
+s5 = input.symbol("OKX:LINKUSDT.P", title="Symbol 5", group=symbol_group)
+s6 = input.symbol("OKX:RAYUSDT.P", title="Symbol 6", group=symbol_group)
+s7 = input.symbol("OKX:ONDOUSDT.P", title="Symbol 7", group=symbol_group)
+s8 = input.symbol("OKX:TAOUSDT.P", title="Symbol 8", group=symbol_group)
+s9 = input.symbol("OKX:DOTUSDT.P", title="Symbol 9", group=symbol_group)
+s10 = input.symbol("OKX:LTCUSDT.P", title="Symbol 10", group=symbol_group)
+s11 = input.symbol("OKX:XRPUSDT.P", title="Symbol 11", group=symbol_group)
+s12 = input.symbol("OKX:HYPEUSDT.P", title="Symbol 12", group=symbol_group)
+s13 = input.symbol("OKX:SUIUSDT.P", title="Symbol 13", group=symbol_group)
+s14 = input.symbol("", title="Symbol 14", group=symbol_group)
+s15 = input.symbol("", title="Symbol 15", group=symbol_group)
+s16 = input.symbol("", title="Symbol 16", group=symbol_group)
+s17 = input.symbol("", title="Symbol 17", group=symbol_group)
+s18 = input.symbol("", title="Symbol 18", group=symbol_group)
+s19 = input.symbol("", title="Symbol 19", group=symbol_group)
+s20 = input.symbol("", title="Symbol 20", group=symbol_group)
+
+
+// =================================================================================
+// 全局辅助函数
+// =================================================================================
+
+pine_rsi(x, y) => 
+    u = math.max(x - x[1], 0)
+    d = math.max(x[1] - x, 0)
+    alpha = 1 / y
+    float sum_u = 0.0
+    float sum_d = 0.0
+    sum_u := alpha * u + (1 - alpha) * nz(sum_u[1])
+    sum_d := alpha * d + (1 - alpha) * nz(sum_d[1])
+    rs = sum_u / sum_d
+    100 - 100 / (1 + rs)
+
+f_atan2(y, x) =>
+    float ret = na
+    if x > 0
+        ret := math.atan(y / x)
+    else if x < 0 and y >= 0
+        ret := math.atan(y / x) + math.pi
+    else if x < 0 and y < 0
+        ret := math.atan(y / x) - math.pi
+    else if y > 0
+        ret := math.pi / 2
+    else if y < 0
+        ret := -math.pi / 2
+    else
+        ret := 0.0
+    ret
+
+// =================================================================================
+// 核心计算表达式函数
+// =================================================================================
+
+f_expressionForSecurity() =>
+    price = close
+    priceSmooth = (price + price[1] + price[2] + price[3]) / 4
+    detrender = (0.0962 * priceSmooth + 0.5769 * priceSmooth[2] - 0.5769 * priceSmooth[4] - 0.0962 * priceSmooth[6])
+    I1 = detrender[3]
+    Q1 = (0.0962 * detrender + 0.5769 * detrender[2] - 0.5769 * detrender[4] - 0.0962 * detrender[6])
+    jI = I1[3]
+    jQ = Q1[3]
+    I2 = I1 - jQ
+    Q2 = Q1 + jI
+    Re = I2 * nz(I2[1]) + Q2 * nz(Q2[1])
+    Im = I2 * nz(Q2[1]) - Q2 * nz(I2[1])
+    phaseAngle = math.todegrees(f_atan2(Im, Re))
+    phaseAngle := phaseAngle < 0 ? phaseAngle + 360 : phaseAngle
+    minPhase = 1.0
+    phaseAngleClamped = math.max(phaseAngle, minPhase)
+    hilbertPeriodRaw = 360 / phaseAngleClamped
+    market_frequency = ta.median(hilbertPeriodRaw, medianLength)
+    period = int(market_frequency / 2)
+    base_rsi = pine_rsi(price, period)
+    sm = smooth
+    smLen = smoothlength
+    sm ? ta.hma(base_rsi, smLen) : base_rsi
+
+// =================================================================================
+// 计算模块 (全局作用域)
+// =================================================================================
+// 将所有代币和RSI值存储在数组中
+string[] symbols = array.from(s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20)
+float[] rsi_values = array.new_float(20)
+
+for i = 0 to array.size(symbols) - 1
+    symbol_id = array.get(symbols, i)
+    rsi_value = str.length(symbol_id) > 0 ? request.security(symbol_id, timeframe.period, f_expressionForSecurity()) : na
+    array.set(rsi_values, i, rsi_value)
+
+// =================================================================================
+// 表格绘制模块
+// =================================================================================
+
+// 在全局作用域创建表格，指定位置、列数、行数
+var table rsiTable = table.new(position.top_right, 2, 21, border_width = 1)
+
+// 仅在最后一条K线上更新表格，以提高性能
+if barstate.islast
+    // 1. 绘制表头
+    table.cell(rsiTable, 0, 0, "Symbol", bgcolor=color.gray, text_color=color.white)
+    table.cell(rsiTable, 1, 0, "RSI", bgcolor=color.gray, text_color=color.white)
+
+    // 2. 循环填充表格内容
+    // `symbols` 和 `rsi_values` 数组已在全局作用域准备好
+    for i = 0 to array.size(symbols) - 1
+        string symbol_id = array.get(symbols, i)
+        float rsi_val = array.get(rsi_values, i)
+
+        if str.length(symbol_id) > 0
+            // 根据RSI值确定背景和文本颜色
+            color bgColor = rsi_val > 80 ? color.new(color.blue, 30) : rsi_val < 20 ? color.new(color.white, 30) : color.new(color.gray, 85)
+            color txtColor = rsi_val < 20 ? color.black : color.white
+
+            // 填充单元格
+            table.cell(rsiTable, 0, i + 1, symbol_id, bgcolor=bgColor, text_color=txtColor)
+            table.cell(rsiTable, 1, i + 1, str.tostring(rsi_val, "0.00"), bgcolor=bgColor, text_color=txtColor)
