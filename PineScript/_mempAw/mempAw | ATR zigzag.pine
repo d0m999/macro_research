@@ -91,42 +91,34 @@ noError = pivotLength % 2 == 1 and bar_index >= pivotLength - 1
 atr = ta.atr(atrLength)
 
 if noError
-    // 1. 检测枢轴点的几何形状
-    noHighPivot = false
-    noLowPivot = false
-    for i = pivotLength - 1 to 1
-        if i > (pivotLength - 1) / 2
-            if high[i] > high[i - 1]
-                noHighPivot := true
-            if low[i] < low[i - 1]
-                noLowPivot := true
-        if i <= (pivotLength - 1) / 2
-            if high[i] < high[i - 1]
-                noHighPivot := true
-            if low[i] > low[i - 1]
-                noLowPivot := true
+    // 1. 使用内置函数
+    leftBars = (pivotLength - 1) / 2
+    rightBars = (pivotLength - 1) / 2
+    
+    isHighPivot = not na(ta.pivothigh(high, leftBars, rightBars))
+    isLowPivot = not na(ta.pivotlow(low, leftBars, rightBars))
 
     // 2. 存储或更新枢轴点
     if pivotIndices.size() == 0
         // A. 第一个枢轴点
-        if not noHighPivot
+        if isHighPivot
             storePivot("high")
-        if not noLowPivot
+        if isLowPivot
             storePivot("low")
     else
         if pivotTypes.last() == "High"
             // B. 最后一个点是高点
-            if not noHighPivot and high[(pivotLength - 1) / 2] > pivotValues.last()
+            if isHighPivot and high[rightBars] > pivotValues.last()
                 // 更新逻辑: 价格创出新高，但未转向
                 updatePivot("high")
-            if not noLowPivot and not na(atr[(pivotLength - 1) / 2]) and math.abs(low[(pivotLength - 1) / 2] - pivotValues.last()) >= atr[(pivotLength - 1) / 2] * atrMultiplier and bar_index - (pivotLength - 1) / 2 != pivotIndices.last() and low[(pivotLength - 1) / 2] < pivotValues.last()
+            if isLowPivot and not na(atr[rightBars]) and math.abs(low[rightBars] - pivotValues.last()) >= atr[rightBars] * atrMultiplier and bar_index - rightBars != pivotIndices.last() and low[rightBars] < pivotValues.last()
                 // 存储逻辑: 价格转向，且幅度超过ATR阈值
                 storePivot("low")
         else // C. 最后一个点是低点
-            if not noLowPivot and low[(pivotLength - 1) / 2] < pivotValues.last()
+            if isLowPivot and low[rightBars] < pivotValues.last()
                 // 更新逻辑: 价格创出新低，但未转向
                 updatePivot("low")
-            if not noHighPivot and not na(atr[(pivotLength - 1) / 2]) and math.abs(high[(pivotLength - 1) / 2] - pivotValues.last()) >= atr[(pivotLength - 1) / 2] * atrMultiplier and bar_index - (pivotLength - 1) / 2 != pivotIndices.last() and high[(pivotLength - 1) / 2] > pivotValues.last()
+            if isHighPivot and not na(atr[rightBars]) and math.abs(high[rightBars] - pivotValues.last()) >= atr[rightBars] * atrMultiplier and bar_index - rightBars != pivotIndices.last() and high[rightBars] > pivotValues.last()
                 // 存储逻辑: 价格转向，且幅度超过ATR阈值
                 storePivot("high")
 
