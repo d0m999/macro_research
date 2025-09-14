@@ -1,0 +1,128 @@
+// © d0m999
+//@version=6
+indicator("ATR ZigZag (Type Optimized)", "mempAw | ZigZag ATR (Type)", true, max_lines_count = 500, max_labels_count = 500)
+
+// =================================================================================
+// 参数输入
+// =================================================================================
+param_core = "核心参数"
+atrLength            = input.int(10, title="ATR/枢轴点周期", minval=1, inline="Lengths", group=param_core)
+pivotLength          = input.int(3, title="", minval=3, maxval=501, step=2, tooltip="枢轴点周期必须是奇数。", inline="Lengths", group=param_core)
+atrMultiplier        = input.float(2, title="ATR 乘数 (最小阈值)", minval=0, tooltip="一个新的枢轴点必须与前一个点的距离超过 N倍 ATR。", group=param_core)
+maxLines             = input.int(100,  title="显示最近 N 条 ZigZag 线", minval=2, maxval=497, group=param_core)
+
+param_style = "样式设置"
+lineColor            = input.color(color.new(color.yellow, 20), title="线条颜色", group=param_style)
+lineWidth            = input.int(1, title="线条宽度", group=param_style)
+lineStyle            = input.string("实线", title="线条样式", options=["实线", "虚线"], group=param_style)
+pivotDotColor        = input.color(color.new(color.orange, 40), title="枢轴点颜色", group=param_style)
+
+
+// =================================================================================
+// 数据结构
+// =================================================================================
+
+// 1. 定义一个自定义类型 `Pivot` 来封装一个枢轴点的所有相关数据
+type Pivot
+    int index         // 枢轴点的 K 线索引
+    float value       // 枢轴点的价格
+    string pType      // 枢轴点类型: "High" 或 "Low"
+    label dot         // 在枢轴点上绘制的“点”
+    line ln           // 连接到此枢轴点的“线”
+
+// 2. 只使用一个 `Pivot` 类型的数组来管理所有状态
+var pivots = array.new<Pivot>()
+
+
+// =================================================================================
+// 计算与辅助函数
+// =================================================================================
+lineStyling(choice) =>
+    switch choice
+        "虚线"      => line.style_dashed
+        => line.style_solid
+
+storePivot(pType) =>
+    // 垃圾回收逻辑: 当达到上限时，移除最旧的 Pivot 对象及其绘图
+    if pivots.size() == maxLines
+        Pivot oldestPivot = pivots.first()
+        oldestPivot.dot.delete()
+        // 最旧的枢轴点没有连接到它的线，但它启动的线需要被删除
+        // 这条线存储在第二个枢轴点对象中
+        if pivots.size() > 1
+            pivots.get(1).ln.delete()
+        pivots.shift()
+    
+    int leftBars = (pivotLength - 1) / 2
+    int pivotIndex = bar_index - leftBars
+    float pivotValue = pType == "high" ? high[leftBars] : low[leftBars]
+    
+    // 创建一个新的“点”
+    label newDot = label.new(pivotIndex, pivotValue, "", style=label.style_circle, color=pivotDotColor, size=size.tiny, textcolor=na)
+    
+    // 如果存在至少一个点，则创建一条新线连接它们
+    line newLine = na
+    if pivots.size() > 0
+        Pivot lastPivot = pivots.last()
+        newLine := line.new(
+          x1=lastPivot.index, 
+          y1=lastPivot.value, 
+          x2=pivotIndex, 
+          y2=pivotValue,
+          color=lineColor,
+          style=lineStyling(lineStyle),
+          width=lineWidth)
+
+    // 创建一个新的 Pivot 实例并存入数组
+    pivots.push(Pivot.new(pivotIndex, pivotValue, pType == "high" ? "High" : "Low", newDot, newLine))
+
+updatePivot(pType) =>
+    int leftBars = (pivotLength - 1) / 2
+    int pivotIndex = bar_index - leftBars
+    float pivotValue = pType == "high" ? high[leftBars] : low[leftBars]
+    
+    // 获取最后一个 Pivot 对象
+    Pivot lastPivot = pivots.last()
+
+    // 直接修改该对象的可变字段
+    lastPivot.index := pivotIndex
+    lastPivot.value := pivotValue
+
+    // 移动最后一个“点”的位置
+    lastPivot.dot.set_xy(pivotIndex, pivotValue)
+
+    // 移动连接到最后一个“点”的线
+    if not na(lastPivot.ln)
+        lastPivot.ln.set_xy2(pivotIndex, pivotValue)
+
+
+// =================================================================================
+// 核心逻辑
+// =================================================================================
+noError = pivotLength % 2 == 1 and bar_index >= pivotLength - 1
+atr = ta.atr(atrLength)
+
+if noError
+    leftBars = (pivotLength - 1) / 2
+    rightBars = (pivotLength - 1) / 2
+    
+    isHighPivot = not na(ta.pivothigh(high, leftBars, rightBars))
+    isLowPivot = not na(ta.pivotlow(low, leftBars, rightBars))
+
+    if pivots.size() == 0
+        if isHighPivot
+            storePivot("high")
+        if isLowPivot
+            storePivot("low")
+    else
+        Pivot lastPivot = pivots.last()
+        if lastPivot.pType == "High"
+            if isHighPivot and high[rightBars] > lastPivot.value
+                updatePivot("high")
+            if isLowPivot and not na(atr[rightBars]) and math.abs(low[rightBars] - lastPivot.value) >= atr[rightBars] * atrMultiplier and bar_index - rightBars != lastPivot.index and low[rightBars] < lastPivot.value
+                storePivot("low")
+        else // lastPivot.pType == "Low"
+            if isLowPivot and low[rightBars] < lastPivot.value
+                updatePivot("low")
+            if isHighPivot and not na(atr[rightBars]) and math.abs(high[rightBars] - lastPivot.value) >= atr[rightBars] * atrMultiplier and bar_index - rightBars != lastPivot.index and high[rightBars] > lastPivot.value
+                storePivot("high")
