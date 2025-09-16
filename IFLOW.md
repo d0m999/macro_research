@@ -1,6 +1,6 @@
 # Intelligent Rules Decision Tree
 
-**Always respond in Chinese | Default sequential thinking analysis**
+**Always respond in Chinese | Use sequential-thinking**
 
 ## Quick Rules Routing Guide
 
