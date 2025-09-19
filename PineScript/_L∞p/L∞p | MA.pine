@@ -1,7 +1,7 @@
 // This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
 // © d0m999
 //@version=6
-indicator(title="6EMA", shorttitle="mempAw | EMA", overlay=true)
+indicator(title="6EMA", shorttitle="L∞p | EMA", overlay=true)
 Display_Length = input.int(200, minval=1, title="Number of Bars to Display")
 len1 = input.int(21, minval=1, title="EMA 1")
 len2 = input.int(55, minval=1, title="EMA 2")

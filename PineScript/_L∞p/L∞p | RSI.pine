@@ -1,7 +1,7 @@
 // This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
 // © d0m999
 //@version=6
-indicator("detrender RSI", overlay=false, shorttitle="mempAw | detrend RSI")
+indicator("detrender RSI", overlay=false, shorttitle="L∞p | detrend RSI")
 import TradingView/ta/9
 
 // =================================================================================
@@ -9,7 +9,7 @@ import TradingView/ta/9
 // =================================================================================
 aro_group = "Adaptive Resonance Oscillator"
 smooth = input.bool(title="Enable Smoothing", defval=true, group=aro_group)
-smoothlength = input.int(title="Smoothing Length", defval=12, minval=1, group=aro_group)
+smoothlength = input.int(title="Smoothing Length", defval=21, minval=1, group=aro_group)
 medianLength = input.int(title="Frequency Detection Length", defval=100, minval=1, group=aro_group)
 
 // 背离设置参数
