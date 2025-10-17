@@ -1,0 +1,11 @@
+//@version=5
+indicator("Simple Total Open Interest", shorttitle="Total OI", overlay=false, format=format.price, precision=0)
+
+// 1. 使用 request.security 获取全市场总持仓量数据
+// Ticker: COINGLASS:TOTAL_OPEN_INTEREST
+// timeframe: "" 表示使用当前图表的时间周期
+// close: 代表该数据源提供的值
+total_oi = request.security("COINGLASS:TOTAL_OPEN_INTEREST", "", close, gaps=barmerge.gaps_on)
+
+// 2. 使用 plot 函数将数据显示在图表上
+plot(total_oi, title="Total Market Open Interest", color=color.blue, linewidth=2)

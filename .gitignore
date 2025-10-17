@@ -74,4 +74,5 @@ config_*.json
 /*.md
 !/GEMINI.md
 !/IFLOW.md
+!/btc-cycle.md
 

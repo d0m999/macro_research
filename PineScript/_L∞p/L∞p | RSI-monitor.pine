@@ -1,5 +1,5 @@
 // This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
-// © Gemini
+// © d0m999
 //@version=6
 indicator("RSI Monitor", "L∞p | RSI Monitor", overlay = true)
 
