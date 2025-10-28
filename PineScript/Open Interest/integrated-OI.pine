@@ -1,0 +1,56 @@
+// © d0m999
+//@version=6
+indicator('Open Interest Aggregation', 'OI Agg', format = format.volume)
+
+// 输入设置：用户选择要汇总的交易所
+input_exchanges = input.string("BINANCE,BITGET,BYBIT,COINBASE,OKX", "Exchanges to Include", options=["BINANCE,BITGET,BYBIT,COINBASE,OKX", "BINANCE", "BITGET", "BYBIT", "COINBASE", "OKX", "BINANCE,BITGET", "BINANCE,BYBIT", "BINANCE,COINBASE", "BINANCE,OKX", "BITGET,BYBIT", "BITGET,COINBASE", "BITGET,OKX", "BYBIT,COINBASE", "BYBIT,OKX", "COINBASE,OKX"])
+
+// 将用户选择的交易所字符串拆分为数组
+var string[] exchanges = str.split(input_exchanges, ",")
+
+var string timeframe = timeframe.period
+
+string base_currency = str.upper(syminfo.basecurrency)
+string quote_currency = syminfo.currency
+string base_symbol = base_currency + quote_currency
+
+// 函数：为每个交易所构造永续合约ticker
+get_perp_ticker(string exchange, string base, string quote) =>
+    string perp_ticker = na
+    switch exchange
+        "BINANCE" => perp_ticker := exchange + ":" + base + quote + ".P"
+        "BYBIT" => perp_ticker := exchange + ":" + base + quote + ".P"
+        "BITGET" => perp_ticker := exchange + ":" + base + quote + ".P"
+        "OKX" => perp_ticker := exchange + ":" + base + quote + ".P"
+        "COINBASE" => 
+            string coinbase_quote = "USDC"
+            perp_ticker := exchange + ":" + base + coinbase_quote + ".P"
+    perp_ticker
+
+// 初始化汇总变量（仅保留open和close）
+float oiOpen = 0.0
+float oiClose = 0.0
+
+// 遍历交易所，获取并汇总OI数据
+for int i = 0 to array.size(exchanges) - 1
+    string ex = array.get(exchanges, i)
+    string perp_ticker = get_perp_ticker(ex, base_currency, quote_currency)
+    if not na(perp_ticker)
+        string oi_symbol = perp_ticker + "_OI"
+        [tempOpen, tempClose, tempColorCond] = request.security(oi_symbol, timeframe, [open, close, close > close[1]], ignore_invalid_symbol = true)
+        if na(tempClose)
+            tempOpen := 0.0
+            tempClose := 0.0
+        oiOpen += tempOpen
+        oiClose += tempClose
+
+// 颜色逻辑：基于周期内变化（close > open）
+bool oiColorCond = oiClose > oiOpen
+color openInterestColor = oiColorCond ? color.white : color.blue
+
+// 错误检查
+if barstate.islastconfirmedhistory and na(oiClose)
+    runtime.error(str.format('No Open Interest data found for the `{0}` symbol.', syminfo.prefix + ':' + syminfo.ticker))
+
+// 绘制柱状图（无影线，high=close, low=open）
+plotbar(oiOpen, oiClose, oiOpen, oiClose, 'Open Interest', openInterestColor)

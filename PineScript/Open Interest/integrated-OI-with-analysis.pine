@@ -1,0 +1,122 @@
+// © d0m999
+//@version=6
+indicator('Open Interest Aggregation with Analysis', 'OI Agg+', format = format.volume)
+
+// 输入设置：用户选择要汇总的交易所
+input_exchanges = input.string("BINANCE,BITGET,BYBIT,COINBASE,OKX", "Exchanges to Include", options=["BINANCE,BITGET,BYBIT,COINBASE,OKX", "BINANCE", "BITGET", "BYBIT", "COINBASE", "OKX", "BINANCE,BITGET", "BINANCE,BYBIT", "BINANCE,COINBASE", "BINANCE,OKX", "BITGET,BYBIT", "BITGET,COINBASE", "BITGET,OKX", "BYBIT,COINBASE", "BYBIT,OKX", "COINBASE,OKX"])
+
+// 将用户选择的交易所字符串拆分为数组
+var string[] exchanges = str.split(input_exchanges, ",")
+
+var string timeframe = timeframe.period
+
+string base_currency = str.upper(syminfo.basecurrency)
+string quote_currency = syminfo.currency
+string base_symbol = base_currency + quote_currency
+
+// 函数：为每个交易所构造永续合约ticker
+get_perp_ticker(string exchange, string base, string quote) =>
+    string perp_ticker = na
+    switch exchange
+        "BINANCE" => perp_ticker := exchange + ":" + base + quote + ".P"
+        "BYBIT" => perp_ticker := exchange + ":" + base + quote + ".P"
+        "BITGET" => perp_ticker := exchange + ":" + base + quote + ".P"
+        "OKX" => perp_ticker := exchange + ":" + base + quote + ".P"
+        "COINBASE" => 
+            string coinbase_quote = "USDC"
+            perp_ticker := exchange + ":" + base + coinbase_quote + ".P"
+    perp_ticker
+
+// 初始化汇总变量（仅保留open和close）
+float oiOpen = 0.0
+float oiClose = 0.0
+
+// 获取价格数据
+float priceClose = close
+float priceOpen = open
+float priceHigh = high
+float priceLow = low
+
+// 遍历交易所，获取并汇总OI数据
+for int i = 0 to array.size(exchanges) - 1
+    string ex = array.get(exchanges, i)
+    string perp_ticker = get_perp_ticker(ex, base_currency, quote_currency)
+    if not na(perp_ticker)
+        string oi_symbol = perp_ticker + "_OI"
+        [tempOpen, tempClose, tempColorCond] = request.security(oi_symbol, timeframe, [open, close, close > close[1]], ignore_invalid_symbol = true)
+        if na(tempClose)
+            tempOpen := 0.0
+            tempClose := 0.0
+        oiOpen += tempOpen
+        oiClose += tempClose
+
+// 计算OI变化
+float oiChange = oiClose - oiOpen
+bool oiIncreasing = oiChange > 0
+bool oiDecreasing = oiChange < 0
+
+// 计算价格变化
+float priceChange = priceClose - priceOpen
+bool priceIncreasing = priceChange > 0
+bool priceDecreasing = priceChange < 0
+
+// 1. 趋势反转信号检测逻辑
+// 当OI与价格反向变动时，可能预示趋势即将反转
+bool trendReversalSignal = (oiIncreasing and priceDecreasing) or (oiDecreasing and priceIncreasing)
+
+// 2. 空头回补检测逻辑
+// 价格上涨伴随OI减少可能表示空头回补行为
+bool shortCovering = priceIncreasing and oiDecreasing
+
+// 3. 多头平仓检测逻辑
+// 价格下跌伴随OI减少可能表示多头平仓行为
+bool longPositionClosing = priceDecreasing and oiDecreasing
+
+// 4. 趋势衰竭检测逻辑
+// 在长期趋势末端，OI开始减少可能预示趋势即将结束
+// 这里使用一个简化的判断：连续两个周期OI减少且价格趋势未变
+bool trendExhaustion = oiDecreasing and oiClose[1] < oiOpen[1] and 
+                      ((priceIncreasing and priceClose[1] > priceOpen[1]) or 
+                       (priceDecreasing and priceClose[1] < priceOpen[1]))
+
+// 5. 突破确认检测逻辑
+// 价格突破关键价位时OI同步增加，可确认突破的有效性
+// 这里使用前20周期的最高/最低价作为关键价位
+float highestHigh = ta.highest(high, 20)
+float lowestLow = ta.lowest(low, 20)
+bool breakoutConfirmed = (priceClose > highestHigh[1] and oiIncreasing) or 
+                         (priceClose < lowestLow[1] and oiIncreasing)
+
+// 颜色逻辑：基于周期内变化（close > open）
+bool oiColorCond = oiClose > oiOpen
+color openInterestColor = oiColorCond ? color.white : color.blue
+
+// 绘制信号
+plotshape(trendReversalSignal, title="趋势反转信号", location=location.belowbar, color=color.yellow, style=shape.diamond, size=size.small)
+plotshape(shortCovering, title="空头回补信号", location=location.abovebar, color=color.green, style=shape.triangleup, size=size.small)
+plotshape(longPositionClosing, title="多头平仓信号", location=location.belowbar, color=color.red, style=shape.triangledown, size=size.small)
+plotshape(trendExhaustion, title="趋势衰竭信号", location=location.belowbar, color=color.orange, style=shape.circle, size=size.small)
+plotshape(breakoutConfirmed, title="突破确认信号", location=location.abovebar, color=color.purple, style=shape.square, size=size.small)
+
+// 错误检查
+if barstate.islastconfirmedhistory and na(oiClose)
+    runtime.error(str.format('No Open Interest data found for the `{0}` symbol.', syminfo.prefix + ':' + syminfo.ticker))
+
+// 绘制柱状图（无影线，high=close, low=open）
+plotbar(oiOpen, oiClose, oiOpen, oiClose, 'Open Interest', openInterestColor)
+
+// 添加注释显示当前信号状态
+var table signalTable = table.new(position.top_right, 2, 6, bgcolor=color.white, border_width=1)
+if barstate.islast
+    table.cell(signalTable, 0, 0, "信号类型", text_color=color.black, bgcolor=color.gray)
+    table.cell(signalTable, 1, 0, "状态", text_color=color.black, bgcolor=color.gray)
+    table.cell(signalTable, 0, 1, "趋势反转", text_color=color.black)
+    table.cell(signalTable, 1, 1, trendReversalSignal ? "是" : "否", text_color=color.black, bgcolor=trendReversalSignal ? color.yellow : color.white)
+    table.cell(signalTable, 0, 2, "空头回补", text_color=color.black)
+    table.cell(signalTable, 1, 2, shortCovering ? "是" : "否", text_color=color.black, bgcolor=shortCovering ? color.green : color.white)
+    table.cell(signalTable, 0, 3, "多头平仓", text_color=color.black)
+    table.cell(signalTable, 1, 3, longPositionClosing ? "是" : "否", text_color=color.black, bgcolor=longPositionClosing ? color.red : color.white)
+    table.cell(signalTable, 0, 4, "趋势衰竭", text_color=color.black)
+    table.cell(signalTable, 1, 4, trendExhaustion ? "是" : "否", text_color=color.black, bgcolor=trendExhaustion ? color.orange : color.white)
+    table.cell(signalTable, 0, 5, "突破确认", text_color=color.black)
+    table.cell(signalTable, 1, 5, breakoutConfirmed ? "是" : "否", text_color=color.black, bgcolor=breakoutConfirmed ? color.purple : color.white)
