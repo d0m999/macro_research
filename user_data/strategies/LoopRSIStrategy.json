@@ -1,0 +1,44 @@
+{
+  "strategy_name": "LoopRSIStrategy",
+  "params": {
+    "roi": {
+      "0": 0.15,
+      "120": 0.1,
+      "360": 0.05,
+      "720": 0.02
+    },
+    "stoploss": {
+      "stoploss": -0.01
+    },
+    "trailing": {
+      "trailing_stop": true,
+      "trailing_stop_positive": 0.05,
+      "trailing_stop_positive_offset": 0.06,
+      "trailing_only_offset_is_reached": true
+    },
+    "max_open_trades": {
+      "max_open_trades": 3
+    },
+    "buy": {
+      "bb_length": 20,
+      "bb_mult": 2.0,
+      "kc_length": 20,
+      "kc_mult": 1.2,
+      "median_length": 100,
+      "enable_smoothing": true,
+      "risk_per_trade": 0.05,
+      "rsi_oversold": 27,
+      "smoothing_length": 48,
+      "stoploss_ema": "ema55",
+      "trend_ema_period": 198,
+      "use_squeeze_filter": true,
+      "use_trend_filter": true
+    },
+    "sell": {
+      "rsi_overbought": 73
+    },
+    "protection": {}
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2025-12-04 15:52:55.085467+00:00"
+}

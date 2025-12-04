@@ -3,7 +3,7 @@
 indicator('Open Interest Aggregation with Analysis', 'OI Agg+', format = format.volume)
 
 // 输入设置：用户选择要汇总的交易所
-input_exchanges = input.string("BINANCE,BITGET,BYBIT,COINBASE,OKX", "Exchanges to Include", options=["BINANCE,BITGET,BYBIT,COINBASE,OKX", "BINANCE", "BITGET", "BYBIT", "COINBASE", "OKX", "BINANCE,BITGET", "BINANCE,BYBIT", "BINANCE,COINBASE", "BINANCE,OKX", "BITGET,BYBIT", "BITGET,COINBASE", "BITGET,OKX", "BYBIT,COINBASE", "BYBIT,OKX", "COINBASE,OKX"])
+input_exchanges = input.string("BINANCE,BYBIT,BITGET,COINBASE,OKX,CME", "Exchanges to Include (已验证 + CME)", options=["BINANCE,BYBIT,BITGET,COINBASE,OKX,CME", "BINANCE", "BYBIT", "BITGET", "COINBASE", "OKX", "CME", "DERIBIT", "BITMEX", "KRAKEN", "BINANCE,BYBIT,CME", "BINANCE,OKX,CME"])
 
 // 将用户选择的交易所字符串拆分为数组
 var string[] exchanges = str.split(input_exchanges, ",")
@@ -14,18 +14,88 @@ string base_currency = str.upper(syminfo.basecurrency)
 string quote_currency = syminfo.currency
 string base_symbol = base_currency + quote_currency
 
-// 函数：为每个交易所构造永续合约ticker
-get_perp_ticker(string exchange, string base, string quote) =>
-    string perp_ticker = na
+// 调试模式开关
+show_debug = input.bool(false, "Show Debug Table (显示调试表)", group="Debug")
+smooth_signals = input.int(3, "Signal Smoothing Length (信号平滑周期)", minval=1, group="Analysis")
+
+// ==================================================================================
+// 构造 Ticker 函数（重构为支持多交易对）
+// ==================================================================================
+// 根据 Coinglass 的统计口径，需要聚合所有 BTC 交易对 (USDT/USDC/BUSD 等)
+// 返回格式：[ticker_id, is_coins, label]
+get_all_tickers(string exchange, string base) =>
+    var string[] tickers = array.new_string(0)
+    var bool[] is_coins_arr = array.new_bool(0)
+    var string[] labels = array.new_string(0)
+    
+    array.clear(tickers)
+    array.clear(is_coins_arr)
+    array.clear(labels)
+    
     switch exchange
-        "BINANCE" => perp_ticker := exchange + ":" + base + quote + ".P"
-        "BYBIT" => perp_ticker := exchange + ":" + base + quote + ".P"
-        "BITGET" => perp_ticker := exchange + ":" + base + quote + ".P"
-        "OKX" => perp_ticker := exchange + ":" + base + quote + ".P"
-        "COINBASE" => 
-            string coinbase_quote = "USDC"
-            perp_ticker := exchange + ":" + base + coinbase_quote + ".P"
-    perp_ticker
+        "BINANCE" =>
+            // Binance: 支持 USDT 和 USDC 两种保证金，都需要统计
+            array.push(tickers, "BINANCE:" + base + "USDT.P_OI")
+            array.push(is_coins_arr, true)  // USDT 返回 Coins
+            array.push(labels, "BINANCE-USDT")
+            
+            array.push(tickers, "BINANCE:" + base + "USDC.P_OI")
+            array.push(is_coins_arr, true)  // USDC 返回 Coins
+            array.push(labels, "BINANCE-USDC")
+            
+        "BYBIT" =>
+            array.push(tickers, "BYBIT:" + base + "USDT.P_OI")
+            array.push(is_coins_arr, true)
+            array.push(labels, "BYBIT-USDT")
+            
+            array.push(tickers, "BYBIT:" + base + "USDC.P_OI")
+            array.push(is_coins_arr, true)
+            array.push(labels, "BYBIT-USDC")
+            
+        "BITGET" =>
+            array.push(tickers, "BITGET:" + base + "USDT.P_OI")
+            array.push(is_coins_arr, true)
+            array.push(labels, "BITGET-USDT")
+            
+        "COINBASE" =>
+            // Coinbase International 主要使用 USDC
+            array.push(tickers, "COINBASE:" + base + "USDC.P_OI")
+            array.push(is_coins_arr, true)
+            array.push(labels, "COINBASE-USDC")
+            
+        "OKX" =>
+            // OKX 在 TradingView 上直接返回 USD 价值
+            array.push(tickers, "OKX:" + base + "USDT.P_OI")
+            array.push(is_coins_arr, false)  // 直接 USD
+            array.push(labels, "OKX-USDT")
+            
+        "CME" =>
+            // CME: 芝加哥商品交易所，占据 21% 市场份额
+            // 注意：CME 的 OI ticker 可能需要特殊处理
+            // 先尝试 CME:BTC1!_OI，如果不工作再调整
+            array.push(tickers, "CME:BTC1!_OI")
+            array.push(is_coins_arr, false)  // CME 返回合约数量，需要 × 合约乘数 (5 BTC/contract)
+            array.push(labels, "CME-BTC")
+            
+        // 以下为实验性支持（数据源不稳定）
+        "DERIBIT" =>
+            array.push(tickers, "DERIBIT:" + base + "USD_OI")
+            array.push(is_coins_arr, false)
+            array.push(labels, "DERIBIT-USD")
+            
+        "BITMEX" =>
+            string bitmex_base = base == "BTC" ? "XBT" : base
+            array.push(tickers, "BITMEX:" + bitmex_base + "USD_OI")
+            array.push(is_coins_arr, false)
+            array.push(labels, "BITMEX-USD")
+            
+        "KRAKEN" =>
+            string kraken_base = base == "BTC" ? "XBT" : base
+            array.push(tickers, "KRAKEN:" + kraken_base + "USD_OI")
+            array.push(is_coins_arr, false)
+            array.push(labels, "KRAKEN-USD")
+    
+    [tickers, is_coins_arr, labels]
 
 // 初始化汇总变量（仅保留open和close）
 float oiOpen = 0.0
@@ -37,66 +107,89 @@ float priceOpen = open
 float priceHigh = high
 float priceLow = low
 
-// 遍历交易所，获取并汇总OI数据
+// =================================================================================
+// Funding Rate (资金费率) 模块
+// =================================================================================
+// 使用 Binance Premium Index 作为全网资金费率的代理
+// 逻辑：Binance 是流动性最大的交易所，其费率最具代表性
+string fr_ticker = "BINANCE:" + base_currency + "USDT" + "_PREMIUM"
+[fr_index] = request.security(fr_ticker, timeframe, [close], ignore_invalid_symbol = true)
+
+// 简单的资金费率估算 (Binance 费率通常是 Premium Index 的 8 小时移动平均，这里简化直接使用 Index 观察趋势)
+// 也可以使用 clamp 限制在标准范围内，但直接看 Index 更能反映瞬时压力
+float fundingRate = na(fr_index) ? 0.0 : fr_index
+
+// 资金费率阈值 (0.01% 是基准费率)
+float fr_high_threshold = 0.01
+float fr_low_threshold = -0.01
+
+bool isLongCrowded = fundingRate > fr_high_threshold
+bool isShortCrowded = fundingRate < fr_low_threshold
+
+
+// 调试数据收集变量
+var string[] debug_log = array.new_string(0)
+
+// 在每根K线上收集数据
 for int i = 0 to array.size(exchanges) - 1
     string ex = array.get(exchanges, i)
-    string perp_ticker = get_perp_ticker(ex, base_currency, quote_currency)
-    if not na(perp_ticker)
-        string oi_symbol = perp_ticker + "_OI"
-        [tempOpen, tempClose, tempColorCond] = request.security(oi_symbol, timeframe, [open, close, close > close[1]], ignore_invalid_symbol = true)
-        if na(tempClose)
-            tempOpen := 0.0
-            tempClose := 0.0
-        oiOpen += tempOpen
-        oiClose += tempClose
+    
+    // 获取该交易所的所有 ticker
+    [tickers, is_coins_flags, labels] = get_all_tickers(ex, base_currency)
+    
+    // 遍历该交易所的所有交易对
+    for int j = 0 to array.size(tickers) - 1
+        string ticker_id = array.get(tickers, j)
+        bool is_coins = array.get(is_coins_flags, j)
+        string label = array.get(labels, j)
+        
+        [tempOpen, tempClose] = request.security(ticker_id, timeframe, [open, close], ignore_invalid_symbol = true)
+        
+        // 数据清洗
+        float valOpen = na(tempOpen) ? 0.0 : tempOpen
+        float valClose = na(tempClose) ? 0.0 : tempClose
+        
+        // ========================================================
+        // 单位标准化 (Normalize to USD Value)
+        // ========================================================
+        // 根据 is_coins标记判断是否需要乘以价格
+        
+        if is_coins
+            valOpen := valOpen * priceOpen
+            valClose := valClose * priceClose
+        
+        // 特殊处理：CME 合约乘数
+        if ex == "CME"
+            // CME 的 BTC Futures 每个合约代表 5 BTC
+            valOpen := valOpen * 5.0 * priceOpen
+            valClose := valClose * 5.0 * priceClose
+            
+        oiOpen += valOpen
+        oiClose += valClose
+        
+        // 在barstate.islast时准备调试数据（但不立即添加到数组）
+        if barstate.islast and show_debug
+            // 首先清空数组
+            if i == 0 and j == 0
+                array.clear(debug_log)
+            
+            string unit_str = is_coins ? " (Coins×Price)" : " (USD)"
+            if ex == "CME"
+                unit_str := " (Contracts×5×Price)"
+            
+            // 检查数据是否有效
+            if not na(valClose) and valClose > 0
+                array.push(debug_log, label + "|" + str.tostring(valClose, format.volume) + "|" + ticker_id + unit_str)
+            else
+                // 如果数据无效，记录错误信息
+                string error_msg = label + "|No Data|" + ticker_id + " (Invalid)"
+                array.push(debug_log, error_msg)
 
-// 计算OI变化
-float oiChange = oiClose - oiOpen
-bool oiIncreasing = oiChange > 0
-bool oiDecreasing = oiChange < 0
-
-// 计算价格变化
-float priceChange = priceClose - priceOpen
-bool priceIncreasing = priceChange > 0
-bool priceDecreasing = priceChange < 0
-
-// 1. 趋势反转信号检测逻辑
-// 当OI与价格反向变动时，可能预示趋势即将反转
-bool trendReversalSignal = (oiIncreasing and priceDecreasing) or (oiDecreasing and priceIncreasing)
-
-// 2. 空头回补检测逻辑
-// 价格上涨伴随OI减少可能表示空头回补行为
-bool shortCovering = priceIncreasing and oiDecreasing
-
-// 3. 多头平仓检测逻辑
-// 价格下跌伴随OI减少可能表示多头平仓行为
-bool longPositionClosing = priceDecreasing and oiDecreasing
-
-// 4. 趋势衰竭检测逻辑
-// 在长期趋势末端，OI开始减少可能预示趋势即将结束
-// 这里使用一个简化的判断：连续两个周期OI减少且价格趋势未变
-bool trendExhaustion = oiDecreasing and oiClose[1] < oiOpen[1] and 
-                      ((priceIncreasing and priceClose[1] > priceOpen[1]) or 
-                       (priceDecreasing and priceClose[1] < priceOpen[1]))
-
-// 5. 突破确认检测逻辑
-// 价格突破关键价位时OI同步增加，可确认突破的有效性
-// 这里使用前20周期的最高/最低价作为关键价位
-float highestHigh = ta.highest(high, 20)
-float lowestLow = ta.lowest(low, 20)
-bool breakoutConfirmed = (priceClose > highestHigh[1] and oiIncreasing) or 
-                         (priceClose < lowestLow[1] and oiIncreasing)
-
-// 颜色逻辑：基于周期内变化（close > open）
+// OI 柱状图颜色逻辑（基于周期内变化）
 bool oiColorCond = oiClose > oiOpen
 color openInterestColor = oiColorCond ? color.white : color.blue
 
-// 绘制信号
-plotshape(trendReversalSignal, title="趋势反转信号", location=location.belowbar, color=color.yellow, style=shape.diamond, size=size.small)
-plotshape(shortCovering, title="空头回补信号", location=location.abovebar, color=color.green, style=shape.triangleup, size=size.small)
-plotshape(longPositionClosing, title="多头平仓信号", location=location.belowbar, color=color.red, style=shape.triangledown, size=size.small)
-plotshape(trendExhaustion, title="趋势衰竭信号", location=location.belowbar, color=color.orange, style=shape.circle, size=size.small)
-plotshape(breakoutConfirmed, title="突破确认信号", location=location.abovebar, color=color.purple, style=shape.square, size=size.small)
+
 
 // 错误检查
 if barstate.islastconfirmedhistory and na(oiClose)
@@ -105,18 +198,61 @@ if barstate.islastconfirmedhistory and na(oiClose)
 // 绘制柱状图（无影线，high=close, low=open）
 plotbar(oiOpen, oiClose, oiOpen, oiClose, 'Open Interest', openInterestColor)
 
-// 添加注释显示当前信号状态
-var table signalTable = table.new(position.top_right, 2, 6, bgcolor=color.white, border_width=1)
+// Funding Rate 状态表 (精简版)
+var table frTable = table.new(position.top_right, 2, 2, bgcolor=color.new(color.white, 80), border_width=1)
 if barstate.islast
-    table.cell(signalTable, 0, 0, "信号类型", text_color=color.black, bgcolor=color.gray)
-    table.cell(signalTable, 1, 0, "状态", text_color=color.black, bgcolor=color.gray)
-    table.cell(signalTable, 0, 1, "趋势反转", text_color=color.black)
-    table.cell(signalTable, 1, 1, trendReversalSignal ? "是" : "否", text_color=color.black, bgcolor=trendReversalSignal ? color.yellow : color.white)
-    table.cell(signalTable, 0, 2, "空头回补", text_color=color.black)
-    table.cell(signalTable, 1, 2, shortCovering ? "是" : "否", text_color=color.black, bgcolor=shortCovering ? color.green : color.white)
-    table.cell(signalTable, 0, 3, "多头平仓", text_color=color.black)
-    table.cell(signalTable, 1, 3, longPositionClosing ? "是" : "否", text_color=color.black, bgcolor=longPositionClosing ? color.red : color.white)
-    table.cell(signalTable, 0, 4, "趋势衰竭", text_color=color.black)
-    table.cell(signalTable, 1, 4, trendExhaustion ? "是" : "否", text_color=color.black, bgcolor=trendExhaustion ? color.orange : color.white)
-    table.cell(signalTable, 0, 5, "突破确认", text_color=color.black)
-    table.cell(signalTable, 1, 5, breakoutConfirmed ? "是" : "否", text_color=color.black, bgcolor=breakoutConfirmed ? color.purple : color.white)
+    string frStatus = isLongCrowded ? "多头拥挤" : (isShortCrowded ? "空头拥挤" : "中性")
+    color frColor = isLongCrowded ? color.red : (isShortCrowded ? color.green : color.white)
+    table.cell(frTable, 0, 0, "费率状态", text_color=color.black, bgcolor=color.gray)
+    table.cell(frTable, 1, 0, frStatus, text_color=color.black, bgcolor=frColor)
+    table.cell(frTable, 0, 1, "FR Value", text_color=color.black, bgcolor=color.gray)
+    table.cell(frTable, 1, 1, str.tostring(fundingRate, "#.####%"), text_color=color.black)
+
+// 调试表
+var table debugTable = table.new(position.bottom_right, 4, 16, bgcolor=color.new(color.black, 50), border_width=1)
+
+// 在每根K线上准备调试数据，只在最后一根K线显示
+if barstate.islast and show_debug
+    // 首先清空现有表格内容
+    for i = 0 to 15
+        table.cell(debugTable, 0, i, "", text_color=color.white)
+        table.cell(debugTable, 1, i, "", text_color=color.white)
+        table.cell(debugTable, 2, i, "", text_color=color.white, text_size=size.tiny)
+        table.cell(debugTable, 3, i, "", text_color=color.gray, text_size=size.tiny)
+    
+    // 显示表头
+    table.cell(debugTable, 0, 0, "交易所", text_color=color.white, bgcolor=color.blue)
+    table.cell(debugTable, 1, 0, "OI 值 ($)", text_color=color.white, bgcolor=color.blue)
+    table.cell(debugTable, 2, 0, "Ticker ID", text_color=color.white, bgcolor=color.blue, text_size=size.tiny)
+    table.cell(debugTable, 3, 0, "单位", text_color=color.white, bgcolor=color.blue, text_size=size.tiny)
+    
+    // 检查是否有调试数据
+    if array.size(debug_log) > 0
+        for i = 0 to math.min(array.size(debug_log) - 1, 14)
+            string log_str = array.get(debug_log, i)
+            string[] parts = str.split(log_str, "|")
+            
+            if array.size(parts) >= 3
+                table.cell(debugTable, 0, i + 1, array.get(parts, 0), text_color=color.white)
+                table.cell(debugTable, 1, i + 1, array.get(parts, 1), text_color=color.white)
+                table.cell(debugTable, 2, i + 1, array.get(parts, 2), text_color=color.white, text_size=size.tiny)
+                if array.size(parts) >= 4
+                    table.cell(debugTable, 3, i + 1, array.get(parts, 3), text_color=color.gray, text_size=size.tiny)
+                else
+                    table.cell(debugTable, 3, i + 1, "N/A", text_color=color.gray, text_size=size.tiny)
+            else
+                // 如果数据格式不正确，显示错误信息
+                table.cell(debugTable, 0, i + 1, "数据错误", text_color=color.red)
+                table.cell(debugTable, 1, i + 1, str.tostring(i+1), text_color=color.red)
+    else
+        // 如果没有数据，显示提示信息
+        table.cell(debugTable, 0, 1, "无数据", text_color=color.yellow, bgcolor=color.new(color.orange, 50))
+        table.cell(debugTable, 1, 1, "检查设置", text_color=color.yellow, bgcolor=color.new(color.orange, 50))
+        table.cell(debugTable, 2, 1, "或网络连接", text_color=color.yellow, bgcolor=color.new(color.orange, 50), text_size=size.tiny)
+        table.cell(debugTable, 3, 1, "", text_color=color.yellow, bgcolor=color.new(color.orange, 50))
+        
+    // 在表底添加状态信息
+    table.cell(debugTable, 0, 15, "状态:", text_color=color.gray, text_size=size.small)
+    table.cell(debugTable, 1, 15, "已更新", text_color=color.green, text_size=size.small)
+    table.cell(debugTable, 2, 15, "总数:", text_color=color.gray, text_size=size.small)
+    table.cell(debugTable, 3, 15, str.tostring(array.size(debug_log)), text_color=color.white, text_size=size.small)
