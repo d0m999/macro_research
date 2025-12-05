@@ -71,8 +71,9 @@ config_*.json
 
 # 说明文档和 rules
 # 只忽略根目录下的 .md 文件, 但 GEMINI.md 除外
-/*.md
-!/GEMINI.md
-!/IFLOW.md
-!/btc-cycle.md
+# /*.md
+#!/GEMINI.md
+#!/IFLOW.md
+#!/btc-cycle.md
+#!/RSI-Strategy.md
 

@@ -25,20 +25,21 @@
       "kc_length": 20,
       "kc_mult": 1.2,
       "median_length": 100,
+      "ema_test_tolerance": 0.005,
       "enable_smoothing": true,
-      "risk_per_trade": 0.05,
-      "rsi_oversold": 27,
-      "smoothing_length": 48,
-      "stoploss_ema": "ema55",
-      "trend_ema_period": 198,
-      "use_squeeze_filter": true,
-      "use_trend_filter": true
+      "risk_per_trade": 0.03,
+      "rsi_oversold": 19,
+      "sl_buffer": 0.008,
+      "smoothing_length": 50,
+      "trend_ema_period": 174,
+      "use_squeeze_filter": false,
+      "use_trend_filter": false
     },
     "sell": {
-      "rsi_overbought": 73
+      "rsi_overbought": 70
     },
     "protection": {}
   },
   "ft_stratparam_v": 1,
-  "export_time": "2025-12-04 15:52:55.085467+00:00"
+  "export_time": "2025-12-05 06:39:38.142163+00:00"
 }
