@@ -50,6 +50,12 @@ class LoopRSIStrategy(IStrategy):
 
     # 支持做空（期货）
     can_short: bool = True
+    
+    # Phase 2: 交易状态跟踪 (用于部分止盈)
+    def __init__(self, config: dict) -> None:
+        super().__init__(config)
+        # 跟踪每个交易的部分止盈状态
+        self.trade_partial_tp_status = {}  # {trade_id: {'tp1_done': bool, 'tp2_done': bool}}
 
     # 时间周期
     timeframe = '1h'
@@ -118,6 +124,97 @@ class LoopRSIStrategy(IStrategy):
     # 止损缓冲
     sl_buffer = DecimalParameter(0.005, 0.02, default=0.01, decimals=3, space="buy", optimize=True)
 
+    # ==========================================================================
+    # Phase 2: 价格位置过滤器参数
+    # ==========================================================================
+    
+    # 启用价格位置过滤器
+    use_price_position_filter = BooleanParameter(default=True, space="buy", optimize=True)
+    
+    # 价格位置范围设置（相对于近期高低点的百分比）
+    price_position_low_threshold = DecimalParameter(0.1, 0.3, default=0.2, decimals=2, space="buy", optimize=True)
+    price_position_high_threshold = DecimalParameter(0.7, 0.9, default=0.8, decimals=2, space="buy", optimize=True)
+    
+    # 价格位置计算周期
+    price_position_period = IntParameter(20, 100, default=50, space="buy", optimize=True)
+    
+    # ==========================================================================
+    # Phase 2: 多重止盈触发条件参数
+    # ==========================================================================
+    
+    # 启用多重止盈
+    use_multiple_take_profit = BooleanParameter(default=True, space="sell", optimize=True)
+    
+    # 第一重止盈目标 (快速止盈)
+    tp1_percentage = DecimalParameter(0.5, 2.0, default=1.0, decimals=1, space="sell", optimize=True)
+    tp1_size_ratio = DecimalParameter(0.2, 0.5, default=0.3, decimals=1, space="sell", optimize=True)
+    
+    # 第二重止盈目标 (中期止盈)
+    tp2_percentage = DecimalParameter(1.0, 3.0, default=2.0, decimals=1, space="sell", optimize=True)
+    tp2_size_ratio = DecimalParameter(0.3, 0.6, default=0.4, decimals=1, space="sell", optimize=True)
+    
+    # 第三重止盈目标 (长期止盈/移动止损)
+    tp3_trailing_activation = DecimalParameter(1.5, 4.0, default=2.5, decimals=1, space="sell", optimize=True)
+    tp3_trailing_distance = DecimalParameter(0.5, 2.0, default=1.0, decimals=1, space="sell", optimize=True)
+    
+    # ==========================================================================
+    # Phase 2: 部分止盈机制参数
+    # ==========================================================================
+    
+    # 启用部分止盈
+    use_partial_take_profit = BooleanParameter(default=True, space="sell", optimize=True)
+    
+    # 部分止盈触发条件和比例
+    partial_tp1_profit = DecimalParameter(0.5, 1.5, default=1.0, decimals=1, space="sell", optimize=True)
+    partial_tp1_ratio = DecimalParameter(0.2, 0.4, default=0.3, decimals=1, space="sell", optimize=True)
+    
+    partial_tp2_profit = DecimalParameter(1.0, 2.5, default=2.0, decimals=1, space="sell", optimize=True)
+    partial_tp2_ratio = DecimalParameter(0.3, 0.5, default=0.4, decimals=1, space="sell", optimize=True)
+    
+    # ==========================================================================
+    # Phase 3: 市场波动性过滤器参数
+    # ==========================================================================
+    
+    # 启用市场波动性过滤器
+    use_volatility_filter = BooleanParameter(default=True, space="buy", optimize=True)
+    
+    # ATR周期和倍数
+    volatility_atr_period = IntParameter(14, 50, default=20, space="buy", optimize=True)
+    volatility_atr_multiplier = DecimalParameter(0.5, 3.0, default=1.5, decimals=1, space="buy", optimize=True)
+    
+    # 波动性阈值设置
+    low_volatility_threshold = DecimalParameter(0.5, 1.5, default=1.0, decimals=1, space="buy", optimize=True)
+    high_volatility_threshold = DecimalParameter(2.0, 5.0, default=3.0, decimals=1, space="buy", optimize=True)
+    
+    # ==========================================================================
+    # Phase 3: 市场环境适应性止盈参数
+    # ==========================================================================
+    
+    # 启用市场环境适应性止盈
+    use_adaptive_take_profit = BooleanParameter(default=True, space="sell", optimize=True)
+    
+    # 趋势市场止盈调整
+    trend_tp_multiplier = DecimalParameter(1.0, 2.0, default=1.5, decimals=1, space="sell", optimize=True)
+    trend_trailing_activation = DecimalParameter(1.0, 3.0, default=2.0, decimals=1, space="sell", optimize=True)
+    
+    # 震荡市场止盈调整
+    ranging_tp_multiplier = DecimalParameter(0.5, 1.5, default=1.0, decimals=1, space="sell", optimize=True)
+    ranging_trailing_activation = DecimalParameter(1.5, 3.5, default=2.5, decimals=1, space="sell", optimize=True)
+    
+    # ==========================================================================
+    # Phase 3: 相关性止盈参数
+    # ==========================================================================
+    
+    # 启用相关性止盈
+    use_correlation_exit = BooleanParameter(default=True, space="sell", optimize=True)
+    
+    # 相关性交易对列表 (主要加密货币对)
+    correlation_pairs = ["BTC/USDT", "ETH/USDT"]
+    
+    # 相关性止盈阈值
+    correlation_profit_threshold = DecimalParameter(1.0, 3.0, default=2.0, decimals=1, space="sell", optimize=True)
+    correlation_avg_profit_threshold = DecimalParameter(0.5, 2.0, default=1.5, decimals=1, space="sell", optimize=True)
+    
     # 订单类型
     order_types = {
         'entry': 'limit',
@@ -452,7 +549,7 @@ class LoopRSIStrategy(IStrategy):
         # merge_informative_pair 会自动添加 _4h 后缀 (例如 ema_trend_4h)
         dataframe = merge_informative_pair(dataframe, informative_4h, self.timeframe, '4h', ffill=True)
         
-        # 使用合并后的 4h EMA 进行趋势判断
+# 使用合并后的 4h EMA 进行趋势判断
         # 注意：合并列名为 'ema_trend_4h'
         if 'ema_trend_4h' in dataframe.columns:
             dataframe['trend_bullish'] = dataframe['close'] > dataframe['ema_trend_4h']
@@ -465,10 +562,86 @@ class LoopRSIStrategy(IStrategy):
             dataframe['trend_bearish'] = dataframe['close'] < dataframe['ema_trend_local']
 
         # ======================================================================
-        # 6. 动态止损 EMA（新增） - 计算在主周期 1h 上
+        # 6. Phase 2: 价格位置过滤器计算
         # ======================================================================
-        for period in [21, 55, 100, 200]:
-            dataframe[f'ema{period}'] = ta.EMA(dataframe, timeperiod=period)
+        if self.use_price_position_filter.value:
+            # 计算指定周期内的最高价和最低价
+            dataframe['price_position_high'] = dataframe['high'].rolling(
+                window=self.price_position_period.value
+            ).max()
+            dataframe['price_position_low'] = dataframe['low'].rolling(
+                window=self.price_position_period.value
+            ).min()
+            
+            # 计算当前价格在高低点范围内的位置 (0-1之间)
+            dataframe['price_position'] = (
+                (dataframe['close'] - dataframe['price_position_low']) / 
+                (dataframe['price_position_high'] - dataframe['price_position_low'])
+            ).fillna(0.5)  # 如果无法计算，默认为中位数位置
+            
+            # 价格位置过滤器信号
+            # 做多条件：价格处于相对低位 (低于阈值)
+            dataframe['price_position_long_ok'] = (
+                dataframe['price_position'] < self.price_position_low_threshold.value
+            )
+            
+            # 做空条件：价格处于相对高位 (高于阈值)  
+            dataframe['price_position_short_ok'] = (
+                dataframe['price_position'] > self.price_position_high_threshold.value
+            )
+        else:
+            # 如果未启用过滤器，默认允许所有交易
+            dataframe['price_position_long_ok'] = True
+            dataframe['price_position_short_ok'] = True
+        
+        # ======================================================================
+        # 7. Phase 3: 市场波动性过滤器计算
+        # ======================================================================
+        if self.use_volatility_filter.value:
+            # 计算ATR (Average True Range)
+            dataframe['atr'] = ta.ATR(dataframe, timeperiod=self.volatility_atr_period.value)
+            
+            # 计算ATR百分比 (相对于收盘价的百分比)
+            dataframe['atr_percent'] = (dataframe['atr'] / dataframe['close']) * 100
+            
+            # 波动性分类
+            dataframe['volatility_regime'] = 'normal'
+            dataframe.loc[dataframe['atr_percent'] < self.low_volatility_threshold.value, 'volatility_regime'] = 'low'
+            dataframe.loc[dataframe['atr_percent'] > self.high_volatility_threshold.value, 'volatility_regime'] = 'high'
+            
+            # 市场环境判断 (基于价格和ATR的关系)
+            # 使用ADX或类似指标判断趋势强度
+            dataframe['adx'] = ta.ADX(dataframe, timeperiod=14)
+            dataframe['trend_strength'] = 'weak'
+            dataframe.loc[dataframe['adx'] > 25, 'trend_strength'] = 'strong'
+            
+            # 市场环境组合判断
+            dataframe['market_environment'] = 'ranging'  # 默认震荡
+            dataframe.loc[
+                (dataframe['trend_strength'] == 'strong') & 
+                (dataframe['volatility_regime'] != 'low'), 
+                'market_environment'
+            ] = 'trending'
+            
+            # 波动性过滤器信号
+            # 低波动性：减少交易频率
+            dataframe['volatility_filter_ok'] = (
+                dataframe['volatility_regime'] != 'low'
+            )
+            
+            # 高波动性：谨慎交易，需要更强的信号
+            high_vol_extra_filter = (
+                (dataframe['volatility_regime'] != 'high') |
+                ((dataframe['rsi_cross_above_oversold'] | dataframe['rsi_cross_below_overbought']) &
+                 (dataframe['volume'] > dataframe['volume'].rolling(20).mean() * 1.5))
+            )
+            dataframe['volatility_filter_ok'] = dataframe['volatility_filter_ok'] & high_vol_extra_filter
+            
+        else:
+            # 如果未启用波动性过滤器，默认允许
+            dataframe['volatility_filter_ok'] = True
+            dataframe['market_environment'] = 'normal'
+            dataframe['atr_percent'] = 1.0
 
         return dataframe
 
@@ -507,6 +680,14 @@ class LoopRSIStrategy(IStrategy):
             # 组合条件
             long_entry = long_rsi_cond & (long_test | long_cross)
             
+            # Phase 2: 应用价格位置过滤器
+            if self.use_price_position_filter.value:
+                long_entry = long_entry & dataframe['price_position_long_ok']
+            
+            # Phase 3: 应用波动性过滤器
+            if self.use_volatility_filter.value:
+                long_entry = long_entry & dataframe['volatility_filter_ok']
+            
             # 如果启用了挤压过滤器
             if self.use_squeeze_filter.value:
                 long_entry = long_entry & (dataframe['is_squeeze'] == 1)
@@ -525,6 +706,14 @@ class LoopRSIStrategy(IStrategy):
             
             # 组合条件
             short_entry = short_rsi_cond & (short_test | short_cross)
+            
+            # Phase 2: 应用价格位置过滤器
+            if self.use_price_position_filter.value:
+                short_entry = short_entry & dataframe['price_position_short_ok']
+            
+            # Phase 3: 应用波动性过滤器
+            if self.use_volatility_filter.value:
+                short_entry = short_entry & dataframe['volatility_filter_ok']
             
             if self.use_squeeze_filter.value:
                 short_entry = short_entry & (dataframe['is_squeeze'] == 1)
@@ -579,7 +768,7 @@ class LoopRSIStrategy(IStrategy):
     def custom_exit(self, pair: str, trade: 'Trade', current_time: datetime, current_rate: float,
                     current_profit: float, **kwargs):
         """
-        自定义退出逻辑 (使用主周期 1h 的均线进行动态止盈)
+        Phase 2: 自定义退出逻辑 (多重止盈 + 部分止盈机制)
         """
         dataframe, _ = self.dp.get_analyzed_dataframe(pair, self.timeframe)
         candle_date = timeframe_to_prev_date(self.timeframe, current_time)
@@ -590,27 +779,191 @@ class LoopRSIStrategy(IStrategy):
             
         candle = candle.iloc[0]
         
-        # 使用主周期的 EMA 55/100
-        # 因为主周期已经是 1h，所以直接使用 ema55, ema100
+        # Phase 2: 部分止盈状态管理
+        trade_id = str(trade.id)
         
-        if trade.is_short:
-            # 做空止盈：价格触及 EMA 55/100 (支撑)
-            ema55 = candle.get('ema55', 0)
-            ema100 = candle.get('ema100', 0)
-            if ema55 > 0 and current_rate <= ema55:
-                return 'ema55_tp'
-            if ema100 > 0 and current_rate <= ema100:
-                return 'ema100_tp'
+        # 初始化交易的部分止盈状态
+        if trade_id not in self.trade_partial_tp_status:
+            self.trade_partial_tp_status[trade_id] = {
+                'tp1_done': False,
+                'tp2_done': False
+            }
+        
+        tp_status = self.trade_partial_tp_status[trade_id]
+        
+        # 如果未启用多重止盈，使用原有的EMA止盈逻辑
+        if not self.use_multiple_take_profit.value:
+            # 原有的EMA止盈逻辑
+            if trade.is_short:
+                ema55 = candle.get('ema55', 0)
+                ema100 = candle.get('ema100', 0)
+                if ema55 > 0 and current_rate <= ema55:
+                    return 'ema55_tp'
+                if ema100 > 0 and current_rate <= ema100:
+                    return 'ema100_tp'
+            else:
+                ema55 = candle.get('ema55', 999999999)
+                ema100 = candle.get('ema100', 999999999)
+                if ema55 < 999999999 and current_rate >= ema55:
+                    return 'ema55_tp'
+                if ema100 < 999999999 and current_rate >= ema100:
+                    return 'ema100_tp'
+            return None
+        
+        # Phase 2: 部分止盈逻辑 (优先级高于完全止盈)
+        if self.use_partial_take_profit.value:
+            # 第一次部分止盈
+            if not tp_status['tp1_done'] and current_profit >= self.partial_tp1_profit.value / 100:
+                tp_status['tp1_done'] = True
+                return f'partial_tp1_{self.partial_tp1_profit.value}%_{self.partial_tp1_ratio.value}'
+            
+            # 第二次部分止盈
+            if not tp_status['tp2_done'] and current_profit >= self.partial_tp2_profit.value / 100:
+                tp_status['tp2_done'] = True
+                return f'partial_tp2_{self.partial_tp2_profit.value}%_{self.partial_tp2_ratio.value}'
+        
+        # Phase 2: 多重止盈逻辑 (在部分止盈完成后)
+        # 获取交易已持续时间
+        trade_duration = (current_time - trade.open_date_utc).total_seconds() / 3600  # 小时
+        
+        # Phase 3: 获取当前市场环境
+        market_environment = candle.get('market_environment', 'normal')
+        atr_percent = candle.get('atr_percent', 1.0)
+        
+        # Phase 3: 市场环境适应性止盈调整
+        if self.use_adaptive_take_profit.value:
+            if market_environment == 'trending':
+                # 趋势市场：提高止盈目标，延长持仓时间
+                tp1_adj = self.tp1_percentage.value * self.trend_tp_multiplier.value
+                tp2_adj = self.tp2_percentage.value * self.trend_tp_multiplier.value
+                tp3_activation_adj = self.tp3_trailing_activation.value * self.trend_tp_multiplier.value
+                trailing_activation_adj = self.trend_trailing_activation.value
+            elif market_environment == 'ranging':
+                # 震荡市场：降低止盈目标，快速止盈
+                tp1_adj = self.tp1_percentage.value * self.ranging_tp_multiplier.value
+                tp2_adj = self.tp2_percentage.value * self.ranging_tp_multiplier.value
+                tp3_activation_adj = self.tp3_trailing_activation.value * self.ranging_tp_multiplier.value
+                trailing_activation_adj = self.ranging_trailing_activation.value
+            else:
+                # 正常市场：使用默认设置
+                tp1_adj = self.tp1_percentage.value
+                tp2_adj = self.tp2_percentage.value
+                tp3_activation_adj = self.tp3_trailing_activation.value
+                trailing_activation_adj = self.tp3_trailing_activation.value
         else:
-            # 做多止盈：价格触及 EMA 55/100 (阻力)
-            ema55 = candle.get('ema55', 999999999)
-            ema100 = candle.get('ema100', 999999999)
-            if ema55 < 999999999 and current_rate >= ema55:
-                return 'ema55_tp'
-            if ema100 < 999999999 and current_rate >= ema100:
-                return 'ema100_tp'
+            # 未启用适应性止盈，使用默认设置
+            tp1_adj = self.tp1_percentage.value
+            tp2_adj = self.tp2_percentage.value
+            tp3_activation_adj = self.tp3_trailing_activation.value
+            trailing_activation_adj = self.tp3_trailing_activation.value
+        
+        # 第一重止盈：快速止盈 (适用于短期获利)
+        if current_profit >= tp1_adj / 100:
+            # 如果交易时间很短(少于2小时)且达到第一重止盈目标，立即止盈
+            if trade_duration < 2:
+                return f'tp1_quick_{tp1_adj}%'
+            
+            # 如果价格出现快速反转迹象，也触发第一重止盈
+            rsi_reversal = (
+                (trade.is_short and candle.get('adaptive_rsi', 50) < 30) or
+                (not trade.is_short and candle.get('adaptive_rsi', 50) > 70)
+            )
+            if rsi_reversal:
+                return f'tp1_reversal_{tp1_adj}%'
+        
+        # 第二重止盈：中期止盈
+        if current_profit >= tp2_adj / 100:
+            # 结合EMA阻力/支撑位确认
+            if trade.is_short:
+                ema55 = candle.get('ema55', 0)
+                ema100 = candle.get('ema100', 0)
+                if (ema55 > 0 and current_rate <= ema55) or (ema100 > 0 and current_rate <= ema100):
+                    return f'tp2_ema_support_{tp2_adj}%'
+            else:
+                ema55 = candle.get('ema55', 999999999)
+                ema100 = candle.get('ema100', 999999999)
+                if (ema55 < 999999999 and current_rate >= ema55) or (ema100 < 999999999 and current_rate >= ema100):
+                    return f'tp2_ema_resistance_{tp2_adj}%'
+        
+        # 第三重止盈：移动止损 (长期持仓)
+        if current_profit >= tp3_activation_adj / 100:
+            # 检查是否触发移动止损条件
+            if trade.is_short:
+                # 做空移动止损：价格上涨超过追踪距离
+                stop_loss_rate = trade.open_rate * (1 - current_profit + self.tp3_trailing_distance.value / 100)
+                if current_rate >= stop_loss_rate:
+                    return f'tp3_trailing_stop_{self.tp3_trailing_distance.value}%'
+            else:
+                # 做多移动止损：价格下跌超过追踪距离
+                stop_loss_rate = trade.open_rate * (1 + current_profit - self.tp3_trailing_distance.value / 100)
+                if current_rate <= stop_loss_rate:
+                    return f'tp3_trailing_stop_{self.tp3_trailing_distance.value}%'
+        
+        # 额外的RSI反转止盈条件
+        rsi_current = candle.get('adaptive_rsi', 50)
+        
+        if trade.is_short and current_profit > 0.005:  # 做空盈利超过0.5%
+            # RSI进入超卖区，考虑止盈
+            if rsi_current < 25:
+                return 'rsi_oversold_exit'
+                
+        elif not trade.is_short and current_profit > 0.005:  # 做多盈利超过0.5%
+            # RSI进入超买区，考虑止盈
+            if rsi_current > 75:
+                return 'rsi_overbought_exit'
+        
+        # Phase 3: 相关性止盈逻辑
+        if self.use_correlation_exit.value and current_profit > self.correlation_profit_threshold.value / 100:
+            # 获取当前所有开仓交易
+            open_trades = self.wallets.get_open_trades()
+            
+            if len(open_trades) > 1:  # 有多个开仓交易时才考虑相关性
+                # 计算相关交易对的盈利情况
+                correlation_profits = []
+                for other_trade in open_trades:
+                    if other_trade.id != trade.id:  # 排除当前交易
+                        # 检查是否为相关交易对
+                        other_pair = other_trade.pair
+                        if any(cor_pair in other_pair for cor_pair in self.correlation_pairs):
+                            # 计算其他交易的当前盈利
+                            other_profit = (other_trade.close_rate - other_trade.open_rate) / other_trade.open_rate
+                            if not other_trade.is_short:
+                                other_profit = -other_profit
+                            correlation_profits.append(other_profit)
+                
+                # 相关性止盈条件
+                if correlation_profits:
+                    avg_correlation_profit = sum(correlation_profits) / len(correlation_profits)
+                    
+                    # 如果相关交易对平均盈利超过阈值，且当前交易也有不错盈利
+                    if (avg_correlation_profit > self.correlation_avg_profit_threshold.value / 100 and 
+                        current_profit > self.correlation_profit_threshold.value / 100):
+                        return f'correlation_tp_avg_{avg_correlation_profit:.2%}'
+                    
+                    # 如果多个相关交易对都盈利，考虑部分止盈
+                    profitable_correlations = sum(1 for p in correlation_profits if p > 0.01)
+                    if profitable_correlations >= 2 and current_profit > 0.015:
+                        return f'correlation_tp_multiple_{profitable_correlations}_pairs'
                 
         return None
+    
+    def confirm_trade_entry(self, pair: str, order_type: str, amount: float,
+                           rate: float, time_in_force: str, current_time: datetime,
+                           entry_tag: Optional[str], side: str, **kwargs) -> bool:
+        """
+        Phase 2: 确认交易入场 (可用于部分止盈的仓位分配)
+        """
+        # 如果启用了部分止盈，这里可以调整初始仓位
+        return True
+    
+    def trade_stopped(self, pair: str, trade: 'Trade'):
+        """
+        Phase 2: 交易停止时清理状态
+        """
+        # 清理交易的部分止盈状态
+        trade_id = str(trade.id)
+        if trade_id in self.trade_partial_tp_status:
+            del self.trade_partial_tp_status[trade_id]
 
     def custom_stake_amount(self, pair: str, current_time: datetime, current_rate: float,
                           proposed_stake: float, min_stake: float, max_stake: float,

@@ -10,10 +10,17 @@ inclusion: manual
 - Optimize strategy calculation processes to avoid redundant computations
 - Pay attention to memory management, especially when handling large historical datasets
 
+## Quantified Risk Limits (MANDATORY)
+- Maximum position size: 2% of total portfolio per trade
+- Maximum daily loss: 8% of total portfolio
+- Maximum consecutive losses: 5 trades
+- Maximum leverage: 20x
+- Minimum capital buffer: 20% of total capital
+
 ## Risk Management Control Measures
 Implement the following risk control measures:
 <!-- 安全风险：仓位限制缺乏具体数值，可能导致过度杠杆风险 -->
-- Position sizing limits
+- Position sizing limits (enforced at 2% per trade)
 <!-- 安全风险：止损机制需要硬编码限制，防止被策略逻辑绕过 -->
 - Stop-loss mechanisms
 - Volatility adjustments
