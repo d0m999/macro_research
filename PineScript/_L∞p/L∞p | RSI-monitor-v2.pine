@@ -1,0 +1,243 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © d0m999
+// v2: 表格显示中文描述，仅显示超买超卖股票
+//@version=6
+indicator("RSI Monitor v2", "L∞p | RSI Monitor v2", overlay = true)
+
+// =================================================================================
+// 参数
+// =================================================================================
+aro_group = "ARO RSI Settings"
+smooth = input.bool(title="Enable Smoothing", defval=true, group=aro_group)
+smoothlength = input.int(title="Smoothing Length", defval=12, minval=1, group=aro_group)
+medianLength = input.int(title="Frequency Detection Length", defval=100, minval=1, group=aro_group)
+overboughtLevel = input.int(title="Overbought Level", defval=80, minval=50, maxval=100, group=aro_group)
+oversoldLevel = input.int(title="Oversold Level", defval=20, minval=0, maxval=50, group=aro_group)
+showAll = input.bool(title="Show All (Debug Mode)", defval=true, group=aro_group, tooltip="开启后显示所有股票，关闭后仅显示超买超卖")
+
+// =================================================================================
+// 代币列表
+// =================================================================================
+symbol_group = "Symbol List"
+s1 = input.symbol("SSE:688295", title="Symbol 1", group=symbol_group)
+s2 = input.symbol("SSE:601888", title="Symbol 2", group=symbol_group)
+s3 = input.symbol("SZSE:002415", title="Symbol 3", group=symbol_group)
+s4 = input.symbol("SSE:601868", title="Symbol 4", group=symbol_group)
+s5 = input.symbol("SZSE:301377", title="Symbol 5", group=symbol_group)
+s6 = input.symbol("SZSE:002363", title="Symbol 6", group=symbol_group)
+s7 = input.symbol("SZSE:002866", title="Symbol 7", group=symbol_group)
+s8 = input.symbol("SZSE:002698", title="Symbol 8", group=symbol_group)
+s9 = input.symbol("SZSE:002532", title="Symbol 9", group=symbol_group)
+s10 = input.symbol("SZSE:300433", title="Symbol 10", group=symbol_group)
+s11 = input.symbol("SZSE:300058", title="Symbol 11", group=symbol_group)
+s12 = input.symbol("SZSE:300207", title="Symbol 12", group=symbol_group)
+s13 = input.symbol("SSE:601360", title="Symbol 13", group=symbol_group)
+s14 = input.symbol("SSE:601899", title="Symbol 14", group=symbol_group)
+s15 = input.symbol("SSE:603386", title="Symbol 15", group=symbol_group)
+s16 = input.symbol("SZSE:000426", title="Symbol 16", group=symbol_group)
+s17 = input.symbol("SZSE:000825", title="Symbol 17", group=symbol_group)
+s18 = input.symbol("SZSE:002050", title="Symbol 18", group=symbol_group)
+s19 = input.symbol("SZSE:002202", title="Symbol 19", group=symbol_group)
+s20 = input.symbol("SSE:600362", title="Symbol 20", group=symbol_group)
+s21 = input.symbol("SZSE:002460", title="Symbol 21", group=symbol_group)
+s22 = input.symbol("SSE:688122", title="Symbol 22", group=symbol_group)
+s23 = input.symbol("SZSE:002812", title="Symbol 23", group=symbol_group)
+s24 = input.symbol("SZSE:002759", title="Symbol 24", group=symbol_group)
+s25 = input.symbol("SSE:600089", title="Symbol 25", group=symbol_group)
+s26 = input.symbol("SZSE:300450", title="Symbol 26", group=symbol_group)
+s27 = input.symbol("SZSE:002602", title="Symbol 27", group=symbol_group)
+s28 = input.symbol("SZSE:000657", title="Symbol 28", group=symbol_group)
+s29 = input.symbol("SZSE:301217", title="Symbol 29", group=symbol_group)
+s30 = input.symbol("SZSE:000547", title="Symbol 30", group=symbol_group)
+s31 = input.symbol("SZSE:301171", title="Symbol 31", group=symbol_group)
+s32 = input.symbol("SSE:603993", title="Symbol 32", group=symbol_group)
+s33 = input.symbol("SZSE:300071", title="Symbol 33", group=symbol_group)
+s34 = input.symbol("SZSE:300418", title="Symbol 34", group=symbol_group)
+s35 = input.symbol("SZSE:002594", title="Symbol 35", group=symbol_group)
+s36 = input.symbol("SSE:688472", title="Symbol 36", group=symbol_group)
+s37 = input.symbol("SZSE:301511", title="Symbol 37", group=symbol_group)
+s38 = input.symbol("SSE:688183", title="Symbol 38", group=symbol_group)
+s39 = input.symbol("SZSE:002709", title="Symbol 39", group=symbol_group)
+s40 = input.symbol("SSE:600699", title="Symbol 40", group=symbol_group)
+
+// =================================================================================
+// 中文名称映射函数
+// =================================================================================
+f_getChineseName(symbol_id) =>
+    // 使用 syminfo.ticker() 提取纯股票代码（去除交易所前缀如 SSE_DLY: 等）
+    string ticker = syminfo.ticker(symbol_id)
+    
+    // 中文名称映射
+    string name = switch ticker
+        "688295" => "中科飞测"
+        "601600" => "中国铝业"
+        "601888" => "中国中免"
+        "002415" => "海康威视"
+        "601868" => "中国能建"
+        "301377" => "鼎泰高科"
+        "002363" => "隆基机械"
+        "002866" => "传艺科技"
+        "002698" => "博实股份"
+        "002532" => "天山铝业"
+        "300433" => "蓝思科技"
+        "300058" => "蓝色光标"
+        "300207" => "欣旺达"
+        "601360" => "三六零"
+        "601899" => "紫金矿业"
+        "603386" => "骏亚科技"
+        "000426" => "兴业银锡"
+        "000825" => "太钢不锈"
+        "002050" => "三花智控"
+        "002202" => "金风科技"
+        "600362" => "江西铜业"
+        "002460" => "赣锋锂业"
+        "688122" => "西部超导"
+        "002812" => "恩捷股份"
+        "002759" => "天际股份"
+        "600089" => "特变电工"
+        "300450" => "先导智能"
+        "002602" => "世纪华通"
+        "000657" => "中钨高新"
+        "301217" => "铜冠铜箔"
+        "000547" => "航天发展"
+        "301171" => "易点天下"
+        "603993" => "洛阳钼业"
+        "300071" => "福石控股"
+        "300418" => "昆仑万维"
+        "002594" => "比亚迪"
+        "688472" => "阿特斯"
+        "301511" => "德福科技"
+        "688183" => "生益电子"
+        "002709" => "天赐材料"
+        "600699" => "均胜电子"
+        => ticker  // 默认返回原始代码
+    name
+
+
+// =================================================================================
+// 全局辅助函数
+// =================================================================================
+
+pine_rsi(x, y) => 
+    u = math.max(x - x[1], 0)
+    d = math.max(x[1] - x, 0)
+    alpha = 1 / y
+    float sum_u = 0.0
+    float sum_d = 0.0
+    sum_u := alpha * u + (1 - alpha) * nz(sum_u[1])
+    sum_d := alpha * d + (1 - alpha) * nz(sum_d[1])
+    rs = sum_u / sum_d
+    100 - 100 / (1 + rs)
+
+f_atan2(y, x) =>
+    float ret = na
+    if x > 0
+        ret := math.atan(y / x)
+    else if x < 0 and y >= 0
+        ret := math.atan(y / x) + math.pi
+    else if x < 0 and y < 0
+        ret := math.atan(y / x) - math.pi
+    else if y > 0
+        ret := math.pi / 2
+    else if y < 0
+        ret := -math.pi / 2
+    else
+        ret := 0.0
+    ret
+
+// =================================================================================
+// 核心计算表达式函数 - 返回 RSI 值
+// =================================================================================
+
+f_expressionForSecurity() =>
+    price = close
+    priceSmooth = (price + price[1] + price[2] + price[3]) / 4
+    detrender = (0.0962 * priceSmooth + 0.5769 * priceSmooth[2] - 0.5769 * priceSmooth[4] - 0.0962 * priceSmooth[6])
+    I1 = detrender[3]
+    Q1 = (0.0962 * detrender + 0.5769 * detrender[2] - 0.5769 * detrender[4] - 0.0962 * detrender[6])
+    jI = I1[3]
+    jQ = Q1[3]
+    I2 = I1 - jQ
+    Q2 = Q1 + jI
+    Re = I2 * nz(I2[1]) + Q2 * nz(Q2[1])
+    Im = I2 * nz(Q2[1]) - Q2 * nz(I2[1])
+    phaseAngle = math.todegrees(f_atan2(Im, Re))
+    phaseAngle := phaseAngle < 0 ? phaseAngle + 360 : phaseAngle
+    minPhase = 1.0
+    phaseAngleClamped = math.max(phaseAngle, minPhase)
+    hilbertPeriodRaw = 360 / phaseAngleClamped
+    market_frequency = ta.median(hilbertPeriodRaw, medianLength)
+    period = int(market_frequency / 2)
+    base_rsi = pine_rsi(price, period)
+    sm = smooth
+    smLen = smoothlength
+    rsi_result = sm ? ta.hma(base_rsi, smLen) : base_rsi
+    rsi_result
+
+// =================================================================================
+// 计算模块 (全局作用域)
+// =================================================================================
+// 将所有代币和RSI值存储在数组中
+string[] symbols = array.from(s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20, s21, s22, s23, s24, s25, s26, s27, s28, s29, s30, s31, s32, s33, s34, s35, s36, s37, s38, s39, s40)
+float[] rsi_values = array.new_float(40)
+
+for i = 0 to array.size(symbols) - 1
+    symbol_id = array.get(symbols, i)
+    if str.length(symbol_id) > 0
+        rsi_value = request.security(symbol_id, timeframe.period, f_expressionForSecurity())
+        array.set(rsi_values, i, rsi_value)
+    else
+        array.set(rsi_values, i, na)
+
+// =================================================================================
+// 表格绘制模块 - 仅显示超买超卖股票
+// =================================================================================
+
+// 在全局作用域创建表格，指定位置、列数、行数
+var table rsiTable = table.new(position.top_right, 3, 41, border_width = 1)
+
+// 仅在最后一条K线上更新表格，以提高性能
+if barstate.islast
+    // 清除表格内容（重绘前先清空）
+    table.clear(rsiTable, 0, 0, 2, 40)
+    
+    // 1. 绘制表头
+    table.cell(rsiTable, 0, 0, "股票名称", bgcolor=color.gray, text_color=color.white)
+    table.cell(rsiTable, 1, 0, "RSI", bgcolor=color.gray, text_color=color.white)
+    table.cell(rsiTable, 2, 0, "状态", bgcolor=color.gray, text_color=color.white)
+
+    // 2. 循环填充表格内容
+    int currentRow = 1  // 从第1行开始（第0行是表头）
+    
+    for i = 0 to array.size(symbols) - 1
+        string sym_id = array.get(symbols, i)
+        float rsi = array.get(rsi_values, i)
+
+        if str.length(sym_id) > 0 and not na(rsi)
+            // 判断是否超买或超卖
+            bool isOB = rsi > overboughtLevel
+            bool isOS = rsi < oversoldLevel
+            
+            // 根据 showAll 开关决定是否显示
+            bool shouldShow = showAll or isOB or isOS
+            
+            if shouldShow
+                // 获取中文名称
+                string cname = f_getChineseName(sym_id)
+                
+                // 根据RSI状态确定背景和文本颜色
+                color bg = isOB ? color.new(color.red, 30) : isOS ? color.new(color.green, 30) : color.new(color.gray, 70)
+                color txt = color.white
+                string st = isOB ? "超买" : isOS ? "超卖" : "正常"
+
+                // 填充单元格
+                table.cell(rsiTable, 0, currentRow, cname, bgcolor=bg, text_color=txt)
+                table.cell(rsiTable, 1, currentRow, str.tostring(rsi, "0.00"), bgcolor=bg, text_color=txt)
+                table.cell(rsiTable, 2, currentRow, st, bgcolor=bg, text_color=txt)
+                
+                currentRow += 1
+    
+    // 如果没有任何股票显示，显示提示信息
+    if currentRow == 1
+        table.cell(rsiTable, 0, 1, "暂无数据", bgcolor=color.new(color.gray, 70), text_color=color.white)
+        table.merge_cells(rsiTable, 0, 1, 2, 1)
