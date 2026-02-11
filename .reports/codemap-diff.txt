@@ -1,0 +1,30 @@
+Codemap Diff Report
+===================
+Generated: 2026-02-11
+
+Status: INITIAL GENERATION (no previous version)
+
+Files created:
+  codemaps/architecture.md  — Overall system architecture & data flow
+  codemaps/backend.md       — Python strategies, components, config
+  codemaps/frontend.md      — PineScript/TradingView indicators
+  codemaps/data.md          — Data models, schemas, storage formats
+
+Diff: N/A (first generation, 0% previous content)
+
+Summary:
+  Total source files scanned: 36
+    Python strategies:     12 files
+    PineScript indicators: 24 files
+    Config files:           5 files
+
+  Total LOC (approx):
+    Python:     ~3,200 LOC
+    PineScript: ~8,400 LOC
+
+  Key findings:
+    - Primary strategy: LoopRSIStrategy (1,057 LOC, 24 hyperopt params)
+    - 3 ARO oscillator variants in PineScript (shared Hilbert core)
+    - Pine→Python conversion done for RSI/ARO/ATR-ZigZag, pending for SMC/OI/ML
+    - Component library has base indicator framework but LoopRSI uses inline impl
+    - Math utils (490 LOC) provides advanced stats not yet used by main strategy
