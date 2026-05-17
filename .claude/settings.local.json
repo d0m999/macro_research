@@ -1,7 +1,15 @@
 {
   "permissions": {
     "allow": [
-      "WebSearch"
+      "WebSearch",
+      "Bash(uv:*)",
+      "Bash(brew list:*)",
+      "Bash(brew install:*)",
+      "Bash(conda env list:*)",
+      "Bash(gh repo *)",
+      "Bash(gh api *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
