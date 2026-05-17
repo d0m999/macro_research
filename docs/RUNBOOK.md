@@ -37,8 +37,7 @@ The `docker-compose.yml` includes hardened security:
 ### Local Deployment
 
 ```bash
-conda activate freqtrade
-freqtrade trade \
+uv run freqtrade trade \
   --config user_data/config.json \
   --strategy LoopRSIStrategy \
   --logfile user_data/logs/freqtrade.log
@@ -52,8 +51,8 @@ docker compose pull
 docker compose up -d
 
 # Local
-pip install --upgrade freqtrade
-pip install -r requirements.txt
+uv lock --upgrade
+uv sync
 ```
 
 ## Monitoring
@@ -103,7 +102,7 @@ When configured (`TELEGRAM_TOKEN` + `TELEGRAM_CHAT_ID`), FreqTrade sends automat
 **Fix (macOS)**:
 ```bash
 brew install ta-lib
-pip install --force-reinstall TA-Lib
+uv sync --reinstall-package ta-lib
 ```
 
 **Fix (Docker)**: TA-Lib is included in the base FreqTrade image.

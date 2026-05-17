@@ -34,6 +34,7 @@ wheels/
 MANIFEST
 
 # 虚拟环境
+.venv/
 venv/
 env/
 ENV/
@@ -43,8 +44,7 @@ venv.bak/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# pyenv
-.python-version
+# pyenv (注意: .python-version 现在由 uv 使用，已提交到 git)
 
 # 日志文件
 *.log

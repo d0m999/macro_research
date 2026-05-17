@@ -6,12 +6,12 @@ FreqTrade 量化交易用户数据项目，包含自定义策略、PineScript �
 
 ## Tech Stack
 
-- **Runtime**: Python 3.11+ (Conda 环境)
-- **Framework**: FreqTrade (stable)
-- **Data**: Pandas 2.3.1, NumPy <2.0, PyArrow 21.0
-- **Indicators**: TA-Lib 0.6.5, ft-pandas-ta 0.3.15, technical 1.5.2
-- **Exchange**: CCXT 4.4.99 (Binance)
-- **API Server**: FastAPI 0.116.1 + Uvicorn 0.35.0
+- **Runtime**: Python 3.11+ (uv 环境)
+- **Framework**: FreqTrade 2026.1 (stable, from GitHub)
+- **Data**: Pandas, NumPy 2.x, PyArrow
+- **Indicators**: TA-Lib, ft-pandas-ta, technical
+- **Exchange**: CCXT (Binance)
+- **API Server**: FastAPI + Uvicorn
 - **Database**: SQLite (tradesv3.sqlite)
 - **Notifications**: python-telegram-bot 22.3
 - **Container**: Docker (freqtradeorg/freqtrade:stable)
@@ -22,7 +22,9 @@ FreqTrade 量化交易用户数据项目，包含自定义策略、PineScript �
 ft_userdata/
 ├── docker-compose.yml          # Docker 部署（安全加固配置）
 ├── Dockerfile                  # 自定义镜像构建
-├── requirements.txt            # Python 依赖（source of truth）
+├── pyproject.toml              # Python 依赖（source of truth）
+├── uv.lock                     # 确定性依赖锁文件
+├── requirements.txt            # Docker 兼容依赖列表
 ├── .env                        # 环境变量（敏感信息，勿提交）
 ├── .gitignore                  # Git 忽略规则
 ├── LOCAL_SETUP.md              # 本地开发环境指南
@@ -57,38 +59,22 @@ ft_userdata/
 
 ### Prerequisites
 
-- Anaconda / Miniconda
-- Python 3.11+
-- TA-Lib C library
+- [uv](https://docs.astral.sh/uv/) (Python 包管理器)
+- Python 3.11+（uv 自动安装）
+- TA-Lib C library（macOS: `brew install ta-lib`）
 
 ### Quick Start
 
 ```bash
-# Option 1: From environment.yml (recommended)
-conda env create -f environment.yml
-conda activate freqtrade
-
-# Option 2: Manual setup
-conda create -n freqtrade python=3.11
-conda activate freqtrade
-conda install -c conda-forge ta-lib
-pip install -r requirements.txt
-```
-
-### macOS TA-Lib Installation
-
-```bash
+# 安装 TA-Lib C 库（macOS）
 brew install ta-lib
-pip install TA-Lib
-# or: conda install -c conda-forge ta-lib
-```
 
-### Verify Installation
+# 创建环境并安装所有依赖
+uv sync
 
-```bash
-conda activate freqtrade
-freqtrade --version
-freqtrade show-config --config user_data/config.json
+# 验证
+uv run freqtrade --version
+uv run freqtrade show-config --config user_data/config.json
 ```
 
 ## Environment Variables
