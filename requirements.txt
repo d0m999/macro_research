@@ -53,6 +53,9 @@ prompt-toolkit==3.0.51
 python-dateutil==2.9.0.post0
 pytz==2025.2
 
+# Unicode-aware regex (supports \p{Han} etc.) — used by X tweet preprocessing
+regex>=2024.4.16
+
 #Futures
 schedule==1.2.2
 
