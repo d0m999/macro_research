@@ -9,7 +9,26 @@
       "Bash(gh repo *)",
       "Bash(gh api *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "mcp__plugin_ecc_context7__resolve-library-id",
+      "mcp__plugin_ecc_context7__query-docs",
+      "mcp__brave-search__brave_web_search",
+      "WebFetch(domain:nexustrade.io)",
+      "WebFetch(domain:wundertrading.com)",
+      "WebFetch(domain:cryptojobslist.com)",
+      "WebFetch(domain:hn.algolia.com)",
+      "WebFetch(domain:github.com)",
+      "mcp__plugin_ecc_github__search_repositories",
+      "WebFetch(domain:scrapfly.io)",
+      "WebFetch(domain:dev.to)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(grep -i -E 'workflow|preview|ultracode|dynamicWork' __TRACKED_VAR__/.claude.json)",
+      "Bash(grep -o -i -E '\"[a-z_]*workflow[a-z_]*\"[[:space:]]*:[[:space:]]*\\(true|false\\)' __TRACKED_VAR__/.claude.json)",
+      "Bash(grep -o -i -E '\"[a-z_]*\\(dynamic|orchestr|subagent|preview|ultracode\\)[a-z_]*\"[[:space:]]*:[[:space:]]*\\(true|false\\)' __TRACKED_VAR__/.claude.json)",
+      "Read(//Users/d0m999/.gstack/state/**)",
+      "Read(//Users/d0m999/.claude/scripts/hooks/**)",
+      "Read(//Users/d0m999/.claude/**)",
+      "Read(//Users/d0m999/.claude/hooks/**)"
     ]
   }
 }
