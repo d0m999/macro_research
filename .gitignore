@@ -69,6 +69,21 @@ config.json
 config_*.json
 .env
 
+# X Trader Analysis skill 产物 (爬取的原始数据 + 中间结果)
+data/raw/
+data/enriched/
+data/reports/
+
+# X 登录 cookies (敏感, auth_token 绝不能提交)
+cookies.json
+.claude/skills/x-trader-analysis/cookies.json
+.claude/skills/x-trader-analysis/scripts/__pycache__/
+.claude/skills/x-trader-analysis/scripts/account_pool/__pycache__/
+
+# twscrape 账号池 (SQLite 含 cookies + 邮箱凭证, 绝不能提交)
+.claude/skills/x-trader-analysis/.account_pool/
+.account_pool/
+
 # 说明文档和 rules
 # 只忽略根目录下的 .md 文件, 但 GEMINI.md 除外
 # /*.md
