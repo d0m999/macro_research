@@ -1,30 +1,114 @@
 Codemap Diff Report
-===================
-Generated: 2026-02-11
+====================
+Generated:      2026-06-08
+Previous scan:  2026-02-11
+Action taken:   FULL REWRITE (user-approved, diff > 30% threshold)
+Status:         5/5 codemaps updated
 
-Status: INITIAL GENERATION (no previous version)
+────────────────────────────────────────────────────────
+Files Modified
+────────────────────────────────────────────────────────
+  M  codemaps/architecture.md    (107 → 132 lines,  +25 lines)
+  M  codemaps/backend.md         (138 → 175 lines,  +37 lines)
+  M  codemaps/frontend.md        (107 → 145 lines,  +38 lines)
+  M  codemaps/data.md            (181 → 168 lines,  -13 lines, restructured)
+  A  codemaps/dependencies.md    (NEW, 120 lines)
 
-Files created:
-  codemaps/architecture.md  — Overall system architecture & data flow
-  codemaps/backend.md       — Python strategies, components, config
-  codemaps/frontend.md      — PineScript/TradingView indicators
-  codemaps/data.md          — Data models, schemas, storage formats
+  Total:  4 modified + 1 new = 5 files
 
-Diff: N/A (first generation, 0% previous content)
-
-Summary:
-  Total source files scanned: 36
-    Python strategies:     12 files
-    PineScript indicators: 24 files
-    Config files:           5 files
+────────────────────────────────────────────────────────
+Source Files Scanned This Run
+────────────────────────────────────────────────────────
+  Total source files: 96 (was 36 in previous scan)
+    Python strategies:     7  files  (LoopRSI, base, Awesome, advanced, sample, +3 components)
+    PineScript indicators: 24 files  (unchanged)
+    Config files:          4  files
+    Dashboard:             5  files  ⭐ NEW
+    Codemaps:              5  files
+    Docs:                  4  files
+    Other (yml/toml/md/sh): 47 files
 
   Total LOC (approx):
-    Python:     ~3,200 LOC
-    PineScript: ~8,400 LOC
+    Python (all):  ~4,000 LOC  (was ~3,200)
+    PineScript:    ~8,400 LOC  (unchanged)
+    Dashboard:     ~580 LOC    ⭐ NEW
 
-  Key findings:
-    - Primary strategy: LoopRSIStrategy (1,057 LOC, 24 hyperopt params)
-    - 3 ARO oscillator variants in PineScript (shared Hilbert core)
-    - Pine→Python conversion done for RSI/ARO/ATR-ZigZag, pending for SMC/OI/ML
-    - Component library has base indicator framework but LoopRSI uses inline impl
-    - Math utils (490 LOC) provides advanced stats not yet used by main strategy
+────────────────────────────────────────────────────────
+Major Changes Detected
+────────────────────────────────────────────────────────
+
+⭐ [NEW SUBSYSTEM] dashboard/ — Streamlit observability
+    ├── app.py               (313 LOC)  Web UI @ :8501
+    ├── fetch_trades.py      (222 LOC)  OKX read-only sync
+    ├── cron_fetch.sh        (11 LOC)   Daily 02:00 wrapper
+    ├── cron.log             (95 bytes) Last sync log
+    ├── README.md            (825 B)    Quickstart
+    └── trades.db            (32 KB)    SQLite: trades/positions/balance_snapshots
+
+⭐ [NEW DEPENDENCIES] 4 packages added to pyproject.toml
+    + streamlit      >= 1.58.0
+    + plotly         >= 6.7.0
+    + python-dotenv  >= 1.2.2
+    + schedule       >= 1.2.0
+
+⭐ [NEW DATA SOURCE] OKX exchange (read-only, real PnL tracking)
+    - Symbols: BTC, ETH, SOL, RENDER /USDT:USDT
+    - 3-month rolling retention from OKX API
+
+[MODIFIED] LoopRSIStrategy.json — buy section populated
+    Before: { "buy": { /* incomplete */ } }
+    After:  14 hyperopt params resolved (rsi_oversold=19, trend_ema_period=174, etc.)
+
+[MODIFIED] pyproject.toml — dep mgmt migrated to uv
+    - ccxt bumped 4.4.99 → 4.5.37
+    - pyarrow major bump 21.0.0
+    - freqtrade now pinned to git stable branch (not PyPI)
+
+[MODIFIED] .claude/ — added local skill
+    - skills/x-trader-analysis/  (X 推文分析工具)
+
+────────────────────────────────────────────────────────
+Architecture Changes
+────────────────────────────────────────────────────────
+  + new subsystem:      Streamlit dashboard + OKX sync
+  + new data flow:      OKX API → trades.db → Streamlit UI
+  + new scheduler:      cron @ 02:00 daily (dashboard/cron_fetch.sh)
+  + new env surface:    .env (OKX_API_KEY, OKX_SECRET, OKX_PASSPHRASE)
+  + new port:           :8501 (Streamlit default)
+  ~ modified config:    LoopRSIStrategy.json fully populated
+  ~ modified dep mgmt:  pip → uv migration
+  = unchanged:          Freqtrade engine, PineScript/, components/
+
+────────────────────────────────────────────────────────
+Diff vs Previous Codemaps
+────────────────────────────────────────────────────────
+  architecture.md   ~55% rewrites  (new subsystem, new data flow diagram)
+  backend.md        ~50% rewrites  (new dashboard section appended)
+  frontend.md       ~40% rewrites  (Streamlit hierarchy + new charts)
+  data.md           ~35% rewrites  (new trades.db schema section)
+  dependencies.md   100% new       (file did not exist before)
+
+  Overall:          ~45% diff  →  > 30% threshold  →  full rewrite approved
+
+────────────────────────────────────────────────────────
+Staleness Warnings (docs not updated in 90+ days)
+────────────────────────────────────────────────────────
+  ⚠️  docs/freqtrade_breakdown.md         (2026-02-11, 117 days old)
+  ⚠️  docs/CONTRIB.md                     (2026-02-12, 116 days old)
+  ⚠️  docs/RUNBOOK.md                     (2026-02-12, 116 days old)
+  ⚠️  codemaps/                           (refreshed 2026-06-08 ✓)
+  ✓   CLAUDE.md                           (2026-05-17, recent)
+  ✓   README.md (strategies/)             (2025-08-06)
+  ✓   dashboard/README.md                 (2025-05-29, recent)
+
+────────────────────────────────────────────────────────
+Token Budget Check
+────────────────────────────────────────────────────────
+  Each codemap target: < 1000 tokens
+  architecture.md    : ~850 tokens  ✓
+  backend.md         : ~900 tokens  ✓
+  frontend.md        : ~800 tokens  ✓
+  data.md            : ~900 tokens  ✓
+  dependencies.md    : ~750 tokens  ✓
+
+  Total:  ~4,200 tokens across 5 files (avg ~840/file)

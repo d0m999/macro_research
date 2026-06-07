@@ -1,10 +1,10 @@
+<!-- Generated: 2026-06-08 | Files scanned: 96 | Token estimate: ~900 -->
 # Data Codemap — Models, Schemas & Storage
 
-> Freshness: 2026-02-11 | Auto-generated
+## Market Data (Freqtrade)
 
-## Market Data
+### OHLCV Storage (Feather)
 
-### OHLCV Storage (Feather format)
 ```
 Path: user_data/data/binance/futures/
 Format: Apache Arrow Feather (columnar, compressed)
@@ -32,9 +32,10 @@ volume    : float64              — Base asset volume
 
 ---
 
-## Trade Database
+## Freqtrade Trade Database
 
-### tradesv3.sqlite
+### user_data/tradesv3.sqlite
+
 ```
 Path: user_data/tradesv3.sqlite
 Engine: SQLite3 with WAL (Write-Ahead Logging)
@@ -47,6 +48,72 @@ ORM: SQLAlchemy 2.0 (via Freqtrade)
 | `trades` | Trade records (entry/exit price, profit, duration) |
 | `orders` | Individual order records (limit/market, fills) |
 | `pairlocks` | Pair lock records (cooldown after losses) |
+
+---
+
+## Dashboard Trade Database (NEW)
+
+### dashboard/trades.db
+
+```
+Path: dashboard/trades.db
+Engine: SQLite3
+Writer: dashboard/fetch_trades.py (cron @ 02:00)
+Reader: dashboard/app.py (Streamlit, @st.cache_data ttl=60)
+Source: OKX read-only API
+Retention: 3-month rolling window (OKX limit), local: permanent
+```
+
+**Tables:**
+
+#### `trades` — Order Fills
+```sql
+id          INTEGER PRIMARY KEY    -- OKX trade id
+order_id    TEXT                   -- Parent order id (groups entry+exit)
+symbol      TEXT                   -- e.g. BTC/USDT:USDT
+side        TEXT                   -- 'buy' | 'sell'
+datetime    TEXT                   -- ISO 8601 timestamp
+price       REAL                   -- Fill price
+amount      REAL                   -- Filled contracts
+fee         REAL                   -- Fee in USDT
+pnl         REAL                   -- Realized PnL (0 for opens)
+type        TEXT                   -- 'open' | 'close' | 'liquidation'
+```
+
+**Primary key:** `id` (OKX-assigned, unique)
+
+**Grouping:** app.py groups by `order_id` to combine entry+exit pairs,
+then aggregates `pnl`, `fee` for metrics.
+
+#### `positions` — Current Holdings
+```sql
+symbol          TEXT PRIMARY KEY  -- e.g. BTC/USDT:USDT
+side            TEXT              -- 'long' | 'short'
+contracts       REAL              -- Position size
+entry_price     REAL              -- Average entry
+mark_price      REAL              -- Current mark
+unrealized_pnl  REAL              -- Open PnL
+leverage        INTEGER           -- Position leverage
+margin          REAL              -- Collateral locked
+timestamp       TEXT              -- Last update
+```
+
+#### `balance_snapshots` — Account Equity
+```sql
+id          INTEGER PRIMARY KEY  -- Auto-increment
+currency    TEXT                 -- e.g. USDT, BTC
+total       REAL                 -- Total balance
+free        REAL                 -- Available
+used        REAL                 -- In positions
+timestamp   TEXT                 -- Snapshot time
+```
+
+**Index recommendation** (not yet added):
+```sql
+CREATE INDEX idx_trades_orderid ON trades(order_id);
+CREATE INDEX idx_trades_symbol  ON trades(symbol);
+CREATE INDEX idx_balance_ts     ON balance_snapshots(timestamp);
+```
 
 ---
 
@@ -142,7 +209,7 @@ sell_rsi_overbought  : IntParameter(60, 90)
 
 ## Configuration Schema
 
-### config.json
+### user_data/config.json
 ```json
 {
   "trading_mode": "futures",
@@ -157,13 +224,16 @@ sell_rsi_overbought  : IntParameter(60, 90)
 }
 ```
 
-### LoopRSIStrategy.json (hyperopt best params)
+### user_data/strategies/LoopRSIStrategy.json (current)
 ```json
 {
   "buy": {
-    "rsi_oversold": 19, "smoothing_length": 50,
-    "trend_ema_period": 174, "risk_per_trade": 0.03,
-    "enable_smoothing": true, "use_squeeze_filter": false
+    "bb_length": 20, "bb_mult": 2.0, "kc_length": 20, "kc_mult": 1.2,
+    "median_length": 100, "ema_test_tolerance": 0.005,
+    "enable_smoothing": true, "risk_per_trade": 0.03,
+    "rsi_oversold": 19, "sl_buffer": 0.008,
+    "smoothing_length": 50, "trend_ema_period": 174,
+    "use_squeeze_filter": false, "use_trend_filter": false
   },
   "sell": { "rsi_overbought": 70 }
 }
@@ -178,4 +248,11 @@ Path: user_data/logs/
 Files: freqtrade.log, security_monitor.log, security_alerts.json
 Format: Structured JSON (Winston-style)
 Loggers: strategy, trade, performance, error, debug
+```
+
+### Dashboard Logs
+```
+Path: dashboard/cron.log
+Format: Plain text timestamped lines
+Content: "[YYYY-MM-DD HH:MM:SS] 开始采集OKX交易数据... / 采集完成"
 ```

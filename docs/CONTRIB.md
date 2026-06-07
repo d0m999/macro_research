@@ -189,3 +189,74 @@ Pine Script indicators in `PineScript/` are tested directly on TradingView. When
 - Use vectorized Pandas/NumPy operations over Python loops
 - All strategy parameters should be configurable via `hyperopt_params`
 - Log important events using the structured logging system in `components/utils/logging_config.py`
+
+<!-- AUTO-GENERATED:START (source: dashboard/* + CLAUDE.md + pyproject.toml) -->
+## Dashboard Subsystem (added 2026-06-08)
+
+### Dashboard Commands
+
+| Command | Description |
+|---------|-------------|
+| `uv run streamlit run dashboard/app.py` | Launch Streamlit dashboard @ http://localhost:8501 |
+| `uv run python dashboard/fetch_trades.py` | Manually trigger OKX trade sync to `trades.db` |
+| `bash dashboard/cron_fetch.sh` | Run the cron-wrapper (used by system crontab) |
+| `tail -f dashboard/cron.log` | View last sync log output |
+
+### Dashboard Files
+
+| File | Purpose |
+|------|---------|
+| `dashboard/app.py` | Streamlit UI: 5 metric cards, PnL curve, per-symbol/per-side stats |
+| `dashboard/fetch_trades.py` | OKX read-only sync (ccxt → SQLite). 3-month rolling window |
+| `dashboard/cron_fetch.sh` | Cron wrapper (sets PATH then runs fetch_trades.py) |
+| `dashboard/trades.db` | SQLite: `trades`, `positions`, `balance_snapshots` tables |
+| `dashboard/cron.log` | Last fetch log output |
+| `dashboard/README.md` | Quickstart |
+
+### Dashboard Env Vars
+
+Requires `OKX_API_KEY`, `OKX_SECRET`, `OKX_PASSPHRASE` in `.env`.
+See [ENV.md](ENV.md) for full reference.
+
+### Dashboard Cron
+
+```
+Schedule: 0 2 * * *  (daily 02:00)
+User:     current shell user
+Command:  bash /Users/d0m999/Desktop/vibe-trading/dashboard/cron_fetch.sh
+```
+
+Verify cron is installed:
+```bash
+crontab -l | grep dashboard
+```
+
+### Strategy Hyperopt Parameters (current best — auto-extracted from `user_data/strategies/LoopRSIStrategy.json`)
+
+| Param | Value | Param | Value |
+|-------|-------|-------|-------|
+| `rsi_oversold` | 19 | `rsi_overbought` | 70 |
+| `smoothing_length` | 50 | `median_length` | 100 |
+| `trend_ema_period` | 174 | `risk_per_trade` | 0.03 |
+| `bb_length` | 20 | `bb_mult` | 2.0 |
+| `kc_length` | 20 | `kc_mult` | 1.2 |
+| `ema_test_tolerance` | 0.005 | `sl_buffer` | 0.008 |
+| `enable_smoothing` | true | `use_squeeze_filter` | false |
+| `use_trend_filter` | false | | |
+<!-- AUTO-GENERATED:END -->
+
+<!-- AUTO-GENERATED:START (source: pyproject.toml) -->
+### Python Dependencies (49 packages via uv)
+
+| Group | Packages |
+|-------|----------|
+| Core | `freqtrade` (git stable), `numpy>=2.0`, `pandas==2.3.1` |
+| Indicators | `ft-pandas-ta>=0.3.15`, `ta-lib==0.6.5` (via freqtrade), `technical==1.5.2` |
+| Exchange | `ccxt>=4.5.37`, `cryptography>=45.0.0`, `aiohttp>=3.12.0` |
+| Data | `pyarrow>=21.0.0`, `SQLAlchemy` (via freqtrade) |
+| API | `fastapi`, `uvicorn`, `pydantic>=2.11.0` (all via freqtrade) |
+| Notify | `python-telegram-bot` (via freqtrade) |
+| Perf | `bottleneck>=1.5.0`, `numexpr>=2.11.0` |
+| **Dashboard** ⭐ | `streamlit>=1.58.0`, `plotly>=6.7.0`, `python-dotenv>=1.2.2` |
+| Util | `humanize`, `joblib`, `rich`, `orjson`, `pytz`, `schedule`, `websockets` |
+<!-- AUTO-GENERATED:END -->

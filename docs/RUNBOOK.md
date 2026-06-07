@@ -243,3 +243,82 @@ pkill -f freqtrade
 | Trade DB | `user_data/tradesv3.sqlite` | File copy |
 | Environment | `.env` | Secure backup (not Git) |
 | PineScript | `PineScript/` | Git |
+
+<!-- AUTO-GENERATED:START (source: dashboard/*, docker-compose.yml) — added 2026-06-08 -->
+## Dashboard Monitoring
+
+### Health Check
+
+```bash
+# Streamlit process
+pgrep -f "streamlit run dashboard/app.py" && echo "OK" || echo "DOWN"
+
+# DB freshness (should be < 24h old)
+sqlite3 dashboard/trades.db "SELECT MAX(timestamp) FROM trades;"
+
+# Last cron sync
+tail -1 dashboard/cron.log
+```
+
+### Restart Dashboard
+
+```bash
+# Local (foreground)
+uv run streamlit run dashboard/app.py
+
+# Local (background)
+nohup uv run streamlit run dashboard/app.py > /tmp/streamlit.log 2>&1 &
+
+# Verify port
+lsof -i :8501
+```
+
+### Common Dashboard Issues
+
+| Symptom | Cause | Fix |
+|---------|-------|-----|
+| `ccxt.AuthenticationError` | OKX key rotated or wrong passphrase | Update `.env` `OKX_*` vars, re-run `fetch_trades.py` |
+| Empty dashboard | `trades.db` not initialized | Run `uv run python dashboard/fetch_trades.py` once |
+| `No module named 'streamlit'` | Dashboard deps not installed | `uv sync` (re-resolve from `pyproject.toml`) |
+| Streamlit shows "暂无交易数据" | DB empty or no recent trades | Check `trades.db` with `sqlite3 dashboard/trades.db ".tables"` |
+| Cron not running | crontab not installed for user | `crontab -e` and re-add: `0 2 * * * bash /path/dashboard/cron_fetch.sh` |
+| `OKX_PASSPHRASE` has commas | Comma in passphrase causes shell parse | Wrap in single quotes in `.env` |
+
+### Dashboard Data Retention
+
+- **OKX API limit**: 3 months of historical trades
+- **Local DB**: Permanent (never auto-pruned)
+- **Manual cleanup** (optional):
+  ```sql
+  DELETE FROM trades WHERE datetime < datetime('now', '-1 year');
+  DELETE FROM balance_snapshots WHERE timestamp < datetime('now', '-6 months');
+  VACUUM;
+  ```
+
+### Dashboard Backup
+
+```bash
+# Backup trades.db (small, can be done daily)
+cp dashboard/trades.db dashboard/trades.db.$(date +%Y%m%d)
+```
+<!-- AUTO-GENERATED:END -->
+
+<!-- AUTO-GENERATED:START (source: docker-compose.yml) — refreshed 2026-06-08 -->
+## Docker Security Configuration (verified from docker-compose.yml)
+
+| Setting | Value | Source Line |
+|---------|-------|-------------|
+| Image | `freqtradeorg/freqtrade:stable` | docker-compose.yml:4 |
+| User | `1000:1000` (non-root) | docker-compose.yml:25 |
+| `read_only` | `true` | docker-compose.yml:26 |
+| `security_opt` | `no-new-privileges:true` | docker-compose.yml:27-28 |
+| `cap_drop` | `ALL` | docker-compose.yml:29-30 |
+| `cap_add` | `CHOWN, DAC_OVERRIDE, SETGID, SETUID` | docker-compose.yml:31-35 |
+| Memory limit | `1G` (reserve `512M`) | docker-compose.yml:41-44 |
+| CPU limit | `0.5` (reserve `0.25`) | docker-compose.yml:42-45 |
+| Network | `internal bridge` `172.20.0.0/16` | docker-compose.yml:86-92 |
+| Ports | `expose 8081` only (not published) | docker-compose.yml:62-66 |
+| Healthcheck | `curl http://localhost:8081/api/v1/ping` | docker-compose.yml:69-74 |
+| Volumes | `user_data`, `/tmp`, `freqtrade_logs` | docker-compose.yml:51-54 |
+| Env file | `.env` | docker-compose.yml:57-58 |
+<!-- AUTO-GENERATED:END -->
