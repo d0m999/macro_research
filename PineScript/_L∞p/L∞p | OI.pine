@@ -1,0 +1,331 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © d0m999
+// OI 确认层:价格 × ΔOI 四象限状态矩阵(strategy-notes/strategy-01-mtf-buff.md §4.4 / §4.6,不对称接入)
+//   涨 + OI↑ = 新多进场(牌 A 顺风确认;⛔ 牌 B 做空 veto,硬规则)
+//   涨 + OI↓ = 空头回补(牌 B 做空正签名,软加分)
+//   跌 + OI↑ = 新空进场(⛔ 牌 B 做多 veto,硬规则)
+//   跌 + OI↓ = 多头清算投降(牌 B 做多正签名,软加分)
+// 方向判定只用 ΔOI 的正负号,与各所量纲无关(Binance = 币,OKX = 张),因此不做跨所水平值聚合。
+//
+// 绘图层 = V4 合成方案(设计稿 strategy-notes/design/oi-pane-mockup.html,五层):
+//   L0 veto 色雾   全面板唯一碰背景的元素,只在过门限的 veto 上点亮(白雾=⛔B空 / 蓝雾=⛔B多),浓度随 |z|
+//   L1 方向柱      纵轴 = sign(ΔOI) × min(|z|, 裁剪);零轴上方 = 危险区(OI↑ 新仓进场),下方 = 衰竭区(OI↓ 旧仓离场)
+//                  色相 = 价格方向(白涨 / 蓝跌);过门限跳全饱和,未过门限退成幽灵柱
+//   L2 门限线 ±k   虚线;柱尖是否越线 = 是否过门限,位置直读不靠色
+//   L3 事件车道    顶 ✕ = veto(硬),底 ◆ = 正签名(软);色相 = 受影响的牌(蓝=B多 / 白=B空)
+//   L4 双卡状态牌  牌B做多 / 牌B做空 两行裁决,按【纯符号真值】,不受显示门限影响
+//
+// 核心原则:语义真值与显示门限解耦。
+//   stateRaw   = 纯符号语义(§4.6 的硬规则,不可被降噪静音)→ 状态牌 / MTF 表
+//   stateGated = 折叠幅度门限后的显示状态(候选降噪)      → 柱色 / 色雾 / 事件车道 / 告警
+//   告警口径维持已确认需求(仅过门限触发);「硬 veto 按真值告警」为候选开关,默认关。
+// 本文件内所有参数默认值 / 配色 / 门限 / 裁剪阈值均为候选(未经确认),待回测与实图校准后再定。
+//@version=6
+indicator("OI State Matrix", "L∞p | OI", overlay = false, format = format.price, precision = 2)
+
+// =================================================================================
+// 参数输入
+// =================================================================================
+param_core = "核心参数"
+oiSymbolManual = input.symbol("", title="OI 符号(留空 = 自动拼接)", group=param_core, tooltip="留空时自动使用「当前符号 + \"_OI\"」,如 BINANCE:ETHUSDT.P_OI。TradingView 的 OI feed 覆盖 9 所:Binance / Bybit / OKX / Bitget / Coinbase / Deribit / Kraken / HTX / BitMEX,其余交易所无数据(状态牌会显性提示),可在此手动指定其它交易所的 _OI 符号。Binance 历史深度约自 2022 年起。")
+deltaN = input.int(1, title="ΔOI 回看根数 n", minval=1, group=param_core, tooltip="按 close / close[n] 与 oi / oi[n] 的正负号分类状态;多周期表中各周期按各自的 K 线数回看。")
+confirmOnly = input.bool(true, title="未收线 K 线不点亮涂装", group=param_core, tooltip="开启后,最新未收线 K 线的柱色 / 色雾 / 事件车道一律先按中性处理,收线后才定型——与策略文档 §2.1 的重绘戒律同级。关闭 = 实时涂装,属违反收线纪律的盯盘观察选项;状态牌与告警始终按已收线数据判定,不受此开关影响。")
+
+param_gate = "幅度门限(候选,待校准)"
+useGate = input.bool(true, title="启用 ΔOI 幅度门限", group=param_gate, tooltip="门限只负责视觉降噪:|z| 未过门限的 K 线退成幽灵柱、不点亮色雾与事件车道,告警亦不触发(已确认需求)。门限【不改变符号语义】——状态牌永远按纯符号真值裁决,硬 veto 不会被降噪静音。关闭 = 纯符号模式(全部柱子满饱和)。")
+gateK = input.float(1.5, title="z-score 门限 k(σ)", minval=0, step=0.1, group=param_gate, tooltip="z = (ΔOI − SMA(ΔOI, N)) / STDEV(ΔOI, N),|z| ≥ k 过门限。候选默认 k = 1.5,待校准(实测在 BTCUSDT 1h 上静音约 92% 的柱子)。")
+gateZLen = input.int(100, title="z-score 统计窗口 N", minval=10, group=param_gate, tooltip="前 N 根为 z 预热空窗,柱体为 na(设计稿同为空窗,非缺陷)。")
+zClip = input.float(4.0, title="z 纵轴裁剪(σ)", minval=1, step=0.5, group=param_gate, tooltip="柱长 = min(|z|, 裁剪),防单根尖峰把整个面板压平。候选默认 ±4σ。实际生效值会自动取 max(裁剪, 门限 k):裁剪低于门限时,过门限的柱尖会够不到 ±k 线,「柱尖越线 = 过门限」的位置直读就废了。")
+
+param_layer = "V4 图层开关"
+showFog = input.bool(true, title="L0 veto 色雾", group=param_layer, tooltip="过门限的 veto 才点亮背景:白雾 = 涨+OI↑(⛔B空),蓝雾 = 跌+OI↑(⛔B多)。全面板唯一允许碰背景的层。")
+showGhost = input.bool(true, title="L1 幽灵柱(未过门限)", group=param_layer, tooltip="关闭后未过门限的 K 线完全不着墨(零墨水),面板只在门限成立时发声。")
+showLanes = input.bool(true, title="L3 事件车道(✕ / ◆)", group=param_layer, tooltip="关闭色雾 + 幽灵柱、只留车道 = 设计稿 V3 的静默告警日志模式。")
+
+param_table = "状态牌 / MTF"
+showRvol = input.bool(false, title="状态牌显示 RVOL", group=param_table, tooltip="RVOL = volume / SMA(volume, N)。「天量」的 RVOL 量化阈值在策略文档中为待议候选,此处仅作数值显示,不写入任何状态 / 告警判定逻辑。")
+rvolLen = input.int(20, title="RVOL 均量周期", minval=1, group=param_table)
+showMtf = input.bool(false, title="显示 MTF 状态表(可选)", group=param_table, tooltip="V4 以双卡状态牌为常驻,8 行 MTF 表降级为可选(默认关)。MTF 行一律按【符号真值】,与状态牌口径一致,不受显示门限影响。")
+tfA = input.timeframe("1W", title="周期 1", group=param_table)
+tfB = input.timeframe("1D", title="周期 2", group=param_table)
+tfC = input.timeframe("240", title="周期 3", group=param_table)
+tfD = input.timeframe("60", title="周期 4", group=param_table, tooltip="表格周期低于图表周期时读数意义有限,建议只配置不低于图表周期的级别。")
+
+param_alert = "告警"
+alertVetoRaw = input.bool(false, title="硬 veto 按符号真值告警(候选,待裁决)", group=param_alert, tooltip="默认关 = 维持已确认口径:告警仅在过门限的状态上触发。开启后,两条硬 veto 告警改为按纯符号真值触发(门限只影响涂装),正签名告警仍受门限约束。两套口径可在记账期比对后再定。")
+
+param_style = "样式设置(候选)"
+// 绘图层纯白/蓝:白 = 价涨(牌B做空侧),蓝 = 价跌(牌B做多侧),继承套件主图 K 线语言。
+// 红/绿仅作状态牌的裁决文字色(红 = veto,绿 = 正签名),沿 RSI-monitor-v2 先例。
+// 套件整体面向深色主题;浅色主题下白色柱体可见度差,请自行改色。
+colUp = input.color(color.white, title="价涨(白 · 牌B做空侧)", group=param_style)
+colDn = input.color(#3d7eff, title="价跌(蓝 · 牌B做多侧)", group=param_style)
+colVeto = input.color(#f23645, title="裁决色 · VETO(红)", group=param_style)
+colSig = input.color(#2dbd85, title="裁决色 · 正签名(绿)", group=param_style)
+colNeutral = input.color(#5b6274, title="中性 / 无数据 / 轴线", group=param_style)
+transpLit = input.int(5, title="过门限柱透明度", minval=0, maxval=100, group=param_style)
+transpGhost = input.int(85, title="幽灵柱透明度", minval=0, maxval=100, group=param_style)
+fogTransp = input.int(88, title="veto 色雾基础透明度", minval=50, maxval=99, group=param_style, tooltip="浓度随 |z| 超出门限的幅度再加深最多 8 个点。")
+
+// =================================================================================
+// 辅助函数
+// =================================================================================
+f_tfLabel(string tf) =>
+    switch tf
+        "60" => "1H"
+        "120" => "2H"
+        "240" => "4H"
+        "720" => "12H"
+        "D" => "1D"
+        "W" => "1W"
+        "M" => "1M"
+        => tf
+
+// n 根差值(security 表达式用;在被请求符号的上下文中求值——价格符号得 Δ价,_OI 符号得 ΔOI)
+f_delta() =>
+    close - close[deltaN]
+
+// OI 侧:ΔOI + 其滚动 z-score,在 OI 符号自身上下文中计算(统计窗口随该周期的 K 线数)
+//   预热期 stdev 为 na → z 为 na → 柱体空窗(与设计稿一致);
+//   OI 死平(stdev = 0)时 z 归 0,不产生除零。
+f_oiDZ() =>
+    float d = close - close[deltaN]
+    float sd = ta.stdev(d, gateZLen)
+    float mu = ta.sma(d, gateZLen)
+    float z = na(sd) ? na : sd > 0 ? (d - mu) / sd : 0.0
+    [d, z]
+
+// 状态分类:只用正负号,与量纲无关。1=涨+OI↑ 2=涨+OI↓ 3=跌+OI↑ 4=跌+OI↓ 0=平/无变化 na=无数据
+// 【纯符号真值】——门限不参与,硬 veto 不可被降噪静音
+f_state(float dPx, float dOi) =>
+    int s = na
+    if not (na(dPx) or na(dOi))
+        s := dPx > 0 and dOi > 0 ? 1 : dPx > 0 and dOi < 0 ? 2 : dPx < 0 and dOi > 0 ? 3 : dPx < 0 and dOi < 0 ? 4 : 0
+    s
+
+f_stateText(int s) =>
+    na(s) ? "无数据" : s == 1 ? "新多进场" : s == 2 ? "空头回补" : s == 3 ? "新空进场" : s == 4 ? "多头清算" : "无变化"
+
+// 裁决色:红 = veto(状态 1/3,均为 OI↑ 危险区),绿 = 正签名(状态 2/4,均为 OI↓ 衰竭区)
+f_verdictColor(int s) =>
+    na(s) ? colNeutral : s == 1 or s == 3 ? colVeto : s == 2 or s == 4 ? colSig : colNeutral
+
+// 单张牌的裁决(vetoS = 该牌的反签名状态,sigS = 该牌的正签名状态)
+f_verdict(int s, int vetoS, int sigS) =>
+    na(s) ? "—" : s == vetoS ? "⛔ VETO" : s == sigS ? "＋ 正签名" : "—"
+
+f_verdictCol(int s, int vetoS, int sigS) =>
+    na(s) ? colNeutral : s == vetoS ? colVeto : s == sigS ? colSig : colNeutral
+
+f_arrow(float d) =>
+    na(d) ? "—" : d > 0 ? "↑" : d < 0 ? "↓" : "="
+
+// =================================================================================
+// 数据获取(已收线纪律:与文档 §2.1 重绘戒律同级)
+// =================================================================================
+// lookahead 一律显式 off(禁用 lookahead_on);高周期请求在实时 K 线上用 idxHTF = 1
+// 跳过未收线的高周期 K 线,只读最近一根已收线的值;历史 K 线按收线合并,本身无前视。
+// request.* 用量:1(图表周期元组)+ 4 周期 × 2(价格 + OI)= 9 次,上限 40。
+string oiTicker = str.length(oiSymbolManual) > 0 ? oiSymbolManual : syminfo.tickerid + "_OI"
+int idxHTF = barstate.isrealtime ? 1 : 0
+
+// 图表周期:OI 水平值 + ΔOI + z(绘图需要整条序列;收线定型在「绘图」与「告警」处理)
+f_oiChartExpr() =>
+    [d, z] = f_oiDZ()
+    [close, d, z]
+
+// 高周期:MTF 表按符号真值,只需 ΔOI,不需要门限。实时 K 线上整体回退到最近一根已收线的高周期 K 线
+// (偏移在被请求的上下文内取,与价格侧同一写法)
+[oiV, dOiChart, zChart] = request.security(oiTicker, timeframe.period, f_oiChartExpr(), lookahead = barmerge.lookahead_off, ignore_invalid_symbol = true)
+
+float dPxA = request.security(syminfo.tickerid, tfA, f_delta()[idxHTF], lookahead = barmerge.lookahead_off)
+float dOiA = request.security(oiTicker, tfA, f_delta()[idxHTF], lookahead = barmerge.lookahead_off, ignore_invalid_symbol = true)
+float dPxB = request.security(syminfo.tickerid, tfB, f_delta()[idxHTF], lookahead = barmerge.lookahead_off)
+float dOiB = request.security(oiTicker, tfB, f_delta()[idxHTF], lookahead = barmerge.lookahead_off, ignore_invalid_symbol = true)
+float dPxC = request.security(syminfo.tickerid, tfC, f_delta()[idxHTF], lookahead = barmerge.lookahead_off)
+float dOiC = request.security(oiTicker, tfC, f_delta()[idxHTF], lookahead = barmerge.lookahead_off, ignore_invalid_symbol = true)
+float dPxD = request.security(syminfo.tickerid, tfD, f_delta()[idxHTF], lookahead = barmerge.lookahead_off)
+float dOiD = request.security(oiTicker, tfD, f_delta()[idxHTF], lookahead = barmerge.lookahead_off, ignore_invalid_symbol = true)
+
+// =================================================================================
+// 状态分类:真值 / 门限 两套口径(V4 的核心解耦)
+// =================================================================================
+float dPxChart = close - close[deltaN]
+
+// ① 纯符号真值 —— 喂状态牌、MTF 表;门限碰不到它
+int stateRaw = f_state(dPxChart, dOiChart)
+
+// ② 显示门限(候选降噪)—— 未过门限的 K 线在涂装/告警上归 0(「中性/噪声」),但符号语义不变
+bool gatePass = not useGate or (not na(zChart) and math.abs(zChart) >= gateK)
+int stateGated = na(stateRaw) ? na : gatePass ? stateRaw : 0
+
+// ③ 涂装状态 —— 再叠加收线纪律:未收线 K 线不点亮任何涂装层
+int statePaint = na(stateGated) ? na : (confirmOnly and not barstate.isconfirmed ? 0 : stateGated)
+int sp = nz(statePaint, 0)
+
+// 已收线读数(供状态牌显示,与前视纪律对齐)。命名避开 HTF 的 dPxC / dOiC(周期 3)
+float dPxLast = barstate.isconfirmed ? dPxChart : dPxChart[1]
+float dOiLast = barstate.isconfirmed ? dOiChart : dOiChart[1]
+float zLast = barstate.isconfirmed ? zChart : zChart[1]
+int stateLast = barstate.isconfirmed ? stateRaw : stateRaw[1]
+bool gateLast = barstate.isconfirmed ? gatePass : gatePass[1]
+
+int stMtfA = f_state(dPxA, dOiA)
+int stMtfB = f_state(dPxB, dOiB)
+int stMtfC = f_state(dPxC, dOiC)
+int stMtfD = f_state(dPxD, dOiD)
+
+// RVOL 仅作显示(候选,阈值待校准),不参与任何状态 / 告警判定
+float rvol = volume / ta.sma(volume, rvolLen)
+float rvolC = barstate.isconfirmed ? rvol : rvol[1]
+
+// =================================================================================
+// 绘图 · L1 方向柱
+// =================================================================================
+// 纵轴 = sign(ΔOI) × min(|z|, zClip):符号交给【零轴位置】(上=危险区 OI↑ / 下=衰竭区 OI↓),
+// 色相交给【价格方向】,幅度交给【柱长】,门限交给【透明度】。四状态因此无需四种颜色。
+// 候选改进(待确认):门限与柱长改零中心归一 ΔOI/σ,可消除 sign(z) ≠ sign(ΔOI) 的轴向劈叉。
+//
+// L2 不变量守护:柱长 = min(|z|, 裁剪),门限 = |z| ≥ k。二者只有在【裁剪 ≥ 门限】时才等价。
+// 若允许 zClip < gateK(如 zClip=1.0 + 默认 k=1.5),过门限的柱子会被裁到门限线以下——
+// 面板位置在说「没过门限」,而色雾/✕/告警在说「过了」。裁剪阈值因此取下界,不交给用户自觉。
+float zClipEff = math.max(zClip, gateK)
+float zAbs = math.min(math.abs(zChart), zClipEff)
+float barH = na(dOiChart) or na(zChart) ? na : (dOiChart > 0 ? zAbs : dOiChart < 0 ? -zAbs : 0.0)
+
+color dirCol = na(dPxChart) ? colNeutral : dPxChart > 0 ? colUp : dPxChart < 0 ? colDn : colNeutral
+bool lit = sp != 0
+color barCol = lit ? color.new(dirCol, transpLit) : showGhost ? color.new(dirCol, transpGhost) : color.new(dirCol, 100)
+
+plot(barH, "ΔOI (z)", color = barCol, style = plot.style_columns, histbase = 0)
+
+// 刻度留白:透明锚点撑开纵轴,让顶/底事件车道不与顶格柱撞在一起(Pine 无描边,只能靠留白)
+// 用 zClipEff 而非 zClip:否则 zClip < gateK 时锚点会把 ±k 门限线挤出面板
+plot(zClipEff * 1.28, "刻度上限", color = color.new(color.gray, 100), editable = false, display = display.pane)
+plot(-zClipEff * 1.28, "刻度下限", color = color.new(color.gray, 100), editable = false, display = display.pane)
+
+// OI 水平值不与 ΔOI 抢面板(z 轴 ±4 与 OI ~1e5 同轴会把门限线压成零厚度)——只进数据窗口
+plot(oiV, "OI 水平值", color = color.new(color.gray, 100), display = display.data_window)
+
+// =================================================================================
+// 绘图 · L0 veto 色雾(全面板唯一允许碰背景的层)
+// =================================================================================
+// 只有【过门限的 veto】点亮:白雾 = 涨+OI↑(⛔B空),蓝雾 = 跌+OI↑(⛔B多);浓度随 |z| 超出门限的幅度加深。
+float fogGrade = na(zChart) ? 0.0 : math.min(math.max((math.abs(zChart) - gateK) / 1.5, 0.0), 1.0)
+bool isVetoPaint = sp == 1 or sp == 3
+// 白雾比蓝雾观感更亮,基础透明度补 2 个点;末端 clamp 到合法区间(color.new 越界会抛运行时错误)
+float fogT = math.min(math.max((sp == 1 ? fogTransp + 2 : fogTransp) - 8 * fogGrade, 0.0), 100.0)
+color fogCol = showFog and isVetoPaint ? color.new(sp == 1 ? colUp : colDn, fogT) : na
+bgcolor(fogCol, title = "veto 色雾")
+
+// =================================================================================
+// 绘图 · L2 门限线 ±k(柱尖是否越线 = 是否过门限,位置直读不靠色)
+// =================================================================================
+hline(0, "零轴(上=危险区 OI↑ / 下=衰竭区 OI↓)", color = color.new(color.gray, 50), linestyle = hline.style_solid)
+
+var line lnKp = na
+var line lnKn = na
+var label lbKp = na
+var label lbKn = na
+if useGate and barstate.islast
+    if na(lnKp)
+        lnKp := line.new(bar_index - 1, gateK, bar_index, gateK, extend = extend.both, color = color.new(colNeutral, 20), style = line.style_dashed, width = 1)
+        lnKn := line.new(bar_index - 1, -gateK, bar_index, -gateK, extend = extend.both, color = color.new(colNeutral, 20), style = line.style_dashed, width = 1)
+        lbKp := label.new(bar_index, gateK, "+" + str.tostring(gateK, "0.0") + "σ 门限", style = label.style_none, textcolor = color.new(colNeutral, 20), size = size.tiny)
+        lbKn := label.new(bar_index, -gateK, "−" + str.tostring(gateK, "0.0") + "σ 门限", style = label.style_none, textcolor = color.new(colNeutral, 20), size = size.tiny)
+    else
+        label.set_x(lbKp, bar_index)
+        label.set_x(lbKn, bar_index)
+
+// =================================================================================
+// 绘图 · L3 事件车道(形状区分硬/软:✕ = 禁止,◆ = 加分;色相 = 受影响的牌)
+// =================================================================================
+// 顶部车道:veto(硬规则)——蓝 ✕ 禁多(跌+OI↑) / 白 ✕ 禁空(涨+OI↑)
+// 底部车道:正签名(软加分)——蓝 ◆ 多加分(跌+OI↓) / 白 ◆ 空加分(涨+OI↓)
+bool vetoEvt = showLanes and (sp == 1 or sp == 3)
+bool sigEvt = showLanes and (sp == 2 or sp == 4)
+plotshape(vetoEvt, title = "veto 事件(✕)", style = shape.xcross, location = location.top, color = sp == 1 ? colUp : colDn, size = size.small)
+plotshape(sigEvt, title = "正签名 事件(◆)", style = shape.diamond, location = location.bottom, color = sp == 2 ? colUp : colDn, size = size.tiny)
+
+// =================================================================================
+// L4 双卡状态牌(常驻;按【纯符号真值】裁决——面板可以安静,状态牌不许说谎)
+// =================================================================================
+var table card = table.new(position.middle_left, 3, 6, border_width = 1, frame_width = 1, frame_color = #2a3040)
+color cardBg = #171b26
+color headBg = #222836
+
+// 未过门限只是「涂装被静音」,不改变裁决;显性加注,避免读者把安静的面板误读成没有 veto
+string gateNote = not useGate ? "门限关闭(纯符号模式)" : gateLast ? "过门限(涂装已点亮)" : "未过门限(仅静音涂装,裁决不变)"
+
+if barstate.islast
+    table.clear(card, 0, 0, 2, 5)
+
+    table.cell(card, 0, 0, "OI 裁决 · " + f_tfLabel(timeframe.period), bgcolor = headBg, text_color = #d6dae3, text_size = size.small, text_halign = text.align_left, tooltip = "裁决按纯符号真值(§4.6),不受幅度门限影响;门限只负责视觉降噪。OI 符号:" + oiTicker)
+    table.cell(card, 1, 0, "裁决", bgcolor = headBg, text_color = #8b93a7, text_size = size.small)
+    table.cell(card, 2, 0, "依据", bgcolor = headBg, text_color = #8b93a7, text_size = size.small, text_halign = text.align_left)
+
+    // 牌 B 做多:反签名 = 跌+OI↑(3,硬 veto);正签名 = 跌+OI↓(4,软加分)
+    string reasonLong = na(stateLast) ? "无 OI 数据" : stateLast == 3 ? "跌+OI↑ 新空进场推动 · 硬规则" : stateLast == 4 ? "跌+OI↓ 多头清算投降 · 软加分,非必要" : "价跌以外,无 B多 裁决"
+    table.cell(card, 0, 1, "牌 B 做多", bgcolor = cardBg, text_color = colDn, text_size = size.small, text_halign = text.align_left)
+    table.cell(card, 1, 1, f_verdict(stateLast, 3, 4), bgcolor = cardBg, text_color = f_verdictCol(stateLast, 3, 4), text_size = size.small)
+    table.cell(card, 2, 1, reasonLong, bgcolor = cardBg, text_color = #8b93a7, text_size = size.tiny, text_halign = text.align_left)
+
+    // 牌 B 做空:反签名 = 涨+OI↑(1,硬 veto);正签名 = 涨+OI↓(2,软加分)
+    string reasonShort = na(stateLast) ? "无 OI 数据" : stateLast == 1 ? "涨+OI↑ 新多进场推动 · 硬规则(同为牌A顺风确认)" : stateLast == 2 ? "涨+OI↓ 空头回补衰竭 · 软加分(牌A警惕衰竭)" : "价涨以外,无 B空 裁决"
+    table.cell(card, 0, 2, "牌 B 做空", bgcolor = cardBg, text_color = colUp, text_size = size.small, text_halign = text.align_left)
+    table.cell(card, 1, 2, f_verdict(stateLast, 1, 2), bgcolor = cardBg, text_color = f_verdictCol(stateLast, 1, 2), text_size = size.small)
+    table.cell(card, 2, 2, reasonShort, bgcolor = cardBg, text_color = #8b93a7, text_size = size.tiny, text_halign = text.align_left)
+
+    // 读数行
+    string zTxt = na(zLast) ? "z 预热中" : "z " + str.tostring(zLast, "0.00") + "σ"
+    table.cell(card, 0, 3, "读数 · " + f_stateText(stateLast), bgcolor = cardBg, text_color = f_verdictColor(stateLast), text_size = size.tiny, text_halign = text.align_left)
+    table.cell(card, 1, 3, "价" + f_arrow(dPxLast) + " OI" + f_arrow(dOiLast), bgcolor = cardBg, text_color = #d6dae3, text_size = size.tiny)
+    table.cell(card, 2, 3, zTxt + " · " + gateNote, bgcolor = cardBg, text_color = #5b6274, text_size = size.tiny, text_halign = text.align_left)
+
+    int rowNext = 4
+    if showRvol
+        table.cell(card, 0, rowNext, "RVOL", bgcolor = cardBg, text_color = #8b93a7, text_size = size.tiny, text_halign = text.align_left)
+        table.cell(card, 1, rowNext, str.tostring(rvolC, "0.00"), bgcolor = cardBg, text_color = #d6dae3, text_size = size.tiny)
+        table.cell(card, 2, rowNext, "候选:「天量」阈值待议,不参与判定", bgcolor = cardBg, text_color = #5b6274, text_size = size.tiny, text_halign = text.align_left)
+        rowNext += 1
+
+    // feed 缺失时显性提示,不静默空白(不使用 merge_cells:重复 merge 会触发运行时错误)
+    if na(oiV)
+        table.cell(card, 0, rowNext, "⚠ 无 OI 数据", bgcolor = color.new(colVeto, 20), text_color = color.white, text_size = size.tiny, text_halign = text.align_left)
+        table.cell(card, 1, rowNext, "", bgcolor = color.new(colVeto, 20))
+        table.cell(card, 2, rowNext, oiTicker + " 无 _OI feed,可在设置中手动指定", bgcolor = color.new(colVeto, 20), text_color = color.white, text_size = size.tiny, text_halign = text.align_left)
+
+// =================================================================================
+// MTF 状态表(可选,默认关;一律按符号真值,与状态牌同口径)
+// =================================================================================
+var table mtf = table.new(position.top_right, 4, 6, border_width = 1, frame_width = 1, frame_color = #2a3040)
+
+f_mtfRow(int row, string tfLabel, float dPx, float dOi, int s) =>
+    color vc = f_verdictColor(s)
+    table.cell(mtf, 0, row, tfLabel, bgcolor = cardBg, text_color = #d6dae3, text_size = size.tiny)
+    table.cell(mtf, 1, row, f_arrow(dPx), bgcolor = cardBg, text_color = #d6dae3, text_size = size.tiny)
+    table.cell(mtf, 2, row, f_arrow(dOi), bgcolor = cardBg, text_color = #d6dae3, text_size = size.tiny)
+    table.cell(mtf, 3, row, f_stateText(s), bgcolor = color.new(vc, 82), text_color = vc, text_size = size.tiny)
+
+if showMtf and barstate.islast
+    table.clear(mtf, 0, 0, 3, 5)
+    table.cell(mtf, 0, 0, "周期", bgcolor = headBg, text_color = #8b93a7, text_size = size.tiny, tooltip = "全部读数取已收线 K 线,按符号真值(不受显示门限影响);ΔOI 回看 n = " + str.tostring(deltaN))
+    table.cell(mtf, 1, 0, "价", bgcolor = headBg, text_color = #8b93a7, text_size = size.tiny)
+    table.cell(mtf, 2, 0, "OI", bgcolor = headBg, text_color = #8b93a7, text_size = size.tiny)
+    table.cell(mtf, 3, 0, "状态", bgcolor = headBg, text_color = #8b93a7, text_size = size.tiny)
+    f_mtfRow(1, f_tfLabel(tfA), dPxA, dOiA, stMtfA)
+    f_mtfRow(2, f_tfLabel(tfB), dPxB, dOiB, stMtfB)
+    f_mtfRow(3, f_tfLabel(tfC), dPxC, dOiC, stMtfC)
+    f_mtfRow(4, f_tfLabel(tfD), dPxD, dOiD, stMtfD)
+
+// =================================================================================
+// 告警(仅图表周期;收线后触发)
+// =================================================================================
+// 默认口径(已确认):门限已折叠进 stateGated,未过门限不触发。
+// alertVetoRaw = true(候选):两条【硬 veto】改按纯符号真值触发,门限只影响涂装;正签名仍受门限约束。
+bool vetoLong = barstate.isconfirmed and (stateGated == 3 or (alertVetoRaw and stateRaw == 3))
+bool vetoShort = barstate.isconfirmed and (stateGated == 1 or (alertVetoRaw and stateRaw == 1))
+alertcondition(vetoLong, title = "B多 veto(跌+OI↑)", message = "跌+OI↑:新空进场推动的下跌,牌 B 做多否决(硬规则,禁止接刀)")
+alertcondition(vetoShort, title = "B空 veto(涨+OI↑)", message = "涨+OI↑:新多进场推动的上涨,牌 B 做空否决(硬规则)")
+alertcondition(barstate.isconfirmed and stateGated == 4, title = "B多 正签名(跌+OI↓)", message = "跌+OI↓:多头清算投降形态,牌 B 做多正签名(软加分,非必要条件)")
+alertcondition(barstate.isconfirmed and stateGated == 2, title = "B空 正签名(涨+OI↓)", message = "涨+OI↓:空头回补衰竭形态,牌 B 做空正签名(软加分,非必要条件)")

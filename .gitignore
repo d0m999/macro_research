@@ -92,3 +92,7 @@ cookies.json
 #!/btc-cycle.md
 #!/RSI-Strategy.md
 
+.gstack/
+
+# 独立 git 仓库 (远端: CengcengGarden/dropbox-2026-06-15), 非本仓库一部分
+dropbox-2026-06-15/
