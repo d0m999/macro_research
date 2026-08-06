@@ -1,98 +1,44 @@
-# Kiro IDE 相关文件
-.kiro/
-.kiro/**
-
-# VSCode 相关文件
+# OS / editor files
+.DS_Store
+Thumbs.db
 .vscode/
 .vscode/**
+.gstack/
 
-# Pine Script 指标文件
-# pine_indicator/
-# pine_indicator/**
-
-# Python 相关
+# Local Python tooling used only by optional research skills
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# 虚拟环境
 .venv/
 venv/
 env/
 ENV/
 env.bak/
 venv.bak/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv (注意: .python-version 现在由 uv 使用，已提交到 git)
-
-# 日志文件
+# Local secrets and generated runtime data
+.env
 *.log
-logs/
-user_data/logs/
-
-# 临时文件
-*.tmp
-*.temp
-.DS_Store
-Thumbs.db
-
-# Freqtrade 相关
-user_data/backtest_results/
-user_data/plot/
-user_data/data/
 *.sqlite
+*.sqlite-*
 *.db
-
-# 配置文件（包含敏感信息）
 config.json
 config_*.json
-.env
 
-# X Trader Analysis skill 产物 (爬取的原始数据 + 中间结果)
+# Optional X research skill outputs and credentials
 data/raw/
 data/enriched/
 data/reports/
-
-# X 登录 cookies (敏感, auth_token 绝不能提交)
 cookies.json
 .claude/skills/x-trader-analysis/cookies.json
 .claude/skills/x-trader-analysis/scripts/__pycache__/
 .claude/skills/x-trader-analysis/scripts/account_pool/__pycache__/
-
-# twscrape 账号池 (SQLite 含 cookies + 邮箱凭证, 绝不能提交)
 .claude/skills/x-trader-analysis/.account_pool/
 .account_pool/
 
-# 说明文档和 rules
-# 只忽略根目录下的 .md 文件, 但 GEMINI.md 除外
-# /*.md
-#!/GEMINI.md
-#!/IFLOW.md
-#!/btc-cycle.md
-#!/RSI-Strategy.md
-
-.gstack/
-
-# 独立 git 仓库 (远端: CengcengGarden/dropbox-2026-06-15), 非本仓库一部分
+# Independent local repository
 dropbox-2026-06-15/
