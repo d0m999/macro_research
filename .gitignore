@@ -29,16 +29,13 @@ dist/
 config.json
 config_*.json
 
-# Optional X research skill outputs and credentials
+# Local research outputs and credentials
 data/raw/
 data/enriched/
 data/reports/
 cookies.json
-.claude/skills/x-trader-analysis/cookies.json
-.claude/skills/x-trader-analysis/scripts/__pycache__/
-.claude/skills/x-trader-analysis/scripts/account_pool/__pycache__/
-.claude/skills/x-trader-analysis/.account_pool/
 .account_pool/
 
 # Independent local repository
 dropbox-2026-06-15/
+罗老师-2026-06-15/
