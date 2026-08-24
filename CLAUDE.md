@@ -31,3 +31,17 @@ Python/FreqTrade 程序化交易引擎、回测运行环境、交易数据库、
 
 - 保留用户已有的未跟踪 artifact；不要使用 `git add -A`、强制重置或覆盖式清理。
 - 修改、提交、推送和发布是分开的授权；本仓库默认只做本地修改。
+
+## Agent skills
+
+### Issue tracker
+
+Issues and specs are tracked in this repository's GitHub Issues via `gh`. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Use the five canonical triage labels defined for this repository. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+This repository uses a single-context layout with root `CONTEXT.md` and `docs/adr/`. See `docs/agents/domain.md`.
