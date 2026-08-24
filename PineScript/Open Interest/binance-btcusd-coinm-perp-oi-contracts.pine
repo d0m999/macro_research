@@ -1,0 +1,26 @@
+// © d0m999
+//@version=6
+indicator("Binance BTCUSD COIN-M 永续 OI（合约张数，当前柱会变化）", overlay = false, format = format.price, precision = 0)
+
+// 数据通过 TradingView OI 服务符号读取，并非由 Pine 直接调用 Binance API。
+// 范围仅为 Binance BTCUSD COIN-M 永续；单位为来源序列的原生合约张数。
+// 实时 OI 柱的 OHLC 会在当前周期结束前变化；OI 数据缺口不等于零或上一周期数值。
+const string OI_SYMBOL = "BINANCE:BTCUSD.P_OI"
+const string COLOR_GROUP = "OI 蜡烛颜色"
+
+color increaseColor = input.color(color.white, "增加（close > open）", group = COLOR_GROUP)
+color decreaseColor = input.color(color.blue, "减少（close < open）", group = COLOR_GROUP)
+color unchangedColor = input.color(color.gray, "持平（close = open）", group = COLOR_GROUP)
+
+[oiOpen, oiHigh, oiLow, oiClose] = request.security(OI_SYMBOL, timeframe.period, [open, high, low, close], gaps = barmerge.gaps_on, lookahead = barmerge.lookahead_off, ignore_invalid_symbol = true)
+
+bool hasCompleteOiCandle = not na(oiOpen) and not na(oiHigh) and not na(oiLow) and not na(oiClose)
+var bool hasAnyCompleteOiCandle = false
+hasAnyCompleteOiCandle := hasAnyCompleteOiCandle or hasCompleteOiCandle
+
+if barstate.islast and not hasAnyCompleteOiCandle
+    runtime.error("BINANCE:BTCUSD.P_OI 在当前已加载序列中没有可用的完整 OI OHLC 数据。")
+
+color oiCandleColor = oiClose > oiOpen ? increaseColor : oiClose < oiOpen ? decreaseColor : unchangedColor
+
+plotcandle(hasCompleteOiCandle ? oiOpen : na, hasCompleteOiCandle ? oiHigh : na, hasCompleteOiCandle ? oiLow : na, hasCompleteOiCandle ? oiClose : na, title = "OI OHLC（原生合约张数）", color = oiCandleColor, wickcolor = oiCandleColor, bordercolor = oiCandleColor)
