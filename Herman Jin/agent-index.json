@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "package_type": "video-research-agent-index",
+  "description": "Herman Jin 市场概述视频的 agent 数据入口。优先读取各 package 的 manifest.json，再按需读取 transcript.jsonl、deck.jsonl 和 slides/*.png。",
+  "conventions": {
+    "video_directory_template": "market-overview-YYYY-MM-DD/",
+    "agent_files": ["manifest.json", "transcript.jsonl", "deck.jsonl"],
+    "agent_directories": ["slides/", "ocr/"],
+    "separate_materials": {
+      "readable": "_readable/",
+      "source": "_source/"
+    }
+  },
+  "packages": [
+    {
+      "id": "market-overview-2026-08-25",
+      "title": "市场概述2026年8月25日",
+      "date": "2026-08-25",
+      "manifest": "market-overview-2026-08-25/manifest.json",
+      "readable": "_readable/market-overview-2026-08-25.html",
+      "source": "_source/market-overview-2026-08-25/"
+    },
+    {
+      "id": "market-overview-2026-08-04",
+      "title": "市场概述2026年8月4日",
+      "date": "2026-08-04",
+      "manifest": "market-overview-2026-08-04/manifest.json",
+      "readable": "_readable/market-overview-2026-08-04.html",
+      "source": "_source/market-overview-2026-08-04/"
+    },
+    {
+      "id": "market-overview-2026-06-30",
+      "title": "市场概述2026年6月30日",
+      "date": "2026-06-30",
+      "manifest": "market-overview-2026-06-30/manifest.json",
+      "readable": "_readable/market-overview-2026-06-30.html",
+      "source": "_source/market-overview-2026-06-30/"
+    }
+  ],
+  "generated_on": "2026-08-26"
+}

@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="《市场概述2026年8月25日》视频的中文音频整理与 deck 阅读版。">
+  <title>市场概述 · 2026.08.25</title>
+  <link rel="alternate" type="application/json" title="Agent manifest" href="../market-overview-2026-08-25/manifest.json">
+  <link rel="alternate" type="application/jsonl" title="Agent transcript" href="../market-overview-2026-08-25/transcript.jsonl">
+  <link rel="alternate" type="application/jsonl" title="Agent deck" href="../market-overview-2026-08-25/deck.jsonl">
+  <link rel="index" type="application/json" title="Agent video index" href="../agent-index.json">
+  <style>
+    :root {
+      --ink: #18222d;
+      --muted: #68737d;
+      --paper: #f6f3ed;
+      --card: #fffdf9;
+      --line: #ddd8ce;
+      --navy: #1d2b3a;
+      --red: #bd4d4c;
+      --gold: #b79a4c;
+      --green: #397d6b;
+      --shadow: 0 18px 55px rgba(31, 42, 54, .09);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 0%, rgba(183, 154, 76, .10), transparent 29rem),
+        var(--paper);
+      font: 16px/1.75 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a { color: inherit; }
+    a:focus-visible, button:focus-visible, audio:focus-visible { outline: 3px solid var(--red); outline-offset: 4px; }
+
+    .shell {
+      width: min(1180px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      border-bottom: 1px solid rgba(221, 216, 206, .9);
+      background: rgba(246, 243, 237, .90);
+      backdrop-filter: blur(14px);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 56px;
+      gap: 16px;
+    }
+
+    .brand {
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 6px 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    nav a { text-decoration: none; }
+    nav a:hover { color: var(--red); }
+
+    main { padding: 54px 0 90px; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(280px, .6fr);
+      gap: 46px;
+      align-items: end;
+      padding: 36px 0 50px;
+    }
+
+    .eyebrow {
+      color: var(--red);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      max-width: 800px;
+      margin: 14px 0 18px;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 7vw, 82px);
+      font-weight: 700;
+      letter-spacing: -.045em;
+      line-height: .98;
+    }
+
+    h1 span {
+      display: block;
+      color: var(--gold);
+      font-size: .45em;
+      letter-spacing: .01em;
+      line-height: 1.45;
+    }
+
+    .dek {
+      max-width: 730px;
+      color: #46525d;
+      font-size: 20px;
+      line-height: 1.55;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 3px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 253, 249, .65);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .pill.link {
+      border-color: var(--navy);
+      background: var(--navy);
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero-note {
+      padding: 22px 24px;
+      border-left: 4px solid var(--gold);
+      background: var(--card);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-note strong { display: block; margin-bottom: 7px; color: var(--navy); }
+    .hero-note p { margin-bottom: 0; color: var(--muted); font-size: 14px; }
+
+    section { scroll-margin-top: 82px; }
+
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 18px;
+      margin: 74px 0 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-head h2 {
+      margin-bottom: 10px;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 4vw, 42px);
+      letter-spacing: -.025em;
+      line-height: 1.15;
+    }
+
+    .section-head .index {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .14em;
+    }
+
+    .lead-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(260px, .85fr);
+      gap: 24px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      background: var(--card);
+      box-shadow: var(--shadow);
+    }
+
+    .lead-card h3 { margin-bottom: 10px; color: var(--navy); font-size: 23px; }
+    .lead-card p:last-child { margin-bottom: 0; }
+
+    .signal {
+      padding: 18px 20px;
+      border: 1px solid #d9d4c9;
+      background: #f1eee6;
+    }
+
+    .signal b {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--red);
+      font-size: 12px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .signal p { margin-bottom: 0; font-size: 15px; }
+
+    .fact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .fact {
+      padding: 20px;
+      border-top: 3px solid var(--navy);
+      background: var(--card);
+    }
+
+    .fact:nth-child(2) { border-top-color: var(--red); }
+    .fact:nth-child(3) { border-top-color: var(--green); }
+    .fact strong { display: block; color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: clamp(22px, 3vw, 32px); line-height: 1.1; }
+    .fact span { display: block; margin-top: 7px; color: var(--muted); font-size: 13px; }
+    .note { margin-top: 14px; padding: 14px 16px; border-left: 3px solid var(--red); background: #f1eee6; color: var(--muted); font-size: 13px; }
+
+    .clock-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .clock {
+      position: relative;
+      min-height: 265px;
+      padding: 24px 22px 22px;
+      border-top: 5px solid var(--red);
+      background: var(--card);
+      box-shadow: 0 10px 28px rgba(31, 42, 54, .06);
+    }
+
+    .clock:nth-child(2) { border-top-color: var(--gold); }
+    .clock:nth-child(3) { border-top-color: var(--navy); }
+
+    .clock .number {
+      display: inline-grid;
+      width: 30px;
+      height: 30px;
+      place-items: center;
+      margin-bottom: 24px;
+      border-radius: 2px;
+      background: var(--red);
+      color: white;
+      font-weight: 800;
+    }
+
+    .clock:nth-child(2) .number { background: var(--gold); }
+    .clock:nth-child(3) .number { background: var(--navy); }
+
+    .clock small {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .clock h3 {
+      margin: 5px 0 16px;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 27px;
+      line-height: 1.12;
+    }
+
+    .clock ul { margin: 0; padding-left: 19px; color: #52606b; font-size: 14px; }
+
+    .rule {
+      margin: 15px 0 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--gold);
+      background: #ece9e0;
+      color: #3c4852;
+      font-size: 14px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 16px;
+    }
+
+    .chapter {
+      display: grid;
+      grid-template-columns: 148px minmax(0, 1fr);
+      gap: 24px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .time {
+      color: var(--red);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      white-space: nowrap;
+    }
+
+    .time a { text-decoration: none; }
+    .time a:hover { text-decoration: underline; }
+
+    .chapter h3 { margin-bottom: 8px; color: var(--navy); font-size: 22px; }
+    .chapter p { margin-bottom: 10px; color: #4f5b65; }
+    .chapter p:last-child { margin-bottom: 0; }
+
+    .chapter .terms {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .excerpt {
+      padding-left: 14px;
+      border-left: 3px solid var(--gold);
+      color: var(--navy) !important;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+    }
+
+    .excerpt span {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .deck-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    figure {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--card);
+      box-shadow: 0 12px 34px rgba(31, 42, 54, .08);
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #e9e5dc;
+    }
+
+    figcaption { padding: 15px 17px 17px; color: #4f5b65; font-size: 14px; }
+    figcaption strong { display: block; margin-bottom: 3px; color: var(--navy); font-size: 16px; }
+    figcaption a { color: var(--red); text-decoration: none; }
+    figcaption a:hover { text-decoration: underline; }
+
+    .claim-table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--card);
+      font-size: 14px;
+    }
+
+    .claim-table th, .claim-table td {
+      padding: 14px 15px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .claim-table th { color: var(--navy); background: #ebe7de; font-size: 12px; letter-spacing: .08em; }
+    .claim-table tr:last-child td { border-bottom: 0; }
+    .claim-table td:first-child { width: 26%; color: var(--navy); font-weight: 700; }
+
+    details {
+      border: 1px solid var(--line);
+      background: rgba(255, 253, 249, .72);
+    }
+
+    details + details { border-top: 0; }
+
+    summary {
+      cursor: pointer;
+      padding: 15px 17px;
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    details > div { padding: 0 17px 17px; color: #52606b; font-size: 14px; }
+
+    .footnote {
+      margin-top: 24px;
+      padding: 18px 20px;
+      border: 1px dashed #c9c1b1;
+      background: #f0ede5;
+      color: #5d6871;
+      font-size: 13px;
+    }
+
+    footer {
+      padding: 26px 0 60px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 820px) {
+      .hero, .lead-card { grid-template-columns: 1fr; }
+      .hero { gap: 24px; padding-top: 20px; }
+      .clock-grid, .deck-grid, .fact-grid { grid-template-columns: 1fr; }
+      .chapter { grid-template-columns: 1fr; gap: 4px; }
+      .time { margin-bottom: 3px; }
+      .section-head { margin-top: 54px; }
+    }
+
+    @media print {
+      .topbar { position: static; }
+      nav { display: none; }
+      main { padding-top: 20px; }
+      .hero-note, .lead-card, .clock, figure { box-shadow: none; }
+      figure, .chapter, details { break-inside: avoid; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root { --ink: #e7e2d8; --muted: #a7aaa7; --paper: #192028; --card: #222c35; --line: #3a444c; --navy: #f4efe5; }
+      body { background: #192028; }
+      .topbar { background: rgba(25, 32, 40, .90); }
+      .dek, .chapter p, .clock ul, figcaption, details > div { color: #c1c4c0; }
+      .hero-note, .lead-card, .clock, figure, .fact { box-shadow: none; }
+      .signal, .rule, .footnote, .note, .claim-table th { background: #2c353b; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body data-agent-index="../agent-index.json" data-agent-manifest="../market-overview-2026-08-25/manifest.json" data-agent-transcript="../market-overview-2026-08-25/transcript.jsonl" data-agent-deck="../market-overview-2026-08-25/deck.jsonl">
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <div class="brand">Video digest / 2026.08.25</div>
+      <nav aria-label="页面导航">
+        <a href="#thesis">主线</a>
+        <a href="#clocks">三只钟</a>
+        <a href="#timeline">时间轴</a>
+        <a href="#deck">Deck</a>
+        <a href="#transcript">转录</a>
+        <a href="#agent-data">Agent 数据</a>
+        <a href="#method">边界</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <div class="eyebrow">市场概述 · audio + deck reading version</div>
+        <h1 id="page-title">市场概述<span>2026 年 8 月 25 日</span></h1>
+        <p class="dek">把一场中文市场周会，整理成一份可以快速复盘的阅读版。deck 的主线是 <i>Three Clocks on the Equity Market</i>：先看仓位，再看 hyperscaler 的现金流，最后看谁在什么利率下为 AI 和增长买单。</p>
+        <div class="meta">
+          <a class="pill link" href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM" target="_blank" rel="noreferrer">打开原视频 ↗</a>
+          <span class="pill">Shanghao Jin</span>
+          <span class="pill">约 31:08</span>
+          <span class="pill">中文音频整理</span>
+          <a class="pill" href="../market-overview-2026-08-25/manifest.json">Agent manifest ↗</a>
+        </div>
+      </div>
+      <aside class="hero-note">
+        <strong>先读这一句</strong>
+        <p>演讲者认为市场并没有出现全新的“熊市故事”：短期是仓位重置，中期看 AI 现金流能否落到云厂商，长期则由增长、长端利率和估值倍数决定压力。</p>
+      </aside>
+    </section>
+
+    <section id="agent-data" aria-labelledby="agent-data-title">
+      <div class="section-head">
+        <h2 id="agent-data-title">Agent 数据包</h2>
+        <span class="index">MACHINE INPUT</span>
+      </div>
+      <div class="fact-grid" aria-label="Agent 数据文件">
+        <div class="fact"><strong>transcript.jsonl</strong><span>771 个带 start/end 的自动转录片段。<a href="../market-overview-2026-08-25/transcript.jsonl">打开 ↗</a></span></div>
+        <div class="fact"><strong>deck.jsonl</strong><span>6 条逐页记录，含 OCR、视觉类型、摘要和图片路径。<a href="../market-overview-2026-08-25/deck.jsonl">打开 ↗</a></span></div>
+        <div class="fact"><strong>slides/*.png</strong><span>逐页 PNG 视觉证据；OCR 位于同目录的 <code>ocr/</code>。<a href="../market-overview-2026-08-25/manifest.json">字段契约 ↗</a></span></div>
+      </div>
+      <p class="note">Agent 主输入是 JSONL 和逐页图片；当前页面只是阅读入口。自动转录和 OCR 可能误识别专名、数字与标签。</p>
+    </section>
+
+    <section id="thesis" aria-labelledby="thesis-title">
+      <div class="section-head">
+        <h2 id="thesis-title">视频主线</h2>
+        <span class="index">01 / THESIS</span>
+      </div>
+      <div class="lead-card">
+        <div>
+          <h3>观点不是“没有风险”，而是风险的时钟不同</h3>
+          <p>演讲先承认 AI ARR、自由现金流和利率都可能成为压力来源，但认为市场正在重复 6 月已经讲过的悲观叙事。由于仓位和杠杆不像 6、7 月末那么拥挤，短期更像 reset，而不是全面踩踏。</p>
+          <p>中期需要把“AI 需求”从 labs 的 ARR 新闻，转成 Microsoft、Alibaba 等云厂商的收入、订单、资本开支回报和信用条件。长期真正决定 equity multiple 的，是名义增长与 10 年期利率之间的关系。</p>
+        </div>
+        <div class="signal">
+          <b>本页的整理判断</b>
+          <p>视频最后留下的监测框架可以压缩成三个问题：① 仓位是否重新拥挤；② 云厂商现金流是否恶化；③ 10Y 利率上行究竟来自更强增长，还是来自更高的风险溢价。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="clocks" aria-labelledby="clocks-title">
+      <div class="section-head">
+        <h2 id="clocks-title">Three Clocks on the Equity Market</h2>
+        <span class="index">02 / FRAME</span>
+      </div>
+      <figure>
+        <img src="../_source/market-overview-2026-08-25/deck/overview.jpg" alt="视频中的 Three Clocks on the Equity Market 总览页">
+        <figcaption><strong>Deck 总览 · 约 00:50</strong>原视频以三个时间尺度组织讨论。图片是从公开视频播放器的 720p 画面逐页截取、裁成 slide-only 的 deck 参考图，不是原始 PPT 文件。<a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM&amp;t=50s" target="_blank" rel="noreferrer">跳到视频 ↗</a></figcaption>
+      </figure>
+      <div class="clock-grid" style="margin-top: 16px">
+        <article class="clock">
+          <span class="number">1</span>
+          <small>Days to months</small>
+          <h3>Positioning and headlines</h3>
+          <ul>
+            <li>Anthropic / OpenAI ARR headlines</li>
+            <li>OI、美元和 FOMC 路径</li>
+            <li>Prime-book leverage</li>
+            <li>Momentum positioning</li>
+          </ul>
+        </article>
+        <article class="clock">
+          <span class="number">2</span>
+          <small>The next 12 months</small>
+          <h3>Hyperscaler cash flows</h3>
+          <ul>
+            <li>云厂商的自由现金流</li>
+            <li>Hyperscaler credit spreads</li>
+            <li>数据中心计算芯片的折旧与寿命</li>
+          </ul>
+        </article>
+        <article class="clock">
+          <span class="number">3</span>
+          <small>One year and beyond</small>
+          <h3>Who pays, at what rate</h3>
+          <ul>
+            <li>AI end demand 最终由谁支付</li>
+            <li>AI 替代劳动后，失业与收入如何变化</li>
+            <li>供需如何把 US 10Y 推向更高水平</li>
+          </ul>
+        </article>
+      </div>
+      <p class="rule">阅读提示：本周的价格波动属于第 1 只钟，估值倍数的压力属于第 3 只钟。不要用一条新闻解释所有时间尺度。</p>
+    </section>
+
+    <section id="timeline" aria-labelledby="timeline-title">
+      <div class="section-head">
+        <h2 id="timeline-title">音频内容时间轴</h2>
+        <span class="index">03 / AUDIO NOTES</span>
+      </div>
+      <div class="timeline">
+        <article class="chapter">
+          <div class="time"><a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM&amp;t=0s" target="_blank" rel="noreferrer">00:00–02:00 ↗</a></div>
+          <div>
+            <h3>开场：市场都在看空，但没有新鬼故事</h3>
+            <p>演讲者结束数周休假后，先描述市场情绪已经明显转空，再指出目前的悲观叙事和 6 月时讨论的内容差别不大。基调不是否认风险，而是反对把旧风险包装成全新的崩盘证据。</p>
+            <p class="excerpt"><span>音频短摘录</span>“现在所有人都在看空。”</p>
+            <p class="terms">关键词：市场情绪、旧叙事、风险重定价</p>
+          </div>
+        </article>
+        <article class="chapter">
+          <div class="time"><a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM&amp;t=120s" target="_blank" rel="noreferrer">02:00–06:40 ↗</a></div>
+          <div>
+            <h3>ARR 和仓位：headline 变差，不等于踩踏已经开始</h3>
+            <p>音频把 Anthropic 的 ARR 新闻放在第一个压力点：新披露或流传的数字低于此前市场预期，因此让市场失望。但演讲同时强调，动量资金并没有像 5、6 月那样大规模外流，整体杠杆也没有处于最拥挤的位置。</p>
+            <p class="terms">关键词：Anthropic ARR、Momentum、杠杆、forced selling</p>
+          </div>
+        </article>
+        <article class="chapter">
+          <div class="time"><a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM&amp;t=400s" target="_blank" rel="noreferrer">06:40–15:00 ↗</a></div>
+          <div>
+            <h3>AI 价值链：labs 的变现慢，不代表云端需求消失</h3>
+            <p>演讲把 labs 与云厂商拆开看：模型公司可能面对 ARR 增速和自由现金流压力，但 Microsoft、Alibaba 这类拥有云、分发、安全和企业客户的公司，可能更早把 AI 需求记入订单和收入。AI 的企业场景也不只限于 coding，库存、销售、税务、运营等流程都可能成为部署入口。</p>
+            <p class="excerpt"><span>音频短摘录</span>“AI 不是拿来做编程的。”</p>
+            <p class="terms">关键词：hyperscaler、cloud booking、enterprise deployment、AI end demand</p>
+          </div>
+        </article>
+        <article class="chapter">
+          <div class="time"><a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM&amp;t=910s" target="_blank" rel="noreferrer">15:00–21:30 ↗</a></div>
+          <div>
+            <h3>仓位：一次 reset，而不是 purge</h3>
+            <p>讨论转向 Goldman Sachs prime book 和 momentum positioning。演讲者的解读是：gross leverage 仍不低，但 net exposure 已经下降，部分板块出现净卖出；这说明书本变轻，却还没有达到全面出清的状态。短期下跌风险因此更像仓位调整，而不是必须通过清算完成的崩溃。</p>
+            <p class="terms">关键词：gross leverage、net leverage、9/11 sectors、software momentum</p>
+          </div>
+        </article>
+        <article class="chapter">
+          <div class="time"><a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM&amp;t=1345s" target="_blank" rel="noreferrer">21:30–24:50 ↗</a></div>
+          <div>
+            <h3>长端利率：先看 10Y，不要只看 30Y</h3>
+            <p>演讲者承认市场担心 10 年期利率过高是有意义的，但把当前利率压力更多解释为增长与收益率之间的重新定价，而不是美国国债信用突然失效。deck 用约 6.5% 的名义 GDP 增长、约 4.7% 的 10Y 收益率和约 180bp 的 gap 来表达这套框架。音频还把 GS FCI 作为更直接的流动性观察，认为 7 月之后流动性并没有同步恶化。</p>
+            <p class="terms">关键词：US nominal GDP、10Y Treasury、growth-over-yield gap、term premium</p>
+          </div>
+        </article>
+        <article class="chapter">
+          <div class="time"><a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM&amp;t=1395s" target="_blank" rel="noreferrer">24:50–29:00 ↗</a></div>
+          <div>
+            <h3>政策分叉：通胀，或折现率，让倍数完成调整</h3>
+            <p>如果增长与收益率之间的 gap 要收窄，演讲给出的两条路径是：名义增长和通胀继续上行，或者长端收益率清算并抬高折现率。两条路径的共同结果是估值倍数承担调整，而不是先假设盈利立刻崩掉。deck 以 10Y 到 5.5% 时 forward P/E 约下修 10% 的情景作示意，属于视频中的模型假设。</p>
+            <p class="terms">关键词：policy fork、inflation、discount rate、forward P/E、Jackson Hole</p>
+          </div>
+        </article>
+        <article class="chapter">
+          <div class="time"><a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM&amp;t=1495s" target="_blank" rel="noreferrer">29:00–31:08 ↗</a></div>
+          <div>
+            <h3>回购与收尾：管理波动，不决定方向</h3>
+            <p>最后一段把 Treasury buybacks 和 bill-heavy funding 放进利率框架：它们可以压低调整过程中的波动，却不能逆转一个名义增长较强的经济。结尾回到联储空间有限、市场恐慌可能反复，以及观众提问。</p>
+            <p class="terms">关键词：Treasury buybacks、T-bills、波动控制、FOMC、Q&amp;A</p>
+          </div>
+        </article>
+      </div>
+      <p class="footnote">以上是音频的结构化意译。完整自动识别片段保存在 <a href="../market-overview-2026-08-25/transcript.jsonl">transcript.jsonl</a>；英文缩写、公司名和数值可能存在识别误差。</p>
+    </section>
+
+    <section id="transcript" aria-labelledby="transcript-title">
+      <div class="section-head">
+        <h2 id="transcript-title">原始转录数据</h2>
+        <span class="index">04 / TRANSCRIPT</span>
+      </div>
+      <div class="lead-card">
+        <div>
+          <h3>771 个带时间戳片段</h3>
+          <p>原始自动语音识别结果已单独保存为 JSONL，每行一个片段，包含稳定 ID、起止秒数、文字、章节和识别来源。agent 应优先读取该文件，而不是解析本页摘要。</p>
+        </div>
+        <div class="signal">
+          <b>机器入口</b>
+          <p><a href="../market-overview-2026-08-25/transcript.jsonl">打开 transcript.jsonl ↗</a><br><a href="../market-overview-2026-08-25/manifest.json">查看 manifest.json ↗</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="deck" aria-labelledby="deck-title">
+      <div class="section-head">
+        <h2 id="deck-title">Deck 图卡</h2>
+        <span class="index">05 / VISUAL EVIDENCE</span>
+      </div>
+      <p class="deck-intro">逐页图像、OCR、视觉类型和摘要已统一写入 <a href="../market-overview-2026-08-25/deck.jsonl">deck.jsonl ↗</a>。HTML 使用同一套 PNG 视觉证据。</p>
+      <div class="deck-grid">
+        <figure>
+          <img src="../market-overview-2026-08-25/slides/slide-002-hyperscalers.png" alt="Hyperscalers: AI Revenue Compounds Anyway deck 页面">
+          <figcaption><strong>Hyperscalers: AI Revenue Compounds Anyway · 约 15:10</strong>图中整理 Microsoft 与 Alibaba 的云收入、AI 相关收入、EBITDA、资本开支和回报周期。视频中的标注包括 Azure +43%、Alibaba cloud +45%、Alibaba AI-related revenue RMB12.4bn、Microsoft commercial RPO $678bn 等。<a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM&amp;t=910s" target="_blank" rel="noreferrer">跳到视频 ↗</a></figcaption>
+        </figure>
+        <figure>
+          <img src="../market-overview-2026-08-25/slides/slide-003-positioning.png" alt="Positioning: Hedge Funds Hit Sell deck 页面">
+          <figcaption><strong>Positioning: Hedge Funds Hit Sell · 约 19:45</strong>图表强调 hedge-fund selling 很快，但杠杆并不处于极端区间。视频画面标注 48.3% 的 US L/S net leverage、9/11 sectors net sold，以及 gross/net percentile。<a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM&amp;t=1185s" target="_blank" rel="noreferrer">跳到视频 ↗</a></figcaption>
+        </figure>
+        <figure>
+          <img src="../market-overview-2026-08-25/slides/slide-004-long-rates.png" alt="Long Rates: It's Growth, Not Credit deck 页面">
+          <figcaption><strong>Long Rates: It’s Growth, Not Credit · 约 22:25</strong>图表把约 6.5% 的名义 GDP 增长与约 4.7% 的 10Y yield 并置，用约 180bp gap 表达“增长太强，而非国债信用太弱”的视频观点。<a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM&amp;t=1345s" target="_blank" rel="noreferrer">跳到视频 ↗</a></figcaption>
+        </figure>
+        <figure>
+          <img src="../market-overview-2026-08-25/slides/slide-005-policy-fork.png" alt="The Policy Fork: Inflate or Re-rate deck 页面">
+          <figcaption><strong>The Policy Fork: Inflate or Re-rate · 约 23:15</strong>两条政策路径都指向 equity multiple 调整。图中以 10Y 5.5% 和 forward P/E 约 -10% 做情景表达，不能当成确定预测。<a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM&amp;t=1395s" target="_blank" rel="noreferrer">跳到视频 ↗</a></figcaption>
+        </figure>
+        <figure>
+          <img src="../market-overview-2026-08-25/slides/slide-006-treasury-buybacks.png" alt="Treasury Buybacks: Vol Control, Not YCC deck 页面">
+          <figcaption><strong>Treasury Buybacks: Vol Control, Not YCC · 约 24:55</strong>图中把回购、T-bill 占比和债券 CTA 仓位放在一起，核心含义是“降低调整的波动，不改变方向”。画面标注约 $450bn、22.2% 和 $155mm，均需回到原始数据源复核。<a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM&amp;t=1495s" target="_blank" rel="noreferrer">跳到视频 ↗</a></figcaption>
+        </figure>
+        <figure>
+          <img src="../market-overview-2026-08-25/slides/slide-001-three-clocks.png" alt="Three Clocks on the Equity Market 总览 deck 页面">
+          <figcaption><strong>总览回看 · 约 00:50</strong>这是全场的阅读索引：headline 与 positioning 是近端变量，云现金流是 12 个月变量，谁来支付以及以什么利率支付则是长期变量。<a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM&amp;t=50s" target="_blank" rel="noreferrer">跳到视频 ↗</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="numbers" aria-labelledby="numbers-title">
+      <div class="section-head">
+        <h2 id="numbers-title">数字怎么读</h2>
+        <span class="index">06 / CLAIMS</span>
+      </div>
+      <table class="claim-table">
+        <thead>
+          <tr><th>视频中的数字</th><th>在论证中扮演的角色</th><th>阅读边界</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Azure +43%；Alibaba cloud +45%</td>
+            <td>用云端收入/订单证明 AI 需求可能先在 hyperscaler 端兑现。</td>
+            <td>是 deck 画面中的公司季度指标，页面未独立核对财报口径。</td>
+          </tr>
+          <tr>
+            <td>48.3%；9/11；49th / 28th</td>
+            <td>用净杠杆、净卖出行业数量和分位数说明仓位已变轻。</td>
+            <td>指标定义、观察窗口和数据日期需回到图表来源确认。</td>
+          </tr>
+          <tr>
+            <td>6.5%；4.7%；约 180bp</td>
+            <td>把名义增长、10Y 收益率和增长-收益率 gap 连接到估值倍数。</td>
+            <td>这是视频的宏观框架，不代表本页对 GDP、利率或 term premium 作实时认证。</td>
+          </tr>
+          <tr>
+            <td>10Y 5.5% → forward P/E 约 -10%</td>
+            <td>作为政策分叉下的估值敏感性示意。</td>
+            <td>属于情景假设，不是交易目标、价格预测或保证。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="method" aria-labelledby="method-title">
+      <div class="section-head">
+        <h2 id="method-title">来源、处理与边界</h2>
+        <span class="index">07 / METHOD</span>
+      </div>
+      <details open>
+        <summary>来源和媒体处理</summary>
+        <div>
+          <p>来源：<a href="https://www.youtube.com/watch?v=TQ3G5Jf-yNM" target="_blank" rel="noreferrer">YouTube · 市场概述2026年8月25日</a>，频道 Shanghao Jin，视频时长约 31:08。页面使用公开视频播放器的 deck 画面；本次按时间点重新打开视频并截取 720p 播放画面，再裁成 1440×810 的 slide-only 图片，以提升文字清晰度。它仍不是原始 PPT 导出。</p>
+          <p>字幕轨道不可用，因此下载音频并用本地 Whisper small 模型生成 771 个中文时间戳片段。原始片段保存在 <a href="../market-overview-2026-08-25/transcript.jsonl">transcript.jsonl</a>，页面正文是按主题整理的摘要，不覆盖原始识别结果。</p>
+        </div>
+      </details>
+      <details>
+        <summary>不应从这份页面推出什么</summary>
+        <div>
+          <p>这不是投资建议、实时行情终端、财报核验报告或交易信号。视频中的 TradingView/市场数据、公司指标、宏观数字和模型情景都需要在使用前回到原始数据源；页面也没有把 deck mockup 当成 PineScript 已实现的证据。</p>
+        </div>
+      </details>
+      <details>
+        <summary>适合继续核对的项目</summary>
+        <div>
+          <p>优先核对：Anthropic ARR 的具体口径与日期、Microsoft/Alibaba 财报期间和币种、prime-book leverage 的数据窗口、名义 GDP 与 10Y yield 的时间对齐、Treasury buyback 的统计口径，以及 10Y 5.5% 情景的估值模型。</p>
+        </div>
+      </details>
+      <p class="footnote">页面生成日期：2026-08-26。素材和数字以视频发布时的快照为准，可能随原始数据修订而变化。</p>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <div>Market overview reading artifact · agent data: <a href="../market-overview-2026-08-25/manifest.json">manifest</a> · local research workspace · no deployment or trading execution</div>
+  </footer>
+</body>
+</html>
