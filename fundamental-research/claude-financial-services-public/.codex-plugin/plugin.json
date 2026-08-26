@@ -1,0 +1,26 @@
+{
+  "name": "claude-financial-services-public",
+  "version": "0.1.0",
+  "description": "Public-source-only adaptation of selected Claude Financial Services research and modeling skills for Codex.",
+  "author": {
+    "name": "vibe-trading local adaptation"
+  },
+  "homepage": "https://github.com/anthropics/financial-services",
+  "repository": "https://github.com/anthropics/financial-services",
+  "license": "Apache-2.0",
+  "keywords": ["finance", "equity-research", "fundamental-research", "public-data", "valuation"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Financial Services Public",
+    "shortDescription": "Public-source financial research and modeling skills for Codex.",
+    "longDescription": "A Codex adaptation of selected Anthropic Financial Services skills. Active research instructions use public filings, issuer materials, government or regulator data, and validated public market pages; unavailable data is reported explicitly.",
+    "developerName": "vibe-trading local adaptation",
+    "category": "Finance",
+    "capabilities": ["Research", "Analysis", "Writing"],
+    "defaultPrompt": [
+      "用公开来源做一份公司基本面研究",
+      "用 SEC filings 建立三表和 DCF 输入",
+      "审查这份同业估值的数据来源"
+    ]
+  }
+}
