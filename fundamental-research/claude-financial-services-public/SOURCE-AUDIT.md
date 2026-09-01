@@ -4,6 +4,8 @@
 
 导入策略：保留四个与 fundamental research、估值、建模和交易尽调直接相关的 vertical source，共 41 个 `SKILL.md`；不导入 Claude marketplace、远程 MCP 配置、partner-built 插件或 agent bundled 副本。每一行都对应一个已导入的 skill，`source treatment` 是该 skill 在 public-only 模式下可使用的输入边界。
 
+Active skills 直接维护在仓库根目录 [`.agents/skills/`](../../.agents/skills/)，仅由当前项目发现，不使用全局安装或软链接。
+
 ## 分类
 
 - `PUBLIC_RESEARCH`：主动数据来自 SEC/官方发行人/政府监管公开资料或实际验证的公开市场页面。
@@ -59,7 +61,7 @@
 
 ## 移除的上游来源类别
 
-以下类别不被 active skill instructions、Codex manifest 或包内连接器作为默认数据入口或连接：机构金融数据商、研究终端、私有企业文档连接器、partner-built entitlement 插件、默认 analyst consensus/whisper、登录或订阅限制的第三方 transcript/新闻/行业数据库，以及私有 CRM、邮件、聊天和 data room。
+以下类别不被 active skill instructions 或项目内连接器作为默认数据入口或连接：机构金融数据商、研究终端、私有企业文档连接器、partner-built entitlement 插件、默认 analyst consensus/whisper、登录或订阅限制的第三方 transcript/新闻/行业数据库，以及私有 CRM、邮件、聊天和 data room。
 
 具体上游 provider 名称、endpoint 和 partner 权限证据保留在仓库根目录的[上游刷新审计](../anthropic-financial-services-upstream-refresh-20260826.md)中，不复制到可调用 skill 文档中。
 
@@ -67,8 +69,8 @@
 
 - 41/41 个 source `SKILL.md` 已导入并在上表分类。
 - active skill 文本不再把付费/授权 provider 作为数据入口或优先级。
-- 所有数据敏感 skill 指向 [`PUBLIC-SOURCE-POLICY.md`](PUBLIC-SOURCE-POLICY.md)。
-- 包不包含 `.mcp.json`，不声明远程金融数据连接器。
+- 所有数据敏感 skill 指向 [`.agents/PUBLIC-SOURCE-POLICY.md`](../../.agents/PUBLIC-SOURCE-POLICY.md)。
+- 项目级 skill 集合不包含 `.mcp.json`，不声明远程金融数据连接器。
 
 ## 代表性公开来源验证（2026-08-26）
 
@@ -89,13 +91,13 @@
 
 对 Apple（CIK `0000320193`）读取 2025-09-27 结束的 10-K（accession `0000320193-25-000079`）时，先用 Company Facts 找候选 tag，再回到 filing 验证 `form`、`filed`、`accn`、期间和单位。直接使用泛化的 `Revenues` tag 会误取较旧期间；修正为 `RevenueFromContractWithCustomerExcludingAssessedTax` 后，得到可复核的 2025 财年收入 `416,161,000,000 USD`。这验证了 SEC 路径可用，也验证了包内“不把 XBRL tag 名直接当会计科目”的约束。
 
-## 包结构校验（2026-08-26）
+## 结构校验
 
-- Codex plugin validator：通过。
-- `.codex-plugin/plugin.json` JSON：通过。
-- 41/41 个 `SKILL.md` frontmatter：通过 `quick_validate.py`。
-- 选定上游 skill inventory：与包内目录精确匹配，41/41。
+- Codex 项目发现目录：仓库根目录 `.agents/skills/`。
+- 独立 plugin manifest：已移除；不进行用户级或系统级安装。
+- 41/41 个 `SKILL.md` frontmatter：迁移前通过 `quick_validate.py`，迁移后重新校验。
+- 选定上游 skill inventory：与项目级 skill 目录精确匹配，41/41。
 - bundled Python scripts：语法编译检查通过。
-- 相对 Markdown links：全部解析到包内实际文件。
+- 相对 Markdown links：全部解析到项目内实际文件。
 - 付费 provider、endpoint 和 `mcp__` 反向扫描：0 命中；`.mcp.json`：0 个。
-- 包及本次刷新审计的 trailing whitespace：无。
+- skills 及本次刷新审计的 trailing whitespace：无。

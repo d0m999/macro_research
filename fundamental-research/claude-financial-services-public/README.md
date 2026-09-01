@@ -1,6 +1,6 @@
 # Financial Services Public for Codex
 
-这是从 Anthropic `financial-services` 官方仓库筛选并改写的 Codex skill 包。它保留研究、估值、建模、交易尽调和材料整理的方法，但把主动数据来源收窄为可以公开核验的来源。
+这是从 Anthropic `financial-services` 官方仓库筛选并改写的项目级 Codex skill 集合。它保留研究、估值、建模、交易尽调和材料整理的方法，但把主动数据来源收窄为可以公开核验的来源。
 
 ## 上游与范围
 
@@ -11,6 +11,15 @@
 - 许可：Apache License 2.0，见 [`LICENSE`](LICENSE)
 
 逐 skill 的来源分类、替换和保留理由见 [`SOURCE-AUDIT.md`](SOURCE-AUDIT.md)。
+
+## 项目级加载
+
+- 技能源文件和 Codex 发现目录：仓库根目录 [`.agents/skills/`](../../.agents/skills/)
+- 公共数据源规则：[`.agents/PUBLIC-SOURCE-POLICY.md`](../../.agents/PUBLIC-SOURCE-POLICY.md)
+- 生效范围：仅当前仓库；不安装到用户级或系统级 skills 目录
+- 目录组织：技能直接存放，不使用软链接或文件副本
+
+本目录只保留上游版本、许可、改造说明和来源审计，不再作为独立 Codex plugin 包。
 
 ## 可用来源
 
@@ -25,12 +34,12 @@
 
 ## 明确不提供
 
-本包不含任何付费数据商、数据 entitlement、机构终端、企业数据室、私有 CRM、私有邮件/聊天、远程金融 MCP 或默认的 analyst consensus/whisper 数据。Forward estimates 只能来自公司公开 guidance、用户提供的估计，或模型明确标注的内部情景假设。
+本项目级 skill 集合不含任何付费数据商、数据 entitlement、机构终端、企业数据室、私有 CRM、私有邮件/聊天、远程金融 MCP 或默认的 analyst consensus/whisper 数据。Forward estimates 只能来自公司公开 guidance、用户提供的估计，或模型明确标注的内部情景假设。
 
 用户上传的 CIM、内部财务包、Excel、PDF 和其他文件可以作为 `USER_PROVIDED` 输入处理，但它们不是公共数据源，也不能在输出中标作公开来源。
 
 ## 使用前置规则
 
-处理任何研究或估值任务前，先读取 [`PUBLIC-SOURCE-POLICY.md`](PUBLIC-SOURCE-POLICY.md)。它定义来源状态、source record、缺失处理和各类指标的替代路径。
+处理任何研究或估值任务前，先读取 [`.agents/PUBLIC-SOURCE-POLICY.md`](../../.agents/PUBLIC-SOURCE-POLICY.md)。它定义来源状态、source record、缺失处理和各类指标的替代路径。
 
-本地包是研究指令和文档模板，不是行情数据库、SEC 自动化下载器，也不构成投资、法律、税务或会计建议。
+这些项目级 skills 是研究指令和文档模板，不是行情数据库、SEC 自动化下载器，也不构成投资、法律、税务或会计建议。

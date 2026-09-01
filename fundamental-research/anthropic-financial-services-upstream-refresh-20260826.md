@@ -20,7 +20,7 @@
 2. LSEG 和 S&P Global partner plugin 的 README 明确要求 credentials、data entitlements 或 subscription；多个 agent 和 skill 还直接把 CapIQ、FactSet、Daloopa、Bloomberg 等作为数据入口。
 3. 上游是 Claude 插件格式（`.claude-plugin`），当前没有 `.codex-plugin`；Codex 适配必须另建包结构和数据源边界。
 
-这次刷新先完成了版本和来源审计；随后已在 `fundamental-research/claude-financial-services-public/` 建立 Codex public-only 包。上游的 `.claude-plugin`、远程 MCP 配置、partner-built 插件和 agent bundled 副本没有复制进包内。
+这次刷新先完成了版本和来源审计；随后建立了 Codex public-only 版本。2026-09-01 起，active skills 直接维护在仓库根目录 `.agents/skills/`，公共数据规则维护在 `.agents/PUBLIC-SOURCE-POLICY.md`；`fundamental-research/claude-financial-services-public/` 只保留许可、改造说明和来源审计。上游的 `.claude-plugin`、远程 MCP 配置、partner-built 插件和 agent bundled 副本没有复制进项目级 skills。
 
 ## 1. 相对旧基线的变化
 
@@ -135,11 +135,11 @@ Codex 适配已按以下顺序执行；剩余工作仅为最终校验和后续�
 
 1. 已冻结 public-only allowlist/denylist；未证明无需权限的远程源默认 deny。
 2. 已只复制 `equity-research`、`financial-analysis`、`investment-banking`、`private-equity` 四个相关 vertical 的 41 个 source skills，并逐个清洗付费源、私有源、用户文件和公开网页边界。
-3. 已新建 `.codex-plugin/plugin.json`、`skills/`、`PUBLIC-SOURCE-POLICY.md` 和 `SOURCE-AUDIT.md`，没有复制 `.claude-plugin` marketplace 或任何第三方 MCP 配置。
+3. 41 个 skills 已直接迁移到项目级 `.agents/skills/`，公共数据规则位于 `.agents/PUBLIC-SOURCE-POLICY.md`；独立 `.codex-plugin/plugin.json` 已移除，没有复制 `.claude-plugin` marketplace 或任何第三方 MCP 配置。
 4. 已固化 SEC EDGAR、发行人/IR、政府/监管/交易所和实测公开市场页面的 source record 格式；缺失数据统一输出 `SOURCE_UNAVAILABLE`，用户材料单独标为 `USER_PROVIDED`。
 5. 已完成 provider/endpoint 扫描、JSON/frontmatter/链接校验、脚本语法和 `git diff --check`；后续如需补充公开数据自动化，另行评估。
 
-当前项目状态应记为：**上游版本已刷新；public-only allowlist 已固化为 Codex 包；41 个选定 source `SKILL.md` 已导入并完成来源边界改写；代表性 SEC/宏观/市场页面已验证；最终 manifest/frontmatter/链接、脚本和差异检查均已通过。**
+当前项目状态应记为：**上游版本已刷新；public-only allowlist 已固化为项目级 Codex skills；41 个选定 source `SKILL.md` 已导入并完成来源边界改写；代表性 SEC/宏观/市场页面已验证；项目级发现目录、frontmatter、链接、脚本和差异检查均已通过。**
 
 ## 官方来源
 
