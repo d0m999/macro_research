@@ -1,9 +1,11 @@
 ---
 name: ib-check-deck
-description: Investment banking presentation quality checker. Reviews a pitch deck or client-ready presentation for (1) number consistency across slides, (2) data-narrative alignment, (3) language polish against IB standards, (4) visual and formatting QC. Use whenever the user asks to review, check, QC, proof, or do a final pass on a deck, pitch, or client materials — including requests like "check my numbers", "reconcile figures across slides", "is this client-ready", or "what am I missing before I send this out".
+description: "检查投资银行 deck 的跨页数字、数据与叙事、语言以及视觉格式，输出可执行 QC 清单。"
 ---
 
 # IB Deck Checker
+
+读取、修改或交付 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 Perform comprehensive QC on the presentation across four dimensions. Read every slide, then report findings.
 
@@ -41,7 +43,7 @@ The script expects markdown-ish input with slide markers. Format as:
 Run the extraction script on what you collected:
 
 ```bash
-python scripts/extract_numbers.py /tmp/deck_content.md --check
+python3 scripts/extract_numbers.py /tmp/deck_content.md --check
 ```
 
 It normalizes units ($500M vs $500MM vs $500,000,000 → same number), categorizes values (revenue, EBITDA, multiples, margins), and flags when the same metric category shows conflicting values on different slides. This is the part most likely to catch something a human missed on the fifth read-through.

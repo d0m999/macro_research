@@ -1,9 +1,11 @@
 ---
 name: earnings-preview
-description: Build pre-earnings analysis with estimate models, scenario frameworks, and key metrics to watch. Use before a company reports quarterly earnings to prepare positioning notes, set up bull/bear scenarios, and identify what will move the stock. Triggers on "earnings preview", "what to watch for [company] earnings", "pre-earnings", "earnings setup", or "preview Q[X] for [company]".
+description: "在财报发布前建立指标清单、公开 guidance 基线和 bull/base/bear 情景。用于财报前瞻、业绩预览、earnings preview 或财报关注点请求。"
 ---
 
 # Earnings Preview
+
+生成或修改 `.docx`、`.xlsx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 **Public-source gate:** Read [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md) first. Use the issuer's official calendar, prior earnings materials and dated guidance. Do not invent external estimates, survey figures or option inputs.
 

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Model Update"
+  short_description: "用新财报、guidance 或宏观数据更新模型与估值"
+policy:
+  allow_implicit_invocation: true

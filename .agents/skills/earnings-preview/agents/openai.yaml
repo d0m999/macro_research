@@ -1,0 +1,5 @@
+interface:
+  display_name: "Earnings Preview"
+  short_description: "财报前建立指标清单、公开 guidance 基线与多情景框架"
+policy:
+  allow_implicit_invocation: true

@@ -2,7 +2,7 @@
 
 审计对象：Anthropic `financial-services` 上游 `69cbc81467a5dced793eee03dec4658aa24ef856`。
 
-导入策略：保留四个与 fundamental research、估值、建模和交易尽调直接相关的 vertical source，共 41 个 `SKILL.md`；不导入 Claude marketplace、远程 MCP 配置、partner-built 插件或 agent bundled 副本。每一行都对应一个已导入的 skill，`source treatment` 是该 skill 在 public-only 模式下可使用的输入边界。
+导入策略：保留四个与 fundamental research、估值、建模和交易尽调直接相关的 vertical source，共 38 个金融 `SKILL.md`；不导入 Claude marketplace、远程 MCP 配置、partner-built 插件或 agent bundled 副本。每一行都对应一个已导入的金融 skill，`source treatment` 是该 skill 在 public-only 模式下可使用的输入边界。
 
 Active skills 直接维护在仓库根目录 [`.agents/skills/`](../../.agents/skills/)，仅由当前项目发现，不使用全局安装或软链接。
 
@@ -36,9 +36,6 @@ Active skills 直接维护在仓库根目录 [`.agents/skills/`](../../.agents/s
 | `ib-check-deck` | financial-analysis | `USER_MATERIAL_PROCESSING` | 只检查用户提供的 presentation 和其内部引用 |
 | `lbo-model` | financial-analysis | `MIXED_FAIL_CLOSED` | 模型输入来自用户材料或公开 filings；债务条款/交易假设无公开依据就标 `USER_PROVIDED` |
 | `ppt-template-creator` | financial-analysis | `USER_MATERIAL_PROCESSING` | 只处理用户提供的 PowerPoint template |
-| `pptx-author` | financial-analysis | `MODEL_ONLY` | 只负责 Codex 文件产出，不声明数据连接器 |
-| `skill-creator` | financial-analysis | `MODEL_ONLY` | 只负责 skill 文档编写，不提供金融数据 |
-| `xlsx-author` | financial-analysis | `MODEL_ONLY` | 只负责 Codex 文件产出，不声明数据连接器 |
 | `buyer-list` | investment-banking | `MIXED_FAIL_CLOSED` | 公司官网、SEC/监管 filings 和公开并购公告；私有 sponsor 数据不进入默认来源 |
 | `cim-builder` | investment-banking | `USER_MATERIAL_PROCESSING` | CIM 和管理层材料只能作为 `USER_PROVIDED` 输入 |
 | `datapack-builder` | investment-banking | `MIXED_FAIL_CLOSED` | public company 用 filings/官方页面；CIM、预算和内部包只能标 `USER_PROVIDED` |
@@ -59,6 +56,12 @@ Active skills 直接维护在仓库根目录 [`.agents/skills/`](../../.agents/s
 | `unit-economics` | private-equity | `MIXED_FAIL_CLOSED` | 经营指标来自公开 filing 或用户材料；缺失不使用行业数据库补齐 |
 | `value-creation-plan` | private-equity | `USER_MATERIAL_PROCESSING` | 只使用用户提供的运营基线和明确假设 |
 
+## 本地路由与原生替代
+
+- `$financial-services` 是本地 `MODEL_ONLY` 目录路由，只推荐主 skill 和最多两个后续 skill，不执行子 skill；它不是第 39 个上游来源。
+- 上游选择中的通用 `skill-creator`、`xlsx-author`、`pptx-author` 不再维护项目副本。Skill 创建使用当前 Codex 官方 `skill-creator`；Office artifact 按 [Codex 执行契约](../../.agents/CODEX-EXECUTION-POLICY.md)路由到 Spreadsheets、Presentations、Documents，并在能力不可用时受限回退。
+- 因而 active inventory 为 38 个上游金融 skill + 1 个本地路由 = 39 个；其中 12 个允许隐式调用，27 个只允许显式调用。
+
 ## 移除的上游来源类别
 
 以下类别不被 active skill instructions 或项目内连接器作为默认数据入口或连接：机构金融数据商、研究终端、私有企业文档连接器、partner-built entitlement 插件、默认 analyst consensus/whisper、登录或订阅限制的第三方 transcript/新闻/行业数据库，以及私有 CRM、邮件、聊天和 data room。
@@ -67,7 +70,7 @@ Active skills 直接维护在仓库根目录 [`.agents/skills/`](../../.agents/s
 
 ## 审计完成条件
 
-- 41/41 个 source `SKILL.md` 已导入并在上表分类。
+- 38/38 个上游金融 `SKILL.md` 已导入并在上表分类；另有 1 个本地目录路由。
 - active skill 文本不再把付费/授权 provider 作为数据入口或优先级。
 - 所有数据敏感 skill 指向 [`.agents/PUBLIC-SOURCE-POLICY.md`](../../.agents/PUBLIC-SOURCE-POLICY.md)。
 - 项目级 skill 集合不包含 `.mcp.json`，不声明远程金融数据连接器。
@@ -95,8 +98,9 @@ Active skills 直接维护在仓库根目录 [`.agents/skills/`](../../.agents/s
 
 - Codex 项目发现目录：仓库根目录 `.agents/skills/`。
 - 独立 plugin manifest：已移除；不进行用户级或系统级安装。
-- 41/41 个 `SKILL.md` frontmatter：迁移前通过 `quick_validate.py`，迁移后重新校验。
-- 选定上游 skill inventory：与项目级 skill 目录精确匹配，41/41。
+- 39/39 个 active `SKILL.md` frontmatter 通过官方 `quick_validate.py`。
+- 选定上游金融 inventory 为 38 个；加本地 `$financial-services` 后与项目级 39 个 active skill 精确匹配。
+- 39/39 个 `agents/openai.yaml` 可解析；调用 policy 精确为 12 个 `true`、27 个 `false`。
 - bundled Python scripts：语法编译检查通过。
 - 相对 Markdown links：全部解析到项目内实际文件。
 - 付费 provider、endpoint 和 `mcp__` 反向扫描：0 命中；`.mcp.json`：0 个。

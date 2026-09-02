@@ -1,40 +1,9 @@
-# DCF Model Troubleshooting Guide
+# DCF Troubleshooting
 
-**When to read this file:** If recalc.py shows errors OR valuation results seem unreasonable OR case selector not working properly.
+只在结构检查失败、公式出现错误或主模型与敏感性不一致时读取。
 
-## Model Returns Error Values
-
-### #REF! Errors
-- Usually caused by formulas referencing wrong rows after headers were inserted
-- Solution: Rebuild with correct row references, or start over following layout planning
-- Prevention: Define all row positions BEFORE writing formulas
-
-### #DIV/0! Errors
-- Division by zero or empty cells
-- Solution: Add IF statements to handle zeros: `=IF([Divisor]=0,0,[Numerator]/[Divisor])`
-
-### #VALUE! Errors
-- Wrong data type in calculation (text instead of number)
-- Solution: Verify all inputs are formatted as numbers
-
-## Valuation Seems Unreasonable
-
-### Implied price far too high
-- Check terminal value isn't >80% of EV
-- Verify terminal growth < WACC
-- Review if growth assumptions are realistic
-- Consider if margins are too optimistic
-
-### Implied price far too low
-- Verify net debt vs net cash is correct
-- Check if WACC is too high
-- Review if projections are too conservative
-- Consider if terminal growth is too low
-
-## Case Selector Not Working
-
-### Consolidation column not updating when switching scenarios
-- Verify case selector cell contains 1, 2, or 3
-- Check INDEX/OFFSET formulas reference correct row range and selector cell
-- Ensure absolute references ($B$6) are used for selector
-- Test by manually changing the selector cell and verifying projection values update
+- `#REF!`：定位被移动/删除的 range 或 sheet，恢复到正确输入；不要用 hardcode 覆盖错误。
+- `#DIV/0!`：检查缺失 driver、无经济意义的分母或无效终值组合；无效组合应明确显示 invalid。
+- `#VALUE!`：检查单位、文本数字、日期和 array/range 维度。
+- 中心敏感性不等于主模型：确认 axis center 引用 base assumptions，且每个 cell 使用相同 EV-to-equity bridge。
+- 估值异常：先查期间、单位、share count、net debt 符号、stub discounting 和 terminal formula，再审查假设来源。不得用无来源“合理范围”强行校准结果。

@@ -1,0 +1,5 @@
+interface:
+  display_name: "DD Checklist"
+  short_description: "建立尽调资料请求、状态追踪、负责人和红旗升级清单与证据"
+policy:
+  allow_implicit_invocation: false

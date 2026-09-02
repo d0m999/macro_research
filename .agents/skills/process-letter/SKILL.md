@@ -1,9 +1,11 @@
 ---
 name: process-letter
-description: Draft process letters and bid instructions for sell-side M&A processes. Covers initial indication of interest (IOI) instructions, final bid procedures, and management meeting logistics. Triggers on "process letter", "bid instructions", "IOI letter", "bid procedures", "final round letter", or "management meeting invite".
+description: "根据用户提供的流程事实起草卖方 M&A process letter、IOI/final bid instructions 和会议安排。"
 ---
 
 # Process Letter
+
+生成或修改 `.docx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Input boundary
 
@@ -72,7 +74,7 @@ Additional requirements beyond IOI:
 ## Important Notes
 
 - Process letters set the tone for the entire deal — be clear, professional, and organized
-- Deadlines should be firm but reasonable — typically 2-3 weeks for IOIs, 3-4 weeks for final bids
+- Deadlines must come from the user-provided process timetable. If the user asks for a planning scenario, label any proposed interval `MODEL_DERIVED` and make it easy to replace.
 - Always include the evaluation criteria — buyers want to know how they'll be judged
 - Coordinate with legal on any representations or commitments in the letter
 - Client should review and approve before sending — they may want to adjust tone or terms

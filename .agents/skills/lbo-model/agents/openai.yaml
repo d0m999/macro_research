@@ -1,0 +1,5 @@
+interface:
+  display_name: "LBO Model"
+  short_description: "建立 LBO 交易、债务滚动、回报、敏感性模型与检查"
+policy:
+  allow_implicit_invocation: false

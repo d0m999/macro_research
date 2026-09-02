@@ -1,0 +1,5 @@
+interface:
+  display_name: "Unit Economics"
+  short_description: "分析 cohort、LTV/CAC、retention 与 revenue quality"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Catalyst Calendar"
+  short_description: "核验并维护公司财报、会议、监管与宏观催化剂日历及来源"
+policy:
+  allow_implicit_invocation: true

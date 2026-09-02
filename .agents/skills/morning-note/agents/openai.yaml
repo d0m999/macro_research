@@ -1,0 +1,5 @@
+interface:
+  display_name: "Morning Note"
+  short_description: "汇总隔夜公开事件、覆盖公司变化并形成简洁晨会笔记与来源"
+policy:
+  allow_implicit_invocation: true

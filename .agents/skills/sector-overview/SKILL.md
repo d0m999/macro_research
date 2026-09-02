@@ -1,9 +1,11 @@
 ---
 name: sector-overview
-description: Create comprehensive industry and sector landscape reports covering market dynamics, competitive positioning, key players, and thematic trends. Use for client requests, sector initiations, thematic research pieces, or internal knowledge building. Triggers on "sector overview", "industry report", "market landscape", "sector analysis", "industry deep dive", or "thematic research".
+description: "研究行业边界、市场动态、价值链、竞争者、监管与主题趋势。用于行业研究、板块分析、sector overview、market landscape 或 thematic research。"
 ---
 
 # Sector Overview
+
+生成或修改 `.docx`、`.xlsx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Public-source gate
 

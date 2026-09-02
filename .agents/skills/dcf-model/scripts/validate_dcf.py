@@ -1,292 +1,145 @@
 #!/usr/bin/env python3
-"""
-DCF Model Validation Script
-Validates Excel DCF models for formula errors and common DCF mistakes
-"""
+"""Validate DCF workbook structure and hard mathematical invariants."""
 
-import sys
+from __future__ import annotations
+
+import argparse
 import json
+import sys
 from pathlib import Path
-from typing import Optional
+from typing import Any
 
 
-class DCFModelValidator:
-    """Validates DCF models for errors and quality issues"""
-
-    def __init__(self, excel_path: str):
-        try:
-            import openpyxl
-        except ImportError:
-            raise ImportError("openpyxl not installed. Run: pip install openpyxl")
-
-        self.excel_path = excel_path
-        self.openpyxl = openpyxl
-
-        if not Path(excel_path).exists():
-            raise FileNotFoundError(f"File not found: {excel_path}")
-
-        self.workbook_formulas = openpyxl.load_workbook(excel_path, data_only=False)
-        self.workbook_values = openpyxl.load_workbook(excel_path, data_only=True)
-        self.errors = []
-        self.warnings = []
-        self.info = []
-
-    def validate_all(self) -> dict:
-        """
-        Run all validation checks
-
-        Returns:
-            Dict with validation results
-        """
-        from datetime import datetime
-
-        self.check_sheet_structure()
-        self.check_formula_errors()
-        self.check_dcf_logic()
-
-        results = {
-            'file': self.excel_path,
-            'validation_date': datetime.now().isoformat(),
-            'status': 'PASS' if len(self.errors) == 0 else 'FAIL',
-            'error_count': len(self.errors),
-            'warning_count': len(self.warnings),
-            'errors': self.errors,
-            'warnings': self.warnings,
-            'info': self.info
-        }
-
-        return results
-
-    def check_sheet_structure(self):
-        """Verify required sheets exist"""
-        required_sheets = ['DCF', 'WACC', 'Sensitivity']
-        sheet_names = self.workbook_values.sheetnames
-
-        for sheet in required_sheets:
-            if sheet not in sheet_names:
-                self.warnings.append(f"Recommended sheet missing: {sheet}")
-            else:
-                self.info.append(f"Found sheet: {sheet}")
-
-    def check_formula_errors(self):
-        """Check for Excel formula errors in all sheets"""
-        excel_errors = ['#VALUE!', '#DIV/0!', '#REF!', '#NAME?', '#NULL!', '#NUM!', '#N/A']
-        error_details = {err: [] for err in excel_errors}
-        total_errors = 0
-        total_formulas = 0
-
-        for sheet_name in self.workbook_values.sheetnames:
-            ws_values = self.workbook_values[sheet_name]
-            ws_formulas = self.workbook_formulas[sheet_name]
-
-            for row in ws_values.iter_rows():
-                for cell in row:
-                    formula_cell = ws_formulas[cell.coordinate]
-
-                    # Count formulas
-                    if formula_cell.value and isinstance(formula_cell.value, str) and formula_cell.value.startswith('='):
-                        total_formulas += 1
-
-                    # Check for errors
-                    if cell.value is not None and isinstance(cell.value, str):
-                        for err in excel_errors:
-                            if err in cell.value:
-                                location = f"{sheet_name}!{cell.coordinate}"
-                                error_details[err].append(location)
-                                total_errors += 1
-                                self.errors.append(f"{err} at {location}")
-                                break
-
-        # Add summary info
-        self.info.append(f"Total formulas: {total_formulas}")
-        if total_errors == 0:
-            self.info.append("✓ No formula errors found")
-        else:
-            self.errors.append(f"Total formula errors: {total_errors}")
-
-        return error_details, total_errors
-
-    def check_dcf_logic(self):
-        """Validate DCF-specific logic and calculations"""
-        self._check_terminal_growth_vs_wacc()
-        self._check_wacc_range()
-        self._check_terminal_value_proportion()
-
-    def _check_terminal_growth_vs_wacc(self):
-        """Critical check: Terminal growth must be less than WACC"""
-        try:
-            dcf_sheet = self.workbook_values['DCF']
-
-            terminal_growth = None
-            wacc = None
-
-            # Search for terminal growth and WACC values
-            for row in dcf_sheet.iter_rows(max_row=100, max_col=20):
-                for cell in row:
-                    if cell.value and isinstance(cell.value, str):
-                        cell_str = cell.value.lower()
-                        if 'terminal' in cell_str and 'growth' in cell_str:
-                            # Look for value in adjacent cells
-                            for offset in range(1, 5):
-                                adjacent = dcf_sheet.cell(cell.row, cell.column + offset).value
-                                if isinstance(adjacent, (int, float)) and 0 < adjacent < 1:
-                                    terminal_growth = adjacent
-                                    break
-                        if 'wacc' in cell_str and wacc is None:
-                            for offset in range(1, 5):
-                                adjacent = dcf_sheet.cell(cell.row, cell.column + offset).value
-                                if isinstance(adjacent, (int, float)) and 0 < adjacent < 1:
-                                    wacc = adjacent
-                                    break
-
-            if terminal_growth is not None and wacc is not None:
-                if terminal_growth >= wacc:
-                    self.errors.append(
-                        f"CRITICAL: Terminal growth ({terminal_growth:.2%}) >= WACC ({wacc:.2%}). "
-                        "This creates infinite value and is mathematically invalid."
-                    )
-                else:
-                    self.info.append(
-                        f"✓ Terminal growth ({terminal_growth:.2%}) < WACC ({wacc:.2%})"
-                    )
-            else:
-                self.warnings.append("Could not locate terminal growth and WACC values")
-
-        except KeyError:
-            self.warnings.append("DCF sheet not found")
-        except Exception as e:
-            self.warnings.append(f"Could not validate terminal growth vs WACC: {str(e)}")
-
-    def _check_wacc_range(self):
-        """Check if WACC is in reasonable range"""
-        try:
-            wacc_sheet = self.workbook_values.get('WACC') or self.workbook_values['DCF']
-            wacc = None
-
-            for row in wacc_sheet.iter_rows(max_row=100, max_col=20):
-                for cell in row:
-                    if cell.value and isinstance(cell.value, str):
-                        if 'wacc' in cell.value.lower():
-                            for offset in range(1, 5):
-                                adjacent = wacc_sheet.cell(cell.row, cell.column + offset).value
-                                if isinstance(adjacent, (int, float)) and 0 < adjacent < 1:
-                                    wacc = adjacent
-                                    break
-
-            if wacc is not None:
-                if wacc < 0.05 or wacc > 0.20:
-                    self.warnings.append(
-                        f"WACC ({wacc:.2%}) is outside typical range (5%-20%). Verify calculation."
-                    )
-                else:
-                    self.info.append(f"✓ WACC ({wacc:.2%}) in reasonable range")
-            else:
-                self.warnings.append("Could not locate WACC value")
-
-        except Exception as e:
-            self.warnings.append(f"Could not validate WACC range: {str(e)}")
-
-    def _check_terminal_value_proportion(self):
-        """Check if terminal value is reasonable proportion of enterprise value"""
-        try:
-            dcf_sheet = self.workbook_values['DCF']
-
-            terminal_value = None
-            enterprise_value = None
-
-            for row in dcf_sheet.iter_rows(max_row=200, max_col=20):
-                for cell in row:
-                    if cell.value and isinstance(cell.value, str):
-                        cell_str = cell.value.lower()
-                        if 'terminal' in cell_str and 'value' in cell_str and 'pv' in cell_str:
-                            for offset in range(1, 5):
-                                adjacent = dcf_sheet.cell(cell.row, cell.column + offset).value
-                                if isinstance(adjacent, (int, float)) and adjacent > 0:
-                                    terminal_value = adjacent
-                                    break
-                        if 'enterprise' in cell_str and 'value' in cell_str:
-                            for offset in range(1, 5):
-                                adjacent = dcf_sheet.cell(cell.row, cell.column + offset).value
-                                if isinstance(adjacent, (int, float)) and adjacent > 0:
-                                    enterprise_value = adjacent
-                                    break
-
-            if terminal_value is not None and enterprise_value is not None and enterprise_value > 0:
-                proportion = terminal_value / enterprise_value
-                if proportion > 0.80:
-                    self.warnings.append(
-                        f"Terminal value is {proportion:.1%} of EV (typically should be 50-70%). "
-                        "Model may be over-reliant on terminal assumptions."
-                    )
-                elif proportion < 0.40:
-                    self.warnings.append(
-                        f"Terminal value is {proportion:.1%} of EV (typically should be 50-70%). "
-                        "Check if terminal assumptions are too conservative."
-                    )
-                else:
-                    self.info.append(f"✓ Terminal value is {proportion:.1%} of EV")
-            else:
-                self.warnings.append("Could not locate terminal value and enterprise value")
-
-        except Exception as e:
-            self.warnings.append(f"Could not validate terminal value proportion: {str(e)}")
+EXCEL_ERRORS = {"#VALUE!", "#DIV/0!", "#REF!", "#NAME?", "#NULL!", "#NUM!", "#N/A"}
 
 
-
-def validate_dcf_model(excel_path: str) -> dict:
-    """
-    Validate a DCF model Excel file
-
-    Args:
-        excel_path: Path to Excel DCF model
-
-    Returns:
-        Dict with validation results
-    """
-    validator = DCFModelValidator(excel_path)
-    return validator.validate_all()
+def adjacent_number(sheet: Any, row: int, column: int) -> float | None:
+    for offset in range(1, 5):
+        value = sheet.cell(row, column + offset).value
+        if isinstance(value, (int, float)):
+            return float(value)
+    return None
 
 
-def main():
-    """Command-line interface"""
-    if len(sys.argv) < 2:
-        print("Usage: python validate_dcf.py <excel_file> [output.json]")
-        print("\nValidates DCF model for:")
-        print("  - Formula errors (#REF!, #DIV/0!, etc.)")
-        print("  - Terminal growth < WACC (critical)")
-        print("  - WACC in reasonable range (5-20%)")
-        print("  - Terminal value proportion of EV (40-80%)")
-        print("\nReturns JSON with errors, warnings, and info")
-        print("\nExample: python validate_dcf.py model.xlsx")
-        print("Example: python validate_dcf.py model.xlsx results.json")
-        sys.exit(1)
+def find_labeled_number(sheet: Any, required_terms: tuple[str, ...]) -> float | None:
+    for row in sheet.iter_rows(max_row=300, max_col=30):
+        for cell in row:
+            if not isinstance(cell.value, str):
+                continue
+            label = cell.value.lower()
+            if all(term in label for term in required_terms):
+                value = adjacent_number(sheet, cell.row, cell.column)
+                if value is not None:
+                    return value
+    return None
 
-    excel_file = sys.argv[1]
-    output_file = sys.argv[2] if len(sys.argv) > 2 else None
 
+def validate(path: Path, args: argparse.Namespace) -> dict[str, Any]:
     try:
-        results = validate_dcf_model(excel_file)
+        import openpyxl
+    except ImportError as exc:
+        raise RuntimeError("openpyxl is required for this optional DCF validator") from exc
 
-        # Print results
-        print(json.dumps(results, indent=2))
+    formulas = openpyxl.load_workbook(path, data_only=False, read_only=False)
+    values = openpyxl.load_workbook(path, data_only=True, read_only=False)
+    errors: list[str] = []
+    warnings: list[str] = []
+    checks: dict[str, Any] = {}
 
-        # Save to file if requested
-        if output_file:
-            with open(output_file, 'w') as f:
-                json.dump(results, f, indent=2)
+    checks["sheet_names"] = formulas.sheetnames
+    if "DCF" not in formulas.sheetnames:
+        errors.append("Required DCF sheet is missing")
+    if "WACC" not in formulas.sheetnames:
+        warnings.append("WACC sheet is absent; WACC may be embedded in the DCF sheet")
 
-        # Exit with error code if validation failed
-        sys.exit(0 if results['status'] == 'PASS' else 1)
+    formula_count = 0
+    for sheet_name in formulas.sheetnames:
+        formula_sheet = formulas[sheet_name]
+        value_sheet = values[sheet_name]
+        for row in formula_sheet.iter_rows():
+            for cell in row:
+                if isinstance(cell.value, str) and cell.value.startswith("="):
+                    formula_count += 1
+                    if any(token in cell.value for token in EXCEL_ERRORS):
+                        errors.append(f"Invalid reference literal in {sheet_name}!{cell.coordinate}")
+                cached = value_sheet[cell.coordinate].value
+                if isinstance(cached, str) and cached in EXCEL_ERRORS:
+                    errors.append(f"Cached Excel error {cached} in {sheet_name}!{cell.coordinate}")
+    checks["formula_count"] = formula_count
+    if formula_count == 0:
+        warnings.append("No workbook formulas were found")
 
-    except Exception as e:
-        error_result = {
-            'file': excel_file,
-            'status': 'ERROR',
-            'error': str(e)
-        }
-        print(json.dumps(error_result, indent=2))
-        sys.exit(1)
+    if "DCF" in values.sheetnames:
+        dcf = values["DCF"]
+        terminal_growth = find_labeled_number(dcf, ("terminal", "growth"))
+        wacc_sheet = values["WACC"] if "WACC" in values.sheetnames else dcf
+        wacc = find_labeled_number(wacc_sheet, ("wacc",))
+        checks["terminal_growth"] = terminal_growth
+        checks["wacc"] = wacc
+        if terminal_growth is not None and wacc is not None and terminal_growth >= wacc:
+            errors.append("Terminal growth must be lower than WACC for a Gordon Growth terminal value")
+        elif terminal_growth is None or wacc is None:
+            warnings.append("Terminal growth and WACC could not both be located from cached values")
+
+        if wacc is not None and args.wacc_min is not None and wacc < args.wacc_min:
+            warnings.append(f"WACC is below the user-supplied review bound {args.wacc_min:.4f}")
+        if wacc is not None and args.wacc_max is not None and wacc > args.wacc_max:
+            warnings.append(f"WACC is above the user-supplied review bound {args.wacc_max:.4f}")
+
+        terminal_pv = find_labeled_number(dcf, ("terminal", "value", "pv"))
+        enterprise_value = find_labeled_number(dcf, ("enterprise", "value"))
+        proportion = None
+        if terminal_pv is not None and enterprise_value not in (None, 0):
+            proportion = terminal_pv / enterprise_value
+        checks["terminal_value_proportion"] = proportion
+        if proportion is not None and args.terminal_value_min is not None and proportion < args.terminal_value_min:
+            warnings.append(
+                "Terminal value proportion is below the user-supplied review bound "
+                f"{args.terminal_value_min:.4f}"
+            )
+        if proportion is not None and args.terminal_value_max is not None and proportion > args.terminal_value_max:
+            warnings.append(
+                "Terminal value proportion is above the user-supplied review bound "
+                f"{args.terminal_value_max:.4f}"
+            )
+
+    return {
+        "file": str(path),
+        "status": "fail" if errors else "pass",
+        "structural_checks": checks,
+        "errors": errors,
+        "warnings": warnings,
+        "limitations": [
+            "Cached values may be stale; run the project artifact validator and disclose FORMULA_EVALUATION_UNVERIFIED when applicable."
+        ],
+    }
+
+
+def parser() -> argparse.ArgumentParser:
+    cli = argparse.ArgumentParser(
+        description="Check DCF structure and hard math; heuristic bounds are optional user-supplied reviews."
+    )
+    cli.add_argument("file", type=Path)
+    cli.add_argument("--wacc-min", type=float)
+    cli.add_argument("--wacc-max", type=float)
+    cli.add_argument("--terminal-value-min", type=float)
+    cli.add_argument("--terminal-value-max", type=float)
+    return cli
+
+
+def main() -> int:
+    args = parser().parse_args()
+    if not args.file.is_file():
+        print(json.dumps({"status": "fail", "error": f"File not found: {args.file}"}, indent=2))
+        return 2
+    try:
+        result = validate(args.file, args)
+    except Exception as exc:
+        print(json.dumps({"status": "fail", "error": str(exc)}, indent=2))
+        return 1
+    print(json.dumps(result, indent=2))
+    return 0 if result["status"] == "pass" else 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

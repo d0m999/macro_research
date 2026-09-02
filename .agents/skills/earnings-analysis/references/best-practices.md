@@ -29,7 +29,7 @@ This document provides examples, tips for success, common mistakes to avoid, and
 
 5. **Show the work**: Old estimates → New estimates with reasons
 
-6. **Update price target if material**: If estimates change >5%, usually PT changes too
+6. **Update price target only when supported**: Use the selected valuation method and revised inputs; do not trigger a target change from a fixed percentage rule
 
 7. **Acknowledge the call**: Reference management commentary, don't just analyze the press release
 
@@ -183,7 +183,7 @@ Before delivering earnings update, verify all items below:
 - [ ] ✅ **Did NOT rely on knowledge cutoff - actively searched for current data**
 - [ ] Any public guidance or `USER_PROVIDED` estimate is pre-earnings and dated
 - [ ] No outdated information included
-- [ ] Earnings release date is within last 1-3 months (not 6+ months old)
+- [ ] Earnings release matches the user-specified period; recency is required only when the user requested the latest quarter
 
 ### Writing Style Checklist
 

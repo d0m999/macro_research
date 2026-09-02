@@ -1,9 +1,11 @@
 ---
 name: returns-analysis
-description: Build quick IRR/MOIC sensitivity tables for PE deal evaluation. Models returns across entry multiple, leverage, exit multiple, growth, and hold period scenarios. Use when sizing up a deal, stress-testing assumptions, or preparing IC returns exhibits. Triggers on "returns analysis", "IRR sensitivity", "MOIC table", "what's the return at", "model the returns", or "back of the envelope".
+description: "用用户或公开来源输入建立 PE IRR/MOIC 回报分析与 entry、leverage、exit、growth、hold period 敏感性。"
 ---
 
 # Returns Analysis
+
+生成或修改 `.xlsx`、`.pptx` 或 `.docx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Public-source and user-input gate
 
@@ -68,12 +70,12 @@ Show the returns waterfall:
 Build 2-way sensitivity matrices:
 
 **Entry Multiple vs. Exit Multiple**
-| | Exit 6x | Exit 7x | Exit 8x | Exit 9x | Exit 10x |
+| | Lower exit case | | Base exit case | | Higher exit case |
 |---|---------|---------|---------|---------|----------|
-| Entry 7x | | | | | |
-| Entry 8x | | | | | |
-| Entry 9x | | | | | |
-| Entry 10x | | | | | |
+| Lower entry case | | | | | |
+| | | | | | |
+| Base entry case | | | | | |
+| Higher entry case | | | | | |
 
 **EBITDA Growth vs. Exit Multiple** (at fixed entry)
 
@@ -119,5 +121,5 @@ Build 3 scenarios:
 - Always show returns both gross and net of fees/carry where applicable
 - Management rollover and co-invest change the equity check — ask if relevant
 - Dividend recaps or interim distributions affect IRR significantly — include if planned
-- Don't forget transaction costs (typically 2-4% of EV) — they reduce Day 1 equity value
+- Include transaction costs only from official transaction materials, `USER_PROVIDED` inputs, or an explicit `MODEL_DERIVED` scenario; they reduce Day 1 equity value
 - Tax considerations (asset vs. stock deal, 338(h)(10) election) can materially affect after-tax returns

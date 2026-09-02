@@ -1,0 +1,5 @@
+interface:
+  display_name: "IB Check Deck"
+  short_description: "检查投行 deck 的数字、叙事、语言和视觉格式质量"
+policy:
+  allow_implicit_invocation: false

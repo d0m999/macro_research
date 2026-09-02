@@ -1,0 +1,5 @@
+interface:
+  display_name: "Audit XLS"
+  short_description: "审计工作簿公式、财务勾稽、口径错误与模型完整性并报告限制"
+policy:
+  allow_implicit_invocation: false

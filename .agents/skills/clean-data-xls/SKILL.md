@@ -1,54 +1,30 @@
 ---
 name: clean-data-xls
-description: Clean up messy spreadsheet data — trim whitespace, fix inconsistent casing, convert numbers-stored-as-text, standardize dates, remove duplicates, and flag mixed-type columns. Use when data is messy, inconsistent, or needs prep before analysis. Triggers on "clean this data", "clean up this sheet", "normalize this data", "fix formatting", "dedupe", "standardize this column", "this data is messy".
+description: "清理用户提供的 spreadsheet 数据，标准化文本、数字、日期和重复项，并保留原文件与审计轨迹。"
 ---
 
-# Clean Data
+# Clean Data XLS
 
-Clean messy data in the active sheet or a specified range.
+清理用户提供的 workbook 或 range，不用外部数据填补缺失内容。先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)，默认输出副本并保留原文件。
 
-## Input boundary
+## 工作流
 
-Operate only on the workbook or range supplied by the user. Do not enrich missing rows or columns from an external source; preserve source metadata and flag missing provenance for the user.
+1. **定义范围**：使用用户指定 range/sheet；未指定时处理 workbook 的 used ranges。记录输入路径、输出副本路径和 excluded sheets。
+2. **Profile**：按 column 识别 dominant type、null、unique、mixed type 和异常值；先记录检测结果与拟采用的确定性转换。
+3. **清理副本**：依次处理 whitespace/non-printing characters、casing、number-as-text、dates、duplicates、blanks 和 formula errors。保留原始列或建立可追踪 helper column；不改变金融口径。
+4. **记录 audit trail**：列出 sheet/range、rule、affected rows、before/after samples、无法确定的 ambiguous cases 和跳过项。
+5. **验证**：检查 row/column counts、keys、types、公式引用、dates、duplicates 和输出结构；运行统一 artifact 验证器。
 
-## Environment
+## 安全边界
 
-- **If running inside Excel (Office Add-in / Office JS):** Use Office JS directly (`Excel.run(async (context) => {...})`). Read via `range.values`, write helper-column formulas via `range.formulas = [["=TRIM(A2)"]]`. The in-place vs helper-column decision still applies.
-- **If operating on a standalone .xlsx file:** Use Python/openpyxl.
+- 默认文件名使用可辨识的 cleaned copy；用户只要求“清理”不等于授权覆盖原文件。
+- 只有用户明确要求原地覆盖时才执行破坏性写入；这是需要暂停确认的例外。
+- 自动处理确定性修复；对会改变业务含义的日期、编码、分类、dedup key 或 blank fill 保持未修改并列入 ambiguity report，除非规则已由用户给出。
+- 不要求每一类修复后逐轮确认；完整授权下连续执行并在最终报告中给出分项结果。
+- 公式能透明表达的转换优先使用公式/helper column；静态清洗值必须保留 before/after 审计证据。
 
-## Workflow
+## 完成条件
 
-### Step 1: Scope
-
-- If a range is given (e.g. `A1:F200`), use it
-- Otherwise use the full used range of the active sheet
-- Profile each column: detect its dominant type (text / number / date) and identify outliers
-
-### Step 2: Detect issues
-
-| Issue | What to look for |
-|---|---|
-| Whitespace | leading/trailing spaces, double spaces |
-| Casing | inconsistent casing in categorical columns (`usa` / `USA` / `Usa`) |
-| Number-as-text | numeric values stored as text; stray `$`, `,`, `%` in number cells |
-| Dates | mixed formats in the same column (`3/8/26`, `2026-03-08`, `March 8 2026`) |
-| Duplicates | exact-duplicate rows and near-duplicates (case/whitespace differences) |
-| Blanks | empty cells in otherwise-populated columns |
-| Mixed types | a column that's 98% numbers but has 3 text entries |
-| Encoding | mojibake (`Ã©`, `â€™`), non-printing characters |
-| Errors | `#REF!`, `#N/A`, `#VALUE!`, `#DIV/0!` |
-
-### Step 3: Propose fixes
-
-Show a summary table before changing anything:
-
-| Column | Issue | Count | Proposed Fix |
-|---|---|---|---|
-
-### Step 4: Apply
-
-- **Prefer formulas over hardcoded cleaned values** — where the cleaned output can be expressed as a formula (e.g. `=TRIM(A2)`, `=VALUE(SUBSTITUTE(B2,"$",""))`, `=UPPER(C2)`, `=DATEVALUE(D2)`), write the formula in an adjacent helper column rather than computing the result in Python and overwriting the original. This keeps the transformation transparent and auditable.
-- Only overwrite in place with computed values when the user explicitly asks for it, or when no sensible formula equivalent exists (e.g. encoding/mojibake repair)
-- For destructive operations (removing duplicates, filling blanks, overwriting originals), confirm with the user first
-- After each category of fix (whitespace → casing → number conversion → dates → dedup), show the user a sample of what changed and get confirmation before moving to the next category
-- Report a before/after summary of what changed
+- 原文件存在且未改变；清理副本路径明确。
+- 所有修改由确定性规则或用户规则支持；ambiguous cases 没有被猜测处理。
+- 结构检查通过；本地回退披露 `FORMULA_EVALUATION_UNVERIFIED`。

@@ -1,9 +1,11 @@
 ---
 name: portfolio-monitoring
-description: Track and analyze portfolio company performance against plan. Ingests monthly/quarterly financial packages (Excel, PDF), extracts KPIs, flags variances to budget, and produces summary dashboards. Use when reviewing portfolio company financials, preparing board materials, or monitoring covenant compliance. Triggers on "review portfolio company", "monthly financials", "how is [company] performing", "covenant check", or "portfolio update".
+description: "基于用户提供的组合公司财务包跟踪 KPI、预算差异、现金、债务和 covenant 状态。"
 ---
 
 # Portfolio Monitoring
+
+生成或修改 `.xlsx`、`.pptx` 或 `.docx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## User-material and public-source gate
 
@@ -38,9 +40,8 @@ Key metrics to track (adapt to the company's sector):
 
 ### Step 3: Flag & Summarize
 
-- **Green**: Within 5% of plan
-- **Yellow**: 5-15% below plan — flag for discussion
-- **Red**: >15% below plan or covenant breach risk — immediate attention
+- **Green / Yellow / Red**: Use thresholds from the board plan, covenant documents, user instructions, company history, or an explicitly labeled `MODEL_DERIVED` monitoring rule
+- Always disclose the threshold source beside the status; a covenant breach remains critical regardless of color-band design
 
 Output a concise summary:
 1. One-paragraph executive summary ("Company X is tracking [ahead/behind/on] plan...")

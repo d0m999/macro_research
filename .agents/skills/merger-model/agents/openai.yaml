@@ -1,0 +1,5 @@
+interface:
+  display_name: "Merger Model"
+  short_description: "建立并购增厚摊薄、协同、融资与 purchase accounting 模型"
+policy:
+  allow_implicit_invocation: false

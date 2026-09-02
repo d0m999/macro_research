@@ -1,9 +1,11 @@
 ---
 name: teaser
-description: Draft anonymous one-page company teasers for sell-side M&A processes. Creates a compelling summary without revealing the company's identity, designed to gauge buyer interest before NDA execution. Triggers on "teaser", "blind teaser", "anonymous profile", "one-pager for process", or "draft teaser for sell-side".
+description: "把卖方批准的用户材料整理为匿名一页 teaser，在 NDA 前呈现投资亮点而不泄露身份。"
 ---
 
 # Teaser
+
+生成或修改 `.docx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Input boundary
 

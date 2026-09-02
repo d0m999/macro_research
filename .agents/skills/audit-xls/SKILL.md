@@ -1,9 +1,11 @@
 ---
 name: audit-xls
-description: Audit a spreadsheet for formula accuracy, errors, and common mistakes. Scopes to a selected range, a single sheet, or the entire model (including financial-model integrity checks like BS balance, cash tie-out, and logic sanity). Triggers on "audit this sheet", "check my formulas", "find formula errors", "QA this spreadsheet", "sanity check this", "debug model", "model check", "model won't balance", "something's off in my model", "model review".
+description: "审计用户提供的 spreadsheet、sheet 或 range，检查公式错误、勾稽、口径和模型完整性。"
 ---
 
 # Audit Spreadsheet
+
+审计或交付 `.xlsx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)；结构验证不等于公式已求值。
 
 Audit formulas and data for accuracy and mistakes. Scope determines depth — from quick formula checks on a selection up to full financial-model integrity audits.
 
@@ -94,9 +96,9 @@ If BS doesn't balance, **quantify the gap per period and trace where it breaks**
 
 | Check | Flag if |
 |---|---|
-| Growth rates | >100% revenue growth without explanation |
+| Growth rates | Unexplained step-change versus company history, sourced peers, user rules, or a labeled `MODEL_DERIVED` scenario |
 | Margins | Outside industry norms |
-| Terminal value dominance | TV > ~75% of DCF EV (yellow flag) |
+| Terminal value reliance | Compare against the model's sourced forecast horizon and user-supplied review bounds; do not apply a fixed pass/fail percentage |
 | Hockey-stick | Projections ramp unrealistically in out-years |
 | Compounding | EBITDA compounds to absurd $ by Year 10 |
 | Edge cases | Model breaks at 0% or negative growth, negative EBITDA, leverage goes negative |

@@ -1,9 +1,11 @@
 ---
 name: deal-sourcing
-description: PE deal sourcing workflow — discover target companies from public pages, incorporate user-supplied prior-contact context, and draft personalized founder outreach emails. Use when sourcing new deals, prospecting companies in a sector, or reaching out to founders. Triggers on "find companies", "source deals", "draft founder email", "check if we've seen this company", or "outreach to founder".
+description: "从公开页面发现 PE 目标公司，结合用户提供的 prior-contact 记录并起草个性化 outreach。"
 ---
 
 # Deal Sourcing
+
+将 shortlist 或 outreach 输出为 `.docx`、`.xlsx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 **Public-source gate:** Read [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md). Discovery is limited to publicly reachable company, regulator, government, exchange, organizer or trade-association pages; private relationship data is not part of this package.
 
@@ -25,10 +27,10 @@ Research and identify potential target companies based on the user's criteria:
 Before outreach, ask whether the user has supplied a prior-contact export or prior-contact context. Do not connect to private systems or infer unprovided relationship data:
 
 - If an export or prior correspondence is supplied, label it `USER_PROVIDED` and summarize only the provided evidence
-- If no such context is supplied, record prior-contact status as `SOURCE_UNAVAILABLE` rather than assuming "New"
-- Ask the user: "Have you or your team had any prior contact with [Company]?"
+- If no such context is supplied, record exactly `Prior contact unknown`; do not infer `New`
+- Ask for prior-contact context only when outreach personalization or deduplication actually depends on it
 - Flag existing relationships, prior passes or known context only when supported by the user-provided record
-- **Output**: For each company, note: "New" (no prior contact), "Existing" (prior correspondence found — summarize), or "Previously Passed" (if evidence of a prior pass)
+- **Output**: For each company, note `Prior contact unknown` when no record was supplied; use "New", "Existing", or "Previously Passed" only when the user-provided evidence supports that status
 
 ### Step 3: Draft Founder Outreach
 
@@ -59,12 +61,12 @@ Draft personalized cold emails to founders/CEOs:
 1. Searches web for industrial services companies in Texas matching the criteria
 2. Presents a shortlist of 5-8 companies with key details
 3. For each, checks only the user-provided prior-contact context; unknown status remains `SOURCE_UNAVAILABLE`
-4. Drafts personalized outreach emails after the user confirms the target list
+4. Drafts personalized outreach emails when requested; shortlist review is not a mandatory pause if the user authorized the full sourcing-and-drafting task
 5. Presents drafts for user review before sending
 
 ## Important Notes
 
-- Always present the shortlist for user review before drafting emails
+- Present the shortlist and drafts as separate sections so the user can review them together
 - Never send emails without explicit user approval
 - If the user's firm intro or investment criteria aren't clear, ask before drafting
 - Prioritize quality over quantity — 5 well-researched targets beat 20 generic ones

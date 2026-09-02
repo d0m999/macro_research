@@ -1,0 +1,5 @@
+interface:
+  display_name: "Deck Refresh"
+  short_description: "在既有 presentation 中刷新数据并核对跨页一致性"
+policy:
+  allow_implicit_invocation: false

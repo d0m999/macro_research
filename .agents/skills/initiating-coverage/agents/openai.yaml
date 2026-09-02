@@ -1,0 +1,5 @@
+interface:
+  display_name: "Initiating Coverage"
+  short_description: "顺序完成公司研究、模型、估值、图表、首次覆盖报告与来源审计"
+policy:
+  allow_implicit_invocation: true

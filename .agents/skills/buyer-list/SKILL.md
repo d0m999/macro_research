@@ -1,9 +1,11 @@
 ---
 name: buyer-list
-description: Build and organize a universe of potential acquirers for sell-side M&A processes. Identifies strategic and financial buyers, assesses fit, and prioritizes outreach. Use when preparing for a sell-side mandate, building a buyer universe, or evaluating potential partners. Triggers on "buyer list", "buyer universe", "potential acquirers", "who would buy this", "strategic buyers", or "financial sponsors".
+description: "为卖方 M&A 建立潜在战略买家与财务买家 universe，评估匹配度并排序。"
 ---
 
 # Buyer List
+
+生成或修改 `.xlsx`、`.pptx` 或 `.docx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Public-source gate
 

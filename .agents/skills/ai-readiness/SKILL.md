@@ -1,9 +1,11 @@
 ---
 name: ai-readiness
-description: Scan the portfolio for the highest-leverage AI opportunities and rank where to deploy operating-partner time. Ingests quarterly updates and financials across multiple portfolio companies, identifies quick wins at each, and stacks them into a single ranked action list. Use during quarterly portfolio reviews, annual planning, or when deciding which companies get AI investment first. Triggers on "AI readiness", "AI opportunity scan", "where should we deploy AI", "AI across the portfolio", "AI quick wins", or "which portcos are ready for AI".
+description: "扫描组合公司材料，识别并排序可落地的 AI 机会、运营影响与实施优先级。"
 ---
 
 # Portfolio AI Readiness
+
+生成或修改 `.xlsx`、`.pptx` 或 `.docx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 **Source gate:** Read [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md). Public-company facts may come from official filings and issuer pages; private portfolio information must be supplied by the user and labeled `USER_PROVIDED`.
 
@@ -37,7 +39,7 @@ For each company, answer three gate questions. All three yes → **Go**. Any no 
 
 Then identify the top 2-3 leverage points. Look for these patterns in the cost structure and operations:
 
-**Back Office (usually fastest to pilot)**
+**Back Office (evaluate as a pilot candidate)**
 - Invoice processing, AP/AR matching, expense categorization
 - Contract abstraction — vendor agreements, leases, customer MSAs
 - Month-end close: reconciliations, flux commentary, lender reporting first drafts
@@ -53,7 +55,7 @@ Then identify the top 2-3 leverage points. Look for these patterns in the cost s
 - Scheduling and dispatch (field services, logistics)
 - Code generation and review (software portcos)
 
-For each leverage point, capture in one line: what it replaces, FTE-hours/week saved (assume 30-50%, not 100%), and whether it's buy-off-the-shelf or needs a light build.
+For each leverage point, capture in one line: what it replaces, evidenced FTE-hours/week saved, and whether it is buy-off-the-shelf or needs a light build. If evidence is unavailable, use user-supplied assumptions or explicit `MODEL_DERIVED` scenarios rather than a default savings range.
 
 ### Step 3: Rank Across the Portfolio
 

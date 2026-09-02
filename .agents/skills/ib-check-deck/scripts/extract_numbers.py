@@ -3,8 +3,8 @@
 Extract numerical values from presentation content for consistency checking.
 
 Usage:
-    python extract_numbers.py presentation-content.md
-    python extract_numbers.py presentation-content.md --output numbers.json
+    python3 extract_numbers.py presentation-content.md
+    python3 extract_numbers.py presentation-content.md --output numbers.json
 
 This script parses markdown-formatted presentation content (from markitdown)
 and extracts all numerical values with their context and slide references.

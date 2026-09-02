@@ -1,0 +1,5 @@
+interface:
+  display_name: "Competitive Analysis"
+  short_description: "研究竞争格局、同行定位、市场地图与可持续战略差异和证据"
+policy:
+  allow_implicit_invocation: true

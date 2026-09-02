@@ -1,9 +1,11 @@
 ---
 name: merger-model
-description: Build accretion/dilution analysis for M&A transactions. Models pro forma EPS impact, synergy sensitivities, and purchase price allocation. Use when evaluating a potential acquisition, preparing merger consequences analysis for a pitch, or advising on deal terms. Triggers on "merger model", "accretion dilution", "M&A model", "pro forma EPS", "merger consequences", or "deal impact analysis".
+description: "建立 M&A accretion/dilution、pro forma EPS、synergy sensitivity 和 purchase price allocation 模型。"
 ---
 
 # Merger Model
+
+创建或修改 `.xlsx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Public-source gate
 
@@ -78,14 +80,13 @@ Calculate year-by-year (Year 1-3):
 
 | | $0M syn | $25M syn | $50M syn | $75M syn | $100M syn |
 |---|---------|----------|----------|----------|-----------|
-| 15% premium | | | | | |
-| 20% premium | | | | | |
-| 25% premium | | | | | |
-| 30% premium | | | | | |
+| Lower purchase-price case | | | | | |
+| Base purchase-price case | | | | | |
+| Higher purchase-price case | | | | | |
 
 **Accretion/Dilution vs. Cash/Stock Mix:**
 
-| | 100% cash | 75/25 | 50/50 | 25/75 | 100% stock |
+| | Financing case 1 | Financing case 2 | Base financing | Financing case 4 | Financing case 5 |
 |---|-----------|-------|-------|-------|------------|
 | Year 1 | | | | | |
 | Year 2 | | | | | |
@@ -110,6 +111,6 @@ Calculate the minimum synergies needed for the deal to be EPS-neutral in Year 1.
 - Always show both GAAP and adjusted (cash) EPS where relevant
 - Stock deals: use acquirer's current price for exchange ratio, note dilution from new shares
 - Include purchase price allocation — goodwill and intangible amortization matter for GAAP EPS
-- Synergy phase-in is critical — Year 1 is often only 25-50% of run-rate synergies
+- Synergy phase-in is critical; use official deal disclosure, `USER_PROVIDED` assumptions, or explicit `MODEL_DERIVED` cases rather than a default realization range
 - Don't forget foregone interest income on cash used and new interest expense on debt raised
 - Tax rate on synergies and interest adjustments should match the acquirer's marginal rate

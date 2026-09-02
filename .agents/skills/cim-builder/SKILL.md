@@ -1,9 +1,11 @@
 ---
 name: cim-builder
-description: Structure and draft a Confidential Information Memorandum for sell-side M&A processes. Organizes company information into a professional, investor-ready document with consistent formatting and narrative flow. Use when preparing sell-side materials, drafting a CIM, or organizing company data for a sale process. Triggers on "CIM", "confidential information memorandum", "offering memorandum", "info memo", "draft CIM", or "sell-side materials".
+description: "把用户提供的卖方材料组织为结构清晰、格式一致的 Confidential Information Memorandum。"
 ---
 
 # CIM Builder
+
+生成或修改 `.docx`、`.xlsx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Public-source and user-material gate
 

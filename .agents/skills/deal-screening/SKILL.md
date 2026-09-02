@@ -1,9 +1,11 @@
 ---
 name: deal-screening
-description: Quickly screen inbound deal flow — CIMs, teasers, and broker materials — against the fund's investment criteria. Extracts key deal metrics, runs a pass/fail framework, and outputs a one-page screening memo. Use when reviewing new deal flow, triaging inbound materials, or deciding whether to take a first call. Triggers on "screen this deal", "review this CIM", "should we look at this", "triage this teaser", or "deal screening".
+description: "按基金标准筛选用户提供的 CIM、teaser 或交易材料，输出条件化的一页 screening memo。"
 ---
 
 # Deal Screening
+
+生成或修改 `.docx`、`.xlsx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Public-source and user-material gate
 
@@ -61,4 +63,4 @@ One-page screening memo suitable for sharing with partners or an IC quick screen
 - Be direct about red flags. Don't bury concerns
 - If financials seem inconsistent or incomplete, flag it explicitly
 - Ask for the fund's criteria upfront if this is the first screening
-- Save screening criteria in memory for future deals once confirmed
+- 在当前输出中记录本次使用的筛选标准；除非用户明确要求，不写入持久化 memory 或其他外部系统

@@ -1,9 +1,11 @@
 ---
 name: catalyst-calendar
-description: Build and maintain a calendar of upcoming catalysts across a coverage universe — earnings dates, conferences, product launches, regulatory decisions, and macro events. Helps prioritize attention and position ahead of events. Triggers on "catalyst calendar", "upcoming events", "what's coming up", "earnings calendar", "event calendar", or "catalyst tracker".
+description: "建立和维护覆盖公司的催化剂日历，核验财报、会议、产品、监管和宏观事件。用于催化剂日历、事件日历、财报日期或近期催化剂请求。"
 ---
 
 # Catalyst Calendar
+
+生成或修改 `.xlsx`、`.pptx` 或 `.docx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 **Public-source gate:** Read [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md). Verify each event from the issuer, regulator, government or official exchange page actually opened during the task.
 

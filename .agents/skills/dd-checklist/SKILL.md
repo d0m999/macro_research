@@ -1,9 +1,11 @@
 ---
 name: dd-checklist
-description: Generate and track comprehensive due diligence checklists tailored to the target company's sector, deal type, and complexity. Covers all major workstreams with request lists, status tracking, and red flag escalation. Use when kicking off diligence, organizing a data room review, or tracking outstanding items. Triggers on "dd checklist", "due diligence tracker", "diligence request list", "what do we still need", or "data room review".
+description: "按行业和交易类型建立尽调清单、资料请求、状态追踪与红旗升级机制。"
 ---
 
 # Due Diligence Checklist
+
+生成或修改 `.xlsx`、`.docx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Public-source and user-material gate
 

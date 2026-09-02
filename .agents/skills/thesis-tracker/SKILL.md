@@ -1,9 +1,11 @@
 ---
 name: thesis-tracker
-description: Maintain and update investment theses for portfolio positions and watchlist names. Track key data points, catalysts, and thesis milestones over time. Use when updating a thesis with new information, reviewing position rationale, or checking if a thesis is still intact. Triggers on "update thesis for [company]", "is my thesis still intact", "thesis check", "add data point to [company]", or "review my positions".
+description: "维护持仓或观察名单的投资 thesis、关键证据、催化剂与失效条件。用于 thesis 更新、逻辑复核、持仓检查或投资论点跟踪。"
 ---
 
 # Thesis Tracker
+
+生成或修改 `.xlsx`、`.docx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Public-source gate
 
@@ -41,7 +43,7 @@ Maintain a running scorecard:
 
 | Pillar | Original Expectation | Current Status | Trend |
 |--------|---------------------|----------------|-------|
-| Revenue growth >20% | On track | Q3 was 22% | Stable |
+| Revenue growth above thesis threshold (`MODEL_DERIVED` example) | On track | Q3 matched the sourced threshold | Stable |
 | Margin expansion | Behind | Margins flat YoY | Concerning |
 | New product launch | Pending | Delayed to Q2 | Watch |
 

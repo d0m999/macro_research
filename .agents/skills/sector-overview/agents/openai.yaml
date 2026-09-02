@@ -1,0 +1,5 @@
+interface:
+  display_name: "Sector Overview"
+  short_description: "研究行业边界、价值链、竞争格局、监管、主题趋势和证据"
+policy:
+  allow_implicit_invocation: true

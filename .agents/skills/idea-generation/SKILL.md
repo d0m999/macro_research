@@ -1,9 +1,11 @@
 ---
 name: idea-generation
-description: Systematic stock screening and investment idea sourcing. Combines quantitative screens, thematic research, and pattern recognition to surface new long and short ideas. Use when looking for new ideas, running screens, or conducting thematic sweeps. Triggers on "idea generation", "stock screen", "find ideas", "what looks interesting", "screen for", "new ideas", or "pitch me something".
+description: "用可公开核验的筛选条件和主题研究生成多空候选，并区分筛选结果与投资结论。用于选股、股票筛选、投资想法、idea generation 或 thematic sweep。"
 ---
 
 # Idea Generation
+
+生成或修改 `.docx`、`.xlsx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Public-source gate
 
@@ -25,31 +27,31 @@ Ask the user for parameters:
 
 Build screens from cited, reproducible inputs. Market cap may be calculated as a cited public price multiplied by a cited share count. Insider activity may use public regulator filings such as SEC Forms 3/4/5. Short interest, ownership, and coverage counts are allowed only when an official or fully public source is opened and cited; otherwise mark them `SOURCE_UNAVAILABLE`.
 
-Run screens based on the style:
+Run screens based on the style. Every threshold must come from the user's criteria, the company's cited history, an opened public peer distribution, or an explicitly labeled `MODEL_DERIVED` screen; do not use the examples below as fixed cutoffs:
 
 **Value Screen**
 - P/E below sector median
 - EV/EBITDA below historical average
-- Free cash flow yield >5%
-- Price/book below 1.5x
-- Insider buying in last 90 days
+- Free cash flow yield above the selected sourced comparison threshold
+- Price/book below the selected sourced comparison threshold
+- Insider buying over the user-selected, disclosed filing window
 - Dividend yield above market average
 
 **Growth Screen**
-- Revenue growth >15% YoY
-- Earnings growth >20% YoY
+- Revenue growth above the selected historical/peer threshold
+- Earnings growth above the selected historical/peer threshold
 - Revenue acceleration (growth rate increasing)
 - Expanding margins
-- High return on invested capital (>15%)
-- Strong net retention (>110% for SaaS)
+- Return on invested capital above the selected sourced comparison
+- Net retention above the selected company-history or public-peer comparison
 
 **Quality Screen**
-- Consistent revenue growth (5+ years)
+- Consistent revenue growth over the available comparable history
 - Stable or expanding margins
-- ROE >15%
+- ROE above the selected sourced comparison
 - Low debt/equity
 - High free cash flow conversion
-- Insider ownership >5%
+- Insider ownership relative to the selected public comparison set
 
 **Short Screen**
 - Declining revenue or decelerating growth
@@ -62,7 +64,7 @@ Run screens based on the style:
 
 **Special Situation Screen**
 - Recent IPOs / SPACs with lockup expirations
-- Spin-offs in last 12 months
+- Recent spin-offs within the user-selected event window
 - Companies emerging from restructuring
 - Activist involvement
 - Management changes at underperforming companies

@@ -1,9 +1,11 @@
 ---
 name: ic-memo
-description: Draft a structured investment committee memo for PE deal approval. Synthesizes due diligence findings, financial analysis, and deal terms into a professional IC-ready document. Use when preparing for investment committee, writing up a deal, or creating a formal recommendation. Triggers on "write IC memo", "investment committee memo", "deal write-up", "prepare IC materials", or "recommendation memo".
+description: "把公开事实和用户提供的尽调、财务与交易条款整理为结构化 PE investment committee memo。"
 ---
 
 # Investment Committee Memo
+
+生成或修改 `.docx`、`.xlsx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Public-source and user-material gate
 

@@ -1,9 +1,11 @@
 ---
 name: value-creation-plan
-description: Structure post-acquisition value creation plans with revenue, cost, and operational levers mapped to an EBITDA bridge. Includes 100-day priorities, KPI targets, and accountability frameworks. Use when planning post-close execution, preparing operating partner materials, or building a board-ready value creation roadmap. Triggers on "value creation plan", "100-day plan", "post-close plan", "EBITDA bridge", "operating plan", or "value creation levers".
+description: "把并购后 revenue、cost 和 operational levers 组织为 EBITDA bridge、行动计划、KPI 与责任机制。"
 ---
 
 # Value Creation Plan
+
+生成或修改 `.xlsx`、`.pptx` 或 `.docx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## User-material and public-source gate
 
@@ -119,7 +121,7 @@ Define the metrics that will track value creation:
 
 ## Important Notes
 
-- Be realistic about timing — most PE value creation takes 12-24 months to show in financials
+- Tie timing to the company's operating plan, user inputs, public evidence, or an explicit `MODEL_DERIVED` implementation scenario; do not use a generic realization window as fact
 - Quick wins matter for momentum and credibility, but don't over-rotate on cost cuts at the expense of growth
 - Management buy-in is critical — co-develop the plan, don't impose it
 - Track initiative-level P&L impact, not just top-line EBITDA — you need to know what's working

@@ -1,0 +1,5 @@
+interface:
+  display_name: "3-Statement Model"
+  short_description: "完成三表联动、经营驱动、滚动计划与模型勾稽检查和审计"
+policy:
+  allow_implicit_invocation: false

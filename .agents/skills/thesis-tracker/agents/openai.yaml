@@ -1,0 +1,5 @@
+interface:
+  display_name: "Thesis Tracker"
+  short_description: "维护投资逻辑、关键证据、催化剂与 thesis 失效条件"
+policy:
+  allow_implicit_invocation: true

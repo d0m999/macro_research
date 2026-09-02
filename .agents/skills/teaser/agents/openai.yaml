@@ -1,0 +1,5 @@
+interface:
+  display_name: "Teaser"
+  short_description: "把卖方批准材料整理为匿名一页交易 teaser 与来源"
+policy:
+  allow_implicit_invocation: false

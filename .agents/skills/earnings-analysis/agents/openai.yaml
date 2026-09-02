@@ -1,0 +1,5 @@
+interface:
+  display_name: "Earnings Analysis"
+  short_description: "分析指定或最新季度财报并更新估计、估值、投资逻辑与来源"
+policy:
+  allow_implicit_invocation: true

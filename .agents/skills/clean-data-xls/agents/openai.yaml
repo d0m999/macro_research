@@ -1,0 +1,5 @@
+interface:
+  display_name: "Clean Data XLS"
+  short_description: "清洗并标准化工作簿数据，同时保留原文件、审计轨迹与证据"
+policy:
+  allow_implicit_invocation: false

@@ -1,9 +1,11 @@
 ---
 name: model-update
-description: Update financial models with new data — quarterly earnings, management guidance, macro changes, or revised assumptions. Adjusts estimates, recalculates valuation, and flags material changes. Use after earnings, guidance updates, or when assumptions need refreshing. Triggers on "update model", "plug earnings", "refresh estimates", "update numbers for [company]", "new guidance", or "revise estimates".
+description: "用新财报、公司 guidance、宏观数据或修订假设更新模型、估值与变动桥。用于更新模型、刷新预测、plug earnings、model update 等请求。"
 ---
 
 # Model Update
+
+创建或修改 `.xlsx`、`.docx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Public-source gate
 

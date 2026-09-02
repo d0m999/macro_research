@@ -1,0 +1,5 @@
+interface:
+  display_name: "AI Readiness"
+  short_description: "扫描组合公司材料并排序可落地的 AI 机会与优先级"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Financial Services"
+  short_description: "按研究、建模、投行、PE 和文件处理选择具体 skill"
+policy:
+  allow_implicit_invocation: false

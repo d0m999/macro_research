@@ -1,0 +1,5 @@
+interface:
+  display_name: "Idea Generation"
+  short_description: "用公开筛选与主题研究生成可继续验证的多空候选和验证路径"
+policy:
+  allow_implicit_invocation: true

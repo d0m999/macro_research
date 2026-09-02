@@ -1,0 +1,5 @@
+interface:
+  display_name: "DD Meeting Prep"
+  short_description: "为尽调会议准备公开背景、重点问题、需追问的红旗和证据"
+policy:
+  allow_implicit_invocation: false

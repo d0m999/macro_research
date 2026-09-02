@@ -1,9 +1,11 @@
 ---
 name: morning-note
-description: Draft concise morning meeting notes summarizing overnight developments, trade ideas, and key events for coverage stocks. Designed for the 7am morning meeting format — tight, opinionated, actionable. Triggers on "morning note", "morning meeting", "what happened overnight", "trade idea", "morning call prep", or "daily note".
+description: "汇总隔夜公开事件、覆盖公司变化和可验证的交易观察，形成简洁晨会笔记。用于晨会、早报、morning note、隔夜发生了什么或 daily note。"
 ---
 
 # Morning Note
+
+生成或修改 `.docx`、`.xlsx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Public-source gate
 

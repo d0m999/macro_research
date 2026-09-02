@@ -1,0 +1,5 @@
+interface:
+  display_name: "Buyer List"
+  short_description: "建立战略与财务买家 universe 并评估交易匹配度"
+policy:
+  allow_implicit_invocation: false

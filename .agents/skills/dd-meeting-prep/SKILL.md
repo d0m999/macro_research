@@ -1,9 +1,11 @@
 ---
 name: dd-meeting-prep
-description: Prepare for due diligence meetings — management presentations, public issuer calls, user-provided customer references, and advisor sessions. Generates targeted question lists, public-source context, and red flags to probe. Use before any diligence meeting or call. Triggers on "prep for management meeting", "diligence call prep", "public call questions", "customer reference questions", or "meeting prep for [company]".
+description: "为管理层、公开发行人或用户提供的尽调访谈准备背景、问题清单与需追问的红旗。"
 ---
 
 # Diligence Meeting Prep
+
+生成或修改 `.docx`、`.xlsx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Public-source and user-material gate
 
@@ -73,7 +75,7 @@ Organize questions by priority and topic. Structure depends on meeting type:
 
 ### Step 3: Benchmarks & Context
 
-For each key topic, provide relevant benchmarks:
+For each key topic, provide relevant benchmarks only when backed by an opened public source or `USER_PROVIDED` material; otherwise label the comparison `MODEL_DERIVED` or `SOURCE_UNAVAILABLE`:
 - Industry growth rates and margin profiles
 - Comparable company metrics (if comps analysis exists in session)
 - Data points from a user-provided CIM or diligence-material package that warrant follow-up

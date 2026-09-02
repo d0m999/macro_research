@@ -1,9 +1,11 @@
 ---
 name: deal-tracker
-description: Track multiple live deals with milestones, deadlines, action items, and status updates. Maintains a deal pipeline view and surfaces upcoming deadlines and overdue items. Use when managing a book of business, tracking process milestones, or preparing for weekly deal reviews. Triggers on "deal tracker", "deal status", "where are we on", "process update", "deal pipeline", or "weekly deal review".
+description: "基于用户提供的状态跟踪多笔交易的里程碑、截止日、行动项和 pipeline 更新。"
 ---
 
 # Deal Tracker
+
+生成或修改 `.xlsx`、`.docx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## Input boundary
 

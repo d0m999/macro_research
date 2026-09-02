@@ -1,9 +1,11 @@
 ---
 name: unit-economics
-description: Analyze unit economics for PE targets — ARR cohorts, LTV/CAC, net retention, payback periods, revenue quality, and margin waterfall. Essential for software/SaaS, recurring revenue, and subscription businesses. Use when evaluating revenue quality, building a cohort analysis, or assessing customer economics. Triggers on "unit economics", "cohort analysis", "ARR analysis", "LTV CAC", "net retention", "revenue quality", or "customer economics".
+description: "分析用户或公开材料中的 ARR cohorts、LTV/CAC、retention、payback、revenue quality 和 margin waterfall。"
 ---
 
 # Unit Economics Analysis
+
+生成或修改 `.xlsx`、`.pptx` 或 `.docx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 ## User-material and public-source gate
 
@@ -31,7 +33,7 @@ Determine the revenue model to tailor the analysis:
 #### Customer Economics
 - **CAC (Customer Acquisition Cost)**: Total S&M spend / new customers acquired
 - **LTV (Lifetime Value)**: (ARPU × Gross Margin) / Churn Rate
-- **LTV:CAC ratio**: Target >3x for healthy businesses
+- **LTV:CAC ratio**: Show the calculated ratio and compare only with a sourced peer set, user target, or labeled `MODEL_DERIVED` scenario
 - **CAC payback period**: Months to recover acquisition cost
 - **Blended vs. segmented**: Break down by customer segment (enterprise vs. SMB vs. mid-market)
 
@@ -61,12 +63,11 @@ Show both absolute $ and indexed (Year 0 = 100%) views.
 
 ### Step 3: Benchmarking
 
-Compare unit economics to relevant benchmarks:
-- **SaaS Rule of 40**: Growth rate + EBITDA margin > 40%
-- **SaaS Magic Number**: Net new ARR / prior period S&M spend > 0.75x
-- **NDR benchmarks**: Best-in-class >120%, good >110%, concerning <100%
-- **LTV:CAC**: Best-in-class >5x, good >3x, concerning <2x
-- **Gross retention**: Best-in-class >95%, good >90%, concerning <85%
+Compare unit economics only to relevant, opened public benchmarks or `USER_PROVIDED` benchmarks. When neither exists, use clearly labeled `MODEL_DERIVED` scenarios rather than presenting thresholds as facts:
+- **SaaS Rule of 40**: Calculate only when the user requests this named framework; label it as an analytical framework, not a company fact
+- **SaaS Magic Number**: Calculate `Net new ARR / prior period S&M spend`; any target requires a source, user input, or `MODEL_DERIVED` label
+- **NDR**: Show the company's disclosed result and the sourced comparison set; do not apply fixed best/good/concerning bands without evidence
+- **LTV:CAC and gross retention**: Present company history and the sourced comparison distribution; no fixed best/good/concerning bands
 - **CAC payback**: Best-in-class <12mo, good <18mo, concerning >24mo
 
 ### Step 4: Revenue Quality Score
@@ -96,4 +97,4 @@ Synthesize into a revenue quality assessment:
 - Cohort analysis is the single most important view for revenue quality — push for this data
 - Differentiate between contracted ARR and actual recognized revenue
 - For usage-based models, focus on consumption trends and expansion patterns rather than traditional ARR metrics
-- Professional services revenue should be evaluated separately — it's not recurring and margins are typically lower
+- Professional services revenue should be evaluated separately from recurring revenue; any margin comparison requires company history, public peer evidence, user input, or a `MODEL_DERIVED` scenario

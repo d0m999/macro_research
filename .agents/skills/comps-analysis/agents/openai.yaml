@@ -1,0 +1,5 @@
+interface:
+  display_name: "Comps Analysis"
+  short_description: "建立可审计的上市公司可比分析、隐含估值工作簿和来源审计"
+policy:
+  allow_implicit_invocation: true

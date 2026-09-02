@@ -1,0 +1,5 @@
+interface:
+  display_name: "Deal Tracker"
+  short_description: "跟踪交易里程碑、截止日、行动项与 pipeline 状态"
+policy:
+  allow_implicit_invocation: false

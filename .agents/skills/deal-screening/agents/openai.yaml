@@ -1,0 +1,5 @@
+interface:
+  display_name: "Deal Screening"
+  short_description: "按基金标准筛选交易材料并输出条件化的一页判断 memo"
+policy:
+  allow_implicit_invocation: false
