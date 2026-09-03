@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "video_id": "EnbXozQn89s",
+  "recorded_on": "2026-08-27",
+  "tool": "yt-dlp",
+  "tool_version": "2025.12.08",
+  "metadata_probe": "passed",
+  "public_status": "public",
+  "attempts": [
+    {
+      "client": "android_sdkless",
+      "format": "399+251",
+      "result": "HTTP 403 Forbidden"
+    },
+    {
+      "client": "android_vr",
+      "format": "399+251 via ffmpeg with force-ipv4",
+      "result": "HTTP 403 Forbidden"
+    },
+    {
+      "client": "android_vr",
+      "format": "399+251 with force-ipv6",
+      "result": "API proxy resolution failure"
+    },
+    {
+      "client": "android_vr",
+      "format": "137+140 through proxy with direct curl",
+      "result": "first 1 KiB range returned 206; full request returned HTTP 403"
+    },
+    {
+      "client": "android_vr",
+      "format": "137+140 sequential 1 MiB ranges",
+      "result": "range 0-1048575 returned 206; range 1048576-2097151 returned HTTP 403"
+    },
+    {
+      "client": "android_vr",
+      "format": "248 second 1 MiB range",
+      "result": "HTTP 403 Forbidden"
+    },
+    {
+      "client": "android_vr",
+      "format": "18 second 1 MiB range",
+      "result": "HTTP 403 Forbidden"
+    },
+    {
+      "client": "android_vr",
+      "format": "DASH manifest probe",
+      "result": "manifest unavailable"
+    },
+    {
+      "client": "android_vr",
+      "format": "137+140 direct IPv6 range",
+      "result": "connection failed"
+    },
+    {
+      "client": "android_vr",
+      "format": "137+140 direct IPv4 range",
+      "result": "connection timed out"
+    },
+    {
+      "client": "android_vr",
+      "format": "137+140 proxy range with tuned HTTP headers",
+      "result": "HTTP 403 Forbidden"
+    },
+    {
+      "client": "mweb",
+      "format": "explicit provider PO Token for GVS",
+      "result": "storyboard_only"
+    },
+    {
+      "client": "web",
+      "format": "explicit provider PO Token for GVS",
+      "result": "storyboard_only"
+    },
+    {
+      "client": "web_embedded",
+      "format": "format probe",
+      "result": "video unavailable error code 152"
+    }
+  ],
+  "classification": "blocked_tooling",
+  "constraints_respected": [
+    "no_login",
+    "no_drm_or_verification_bypass",
+    "no_automatic_tool_upgrade",
+    "no_low_resolution_downgrade_as_final_output"
+  ]
+}

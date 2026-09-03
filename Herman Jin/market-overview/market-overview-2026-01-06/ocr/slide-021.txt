@@ -1,0 +1,9 @@
+2 @-o
+Visualizing the Architectural Revolution
+Yesterday's Server Today’s Al Server
+Compute-Centric, Memory-Limited. Throughput-Centric, Memory-Unleashed.
+ES 人 A ss AAA
+The HBM cost/heat bottleneck forces data onto DDR5. Accessing terabytes of DDRS requires a
+mandatory CPU upgrade for more memory channels (8 -> 12+) and PCle 5.0 slots. |
+7 NombockiM
+On 「 區 ws OSCBECTOBY ooyws oo

@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "package_type": "video-research-agent-data",
+  "video": {
+    "id": "market-overview-2026-01-27",
+    "title": "市场概述2026年1月27日",
+    "date": "2026-01-27",
+    "source_url": "https://www.youtube.com/watch?v=OFXABOVxaJ0",
+    "duration_seconds": 1969.656,
+    "language": "zh"
+  },
+  "files": {
+    "transcript": "transcript.jsonl",
+    "deck": "deck.jsonl",
+    "slides_directory": "slides/",
+    "ocr_directory": "ocr/"
+  },
+  "related_materials": {
+    "readable_html": null,
+    "source_directory": "../../_source/market-overview-2026-01-27/"
+  },
+  "transcript": {
+    "record_count": 924,
+    "kind": "automatic_generated",
+    "timing": "native_segment_start_end",
+    "source_label": "faster-whisper small on audio extracted from YouTube progressive format 18",
+    "original_file": null,
+    "fields": [
+      "id",
+      "start",
+      "end",
+      "text",
+      "chapter",
+      "source"
+    ]
+  },
+  "deck": {
+    "record_count": 32,
+    "image_format": "png",
+    "image_role": "visual evidence; OCR is the primary retrieval field",
+    "fields": [
+      "id",
+      "time_ranges",
+      "title",
+      "image",
+      "ocr_file",
+      "ocr",
+      "visual_type",
+      "summary",
+      "source_file",
+      "image_format"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-01",
+      "start": 0.0,
+      "end": 328.276,
+      "label": "宏观、利率与流动性"
+    },
+    {
+      "id": "chapter-02",
+      "start": 328.276,
+      "end": 656.552,
+      "label": "宏观、利率与流动性"
+    },
+    {
+      "id": "chapter-03",
+      "start": 656.552,
+      "end": 984.828,
+      "label": "宏观、利率与流动性"
+    },
+    {
+      "id": "chapter-04",
+      "start": 984.828,
+      "end": 1313.104,
+      "label": "宏观、利率与流动性"
+    },
+    {
+      "id": "chapter-05",
+      "start": 1313.104,
+      "end": 1641.38,
+      "label": "AI与科技产业"
+    },
+    {
+      "id": "chapter-06",
+      "start": 1641.38,
+      "end": 1969.656,
+      "label": "宏观、利率与流动性"
+    }
+  ],
+  "acquisition": {
+    "method": "yt-dlp public progressive format fallback",
+    "requested_format": "bestvideo[height<=2160]+bestaudio/best[height<=2160]",
+    "actual_format_id": "18",
+    "actual_container": "mp4",
+    "actual_width": 640,
+    "actual_height": 360,
+    "actual_fps": 15.0,
+    "fallback_reason": "DASH media streams returned HTTP 403 after a nonzero byte offset; public progressive format 18 was readable.",
+    "temporary_source_retained_only_during_processing": true
+  },
+  "evidence_boundary": "Automatic transcript and OCR may misrecognize proper nouns, figures, and labels. Use source media for verification.",
+  "generated_on": "2026-09-01"
+}

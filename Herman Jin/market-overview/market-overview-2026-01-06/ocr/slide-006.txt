@@ -1,0 +1,11 @@
+ee ee x + - @ x
+> > @ -了
+Visualizing the Architectural Revolution
+Yesterday's Server Today’s Al Server
+Compute-Centric, Memory-Limited. Throughput-Centric, Memory-Unleashed.
+Se, < ? a Pcie 5.0 SS, <n, age
+SS ae ‘SSS 2
+The HBM cost/heat bottleneck forces data onto DDRS. Accessing terabytes of DDR5 requires a
+mandatory CPU upgrade for more memory channels (8 -> 12+) and PCle 5.0 slots.
+(Pa Nomocst
+Ox mo soe OBOCBOCTOSBY A¥OGO Se H Com amt

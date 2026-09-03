@@ -1,0 +1,8 @@
+{
+  "observed_on": "2026-09-01",
+  "video_id": "08QLsFCoCTM",
+  "download_method": "yt-dlp public progressive format fallback",
+  "fallback_reason": "DASH media streams returned HTTP 403 after a nonzero byte offset; public progressive format 18 was readable.",
+  "temporary_source_deleted": true,
+  "signed_urls_retained": false
+}

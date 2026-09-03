@@ -1,0 +1,11 @@
+9 - wa @ -7
+The Market’s Blind Spot: |
+A Focus on the Obvious
+The consensus view is simple and seductive: | |
+in the age of Al, the GPU is the only thing that |
+matters. This has led the market to declare .
+the CPU a legacy component, overlooking a
+critical, system-level transformation.
+**MVarket Myth*: “CPU is
+dead, GPU is king.”
+ex Ma ES <

@@ -1,0 +1,14 @@
+ee Xo AW me Ce ee x + - @ x
+2 人
+The HBM cost/heat bottleneck forces data onto DDRS5, Accessing terabytes of DDRS requires a
+mandatory CPU upgrade for more memory channels (8 -> 12+) and PCle 5.0 slots.
+oaeesu
+The Economics of a Forced Upgrade
+Price Surge (ASP) Volume Surge (Quantity)
+ZS
++r 一 上 lo 。C 有 |
+TITTT Forced Fe
+Upgrade
+Old CPU New CPU
+(8 channels) (12+ channels)
+r | “Sac "onl wes eno) [swcgee . vam as

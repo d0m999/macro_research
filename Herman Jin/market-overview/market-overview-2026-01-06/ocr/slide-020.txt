@@ -1,0 +1,17 @@
+en ee Pee er eee | X [0 nec smansien. Coot 司 日 mrmrnaxm < + -@ x
+7 . 9 人
+i 加 iS CPU Hub
+The true bottleneck in today’s Al servers is rs 一
+not compute, but data throughput. The a r ra > vr
+extreme cost and heat of HBM memory Memory. 上 ° i iC |
+forces a new architecture that relies on Bank 区 区 df ye ie! pki
+massive amounts of DDRS. This eke — 性 國 二 人 |
+architecture is impossible without a “i
+fundamental component the market has 508
+ignored; a next-generation CPU with an 下
+unprecedented number of memory channels. S
+The CPU's role has shifted from ‘computation core’ to ‘high-throughput memory controller.’
+womenautv
+Visualizing the Architectural Revolution
+Yesterdav's Server Todav's Al Server
+ex 國 。 soRE ORC BEDOK: A@OGIS H cam ym

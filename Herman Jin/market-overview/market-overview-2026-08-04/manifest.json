@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "package_type": "video-research-agent-data",
+  "video": {
+    "id": "market-overview-2026-08-04",
+    "title": "市场概述2026年8月4日",
+    "date": "2026-08-04",
+    "source_url": "https://www.youtube.com/watch?v=xEWIQ7fgUIw",
+    "duration_seconds": 2093.5343125,
+    "language": "zh"
+  },
+  "files": {
+    "transcript": "transcript.jsonl",
+    "deck": "deck.jsonl",
+    "slides_directory": "slides/",
+    "ocr_directory": "ocr/"
+  },
+  "related_materials": {
+    "readable_html": "../../_readable/market-overview-2026-08-04.html",
+    "source_directory": "../../_source/market-overview-2026-08-04/"
+  },
+  "transcript": {
+    "record_count": 863,
+    "kind": "automatic",
+    "timing": "native_segment_start_end",
+    "source_label": "faster-whisper small",
+    "original_file": "../../_source/market-overview-2026-08-04/transcript_raw_zh.json",
+    "fields": [
+      "id",
+      "start",
+      "end",
+      "text",
+      "chapter",
+      "source"
+    ]
+  },
+  "deck": {
+    "record_count": 8,
+    "image_format": "png",
+    "image_role": "visual evidence; OCR is the primary retrieval field",
+    "fields": [
+      "id",
+      "time_ranges",
+      "title",
+      "image",
+      "ocr_file",
+      "ocr",
+      "visual_type",
+      "summary",
+      "source_file",
+      "image_format"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "opening",
+      "start": 0,
+      "end": 35,
+      "label": "开场与四条主线"
+    },
+    {
+      "id": "momentum",
+      "start": 35,
+      "end": 720,
+      "label": "Momentum、杠杆和强平"
+    },
+    {
+      "id": "correlation-cta",
+      "start": 720,
+      "end": 1140,
+      "label": "CTA、隐含相关性和波动率"
+    },
+    {
+      "id": "rates",
+      "start": 1140,
+      "end": 1660,
+      "label": "长端利率、Fed 与通胀结构"
+    },
+    {
+      "id": "yen",
+      "start": 1660,
+      "end": 1850,
+      "label": "日元干预与数据催化剂"
+    },
+    {
+      "id": "ai-cashflow",
+      "start": 1850,
+      "end": 1000000000.0,
+      "label": "AI 收入与 CAPEX"
+    }
+  ],
+  "evidence_boundary": "Automatic transcript and OCR may misrecognize proper nouns, figures, and labels. Use source media for verification.",
+  "generated_on": "2026-08-26"
+}

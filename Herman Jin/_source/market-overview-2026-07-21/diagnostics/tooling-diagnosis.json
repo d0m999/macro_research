@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "video_id": "ZdgSfsSPnXQ",
+  "recorded_on": "2026-08-26",
+  "tool": "yt-dlp",
+  "tool_version": "2025.12.08",
+  "metadata_probe": "passed",
+  "public_status": "public",
+  "attempts": [
+    {
+      "client": "default",
+      "format": "399+251",
+      "result": "HTTP 403 Forbidden"
+    },
+    {
+      "client": "default",
+      "format": "137+251",
+      "result": "HTTP 403 Forbidden"
+    },
+    {
+      "client": "android_sdkless",
+      "format": "bestvideo[height<=2160]+bestaudio/best[height<=2160]",
+      "result": "HTTP 403 Forbidden"
+    },
+    {
+      "client": "web_safari",
+      "format_probe": true,
+      "result": "storyboard_only"
+    }
+  ],
+  "classification": "blocked_tooling",
+  "constraints_respected": [
+    "no_login",
+    "no_drm_or_verification_bypass",
+    "no_automatic_tool_upgrade",
+    "no_low_resolution_downgrade_as_final_output"
+  ]
+}

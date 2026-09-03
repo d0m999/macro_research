@@ -1,0 +1,13 @@
++ ~o x ” > 1 «a
+2 ne |
+Visualizing the Architectural Revolution
+Yesterday's Server Today’s Al Server
+Compute-Centric, Memory-Limited. Throughput-Centric, Memory-Unleashed. |
+SR REY SS bmw SS Ge
+NSS PIES AO SS eae
+Se, “~ Se) AAA - SS, “Eg 0
+Se AR pcle50 NSSWGEBar 2 A
+SF SH
+| The HBM cost/heat bottleneck forces data onto DDRS. Accessing terabytes of DDRS requires a
+| mandatory CPU upgrade for more memory channels (8 -> 12+) and PCle 5.0 slots.
+oz mao soe OBOCBETOSBY GE

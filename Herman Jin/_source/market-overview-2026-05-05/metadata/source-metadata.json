@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "metadata_type": "youtube-video-source-metadata",
+  "observed_on": "2026-08-31",
+  "channel": {
+    "name": "Shanghao Jin",
+    "handle": "@shanghaojin",
+    "id": "UCTAJ0JnR9oYvILu-mtNcufQ",
+    "url": "https://www.youtube.com/@shanghaojin"
+  },
+  "video": {
+    "id": "PweaTXhs-aU",
+    "title": "市场概述2026年4月21日",
+    "source_url": "https://www.youtube.com/watch?v=PweaTXhs-aU",
+    "upload_date": "2026-05-05",
+    "timestamp": 1777945191,
+    "timestamp_utc": "2026-05-05T01:39:51Z",
+    "duration_seconds": 2110,
+    "availability": "public",
+    "live_status": "not_live",
+    "channel": "Shanghao Jin",
+    "channel_id": "UCTAJ0JnR9oYvILu-mtNcufQ",
+    "uploader_id": "@shanghaojin",
+    "playlist_index": 10
+  },
+  "resolution": {
+    "highest_available": {
+      "format_id": "248",
+      "ext": "webm",
+      "width": 1920,
+      "height": 1080,
+      "fps": 15,
+      "vcodec": "vp9",
+      "acodec": "none",
+      "protocol": "https",
+      "filesize_bytes": 45538333
+    },
+    "accepted_max_height": 2160,
+    "selection_expression": "bestvideo[height<=2160]+bestaudio/best[height<=2160]",
+    "candidate_count": 23
+  },
+  "captions": {
+    "automatic_languages": [],
+    "manual_languages": []
+  },
+  "actual_media": {
+    "duration_seconds": 2109.741859,
+    "width": 640,
+    "height": 360,
+    "fps": 15.0,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_channels": 1,
+    "audio_sample_rate": "44100",
+    "ffprobe_json": "diagnostics/ffprobe.json"
+  },
+  "acquisition": {
+    "method": "yt-dlp public progressive format fallback",
+    "requested_format": "bestvideo[height<=2160]+bestaudio/best[height<=2160]",
+    "actual_format_id": "18",
+    "actual_container": "mp4",
+    "actual_width": 640,
+    "actual_height": 360,
+    "actual_fps": 15.0,
+    "fallback_reason": "DASH media streams returned HTTP 403 after a nonzero byte offset; public progressive format 18 was readable.",
+    "temporary_source_retained_only_during_processing": true
+  },
+  "artifacts": {
+    "audio_directory": "audio/",
+    "transcript_directory": "transcript/",
+    "selected_frames_directory": "frames/selected/",
+    "temporary_source_deleted": true
+  }
+}

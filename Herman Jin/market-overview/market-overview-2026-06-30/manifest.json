@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "package_type": "video-research-agent-data",
+  "video": {
+    "id": "market-overview-2026-06-30",
+    "title": "市场概述2026年6月30日",
+    "date": "2026-06-30",
+    "source_url": "https://www.youtube.com/watch?v=VVBQLk-xl3o",
+    "duration_seconds": 1806.48,
+    "language": "zh"
+  },
+  "files": {
+    "transcript": "transcript.jsonl",
+    "deck": "deck.jsonl",
+    "slides_directory": "slides/",
+    "ocr_directory": "ocr/"
+  },
+  "related_materials": {
+    "readable_html": "../../_readable/market-overview-2026-06-30.html",
+    "source_directory": "../../_source/market-overview-2026-06-30/"
+  },
+  "transcript": {
+    "record_count": 653,
+    "kind": "provided_automatic_transcript",
+    "timing": "start_only_end_inferred_from_next_segment",
+    "source_label": "provided transcript",
+    "original_file": "../../_source/market-overview-2026-06-30/transcript/转录稿.txt",
+    "fields": [
+      "id",
+      "start",
+      "end",
+      "text",
+      "chapter",
+      "source"
+    ]
+  },
+  "deck": {
+    "record_count": 5,
+    "image_format": "png",
+    "image_role": "visual evidence; OCR is the primary retrieval field",
+    "fields": [
+      "id",
+      "time_ranges",
+      "title",
+      "image",
+      "ocr_file",
+      "ocr",
+      "visual_type",
+      "summary",
+      "source_file",
+      "image_format"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "liquidity-and-macro",
+      "start": 0,
+      "end": 359,
+      "label": "流动性与宏观重要性"
+    },
+    {
+      "id": "open-source-models",
+      "start": 359,
+      "end": 529,
+      "label": "开源模型与商品化"
+    },
+    {
+      "id": "bank-capital-eslr",
+      "start": 529,
+      "end": 854,
+      "label": "银行资本与 ESLR"
+    },
+    {
+      "id": "valuation-supply-chain",
+      "start": 854,
+      "end": 1210,
+      "label": "估值与 AI 供应链"
+    },
+    {
+      "id": "apple-consumer-demand",
+      "start": 1210,
+      "end": 1502,
+      "label": "Apple 与消费电子需求"
+    },
+    {
+      "id": "model-economics-capex",
+      "start": 1502,
+      "end": 1000000000.0,
+      "label": "模型经济学与 CAPEX"
+    }
+  ],
+  "evidence_boundary": "Automatic transcript and OCR may misrecognize proper nouns, figures, and labels. Use source media for verification.",
+  "generated_on": "2026-08-26"
+}

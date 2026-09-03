@@ -1,0 +1,7028 @@
+{
+  "language": "zh",
+  "language_probability": 1,
+  "duration_seconds": 1638.35356,
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 3.36,
+      "text": "好 那謝謝大家 那個新年好",
+      "avg_logprob": -0.2968510298893369,
+      "no_speech_prob": 0.25733911991119385,
+      "compression_ratio": 1.3095238095238095
+    },
+    {
+      "id": 1,
+      "start": 3.36,
+      "end": 6.0,
+      "text": "我聖誕到新年一直在修正",
+      "avg_logprob": -0.2968510298893369,
+      "no_speech_prob": 0.25733911991119385,
+      "compression_ratio": 1.3095238095238095
+    },
+    {
+      "id": 2,
+      "start": 6.0,
+      "end": 10.16,
+      "text": "我其實聖誕到新年的時候 市場變化還是蠻大的",
+      "avg_logprob": -0.2968510298893369,
+      "no_speech_prob": 0.25733911991119385,
+      "compression_ratio": 1.3095238095238095
+    },
+    {
+      "id": 3,
+      "start": 10.16,
+      "end": 12.48,
+      "text": "特別是acquity 股票",
+      "avg_logprob": -0.2968510298893369,
+      "no_speech_prob": 0.25733911991119385,
+      "compression_ratio": 1.3095238095238095
+    },
+    {
+      "id": 4,
+      "start": 12.48,
+      "end": 15.52,
+      "text": "然後股票有很大的幅度的這個上下起伏",
+      "avg_logprob": -0.2968510298893369,
+      "no_speech_prob": 0.25733911991119385,
+      "compression_ratio": 1.3095238095238095
+    },
+    {
+      "id": 5,
+      "start": 15.52,
+      "end": 18.96,
+      "text": "而且我說幾個吧 一個是股票",
+      "avg_logprob": -0.2968510298893369,
+      "no_speech_prob": 0.25733911991119385,
+      "compression_ratio": 1.3095238095238095
+    },
+    {
+      "id": 6,
+      "start": 18.96,
+      "end": 22.8,
+      "text": "然後利率和外匯上 特別是外匯也經過",
+      "avg_logprob": -0.2968510298893369,
+      "no_speech_prob": 0.25733911991119385,
+      "compression_ratio": 1.3095238095238095
+    },
+    {
+      "id": 7,
+      "start": 22.8,
+      "end": 25.84,
+      "text": "就是突破Range Bank 突破了一個區間",
+      "avg_logprob": -0.2968510298893369,
+      "no_speech_prob": 0.25733911991119385,
+      "compression_ratio": 1.3095238095238095
+    },
+    {
+      "id": 8,
+      "start": 25.84,
+      "end": 29.36,
+      "text": "每個人走強的 他不光是對人民幣在走強",
+      "avg_logprob": -0.2968510298893369,
+      "no_speech_prob": 0.25733911991119385,
+      "compression_ratio": 1.3095238095238095
+    },
+    {
+      "id": 9,
+      "start": 29.36,
+      "end": 32.96,
+      "text": "他對了外匯 對了歐元 對了議員都在走強",
+      "avg_logprob": -0.22867967560887337,
+      "no_speech_prob": 0.0021796023938804865,
+      "compression_ratio": 1.250996015936255
+    },
+    {
+      "id": 10,
+      "start": 32.96,
+      "end": 39.44,
+      "text": "我們2025年第一次 展望一下未來一年",
+      "avg_logprob": -0.22867967560887337,
+      "no_speech_prob": 0.0021796023938804865,
+      "compression_ratio": 1.250996015936255
+    },
+    {
+      "id": 11,
+      "start": 39.44,
+      "end": 42.32,
+      "text": "就像我上次 好像我講過好幾次",
+      "avg_logprob": -0.22867967560887337,
+      "no_speech_prob": 0.0021796023938804865,
+      "compression_ratio": 1.250996015936255
+    },
+    {
+      "id": 12,
+      "start": 42.32,
+      "end": 45.44,
+      "text": "就說2023年是AI的年份",
+      "avg_logprob": -0.22867967560887337,
+      "no_speech_prob": 0.0021796023938804865,
+      "compression_ratio": 1.250996015936255
+    },
+    {
+      "id": 13,
+      "start": 45.44,
+      "end": 49.12,
+      "text": "就所有2022年年底的時候出來到GPT",
+      "avg_logprob": -0.22867967560887337,
+      "no_speech_prob": 0.0021796023938804865,
+      "compression_ratio": 1.250996015936255
+    },
+    {
+      "id": 14,
+      "start": 49.12,
+      "end": 52.16,
+      "text": "然後轉換為2023年整個股票市場",
+      "avg_logprob": -0.22867967560887337,
+      "no_speech_prob": 0.0021796023938804865,
+      "compression_ratio": 1.250996015936255
+    },
+    {
+      "id": 15,
+      "start": 52.16,
+      "end": 54.08,
+      "text": "對於AI概念的追捧",
+      "avg_logprob": -0.22867967560887337,
+      "no_speech_prob": 0.0021796023938804865,
+      "compression_ratio": 1.250996015936255
+    },
+    {
+      "id": 16,
+      "start": 54.08,
+      "end": 56.8,
+      "text": "然後2024年的延續了2023年這過程",
+      "avg_logprob": -0.22867967560887337,
+      "no_speech_prob": 0.0021796023938804865,
+      "compression_ratio": 1.250996015936255
+    },
+    {
+      "id": 17,
+      "start": 56.8,
+      "end": 59.92,
+      "text": "但是2024年最主要是要宏觀市場",
+      "avg_logprob": -0.19257498952679167,
+      "no_speech_prob": 0.03361966088414192,
+      "compression_ratio": 1.2960526315789473
+    },
+    {
+      "id": 18,
+      "start": 59.92,
+      "end": 63.52,
+      "text": "大家都在關注宏觀上美國會不會走落",
+      "avg_logprob": -0.19257498952679167,
+      "no_speech_prob": 0.03361966088414192,
+      "compression_ratio": 1.2960526315789473
+    },
+    {
+      "id": 19,
+      "start": 63.52,
+      "end": 65.12,
+      "text": "美國會不會軟著落",
+      "avg_logprob": -0.19257498952679167,
+      "no_speech_prob": 0.03361966088414192,
+      "compression_ratio": 1.2960526315789473
+    },
+    {
+      "id": 20,
+      "start": 65.12,
+      "end": 68.16,
+      "text": "然後經濟情況會怎麼樣",
+      "avg_logprob": -0.19257498952679167,
+      "no_speech_prob": 0.03361966088414192,
+      "compression_ratio": 1.2960526315789473
+    },
+    {
+      "id": 21,
+      "start": 68.16,
+      "end": 69.92,
+      "text": "然後通常能不能被控制住",
+      "avg_logprob": -0.19257498952679167,
+      "no_speech_prob": 0.03361966088414192,
+      "compression_ratio": 1.2960526315789473
+    },
+    {
+      "id": 22,
+      "start": 69.92,
+      "end": 73.52,
+      "text": "所以大家的關注點就在經濟數據在美聯儲",
+      "avg_logprob": -0.19257498952679167,
+      "no_speech_prob": 0.03361966088414192,
+      "compression_ratio": 1.2960526315789473
+    },
+    {
+      "id": 23,
+      "start": 73.52,
+      "end": 76.32,
+      "text": "這個我上次應該簡單說過這個事情",
+      "avg_logprob": -0.19257498952679167,
+      "no_speech_prob": 0.03361966088414192,
+      "compression_ratio": 1.2960526315789473
+    },
+    {
+      "id": 24,
+      "start": 76.32,
+      "end": 79.36,
+      "text": "然後2025年在我們叫Year of Transformation",
+      "avg_logprob": -0.19257498952679167,
+      "no_speech_prob": 0.03361966088414192,
+      "compression_ratio": 1.2960526315789473
+    },
+    {
+      "id": 25,
+      "start": 79.36,
+      "end": 82.64,
+      "text": "Policy Transformation 就是政策的改變",
+      "avg_logprob": -0.19257498952679167,
+      "no_speech_prob": 0.03361966088414192,
+      "compression_ratio": 1.2960526315789473
+    },
+    {
+      "id": 26,
+      "start": 82.64,
+      "end": 84.8,
+      "text": "中國政策還有美國政策",
+      "avg_logprob": -0.19257498952679167,
+      "no_speech_prob": 0.03361966088414192,
+      "compression_ratio": 1.2960526315789473
+    },
+    {
+      "id": 27,
+      "start": 84.96,
+      "end": 87.36,
+      "text": "那麼政策的改變就必然導致",
+      "avg_logprob": -0.23050826515943285,
+      "no_speech_prob": 0.006259975489228964,
+      "compression_ratio": 1.3035714285714286
+    },
+    {
+      "id": 28,
+      "start": 87.36,
+      "end": 89.84,
+      "text": "這個東西是有很大的不確定性的",
+      "avg_logprob": -0.23050826515943285,
+      "no_speech_prob": 0.006259975489228964,
+      "compression_ratio": 1.3035714285714286
+    },
+    {
+      "id": 29,
+      "start": 89.84,
+      "end": 93.28,
+      "text": "甚至很多時候在政客的一念之間",
+      "avg_logprob": -0.23050826515943285,
+      "no_speech_prob": 0.006259975489228964,
+      "compression_ratio": 1.3035714285714286
+    },
+    {
+      "id": 30,
+      "start": 93.28,
+      "end": 96.96,
+      "text": "或者是在你們在12月底的時候",
+      "avg_logprob": -0.23050826515943285,
+      "no_speech_prob": 0.006259975489228964,
+      "compression_ratio": 1.3035714285714286
+    },
+    {
+      "id": 31,
+      "start": 96.96,
+      "end": 99.52,
+      "text": "也看到Decidine的這個鬧局 對吧",
+      "avg_logprob": -0.23050826515943285,
+      "no_speech_prob": 0.006259975489228964,
+      "compression_ratio": 1.3035714285714286
+    },
+    {
+      "id": 32,
+      "start": 99.52,
+      "end": 102.72,
+      "text": "那麼雖然共和黨控制了整個議會",
+      "avg_logprob": -0.23050826515943285,
+      "no_speech_prob": 0.006259975489228964,
+      "compression_ratio": 1.3035714285714286
+    },
+    {
+      "id": 33,
+      "start": 102.72,
+      "end": 104.24,
+      "text": "或者宏觀來是多數吧",
+      "avg_logprob": -0.23050826515943285,
+      "no_speech_prob": 0.006259975489228964,
+      "compression_ratio": 1.3035714285714286
+    },
+    {
+      "id": 34,
+      "start": 104.24,
+      "end": 106.64,
+      "text": "那麼就是通過議會的時候",
+      "avg_logprob": -0.23050826515943285,
+      "no_speech_prob": 0.006259975489228964,
+      "compression_ratio": 1.3035714285714286
+    },
+    {
+      "id": 35,
+      "start": 106.64,
+      "end": 109.84,
+      "text": "並沒有像川普他們預期的這麼容易",
+      "avg_logprob": -0.23050826515943285,
+      "no_speech_prob": 0.006259975489228964,
+      "compression_ratio": 1.3035714285714286
+    },
+    {
+      "id": 36,
+      "start": 109.84,
+      "end": 111.92,
+      "text": "所以我們會預期",
+      "avg_logprob": -0.23050826515943285,
+      "no_speech_prob": 0.006259975489228964,
+      "compression_ratio": 1.3035714285714286
+    },
+    {
+      "id": 37,
+      "start": 111.92,
+      "end": 114.96,
+      "text": "明年的很多政策也會有很多的變數",
+      "avg_logprob": -0.18849725303032416,
+      "no_speech_prob": 0.4514622688293457,
+      "compression_ratio": 1.3719298245614036
+    },
+    {
+      "id": 38,
+      "start": 114.96,
+      "end": 116.8,
+      "text": "他們是政策變化一年",
+      "avg_logprob": -0.18849725303032416,
+      "no_speech_prob": 0.4514622688293457,
+      "compression_ratio": 1.3719298245614036
+    },
+    {
+      "id": 39,
+      "start": 116.8,
+      "end": 119.36,
+      "text": "但是中間也會有很多的波折",
+      "avg_logprob": -0.18849725303032416,
+      "no_speech_prob": 0.4514622688293457,
+      "compression_ratio": 1.3719298245614036
+    },
+    {
+      "id": 40,
+      "start": 119.36,
+      "end": 121.68,
+      "text": "有很多的地方需要協調",
+      "avg_logprob": -0.18849725303032416,
+      "no_speech_prob": 0.4514622688293457,
+      "compression_ratio": 1.3719298245614036
+    },
+    {
+      "id": 41,
+      "start": 121.68,
+      "end": 125.28,
+      "text": "這就意味著整個市場一定會面臨了很大的tell risk",
+      "avg_logprob": -0.18849725303032416,
+      "no_speech_prob": 0.4514622688293457,
+      "compression_ratio": 1.3719298245614036
+    },
+    {
+      "id": 42,
+      "start": 125.28,
+      "end": 129.44,
+      "text": "我們說tell risk 就是市場的走勢是有個fat tail",
+      "avg_logprob": -0.18849725303032416,
+      "no_speech_prob": 0.4514622688293457,
+      "compression_ratio": 1.3719298245614036
+    },
+    {
+      "id": 43,
+      "start": 129.44,
+      "end": 131.52,
+      "text": "有很大的這個尾部",
+      "avg_logprob": -0.18849725303032416,
+      "no_speech_prob": 0.4514622688293457,
+      "compression_ratio": 1.3719298245614036
+    },
+    {
+      "id": 44,
+      "start": 131.52,
+      "end": 136.0,
+      "text": "黑天鵝的尾部風險其實發生的概率被我們想象要大",
+      "avg_logprob": -0.18849725303032416,
+      "no_speech_prob": 0.4514622688293457,
+      "compression_ratio": 1.3719298245614036
+    },
+    {
+      "id": 45,
+      "start": 136.0,
+      "end": 139.84,
+      "text": "在四個方面 我之前也一直在說的",
+      "avg_logprob": -0.18849725303032416,
+      "no_speech_prob": 0.4514622688293457,
+      "compression_ratio": 1.3719298245614036
+    },
+    {
+      "id": 46,
+      "start": 140.8,
+      "end": 144.56,
+      "text": "政策上對於美國的關稅",
+      "avg_logprob": -0.2159592576392062,
+      "no_speech_prob": 0.07092830538749695,
+      "compression_ratio": 1.341991341991342
+    },
+    {
+      "id": 47,
+      "start": 144.56,
+      "end": 146.16,
+      "text": "但對於移民的政策",
+      "avg_logprob": -0.2159592576392062,
+      "no_speech_prob": 0.07092830538749695,
+      "compression_ratio": 1.341991341991342
+    },
+    {
+      "id": 48,
+      "start": 146.16,
+      "end": 148.64,
+      "text": "移民是帶動美國經濟發展過去幾年",
+      "avg_logprob": -0.2159592576392062,
+      "no_speech_prob": 0.07092830538749695,
+      "compression_ratio": 1.341991341991342
+    },
+    {
+      "id": 49,
+      "start": 148.64,
+      "end": 150.0,
+      "text": "很重要的原因",
+      "avg_logprob": -0.2159592576392062,
+      "no_speech_prob": 0.07092830538749695,
+      "compression_ratio": 1.341991341991342
+    },
+    {
+      "id": 50,
+      "start": 150.0,
+      "end": 154.4,
+      "text": "美國的budget cut到底是沒什麼怎麼去做",
+      "avg_logprob": -0.2159592576392062,
+      "no_speech_prob": 0.07092830538749695,
+      "compression_ratio": 1.341991341991342
+    },
+    {
+      "id": 51,
+      "start": 154.4,
+      "end": 159.68,
+      "text": "那麼根據我現在就是經過Decidine這個事情",
+      "avg_logprob": -0.2159592576392062,
+      "no_speech_prob": 0.07092830538749695,
+      "compression_ratio": 1.341991341991342
+    },
+    {
+      "id": 52,
+      "start": 159.68,
+      "end": 161.36,
+      "text": "就是債務上限這個事情",
+      "avg_logprob": -0.2159592576392062,
+      "no_speech_prob": 0.07092830538749695,
+      "compression_ratio": 1.341991341991342
+    },
+    {
+      "id": 53,
+      "start": 161.36,
+      "end": 163.68,
+      "text": "我對於budget cut沒有那麼擔心",
+      "avg_logprob": -0.2159592576392062,
+      "no_speech_prob": 0.07092830538749695,
+      "compression_ratio": 1.341991341991342
+    },
+    {
+      "id": 54,
+      "start": 163.68,
+      "end": 164.8,
+      "text": "沒有之前那麼擔心",
+      "avg_logprob": -0.2159592576392062,
+      "no_speech_prob": 0.07092830538749695,
+      "compression_ratio": 1.341991341991342
+    },
+    {
+      "id": 55,
+      "start": 164.8,
+      "end": 169.76,
+      "text": "所以你可以說三號尾部的風險變小了",
+      "avg_logprob": -0.1838571446282523,
+      "no_speech_prob": 0.07299529016017914,
+      "compression_ratio": 1.2054263565891472
+    },
+    {
+      "id": 56,
+      "start": 169.76,
+      "end": 172.48,
+      "text": "但是歐洲的風險還是非常大",
+      "avg_logprob": -0.1838571446282523,
+      "no_speech_prob": 0.07299529016017914,
+      "compression_ratio": 1.2054263565891472
+    },
+    {
+      "id": 57,
+      "start": 172.48,
+      "end": 175.28,
+      "text": "所以這四個事情隨時也會爆發",
+      "avg_logprob": -0.1838571446282523,
+      "no_speech_prob": 0.07299529016017914,
+      "compression_ratio": 1.2054263565891472
+    },
+    {
+      "id": 58,
+      "start": 175.28,
+      "end": 179.76,
+      "text": "我們講2025年的市場都會有兩條主線",
+      "avg_logprob": -0.1838571446282523,
+      "no_speech_prob": 0.07299529016017914,
+      "compression_ratio": 1.2054263565891472
+    },
+    {
+      "id": 59,
+      "start": 179.76,
+      "end": 182.72,
+      "text": "就第一條我認為是base case",
+      "avg_logprob": -0.1838571446282523,
+      "no_speech_prob": 0.07299529016017914,
+      "compression_ratio": 1.2054263565891472
+    },
+    {
+      "id": 60,
+      "start": 182.72,
+      "end": 188.16,
+      "text": "我們base case中間最大的概念叫divergence",
+      "avg_logprob": -0.1838571446282523,
+      "no_speech_prob": 0.07299529016017914,
+      "compression_ratio": 1.2054263565891472
+    },
+    {
+      "id": 61,
+      "start": 188.16,
+      "end": 192.24,
+      "text": "就是風化美國和歐洲中國的風化",
+      "avg_logprob": -0.1838571446282523,
+      "no_speech_prob": 0.07299529016017914,
+      "compression_ratio": 1.2054263565891472
+    },
+    {
+      "id": 62,
+      "start": 192.24,
+      "end": 193.68,
+      "text": "美國經濟很好",
+      "avg_logprob": -0.1838571446282523,
+      "no_speech_prob": 0.07299529016017914,
+      "compression_ratio": 1.2054263565891472
+    },
+    {
+      "id": 63,
+      "start": 193.76,
+      "end": 197.68,
+      "text": "然後美聯儲可能政策會變得相對來說",
+      "avg_logprob": -0.1634804191333907,
+      "no_speech_prob": 0.0024834582582116127,
+      "compression_ratio": 1.3959044368600682
+    },
+    {
+      "id": 64,
+      "start": 197.68,
+      "end": 199.04,
+      "text": "變偏硬一邊",
+      "avg_logprob": -0.1634804191333907,
+      "no_speech_prob": 0.0024834582582116127,
+      "compression_ratio": 1.3959044368600682
+    },
+    {
+      "id": 65,
+      "start": 199.04,
+      "end": 200.88,
+      "text": "因為它經濟基本面還是很好",
+      "avg_logprob": -0.1634804191333907,
+      "no_speech_prob": 0.0024834582582116127,
+      "compression_ratio": 1.3959044368600682
+    },
+    {
+      "id": 66,
+      "start": 200.88,
+      "end": 202.48,
+      "text": "然後特朗普上台之後",
+      "avg_logprob": -0.1634804191333907,
+      "no_speech_prob": 0.0024834582582116127,
+      "compression_ratio": 1.3959044368600682
+    },
+    {
+      "id": 67,
+      "start": 202.48,
+      "end": 204.4,
+      "text": "它很多的政策可以得到實施",
+      "avg_logprob": -0.1634804191333907,
+      "no_speech_prob": 0.0024834582582116127,
+      "compression_ratio": 1.3959044368600682
+    },
+    {
+      "id": 68,
+      "start": 204.4,
+      "end": 208.8,
+      "text": "特別是它後期的一些可能會",
+      "avg_logprob": -0.1634804191333907,
+      "no_speech_prob": 0.0024834582582116127,
+      "compression_ratio": 1.3959044368600682
+    },
+    {
+      "id": 69,
+      "start": 208.8,
+      "end": 210.0,
+      "text": "比如說去檢管",
+      "avg_logprob": -0.1634804191333907,
+      "no_speech_prob": 0.0024834582582116127,
+      "compression_ratio": 1.3959044368600682
+    },
+    {
+      "id": 70,
+      "start": 210.0,
+      "end": 212.0,
+      "text": "去檢管甚至它發很多事情",
+      "avg_logprob": -0.1634804191333907,
+      "no_speech_prob": 0.0024834582582116127,
+      "compression_ratio": 1.3959044368600682
+    },
+    {
+      "id": 71,
+      "start": 212.0,
+      "end": 213.28,
+      "text": "它可能會發總統令",
+      "avg_logprob": -0.1634804191333907,
+      "no_speech_prob": 0.0024834582582116127,
+      "compression_ratio": 1.3959044368600682
+    },
+    {
+      "id": 72,
+      "start": 213.28,
+      "end": 214.32,
+      "text": "我們待會會講到",
+      "avg_logprob": -0.1634804191333907,
+      "no_speech_prob": 0.0024834582582116127,
+      "compression_ratio": 1.3959044368600682
+    },
+    {
+      "id": 73,
+      "start": 214.32,
+      "end": 215.76,
+      "text": "它在能源上面的政策",
+      "avg_logprob": -0.1634804191333907,
+      "no_speech_prob": 0.0024834582582116127,
+      "compression_ratio": 1.3959044368600682
+    },
+    {
+      "id": 74,
+      "start": 215.76,
+      "end": 217.28,
+      "text": "也可能會發總統令",
+      "avg_logprob": -0.1634804191333907,
+      "no_speech_prob": 0.0024834582582116127,
+      "compression_ratio": 1.3959044368600682
+    },
+    {
+      "id": 75,
+      "start": 217.28,
+      "end": 219.12,
+      "text": "那麼這些都對於acquity市場",
+      "avg_logprob": -0.1634804191333907,
+      "no_speech_prob": 0.0024834582582116127,
+      "compression_ratio": 1.3959044368600682
+    },
+    {
+      "id": 76,
+      "start": 219.12,
+      "end": 221.2,
+      "text": "對於市場是一個偏好的",
+      "avg_logprob": -0.1634804191333907,
+      "no_speech_prob": 0.0024834582582116127,
+      "compression_ratio": 1.3959044368600682
+    },
+    {
+      "id": 77,
+      "start": 221.28,
+      "end": 224.96,
+      "text": "而且我們可以說大部分的科技",
+      "avg_logprob": -0.18242990675051352,
+      "no_speech_prob": 0.0025289251934736967,
+      "compression_ratio": 1.271062271062271
+    },
+    {
+      "id": 78,
+      "start": 224.96,
+      "end": 227.68,
+      "text": "或者是新興的技術的項目",
+      "avg_logprob": -0.18242990675051352,
+      "no_speech_prob": 0.0025289251934736967,
+      "compression_ratio": 1.271062271062271
+    },
+    {
+      "id": 79,
+      "start": 227.68,
+      "end": 229.2,
+      "text": "都是在美股",
+      "avg_logprob": -0.18242990675051352,
+      "no_speech_prob": 0.0025289251934736967,
+      "compression_ratio": 1.271062271062271
+    },
+    {
+      "id": 80,
+      "start": 229.2,
+      "end": 230.88,
+      "text": "所以美國的資本市場",
+      "avg_logprob": -0.18242990675051352,
+      "no_speech_prob": 0.0025289251934736967,
+      "compression_ratio": 1.271062271062271
+    },
+    {
+      "id": 81,
+      "start": 230.88,
+      "end": 233.2,
+      "text": "可能還會大概率的還是會走得不錯",
+      "avg_logprob": -0.18242990675051352,
+      "no_speech_prob": 0.0025289251934736967,
+      "compression_ratio": 1.271062271062271
+    },
+    {
+      "id": 82,
+      "start": 233.2,
+      "end": 235.28,
+      "text": "那麼配合著美國經濟變強",
+      "avg_logprob": -0.18242990675051352,
+      "no_speech_prob": 0.0025289251934736967,
+      "compression_ratio": 1.271062271062271
+    },
+    {
+      "id": 83,
+      "start": 235.28,
+      "end": 239.68,
+      "text": "divergence就是美國 versus中國和歐洲",
+      "avg_logprob": -0.18242990675051352,
+      "no_speech_prob": 0.0025289251934736967,
+      "compression_ratio": 1.271062271062271
+    },
+    {
+      "id": 84,
+      "start": 239.68,
+      "end": 244.4,
+      "text": "歐洲和中國都是政策和經濟衰落在跑",
+      "avg_logprob": -0.18242990675051352,
+      "no_speech_prob": 0.0025289251934736967,
+      "compression_ratio": 1.271062271062271
+    },
+    {
+      "id": 85,
+      "start": 244.4,
+      "end": 246.16,
+      "text": "這什麼意思呢",
+      "avg_logprob": -0.18242990675051352,
+      "no_speech_prob": 0.0025289251934736967,
+      "compression_ratio": 1.271062271062271
+    },
+    {
+      "id": 86,
+      "start": 246.16,
+      "end": 249.2,
+      "text": "就是當我的經濟會變得更差的時候",
+      "avg_logprob": -0.18242990675051352,
+      "no_speech_prob": 0.0025289251934736967,
+      "compression_ratio": 1.271062271062271
+    },
+    {
+      "id": 87,
+      "start": 249.2,
+      "end": 251.52,
+      "text": "我的政策的支持的力度",
+      "avg_logprob": -0.14296635275795347,
+      "no_speech_prob": 0.02679501846432686,
+      "compression_ratio": 1.3225806451612903
+    },
+    {
+      "id": 88,
+      "start": 251.52,
+      "end": 254.32,
+      "text": "我們特別是財政政策支持的力度",
+      "avg_logprob": -0.14296635275795347,
+      "no_speech_prob": 0.02679501846432686,
+      "compression_ratio": 1.3225806451612903
+    },
+    {
+      "id": 89,
+      "start": 254.32,
+      "end": 257.12,
+      "text": "能不能擠得上我經濟變壞的速度",
+      "avg_logprob": -0.14296635275795347,
+      "no_speech_prob": 0.02679501846432686,
+      "compression_ratio": 1.3225806451612903
+    },
+    {
+      "id": 90,
+      "start": 257.12,
+      "end": 259.76,
+      "text": "這個是歐洲和中國都面臨的問題",
+      "avg_logprob": -0.14296635275795347,
+      "no_speech_prob": 0.02679501846432686,
+      "compression_ratio": 1.3225806451612903
+    },
+    {
+      "id": 91,
+      "start": 259.76,
+      "end": 261.52,
+      "text": "日本的想法",
+      "avg_logprob": -0.14296635275795347,
+      "no_speech_prob": 0.02679501846432686,
+      "compression_ratio": 1.3225806451612903
+    },
+    {
+      "id": 92,
+      "start": 261.52,
+      "end": 263.6,
+      "text": "就是我通脹預期上升",
+      "avg_logprob": -0.14296635275795347,
+      "no_speech_prob": 0.02679501846432686,
+      "compression_ratio": 1.3225806451612903
+    },
+    {
+      "id": 93,
+      "start": 263.6,
+      "end": 267.44,
+      "text": "那麼我的貨幣政策去控制通脹預期",
+      "avg_logprob": -0.14296635275795347,
+      "no_speech_prob": 0.02679501846432686,
+      "compression_ratio": 1.3225806451612903
+    },
+    {
+      "id": 94,
+      "start": 267.44,
+      "end": 269.36,
+      "text": "能不能擠上通脹的預期",
+      "avg_logprob": -0.14296635275795347,
+      "no_speech_prob": 0.02679501846432686,
+      "compression_ratio": 1.3225806451612903
+    },
+    {
+      "id": 95,
+      "start": 269.36,
+      "end": 274.24,
+      "text": "所以divergence是我們主線的可能",
+      "avg_logprob": -0.14296635275795347,
+      "no_speech_prob": 0.02679501846432686,
+      "compression_ratio": 1.3225806451612903
+    },
+    {
+      "id": 96,
+      "start": 274.24,
+      "end": 275.84,
+      "text": "就是base case",
+      "avg_logprob": -0.14296635275795347,
+      "no_speech_prob": 0.02679501846432686,
+      "compression_ratio": 1.3225806451612903
+    },
+    {
+      "id": 97,
+      "start": 275.84,
+      "end": 279.52,
+      "text": "那麼但是這中間有30%的概率",
+      "avg_logprob": -0.22606566783011428,
+      "no_speech_prob": 0.0013959109783172607,
+      "compression_ratio": 1.2661870503597121
+    },
+    {
+      "id": 98,
+      "start": 279.52,
+      "end": 281.28,
+      "text": "這個是非常不曉得概率",
+      "avg_logprob": -0.22606566783011428,
+      "no_speech_prob": 0.0013959109783172607,
+      "compression_ratio": 1.2661870503597121
+    },
+    {
+      "id": 99,
+      "start": 281.28,
+      "end": 284.96,
+      "text": "30%的概率可能會發生一些tel risk",
+      "avg_logprob": -0.22606566783011428,
+      "no_speech_prob": 0.0013959109783172607,
+      "compression_ratio": 1.2661870503597121
+    },
+    {
+      "id": 100,
+      "start": 284.96,
+      "end": 286.64,
+      "text": "tel risk的來源",
+      "avg_logprob": -0.22606566783011428,
+      "no_speech_prob": 0.0013959109783172607,
+      "compression_ratio": 1.2661870503597121
+    },
+    {
+      "id": 101,
+      "start": 286.64,
+      "end": 288.48,
+      "text": "就可能是policy transformation",
+      "avg_logprob": -0.22606566783011428,
+      "no_speech_prob": 0.0013959109783172607,
+      "compression_ratio": 1.2661870503597121
+    },
+    {
+      "id": 102,
+      "start": 288.48,
+      "end": 290.4,
+      "text": "有政策的一些變化",
+      "avg_logprob": -0.22606566783011428,
+      "no_speech_prob": 0.0013959109783172607,
+      "compression_ratio": 1.2661870503597121
+    },
+    {
+      "id": 103,
+      "start": 290.4,
+      "end": 293.6,
+      "text": "所以我就是非常非常宏觀的",
+      "avg_logprob": -0.22606566783011428,
+      "no_speech_prob": 0.0013959109783172607,
+      "compression_ratio": 1.2661870503597121
+    },
+    {
+      "id": 104,
+      "start": 293.6,
+      "end": 296.24,
+      "text": "說一下就明年我對於整個市場的看法",
+      "avg_logprob": -0.22606566783011428,
+      "no_speech_prob": 0.0013959109783172607,
+      "compression_ratio": 1.2661870503597121
+    },
+    {
+      "id": 105,
+      "start": 296.24,
+      "end": 298.0,
+      "text": "那麼在這個過程中間",
+      "avg_logprob": -0.22606566783011428,
+      "no_speech_prob": 0.0013959109783172607,
+      "compression_ratio": 1.2661870503597121
+    },
+    {
+      "id": 106,
+      "start": 298.0,
+      "end": 301.92,
+      "text": "就是資產就說配置的時候",
+      "avg_logprob": -0.22606566783011428,
+      "no_speech_prob": 0.0013959109783172607,
+      "compression_ratio": 1.2661870503597121
+    },
+    {
+      "id": 107,
+      "start": 301.92,
+      "end": 305.52,
+      "text": "是謹慎和激進並存的",
+      "avg_logprob": -0.22606566783011428,
+      "no_speech_prob": 0.0013959109783172607,
+      "compression_ratio": 1.2661870503597121
+    },
+    {
+      "id": 108,
+      "start": 305.6,
+      "end": 306.48,
+      "text": "什麼意思呢",
+      "avg_logprob": -0.2449851248223903,
+      "no_speech_prob": 0.0022839705925434828,
+      "compression_ratio": 1.173758865248227
+    },
+    {
+      "id": 109,
+      "start": 306.48,
+      "end": 308.56,
+      "text": "就比方說我自己的acquired position",
+      "avg_logprob": -0.2449851248223903,
+      "no_speech_prob": 0.0022839705925434828,
+      "compression_ratio": 1.173758865248227
+    },
+    {
+      "id": 110,
+      "start": 308.56,
+      "end": 309.36,
+      "text": "acquired投算",
+      "avg_logprob": -0.2449851248223903,
+      "no_speech_prob": 0.0022839705925434828,
+      "compression_ratio": 1.173758865248227
+    },
+    {
+      "id": 111,
+      "start": 309.36,
+      "end": 311.68,
+      "text": "可能我中間有很大程度上",
+      "avg_logprob": -0.2449851248223903,
+      "no_speech_prob": 0.0022839705925434828,
+      "compression_ratio": 1.173758865248227
+    },
+    {
+      "id": 112,
+      "start": 311.68,
+      "end": 313.12,
+      "text": "是放了leap call",
+      "avg_logprob": -0.2449851248223903,
+      "no_speech_prob": 0.0022839705925434828,
+      "compression_ratio": 1.173758865248227
+    },
+    {
+      "id": 113,
+      "start": 313.12,
+      "end": 314.8,
+      "text": "然後加上一部分陷阱",
+      "avg_logprob": -0.2449851248223903,
+      "no_speech_prob": 0.0022839705925434828,
+      "compression_ratio": 1.173758865248227
+    },
+    {
+      "id": 114,
+      "start": 314.8,
+      "end": 316.56,
+      "text": "感覺這個是就是",
+      "avg_logprob": -0.2449851248223903,
+      "no_speech_prob": 0.0022839705925434828,
+      "compression_ratio": 1.173758865248227
+    },
+    {
+      "id": 115,
+      "start": 316.56,
+      "end": 319.28,
+      "text": "對於資產配置的一個簡單的看法",
+      "avg_logprob": -0.2449851248223903,
+      "no_speech_prob": 0.0022839705925434828,
+      "compression_ratio": 1.173758865248227
+    },
+    {
+      "id": 116,
+      "start": 319.28,
+      "end": 321.92,
+      "text": "那麼說到上個星期",
+      "avg_logprob": -0.2449851248223903,
+      "no_speech_prob": 0.0022839705925434828,
+      "compression_ratio": 1.173758865248227
+    },
+    {
+      "id": 117,
+      "start": 321.92,
+      "end": 324.72,
+      "text": "上個星期其實",
+      "avg_logprob": -0.2449851248223903,
+      "no_speech_prob": 0.0022839705925434828,
+      "compression_ratio": 1.173758865248227
+    },
+    {
+      "id": 118,
+      "start": 324.72,
+      "end": 329.92,
+      "text": "CTA並沒有破CTA的一些關鍵的點位",
+      "avg_logprob": -0.2449851248223903,
+      "no_speech_prob": 0.0022839705925434828,
+      "compression_ratio": 1.173758865248227
+    },
+    {
+      "id": 119,
+      "start": 329.92,
+      "end": 333.2,
+      "text": "所以我們看到Christmas的時候",
+      "avg_logprob": -0.2449851248223903,
+      "no_speech_prob": 0.0022839705925434828,
+      "compression_ratio": 1.173758865248227
+    },
+    {
+      "id": 120,
+      "start": 333.36,
+      "end": 336.48,
+      "text": "有很多的gama position在清算",
+      "avg_logprob": -0.3335500383617902,
+      "no_speech_prob": 0.004453086759895086,
+      "compression_ratio": 1.251231527093596
+    },
+    {
+      "id": 121,
+      "start": 336.48,
+      "end": 340.96,
+      "text": "我們看到股票啥股票的gama",
+      "avg_logprob": -0.3335500383617902,
+      "no_speech_prob": 0.004453086759895086,
+      "compression_ratio": 1.251231527093596
+    },
+    {
+      "id": 122,
+      "start": 343.52,
+      "end": 347.2,
+      "text": "從我大概上次講這個市場之前",
+      "avg_logprob": -0.3335500383617902,
+      "no_speech_prob": 0.004453086759895086,
+      "compression_ratio": 1.251231527093596
+    },
+    {
+      "id": 123,
+      "start": 347.2,
+      "end": 348.56,
+      "text": "大概一個月不到吧",
+      "avg_logprob": -0.3335500383617902,
+      "no_speech_prob": 0.004453086759895086,
+      "compression_ratio": 1.251231527093596
+    },
+    {
+      "id": 124,
+      "start": 349.84,
+      "end": 351.84,
+      "text": "那個時候最多的gama position",
+      "avg_logprob": -0.3335500383617902,
+      "no_speech_prob": 0.004453086759895086,
+      "compression_ratio": 1.251231527093596
+    },
+    {
+      "id": 125,
+      "start": 351.84,
+      "end": 353.92,
+      "text": "從Dela那邊看",
+      "avg_logprob": -0.3335500383617902,
+      "no_speech_prob": 0.004453086759895086,
+      "compression_ratio": 1.251231527093596
+    },
+    {
+      "id": 126,
+      "start": 353.92,
+      "end": 355.92,
+      "text": "大概是12.3個別人",
+      "avg_logprob": -0.3335500383617902,
+      "no_speech_prob": 0.004453086759895086,
+      "compression_ratio": 1.251231527093596
+    },
+    {
+      "id": 127,
+      "start": 355.92,
+      "end": 358.08,
+      "text": "123億美元",
+      "avg_logprob": -0.3335500383617902,
+      "no_speech_prob": 0.004453086759895086,
+      "compression_ratio": 1.251231527093596
+    },
+    {
+      "id": 128,
+      "start": 358.08,
+      "end": 359.12,
+      "text": "那很大",
+      "avg_logprob": -0.3335500383617902,
+      "no_speech_prob": 0.004453086759895086,
+      "compression_ratio": 1.251231527093596
+    },
+    {
+      "id": 129,
+      "start": 359.12,
+      "end": 361.12,
+      "text": "總一個點",
+      "avg_logprob": -0.3335500383617902,
+      "no_speech_prob": 0.004453086759895086,
+      "compression_ratio": 1.251231527093596
+    },
+    {
+      "id": 130,
+      "start": 361.12,
+      "end": 363.04,
+      "text": "估值總一個點",
+      "avg_logprob": -0.3335500383617902,
+      "no_speech_prob": 0.004453086759895086,
+      "compression_ratio": 1.251231527093596
+    },
+    {
+      "id": 131,
+      "start": 363.04,
+      "end": 364.48,
+      "text": "那它要對沖",
+      "avg_logprob": -0.2402168346652344,
+      "no_speech_prob": 0.0001590504398336634,
+      "compression_ratio": 1.27007299270073
+    },
+    {
+      "id": 132,
+      "start": 364.48,
+      "end": 365.6,
+      "text": "對沖這麼大金額",
+      "avg_logprob": -0.2402168346652344,
+      "no_speech_prob": 0.0001590504398336634,
+      "compression_ratio": 1.27007299270073
+    },
+    {
+      "id": 133,
+      "start": 365.6,
+      "end": 367.36,
+      "text": "所以基本上整個估值",
+      "avg_logprob": -0.2402168346652344,
+      "no_speech_prob": 0.0001590504398336634,
+      "compression_ratio": 1.27007299270073
+    },
+    {
+      "id": 134,
+      "start": 367.36,
+      "end": 369.68,
+      "text": "都是被控制在這個範圍裡面",
+      "avg_logprob": -0.2402168346652344,
+      "no_speech_prob": 0.0001590504398336634,
+      "compression_ratio": 1.27007299270073
+    },
+    {
+      "id": 135,
+      "start": 369.68,
+      "end": 371.36,
+      "text": "但是",
+      "avg_logprob": -0.2402168346652344,
+      "no_speech_prob": 0.0001590504398336634,
+      "compression_ratio": 1.27007299270073
+    },
+    {
+      "id": 136,
+      "start": 371.36,
+      "end": 374.4,
+      "text": "很有大量的那個期權",
+      "avg_logprob": -0.2402168346652344,
+      "no_speech_prob": 0.0001590504398336634,
+      "compression_ratio": 1.27007299270073
+    },
+    {
+      "id": 137,
+      "start": 374.4,
+      "end": 375.84,
+      "text": "在年底要到期",
+      "avg_logprob": -0.2402168346652344,
+      "no_speech_prob": 0.0001590504398336634,
+      "compression_ratio": 1.27007299270073
+    },
+    {
+      "id": 138,
+      "start": 375.84,
+      "end": 377.12,
+      "text": "再加上呢",
+      "avg_logprob": -0.2402168346652344,
+      "no_speech_prob": 0.0001590504398336634,
+      "compression_ratio": 1.27007299270073
+    },
+    {
+      "id": 139,
+      "start": 377.12,
+      "end": 380.08,
+      "text": "整個年底的市場交易的時候的",
+      "avg_logprob": -0.2402168346652344,
+      "no_speech_prob": 0.0001590504398336634,
+      "compression_ratio": 1.27007299270073
+    },
+    {
+      "id": 140,
+      "start": 380.08,
+      "end": 381.92,
+      "text": "這個投算非常清淡",
+      "avg_logprob": -0.2402168346652344,
+      "no_speech_prob": 0.0001590504398336634,
+      "compression_ratio": 1.27007299270073
+    },
+    {
+      "id": 141,
+      "start": 381.92,
+      "end": 384.8,
+      "text": "那麼gama position最後被flip",
+      "avg_logprob": -0.2402168346652344,
+      "no_speech_prob": 0.0001590504398336634,
+      "compression_ratio": 1.27007299270073
+    },
+    {
+      "id": 142,
+      "start": 384.8,
+      "end": 386.8,
+      "text": "到了年初的時候1月3號",
+      "avg_logprob": -0.2402168346652344,
+      "no_speech_prob": 0.0001590504398336634,
+      "compression_ratio": 1.27007299270073
+    },
+    {
+      "id": 143,
+      "start": 386.8,
+      "end": 389.04,
+      "text": "那麼我看1月3號的時候",
+      "avg_logprob": -0.2402168346652344,
+      "no_speech_prob": 0.0001590504398336634,
+      "compression_ratio": 1.27007299270073
+    },
+    {
+      "id": 144,
+      "start": 389.04,
+      "end": 391.2,
+      "text": "可能是變成負的300個別人",
+      "avg_logprob": -0.2402168346652344,
+      "no_speech_prob": 0.0001590504398336634,
+      "compression_ratio": 1.27007299270073
+    },
+    {
+      "id": 145,
+      "start": 391.28,
+      "end": 393.2,
+      "text": "所以gama position被flip",
+      "avg_logprob": -0.1715374304211303,
+      "no_speech_prob": 7.794882549205795e-05,
+      "compression_ratio": 1.2364864864864864
+    },
+    {
+      "id": 146,
+      "start": 393.2,
+      "end": 395.12,
+      "text": "然後再加上acquity",
+      "avg_logprob": -0.1715374304211303,
+      "no_speech_prob": 7.794882549205795e-05,
+      "compression_ratio": 1.2364864864864864
+    },
+    {
+      "id": 147,
+      "start": 395.12,
+      "end": 398.88,
+      "text": "就是股票的交易非常清淡",
+      "avg_logprob": -0.1715374304211303,
+      "no_speech_prob": 7.794882549205795e-05,
+      "compression_ratio": 1.2364864864864864
+    },
+    {
+      "id": 148,
+      "start": 398.88,
+      "end": 399.92,
+      "text": "那麼這種情況下",
+      "avg_logprob": -0.1715374304211303,
+      "no_speech_prob": 7.794882549205795e-05,
+      "compression_ratio": 1.2364864864864864
+    },
+    {
+      "id": 149,
+      "start": 399.92,
+      "end": 402.96,
+      "text": "所有的市場會變得非常波動力很大",
+      "avg_logprob": -0.1715374304211303,
+      "no_speech_prob": 7.794882549205795e-05,
+      "compression_ratio": 1.2364864864864864
+    },
+    {
+      "id": 150,
+      "start": 402.96,
+      "end": 405.04,
+      "text": "就是你一買它就包漲",
+      "avg_logprob": -0.1715374304211303,
+      "no_speech_prob": 7.794882549205795e-05,
+      "compression_ratio": 1.2364864864864864
+    },
+    {
+      "id": 151,
+      "start": 405.04,
+      "end": 406.4,
+      "text": "然後一賣它就暴跌",
+      "avg_logprob": -0.1715374304211303,
+      "no_speech_prob": 7.794882549205795e-05,
+      "compression_ratio": 1.2364864864864864
+    },
+    {
+      "id": 152,
+      "start": 406.4,
+      "end": 409.04,
+      "text": "那就是S&P在上個月的",
+      "avg_logprob": -0.1715374304211303,
+      "no_speech_prob": 7.794882549205795e-05,
+      "compression_ratio": 1.2364864864864864
+    },
+    {
+      "id": 153,
+      "start": 409.04,
+      "end": 410.4,
+      "text": "基本上的走勢",
+      "avg_logprob": -0.1715374304211303,
+      "no_speech_prob": 7.794882549205795e-05,
+      "compression_ratio": 1.2364864864864864
+    },
+    {
+      "id": 154,
+      "start": 410.4,
+      "end": 412.4,
+      "text": "所以我在休假中間",
+      "avg_logprob": -0.1715374304211303,
+      "no_speech_prob": 7.794882549205795e-05,
+      "compression_ratio": 1.2364864864864864
+    },
+    {
+      "id": 155,
+      "start": 412.4,
+      "end": 415.28,
+      "text": "好像還跟好幾個投資人簡單",
+      "avg_logprob": -0.1715374304211303,
+      "no_speech_prob": 7.794882549205795e-05,
+      "compression_ratio": 1.2364864864864864
+    },
+    {
+      "id": 156,
+      "start": 415.28,
+      "end": 417.92,
+      "text": "因為那天好像是聖誕後吧",
+      "avg_logprob": -0.1715374304211303,
+      "no_speech_prob": 7.794882549205795e-05,
+      "compression_ratio": 1.2364864864864864
+    },
+    {
+      "id": 157,
+      "start": 417.92,
+      "end": 421.12,
+      "text": "聖誕後的那天跌了很凶",
+      "avg_logprob": -0.1715374304211303,
+      "no_speech_prob": 7.794882549205795e-05,
+      "compression_ratio": 1.2364864864864864
+    },
+    {
+      "id": 158,
+      "start": 421.12,
+      "end": 422.16,
+      "text": "所以好幾個投資人",
+      "avg_logprob": -0.17398405110552198,
+      "no_speech_prob": 0.00012691307347267866,
+      "compression_ratio": 1.3425196850393701
+    },
+    {
+      "id": 159,
+      "start": 422.16,
+      "end": 423.68,
+      "text": "我跟他也聊過幾個",
+      "avg_logprob": -0.17398405110552198,
+      "no_speech_prob": 0.00012691307347267866,
+      "compression_ratio": 1.3425196850393701
+    },
+    {
+      "id": 160,
+      "start": 423.68,
+      "end": 426.24,
+      "text": "就是說在聖誕期間這個市場",
+      "avg_logprob": -0.17398405110552198,
+      "no_speech_prob": 0.00012691307347267866,
+      "compression_ratio": 1.3425196850393701
+    },
+    {
+      "id": 161,
+      "start": 426.24,
+      "end": 427.52,
+      "text": "你可以不要去看它",
+      "avg_logprob": -0.17398405110552198,
+      "no_speech_prob": 0.00012691307347267866,
+      "compression_ratio": 1.3425196850393701
+    },
+    {
+      "id": 162,
+      "start": 427.52,
+      "end": 430.08,
+      "text": "因為它就是一個",
+      "avg_logprob": -0.17398405110552198,
+      "no_speech_prob": 0.00012691307347267866,
+      "compression_ratio": 1.3425196850393701
+    },
+    {
+      "id": 163,
+      "start": 430.08,
+      "end": 431.36,
+      "text": "這個價錢沒有意義",
+      "avg_logprob": -0.17398405110552198,
+      "no_speech_prob": 0.00012691307347267866,
+      "compression_ratio": 1.3425196850393701
+    },
+    {
+      "id": 164,
+      "start": 431.36,
+      "end": 433.12,
+      "text": "價錢帶上量才有意義",
+      "avg_logprob": -0.17398405110552198,
+      "no_speech_prob": 0.00012691307347267866,
+      "compression_ratio": 1.3425196850393701
+    },
+    {
+      "id": 165,
+      "start": 433.12,
+      "end": 433.92,
+      "text": "它沒有量",
+      "avg_logprob": -0.17398405110552198,
+      "no_speech_prob": 0.00012691307347267866,
+      "compression_ratio": 1.3425196850393701
+    },
+    {
+      "id": 166,
+      "start": 433.92,
+      "end": 434.96,
+      "text": "所以它就是擺個盤",
+      "avg_logprob": -0.17398405110552198,
+      "no_speech_prob": 0.00012691307347267866,
+      "compression_ratio": 1.3425196850393701
+    },
+    {
+      "id": 167,
+      "start": 434.96,
+      "end": 439.04,
+      "text": "往下跌一下之後還會反彈",
+      "avg_logprob": -0.17398405110552198,
+      "no_speech_prob": 0.00012691307347267866,
+      "compression_ratio": 1.3425196850393701
+    },
+    {
+      "id": 168,
+      "start": 439.04,
+      "end": 442.88,
+      "text": "那麼更大程度上是因為positioning",
+      "avg_logprob": -0.17398405110552198,
+      "no_speech_prob": 0.00012691307347267866,
+      "compression_ratio": 1.3425196850393701
+    },
+    {
+      "id": 169,
+      "start": 442.88,
+      "end": 445.44,
+      "text": "那麼但是我覺得",
+      "avg_logprob": -0.17398405110552198,
+      "no_speech_prob": 0.00012691307347267866,
+      "compression_ratio": 1.3425196850393701
+    },
+    {
+      "id": 170,
+      "start": 445.44,
+      "end": 446.96,
+      "text": "就新年",
+      "avg_logprob": -0.17398405110552198,
+      "no_speech_prob": 0.00012691307347267866,
+      "compression_ratio": 1.3425196850393701
+    },
+    {
+      "id": 171,
+      "start": 446.96,
+      "end": 449.04,
+      "text": "聖誕之後到新年",
+      "avg_logprob": -0.17398405110552198,
+      "no_speech_prob": 0.00012691307347267866,
+      "compression_ratio": 1.3425196850393701
+    },
+    {
+      "id": 172,
+      "start": 449.04,
+      "end": 451.6,
+      "text": "這一次的比較大的調整",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 173,
+      "start": 451.6,
+      "end": 452.88,
+      "text": "很短期的一個",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 174,
+      "start": 452.88,
+      "end": 454.16,
+      "text": "那天跌了很多",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 175,
+      "start": 454.16,
+      "end": 456.72,
+      "text": "那這樣一個幅度的調整",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 176,
+      "start": 456.72,
+      "end": 459.04,
+      "text": "其實對於美股是一個好事",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 177,
+      "start": 459.04,
+      "end": 460.56,
+      "text": "因為在這個調整中間",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 178,
+      "start": 460.56,
+      "end": 463.12,
+      "text": "把很多",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 179,
+      "start": 463.12,
+      "end": 464.4,
+      "text": "我們本來覺得",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 180,
+      "start": 464.4,
+      "end": 465.44,
+      "text": "倉位過重了",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 181,
+      "start": 465.44,
+      "end": 467.2,
+      "text": "就是美股倉位過重",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 182,
+      "start": 467.2,
+      "end": 468.24,
+      "text": "一直是美股",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 183,
+      "start": 468.24,
+      "end": 469.52,
+      "text": "我覺得是一個風險",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 184,
+      "start": 469.52,
+      "end": 472.08,
+      "text": "那麼把很多過重的倉位",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 185,
+      "start": 472.08,
+      "end": 474.0,
+      "text": "一定程度上清掉",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 186,
+      "start": 474.0,
+      "end": 476.56,
+      "text": "所以整個acquity selling",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 187,
+      "start": 476.56,
+      "end": 478.48,
+      "text": "在那一個星期",
+      "avg_logprob": -0.15378358764369993,
+      "no_speech_prob": 0.04457365721464157,
+      "compression_ratio": 1.3837209302325582
+    },
+    {
+      "id": 188,
+      "start": 478.48,
+      "end": 479.76,
+      "text": "大概是191",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 189,
+      "start": 479.76,
+      "end": 482.08,
+      "text": "那這中間有一些包括就年底的時候",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 190,
+      "start": 482.08,
+      "end": 483.04,
+      "text": "他們要挑倉",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 191,
+      "start": 483.04,
+      "end": 485.2,
+      "text": "要把那個only給realize出來",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 192,
+      "start": 485.2,
+      "end": 486.4,
+      "text": "要把only給弄出來",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 193,
+      "start": 486.4,
+      "end": 488.4,
+      "text": "然後也包括中間很多",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 194,
+      "start": 488.4,
+      "end": 490.24,
+      "text": "那個gamma的hatch",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 195,
+      "start": 490.24,
+      "end": 492.24,
+      "text": "gamma position of flip",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 196,
+      "start": 492.24,
+      "end": 494.72,
+      "text": "都包括大概出來",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 197,
+      "start": 494.72,
+      "end": 496.0,
+      "text": "大概191",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 198,
+      "start": 496.0,
+      "end": 496.88,
+      "text": "所以現在呢",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 199,
+      "start": 496.88,
+      "end": 498.24,
+      "text": "整個我們會看",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 200,
+      "start": 498.24,
+      "end": 500.48,
+      "text": "比在進入",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 201,
+      "start": 500.48,
+      "end": 501.92,
+      "text": "在我說有風險有風險",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 202,
+      "start": 501.92,
+      "end": 502.96,
+      "text": "大概是在這個時候吧",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 203,
+      "start": 502.96,
+      "end": 503.36,
+      "text": "對吧",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 204,
+      "start": 503.36,
+      "end": 504.72,
+      "text": "是在那個聖誕前",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 205,
+      "start": 504.72,
+      "end": 506.4,
+      "text": "比聖誕前的時候",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 206,
+      "start": 506.4,
+      "end": 508.0,
+      "text": "倉位稍微健康一點",
+      "avg_logprob": -0.24161979753450052,
+      "no_speech_prob": 0.010023526847362518,
+      "compression_ratio": 1.3573883161512028
+    },
+    {
+      "id": 207,
+      "start": 508.4,
+      "end": 509.28,
+      "text": "這個是",
+      "avg_logprob": -0.24596351433972843,
+      "no_speech_prob": 0.0021468065679073334,
+      "compression_ratio": 1.2727272727272727
+    },
+    {
+      "id": 208,
+      "start": 509.28,
+      "end": 511.6,
+      "text": "這個是市場一個大事的一個情況",
+      "avg_logprob": -0.24596351433972843,
+      "no_speech_prob": 0.0021468065679073334,
+      "compression_ratio": 1.2727272727272727
+    },
+    {
+      "id": 209,
+      "start": 511.6,
+      "end": 515.28,
+      "text": "那麼這個股票的下跌",
+      "avg_logprob": -0.24596351433972843,
+      "no_speech_prob": 0.0021468065679073334,
+      "compression_ratio": 1.2727272727272727
+    },
+    {
+      "id": 210,
+      "start": 515.28,
+      "end": 516.32,
+      "text": "並沒有就包括",
+      "avg_logprob": -0.24596351433972843,
+      "no_speech_prob": 0.0021468065679073334,
+      "compression_ratio": 1.2727272727272727
+    },
+    {
+      "id": 211,
+      "start": 516.32,
+      "end": 517.12,
+      "text": "gamma的",
+      "avg_logprob": -0.24596351433972843,
+      "no_speech_prob": 0.0021468065679073334,
+      "compression_ratio": 1.2727272727272727
+    },
+    {
+      "id": 212,
+      "start": 517.12,
+      "end": 518.64,
+      "text": "gamma投存的變化",
+      "avg_logprob": -0.24596351433972843,
+      "no_speech_prob": 0.0021468065679073334,
+      "compression_ratio": 1.2727272727272727
+    },
+    {
+      "id": 213,
+      "start": 518.64,
+      "end": 519.92,
+      "text": "並沒有完全導致",
+      "avg_logprob": -0.24596351433972843,
+      "no_speech_prob": 0.0021468065679073334,
+      "compression_ratio": 1.2727272727272727
+    },
+    {
+      "id": 214,
+      "start": 519.92,
+      "end": 523.44,
+      "text": "cta去大規模的拋敗",
+      "avg_logprob": -0.24596351433972843,
+      "no_speech_prob": 0.0021468065679073334,
+      "compression_ratio": 1.2727272727272727
+    },
+    {
+      "id": 215,
+      "start": 523.44,
+      "end": 525.44,
+      "text": "然後昨天和今天兩天的走勢",
+      "avg_logprob": -0.24596351433972843,
+      "no_speech_prob": 0.0021468065679073334,
+      "compression_ratio": 1.2727272727272727
+    },
+    {
+      "id": 216,
+      "start": 525.44,
+      "end": 527.12,
+      "text": "可能會讓cta再買回來",
+      "avg_logprob": -0.24596351433972843,
+      "no_speech_prob": 0.0021468065679073334,
+      "compression_ratio": 1.2727272727272727
+    },
+    {
+      "id": 217,
+      "start": 527.12,
+      "end": 529.28,
+      "text": "所以總體來說",
+      "avg_logprob": -0.24596351433972843,
+      "no_speech_prob": 0.0021468065679073334,
+      "compression_ratio": 1.2727272727272727
+    },
+    {
+      "id": 218,
+      "start": 529.28,
+      "end": 531.68,
+      "text": "我們看到看年的這個情況",
+      "avg_logprob": -0.24596351433972843,
+      "no_speech_prob": 0.0021468065679073334,
+      "compression_ratio": 1.2727272727272727
+    },
+    {
+      "id": 219,
+      "start": 531.68,
+      "end": 535.6,
+      "text": "在這個短期的tactic",
+      "avg_logprob": -0.24596351433972843,
+      "no_speech_prob": 0.0021468065679073334,
+      "compression_ratio": 1.2727272727272727
+    },
+    {
+      "id": 220,
+      "start": 535.6,
+      "end": 536.4,
+      "text": "不能說太遠",
+      "avg_logprob": -0.24596351433972843,
+      "no_speech_prob": 0.0021468065679073334,
+      "compression_ratio": 1.2727272727272727
+    },
+    {
+      "id": 221,
+      "start": 536.4,
+      "end": 538.0,
+      "text": "就是沒人看得準",
+      "avg_logprob": -0.22550518459420862,
+      "no_speech_prob": 0.0008092161151580513,
+      "compression_ratio": 1.2758620689655173
+    },
+    {
+      "id": 222,
+      "start": 538.0,
+      "end": 539.76,
+      "text": "但是tactic上來看",
+      "avg_logprob": -0.22550518459420862,
+      "no_speech_prob": 0.0008092161151580513,
+      "compression_ratio": 1.2758620689655173
+    },
+    {
+      "id": 223,
+      "start": 539.76,
+      "end": 543.76,
+      "text": "我覺得在trump上任之前",
+      "avg_logprob": -0.22550518459420862,
+      "no_speech_prob": 0.0008092161151580513,
+      "compression_ratio": 1.2758620689655173
+    },
+    {
+      "id": 224,
+      "start": 543.76,
+      "end": 545.2,
+      "text": "市場應該還算不錯",
+      "avg_logprob": -0.22550518459420862,
+      "no_speech_prob": 0.0008092161151580513,
+      "compression_ratio": 1.2758620689655173
+    },
+    {
+      "id": 225,
+      "start": 545.2,
+      "end": 548.24,
+      "text": "這就跟我們上一次講的比較",
+      "avg_logprob": -0.22550518459420862,
+      "no_speech_prob": 0.0008092161151580513,
+      "compression_ratio": 1.2758620689655173
+    },
+    {
+      "id": 226,
+      "start": 548.24,
+      "end": 549.6,
+      "text": "比較一致",
+      "avg_logprob": -0.22550518459420862,
+      "no_speech_prob": 0.0008092161151580513,
+      "compression_ratio": 1.2758620689655173
+    },
+    {
+      "id": 227,
+      "start": 549.6,
+      "end": 552.4,
+      "text": "就是1月前兩星期",
+      "avg_logprob": -0.22550518459420862,
+      "no_speech_prob": 0.0008092161151580513,
+      "compression_ratio": 1.2758620689655173
+    },
+    {
+      "id": 228,
+      "start": 552.4,
+      "end": 555.2,
+      "text": "通常都是不少基金",
+      "avg_logprob": -0.22550518459420862,
+      "no_speech_prob": 0.0008092161151580513,
+      "compression_ratio": 1.2758620689655173
+    },
+    {
+      "id": 229,
+      "start": 555.2,
+      "end": 557.76,
+      "text": "在新年的時候",
+      "avg_logprob": -0.22550518459420862,
+      "no_speech_prob": 0.0008092161151580513,
+      "compression_ratio": 1.2758620689655173
+    },
+    {
+      "id": 230,
+      "start": 557.76,
+      "end": 558.88,
+      "text": "他會把投存清掉",
+      "avg_logprob": -0.22550518459420862,
+      "no_speech_prob": 0.0008092161151580513,
+      "compression_ratio": 1.2758620689655173
+    },
+    {
+      "id": 231,
+      "start": 558.88,
+      "end": 560.56,
+      "text": "然後前一兩星期",
+      "avg_logprob": -0.22550518459420862,
+      "no_speech_prob": 0.0008092161151580513,
+      "compression_ratio": 1.2758620689655173
+    },
+    {
+      "id": 232,
+      "start": 560.56,
+      "end": 562.4,
+      "text": "都是重新配置的一兩星期",
+      "avg_logprob": -0.22550518459420862,
+      "no_speech_prob": 0.0008092161151580513,
+      "compression_ratio": 1.2758620689655173
+    },
+    {
+      "id": 233,
+      "start": 562.4,
+      "end": 563.84,
+      "text": "基本上基金流露會",
+      "avg_logprob": -0.22550518459420862,
+      "no_speech_prob": 0.0008092161151580513,
+      "compression_ratio": 1.2758620689655173
+    },
+    {
+      "id": 234,
+      "start": 563.84,
+      "end": 565.2,
+      "text": "相對來說比較多一點",
+      "avg_logprob": -0.22550518459420862,
+      "no_speech_prob": 0.0008092161151580513,
+      "compression_ratio": 1.2758620689655173
+    },
+    {
+      "id": 235,
+      "start": 565.2,
+      "end": 570.24,
+      "text": "那麼我們從很短期的tactic上來看",
+      "avg_logprob": -0.199133376109189,
+      "no_speech_prob": 0.0007916827453300357,
+      "compression_ratio": 1.2958333333333334
+    },
+    {
+      "id": 236,
+      "start": 570.24,
+      "end": 573.76,
+      "text": "可能還是等特朗普上台",
+      "avg_logprob": -0.199133376109189,
+      "no_speech_prob": 0.0007916827453300357,
+      "compression_ratio": 1.2958333333333334
+    },
+    {
+      "id": 237,
+      "start": 573.76,
+      "end": 574.48,
+      "text": "看他的政策",
+      "avg_logprob": -0.199133376109189,
+      "no_speech_prob": 0.0007916827453300357,
+      "compression_ratio": 1.2958333333333334
+    },
+    {
+      "id": 238,
+      "start": 574.48,
+      "end": 576.48,
+      "text": "其實大家都還在看他的政策",
+      "avg_logprob": -0.199133376109189,
+      "no_speech_prob": 0.0007916827453300357,
+      "compression_ratio": 1.2958333333333334
+    },
+    {
+      "id": 239,
+      "start": 576.48,
+      "end": 578.32,
+      "text": "那麼今年政策面",
+      "avg_logprob": -0.199133376109189,
+      "no_speech_prob": 0.0007916827453300357,
+      "compression_ratio": 1.2958333333333334
+    },
+    {
+      "id": 240,
+      "start": 578.32,
+      "end": 580.56,
+      "text": "影響會非常大",
+      "avg_logprob": -0.199133376109189,
+      "no_speech_prob": 0.0007916827453300357,
+      "compression_ratio": 1.2958333333333334
+    },
+    {
+      "id": 241,
+      "start": 580.56,
+      "end": 582.0,
+      "text": "那麼這是一個",
+      "avg_logprob": -0.199133376109189,
+      "no_speech_prob": 0.0007916827453300357,
+      "compression_ratio": 1.2958333333333334
+    },
+    {
+      "id": 242,
+      "start": 582.0,
+      "end": 585.52,
+      "text": "然後第二就是我們看到",
+      "avg_logprob": -0.199133376109189,
+      "no_speech_prob": 0.0007916827453300357,
+      "compression_ratio": 1.2958333333333334
+    },
+    {
+      "id": 243,
+      "start": 585.52,
+      "end": 586.64,
+      "text": "其實比較重要的是",
+      "avg_logprob": -0.199133376109189,
+      "no_speech_prob": 0.0007916827453300357,
+      "compression_ratio": 1.2958333333333334
+    },
+    {
+      "id": 244,
+      "start": 586.64,
+      "end": 587.92,
+      "text": "我想說的是fx",
+      "avg_logprob": -0.199133376109189,
+      "no_speech_prob": 0.0007916827453300357,
+      "compression_ratio": 1.2958333333333334
+    },
+    {
+      "id": 245,
+      "start": 587.92,
+      "end": 589.04,
+      "text": "外匯",
+      "avg_logprob": -0.199133376109189,
+      "no_speech_prob": 0.0007916827453300357,
+      "compression_ratio": 1.2958333333333334
+    },
+    {
+      "id": 246,
+      "start": 589.04,
+      "end": 592.0,
+      "text": "外匯的破位是",
+      "avg_logprob": -0.199133376109189,
+      "no_speech_prob": 0.0007916827453300357,
+      "compression_ratio": 1.2958333333333334
+    },
+    {
+      "id": 247,
+      "start": 592.0,
+      "end": 595.12,
+      "text": "日元歐元、人民幣都在破位",
+      "avg_logprob": -0.199133376109189,
+      "no_speech_prob": 0.0007916827453300357,
+      "compression_ratio": 1.2958333333333334
+    },
+    {
+      "id": 248,
+      "start": 595.12,
+      "end": 596.24,
+      "text": "在過去一個月裡面",
+      "avg_logprob": -0.2070328728719191,
+      "no_speech_prob": 0.0026943169068545103,
+      "compression_ratio": 1.3134796238244515
+    },
+    {
+      "id": 249,
+      "start": 596.24,
+      "end": 598.8,
+      "text": "其實突破了過去挺長時間",
+      "avg_logprob": -0.2070328728719191,
+      "no_speech_prob": 0.0026943169068545103,
+      "compression_ratio": 1.3134796238244515
+    },
+    {
+      "id": 250,
+      "start": 598.8,
+      "end": 601.36,
+      "text": "一段時間的range bond的空間",
+      "avg_logprob": -0.2070328728719191,
+      "no_speech_prob": 0.0026943169068545103,
+      "compression_ratio": 1.3134796238244515
+    },
+    {
+      "id": 251,
+      "start": 601.36,
+      "end": 603.84,
+      "text": "所以我們會看到美元走強",
+      "avg_logprob": -0.2070328728719191,
+      "no_speech_prob": 0.0026943169068545103,
+      "compression_ratio": 1.3134796238244515
+    },
+    {
+      "id": 252,
+      "start": 603.84,
+      "end": 606.16,
+      "text": "美元走強對於所有風險資產",
+      "avg_logprob": -0.2070328728719191,
+      "no_speech_prob": 0.0026943169068545103,
+      "compression_ratio": 1.3134796238244515
+    },
+    {
+      "id": 253,
+      "start": 606.16,
+      "end": 607.52,
+      "text": "都不是一個特別好的事情",
+      "avg_logprob": -0.2070328728719191,
+      "no_speech_prob": 0.0026943169068545103,
+      "compression_ratio": 1.3134796238244515
+    },
+    {
+      "id": 254,
+      "start": 607.52,
+      "end": 609.84,
+      "text": "那麼這背後的原因",
+      "avg_logprob": -0.2070328728719191,
+      "no_speech_prob": 0.0026943169068545103,
+      "compression_ratio": 1.3134796238244515
+    },
+    {
+      "id": 255,
+      "start": 609.84,
+      "end": 613.2,
+      "text": "其實也是年底的position",
+      "avg_logprob": -0.2070328728719191,
+      "no_speech_prob": 0.0026943169068545103,
+      "compression_ratio": 1.3134796238244515
+    },
+    {
+      "id": 256,
+      "start": 613.2,
+      "end": 615.76,
+      "text": "因為其實在trump剛剛選上的時候",
+      "avg_logprob": -0.2070328728719191,
+      "no_speech_prob": 0.0026943169068545103,
+      "compression_ratio": 1.3134796238244515
+    },
+    {
+      "id": 257,
+      "start": 615.76,
+      "end": 617.36,
+      "text": "就有不少對沖基金",
+      "avg_logprob": -0.2070328728719191,
+      "no_speech_prob": 0.0026943169068545103,
+      "compression_ratio": 1.3134796238244515
+    },
+    {
+      "id": 258,
+      "start": 617.36,
+      "end": 618.72,
+      "text": "他們都買了很多",
+      "avg_logprob": -0.2070328728719191,
+      "no_speech_prob": 0.0026943169068545103,
+      "compression_ratio": 1.3134796238244515
+    },
+    {
+      "id": 259,
+      "start": 618.72,
+      "end": 619.84,
+      "text": "就是long dollar option",
+      "avg_logprob": -0.2070328728719191,
+      "no_speech_prob": 0.0026943169068545103,
+      "compression_ratio": 1.3134796238244515
+    },
+    {
+      "id": 260,
+      "start": 619.84,
+      "end": 622.72,
+      "text": "就是買看多美元的期權",
+      "avg_logprob": -0.2070328728719191,
+      "no_speech_prob": 0.0026943169068545103,
+      "compression_ratio": 1.3134796238244515
+    },
+    {
+      "id": 261,
+      "start": 622.72,
+      "end": 624.4,
+      "text": "各種各樣的看多美元期權",
+      "avg_logprob": -0.2070328728719191,
+      "no_speech_prob": 0.0026943169068545103,
+      "compression_ratio": 1.3134796238244515
+    },
+    {
+      "id": 262,
+      "start": 624.48,
+      "end": 626.56,
+      "text": "那麼這個有中間很多代結構",
+      "avg_logprob": -0.20725355152603533,
+      "no_speech_prob": 0.00027828250313177705,
+      "compression_ratio": 1.332167832167832
+    },
+    {
+      "id": 263,
+      "start": 626.56,
+      "end": 628.16,
+      "text": "那麼在年底的時候",
+      "avg_logprob": -0.20725355152603533,
+      "no_speech_prob": 0.00027828250313177705,
+      "compression_ratio": 1.332167832167832
+    },
+    {
+      "id": 264,
+      "start": 628.16,
+      "end": 629.6,
+      "text": "因為頭寸比較輕",
+      "avg_logprob": -0.20725355152603533,
+      "no_speech_prob": 0.00027828250313177705,
+      "compression_ratio": 1.332167832167832
+    },
+    {
+      "id": 265,
+      "start": 629.6,
+      "end": 631.84,
+      "text": "然後市場流動性比較差",
+      "avg_logprob": -0.20725355152603533,
+      "no_speech_prob": 0.00027828250313177705,
+      "compression_ratio": 1.332167832167832
+    },
+    {
+      "id": 266,
+      "start": 631.84,
+      "end": 633.52,
+      "text": "所以一旦上漲的時候",
+      "avg_logprob": -0.20725355152603533,
+      "no_speech_prob": 0.00027828250313177705,
+      "compression_ratio": 1.332167832167832
+    },
+    {
+      "id": 267,
+      "start": 633.52,
+      "end": 636.24,
+      "text": "他就把很多option的barrel給計穿了",
+      "avg_logprob": -0.20725355152603533,
+      "no_speech_prob": 0.00027828250313177705,
+      "compression_ratio": 1.332167832167832
+    },
+    {
+      "id": 268,
+      "start": 636.24,
+      "end": 638.24,
+      "text": "每次計穿option barrel這些",
+      "avg_logprob": -0.20725355152603533,
+      "no_speech_prob": 0.00027828250313177705,
+      "compression_ratio": 1.332167832167832
+    },
+    {
+      "id": 269,
+      "start": 638.24,
+      "end": 640.48,
+      "text": "你就相當於想把gama war給計穿了",
+      "avg_logprob": -0.20725355152603533,
+      "no_speech_prob": 0.00027828250313177705,
+      "compression_ratio": 1.332167832167832
+    },
+    {
+      "id": 270,
+      "start": 640.48,
+      "end": 643.76,
+      "text": "計穿之後市場就會順著那個方向",
+      "avg_logprob": -0.20725355152603533,
+      "no_speech_prob": 0.00027828250313177705,
+      "compression_ratio": 1.332167832167832
+    },
+    {
+      "id": 271,
+      "start": 643.76,
+      "end": 646.4,
+      "text": "繼續大幅的往上漲",
+      "avg_logprob": -0.20725355152603533,
+      "no_speech_prob": 0.00027828250313177705,
+      "compression_ratio": 1.332167832167832
+    },
+    {
+      "id": 272,
+      "start": 646.4,
+      "end": 650.8,
+      "text": "所以美元在去年底到今年",
+      "avg_logprob": -0.20725355152603533,
+      "no_speech_prob": 0.00027828250313177705,
+      "compression_ratio": 1.332167832167832
+    },
+    {
+      "id": 273,
+      "start": 650.8,
+      "end": 652.8,
+      "text": "就今年初之前漲了不少",
+      "avg_logprob": -0.20725355152603533,
+      "no_speech_prob": 0.00027828250313177705,
+      "compression_ratio": 1.332167832167832
+    },
+    {
+      "id": 274,
+      "start": 652.8,
+      "end": 654.24,
+      "text": "那麼這個漲幅",
+      "avg_logprob": -0.2424591304981603,
+      "no_speech_prob": 0.0005805722903460264,
+      "compression_ratio": 1.195729537366548
+    },
+    {
+      "id": 275,
+      "start": 654.24,
+      "end": 658.4,
+      "text": "我覺得是somehow是可以延續的",
+      "avg_logprob": -0.2424591304981603,
+      "no_speech_prob": 0.0005805722903460264,
+      "compression_ratio": 1.195729537366548
+    },
+    {
+      "id": 276,
+      "start": 658.4,
+      "end": 659.84,
+      "text": "為什麼",
+      "avg_logprob": -0.2424591304981603,
+      "no_speech_prob": 0.0005805722903460264,
+      "compression_ratio": 1.195729537366548
+    },
+    {
+      "id": 277,
+      "start": 659.84,
+      "end": 664.0,
+      "text": "因為我們已經在flow上",
+      "avg_logprob": -0.2424591304981603,
+      "no_speech_prob": 0.0005805722903460264,
+      "compression_ratio": 1.195729537366548
+    },
+    {
+      "id": 278,
+      "start": 664.0,
+      "end": 665.84,
+      "text": "可以看到不少real money",
+      "avg_logprob": -0.2424591304981603,
+      "no_speech_prob": 0.0005805722903460264,
+      "compression_ratio": 1.195729537366548
+    },
+    {
+      "id": 279,
+      "start": 665.84,
+      "end": 667.44,
+      "text": "因為前一段時間的上漲",
+      "avg_logprob": -0.2424591304981603,
+      "no_speech_prob": 0.0005805722903460264,
+      "compression_ratio": 1.195729537366548
+    },
+    {
+      "id": 280,
+      "start": 667.44,
+      "end": 668.8,
+      "text": "更多的是hatch fund",
+      "avg_logprob": -0.2424591304981603,
+      "no_speech_prob": 0.0005805722903460264,
+      "compression_ratio": 1.195729537366548
+    },
+    {
+      "id": 281,
+      "start": 668.8,
+      "end": 669.76,
+      "text": "我們叫leverage money",
+      "avg_logprob": -0.2424591304981603,
+      "no_speech_prob": 0.0005805722903460264,
+      "compression_ratio": 1.195729537366548
+    },
+    {
+      "id": 282,
+      "start": 669.76,
+      "end": 671.76,
+      "text": "就槓桿錢在拉動",
+      "avg_logprob": -0.2424591304981603,
+      "no_speech_prob": 0.0005805722903460264,
+      "compression_ratio": 1.195729537366548
+    },
+    {
+      "id": 283,
+      "start": 671.76,
+      "end": 676.32,
+      "text": "但是real money已經開始stopping to long dollar",
+      "avg_logprob": -0.2424591304981603,
+      "no_speech_prob": 0.0005805722903460264,
+      "compression_ratio": 1.195729537366548
+    },
+    {
+      "id": 284,
+      "start": 676.32,
+      "end": 680.24,
+      "text": "就是說他們被迫的去做多美元",
+      "avg_logprob": -0.2424591304981603,
+      "no_speech_prob": 0.0005805722903460264,
+      "compression_ratio": 1.195729537366548
+    },
+    {
+      "id": 285,
+      "start": 680.24,
+      "end": 682.4,
+      "text": "包括有很多外貿的資金",
+      "avg_logprob": -0.2424591304981603,
+      "no_speech_prob": 0.0005805722903460264,
+      "compression_ratio": 1.195729537366548
+    },
+    {
+      "id": 286,
+      "start": 682.4,
+      "end": 684.96,
+      "text": "他們開始減少美元的對沖",
+      "avg_logprob": -0.19446327277119196,
+      "no_speech_prob": 0.006475161295384169,
+      "compression_ratio": 1.4251012145748987
+    },
+    {
+      "id": 287,
+      "start": 684.96,
+      "end": 686.88,
+      "text": "那麼在歐洲在日本",
+      "avg_logprob": -0.19446327277119196,
+      "no_speech_prob": 0.006475161295384169,
+      "compression_ratio": 1.4251012145748987
+    },
+    {
+      "id": 288,
+      "start": 686.88,
+      "end": 689.6,
+      "text": "在中國其實美元對沖已經一直比較少",
+      "avg_logprob": -0.19446327277119196,
+      "no_speech_prob": 0.006475161295384169,
+      "compression_ratio": 1.4251012145748987
+    },
+    {
+      "id": 289,
+      "start": 689.6,
+      "end": 692.64,
+      "text": "但是在歐洲在日本或者是在其他地方",
+      "avg_logprob": -0.19446327277119196,
+      "no_speech_prob": 0.006475161295384169,
+      "compression_ratio": 1.4251012145748987
+    },
+    {
+      "id": 290,
+      "start": 692.64,
+      "end": 695.68,
+      "text": "這些美元對沖的減少已經比較明顯",
+      "avg_logprob": -0.19446327277119196,
+      "no_speech_prob": 0.006475161295384169,
+      "compression_ratio": 1.4251012145748987
+    },
+    {
+      "id": 291,
+      "start": 695.68,
+      "end": 698.08,
+      "text": "現在這個幅度是不是說",
+      "avg_logprob": -0.19446327277119196,
+      "no_speech_prob": 0.006475161295384169,
+      "compression_ratio": 1.4251012145748987
+    },
+    {
+      "id": 292,
+      "start": 698.08,
+      "end": 699.44,
+      "text": "美元已經漲到頂",
+      "avg_logprob": -0.19446327277119196,
+      "no_speech_prob": 0.006475161295384169,
+      "compression_ratio": 1.4251012145748987
+    },
+    {
+      "id": 293,
+      "start": 699.44,
+      "end": 700.56,
+      "text": "其實我覺得沒有",
+      "avg_logprob": -0.19446327277119196,
+      "no_speech_prob": 0.006475161295384169,
+      "compression_ratio": 1.4251012145748987
+    },
+    {
+      "id": 294,
+      "start": 700.56,
+      "end": 701.84,
+      "text": "舉個例子",
+      "avg_logprob": -0.19446327277119196,
+      "no_speech_prob": 0.006475161295384169,
+      "compression_ratio": 1.4251012145748987
+    },
+    {
+      "id": 295,
+      "start": 701.84,
+      "end": 705.6,
+      "text": "我們看到歐元對美元的implial",
+      "avg_logprob": -0.19446327277119196,
+      "no_speech_prob": 0.006475161295384169,
+      "compression_ratio": 1.4251012145748987
+    },
+    {
+      "id": 296,
+      "start": 705.6,
+      "end": 707.36,
+      "text": "大概從3個月implial",
+      "avg_logprob": -0.19446327277119196,
+      "no_speech_prob": 0.006475161295384169,
+      "compression_ratio": 1.4251012145748987
+    },
+    {
+      "id": 297,
+      "start": 707.36,
+      "end": 709.28,
+      "text": "從6%到8%",
+      "avg_logprob": -0.19446327277119196,
+      "no_speech_prob": 0.006475161295384169,
+      "compression_ratio": 1.4251012145748987
+    },
+    {
+      "id": 298,
+      "start": 709.36,
+      "end": 713.12,
+      "text": "然後8%其實相比",
+      "avg_logprob": -0.17464740975545004,
+      "no_speech_prob": 0.0014864058466628194,
+      "compression_ratio": 1.3178571428571428
+    },
+    {
+      "id": 299,
+      "start": 713.12,
+      "end": 715.36,
+      "text": "川普上一屆搞貿易戰什麼的時候",
+      "avg_logprob": -0.17464740975545004,
+      "no_speech_prob": 0.0014864058466628194,
+      "compression_ratio": 1.3178571428571428
+    },
+    {
+      "id": 300,
+      "start": 715.36,
+      "end": 717.2,
+      "text": "那有時候可能是到了10%",
+      "avg_logprob": -0.17464740975545004,
+      "no_speech_prob": 0.0014864058466628194,
+      "compression_ratio": 1.3178571428571428
+    },
+    {
+      "id": 301,
+      "start": 717.2,
+      "end": 718.24,
+      "text": "10%",
+      "avg_logprob": -0.17464740975545004,
+      "no_speech_prob": 0.0014864058466628194,
+      "compression_ratio": 1.3178571428571428
+    },
+    {
+      "id": 302,
+      "start": 718.24,
+      "end": 720.4,
+      "text": "所以我們只是說",
+      "avg_logprob": -0.17464740975545004,
+      "no_speech_prob": 0.0014864058466628194,
+      "compression_ratio": 1.3178571428571428
+    },
+    {
+      "id": 303,
+      "start": 720.4,
+      "end": 724.0,
+      "text": "fxball在過去一段時間裡面",
+      "avg_logprob": -0.17464740975545004,
+      "no_speech_prob": 0.0014864058466628194,
+      "compression_ratio": 1.3178571428571428
+    },
+    {
+      "id": 304,
+      "start": 724.0,
+      "end": 726.08,
+      "text": "就是去年的時候",
+      "avg_logprob": -0.17464740975545004,
+      "no_speech_prob": 0.0014864058466628194,
+      "compression_ratio": 1.3178571428571428
+    },
+    {
+      "id": 305,
+      "start": 726.08,
+      "end": 728.8,
+      "text": "去年相當長的一段時間裡面",
+      "avg_logprob": -0.17464740975545004,
+      "no_speech_prob": 0.0014864058466628194,
+      "compression_ratio": 1.3178571428571428
+    },
+    {
+      "id": 306,
+      "start": 728.8,
+      "end": 730.48,
+      "text": "還是在一個非常低的位置",
+      "avg_logprob": -0.17464740975545004,
+      "no_speech_prob": 0.0014864058466628194,
+      "compression_ratio": 1.3178571428571428
+    },
+    {
+      "id": 307,
+      "start": 730.48,
+      "end": 732.32,
+      "text": "就是說我們市場開始",
+      "avg_logprob": -0.17464740975545004,
+      "no_speech_prob": 0.0014864058466628194,
+      "compression_ratio": 1.3178571428571428
+    },
+    {
+      "id": 308,
+      "start": 732.32,
+      "end": 734.64,
+      "text": "終於開始在特朗普要上台的時候",
+      "avg_logprob": -0.17464740975545004,
+      "no_speech_prob": 0.0014864058466628194,
+      "compression_ratio": 1.3178571428571428
+    },
+    {
+      "id": 309,
+      "start": 734.64,
+      "end": 735.68,
+      "text": "開始pricing",
+      "avg_logprob": -0.17464740975545004,
+      "no_speech_prob": 0.0014864058466628194,
+      "compression_ratio": 1.3178571428571428
+    },
+    {
+      "id": 310,
+      "start": 735.68,
+      "end": 737.2,
+      "text": "外匯可能會波動",
+      "avg_logprob": -0.17464740975545004,
+      "no_speech_prob": 0.0014864058466628194,
+      "compression_ratio": 1.3178571428571428
+    },
+    {
+      "id": 311,
+      "start": 737.2,
+      "end": 738.64,
+      "text": "那麼這個外匯的波動",
+      "avg_logprob": -0.17464740975545004,
+      "no_speech_prob": 0.0014864058466628194,
+      "compression_ratio": 1.3178571428571428
+    },
+    {
+      "id": 312,
+      "start": 738.64,
+      "end": 741.68,
+      "text": "一方面對應的特朗普可能會有的",
+      "avg_logprob": -0.27218355873758476,
+      "no_speech_prob": 0.004804076161235571,
+      "compression_ratio": 1.3611111111111112
+    },
+    {
+      "id": 313,
+      "start": 741.68,
+      "end": 743.28,
+      "text": "這個tariff",
+      "avg_logprob": -0.27218355873758476,
+      "no_speech_prob": 0.004804076161235571,
+      "compression_ratio": 1.3611111111111112
+    },
+    {
+      "id": 314,
+      "start": 743.28,
+      "end": 746.08,
+      "text": "就是那個外貿關稅的政策",
+      "avg_logprob": -0.27218355873758476,
+      "no_speech_prob": 0.004804076161235571,
+      "compression_ratio": 1.3611111111111112
+    },
+    {
+      "id": 315,
+      "start": 746.08,
+      "end": 747.36,
+      "text": "那麼另一方面",
+      "avg_logprob": -0.27218355873758476,
+      "no_speech_prob": 0.004804076161235571,
+      "compression_ratio": 1.3611111111111112
+    },
+    {
+      "id": 316,
+      "start": 747.36,
+      "end": 749.36,
+      "text": "還是對應的歐洲和美國",
+      "avg_logprob": -0.27218355873758476,
+      "no_speech_prob": 0.004804076161235571,
+      "compression_ratio": 1.3611111111111112
+    },
+    {
+      "id": 317,
+      "start": 749.36,
+      "end": 750.8,
+      "text": "就從主線來講",
+      "avg_logprob": -0.27218355873758476,
+      "no_speech_prob": 0.004804076161235571,
+      "compression_ratio": 1.3611111111111112
+    },
+    {
+      "id": 318,
+      "start": 750.8,
+      "end": 752.0,
+      "text": "tail risk不算",
+      "avg_logprob": -0.27218355873758476,
+      "no_speech_prob": 0.004804076161235571,
+      "compression_ratio": 1.3611111111111112
+    },
+    {
+      "id": 319,
+      "start": 752.0,
+      "end": 753.2,
+      "text": "從主線來講",
+      "avg_logprob": -0.27218355873758476,
+      "no_speech_prob": 0.004804076161235571,
+      "compression_ratio": 1.3611111111111112
+    },
+    {
+      "id": 320,
+      "start": 753.2,
+      "end": 755.92,
+      "text": "歐洲和美國或者是中國和美國的",
+      "avg_logprob": -0.27218355873758476,
+      "no_speech_prob": 0.004804076161235571,
+      "compression_ratio": 1.3611111111111112
+    },
+    {
+      "id": 321,
+      "start": 755.92,
+      "end": 757.52,
+      "text": "這個",
+      "avg_logprob": -0.27218355873758476,
+      "no_speech_prob": 0.004804076161235571,
+      "compression_ratio": 1.3611111111111112
+    },
+    {
+      "id": 322,
+      "start": 757.52,
+      "end": 759.12,
+      "text": "divergence",
+      "avg_logprob": -0.27218355873758476,
+      "no_speech_prob": 0.004804076161235571,
+      "compression_ratio": 1.3611111111111112
+    },
+    {
+      "id": 323,
+      "start": 759.12,
+      "end": 762.72,
+      "text": "就是他們的這個分分離不同",
+      "avg_logprob": -0.27218355873758476,
+      "no_speech_prob": 0.004804076161235571,
+      "compression_ratio": 1.3611111111111112
+    },
+    {
+      "id": 324,
+      "start": 762.72,
+      "end": 765.2,
+      "text": "那麼在歐洲來看的話",
+      "avg_logprob": -0.27218355873758476,
+      "no_speech_prob": 0.004804076161235571,
+      "compression_ratio": 1.3611111111111112
+    },
+    {
+      "id": 325,
+      "start": 765.2,
+      "end": 767.52,
+      "text": "我們會看到它經濟會變得更差",
+      "avg_logprob": -0.27218355873758476,
+      "no_speech_prob": 0.004804076161235571,
+      "compression_ratio": 1.3611111111111112
+    },
+    {
+      "id": 326,
+      "start": 767.6,
+      "end": 770.08,
+      "text": "所以三月份的時候",
+      "avg_logprob": -0.17494560213703098,
+      "no_speech_prob": 0.00022473002900369465,
+      "compression_ratio": 1.3015267175572518
+    },
+    {
+      "id": 327,
+      "start": 770.08,
+      "end": 771.36,
+      "text": "有可能我們會看到",
+      "avg_logprob": -0.17494560213703098,
+      "no_speech_prob": 0.00022473002900369465,
+      "compression_ratio": 1.3015267175572518
+    },
+    {
+      "id": 328,
+      "start": 771.36,
+      "end": 772.88,
+      "text": "美聯儲停止降息",
+      "avg_logprob": -0.17494560213703098,
+      "no_speech_prob": 0.00022473002900369465,
+      "compression_ratio": 1.3015267175572518
+    },
+    {
+      "id": 329,
+      "start": 772.88,
+      "end": 774.72,
+      "text": "然後歐洲會繼續降息",
+      "avg_logprob": -0.17494560213703098,
+      "no_speech_prob": 0.00022473002900369465,
+      "compression_ratio": 1.3015267175572518
+    },
+    {
+      "id": 330,
+      "start": 774.72,
+      "end": 776.72,
+      "text": "然後英國可能會再降息",
+      "avg_logprob": -0.17494560213703098,
+      "no_speech_prob": 0.00022473002900369465,
+      "compression_ratio": 1.3015267175572518
+    },
+    {
+      "id": 331,
+      "start": 776.72,
+      "end": 778.88,
+      "text": "所以你看到就是說",
+      "avg_logprob": -0.17494560213703098,
+      "no_speech_prob": 0.00022473002900369465,
+      "compression_ratio": 1.3015267175572518
+    },
+    {
+      "id": 332,
+      "start": 778.88,
+      "end": 783.28,
+      "text": "歐中央行和英格蘭銀行",
+      "avg_logprob": -0.17494560213703098,
+      "no_speech_prob": 0.00022473002900369465,
+      "compression_ratio": 1.3015267175572518
+    },
+    {
+      "id": 333,
+      "start": 783.28,
+      "end": 785.84,
+      "text": "它對於美聯儲的",
+      "avg_logprob": -0.17494560213703098,
+      "no_speech_prob": 0.00022473002900369465,
+      "compression_ratio": 1.3015267175572518
+    },
+    {
+      "id": 334,
+      "start": 785.84,
+      "end": 787.68,
+      "text": "貨幣政策的divergence",
+      "avg_logprob": -0.17494560213703098,
+      "no_speech_prob": 0.00022473002900369465,
+      "compression_ratio": 1.3015267175572518
+    },
+    {
+      "id": 335,
+      "start": 787.68,
+      "end": 789.12,
+      "text": "也是會存在",
+      "avg_logprob": -0.17494560213703098,
+      "no_speech_prob": 0.00022473002900369465,
+      "compression_ratio": 1.3015267175572518
+    },
+    {
+      "id": 336,
+      "start": 789.12,
+      "end": 791.12,
+      "text": "從這個角度上來講",
+      "avg_logprob": -0.17494560213703098,
+      "no_speech_prob": 0.00022473002900369465,
+      "compression_ratio": 1.3015267175572518
+    },
+    {
+      "id": 337,
+      "start": 791.12,
+      "end": 793.12,
+      "text": "就是說我們會看到",
+      "avg_logprob": -0.17494560213703098,
+      "no_speech_prob": 0.00022473002900369465,
+      "compression_ratio": 1.3015267175572518
+    },
+    {
+      "id": 338,
+      "start": 793.12,
+      "end": 794.56,
+      "text": "更多的real money",
+      "avg_logprob": -0.17494560213703098,
+      "no_speech_prob": 0.00022473002900369465,
+      "compression_ratio": 1.3015267175572518
+    },
+    {
+      "id": 339,
+      "start": 794.56,
+      "end": 796.96,
+      "text": "實際就是實際做外貿的錢",
+      "avg_logprob": -0.17494560213703098,
+      "no_speech_prob": 0.00022473002900369465,
+      "compression_ratio": 1.3015267175572518
+    },
+    {
+      "id": 340,
+      "start": 796.96,
+      "end": 798.24,
+      "text": "投資的錢",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 341,
+      "start": 798.24,
+      "end": 799.52,
+      "text": "那麼這些錢",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 342,
+      "start": 799.52,
+      "end": 800.8,
+      "text": "都會慢慢的減少",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 343,
+      "start": 800.8,
+      "end": 801.84,
+      "text": "對於美聯的對寵",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 344,
+      "start": 801.84,
+      "end": 803.12,
+      "text": "那麼這個是可能會",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 345,
+      "start": 803.12,
+      "end": 804.16,
+      "text": "美元栽培了一年",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 346,
+      "start": 804.16,
+      "end": 805.28,
+      "text": "繼續變得",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 347,
+      "start": 805.28,
+      "end": 807.84,
+      "text": "趨勢性的變得更強的一個可能",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 348,
+      "start": 807.84,
+      "end": 809.76,
+      "text": "那麼",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 349,
+      "start": 809.76,
+      "end": 812.0,
+      "text": "我覺得甚至對歐元道義",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 350,
+      "start": 812.0,
+      "end": 813.12,
+      "text": "那麼這個都是一個",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 351,
+      "start": 813.12,
+      "end": 814.0,
+      "text": "比較fair的價錢",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 352,
+      "start": 814.0,
+      "end": 814.88,
+      "text": "就是歐元道義",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 353,
+      "start": 814.88,
+      "end": 816.56,
+      "text": "那麼日元要看",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 354,
+      "start": 816.56,
+      "end": 819.12,
+      "text": "日本的那個生息的情況",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 355,
+      "start": 819.12,
+      "end": 820.88,
+      "text": "人民幣是一個",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 356,
+      "start": 820.88,
+      "end": 822.56,
+      "text": "非常被控制的currency",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 357,
+      "start": 822.56,
+      "end": 824.88,
+      "text": "中間我們這裡大部分都還是",
+      "avg_logprob": -0.23740870597427838,
+      "no_speech_prob": 0.001568287960253656,
+      "compression_ratio": 1.3636363636363635
+    },
+    {
+      "id": 358,
+      "start": 824.88,
+      "end": 826.16,
+      "text": "有很多人民幣資產的",
+      "avg_logprob": -0.18183700707707093,
+      "no_speech_prob": 0.1322840005159378,
+      "compression_ratio": 1.4517374517374517
+    },
+    {
+      "id": 359,
+      "start": 826.16,
+      "end": 828.72,
+      "text": "然後人民幣是一個",
+      "avg_logprob": -0.18183700707707093,
+      "no_speech_prob": 0.1322840005159378,
+      "compression_ratio": 1.4517374517374517
+    },
+    {
+      "id": 360,
+      "start": 828.72,
+      "end": 830.24,
+      "text": "非常被控制的資產",
+      "avg_logprob": -0.18183700707707093,
+      "no_speech_prob": 0.1322840005159378,
+      "compression_ratio": 1.4517374517374517
+    },
+    {
+      "id": 361,
+      "start": 830.24,
+      "end": 831.92,
+      "text": "那麼在人民幣上的",
+      "avg_logprob": -0.18183700707707093,
+      "no_speech_prob": 0.1322840005159378,
+      "compression_ratio": 1.4517374517374517
+    },
+    {
+      "id": 362,
+      "start": 831.92,
+      "end": 833.84,
+      "text": "我講一個人民幣",
+      "avg_logprob": -0.18183700707707093,
+      "no_speech_prob": 0.1322840005159378,
+      "compression_ratio": 1.4517374517374517
+    },
+    {
+      "id": 363,
+      "start": 833.84,
+      "end": 836.4,
+      "text": "impliable就是那個波動率的一個情況",
+      "avg_logprob": -0.18183700707707093,
+      "no_speech_prob": 0.1322840005159378,
+      "compression_ratio": 1.4517374517374517
+    },
+    {
+      "id": 364,
+      "start": 836.4,
+      "end": 837.68,
+      "text": "人民幣的波動率",
+      "avg_logprob": -0.18183700707707093,
+      "no_speech_prob": 0.1322840005159378,
+      "compression_ratio": 1.4517374517374517
+    },
+    {
+      "id": 365,
+      "start": 837.68,
+      "end": 841.28,
+      "text": "在大概一個月的時候是5.8",
+      "avg_logprob": -0.18183700707707093,
+      "no_speech_prob": 0.1322840005159378,
+      "compression_ratio": 1.4517374517374517
+    },
+    {
+      "id": 366,
+      "start": 841.28,
+      "end": 842.8,
+      "text": "然後在6個月的時候",
+      "avg_logprob": -0.18183700707707093,
+      "no_speech_prob": 0.1322840005159378,
+      "compression_ratio": 1.4517374517374517
+    },
+    {
+      "id": 367,
+      "start": 842.8,
+      "end": 844.08,
+      "text": "就到了6.7",
+      "avg_logprob": -0.18183700707707093,
+      "no_speech_prob": 0.1322840005159378,
+      "compression_ratio": 1.4517374517374517
+    },
+    {
+      "id": 368,
+      "start": 844.08,
+      "end": 846.64,
+      "text": "其實這個wall的區別",
+      "avg_logprob": -0.18183700707707093,
+      "no_speech_prob": 0.1322840005159378,
+      "compression_ratio": 1.4517374517374517
+    },
+    {
+      "id": 369,
+      "start": 846.64,
+      "end": 848.16,
+      "text": "代表的市場pricing",
+      "avg_logprob": -0.18183700707707093,
+      "no_speech_prob": 0.1322840005159378,
+      "compression_ratio": 1.4517374517374517
+    },
+    {
+      "id": 370,
+      "start": 848.16,
+      "end": 850.48,
+      "text": "你在短期裡面會控制人民幣",
+      "avg_logprob": -0.18183700707707093,
+      "no_speech_prob": 0.1322840005159378,
+      "compression_ratio": 1.4517374517374517
+    },
+    {
+      "id": 371,
+      "start": 850.48,
+      "end": 852.56,
+      "text": "然後你在6個月裡面控制不住",
+      "avg_logprob": -0.18183700707707093,
+      "no_speech_prob": 0.1322840005159378,
+      "compression_ratio": 1.4517374517374517
+    },
+    {
+      "id": 372,
+      "start": 852.8,
+      "end": 854.16,
+      "text": "那麼這個",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 373,
+      "start": 854.16,
+      "end": 856.56,
+      "text": "跟我對人民幣的判斷也是差不多",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 374,
+      "start": 856.56,
+      "end": 857.84,
+      "text": "所以你在短期裡面",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 375,
+      "start": 857.84,
+      "end": 859.28,
+      "text": "可能還在7.2",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 376,
+      "start": 859.28,
+      "end": 860.48,
+      "text": "7.2其實這個threshold",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 377,
+      "start": 860.48,
+      "end": 861.52,
+      "text": "已經被打破了",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 378,
+      "start": 861.52,
+      "end": 864.32,
+      "text": "可能還是在7.2到7.3上下",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 379,
+      "start": 864.32,
+      "end": 866.64,
+      "text": "但是在6個月的時候",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 380,
+      "start": 866.64,
+      "end": 868.64,
+      "text": "其中它很有可能會到",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 381,
+      "start": 868.64,
+      "end": 870.24,
+      "text": "7.4、7.5的生命",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 382,
+      "start": 870.24,
+      "end": 872.0,
+      "text": "或者在一年走期裡",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 383,
+      "start": 872.0,
+      "end": 873.6,
+      "text": "那個7.4到7.5",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 384,
+      "start": 873.6,
+      "end": 875.36,
+      "text": "還是我看大概幾年",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 385,
+      "start": 875.36,
+      "end": 877.68,
+      "text": "一年人民幣的這個位置",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 386,
+      "start": 877.68,
+      "end": 878.96,
+      "text": "比如說",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 387,
+      "start": 878.96,
+      "end": 881.04,
+      "text": "中間大號會有比較大的波折",
+      "avg_logprob": -0.22642384201288224,
+      "no_speech_prob": 0.0011412898311391473,
+      "compression_ratio": 1.2951388888888888
+    },
+    {
+      "id": 388,
+      "start": 881.04,
+      "end": 882.8,
+      "text": "就是2月份的時候",
+      "avg_logprob": -0.17184743671108493,
+      "no_speech_prob": 0.000753943168092519,
+      "compression_ratio": 1.375
+    },
+    {
+      "id": 389,
+      "start": 882.8,
+      "end": 884.8,
+      "text": "它會有比較大幅的下跌",
+      "avg_logprob": -0.17184743671108493,
+      "no_speech_prob": 0.000753943168092519,
+      "compression_ratio": 1.375
+    },
+    {
+      "id": 390,
+      "start": 884.8,
+      "end": 887.76,
+      "text": "可能Trump的政策出來",
+      "avg_logprob": -0.17184743671108493,
+      "no_speech_prob": 0.000753943168092519,
+      "compression_ratio": 1.375
+    },
+    {
+      "id": 391,
+      "start": 887.76,
+      "end": 890.56,
+      "text": "Trump的所有的Tariff的政策",
+      "avg_logprob": -0.17184743671108493,
+      "no_speech_prob": 0.000753943168092519,
+      "compression_ratio": 1.375
+    },
+    {
+      "id": 392,
+      "start": 890.56,
+      "end": 892.24,
+      "text": "它不一定會馬上實施的",
+      "avg_logprob": -0.17184743671108493,
+      "no_speech_prob": 0.000753943168092519,
+      "compression_ratio": 1.375
+    },
+    {
+      "id": 393,
+      "start": 892.24,
+      "end": 894.88,
+      "text": "總統令和立法是兩件事情",
+      "avg_logprob": -0.17184743671108493,
+      "no_speech_prob": 0.000753943168092519,
+      "compression_ratio": 1.375
+    },
+    {
+      "id": 394,
+      "start": 894.88,
+      "end": 896.48,
+      "text": "立法是需要一年的過程的",
+      "avg_logprob": -0.17184743671108493,
+      "no_speech_prob": 0.000753943168092519,
+      "compression_ratio": 1.375
+    },
+    {
+      "id": 395,
+      "start": 896.48,
+      "end": 898.0,
+      "text": "然後甚至到一年",
+      "avg_logprob": -0.17184743671108493,
+      "no_speech_prob": 0.000753943168092519,
+      "compression_ratio": 1.375
+    },
+    {
+      "id": 396,
+      "start": 898.0,
+      "end": 899.04,
+      "text": "幾個月到一年的過程",
+      "avg_logprob": -0.17184743671108493,
+      "no_speech_prob": 0.000753943168092519,
+      "compression_ratio": 1.375
+    },
+    {
+      "id": 397,
+      "start": 899.04,
+      "end": 900.88,
+      "text": "但是總統令可以馬上出",
+      "avg_logprob": -0.17184743671108493,
+      "no_speech_prob": 0.000753943168092519,
+      "compression_ratio": 1.375
+    },
+    {
+      "id": 398,
+      "start": 900.88,
+      "end": 904.64,
+      "text": "它是說它要在Tariff上面",
+      "avg_logprob": -0.17184743671108493,
+      "no_speech_prob": 0.000753943168092519,
+      "compression_ratio": 1.375
+    },
+    {
+      "id": 399,
+      "start": 904.64,
+      "end": 905.76,
+      "text": "出總統令的",
+      "avg_logprob": -0.17184743671108493,
+      "no_speech_prob": 0.000753943168092519,
+      "compression_ratio": 1.375
+    },
+    {
+      "id": 400,
+      "start": 905.76,
+      "end": 908.8,
+      "text": "那麼我覺得可能真的出的",
+      "avg_logprob": -0.17184743671108493,
+      "no_speech_prob": 0.000753943168092519,
+      "compression_ratio": 1.375
+    },
+    {
+      "id": 401,
+      "start": 908.8,
+      "end": 909.76,
+      "text": "只有這種",
+      "avg_logprob": -0.17184743671108493,
+      "no_speech_prob": 0.000753943168092519,
+      "compression_ratio": 1.375
+    },
+    {
+      "id": 402,
+      "start": 909.84,
+      "end": 912.08,
+      "text": "對其他國家未必會針出來",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 403,
+      "start": 912.08,
+      "end": 916.0,
+      "text": "但是實施它也是會有空間的",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 404,
+      "start": 916.0,
+      "end": 917.2,
+      "text": "所以2月份的時候",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 405,
+      "start": 917.2,
+      "end": 918.72,
+      "text": "也有很多負面的新聞",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 406,
+      "start": 918.72,
+      "end": 919.52,
+      "text": "可能會出來",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 407,
+      "start": 919.52,
+      "end": 921.52,
+      "text": "從美國和中國的外貿上",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 408,
+      "start": 921.52,
+      "end": 924.16,
+      "text": "那麼這個負面的東西",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 409,
+      "start": 924.16,
+      "end": 925.6,
+      "text": "會帶動人民幣變弱",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 410,
+      "start": 925.6,
+      "end": 926.96,
+      "text": "那麼之後可能會",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 411,
+      "start": 926.96,
+      "end": 928.96,
+      "text": "中國的政策",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 412,
+      "start": 928.96,
+      "end": 930.48,
+      "text": "可能會帶動Tariff Cover",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 413,
+      "start": 930.48,
+      "end": 932.0,
+      "text": "但是從趨勢上來講",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 414,
+      "start": 932.0,
+      "end": 933.92,
+      "text": "它就是7.4到7.5",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 415,
+      "start": 933.92,
+      "end": 935.12,
+      "text": "因為美元走強",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 416,
+      "start": 935.12,
+      "end": 936.8,
+      "text": "還是主線上",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 417,
+      "start": 936.8,
+      "end": 939.68,
+      "text": "還是大的趨勢",
+      "avg_logprob": -0.16908320065202384,
+      "no_speech_prob": 0.008104388602077961,
+      "compression_ratio": 1.2671232876712328
+    },
+    {
+      "id": 418,
+      "start": 939.68,
+      "end": 944.0,
+      "text": "那麼有什麽東西會讓這個變改變呢",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 419,
+      "start": 944.0,
+      "end": 945.84,
+      "text": "就是我們講到的Tale Risk",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 420,
+      "start": 945.84,
+      "end": 947.04,
+      "text": "萬一美國衰退",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 421,
+      "start": 947.04,
+      "end": 949.44,
+      "text": "美國所有我覺得最大的Tale Risk",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 422,
+      "start": 949.44,
+      "end": 951.36,
+      "text": "在明年政策上Tale Risk",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 423,
+      "start": 951.36,
+      "end": 952.72,
+      "text": "就是不管什麽政策",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 424,
+      "start": 952.72,
+      "end": 954.48,
+      "text": "導致美國經濟真的變弱",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 425,
+      "start": 954.48,
+      "end": 955.28,
+      "text": "真的走弱",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 426,
+      "start": 955.28,
+      "end": 957.92,
+      "text": "那麽這個就會",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 427,
+      "start": 957.92,
+      "end": 959.76,
+      "text": "包括我們剛講到基本上",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 428,
+      "start": 959.76,
+      "end": 960.96,
+      "text": "當好我們會說",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 429,
+      "start": 960.96,
+      "end": 962.96,
+      "text": "基本上對債券的判斷",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 430,
+      "start": 962.96,
+      "end": 964.24,
+      "text": "對利率的判斷",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 431,
+      "start": 964.24,
+      "end": 965.2,
+      "text": "對外匯判斷",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 432,
+      "start": 965.2,
+      "end": 966.0,
+      "text": "對股市的判斷",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 433,
+      "start": 966.0,
+      "end": 966.88,
+      "text": "全部要改變",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 434,
+      "start": 966.88,
+      "end": 968.88,
+      "text": "所以這個都是一個Tale Risk",
+      "avg_logprob": -0.16633427919015376,
+      "no_speech_prob": 0.00019369885558262467,
+      "compression_ratio": 1.4734982332155477
+    },
+    {
+      "id": 435,
+      "start": 968.96,
+      "end": 971.6,
+      "text": "但是正常情況下的美元走強",
+      "avg_logprob": -0.19997889931137497,
+      "no_speech_prob": 0.004051609430462122,
+      "compression_ratio": 1.4771573604060915
+    },
+    {
+      "id": 436,
+      "start": 971.6,
+      "end": 974.64,
+      "text": "美元走強會利好美國的市場",
+      "avg_logprob": -0.19997889931137497,
+      "no_speech_prob": 0.004051609430462122,
+      "compression_ratio": 1.4771573604060915
+    },
+    {
+      "id": 437,
+      "start": 974.64,
+      "end": 977.68,
+      "text": "但是美元走強",
+      "avg_logprob": -0.19997889931137497,
+      "no_speech_prob": 0.004051609430462122,
+      "compression_ratio": 1.4771573604060915
+    },
+    {
+      "id": 438,
+      "start": 977.68,
+      "end": 980.32,
+      "text": "利率會維持一個高位",
+      "avg_logprob": -0.19997889931137497,
+      "no_speech_prob": 0.004051609430462122,
+      "compression_ratio": 1.4771573604060915
+    },
+    {
+      "id": 439,
+      "start": 980.32,
+      "end": 981.76,
+      "text": "那麽這種情況下",
+      "avg_logprob": -0.19997889931137497,
+      "no_speech_prob": 0.004051609430462122,
+      "compression_ratio": 1.4771573604060915
+    },
+    {
+      "id": 440,
+      "start": 981.76,
+      "end": 984.96,
+      "text": "對於風險資產中間也會諷划",
+      "avg_logprob": -0.19997889931137497,
+      "no_speech_prob": 0.004051609430462122,
+      "compression_ratio": 1.4771573604060915
+    },
+    {
+      "id": 441,
+      "start": 984.96,
+      "end": 986.56,
+      "text": "那麽風險資產中間",
+      "avg_logprob": -0.19997889931137497,
+      "no_speech_prob": 0.004051609430462122,
+      "compression_ratio": 1.4771573604060915
+    },
+    {
+      "id": 442,
+      "start": 986.56,
+      "end": 988.48,
+      "text": "盈利相對比較好的資產",
+      "avg_logprob": -0.19997889931137497,
+      "no_speech_prob": 0.004051609430462122,
+      "compression_ratio": 1.4771573604060915
+    },
+    {
+      "id": 443,
+      "start": 988.48,
+      "end": 991.92,
+      "text": "那麽我覺得是比較看好",
+      "avg_logprob": -0.19997889931137497,
+      "no_speech_prob": 0.004051609430462122,
+      "compression_ratio": 1.4771573604060915
+    },
+    {
+      "id": 444,
+      "start": 991.92,
+      "end": 993.04,
+      "text": "是吧",
+      "avg_logprob": -0.19997889931137497,
+      "no_speech_prob": 0.004051609430462122,
+      "compression_ratio": 1.4771573604060915
+    },
+    {
+      "id": 445,
+      "start": 993.04,
+      "end": 996.4,
+      "text": "就是但是對於比方說",
+      "avg_logprob": -0.19997889931137497,
+      "no_speech_prob": 0.004051609430462122,
+      "compression_ratio": 1.4771573604060915
+    },
+    {
+      "id": 446,
+      "start": 996.48,
+      "end": 999.2,
+      "text": "黃金或者是流動性偏",
+      "avg_logprob": -0.20247156677000663,
+      "no_speech_prob": 0.0151404133066535,
+      "compression_ratio": 1.3908045977011494
+    },
+    {
+      "id": 447,
+      "start": 999.2,
+      "end": 1000.72,
+      "text": "流動性依靠度很高的",
+      "avg_logprob": -0.20247156677000663,
+      "no_speech_prob": 0.0151404133066535,
+      "compression_ratio": 1.3908045977011494
+    },
+    {
+      "id": 448,
+      "start": 1000.72,
+      "end": 1001.84,
+      "text": "比方說比特幣",
+      "avg_logprob": -0.20247156677000663,
+      "no_speech_prob": 0.0151404133066535,
+      "compression_ratio": 1.3908045977011494
+    },
+    {
+      "id": 449,
+      "start": 1001.84,
+      "end": 1004.08,
+      "text": "它繼續拉盤的壓力會很難",
+      "avg_logprob": -0.20247156677000663,
+      "no_speech_prob": 0.0151404133066535,
+      "compression_ratio": 1.3908045977011494
+    },
+    {
+      "id": 450,
+      "start": 1004.08,
+      "end": 1006.64,
+      "text": "就是因為這輪比特幣基本上",
+      "avg_logprob": -0.20247156677000663,
+      "no_speech_prob": 0.0151404133066535,
+      "compression_ratio": 1.3908045977011494
+    },
+    {
+      "id": 451,
+      "start": 1006.64,
+      "end": 1008.16,
+      "text": "全是靠必安給拉起來的",
+      "avg_logprob": -0.20247156677000663,
+      "no_speech_prob": 0.0151404133066535,
+      "compression_ratio": 1.3908045977011494
+    },
+    {
+      "id": 452,
+      "start": 1008.16,
+      "end": 1010.48,
+      "text": "但是必安把它拉起來之後",
+      "avg_logprob": -0.20247156677000663,
+      "no_speech_prob": 0.0151404133066535,
+      "compression_ratio": 1.3908045977011494
+    },
+    {
+      "id": 453,
+      "start": 1010.48,
+      "end": 1012.4,
+      "text": "繼續維持在這個高位上",
+      "avg_logprob": -0.20247156677000663,
+      "no_speech_prob": 0.0151404133066535,
+      "compression_ratio": 1.3908045977011494
+    },
+    {
+      "id": 454,
+      "start": 1012.4,
+      "end": 1013.76,
+      "text": "沒有那麽容易",
+      "avg_logprob": -0.20247156677000663,
+      "no_speech_prob": 0.0151404133066535,
+      "compression_ratio": 1.3908045977011494
+    },
+    {
+      "id": 455,
+      "start": 1013.76,
+      "end": 1016.32,
+      "text": "所以這個是大致",
+      "avg_logprob": -0.20247156677000663,
+      "no_speech_prob": 0.0151404133066535,
+      "compression_ratio": 1.3908045977011494
+    },
+    {
+      "id": 456,
+      "start": 1016.32,
+      "end": 1018.48,
+      "text": "我覺得這個是",
+      "avg_logprob": -0.20247156677000663,
+      "no_speech_prob": 0.0151404133066535,
+      "compression_ratio": 1.3908045977011494
+    },
+    {
+      "id": 457,
+      "start": 1018.48,
+      "end": 1020.16,
+      "text": "最近的一個外匯的變化",
+      "avg_logprob": -0.20247156677000663,
+      "no_speech_prob": 0.0151404133066535,
+      "compression_ratio": 1.3908045977011494
+    },
+    {
+      "id": 458,
+      "start": 1020.16,
+      "end": 1024.32,
+      "text": "那麽最後我說一下那個",
+      "avg_logprob": -0.20247156677000663,
+      "no_speech_prob": 0.0151404133066535,
+      "compression_ratio": 1.3908045977011494
+    },
+    {
+      "id": 459,
+      "start": 1024.32,
+      "end": 1025.92,
+      "text": "美元利率",
+      "avg_logprob": -0.20247156677000663,
+      "no_speech_prob": 0.0151404133066535,
+      "compression_ratio": 1.3908045977011494
+    },
+    {
+      "id": 460,
+      "start": 1025.92,
+      "end": 1029.76,
+      "text": "先說一下大致宏觀發行的一個情況",
+      "avg_logprob": -0.2946171412865321,
+      "no_speech_prob": 0.0014420936349779367,
+      "compression_ratio": 1.2468085106382978
+    },
+    {
+      "id": 461,
+      "start": 1029.76,
+      "end": 1031.84,
+      "text": "那麽在明年的時候",
+      "avg_logprob": -0.2946171412865321,
+      "no_speech_prob": 0.0014420936349779367,
+      "compression_ratio": 1.2468085106382978
+    },
+    {
+      "id": 462,
+      "start": 1031.84,
+      "end": 1033.36,
+      "text": "總體要發",
+      "avg_logprob": -0.2946171412865321,
+      "no_speech_prob": 0.0014420936349779367,
+      "compression_ratio": 1.2468085106382978
+    },
+    {
+      "id": 463,
+      "start": 1033.36,
+      "end": 1034.88,
+      "text": "US dollar supply",
+      "avg_logprob": -0.2946171412865321,
+      "no_speech_prob": 0.0014420936349779367,
+      "compression_ratio": 1.2468085106382978
+    },
+    {
+      "id": 464,
+      "start": 1034.88,
+      "end": 1036.4,
+      "text": "大概在明年的時候",
+      "avg_logprob": -0.2946171412865321,
+      "no_speech_prob": 0.0014420936349779367,
+      "compression_ratio": 1.2468085106382978
+    },
+    {
+      "id": 465,
+      "start": 1036.4,
+      "end": 1037.44,
+      "text": "不是明年",
+      "avg_logprob": -0.2946171412865321,
+      "no_speech_prob": 0.0014420936349779367,
+      "compression_ratio": 1.2468085106382978
+    },
+    {
+      "id": 466,
+      "start": 1037.44,
+      "end": 1038.96,
+      "text": "就今年2025年的時候",
+      "avg_logprob": -0.2946171412865321,
+      "no_speech_prob": 0.0014420936349779367,
+      "compression_ratio": 1.2468085106382978
+    },
+    {
+      "id": 467,
+      "start": 1038.96,
+      "end": 1040.0,
+      "text": "850個免費",
+      "avg_logprob": -0.2946171412865321,
+      "no_speech_prob": 0.0014420936349779367,
+      "compression_ratio": 1.2468085106382978
+    },
+    {
+      "id": 468,
+      "start": 1040.0,
+      "end": 1041.52,
+      "text": "就8.5億美元",
+      "avg_logprob": -0.2946171412865321,
+      "no_speech_prob": 0.0014420936349779367,
+      "compression_ratio": 1.2468085106382978
+    },
+    {
+      "id": 469,
+      "start": 1041.52,
+      "end": 1046.16,
+      "text": "8.5億美元的那個DBO1",
+      "avg_logprob": -0.2946171412865321,
+      "no_speech_prob": 0.0014420936349779367,
+      "compression_ratio": 1.2468085106382978
+    },
+    {
+      "id": 470,
+      "start": 1046.16,
+      "end": 1048.24,
+      "text": "那這個規模其實很大",
+      "avg_logprob": -0.2946171412865321,
+      "no_speech_prob": 0.0014420936349779367,
+      "compression_ratio": 1.2468085106382978
+    },
+    {
+      "id": 471,
+      "start": 1048.24,
+      "end": 1050.88,
+      "text": "就是說但是相對2024年會好一點",
+      "avg_logprob": -0.2946171412865321,
+      "no_speech_prob": 0.0014420936349779367,
+      "compression_ratio": 1.2468085106382978
+    },
+    {
+      "id": 472,
+      "start": 1050.88,
+      "end": 1052.32,
+      "text": "2024年的時候",
+      "avg_logprob": -0.2946171412865321,
+      "no_speech_prob": 0.0014420936349779367,
+      "compression_ratio": 1.2468085106382978
+    },
+    {
+      "id": 473,
+      "start": 1052.32,
+      "end": 1054.64,
+      "text": "大概是就一個別臉",
+      "avg_logprob": -0.2891825390898663,
+      "no_speech_prob": 0.009888026863336563,
+      "compression_ratio": 1.2380952380952381
+    },
+    {
+      "id": 474,
+      "start": 1054.64,
+      "end": 1056.4,
+      "text": "10億美元的DBO1",
+      "avg_logprob": -0.2891825390898663,
+      "no_speech_prob": 0.009888026863336563,
+      "compression_ratio": 1.2380952380952381
+    },
+    {
+      "id": 475,
+      "start": 1056.4,
+      "end": 1059.2,
+      "text": "所以我們會看到總體的發行量",
+      "avg_logprob": -0.2891825390898663,
+      "no_speech_prob": 0.009888026863336563,
+      "compression_ratio": 1.2380952380952381
+    },
+    {
+      "id": 476,
+      "start": 1059.2,
+      "end": 1061.6,
+      "text": "在20預期總體的發行量",
+      "avg_logprob": -0.2891825390898663,
+      "no_speech_prob": 0.009888026863336563,
+      "compression_ratio": 1.2380952380952381
+    },
+    {
+      "id": 477,
+      "start": 1061.6,
+      "end": 1062.88,
+      "text": "在2025年的時候",
+      "avg_logprob": -0.2891825390898663,
+      "no_speech_prob": 0.009888026863336563,
+      "compression_ratio": 1.2380952380952381
+    },
+    {
+      "id": 478,
+      "start": 1062.88,
+      "end": 1064.8,
+      "text": "相對來說變少一些",
+      "avg_logprob": -0.2891825390898663,
+      "no_speech_prob": 0.009888026863336563,
+      "compression_ratio": 1.2380952380952381
+    },
+    {
+      "id": 479,
+      "start": 1064.8,
+      "end": 1068.08,
+      "text": "那麽這個就是inline",
+      "avg_logprob": -0.2891825390898663,
+      "no_speech_prob": 0.009888026863336563,
+      "compression_ratio": 1.2380952380952381
+    },
+    {
+      "id": 480,
+      "start": 1068.08,
+      "end": 1070.76,
+      "text": "我們最近的一個美國的這個",
+      "avg_logprob": -0.2891825390898663,
+      "no_speech_prob": 0.009888026863336563,
+      "compression_ratio": 1.2380952380952381
+    },
+    {
+      "id": 481,
+      "start": 1070.76,
+      "end": 1072.0,
+      "text": "deceiving的事情",
+      "avg_logprob": -0.2891825390898663,
+      "no_speech_prob": 0.009888026863336563,
+      "compression_ratio": 1.2380952380952381
+    },
+    {
+      "id": 482,
+      "start": 1072.0,
+      "end": 1073.44,
+      "text": "額戰物上限呢",
+      "avg_logprob": -0.2891825390898663,
+      "no_speech_prob": 0.009888026863336563,
+      "compression_ratio": 1.2380952380952381
+    },
+    {
+      "id": 483,
+      "start": 1073.44,
+      "end": 1075.04,
+      "text": "其實有一點",
+      "avg_logprob": -0.2891825390898663,
+      "no_speech_prob": 0.009888026863336563,
+      "compression_ratio": 1.2380952380952381
+    },
+    {
+      "id": 484,
+      "start": 1075.04,
+      "end": 1076.64,
+      "text": "可能我覺得有一點",
+      "avg_logprob": -0.2891825390898663,
+      "no_speech_prob": 0.009888026863336563,
+      "compression_ratio": 1.2380952380952381
+    },
+    {
+      "id": 485,
+      "start": 1076.64,
+      "end": 1079.04,
+      "text": "出乎那個GOP的預期",
+      "avg_logprob": -0.2891825390898663,
+      "no_speech_prob": 0.009888026863336563,
+      "compression_ratio": 1.2380952380952381
+    },
+    {
+      "id": 486,
+      "start": 1079.04,
+      "end": 1082.88,
+      "text": "因為GOP還是需要那個就是共和黨吧",
+      "avg_logprob": -0.13677266044338254,
+      "no_speech_prob": 0.0027343882247805595,
+      "compression_ratio": 1.4754098360655739
+    },
+    {
+      "id": 487,
+      "start": 1082.88,
+      "end": 1084.16,
+      "text": "共和黨還是需要",
+      "avg_logprob": -0.13677266044338254,
+      "no_speech_prob": 0.0027343882247805595,
+      "compression_ratio": 1.4754098360655739
+    },
+    {
+      "id": 488,
+      "start": 1084.16,
+      "end": 1086.24,
+      "text": "雖然他們在那個議會",
+      "avg_logprob": -0.13677266044338254,
+      "no_speech_prob": 0.0027343882247805595,
+      "compression_ratio": 1.4754098360655739
+    },
+    {
+      "id": 489,
+      "start": 1086.24,
+      "end": 1088.24,
+      "text": "眾議院有多數議席",
+      "avg_logprob": -0.13677266044338254,
+      "no_speech_prob": 0.0027343882247805595,
+      "compression_ratio": 1.4754098360655739
+    },
+    {
+      "id": 490,
+      "start": 1088.24,
+      "end": 1089.84,
+      "text": "就是微弱的多數",
+      "avg_logprob": -0.13677266044338254,
+      "no_speech_prob": 0.0027343882247805595,
+      "compression_ratio": 1.4754098360655739
+    },
+    {
+      "id": 491,
+      "start": 1089.84,
+      "end": 1090.88,
+      "text": "但是他還是",
+      "avg_logprob": -0.13677266044338254,
+      "no_speech_prob": 0.0027343882247805595,
+      "compression_ratio": 1.4754098360655739
+    },
+    {
+      "id": 492,
+      "start": 1090.88,
+      "end": 1091.76,
+      "text": "他要通過政策",
+      "avg_logprob": -0.13677266044338254,
+      "no_speech_prob": 0.0027343882247805595,
+      "compression_ratio": 1.4754098360655739
+    },
+    {
+      "id": 493,
+      "start": 1091.76,
+      "end": 1094.4,
+      "text": "還是需要和黨內的保守派去溝通呢",
+      "avg_logprob": -0.13677266044338254,
+      "no_speech_prob": 0.0027343882247805595,
+      "compression_ratio": 1.4754098360655739
+    },
+    {
+      "id": 494,
+      "start": 1094.4,
+      "end": 1096.32,
+      "text": "所以黨內的保守派",
+      "avg_logprob": -0.13677266044338254,
+      "no_speech_prob": 0.0027343882247805595,
+      "compression_ratio": 1.4754098360655739
+    },
+    {
+      "id": 495,
+      "start": 1096.32,
+      "end": 1099.52,
+      "text": "對於整個美國赤字的情況",
+      "avg_logprob": -0.13677266044338254,
+      "no_speech_prob": 0.0027343882247805595,
+      "compression_ratio": 1.4754098360655739
+    },
+    {
+      "id": 496,
+      "start": 1099.52,
+      "end": 1101.92,
+      "text": "包括對於美國以後還會有",
+      "avg_logprob": -0.13677266044338254,
+      "no_speech_prob": 0.0027343882247805595,
+      "compression_ratio": 1.4754098360655739
+    },
+    {
+      "id": 497,
+      "start": 1101.92,
+      "end": 1103.52,
+      "text": "就對於美國移民",
+      "avg_logprob": -0.13677266044338254,
+      "no_speech_prob": 0.0027343882247805595,
+      "compression_ratio": 1.4754098360655739
+    },
+    {
+      "id": 498,
+      "start": 1103.52,
+      "end": 1105.76,
+      "text": "對於美國那個tariff怎麽樣",
+      "avg_logprob": -0.13677266044338254,
+      "no_speech_prob": 0.0027343882247805595,
+      "compression_ratio": 1.4754098360655739
+    },
+    {
+      "id": 499,
+      "start": 1105.84,
+      "end": 1107.04,
+      "text": "他的這個",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 500,
+      "start": 1107.04,
+      "end": 1108.08,
+      "text": "他的這個觀點",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 501,
+      "start": 1108.08,
+      "end": 1110.08,
+      "text": "和黨內的激進盤是不一樣的",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 502,
+      "start": 1110.08,
+      "end": 1111.44,
+      "text": "就是森浩你會覺得吧",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 503,
+      "start": 1111.44,
+      "end": 1113.76,
+      "text": "就是整個這次大選選贏",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 504,
+      "start": 1113.76,
+      "end": 1116.4,
+      "text": "是一群對民主黨",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 505,
+      "start": 1116.4,
+      "end": 1118.48,
+      "text": "特別是對民主黨的這個",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 506,
+      "start": 1118.48,
+      "end": 1119.68,
+      "text": "膨脹不滿意的人",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 507,
+      "start": 1119.68,
+      "end": 1121.12,
+      "text": "或者對民主黨這個",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 508,
+      "start": 1121.12,
+      "end": 1123.12,
+      "text": "王左走DIE啊",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 509,
+      "start": 1123.12,
+      "end": 1125.68,
+      "text": "威國啊這些事情做了時代",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 510,
+      "start": 1125.68,
+      "end": 1127.12,
+      "text": "時代不能忍受的幫人",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 511,
+      "start": 1127.12,
+      "end": 1128.16,
+      "text": "那麽聯合起來",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 512,
+      "start": 1128.16,
+      "end": 1129.28,
+      "text": "把民主黨給選下來",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 513,
+      "start": 1129.28,
+      "end": 1130.96,
+      "text": "把拜登政府選下來",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 514,
+      "start": 1130.96,
+      "end": 1133.44,
+      "text": "但是在共和黨黨內",
+      "avg_logprob": -0.22512528163934845,
+      "no_speech_prob": 0.014262781478464603,
+      "compression_ratio": 1.443609022556391
+    },
+    {
+      "id": 515,
+      "start": 1133.44,
+      "end": 1134.72,
+      "text": "他們的分歧",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 516,
+      "start": 1134.72,
+      "end": 1136.0,
+      "text": "在某些議題上",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 517,
+      "start": 1136.0,
+      "end": 1137.52,
+      "text": "甚至比對民主黨的",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 518,
+      "start": 1137.52,
+      "end": 1139.6,
+      "text": "這個分歧還要更大",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 519,
+      "start": 1139.6,
+      "end": 1142.8,
+      "text": "我記得應該是Christmas前後吧",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 520,
+      "start": 1142.8,
+      "end": 1146.0,
+      "text": "然後在那個推了上面",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 521,
+      "start": 1146.0,
+      "end": 1147.68,
+      "text": "Elon Musk",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 522,
+      "start": 1147.68,
+      "end": 1149.36,
+      "text": "就是Elon Musk其實是代表",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 523,
+      "start": 1149.36,
+      "end": 1151.6,
+      "text": "那個共和黨內的這個",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 524,
+      "start": 1151.6,
+      "end": 1153.92,
+      "text": "規股派",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 525,
+      "start": 1153.92,
+      "end": 1155.52,
+      "text": "就是他們是科技派",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 526,
+      "start": 1155.52,
+      "end": 1156.4,
+      "text": "包括Elon Musk",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 527,
+      "start": 1156.4,
+      "end": 1157.12,
+      "text": "包括Peter Thiel",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 528,
+      "start": 1157.12,
+      "end": 1158.56,
+      "text": "我們上次講到",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 529,
+      "start": 1158.56,
+      "end": 1159.44,
+      "text": "美國政治的時候",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 530,
+      "start": 1159.44,
+      "end": 1160.56,
+      "text": "其實說過這個話題",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 531,
+      "start": 1160.56,
+      "end": 1161.84,
+      "text": "其實那個川普",
+      "avg_logprob": -0.26734936105854373,
+      "no_speech_prob": 0.177992582321167,
+      "compression_ratio": 1.2579505300353357
+    },
+    {
+      "id": 532,
+      "start": 1161.84,
+      "end": 1164.64,
+      "text": "他背後真正的老闆",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 533,
+      "start": 1164.64,
+      "end": 1165.44,
+      "text": "是Peter Thiel",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 534,
+      "start": 1165.44,
+      "end": 1167.28,
+      "text": "是代表著那個規股的利益",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 535,
+      "start": 1167.28,
+      "end": 1168.48,
+      "text": "那麽這批人呢",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 536,
+      "start": 1168.48,
+      "end": 1171.36,
+      "text": "其實他對於移民政策和MAGA",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 537,
+      "start": 1171.36,
+      "end": 1173.92,
+      "text": "MAGA就是得幫紅脖子",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 538,
+      "start": 1173.92,
+      "end": 1175.28,
+      "text": "就是我們把紅脖子",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 539,
+      "start": 1175.28,
+      "end": 1176.32,
+      "text": "統稱為MAGA",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 540,
+      "start": 1176.32,
+      "end": 1177.76,
+      "text": "那幫MAGA派",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 541,
+      "start": 1177.76,
+      "end": 1180.0,
+      "text": "他們是有本質的這個區別的",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 542,
+      "start": 1180.0,
+      "end": 1181.52,
+      "text": "所以他們在那個",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 543,
+      "start": 1181.52,
+      "end": 1182.8,
+      "text": "推特上發生爭吵",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 544,
+      "start": 1182.8,
+      "end": 1183.84,
+      "text": "爭吵之後",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 545,
+      "start": 1183.84,
+      "end": 1185.2,
+      "text": "其實川普最後是",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 546,
+      "start": 1185.2,
+      "end": 1186.56,
+      "text": "占了Elon Musk的便",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 547,
+      "start": 1186.56,
+      "end": 1187.84,
+      "text": "就是把MAGA",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 548,
+      "start": 1187.84,
+      "end": 1190.0,
+      "text": "他那些基本盤也拋棄了",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 549,
+      "start": 1190.0,
+      "end": 1190.72,
+      "text": "所以你可以理解",
+      "avg_logprob": -0.19229509892491248,
+      "no_speech_prob": 0.04374362528324127,
+      "compression_ratio": 1.2507936507936508
+    },
+    {
+      "id": 550,
+      "start": 1190.8,
+      "end": 1191.52,
+      "text": "比如說",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 551,
+      "start": 1191.52,
+      "end": 1193.28,
+      "text": "有一部分人是底層的",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 552,
+      "start": 1193.28,
+      "end": 1195.28,
+      "text": "有一部分人是規股的新規",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 553,
+      "start": 1195.28,
+      "end": 1196.48,
+      "text": "這些人聯合起來",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 554,
+      "start": 1196.48,
+      "end": 1198.88,
+      "text": "把那個川普給選上去了",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 555,
+      "start": 1198.88,
+      "end": 1200.4,
+      "text": "但是他們之間",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 556,
+      "start": 1200.4,
+      "end": 1201.68,
+      "text": "對於很多政策的分歧",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 557,
+      "start": 1201.68,
+      "end": 1202.48,
+      "text": "會很大",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 558,
+      "start": 1202.48,
+      "end": 1204.16,
+      "text": "所以不要覺得共和黨",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 559,
+      "start": 1204.16,
+      "end": 1205.92,
+      "text": "通控制了議會",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 560,
+      "start": 1205.92,
+      "end": 1208.0,
+      "text": "然後他就能夠隨心所欲的",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 561,
+      "start": 1208.0,
+      "end": 1209.2,
+      "text": "通過所有的政策",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 562,
+      "start": 1209.2,
+      "end": 1210.72,
+      "text": "其實並沒有那麽容易",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 563,
+      "start": 1210.72,
+      "end": 1211.6,
+      "text": "包括我們這一次",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 564,
+      "start": 1211.6,
+      "end": 1212.64,
+      "text": "也看到那個",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 565,
+      "start": 1212.64,
+      "end": 1215.04,
+      "text": "特朗普對House的控制力",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 566,
+      "start": 1215.04,
+      "end": 1216.32,
+      "text": "比我們想象的要弱",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 567,
+      "start": 1216.32,
+      "end": 1217.6,
+      "text": "比如說這一次",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 568,
+      "start": 1217.6,
+      "end": 1219.84,
+      "text": "只是突破Decide",
+      "avg_logprob": -0.2257730155280142,
+      "no_speech_prob": 0.005648345686495304,
+      "compression_ratio": 1.3157894736842106
+    },
+    {
+      "id": 569,
+      "start": 1220.4,
+      "end": 1222.88,
+      "text": "現在是最後當然Compromise",
+      "avg_logprob": -0.23973416967120598,
+      "no_speech_prob": 0.004633302800357342,
+      "compression_ratio": 1.2863070539419088
+    },
+    {
+      "id": 570,
+      "start": 1222.88,
+      "end": 1223.68,
+      "text": "就是說",
+      "avg_logprob": -0.23973416967120598,
+      "no_speech_prob": 0.004633302800357342,
+      "compression_ratio": 1.2863070539419088
+    },
+    {
+      "id": 571,
+      "start": 1223.68,
+      "end": 1225.12,
+      "text": "一方面他引用了",
+      "avg_logprob": -0.23973416967120598,
+      "no_speech_prob": 0.004633302800357342,
+      "compression_ratio": 1.2863070539419088
+    },
+    {
+      "id": 572,
+      "start": 1225.12,
+      "end": 1226.08,
+      "text": "原來的一些政策",
+      "avg_logprob": -0.23973416967120598,
+      "no_speech_prob": 0.004633302800357342,
+      "compression_ratio": 1.2863070539419088
+    },
+    {
+      "id": 573,
+      "start": 1226.08,
+      "end": 1227.2,
+      "text": "就是說我可以",
+      "avg_logprob": -0.23973416967120598,
+      "no_speech_prob": 0.004633302800357342,
+      "compression_ratio": 1.2863070539419088
+    },
+    {
+      "id": 574,
+      "start": 1227.2,
+      "end": 1229.12,
+      "text": "這個財政部引用了",
+      "avg_logprob": -0.23973416967120598,
+      "no_speech_prob": 0.004633302800357342,
+      "compression_ratio": 1.2863070539419088
+    },
+    {
+      "id": 575,
+      "start": 1229.12,
+      "end": 1230.72,
+      "text": "所以財政部其實可以",
+      "avg_logprob": -0.23973416967120598,
+      "no_speech_prob": 0.004633302800357342,
+      "compression_ratio": 1.2863070539419088
+    },
+    {
+      "id": 576,
+      "start": 1230.72,
+      "end": 1232.0,
+      "text": "把那個發財規模",
+      "avg_logprob": -0.23973416967120598,
+      "no_speech_prob": 0.004633302800357342,
+      "compression_ratio": 1.2863070539419088
+    },
+    {
+      "id": 577,
+      "start": 1232.0,
+      "end": 1233.84,
+      "text": "就手上的現金規模",
+      "avg_logprob": -0.23973416967120598,
+      "no_speech_prob": 0.004633302800357342,
+      "compression_ratio": 1.2863070539419088
+    },
+    {
+      "id": 578,
+      "start": 1233.84,
+      "end": 1237.2,
+      "text": "TGA的規模用在700個別臉",
+      "avg_logprob": -0.23973416967120598,
+      "no_speech_prob": 0.004633302800357342,
+      "compression_ratio": 1.2863070539419088
+    },
+    {
+      "id": 579,
+      "start": 1237.2,
+      "end": 1238.48,
+      "text": "就7000億左右",
+      "avg_logprob": -0.23973416967120598,
+      "no_speech_prob": 0.004633302800357342,
+      "compression_ratio": 1.2863070539419088
+    },
+    {
+      "id": 580,
+      "start": 1238.48,
+      "end": 1240.48,
+      "text": "所以這個7000億左右的",
+      "avg_logprob": -0.23973416967120598,
+      "no_speech_prob": 0.004633302800357342,
+      "compression_ratio": 1.2863070539419088
+    },
+    {
+      "id": 581,
+      "start": 1240.48,
+      "end": 1247.44,
+      "text": "TGA是可以讓美國",
+      "avg_logprob": -0.23973416967120598,
+      "no_speech_prob": 0.004633302800357342,
+      "compression_ratio": 1.2863070539419088
+    },
+    {
+      "id": 582,
+      "start": 1247.44,
+      "end": 1248.88,
+      "text": "大概用到7月份",
+      "avg_logprob": -0.23973416967120598,
+      "no_speech_prob": 0.004633302800357342,
+      "compression_ratio": 1.2863070539419088
+    },
+    {
+      "id": 583,
+      "start": 1248.88,
+      "end": 1250.64,
+      "text": "所以創不上臺之後",
+      "avg_logprob": -0.1952450798721764,
+      "no_speech_prob": 0.00042807715362869203,
+      "compression_ratio": 1.2156862745098038
+    },
+    {
+      "id": 584,
+      "start": 1250.64,
+      "end": 1252.4,
+      "text": "很有可能在3月份",
+      "avg_logprob": -0.1952450798721764,
+      "no_speech_prob": 0.00042807715362869203,
+      "compression_ratio": 1.2156862745098038
+    },
+    {
+      "id": 585,
+      "start": 1252.4,
+      "end": 1253.92,
+      "text": "沒比在3月份的時候",
+      "avg_logprob": -0.1952450798721764,
+      "no_speech_prob": 0.00042807715362869203,
+      "compression_ratio": 1.2156862745098038
+    },
+    {
+      "id": 586,
+      "start": 1253.92,
+      "end": 1255.6,
+      "text": "就把這些問題解決掉",
+      "avg_logprob": -0.1952450798721764,
+      "no_speech_prob": 0.00042807715362869203,
+      "compression_ratio": 1.2156862745098038
+    },
+    {
+      "id": 587,
+      "start": 1255.6,
+      "end": 1258.72,
+      "text": "但是通過Deciline的難度",
+      "avg_logprob": -0.1952450798721764,
+      "no_speech_prob": 0.00042807715362869203,
+      "compression_ratio": 1.2156862745098038
+    },
+    {
+      "id": 588,
+      "start": 1258.72,
+      "end": 1262.48,
+      "text": "一定比他減稅的難度要小",
+      "avg_logprob": -0.1952450798721764,
+      "no_speech_prob": 0.00042807715362869203,
+      "compression_ratio": 1.2156862745098038
+    },
+    {
+      "id": 589,
+      "start": 1262.48,
+      "end": 1263.6,
+      "text": "所以他要說",
+      "avg_logprob": -0.1952450798721764,
+      "no_speech_prob": 0.00042807715362869203,
+      "compression_ratio": 1.2156862745098038
+    },
+    {
+      "id": 590,
+      "start": 1263.6,
+      "end": 1264.24,
+      "text": "他後面去",
+      "avg_logprob": -0.1952450798721764,
+      "no_speech_prob": 0.00042807715362869203,
+      "compression_ratio": 1.2156862745098038
+    },
+    {
+      "id": 591,
+      "start": 1264.24,
+      "end": 1267.04,
+      "text": "比方說去搞減稅這些事情",
+      "avg_logprob": -0.1952450798721764,
+      "no_speech_prob": 0.00042807715362869203,
+      "compression_ratio": 1.2156862745098038
+    },
+    {
+      "id": 592,
+      "start": 1267.04,
+      "end": 1268.0,
+      "text": "很有可能",
+      "avg_logprob": -0.1952450798721764,
+      "no_speech_prob": 0.00042807715362869203,
+      "compression_ratio": 1.2156862745098038
+    },
+    {
+      "id": 593,
+      "start": 1268.0,
+      "end": 1271.76,
+      "text": "GOP還是需要和Democrats",
+      "avg_logprob": -0.1952450798721764,
+      "no_speech_prob": 0.00042807715362869203,
+      "compression_ratio": 1.2156862745098038
+    },
+    {
+      "id": 594,
+      "start": 1271.76,
+      "end": 1274.4,
+      "text": "在議會裏面要協調",
+      "avg_logprob": -0.1952450798721764,
+      "no_speech_prob": 0.00042807715362869203,
+      "compression_ratio": 1.2156862745098038
+    },
+    {
+      "id": 595,
+      "start": 1274.4,
+      "end": 1277.6,
+      "text": "說島內有一些保守派",
+      "avg_logprob": -0.1952450798721764,
+      "no_speech_prob": 0.00042807715362869203,
+      "compression_ratio": 1.2156862745098038
+    },
+    {
+      "id": 596,
+      "start": 1277.6,
+      "end": 1279.92,
+      "text": "未必會完全統一",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 597,
+      "start": 1279.92,
+      "end": 1281.44,
+      "text": "很多減稅的政策",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 598,
+      "start": 1281.44,
+      "end": 1284.0,
+      "text": "所以當你很多",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 599,
+      "start": 1284.0,
+      "end": 1285.6,
+      "text": "你假如說你Budget",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 600,
+      "start": 1285.6,
+      "end": 1288.56,
+      "text": "需要去和Democrats溝通的時候",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 601,
+      "start": 1288.56,
+      "end": 1290.96,
+      "text": "那麼就會增加溝通的難度",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 602,
+      "start": 1290.96,
+      "end": 1291.92,
+      "text": "就Luckily",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 603,
+      "start": 1291.92,
+      "end": 1294.0,
+      "text": "我們希望在3月份的時候",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 604,
+      "start": 1294.0,
+      "end": 1295.52,
+      "text": "那麼我們把Deciline",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 605,
+      "start": 1295.52,
+      "end": 1296.96,
+      "text": "這些事情全部能解決掉",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 606,
+      "start": 1296.96,
+      "end": 1298.32,
+      "text": "但是也有種可能",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 607,
+      "start": 1298.32,
+      "end": 1300.72,
+      "text": "就是你需要和民主黨去溝通",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 608,
+      "start": 1300.72,
+      "end": 1301.92,
+      "text": "去民主黨去協調",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 609,
+      "start": 1301.92,
+      "end": 1302.96,
+      "text": "那麼這個事情",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 610,
+      "start": 1302.96,
+      "end": 1305.2,
+      "text": "就往往會拖到最後一步",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 611,
+      "start": 1305.2,
+      "end": 1306.88,
+      "text": "因為不同黨的",
+      "avg_logprob": -0.20092772957462593,
+      "no_speech_prob": 0.0014702890766784549,
+      "compression_ratio": 1.2890365448504983
+    },
+    {
+      "id": 612,
+      "start": 1306.88,
+      "end": 1308.16,
+      "text": "大家利益訴求",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 613,
+      "start": 1308.16,
+      "end": 1309.44,
+      "text": "民主黨比方說",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 614,
+      "start": 1309.44,
+      "end": 1310.72,
+      "text": "有可能會要求你把",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 615,
+      "start": 1310.72,
+      "end": 1313.04,
+      "text": "奧巴馬KL中間一部分東西保留",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 616,
+      "start": 1313.04,
+      "end": 1314.56,
+      "text": "那麼這些東西",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 617,
+      "start": 1314.56,
+      "end": 1316.08,
+      "text": "是一旦需要協調",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 618,
+      "start": 1316.08,
+      "end": 1317.76,
+      "text": "它有可能會把時間脫後",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 619,
+      "start": 1317.76,
+      "end": 1319.04,
+      "text": "就有可能在政策上",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 620,
+      "start": 1319.04,
+      "end": 1320.48,
+      "text": "造成不確定性",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 621,
+      "start": 1320.48,
+      "end": 1322.24,
+      "text": "所以",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 622,
+      "start": 1322.24,
+      "end": 1323.92,
+      "text": "我就說最簡單的",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 623,
+      "start": 1323.92,
+      "end": 1325.68,
+      "text": "通過一些條款的政策",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 624,
+      "start": 1325.68,
+      "end": 1327.12,
+      "text": "並沒有像現在想像的",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 625,
+      "start": 1327.12,
+      "end": 1328.4,
+      "text": "這麼簡單",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 626,
+      "start": 1329.68,
+      "end": 1332.08,
+      "text": "我們對於Deciline和對於發展",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 627,
+      "start": 1332.08,
+      "end": 1335.04,
+      "text": "我們可以看真正的",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 628,
+      "start": 1335.04,
+      "end": 1336.56,
+      "text": "債務上限的時間",
+      "avg_logprob": -0.2059092338116753,
+      "no_speech_prob": 0.0031052918639034033,
+      "compression_ratio": 1.3037542662116042
+    },
+    {
+      "id": 629,
+      "start": 1336.56,
+      "end": 1339.12,
+      "text": "大概就是今年的7月份",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 630,
+      "start": 1339.12,
+      "end": 1340.4,
+      "text": "這次",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 631,
+      "start": 1340.4,
+      "end": 1341.12,
+      "text": "無論如何",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 632,
+      "start": 1341.12,
+      "end": 1343.04,
+      "text": "它畢竟是黨內的協調",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 633,
+      "start": 1343.04,
+      "end": 1343.84,
+      "text": "所以無論如何",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 634,
+      "start": 1343.84,
+      "end": 1345.44,
+      "text": "它不會搞得像23年",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 635,
+      "start": 1345.44,
+      "end": 1346.72,
+      "text": "或者像10年之前",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 636,
+      "start": 1346.72,
+      "end": 1347.52,
+      "text": "奧巴馬那個時候",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 637,
+      "start": 1347.52,
+      "end": 1348.88,
+      "text": "什麼Government shutdown",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 638,
+      "start": 1348.88,
+      "end": 1351.12,
+      "text": "然後Deciline 鬧出一個大鬧局",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 639,
+      "start": 1351.12,
+      "end": 1352.48,
+      "text": "股票暴跌",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 640,
+      "start": 1352.48,
+      "end": 1353.04,
+      "text": "這種事情",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 641,
+      "start": 1353.04,
+      "end": 1354.56,
+      "text": "我覺得不太會發生",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 642,
+      "start": 1354.56,
+      "end": 1355.44,
+      "text": "但是呢",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 643,
+      "start": 1355.44,
+      "end": 1357.2,
+      "text": "我們也要同時",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 644,
+      "start": 1357.2,
+      "end": 1359.84,
+      "text": "預期到有很多的政策實施中間",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 645,
+      "start": 1359.84,
+      "end": 1360.8,
+      "text": "是會有glitch的",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 646,
+      "start": 1360.8,
+      "end": 1363.36,
+      "text": "是會有一些",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 647,
+      "start": 1363.36,
+      "end": 1366.4,
+      "text": "小的波動",
+      "avg_logprob": -0.24312712319435612,
+      "no_speech_prob": 0.011142858304083347,
+      "compression_ratio": 1.1755485893416928
+    },
+    {
+      "id": 648,
+      "start": 1366.4,
+      "end": 1368.08,
+      "text": "那麼",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 649,
+      "start": 1368.08,
+      "end": 1369.76,
+      "text": "會說回整個發展的規模",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 650,
+      "start": 1369.76,
+      "end": 1370.8,
+      "text": "所以在這過程中",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 651,
+      "start": 1370.8,
+      "end": 1372.08,
+      "text": "如果正常的情況下",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 652,
+      "start": 1372.08,
+      "end": 1374.4,
+      "text": "2025年的發展呢",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 653,
+      "start": 1374.4,
+      "end": 1375.28,
+      "text": "是相對來說",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 654,
+      "start": 1375.28,
+      "end": 1376.72,
+      "text": "比2024年稍微好一點",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 655,
+      "start": 1376.72,
+      "end": 1378.64,
+      "text": "所以我在2024年年初的時候",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 656,
+      "start": 1378.64,
+      "end": 1379.68,
+      "text": "就一直覺得",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 657,
+      "start": 1379.68,
+      "end": 1381.2,
+      "text": "長債利率下不去",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 658,
+      "start": 1381.2,
+      "end": 1382.32,
+      "text": "無論如何都下不去",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 659,
+      "start": 1382.32,
+      "end": 1383.52,
+      "text": "2025年有發展的規模",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 660,
+      "start": 1383.52,
+      "end": 1385.44,
+      "text": "但2026年會不小",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 661,
+      "start": 1385.44,
+      "end": 1387.36,
+      "text": "雖然這規模比2024年小",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 662,
+      "start": 1387.36,
+      "end": 1389.44,
+      "text": "但是利率不會",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 663,
+      "start": 1389.44,
+      "end": 1391.76,
+      "text": "不會大幅下降",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 664,
+      "start": 1391.76,
+      "end": 1393.04,
+      "text": "特別是現在美聯儲",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 665,
+      "start": 1393.04,
+      "end": 1394.32,
+      "text": "還雖然比較強硬",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 666,
+      "start": 1394.32,
+      "end": 1395.52,
+      "text": "那即使美聯儲",
+      "avg_logprob": -0.16214948051116046,
+      "no_speech_prob": 0.0004480924108065665,
+      "compression_ratio": 1.4210526315789473
+    },
+    {
+      "id": 667,
+      "start": 1395.6,
+      "end": 1396.72,
+      "text": "到時候",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 668,
+      "start": 1396.72,
+      "end": 1398.96,
+      "text": "沒有像現在想的這麼強硬",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 669,
+      "start": 1398.96,
+      "end": 1401.52,
+      "text": "它的這個下去的也是短端",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 670,
+      "start": 1401.52,
+      "end": 1402.8,
+      "text": "所以對利率",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 671,
+      "start": 1402.8,
+      "end": 1403.92,
+      "text": "我整體的看法",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 672,
+      "start": 1403.92,
+      "end": 1405.76,
+      "text": "還是steep",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 673,
+      "start": 1405.76,
+      "end": 1406.72,
+      "text": "變抖",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 674,
+      "start": 1406.72,
+      "end": 1407.36,
+      "text": "也就是說",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 675,
+      "start": 1407.36,
+      "end": 1409.28,
+      "text": "在短端是有機會的",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 676,
+      "start": 1409.28,
+      "end": 1410.4,
+      "text": "短端是個美食的概念",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 677,
+      "start": 1410.4,
+      "end": 1411.04,
+      "text": "就是說",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 678,
+      "start": 1411.04,
+      "end": 1412.56,
+      "text": "現在大家開始pricing",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 679,
+      "start": 1412.56,
+      "end": 1414.08,
+      "text": "明年不降息了",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 680,
+      "start": 1414.08,
+      "end": 1415.84,
+      "text": "然後或者是降息很少",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 681,
+      "start": 1415.84,
+      "end": 1418.0,
+      "text": "那麼等到重新開始pricing",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 682,
+      "start": 1418.0,
+      "end": 1418.64,
+      "text": "不是明年",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 683,
+      "start": 1418.64,
+      "end": 1421.12,
+      "text": "我那個休假日子過魂",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 684,
+      "start": 1421.12,
+      "end": 1423.44,
+      "text": "今年就是大家開始pricing",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 685,
+      "start": 1423.44,
+      "end": 1424.16,
+      "text": "2025年",
+      "avg_logprob": -0.19588888411553915,
+      "no_speech_prob": 0.013053967617452145,
+      "compression_ratio": 1.3537906137184115
+    },
+    {
+      "id": 686,
+      "start": 1424.24,
+      "end": 1426.08,
+      "text": "這樣有一部分開始pricing",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 687,
+      "start": 1426.08,
+      "end": 1427.52,
+      "text": "2025年降很少息",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 688,
+      "start": 1427.52,
+      "end": 1429.52,
+      "text": "降一次或者降1.5次",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 689,
+      "start": 1429.52,
+      "end": 1431.84,
+      "text": "當它開始重新認識到",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 690,
+      "start": 1431.84,
+      "end": 1434.08,
+      "text": "今年可能還是會降兩次息的時候",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 691,
+      "start": 1434.08,
+      "end": 1436.96,
+      "text": "我覺得今年至少還是要降兩次息",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 692,
+      "start": 1436.96,
+      "end": 1438.08,
+      "text": "很有可能6月份一次",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 693,
+      "start": 1438.08,
+      "end": 1439.28,
+      "text": "年底下會降一次",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 694,
+      "start": 1439.28,
+      "end": 1441.12,
+      "text": "那麼從一次變回兩次",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 695,
+      "start": 1441.12,
+      "end": 1444.32,
+      "text": "那麼在這個短端",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 696,
+      "start": 1444.32,
+      "end": 1446.32,
+      "text": "可能還是利率曲線",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 697,
+      "start": 1446.32,
+      "end": 1447.76,
+      "text": "還是會往下跑一些",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 698,
+      "start": 1447.76,
+      "end": 1450.64,
+      "text": "但是長端上供應還是並不小的",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 699,
+      "start": 1450.64,
+      "end": 1452.16,
+      "text": "特別是1月份",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 700,
+      "start": 1452.16,
+      "end": 1453.6,
+      "text": "我看到1月份的供應",
+      "avg_logprob": -0.20286642627356805,
+      "no_speech_prob": 0.0005745826638303697,
+      "compression_ratio": 1.4131944444444444
+    },
+    {
+      "id": 701,
+      "start": 1453.6,
+      "end": 1457.84,
+      "text": "大概是比第一季度的預期要",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 702,
+      "start": 1457.84,
+      "end": 1458.72,
+      "text": "第一季度",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 703,
+      "start": 1458.72,
+      "end": 1460.88,
+      "text": "一季度的預期是73個million",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 704,
+      "start": 1460.88,
+      "end": 1462.32,
+      "text": "就是7300萬",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 705,
+      "start": 1462.32,
+      "end": 1464.48,
+      "text": "我講的都是DBO1",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 706,
+      "start": 1464.48,
+      "end": 1466.0,
+      "text": "就是債權都是講DBO1",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 707,
+      "start": 1466.0,
+      "end": 1467.68,
+      "text": "就是7300萬DBO1",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 708,
+      "start": 1467.68,
+      "end": 1469.6,
+      "text": "一季度的供應",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 709,
+      "start": 1469.6,
+      "end": 1471.2,
+      "text": "大概是9000萬DBO1",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 710,
+      "start": 1471.2,
+      "end": 1472.96,
+      "text": "所以1月份的供應",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 711,
+      "start": 1472.96,
+      "end": 1474.64,
+      "text": "大概9000萬DBO1",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 712,
+      "start": 1474.64,
+      "end": 1476.4,
+      "text": "所以在這幾天",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 713,
+      "start": 1476.4,
+      "end": 1477.92,
+      "text": "一直到後面表示",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 714,
+      "start": 1477.92,
+      "end": 1478.96,
+      "text": "1月底的時候",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 715,
+      "start": 1478.96,
+      "end": 1481.04,
+      "text": "利率對於實驗期",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 716,
+      "start": 1481.04,
+      "end": 1482.48,
+      "text": "對於長端的利率的壓力",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 717,
+      "start": 1482.48,
+      "end": 1483.28,
+      "text": "還是在的",
+      "avg_logprob": -0.2100680892666181,
+      "no_speech_prob": 0.004664971958845854,
+      "compression_ratio": 1.5086206896551724
+    },
+    {
+      "id": 718,
+      "start": 1483.36,
+      "end": 1484.56,
+      "text": "所以整個利率",
+      "avg_logprob": -0.21250641992849897,
+      "no_speech_prob": 0.0012317083310335875,
+      "compression_ratio": 1.3694029850746268
+    },
+    {
+      "id": 719,
+      "start": 1484.56,
+      "end": 1488.4,
+      "text": "我覺得今年還是會偏Steepen變抖",
+      "avg_logprob": -0.21250641992849897,
+      "no_speech_prob": 0.0012317083310335875,
+      "compression_ratio": 1.3694029850746268
+    },
+    {
+      "id": 720,
+      "start": 1488.4,
+      "end": 1490.64,
+      "text": "然後長端會維持在這個水平",
+      "avg_logprob": -0.21250641992849897,
+      "no_speech_prob": 0.0012317083310335875,
+      "compression_ratio": 1.3694029850746268
+    },
+    {
+      "id": 721,
+      "start": 1490.64,
+      "end": 1492.88,
+      "text": "現在這個水平相對來說",
+      "avg_logprob": -0.21250641992849897,
+      "no_speech_prob": 0.0012317083310335875,
+      "compression_ratio": 1.3694029850746268
+    },
+    {
+      "id": 722,
+      "start": 1492.88,
+      "end": 1494.4,
+      "text": "是一個比較fair的水平",
+      "avg_logprob": -0.21250641992849897,
+      "no_speech_prob": 0.0012317083310335875,
+      "compression_ratio": 1.3694029850746268
+    },
+    {
+      "id": 723,
+      "start": 1494.4,
+      "end": 1495.84,
+      "text": "那麼這個水平",
+      "avg_logprob": -0.21250641992849897,
+      "no_speech_prob": 0.0012317083310335875,
+      "compression_ratio": 1.3694029850746268
+    },
+    {
+      "id": 724,
+      "start": 1495.84,
+      "end": 1497.92,
+      "text": "其實已經對所有風險資產",
+      "avg_logprob": -0.21250641992849897,
+      "no_speech_prob": 0.0012317083310335875,
+      "compression_ratio": 1.3694029850746268
+    },
+    {
+      "id": 725,
+      "start": 1497.92,
+      "end": 1499.2,
+      "text": "是非常不友好",
+      "avg_logprob": -0.21250641992849897,
+      "no_speech_prob": 0.0012317083310335875,
+      "compression_ratio": 1.3694029850746268
+    },
+    {
+      "id": 726,
+      "start": 1499.2,
+      "end": 1500.88,
+      "text": "我們可以看他們去",
+      "avg_logprob": -0.21250641992849897,
+      "no_speech_prob": 0.0012317083310335875,
+      "compression_ratio": 1.3694029850746268
+    },
+    {
+      "id": 727,
+      "start": 1500.88,
+      "end": 1502.88,
+      "text": "比方說他們拉盤比的幣的時候",
+      "avg_logprob": -0.21250641992849897,
+      "no_speech_prob": 0.0012317083310335875,
+      "compression_ratio": 1.3694029850746268
+    },
+    {
+      "id": 728,
+      "start": 1502.88,
+      "end": 1507.04,
+      "text": "那個長端利率可是在4左右",
+      "avg_logprob": -0.21250641992849897,
+      "no_speech_prob": 0.0012317083310335875,
+      "compression_ratio": 1.3694029850746268
+    },
+    {
+      "id": 729,
+      "start": 1507.04,
+      "end": 1509.44,
+      "text": "所以差不多在4左右",
+      "avg_logprob": -0.21250641992849897,
+      "no_speech_prob": 0.0012317083310335875,
+      "compression_ratio": 1.3694029850746268
+    },
+    {
+      "id": 730,
+      "start": 1509.44,
+      "end": 1510.88,
+      "text": "拉盤比的幣的時候",
+      "avg_logprob": -0.21250641992849897,
+      "no_speech_prob": 0.0012317083310335875,
+      "compression_ratio": 1.3694029850746268
+    },
+    {
+      "id": 731,
+      "start": 1510.88,
+      "end": 1514.56,
+      "text": "所以比的幣是一個非常標準的",
+      "avg_logprob": -0.20029435688708008,
+      "no_speech_prob": 7.44152202969417e-05,
+      "compression_ratio": 1.4444444444444444
+    },
+    {
+      "id": 732,
+      "start": 1514.56,
+      "end": 1516.4,
+      "text": "非常依靠流動性的資產",
+      "avg_logprob": -0.20029435688708008,
+      "no_speech_prob": 7.44152202969417e-05,
+      "compression_ratio": 1.4444444444444444
+    },
+    {
+      "id": 733,
+      "start": 1516.4,
+      "end": 1520.0,
+      "text": "所以你要繼續在維持這個資產的價格",
+      "avg_logprob": -0.20029435688708008,
+      "no_speech_prob": 7.44152202969417e-05,
+      "compression_ratio": 1.4444444444444444
+    },
+    {
+      "id": 734,
+      "start": 1520.0,
+      "end": 1522.96,
+      "text": "你用人為拉通的方法去維持這個資產價格",
+      "avg_logprob": -0.20029435688708008,
+      "no_speech_prob": 7.44152202969417e-05,
+      "compression_ratio": 1.4444444444444444
+    },
+    {
+      "id": 735,
+      "start": 1522.96,
+      "end": 1525.36,
+      "text": "其實難度沒有那麼低",
+      "avg_logprob": -0.20029435688708008,
+      "no_speech_prob": 7.44152202969417e-05,
+      "compression_ratio": 1.4444444444444444
+    },
+    {
+      "id": 736,
+      "start": 1525.36,
+      "end": 1527.2,
+      "text": "是有一定難度的",
+      "avg_logprob": -0.20029435688708008,
+      "no_speech_prob": 7.44152202969417e-05,
+      "compression_ratio": 1.4444444444444444
+    },
+    {
+      "id": 737,
+      "start": 1527.2,
+      "end": 1529.6,
+      "text": "這個我大概就這樣",
+      "avg_logprob": -0.20029435688708008,
+      "no_speech_prob": 7.44152202969417e-05,
+      "compression_ratio": 1.4444444444444444
+    },
+    {
+      "id": 738,
+      "start": 1529.6,
+      "end": 1532.0,
+      "text": "對今年的市場",
+      "avg_logprob": -0.20029435688708008,
+      "no_speech_prob": 7.44152202969417e-05,
+      "compression_ratio": 1.4444444444444444
+    },
+    {
+      "id": 739,
+      "start": 1532.0,
+      "end": 1532.96,
+      "text": "我一定要說明年",
+      "avg_logprob": -0.20029435688708008,
+      "no_speech_prob": 7.44152202969417e-05,
+      "compression_ratio": 1.4444444444444444
+    },
+    {
+      "id": 740,
+      "start": 1532.96,
+      "end": 1535.12,
+      "text": "對今年市場這樣展望一下",
+      "avg_logprob": -0.20029435688708008,
+      "no_speech_prob": 7.44152202969417e-05,
+      "compression_ratio": 1.4444444444444444
+    },
+    {
+      "id": 741,
+      "start": 1535.12,
+      "end": 1537.92,
+      "text": "所以看看大家有些什麼問題",
+      "avg_logprob": -0.20029435688708008,
+      "no_speech_prob": 7.44152202969417e-05,
+      "compression_ratio": 1.4444444444444444
+    },
+    {
+      "id": 742,
+      "start": 1537.92,
+      "end": 1540.24,
+      "text": "然後那個我回答一下",
+      "avg_logprob": -0.3862475801158596,
+      "no_speech_prob": 0.00034816208062693477,
+      "compression_ratio": 0.9915254237288136
+    },
+    {
+      "id": 743,
+      "start": 1554.32,
+      "end": 1555.92,
+      "text": "好那謝謝大家時間",
+      "avg_logprob": -0.3862475801158596,
+      "no_speech_prob": 0.00034816208062693477,
+      "compression_ratio": 0.9915254237288136
+    },
+    {
+      "id": 744,
+      "start": 1555.92,
+      "end": 1557.92,
+      "text": "沒什麼問題的話我就先這樣了",
+      "avg_logprob": -0.3862475801158596,
+      "no_speech_prob": 0.00034816208062693477,
+      "compression_ratio": 0.9915254237288136
+    },
+    {
+      "id": 745,
+      "start": 1560.32,
+      "end": 1561.36,
+      "text": "好拜拜",
+      "avg_logprob": -0.3862475801158596,
+      "no_speech_prob": 0.00034816208062693477,
+      "compression_ratio": 0.9915254237288136
+    },
+    {
+      "id": 746,
+      "start": 1561.36,
+      "end": 1562.64,
+      "text": "大家新年快樂",
+      "avg_logprob": -0.3862475801158596,
+      "no_speech_prob": 0.00034816208062693477,
+      "compression_ratio": 0.9915254237288136
+    },
+    {
+      "id": 747,
+      "start": 1568.24,
+      "end": 1570.56,
+      "text": "對我說A股跌得很厲害",
+      "avg_logprob": -0.2605368914703528,
+      "no_speech_prob": 0.055978596210479736,
+      "compression_ratio": 1.4482758620689655
+    },
+    {
+      "id": 748,
+      "start": 1570.56,
+      "end": 1572.88,
+      "text": "就是我我我我我12月中的時候",
+      "avg_logprob": -0.2605368914703528,
+      "no_speech_prob": 0.055978596210479736,
+      "compression_ratio": 1.4482758620689655
+    },
+    {
+      "id": 749,
+      "start": 1572.88,
+      "end": 1574.16,
+      "text": "就說A股要跌",
+      "avg_logprob": -0.2605368914703528,
+      "no_speech_prob": 0.055978596210479736,
+      "compression_ratio": 1.4482758620689655
+    },
+    {
+      "id": 750,
+      "start": 1574.16,
+      "end": 1577.2,
+      "text": "A股在那個特朗普上臺前和上臺前後",
+      "avg_logprob": -0.2605368914703528,
+      "no_speech_prob": 0.055978596210479736,
+      "compression_ratio": 1.4482758620689655
+    },
+    {
+      "id": 751,
+      "start": 1577.2,
+      "end": 1580.16,
+      "text": "都是一個比較比較",
+      "avg_logprob": -0.2605368914703528,
+      "no_speech_prob": 0.055978596210479736,
+      "compression_ratio": 1.4482758620689655
+    },
+    {
+      "id": 752,
+      "start": 1580.16,
+      "end": 1582.4,
+      "text": "比較不是很很樂觀的一個狀態",
+      "avg_logprob": -0.2605368914703528,
+      "no_speech_prob": 0.055978596210479736,
+      "compression_ratio": 1.4482758620689655
+    },
+    {
+      "id": 753,
+      "start": 1584.4,
+      "end": 1586.16,
+      "text": "但是但是我覺得是這樣",
+      "avg_logprob": -0.2605368914703528,
+      "no_speech_prob": 0.055978596210479736,
+      "compression_ratio": 1.4482758620689655
+    },
+    {
+      "id": 754,
+      "start": 1586.16,
+      "end": 1587.2,
+      "text": "就是你你這樣講",
+      "avg_logprob": -0.2605368914703528,
+      "no_speech_prob": 0.055978596210479736,
+      "compression_ratio": 1.4482758620689655
+    },
+    {
+      "id": 755,
+      "start": 1587.2,
+      "end": 1588.8,
+      "text": "A股是這樣就是說",
+      "avg_logprob": -0.2605368914703528,
+      "no_speech_prob": 0.055978596210479736,
+      "compression_ratio": 1.4482758620689655
+    },
+    {
+      "id": 756,
+      "start": 1588.8,
+      "end": 1593.12,
+      "text": "政治局會議是醫生給你開藥",
+      "avg_logprob": -0.2605368914703528,
+      "no_speech_prob": 0.055978596210479736,
+      "compression_ratio": 1.4482758620689655
+    },
+    {
+      "id": 757,
+      "start": 1593.12,
+      "end": 1596.08,
+      "text": "然後那個那個兩會之後實行",
+      "avg_logprob": -0.2605368914703528,
+      "no_speech_prob": 0.055978596210479736,
+      "compression_ratio": 1.4482758620689655
+    },
+    {
+      "id": 758,
+      "start": 1596.08,
+      "end": 1597.92,
+      "text": "它是去藥房拿藥",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 759,
+      "start": 1597.92,
+      "end": 1600.16,
+      "text": "市場預期你已經大出血了",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 760,
+      "start": 1600.16,
+      "end": 1601.28,
+      "text": "醫生就直接給你藥了",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 761,
+      "start": 1601.28,
+      "end": 1602.24,
+      "text": "但醫生沒給",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 762,
+      "start": 1602.24,
+      "end": 1604.0,
+      "text": "所以整個市場就跌得很兇",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 763,
+      "start": 1604.0,
+      "end": 1605.6,
+      "text": "那你到了美國",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 764,
+      "start": 1605.6,
+      "end": 1606.72,
+      "text": "你等於往下走的時候",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 765,
+      "start": 1606.72,
+      "end": 1607.68,
+      "text": "又被人家統一到",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 766,
+      "start": 1607.68,
+      "end": 1609.44,
+      "text": "美國到時候又統一到",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 767,
+      "start": 1609.44,
+      "end": 1611.84,
+      "text": "所以大出血出了更嚴重",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 768,
+      "start": 1611.84,
+      "end": 1613.52,
+      "text": "那到了開藥的時候",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 769,
+      "start": 1613.52,
+      "end": 1615.68,
+      "text": "他們會有一波的relief的",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 770,
+      "start": 1615.68,
+      "end": 1617.68,
+      "text": "但是今年中國",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 771,
+      "start": 1617.68,
+      "end": 1619.12,
+      "text": "為什麼叫政策也叫追趕",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 772,
+      "start": 1619.12,
+      "end": 1622.96,
+      "text": "就是說我們控制通縮的政策",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 773,
+      "start": 1622.96,
+      "end": 1625.04,
+      "text": "是不是急得上通縮的速度",
+      "avg_logprob": -0.14236612921511685,
+      "no_speech_prob": 0.03712346777319908,
+      "compression_ratio": 1.41
+    },
+    {
+      "id": 774,
+      "start": 1625.12,
+      "end": 1626.48,
+      "text": "這個追趕的速度",
+      "avg_logprob": -0.31736953722106087,
+      "no_speech_prob": 0.003084293333813548,
+      "compression_ratio": 1.162162162162162
+    },
+    {
+      "id": 775,
+      "start": 1626.48,
+      "end": 1627.68,
+      "text": "是要一步一步擠上的",
+      "avg_logprob": -0.31736953722106087,
+      "no_speech_prob": 0.003084293333813548,
+      "compression_ratio": 1.162162162162162
+    },
+    {
+      "id": 776,
+      "start": 1627.68,
+      "end": 1628.88,
+      "text": "現在肯定是擠不上",
+      "avg_logprob": -0.31736953722106087,
+      "no_speech_prob": 0.003084293333813548,
+      "compression_ratio": 1.162162162162162
+    },
+    {
+      "id": 777,
+      "start": 1628.88,
+      "end": 1630.4,
+      "text": "後面還要看看能不能擠上",
+      "avg_logprob": -0.31736953722106087,
+      "no_speech_prob": 0.003084293333813548,
+      "compression_ratio": 1.162162162162162
+    },
+    {
+      "id": 778,
+      "start": 1631.44,
+      "end": 1632.72,
+      "text": "好謝謝謝謝",
+      "avg_logprob": -0.31736953722106087,
+      "no_speech_prob": 0.003084293333813548,
+      "compression_ratio": 1.162162162162162
+    },
+    {
+      "id": 779,
+      "start": 1632.72,
+      "end": 1634.0,
+      "text": "嗯拜拜",
+      "avg_logprob": -0.31736953722106087,
+      "no_speech_prob": 0.003084293333813548,
+      "compression_ratio": 1.162162162162162
+    }
+  ],
+  "text": "好 那謝謝大家 那個新年好 我聖誕到新年一直在修正 我其實聖誕到新年的時候 市場變化還是蠻大的 特別是acquity 股票 然後股票有很大的幅度的這個上下起伏 而且我說幾個吧 一個是股票 然後利率和外匯上 特別是外匯也經過 就是突破Range Bank 突破了一個區間 每個人走強的 他不光是對人民幣在走強 他對了外匯 對了歐元 對了議員都在走強 我們2025年第一次 展望一下未來一年 就像我上次 好像我講過好幾次 就說2023年是AI的年份 就所有2022年年底的時候出來到GPT 然後轉換為2023年整個股票市場 對於AI概念的追捧 然後2024年的延續了2023年這過程 但是2024年最主要是要宏觀市場 大家都在關注宏觀上美國會不會走落 美國會不會軟著落 然後經濟情況會怎麼樣 然後通常能不能被控制住 所以大家的關注點就在經濟數據在美聯儲 這個我上次應該簡單說過這個事情 然後2025年在我們叫Year of Transformation Policy Transformation 就是政策的改變 中國政策還有美國政策 那麼政策的改變就必然導致 這個東西是有很大的不確定性的 甚至很多時候在政客的一念之間 或者是在你們在12月底的時候 也看到Decidine的這個鬧局 對吧 那麼雖然共和黨控制了整個議會 或者宏觀來是多數吧 那麼就是通過議會的時候 並沒有像川普他們預期的這麼容易 所以我們會預期 明年的很多政策也會有很多的變數 他們是政策變化一年 但是中間也會有很多的波折 有很多的地方需要協調 這就意味著整個市場一定會面臨了很大的tell risk 我們說tell risk 就是市場的走勢是有個fat tail 有很大的這個尾部 黑天鵝的尾部風險其實發生的概率被我們想象要大 在四個方面 我之前也一直在說的 政策上對於美國的關稅 但對於移民的政策 移民是帶動美國經濟發展過去幾年 很重要的原因 美國的budget cut到底是沒什麼怎麼去做 那麼根據我現在就是經過Decidine這個事情 就是債務上限這個事情 我對於budget cut沒有那麼擔心 沒有之前那麼擔心 所以你可以說三號尾部的風險變小了 但是歐洲的風險還是非常大 所以這四個事情隨時也會爆發 我們講2025年的市場都會有兩條主線 就第一條我認為是base case 我們base case中間最大的概念叫divergence 就是風化美國和歐洲中國的風化 美國經濟很好 然後美聯儲可能政策會變得相對來說 變偏硬一邊 因為它經濟基本面還是很好 然後特朗普上台之後 它很多的政策可以得到實施 特別是它後期的一些可能會 比如說去檢管 去檢管甚至它發很多事情 它可能會發總統令 我們待會會講到 它在能源上面的政策 也可能會發總統令 那麼這些都對於acquity市場 對於市場是一個偏好的 而且我們可以說大部分的科技 或者是新興的技術的項目 都是在美股 所以美國的資本市場 可能還會大概率的還是會走得不錯 那麼配合著美國經濟變強 divergence就是美國 versus中國和歐洲 歐洲和中國都是政策和經濟衰落在跑 這什麼意思呢 就是當我的經濟會變得更差的時候 我的政策的支持的力度 我們特別是財政政策支持的力度 能不能擠得上我經濟變壞的速度 這個是歐洲和中國都面臨的問題 日本的想法 就是我通脹預期上升 那麼我的貨幣政策去控制通脹預期 能不能擠上通脹的預期 所以divergence是我們主線的可能 就是base case 那麼但是這中間有30%的概率 這個是非常不曉得概率 30%的概率可能會發生一些tel risk tel risk的來源 就可能是policy transformation 有政策的一些變化 所以我就是非常非常宏觀的 說一下就明年我對於整個市場的看法 那麼在這個過程中間 就是資產就說配置的時候 是謹慎和激進並存的 什麼意思呢 就比方說我自己的acquired position acquired投算 可能我中間有很大程度上 是放了leap call 然後加上一部分陷阱 感覺這個是就是 對於資產配置的一個簡單的看法 那麼說到上個星期 上個星期其實 CTA並沒有破CTA的一些關鍵的點位 所以我們看到Christmas的時候 有很多的gama position在清算 我們看到股票啥股票的gama 從我大概上次講這個市場之前 大概一個月不到吧 那個時候最多的gama position 從Dela那邊看 大概是12.3個別人 123億美元 那很大 總一個點 估值總一個點 那它要對沖 對沖這麼大金額 所以基本上整個估值 都是被控制在這個範圍裡面 但是 很有大量的那個期權 在年底要到期 再加上呢 整個年底的市場交易的時候的 這個投算非常清淡 那麼gama position最後被flip 到了年初的時候1月3號 那麼我看1月3號的時候 可能是變成負的300個別人 所以gama position被flip 然後再加上acquity 就是股票的交易非常清淡 那麼這種情況下 所有的市場會變得非常波動力很大 就是你一買它就包漲 然後一賣它就暴跌 那就是S&P在上個月的 基本上的走勢 所以我在休假中間 好像還跟好幾個投資人簡單 因為那天好像是聖誕後吧 聖誕後的那天跌了很凶 所以好幾個投資人 我跟他也聊過幾個 就是說在聖誕期間這個市場 你可以不要去看它 因為它就是一個 這個價錢沒有意義 價錢帶上量才有意義 它沒有量 所以它就是擺個盤 往下跌一下之後還會反彈 那麼更大程度上是因為positioning 那麼但是我覺得 就新年 聖誕之後到新年 這一次的比較大的調整 很短期的一個 那天跌了很多 那這樣一個幅度的調整 其實對於美股是一個好事 因為在這個調整中間 把很多 我們本來覺得 倉位過重了 就是美股倉位過重 一直是美股 我覺得是一個風險 那麼把很多過重的倉位 一定程度上清掉 所以整個acquity selling 在那一個星期 大概是191 那這中間有一些包括就年底的時候 他們要挑倉 要把那個only給realize出來 要把only給弄出來 然後也包括中間很多 那個gamma的hatch gamma position of flip 都包括大概出來 大概191 所以現在呢 整個我們會看 比在進入 在我說有風險有風險 大概是在這個時候吧 對吧 是在那個聖誕前 比聖誕前的時候 倉位稍微健康一點 這個是 這個是市場一個大事的一個情況 那麼這個股票的下跌 並沒有就包括 gamma的 gamma投存的變化 並沒有完全導致 cta去大規模的拋敗 然後昨天和今天兩天的走勢 可能會讓cta再買回來 所以總體來說 我們看到看年的這個情況 在這個短期的tactic 不能說太遠 就是沒人看得準 但是tactic上來看 我覺得在trump上任之前 市場應該還算不錯 這就跟我們上一次講的比較 比較一致 就是1月前兩星期 通常都是不少基金 在新年的時候 他會把投存清掉 然後前一兩星期 都是重新配置的一兩星期 基本上基金流露會 相對來說比較多一點 那麼我們從很短期的tactic上來看 可能還是等特朗普上台 看他的政策 其實大家都還在看他的政策 那麼今年政策面 影響會非常大 那麼這是一個 然後第二就是我們看到 其實比較重要的是 我想說的是fx 外匯 外匯的破位是 日元歐元、人民幣都在破位 在過去一個月裡面 其實突破了過去挺長時間 一段時間的range bond的空間 所以我們會看到美元走強 美元走強對於所有風險資產 都不是一個特別好的事情 那麼這背後的原因 其實也是年底的position 因為其實在trump剛剛選上的時候 就有不少對沖基金 他們都買了很多 就是long dollar option 就是買看多美元的期權 各種各樣的看多美元期權 那麼這個有中間很多代結構 那麼在年底的時候 因為頭寸比較輕 然後市場流動性比較差 所以一旦上漲的時候 他就把很多option的barrel給計穿了 每次計穿option barrel這些 你就相當於想把gama war給計穿了 計穿之後市場就會順著那個方向 繼續大幅的往上漲 所以美元在去年底到今年 就今年初之前漲了不少 那麼這個漲幅 我覺得是somehow是可以延續的 為什麼 因為我們已經在flow上 可以看到不少real money 因為前一段時間的上漲 更多的是hatch fund 我們叫leverage money 就槓桿錢在拉動 但是real money已經開始stopping to long dollar 就是說他們被迫的去做多美元 包括有很多外貿的資金 他們開始減少美元的對沖 那麼在歐洲在日本 在中國其實美元對沖已經一直比較少 但是在歐洲在日本或者是在其他地方 這些美元對沖的減少已經比較明顯 現在這個幅度是不是說 美元已經漲到頂 其實我覺得沒有 舉個例子 我們看到歐元對美元的implial 大概從3個月implial 從6%到8% 然後8%其實相比 川普上一屆搞貿易戰什麼的時候 那有時候可能是到了10% 10% 所以我們只是說 fxball在過去一段時間裡面 就是去年的時候 去年相當長的一段時間裡面 還是在一個非常低的位置 就是說我們市場開始 終於開始在特朗普要上台的時候 開始pricing 外匯可能會波動 那麼這個外匯的波動 一方面對應的特朗普可能會有的 這個tariff 就是那個外貿關稅的政策 那麼另一方面 還是對應的歐洲和美國 就從主線來講 tail risk不算 從主線來講 歐洲和美國或者是中國和美國的 這個 divergence 就是他們的這個分分離不同 那麼在歐洲來看的話 我們會看到它經濟會變得更差 所以三月份的時候 有可能我們會看到 美聯儲停止降息 然後歐洲會繼續降息 然後英國可能會再降息 所以你看到就是說 歐中央行和英格蘭銀行 它對於美聯儲的 貨幣政策的divergence 也是會存在 從這個角度上來講 就是說我們會看到 更多的real money 實際就是實際做外貿的錢 投資的錢 那麼這些錢 都會慢慢的減少 對於美聯的對寵 那麼這個是可能會 美元栽培了一年 繼續變得 趨勢性的變得更強的一個可能 那麼 我覺得甚至對歐元道義 那麼這個都是一個 比較fair的價錢 就是歐元道義 那麼日元要看 日本的那個生息的情況 人民幣是一個 非常被控制的currency 中間我們這裡大部分都還是 有很多人民幣資產的 然後人民幣是一個 非常被控制的資產 那麼在人民幣上的 我講一個人民幣 impliable就是那個波動率的一個情況 人民幣的波動率 在大概一個月的時候是5.8 然後在6個月的時候 就到了6.7 其實這個wall的區別 代表的市場pricing 你在短期裡面會控制人民幣 然後你在6個月裡面控制不住 那麼這個 跟我對人民幣的判斷也是差不多 所以你在短期裡面 可能還在7.2 7.2其實這個threshold 已經被打破了 可能還是在7.2到7.3上下 但是在6個月的時候 其中它很有可能會到 7.4、7.5的生命 或者在一年走期裡 那個7.4到7.5 還是我看大概幾年 一年人民幣的這個位置 比如說 中間大號會有比較大的波折 就是2月份的時候 它會有比較大幅的下跌 可能Trump的政策出來 Trump的所有的Tariff的政策 它不一定會馬上實施的 總統令和立法是兩件事情 立法是需要一年的過程的 然後甚至到一年 幾個月到一年的過程 但是總統令可以馬上出 它是說它要在Tariff上面 出總統令的 那麼我覺得可能真的出的 只有這種 對其他國家未必會針出來 但是實施它也是會有空間的 所以2月份的時候 也有很多負面的新聞 可能會出來 從美國和中國的外貿上 那麼這個負面的東西 會帶動人民幣變弱 那麼之後可能會 中國的政策 可能會帶動Tariff Cover 但是從趨勢上來講 它就是7.4到7.5 因為美元走強 還是主線上 還是大的趨勢 那麼有什麽東西會讓這個變改變呢 就是我們講到的Tale Risk 萬一美國衰退 美國所有我覺得最大的Tale Risk 在明年政策上Tale Risk 就是不管什麽政策 導致美國經濟真的變弱 真的走弱 那麽這個就會 包括我們剛講到基本上 當好我們會說 基本上對債券的判斷 對利率的判斷 對外匯判斷 對股市的判斷 全部要改變 所以這個都是一個Tale Risk 但是正常情況下的美元走強 美元走強會利好美國的市場 但是美元走強 利率會維持一個高位 那麽這種情況下 對於風險資產中間也會諷划 那麽風險資產中間 盈利相對比較好的資產 那麽我覺得是比較看好 是吧 就是但是對於比方說 黃金或者是流動性偏 流動性依靠度很高的 比方說比特幣 它繼續拉盤的壓力會很難 就是因為這輪比特幣基本上 全是靠必安給拉起來的 但是必安把它拉起來之後 繼續維持在這個高位上 沒有那麽容易 所以這個是大致 我覺得這個是 最近的一個外匯的變化 那麽最後我說一下那個 美元利率 先說一下大致宏觀發行的一個情況 那麽在明年的時候 總體要發 US dollar supply 大概在明年的時候 不是明年 就今年2025年的時候 850個免費 就8.5億美元 8.5億美元的那個DBO1 那這個規模其實很大 就是說但是相對2024年會好一點 2024年的時候 大概是就一個別臉 10億美元的DBO1 所以我們會看到總體的發行量 在20預期總體的發行量 在2025年的時候 相對來說變少一些 那麽這個就是inline 我們最近的一個美國的這個 deceiving的事情 額戰物上限呢 其實有一點 可能我覺得有一點 出乎那個GOP的預期 因為GOP還是需要那個就是共和黨吧 共和黨還是需要 雖然他們在那個議會 眾議院有多數議席 就是微弱的多數 但是他還是 他要通過政策 還是需要和黨內的保守派去溝通呢 所以黨內的保守派 對於整個美國赤字的情況 包括對於美國以後還會有 就對於美國移民 對於美國那個tariff怎麽樣 他的這個 他的這個觀點 和黨內的激進盤是不一樣的 就是森浩你會覺得吧 就是整個這次大選選贏 是一群對民主黨 特別是對民主黨的這個 膨脹不滿意的人 或者對民主黨這個 王左走DIE啊 威國啊這些事情做了時代 時代不能忍受的幫人 那麽聯合起來 把民主黨給選下來 把拜登政府選下來 但是在共和黨黨內 他們的分歧 在某些議題上 甚至比對民主黨的 這個分歧還要更大 我記得應該是Christmas前後吧 然後在那個推了上面 Elon Musk 就是Elon Musk其實是代表 那個共和黨內的這個 規股派 就是他們是科技派 包括Elon Musk 包括Peter Thiel 我們上次講到 美國政治的時候 其實說過這個話題 其實那個川普 他背後真正的老闆 是Peter Thiel 是代表著那個規股的利益 那麽這批人呢 其實他對於移民政策和MAGA MAGA就是得幫紅脖子 就是我們把紅脖子 統稱為MAGA 那幫MAGA派 他們是有本質的這個區別的 所以他們在那個 推特上發生爭吵 爭吵之後 其實川普最後是 占了Elon Musk的便 就是把MAGA 他那些基本盤也拋棄了 所以你可以理解 比如說 有一部分人是底層的 有一部分人是規股的新規 這些人聯合起來 把那個川普給選上去了 但是他們之間 對於很多政策的分歧 會很大 所以不要覺得共和黨 通控制了議會 然後他就能夠隨心所欲的 通過所有的政策 其實並沒有那麽容易 包括我們這一次 也看到那個 特朗普對House的控制力 比我們想象的要弱 比如說這一次 只是突破Decide 現在是最後當然Compromise 就是說 一方面他引用了 原來的一些政策 就是說我可以 這個財政部引用了 所以財政部其實可以 把那個發財規模 就手上的現金規模 TGA的規模用在700個別臉 就7000億左右 所以這個7000億左右的 TGA是可以讓美國 大概用到7月份 所以創不上臺之後 很有可能在3月份 沒比在3月份的時候 就把這些問題解決掉 但是通過Deciline的難度 一定比他減稅的難度要小 所以他要說 他後面去 比方說去搞減稅這些事情 很有可能 GOP還是需要和Democrats 在議會裏面要協調 說島內有一些保守派 未必會完全統一 很多減稅的政策 所以當你很多 你假如說你Budget 需要去和Democrats溝通的時候 那麼就會增加溝通的難度 就Luckily 我們希望在3月份的時候 那麼我們把Deciline 這些事情全部能解決掉 但是也有種可能 就是你需要和民主黨去溝通 去民主黨去協調 那麼這個事情 就往往會拖到最後一步 因為不同黨的 大家利益訴求 民主黨比方說 有可能會要求你把 奧巴馬KL中間一部分東西保留 那麼這些東西 是一旦需要協調 它有可能會把時間脫後 就有可能在政策上 造成不確定性 所以 我就說最簡單的 通過一些條款的政策 並沒有像現在想像的 這麼簡單 我們對於Deciline和對於發展 我們可以看真正的 債務上限的時間 大概就是今年的7月份 這次 無論如何 它畢竟是黨內的協調 所以無論如何 它不會搞得像23年 或者像10年之前 奧巴馬那個時候 什麼Government shutdown 然後Deciline 鬧出一個大鬧局 股票暴跌 這種事情 我覺得不太會發生 但是呢 我們也要同時 預期到有很多的政策實施中間 是會有glitch的 是會有一些 小的波動 那麼 會說回整個發展的規模 所以在這過程中 如果正常的情況下 2025年的發展呢 是相對來說 比2024年稍微好一點 所以我在2024年年初的時候 就一直覺得 長債利率下不去 無論如何都下不去 2025年有發展的規模 但2026年會不小 雖然這規模比2024年小 但是利率不會 不會大幅下降 特別是現在美聯儲 還雖然比較強硬 那即使美聯儲 到時候 沒有像現在想的這麼強硬 它的這個下去的也是短端 所以對利率 我整體的看法 還是steep 變抖 也就是說 在短端是有機會的 短端是個美食的概念 就是說 現在大家開始pricing 明年不降息了 然後或者是降息很少 那麼等到重新開始pricing 不是明年 我那個休假日子過魂 今年就是大家開始pricing 2025年 這樣有一部分開始pricing 2025年降很少息 降一次或者降1.5次 當它開始重新認識到 今年可能還是會降兩次息的時候 我覺得今年至少還是要降兩次息 很有可能6月份一次 年底下會降一次 那麼從一次變回兩次 那麼在這個短端 可能還是利率曲線 還是會往下跑一些 但是長端上供應還是並不小的 特別是1月份 我看到1月份的供應 大概是比第一季度的預期要 第一季度 一季度的預期是73個million 就是7300萬 我講的都是DBO1 就是債權都是講DBO1 就是7300萬DBO1 一季度的供應 大概是9000萬DBO1 所以1月份的供應 大概9000萬DBO1 所以在這幾天 一直到後面表示 1月底的時候 利率對於實驗期 對於長端的利率的壓力 還是在的 所以整個利率 我覺得今年還是會偏Steepen變抖 然後長端會維持在這個水平 現在這個水平相對來說 是一個比較fair的水平 那麼這個水平 其實已經對所有風險資產 是非常不友好 我們可以看他們去 比方說他們拉盤比的幣的時候 那個長端利率可是在4左右 所以差不多在4左右 拉盤比的幣的時候 所以比的幣是一個非常標準的 非常依靠流動性的資產 所以你要繼續在維持這個資產的價格 你用人為拉通的方法去維持這個資產價格 其實難度沒有那麼低 是有一定難度的 這個我大概就這樣 對今年的市場 我一定要說明年 對今年市場這樣展望一下 所以看看大家有些什麼問題 然後那個我回答一下 好那謝謝大家時間 沒什麼問題的話我就先這樣了 好拜拜 大家新年快樂 對我說A股跌得很厲害 就是我我我我我12月中的時候 就說A股要跌 A股在那個特朗普上臺前和上臺前後 都是一個比較比較 比較不是很很樂觀的一個狀態 但是但是我覺得是這樣 就是你你這樣講 A股是這樣就是說 政治局會議是醫生給你開藥 然後那個那個兩會之後實行 它是去藥房拿藥 市場預期你已經大出血了 醫生就直接給你藥了 但醫生沒給 所以整個市場就跌得很兇 那你到了美國 你等於往下走的時候 又被人家統一到 美國到時候又統一到 所以大出血出了更嚴重 那到了開藥的時候 他們會有一波的relief的 但是今年中國 為什麼叫政策也叫追趕 就是說我們控制通縮的政策 是不是急得上通縮的速度 這個追趕的速度 是要一步一步擠上的 現在肯定是擠不上 後面還要看看能不能擠上 好謝謝謝謝 嗯拜拜"
+}

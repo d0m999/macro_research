@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "video_id": "YJ8cpZrdvfo",
+  "recorded_on": "2026-08-29",
+  "tool": "yt-dlp",
+  "tool_version": "2025.12.08",
+  "metadata_probe": "passed",
+  "public_status": "public",
+  "attempts": [
+    {
+      "client": "android_vr",
+      "format": "137+140",
+      "url_probe": "passed",
+      "initial_range_result": "HTTP 302 with 0 bytes"
+    },
+    {
+      "client": "android_vr",
+      "format": "137+140",
+      "request": "range 0-1048575 after redirect",
+      "result": "HTTP 206 with 1048576 bytes"
+    },
+    {
+      "client": "android_vr",
+      "format": "137+140",
+      "request": "range 1048576-2097151 after redirect",
+      "result": "HTTP 403 Forbidden with 0 bytes"
+    },
+    {
+      "client": "android_vr",
+      "format": "137+140",
+      "network_retest": "2026-08-27",
+      "url_probe": "passed",
+      "requests": [
+        {
+          "stream": "video",
+          "mime": "video/mp4",
+          "range": "0-1023",
+          "result": "HTTP 206",
+          "bytes": 1024
+        },
+        {
+          "stream": "video",
+          "mime": "video/mp4",
+          "range": "1048576-1049599",
+          "result": "HTTP 206",
+          "bytes": 1024
+        },
+        {
+          "stream": "audio",
+          "mime": "audio/mp4",
+          "range": "0-1023",
+          "result": "HTTP 206",
+          "bytes": 1024
+        },
+        {
+          "stream": "audio",
+          "mime": "audio/mp4",
+          "range": "1048576-1049599",
+          "result": "HTTP 206",
+          "bytes": 1024
+        }
+      ],
+      "classification": "network_retest_passed"
+    },
+    {
+      "client": "android_vr",
+      "format": "248+251",
+      "request": "range 1048576-2097151 after redirect",
+      "video_result": "HTTP 206 with 1048576 bytes",
+      "audio_result": "HTTP 403 Forbidden with 0 bytes"
+    },
+    {
+      "client": "android_vr",
+      "format": "248+140",
+      "download_attempt": "default HTTP requests",
+      "result": "HTTP 403 Forbidden before a complete media file was created"
+    },
+    {
+      "client": "android_vr",
+      "format": "248+140",
+      "download_attempt": "--http-chunk-size 512K",
+      "result": "download reached approximately 2.0 MiB (2.9%) then HTTP 403; partial removed"
+    },
+    {
+      "clients": [
+        "android_vr",
+        "android_sdkless",
+        "ios",
+        "tv",
+        "web",
+        "mweb"
+      ],
+      "request": "fresh URL, range 2097152-3145727",
+      "result": "android_vr and android_sdkless HTTP 403; other clients did not provide a usable media response"
+    },
+    {
+      "route": "direct",
+      "request": "metadata probe without proxy",
+      "result": "no usable media URL"
+    },
+    {
+      "route": "socks5://127.0.0.1:7897",
+      "request": "fresh URL, range 2097152-3145727",
+      "result": "HTTP 403 Forbidden with 0 bytes"
+    },
+    {
+      "network_retest": "2026-08-29",
+      "resource_gate": {
+        "cpu_idle_percent": [62.16, 67.25, 61.49],
+        "memory_free_percent": [54, 56, 57],
+        "disk_free_gib": [47.8, 47.8, 47.8],
+        "swapouts_increased": false,
+        "pipeline_locks": [0, 0, 0]
+      },
+      "requests": [
+        {
+          "format": "248",
+          "range": "2097152-3145727",
+          "result": "HTTP 403",
+          "bytes": 0
+        },
+        {
+          "format": "140",
+          "range": "2097152-3145727",
+          "result": "HTTP 403",
+          "bytes": 0
+        }
+      ],
+      "classification": "blocked_tooling"
+    }
+  ],
+  "classification": "blocked_tooling",
+  "constraints_respected": [
+    "no_login",
+    "no_drm_or_verification_bypass",
+    "no_automatic_tool_upgrade",
+    "no_low_resolution_downgrade_as_final_output",
+    "no_signed_url_written"
+  ]
+}

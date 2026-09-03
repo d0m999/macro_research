@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "package_type": "video-research-agent-data",
+  "video": {
+    "id": "market-overview-2026-08-25",
+    "title": "市场概述2026年8月25日",
+    "date": "2026-08-25",
+    "source_url": "https://www.youtube.com/watch?v=TQ3G5Jf-yNM",
+    "duration_seconds": 1868.1846875,
+    "language": "zh"
+  },
+  "files": {
+    "transcript": "transcript.jsonl",
+    "deck": "deck.jsonl",
+    "slides_directory": "slides/",
+    "ocr_directory": "ocr/"
+  },
+  "related_materials": {
+    "readable_html": "../../_readable/market-overview-2026-08-25.html",
+    "source_directory": "../../_source/market-overview-2026-08-25/"
+  },
+  "transcript": {
+    "record_count": 771,
+    "kind": "automatic_generated",
+    "timing": "native_segment_start_end",
+    "source_label": "faster-whisper small on audio extracted from YouTube",
+    "original_file": null,
+    "fields": [
+      "id",
+      "start",
+      "end",
+      "text",
+      "chapter",
+      "source"
+    ]
+  },
+  "deck": {
+    "record_count": 6,
+    "image_format": "png",
+    "image_role": "visual evidence; OCR is the primary retrieval field",
+    "fields": [
+      "id",
+      "time_ranges",
+      "title",
+      "image",
+      "ocr_file",
+      "ocr",
+      "visual_type",
+      "summary",
+      "source_file",
+      "image_format"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "opening",
+      "start": 0,
+      "end": 120,
+      "label": "开场与旧叙事"
+    },
+    {
+      "id": "arr-positioning",
+      "start": 120,
+      "end": 400,
+      "label": "ARR、仓位与市场失望"
+    },
+    {
+      "id": "ai-value-chain",
+      "start": 400,
+      "end": 910,
+      "label": "AI 价值链与云厂商收入"
+    },
+    {
+      "id": "positioning-reset",
+      "start": 910,
+      "end": 1345,
+      "label": "仓位 reset 与杠杆"
+    },
+    {
+      "id": "long-rates",
+      "start": 1345,
+      "end": 1395,
+      "label": "长端利率与增长"
+    },
+    {
+      "id": "policy-fork",
+      "start": 1395,
+      "end": 1495,
+      "label": "政策分叉与估值"
+    },
+    {
+      "id": "buybacks-close",
+      "start": 1495,
+      "end": 1000000000,
+      "label": "回购、波动控制与收尾"
+    }
+  ],
+  "evidence_boundary": "Automatic transcript and OCR may misrecognize proper nouns, figures, and labels. Use source media for verification.",
+  "generated_on": "2026-08-26"
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "package_type": "video-research-agent-data",
+  "video": {
+    "id": "market-overview-2025-10-14",
+    "title": "市场概述2025年10月14日",
+    "date": "2025-10-14",
+    "source_url": "https://www.youtube.com/watch?v=LLx502eHIfw",
+    "duration_seconds": 2011.336,
+    "language": "zh"
+  },
+  "files": {
+    "transcript": "transcript.jsonl",
+    "deck": "deck.jsonl",
+    "slides_directory": "slides/",
+    "ocr_directory": "ocr/"
+  },
+  "related_materials": {
+    "readable_html": null,
+    "source_directory": "../../_source/market-overview-2025-10-14/"
+  },
+  "transcript": {
+    "record_count": 894,
+    "kind": "automatic_generated",
+    "timing": "native_segment_start_end",
+    "source_label": "faster-whisper small on audio extracted from YouTube progressive format 18",
+    "original_file": null,
+    "fields": [
+      "id",
+      "start",
+      "end",
+      "text",
+      "chapter",
+      "source"
+    ]
+  },
+  "deck": {
+    "record_count": 10,
+    "image_format": "png",
+    "image_role": "visual evidence; OCR is the primary retrieval field",
+    "fields": [
+      "id",
+      "time_ranges",
+      "title",
+      "image",
+      "ocr_file",
+      "ocr",
+      "visual_type",
+      "summary",
+      "source_file",
+      "image_format"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "chapter-01",
+      "start": 0.0,
+      "end": 335.223,
+      "label": "估值、盈利与市场定价"
+    },
+    {
+      "id": "chapter-02",
+      "start": 335.223,
+      "end": 670.445,
+      "label": "风险情景与交易框架"
+    },
+    {
+      "id": "chapter-03",
+      "start": 670.445,
+      "end": 1005.668,
+      "label": "AI与科技产业"
+    },
+    {
+      "id": "chapter-04",
+      "start": 1005.668,
+      "end": 1340.89,
+      "label": "估值、盈利与市场定价"
+    },
+    {
+      "id": "chapter-05",
+      "start": 1340.89,
+      "end": 1676.113,
+      "label": "估值、盈利与市场定价"
+    },
+    {
+      "id": "chapter-06",
+      "start": 1676.113,
+      "end": 2011.336,
+      "label": "估值、盈利与市场定价"
+    }
+  ],
+  "acquisition": {
+    "method": "yt-dlp public progressive format fallback",
+    "requested_format": "bestvideo[height<=2160]+bestaudio/best[height<=2160]",
+    "actual_format_id": "18",
+    "actual_container": "mp4",
+    "actual_width": 640,
+    "actual_height": 360,
+    "actual_fps": 15.0,
+    "fallback_reason": "DASH media streams returned HTTP 403 after a nonzero byte offset; public progressive format 18 was readable.",
+    "temporary_source_retained_only_during_processing": true
+  },
+  "evidence_boundary": "Automatic transcript and OCR may misrecognize proper nouns, figures, and labels. Use source media for verification.",
+  "generated_on": "2026-09-01"
+}

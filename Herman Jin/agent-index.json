@@ -3,9 +3,16 @@
   "package_type": "video-research-agent-index",
   "description": "Herman Jin 市场概述视频的 agent 数据入口。优先读取各 package 的 manifest.json，再按需读取 transcript.jsonl、deck.jsonl 和 slides/*.png。",
   "conventions": {
-    "video_directory_template": "market-overview-YYYY-MM-DD/",
-    "agent_files": ["manifest.json", "transcript.jsonl", "deck.jsonl"],
-    "agent_directories": ["slides/", "ocr/"],
+    "video_directory_template": "market-overview/market-overview-YYYY-MM-DD/",
+    "agent_files": [
+      "manifest.json",
+      "transcript.jsonl",
+      "deck.jsonl"
+    ],
+    "agent_directories": [
+      "slides/",
+      "ocr/"
+    ],
     "separate_materials": {
       "readable": "_readable/",
       "source": "_source/"
@@ -16,7 +23,7 @@
       "id": "market-overview-2026-08-25",
       "title": "市场概述2026年8月25日",
       "date": "2026-08-25",
-      "manifest": "market-overview-2026-08-25/manifest.json",
+      "manifest": "market-overview/market-overview-2026-08-25/manifest.json",
       "readable": "_readable/market-overview-2026-08-25.html",
       "source": "_source/market-overview-2026-08-25/"
     },
@@ -24,18 +31,442 @@
       "id": "market-overview-2026-08-04",
       "title": "市场概述2026年8月4日",
       "date": "2026-08-04",
-      "manifest": "market-overview-2026-08-04/manifest.json",
+      "manifest": "market-overview/market-overview-2026-08-04/manifest.json",
       "readable": "_readable/market-overview-2026-08-04.html",
       "source": "_source/market-overview-2026-08-04/"
+    },
+    {
+      "id": "market-overview-2026-07-21",
+      "title": "市场概述2026年7月21日",
+      "date": "2026-07-21",
+      "manifest": "market-overview/market-overview-2026-07-21/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-07-21/"
+    },
+    {
+      "id": "market-overview-2026-07-14",
+      "title": "市场概述2026年7月14日",
+      "date": "2026-07-14",
+      "manifest": "market-overview/market-overview-2026-07-14/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-07-14/"
     },
     {
       "id": "market-overview-2026-06-30",
       "title": "市场概述2026年6月30日",
       "date": "2026-06-30",
-      "manifest": "market-overview-2026-06-30/manifest.json",
+      "manifest": "market-overview/market-overview-2026-06-30/manifest.json",
       "readable": "_readable/market-overview-2026-06-30.html",
       "source": "_source/market-overview-2026-06-30/"
+    },
+    {
+      "id": "market-overview-2026-06-23",
+      "title": "市场概述2026年6月23日",
+      "date": "2026-06-23",
+      "manifest": "market-overview/market-overview-2026-06-23/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-06-23/"
+    },
+    {
+      "id": "market-overview-2026-06-09",
+      "title": "市场概述2026年6月9日",
+      "date": "2026-06-09",
+      "manifest": "market-overview/market-overview-2026-06-09/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-06-09/"
+    },
+    {
+      "id": "market-overview-2026-06-02",
+      "title": "AI投资复盘",
+      "date": "2026-06-02",
+      "manifest": "market-overview/market-overview-2026-06-02/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-06-02/"
+    },
+    {
+      "id": "market-overview-2026-05-19",
+      "title": "市场概述2026年5月16日",
+      "date": "2026-05-19",
+      "manifest": "market-overview/market-overview-2026-05-19/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-05-19/"
+    },
+    {
+      "id": "market-overview-2026-05-05",
+      "title": "市场概述2026年4月21日",
+      "date": "2026-05-05",
+      "manifest": "market-overview/market-overview-2026-05-05/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-05-05/"
+    },
+    {
+      "id": "market-overview-2026-04-21",
+      "title": "市场概述2026年4月21日",
+      "date": "2026-04-21",
+      "manifest": "market-overview/market-overview-2026-04-21/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-04-21/"
+    },
+    {
+      "id": "market-overview-2026-04-14",
+      "title": "市场概述2026年4月14日",
+      "date": "2026-04-14",
+      "manifest": "market-overview/market-overview-2026-04-14/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-04-14/"
+    },
+    {
+      "id": "market-overview-2026-03-24",
+      "title": "市场概述2026年3月24日",
+      "date": "2026-03-24",
+      "manifest": "market-overview/market-overview-2026-03-24/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-03-24/"
+    },
+    {
+      "id": "market-overview-2026-03-17",
+      "title": "市场概述2026年3月17日",
+      "date": "2026-03-17",
+      "manifest": "market-overview/market-overview-2026-03-17/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-03-17/"
+    },
+    {
+      "id": "market-overview-2026-03-10",
+      "title": "市场概述2026年3月10日",
+      "date": "2026-03-10",
+      "manifest": "market-overview/market-overview-2026-03-10/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-03-10/"
+    },
+    {
+      "id": "market-overview-2026-03-03",
+      "title": "市场概述2026年3月3日",
+      "date": "2026-03-03",
+      "manifest": "market-overview/market-overview-2026-03-03/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-03-03/"
+    },
+    {
+      "id": "market-overview-2026-02-10",
+      "title": "市场概述2026年2月10日",
+      "date": "2026-02-10",
+      "manifest": "market-overview/market-overview-2026-02-10/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-02-10/"
+    },
+    {
+      "id": "market-overview-2026-02-03",
+      "title": "市场概述2026年2月3日",
+      "date": "2026-02-03",
+      "manifest": "market-overview/market-overview-2026-02-03/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-02-03/"
+    },
+    {
+      "id": "market-overview-2026-01-27",
+      "title": "市场概述2026年1月27日",
+      "date": "2026-01-27",
+      "manifest": "market-overview/market-overview-2026-01-27/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-01-27/"
+    },
+    {
+      "id": "market-overview-2026-01-20",
+      "title": "市场概述2026年1月20日",
+      "date": "2026-01-20",
+      "manifest": "market-overview/market-overview-2026-01-20/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-01-20/"
+    },
+    {
+      "id": "market-overview-2026-01-06",
+      "title": "市场概述2026年1月6日",
+      "date": "2026-01-06",
+      "manifest": "market-overview/market-overview-2026-01-06/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-01-06/"
+    },
+    {
+      "id": "market-overview-2025-12-30",
+      "title": "市场概述2026年12月30日",
+      "date": "2025-12-30",
+      "manifest": "market-overview/market-overview-2025-12-30/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-12-30/"
+    },
+    {
+      "id": "market-overview-2025-12-16",
+      "title": "市场概述2025年12月16日",
+      "date": "2025-12-16",
+      "manifest": "market-overview/market-overview-2025-12-16/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-12-16/"
+    },
+    {
+      "id": "market-overview-2025-12-09",
+      "title": "市场概述2025年12月9日",
+      "date": "2025-12-09",
+      "manifest": "market-overview/market-overview-2025-12-09/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-12-09/"
+    },
+    {
+      "id": "market-overview-2025-11-25",
+      "title": "市场概述2025年11月25日",
+      "date": "2025-11-25",
+      "manifest": "market-overview/market-overview-2025-11-25/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-11-25/"
+    },
+    {
+      "id": "market-overview-2025-11-18",
+      "title": "市场概述2025年11月18日",
+      "date": "2025-11-18",
+      "manifest": "market-overview/market-overview-2025-11-18/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-11-18/"
+    },
+    {
+      "id": "market-overview-2025-10-28",
+      "title": "市场概述2025年10月28日",
+      "date": "2025-10-28",
+      "manifest": "market-overview/market-overview-2025-10-28/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-10-28/"
+    },
+    {
+      "id": "market-overview-2025-10-14",
+      "title": "市场概述2025年10月14日",
+      "date": "2025-10-14",
+      "manifest": "market-overview/market-overview-2025-10-14/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-10-14/"
+    },
+    {
+      "id": "market-overview-2025-09-30",
+      "title": "市场概述2025年9月30日",
+      "date": "2025-09-30",
+      "manifest": "market-overview/market-overview-2025-09-30/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-09-30/"
+    },
+    {
+      "id": "market-overview-2025-09-23",
+      "title": "市场概述2025年9月23日",
+      "date": "2025-09-23",
+      "manifest": "market-overview/market-overview-2025-09-23/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-09-23/"
+    },
+    {
+      "id": "market-overview-2025-09-09",
+      "title": "2025年9月9日",
+      "date": "2025-09-09",
+      "manifest": "market-overview/market-overview-2025-09-09/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-09-09/"
+    },
+    {
+      "id": "market-overview-2025-09-02",
+      "title": "市场概述2025年9月2日（crypto）",
+      "date": "2025-09-02",
+      "manifest": "market-overview/market-overview-2025-09-02/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-09-02/"
+    },
+    {
+      "id": "market-overview-2025-08-12",
+      "title": "市场概述2025年8月12日",
+      "date": "2025-08-12",
+      "manifest": "market-overview/market-overview-2025-08-12/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-08-12/"
+    },
+    {
+      "id": "market-overview-2025-08-05",
+      "title": "市场概述2025年8月5日",
+      "date": "2025-08-05",
+      "manifest": "market-overview/market-overview-2025-08-05/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-08-05/"
+    },
+    {
+      "id": "market-overview-2025-07-22",
+      "title": "市场概述2025年7月22日",
+      "date": "2025-07-22",
+      "manifest": "market-overview/market-overview-2025-07-22/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-07-22/"
+    },
+    {
+      "id": "market-overview-2025-07-08",
+      "title": "市场概述2025年7月8日",
+      "date": "2025-07-08",
+      "manifest": "market-overview/market-overview-2025-07-08/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-07-08/"
+    },
+    {
+      "id": "market-overview-2025-07-02",
+      "title": "市场概述2025年7月1日（重发）",
+      "date": "2025-07-02",
+      "manifest": "market-overview/market-overview-2025-07-02/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-07-02/"
+    },
+    {
+      "id": "market-overview-2025-06-24",
+      "title": "市场概述2025年6月24日",
+      "date": "2025-06-24",
+      "manifest": "market-overview/market-overview-2025-06-24/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-06-24/"
+    },
+    {
+      "id": "market-overview-2025-06-10",
+      "title": "市场概述2025年6月10日",
+      "date": "2025-06-10",
+      "manifest": "market-overview/market-overview-2025-06-10/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-06-10/"
+    },
+    {
+      "id": "market-overview-2025-06-03",
+      "title": "市场概述2025年6月3日",
+      "date": "2025-06-03",
+      "manifest": "market-overview/market-overview-2025-06-03/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-06-03/"
+    },
+    {
+      "id": "market-overview-2025-05-20",
+      "title": "市场概述2025年5月20日",
+      "date": "2025-05-20",
+      "manifest": "market-overview/market-overview-2025-05-20/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-05-20/"
+    },
+    {
+      "id": "market-overview-2025-05-13",
+      "title": "市场概述2025年5月13日",
+      "date": "2025-05-13",
+      "manifest": "market-overview/market-overview-2025-05-13/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-05-13/"
+    },
+    {
+      "id": "market-overview-2025-04-29",
+      "title": "市场概述2025年4月29日",
+      "date": "2025-04-29",
+      "manifest": "market-overview/market-overview-2025-04-29/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-04-29/"
+    },
+    {
+      "id": "market-overview-2025-04-22",
+      "title": "市场概述2025年4月22日",
+      "date": "2025-04-22",
+      "manifest": "market-overview/market-overview-2025-04-22/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-04-22/"
+    },
+    {
+      "id": "market-overview-2025-04-15",
+      "title": "市场概述2025年4月15日",
+      "date": "2025-04-15",
+      "manifest": "market-overview/market-overview-2025-04-15/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-04-15/"
+    },
+    {
+      "id": "market-overview-2025-04-08",
+      "title": "市场概述2025年4月8日",
+      "date": "2025-04-08",
+      "manifest": "market-overview/market-overview-2025-04-08/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-04-08/"
+    },
+    {
+      "id": "market-overview-2025-04-01",
+      "title": "市场概述2025年4月1日",
+      "date": "2025-04-01",
+      "manifest": "market-overview/market-overview-2025-04-01/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-04-01/"
+    },
+    {
+      "id": "market-overview-2025-03-18",
+      "title": "市场概述  2025年3月18日",
+      "date": "2025-03-18",
+      "manifest": "market-overview/market-overview-2025-03-18/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-03-18/"
+    },
+    {
+      "id": "market-overview-2025-03-11",
+      "title": "2025年3月11日",
+      "date": "2025-03-11",
+      "manifest": "market-overview/market-overview-2025-03-11/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-03-11/"
+    },
+    {
+      "id": "market-overview-2025-03-04",
+      "title": "2025年4月3日",
+      "date": "2025-03-04",
+      "manifest": "market-overview/market-overview-2025-03-04/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-03-04/"
+    },
+    {
+      "id": "market-overview-2025-02-25",
+      "title": "全球资本市场分析2月25日",
+      "date": "2025-02-25",
+      "manifest": "market-overview/market-overview-2025-02-25/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-02-25/"
+    },
+    {
+      "id": "market-overview-2025-02-18",
+      "title": "2025年2月18日",
+      "date": "2025-02-18",
+      "manifest": "market-overview/market-overview-2025-02-18/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-02-18/"
+    },
+    {
+      "id": "market-overview-2025-02-11",
+      "title": "2025年2月11日",
+      "date": "2025-02-11",
+      "manifest": "market-overview/market-overview-2025-02-11/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-02-11/"
+    },
+    {
+      "id": "market-overview-2025-01-21",
+      "title": "2025年1月21日",
+      "date": "2025-01-21",
+      "manifest": "market-overview/market-overview-2025-01-21/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-01-21/"
+    },
+    {
+      "id": "market-overview-2025-01-14",
+      "title": "2025年1月14日",
+      "date": "2025-01-14",
+      "manifest": "market-overview/market-overview-2025-01-14/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-01-14/"
+    },
+    {
+      "id": "market-overview-2025-01-07",
+      "title": "2025年1月7日",
+      "date": "2025-01-07",
+      "manifest": "market-overview/market-overview-2025-01-07/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2025-01-07/"
     }
   ],
-  "generated_on": "2026-08-26"
+  "generated_on": "2026-09-02"
 }
