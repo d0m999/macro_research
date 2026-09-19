@@ -226,9 +226,9 @@
 {"id":"seg-000226","start":491.92,"end":493.68,"text":"中国 日本 韩国联合在一起","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000227","start":493.68,"end":497.04,"text":"你要对于美国反对美国加关税","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000228","start":497.04,"end":497.72,"text":"没有用","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000229","start":497.72,"end":498.64,"text":"你是以方","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000230","start":498.64,"end":499.68,"text":"人家是假方","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000231","start":499.68,"end":501.08,"text":"你就以方对假方","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000229","start":497.72,"end":498.64,"text":"你是乙方","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000230","start":498.64,"end":499.68,"text":"人家是甲方","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000231","start":499.68,"end":501.08,"text":"你就乙方对甲方","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000232","start":501.08,"end":502.88,"text":"永远是没有话语权","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000233","start":502.88,"end":506.44,"text":"所以全球化中间获利最多的是美国","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000234","start":506.44,"end":508.92,"text":"如果你要打破这个过程","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -436,7 +436,7 @@
 {"id":"seg-000436","start":917.36,"end":920.64,"text":"已经天液漏了10年最低的","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000437","start":920.64,"end":922.16,"text":"拿一些半导体的公司来说","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000438","start":922.16,"end":924.08,"text":"比方说英伟达","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000439","start":924.08,"end":925.16,"text":"比方说Babao","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000439","start":924.08,"end":925.16,"text":"比方说Marvell","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000440","start":925.16,"end":926.32,"text":"那这些公司","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000441","start":926.32,"end":929.12,"text":"它不太受到经济周期影响","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000442","start":929.12,"end":932.56,"text":"它的盈利更加跟Delacent的投资相关","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -797,12 +797,12 @@
 {"id":"seg-000797","start":1621.28,"end":1622.4,"text":"变了很好的情况下","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000798","start":1622.4,"end":1623.68,"text":"就是中国可以不错","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000799","start":1623.68,"end":1625.04,"text":"因为我们是一方","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000800","start":1625.04,"end":1627.2,"text":"只有假方给给单子","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000801","start":1627.2,"end":1628.4,"text":"然后假方日子过得好","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000802","start":1628.4,"end":1629.84,"text":"所以以方才过得好","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000803","start":1629.84,"end":1631.72,"text":"假方现在自己不愿意给单子","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000800","start":1625.04,"end":1627.2,"text":"只有甲方给给单子","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000801","start":1627.2,"end":1628.4,"text":"然后甲方日子过得好","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000802","start":1628.4,"end":1629.84,"text":"所以乙方才过得好","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000803","start":1629.84,"end":1631.72,"text":"甲方现在自己不愿意给单子","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000804","start":1631.72,"end":1633.32,"text":"然后可能还要衰退","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000805","start":1633.32,"end":1634.4,"text":"以方怎么可能过得好","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000805","start":1633.32,"end":1634.4,"text":"乙方怎么可能过得好","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000806","start":1634.4,"end":1635.48,"text":"这肯定不会好","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000807","start":1635.48,"end":1639.04,"text":"所以这个我觉得是现在还是被 overpriced","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000808","start":1639.04,"end":1641.24,"text":"所以你如果是空头的话","chapter":"chapter-06","source":"faster-whisper-small"}

@@ -717,7 +717,7 @@
 {"id":"seg-000717","start":1581.58,"end":1583.28,"text":"我買了股票把股票賣掉對吧","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000718","start":1583.28,"end":1584.28,"text":"但是同時的話","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000719","start":1584.28,"end":1586.18,"text":"他買股票他送了Option","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000720","start":1586.18,"end":1587.28,"text":"送了7權","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000720","start":1586.18,"end":1587.28,"text":"送了期權","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000721","start":1587.28,"end":1588.88,"text":"那你就這樣算","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000722","start":1588.88,"end":1591.28,"text":"按星期五收拾價來算的話","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000723","start":1591.28,"end":1592.68,"text":"你直接把Option賣掉","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -725,8 +725,8 @@
 {"id":"seg-000725","start":1593.68,"end":1595.88,"text":"你能賺這25到30","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000726","start":1595.88,"end":1598.38,"text":"這是一個NoBrainer的Deal","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000727","start":1598.38,"end":1600.98,"text":"就是我只要把股票能給你賣掉","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000728","start":1600.98,"end":1602.58,"text":"然後把7權給你賣掉","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000729","start":1602.58,"end":1603.18,"text":"7權肯定","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000728","start":1600.98,"end":1602.58,"text":"然後把期權給你賣掉","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000729","start":1602.58,"end":1603.18,"text":"期權肯定","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000730","start":1603.18,"end":1605.28,"text":"就是這都流通市場可以隨便賣了","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000731","start":1605.38,"end":1606.78,"text":"我把這兩個東西一賣","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000732","start":1606.78,"end":1609.28,"text":"然後我就立馬能夠轉手","chapter":"chapter-06","source":"faster-whisper-small"}

@@ -117,7 +117,7 @@
 {"id":"seg-000117","start":322.32,"end":324.16,"text":"就是你們雖然看到這個CPI","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000118","start":324.16,"end":327.36,"text":"是預期下降20Basis point","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000119","start":327.36,"end":330.64,"text":"但是其實這個數據有可能會失真","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000120","start":330.64,"end":334.4,"text":"那整體這個PCIe吧","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000120","start":330.64,"end":334.4,"text":"那整體這個PCE吧","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000121","start":334.4,"end":338.0,"text":"就是說那個通脹的大概會有多少","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000122","start":338.0,"end":340.0,"text":"就是通脹我們這麼看","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000123","start":340.0,"end":343.44,"text":"就是tariff的影響和關稅影響","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -139,8 +139,8 @@
 {"id":"seg-000139","start":397.44,"end":400.8,"text":"這些替代性數據呢這個真實度多很低","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000140","start":400.8,"end":405.68,"text":"因為現在人工採集通脹數據的工作也被停下來","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000141","start":405.68,"end":406.88,"text":"這麼關門了嘛","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000142","start":406.88,"end":410.56,"text":"所以很有可能10月份的CPI數據也會失征","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000143","start":410.56,"end":414.48,"text":"就是這個數據失征的情況概率還蠻大的","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000142","start":406.88,"end":410.56,"text":"所以很有可能10月份的CPI數據也會失真","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000143","start":410.56,"end":414.48,"text":"就是這個數據失真的情況概率還蠻大的","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000144","start":414.72,"end":418.88,"text":"現在就算現在看本10月份的這個經濟數據","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000145","start":418.88,"end":421.12,"text":"就是真的概率還是蠻大的","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000146","start":421.12,"end":424.0,"text":"所以每年儲很有可能後面兩次會議","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -463,8 +463,8 @@
 {"id":"seg-000463","start":1117.36,"end":1118.64,"text":"然後就不搞","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000464","start":1118.64,"end":1119.68,"text":"這個是有可能的","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000465","start":1119.68,"end":1121.52,"text":"但是中交會一直搞一直搞","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000466","start":1121.52,"end":1124.56,"text":"所以他讓整個市場的WOW就變得很高","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000467","start":1124.56,"end":1125.76,"text":"整個市場的WOW變得很高","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000466","start":1121.52,"end":1124.56,"text":"所以他讓整個市場的VOL就變得很高","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000467","start":1124.56,"end":1125.76,"text":"整個市場的VOL變得很高","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000468","start":1125.76,"end":1127.2,"text":"賣Option的人其實沒有那麼多","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000469","start":1127.2,"end":1129.84,"text":"就是說市場沒有那麼容易","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000470","start":1129.84,"end":1131.68,"text":"在25的VIX","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -822,7 +822,7 @@
 {"id":"seg-000822","start":1814.64,"end":1816.24,"text":"歐美日這三岸國家","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000823","start":1816.24,"end":1817.52,"text":"在車企行業裡面的問題","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000824","start":1817.52,"end":1819.12,"text":"還沒有完全暴露出來","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000825","start":1819.12,"end":1820.8,"text":"所以汽車AutoLong","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000825","start":1819.12,"end":1820.8,"text":"所以汽車auto loan","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000826","start":1820.8,"end":1821.36,"text":"為什麼呢","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000827","start":1821.36,"end":1822.72,"text":"因為二手車賣不掉","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000828","start":1822.72,"end":1823.6,"text":"就最簡單","chapter":"chapter-06","source":"faster-whisper-small"}

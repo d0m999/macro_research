@@ -244,7 +244,7 @@
 {"id":"seg-000244","start":640.14,"end":642.2,"text":"然后中国反制","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000245","start":642.2,"end":644.76,"text":"中国有给美国一个反制","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000246","start":644.76,"end":646.3,"text":"加盘是34%的关税","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000247","start":646.3,"end":651.0,"text":"就是这两边主要的假方和以方两边还杠上了","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000247","start":646.3,"end":651.0,"text":"就是这两边主要的甲方和乙方两边还杠上了","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000248","start":651.0,"end":654.96,"text":"就是属于两边杠上的结果很容易脆断","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000249","start":654.96,"end":656.48,"text":"这个是一个很危险的事情","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000250","start":656.48,"end":657.86,"text":"拿根树枝两边","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -437,12 +437,12 @@
 {"id":"seg-000437","start":1039.02,"end":1040.62,"text":"所以在这个水桶里面","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000438","start":1040.62,"end":1041.86,"text":"中国和美国都不会崩","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000439","start":1041.86,"end":1042.74,"text":"美国经济是最好","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000440","start":1042.74,"end":1043.38,"text":"它是假方","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000441","start":1043.38,"end":1044.5,"text":"假方怎么会崩呢","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000442","start":1044.5,"end":1046.1,"text":"假方如果要去掐以防","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000443","start":1046.1,"end":1047.9,"text":"它受的苦肯定比以防少","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000444","start":1047.9,"end":1049.18,"text":"所以假方以防","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000445","start":1049.18,"end":1050.9,"text":"大假方和大以防都不会崩","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000440","start":1042.74,"end":1043.38,"text":"它是甲方","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000441","start":1043.38,"end":1044.5,"text":"甲方怎么会崩呢","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000442","start":1044.5,"end":1046.1,"text":"甲方如果要去掐乙方","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000443","start":1046.1,"end":1047.9,"text":"它受的苦肯定比乙方少","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000444","start":1047.9,"end":1049.18,"text":"所以甲方乙方","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000445","start":1049.18,"end":1050.9,"text":"大甲方和大乙方都不会崩","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000446","start":1050.9,"end":1053.38,"text":"老大掐老二老三老四老五倒霉","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000447","start":1053.38,"end":1055.82,"text":"所以后面我觉得可能倒霉是东南亚","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000448","start":1055.82,"end":1056.78,"text":"可能是欧洲","chapter":"chapter-05","source":"faster-whisper-small"}

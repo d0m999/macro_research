@@ -97,9 +97,9 @@
 {"id":"seg-000097","start":278.48,"end":283.58,"text":"那個加上DOGE和那個減稅會給美國帶來效率","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000098","start":283.58,"end":285.9,"text":"這是一個有點一厢情愿的想法","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000099","start":285.9,"end":289.24,"text":"但是這個是當時市場定價的東西所以我們看到","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000100","start":289.24,"end":291.28,"text":"實驗期利率是往5%跑的","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000100","start":289.24,"end":291.28,"text":"十年期利率是往5%跑的","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000101","start":291.28,"end":294.34,"text":"然後我們看到那個股市是拼命往上漲","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000102","start":294.34,"end":298.44,"text":"當你實驗期利率在往5%跑的同時從技術上來說","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000102","start":294.34,"end":298.44,"text":"當你十年期利率在往5%跑的同時從技術上來說","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000103","start":298.44,"end":301.0,"text":"美元變成了一個很好的carry trade的目標","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000104","start":301.0,"end":304.84,"text":"因為雖然日元利率也在漲但美元利率漲了更多","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000105","start":304.84,"end":309.72,"text":"所以整個美元曲線利率給了carry trade很大的空間繼續","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -358,7 +358,7 @@
 {"id":"seg-000358","start":922.22,"end":923.72,"text":"我覺得短期差不多到底","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000359","start":923.72,"end":925.22,"text":"就是如果說超短期","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000360","start":925.22,"end":929.22,"text":"這個觀點是你認為3月18號","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000361","start":929.22,"end":933.02,"text":"Nedrillion英偉達的GTC出來以後你要跑","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000361","start":929.22,"end":933.02,"text":"Nvidia英偉達的GTC出來以後你要跑","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000362","start":933.02,"end":935.42,"text":"或者在這之前你就要跑","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000363","start":935.42,"end":938.42,"text":"如果說長期的話","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000364","start":938.42,"end":940.02,"text":"就是你是不是價格過低","chapter":"chapter-03","source":"faster-whisper-small"}

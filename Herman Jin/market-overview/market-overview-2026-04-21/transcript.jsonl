@@ -77,7 +77,7 @@
 {"id":"seg-000077","start":193.6,"end":195.7,"text":"印滿20billion","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000078","start":195.7,"end":198.84,"text":"然後Global要印買大概35billion","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000079","start":198.84,"end":201.44,"text":"其實你覺得比較奇怪的就是","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000080","start":201.44,"end":204.26,"text":"在base case買的還沒有Flatcase多","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000080","start":201.44,"end":204.26,"text":"在base case買的還沒有flat case多","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000081","start":204.26,"end":205.86,"text":"這個我覺得沒有錯","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000082","start":205.86,"end":207.96,"text":"它就是一個我們認為","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000083","start":207.96,"end":210.5,"text":"就是在過去三週裡面發生的","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -822,7 +822,7 @@
 {"id":"seg-000822","start":1723.32,"end":1724.88,"text":"但是問題我要用模型的時候","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000823","start":1724.88,"end":1726.2,"text":"我調用的時候","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000824","start":1726.2,"end":1727.96,"text":"我往往不是人在調用","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000825","start":1727.96,"end":1729.36,"text":"我是Aging在調用","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000825","start":1727.96,"end":1729.36,"text":"我是AI在調用","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000826","start":1729.36,"end":1731.16,"text":"比方說你用Hermis","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000827","start":1731.16,"end":1733.44,"text":"或者你用OpenCloud在那裡調用的時候","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000828","start":1733.44,"end":1735.28,"text":"其實是機器在調用","chapter":"chapter-06","source":"faster-whisper-small"}

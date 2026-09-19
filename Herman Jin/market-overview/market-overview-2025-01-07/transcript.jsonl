@@ -97,8 +97,8 @@
 {"id":"seg-000097","start":274.24,"end":275.84,"text":"就是base case","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000098","start":275.84,"end":279.52,"text":"那麼但是這中間有30%的概率","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000099","start":279.52,"end":281.28,"text":"這個是非常不曉得概率","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000100","start":281.28,"end":284.96,"text":"30%的概率可能會發生一些tel risk","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000101","start":284.96,"end":286.64,"text":"tel risk的來源","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000100","start":281.28,"end":284.96,"text":"30%的概率可能會發生一些tail risk","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000101","start":284.96,"end":286.64,"text":"tail risk的來源","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000102","start":286.64,"end":288.48,"text":"就可能是policy transformation","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000103","start":288.48,"end":290.4,"text":"有政策的一些變化","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000104","start":290.4,"end":293.6,"text":"所以我就是非常非常宏觀的","chapter":"chapter-02","source":"faster-whisper-small"}

@@ -95,7 +95,7 @@
 {"id":"seg-000095","start":237.4,"end":240.64,"text":"Global我們叫全球的CTA和量化策略","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000096","start":240.64,"end":243.64,"text":"那就是趨勢更中性的策略","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000097","start":243.64,"end":245.46,"text":"我們一般叫做CTA加上","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000098","start":245.46,"end":246.94,"text":"Resparity加速Vol Control control","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000098","start":245.46,"end":246.94,"text":"risk parity加速Vol Control control","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000099","start":246.94,"end":248.44,"text":"那這些策略","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000100","start":248.44,"end":250.66,"text":"一共買了100的billion equity","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000101","start":250.66,"end":251.96,"text":"100billion就1千億美元","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -106,8 +106,8 @@
 {"id":"seg-000106","start":262.2,"end":264.0,"text":"這個是一周的數據","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000107","start":264.0,"end":267.4,"text":"那個幾乎不會有新的流量","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000108","start":267.4,"end":269.0,"text":"竟然繼續買股道","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000109","start":269.0,"end":270.94,"text":"就從CTA和Resparity","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000110","start":270.94,"end":272.84,"text":"CTA-Resparity的Vol Control control來看","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000109","start":269.0,"end":270.94,"text":"就從CTA和risk parity","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000110","start":270.94,"end":272.84,"text":"CTA risk parity的Vol Control control來看","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000111","start":272.84,"end":275.8,"text":"基本上是一個賣出的節奏","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000112","start":275.8,"end":276.9,"text":"也就是你可以簡單的","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000113","start":276.9,"end":277.74,"text":"這個是Global","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -361,7 +361,7 @@
 {"id":"seg-000361","start":802.02,"end":803.58,"text":"它有那個增長要變緩","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000362","start":803.58,"end":805.46,"text":"然後有那個 margin要變低","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000363","start":805.46,"end":808.26,"text":"但是我們整體看overall sector裡面","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000364","start":808.26,"end":810.78,"text":"比方說你看到Abago","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000364","start":808.26,"end":810.78,"text":"比方說你看到Avago","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000365","start":810.78,"end":811.98,"text":"包括你看到Micron","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000366","start":811.98,"end":814.62,"text":"包括你看到一些其他的半導體公司","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000367","start":814.62,"end":816.46,"text":"包括你看到次大兵場","chapter":"chapter-03","source":"faster-whisper-small"}
