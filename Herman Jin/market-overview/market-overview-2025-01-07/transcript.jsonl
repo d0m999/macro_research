@@ -417,10 +417,10 @@
 {"id":"seg-000417","start":935.12,"end":936.8,"text":"還是主線上","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000418","start":936.8,"end":939.68,"text":"還是大的趨勢","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000419","start":939.68,"end":944.0,"text":"那麼有什麽東西會讓這個變改變呢","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000420","start":944.0,"end":945.84,"text":"就是我們講到的Tale Risk","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000420","start":944.0,"end":945.84,"text":"就是我們講到的tail risk","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000421","start":945.84,"end":947.04,"text":"萬一美國衰退","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000422","start":947.04,"end":949.44,"text":"美國所有我覺得最大的Tale Risk","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000423","start":949.44,"end":951.36,"text":"在明年政策上Tale Risk","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000422","start":947.04,"end":949.44,"text":"美國所有我覺得最大的tail risk","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000423","start":949.44,"end":951.36,"text":"在明年政策上tail risk","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000424","start":951.36,"end":952.72,"text":"就是不管什麽政策","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000425","start":952.72,"end":954.48,"text":"導致美國經濟真的變弱","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000426","start":954.48,"end":955.28,"text":"真的走弱","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -432,7 +432,7 @@
 {"id":"seg-000432","start":964.24,"end":965.2,"text":"對外匯判斷","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000433","start":965.2,"end":966.0,"text":"對股市的判斷","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000434","start":966.0,"end":966.88,"text":"全部要改變","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000435","start":966.88,"end":968.88,"text":"所以這個都是一個Tale Risk","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000435","start":966.88,"end":968.88,"text":"所以這個都是一個tail risk","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000436","start":968.96,"end":971.6,"text":"但是正常情況下的美元走強","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000437","start":971.6,"end":974.64,"text":"美元走強會利好美國的市場","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000438","start":974.64,"end":977.68,"text":"但是美元走強","chapter":"chapter-04","source":"faster-whisper-small"}

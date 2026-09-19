@@ -1,10 +1,10 @@
 {
- "generated": "2026-09-20T00:04:01+08:00",
- "scope": "Herman Jin/market-overview/*/transcript.jsonl post TierA/B/C + review-followup + variant-sweep",
+ "generated": "2026-09-20T00:48:35+08:00",
+ "scope": "Herman Jin/market-overview/*/transcript.jsonl post TierA/B/C + review-followup + variant-sweeps + token-mining",
  "total_lines": 52518,
  "files": {
   "2025-01-07": {
-   "sha256": "2df1d70e9557a7a65049f253b1003a7562ce727fbac131e47f91ab890c39dc35",
+   "sha256": "b65edf4b311a595c50a8e13b67af61e9634d6449bdcd3f0565acffaada6720cc",
    "lines": 780
   },
   "2025-01-14": {
@@ -32,11 +32,11 @@
    "lines": 830
   },
   "2025-03-11": {
-   "sha256": "32d9e50de3ce59b9f046bb9a5e178b69e04525a9050895199b5515057bd35c6f",
+   "sha256": "2edd22f37ef448d63faae7265b2b16e06c63408b1cd8020dabc595982156ed52",
    "lines": 877
   },
   "2025-03-18": {
-   "sha256": "a0be56cb9d486e6f4d6814471958563b3bd18a70a58b3c8e595cae3ac08eb098",
+   "sha256": "ee472392046d642cd4fff5399163ae22278eda63c69628675df331782075777d",
    "lines": 931
   },
   "2025-04-01": {
@@ -60,7 +60,7 @@
    "lines": 922
   },
   "2025-05-13": {
-   "sha256": "2652968c08b34b99eaabacbfc55bda3859c5155a8c4dbe3c4f00ff19e491542e",
+   "sha256": "59a053379db83a86957c77bf7003d2eb5f852dd32dbf39ee0fd11877e0624ae7",
    "lines": 760
   },
   "2025-05-20": {
@@ -80,7 +80,7 @@
    "lines": 1088
   },
   "2025-07-02": {
-   "sha256": "7af43007fa0276ea54f681d41643c72290f6197546c383099c52ca4c4951b43a",
+   "sha256": "5c887edb1fa6b38224d5d730e822dcb7f71c32c3bd16a539aab3d665d1bdf8fe",
    "lines": 1048
   },
   "2025-07-08": {
@@ -112,7 +112,7 @@
    "lines": 810
   },
   "2025-09-30": {
-   "sha256": "4ad672858eb459eddbcfe0cabf82b96e0f5084c496248df0658f73cda8af8916",
+   "sha256": "c45b8c4f6598877ce2e5ef76e56ae3e1999b244598e9fcf012cb8793b2426dc6",
    "lines": 745
   },
   "2025-10-14": {
@@ -180,7 +180,7 @@
    "lines": 849
   },
   "2026-04-14": {
-   "sha256": "546512cf9cff7bf80d8281251cf1da039a887803108d8fbae75034567aff4ba0",
+   "sha256": "d2f4795526a7ce0dc0b3bba55b6629045264ed1765778fc6d26765d357e9f80d",
    "lines": 1038
   },
   "2026-04-21": {
@@ -196,11 +196,11 @@
    "lines": 870
   },
   "2026-06-02": {
-   "sha256": "1e92f47597045871db2f3ddda5078601a4f756255e5ca4dc34f666c8ad3d34b8",
+   "sha256": "25b53797d212fc2fd2d584009b189f9a760c0b4904c592433807fead701c3bbd",
    "lines": 1040
   },
   "2026-06-09": {
-   "sha256": "bb0d2e43976c1a7895cb6f9e65e8ad383d3bc20eca1d16f039834091c3e57f9a",
+   "sha256": "7b427d18ad47a30bac365c03fdf87d8d220d25b2b9c44627fdb400c2c321c08c",
    "lines": 868
   },
   "2026-06-23": {
@@ -208,7 +208,7 @@
    "lines": 529
   },
   "2026-06-30": {
-   "sha256": "03b2b51bbaaa06eb784610852ed162f687fb4dad278ec59e4fc3e06bfd6deb71",
+   "sha256": "19f527bdf7c6d170c723abc913535de2b2318a60e4c964253be0b53333756c42",
    "lines": 653
   },
   "2026-07-14": {
@@ -216,15 +216,15 @@
    "lines": 937
   },
   "2026-07-21": {
-   "sha256": "40bd94c2d05abaf9f848570a3158eddf44acfbe60bfe3550db49d03cde6f1614",
+   "sha256": "766ef48c4ab5539338943f728cf7d0a1d771e2bcf74409d8fc9e4494e7d4760c",
    "lines": 963
   },
   "2026-08-04": {
-   "sha256": "5f296ae8ec960ed1d83bb5701aace75616e3aa4d7cfa6402590148b1b1d87ba2",
+   "sha256": "4d334bb154a0c27ee4f4c3a0353de925db7977ef52a932a3b21f1f545caf5def",
    "lines": 863
   },
   "2026-08-25": {
-   "sha256": "7bacbb3694eafe44d948a0e43cf7b1846cc0305c7b93096a345f3ddb85119cce",
+   "sha256": "03c379c77eef8f37b90bf5c640c92021e48870d9ac7393577061b7021ea09192",
    "lines": 771
   },
   "2026-09-01": {

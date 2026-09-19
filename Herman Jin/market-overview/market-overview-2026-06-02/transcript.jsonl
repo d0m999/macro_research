@@ -218,7 +218,7 @@
 {"id":"seg-000218","start":488.24,"end":489.4,"text":"每天在涨价","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000219","start":489.44,"end":490.88,"text":"现在华强北","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000220","start":490.88,"end":493.76,"text":"就今天过去三天了","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000221","start":493.76,"end":496.16,"text":"把Ned的价钱涨了5%","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000221","start":493.76,"end":496.16,"text":"把NAND的价钱涨了5%","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000222","start":496.16,"end":498.8,"text":"然后前一周又涨了5%","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000223","start":498.8,"end":501.56,"text":"所以你说每一个缺货是不是真实","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000224","start":501.56,"end":503.0,"text":"我就追些细节的东西","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -498,7 +498,7 @@
 {"id":"seg-000498","start":1086.68,"end":1089.04,"text":"它有点像当时铁矿石","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000499","start":1089.04,"end":1090.4,"text":"因为它是个商品","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000500","start":1090.4,"end":1091.6,"text":"DDR肯定是个商品","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000501","start":1091.6,"end":1093.48,"text":"包括Ned都是个商品","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000501","start":1091.6,"end":1093.48,"text":"包括NAND都是个商品","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000502","start":1093.48,"end":1095.32,"text":"你商品的交易价","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000503","start":1095.32,"end":1097.08,"text":"交易额是很小很小的","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000504","start":1097.08,"end":1101.04,"text":"然后但是商品的签约额是很大的","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -514,7 +514,7 @@
 {"id":"seg-000514","start":1113.4,"end":1114.72,"text":"是这么一个逻辑","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000515","start":1114.72,"end":1117.52,"text":"你把它想成铁矿石公司就可以了","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000516","start":1117.52,"end":1119.48,"text":"但是你现在的现货一直在涨","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000517","start":1119.48,"end":1126.64,"text":"你连Ned不是内存是存储","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000517","start":1119.48,"end":1126.64,"text":"你连NAND不是内存是存储","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000518","start":1126.64,"end":1129.2,"text":"存储都给你能够每个星期","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000519","start":1129.2,"end":1131.76,"text":"每个星期到5%到10%的时候水平在涨","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000520","start":1131.76,"end":1135.88,"text":"所以你最后一方面会消费到","chapter":"chapter-04","source":"faster-whisper-small"}
