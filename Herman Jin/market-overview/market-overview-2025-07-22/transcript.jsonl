@@ -4,7 +4,7 @@
 {"id":"seg-000004","start":13.04,"end":15.0,"text":"我覺得這個底線很高","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000005","start":15.0,"end":17.44,"text":"然後風險很大 那個時候是這麼說的","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000006","start":17.44,"end":19.08,"text":"我覺得幾個風險點吧","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000007","start":19.08,"end":22.6,"text":"因為一直講到會有tell risk 很大的風險點","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000007","start":19.08,"end":22.6,"text":"因為一直講到會有tail risk 很大的風險點","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000008","start":22.6,"end":25.04,"text":"那麼我們把這些東西重新過一點","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000009","start":25.04,"end":27.48,"text":"就是對於當時的一個判斷的回顧","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000010","start":27.52,"end":30.36,"text":"然後掌握一下我們覺得未來會怎麼樣","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -50,8 +50,8 @@
 {"id":"seg-000050","start":123.88,"end":125.28,"text":"就上一任政府時期","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000051","start":125.28,"end":126.88,"text":"進來那些移民怎麼解決","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000052","start":126.88,"end":128.92,"text":"他是不是還會有被dipotation","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000053","start":128.92,"end":131.0,"text":"被淺送回去","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000054","start":131.0,"end":132.92,"text":"或者他因為怕被淺送","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000053","start":128.92,"end":131.0,"text":"被遣送回去","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000054","start":131.0,"end":132.92,"text":"或者他因為怕被遣送","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000055","start":132.92,"end":134.36,"text":"他不敢出來工作","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000056","start":134.36,"end":137.04,"text":"那麼減少勞工的人數","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000057","start":137.04,"end":138.04,"text":"然後減少","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -67,7 +67,7 @@
 {"id":"seg-000067","start":156.08,"end":156.88,"text":"大家沒有","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000068","start":156.88,"end":159.28,"text":"你看當中川普最近出了很多事情","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000069","start":159.28,"end":161.32,"text":"包括他對於那個","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000070","start":161.32,"end":162.84,"text":"對於FOD","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000070","start":161.32,"end":162.84,"text":"對於Fed","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000071","start":162.84,"end":163.8,"text":"對於JPOW","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000072","start":163.8,"end":165.76,"text":"對於他們的這些言論","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000073","start":165.76,"end":169.48,"text":"然後美國最近又開始威脅","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -79,7 +79,7 @@
 {"id":"seg-000079","start":174.8,"end":175.84,"text":"其實市場本","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000080","start":175.84,"end":177.44,"text":"本質上在吹插口","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000081","start":177.44,"end":179.2,"text":"就覺得川普你說的話","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000082","start":179.2,"end":180.28,"text":"跟方幣沒有取別","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000082","start":179.2,"end":180.28,"text":"跟放屁沒有區別","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000083","start":180.28,"end":182.32,"text":"就是包括你對移民政策","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000084","start":182.32,"end":185.16,"text":"包括你對於我們之前說deficit","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000085","start":185.16,"end":187.32,"text":"大家之前不是搞了個doge嗎","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -116,14 +116,14 @@
 {"id":"seg-000116","start":245.32,"end":247.52,"text":"就是說把原來移民要趕走","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000117","start":247.52,"end":248.88,"text":"或者非常強硬的手段","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000118","start":248.88,"end":250.4,"text":"發生催斷式的這個","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000119","start":250.4,"end":251.8,"text":"我們叫做tell risk","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000120","start":251.8,"end":252.84,"text":"為不風險","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000119","start":250.4,"end":251.8,"text":"我們叫做tail risk","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000120","start":251.8,"end":252.84,"text":"尾部風險","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000121","start":252.84,"end":254.8,"text":"但這種事情可能現在看上去","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000122","start":254.8,"end":256.12,"text":"概率沒有那麼的大","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000123","start":256.76,"end":257.68,"text":"budget card這件事情","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000124","start":257.68,"end":258.72,"text":"大家討論過很多了","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000125","start":258.72,"end":260.04,"text":"就是我們看到最近的","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000126","start":260.04,"end":261.64,"text":"大美利潘通過之後","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000126","start":260.04,"end":261.64,"text":"大而美法案通過之後","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000127","start":261.64,"end":264.6,"text":"我覺得這個風險基本上是移除掉","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000128","start":264.6,"end":266.32,"text":"現在在美國本身的話","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000129","start":266.32,"end":267.88,"text":"還是關稅","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -137,7 +137,7 @@
 {"id":"seg-000137","start":284.2,"end":286.28,"text":"其實CPI分類並沒有那麼好","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000138","start":286.28,"end":289.24,"text":"就是你會看到其實商品的價格","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000139","start":289.24,"end":290.2,"text":"再上升","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000140","start":290.2,"end":291.92,"text":"就是我們看到tell risk","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000140","start":290.2,"end":291.92,"text":"就是我們看到tail risk","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000141","start":291.92,"end":293.84,"text":"就是關稅的影響發生了","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000142","start":293.84,"end":295.0,"text":"但是同時的話","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000143","start":295.0,"end":296.4,"text":"就除了商品以外","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -155,8 +155,8 @@
 {"id":"seg-000155","start":315.52,"end":318.0,"text":"房租這東西是有18個月的之後的","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000156","start":318.0,"end":320.36,"text":"所以你看到它的當時的上升","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000157","start":320.36,"end":322.2,"text":"其實並不是真正的上升","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000158","start":322.2,"end":324.0,"text":"所以通脹我們覺得是可空","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000159","start":324.0,"end":325.24,"text":"後面會一直可空","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000158","start":322.2,"end":324.0,"text":"所以通脹我們覺得是可控","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000159","start":324.0,"end":325.24,"text":"後面會一直可控","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000160","start":325.24,"end":327.36,"text":"這是我大概一年多以前","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000161","start":327.36,"end":328.76,"text":"也講過這個事情","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000162","start":328.76,"end":330.44,"text":"那麼我覺得現在同樣","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -168,7 +168,7 @@
 {"id":"seg-000168","start":340.44,"end":342.48,"text":"所以會有影響","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000169","start":342.48,"end":344.04,"text":"但是不太影響","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000170","start":344.04,"end":345.76,"text":"工資不太影響房租","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000171","start":345.76,"end":348.12,"text":"這個事情我大法會結合","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000171","start":345.76,"end":348.12,"text":"這個事情我大概會結合","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000172","start":348.12,"end":349.76,"text":"包括中國現在消費","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000173","start":349.76,"end":352.36,"text":"或者是我們中國現在的ZPR的情況","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000174","start":352.36,"end":353.68,"text":"你起來說一下","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -185,17 +185,17 @@
 {"id":"seg-000185","start":377.08,"end":381.2,"text":"不太會讓聯儲就是會變得長期的非常強硬","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000186","start":381.2,"end":383.12,"text":"這個是一個情況","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000187","start":383.12,"end":386.36,"text":"那麼特朗普上兩週的時候","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000188","start":386.36,"end":388.04,"text":"對於接票大打出手","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000189","start":388.04,"end":390.2,"text":"因為他非常希望把接票幹掉","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000188","start":386.36,"end":388.04,"text":"對於鮑威爾大打出手","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000189","start":388.04,"end":390.2,"text":"因為他非常希望把鮑威爾幹掉","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000190","start":390.2,"end":391.6,"text":"那麼我覺得幹掉的原因","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000191","start":391.6,"end":392.4,"text":"不光是說","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000192","start":392.4,"end":394.92,"text":"那個接票的政策和特朗普不一樣","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000193","start":394.92,"end":398.4,"text":"因為接票在特朗普面子上說是","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000192","start":392.4,"end":394.92,"text":"那個鮑威爾的政策和特朗普不一樣","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000193","start":394.92,"end":398.4,"text":"因為鮑威爾在特朗普面子上說是","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000194","start":398.4,"end":400.68,"text":"相當於美聯儲比較強硬","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000195","start":400.68,"end":401.76,"text":"他不肯降息","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000196","start":401.76,"end":403.64,"text":"所以導致國家制止增加","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000196","start":401.76,"end":403.64,"text":"所以導致國家支出增加","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000197","start":403.64,"end":405.52,"text":"那其實可能是因為","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000198","start":405.52,"end":407.6,"text":"接票在上一次聯儲會議的時候","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000198","start":405.52,"end":407.6,"text":"鮑威爾在上一次聯儲會議的時候","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000199","start":407.6,"end":408.76,"text":"明確的表達","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000200","start":408.76,"end":410.52,"text":"就是我們現在為什麼不降息","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000201","start":410.52,"end":411.96,"text":"然後我們現在為什麼有通脹","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -203,13 +203,13 @@
 {"id":"seg-000203","start":415.24,"end":416.36,"text":"這惹惱了特朗普","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000204","start":416.36,"end":419.12,"text":"他對權力和對於自己的面子","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000205","start":419.12,"end":420.48,"text":"其實看了比什麼都重要","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000206","start":420.48,"end":422.84,"text":"所以他用這個原因去攻擊了接票","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000206","start":420.48,"end":422.84,"text":"所以他用這個原因去攻擊了鮑威爾","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000207","start":422.84,"end":424.72,"text":"而且他攻擊的原因是說","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000208","start":424.72,"end":427.28,"text":"美聯儲大事要裝修花了太多的錢","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000209","start":427.28,"end":428.96,"text":"所以你們預算超之辣","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000210","start":428.96,"end":430.4,"text":"你們裝修很貴","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000211","start":430.4,"end":431.84,"text":"然後中間有毛泥","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000212","start":431.84,"end":436.08,"text":"用這個原因希望把接票幹掉","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000212","start":431.84,"end":436.08,"text":"用這個原因希望把鮑威爾幹掉","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000213","start":436.08,"end":438.32,"text":"然後或者是把他辭職","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000214","start":438.32,"end":441.84,"text":"那上一周前幾天他又打口了","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000215","start":441.84,"end":445.52,"text":"就是他又說白宮又說沒有這個意圖","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -225,7 +225,7 @@
 {"id":"seg-000225","start":472.48,"end":474.6,"text":"其實都是不太把黨回事","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000226","start":474.6,"end":477.84,"text":"就是他嘴巴大把他當成說一說就好","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000227","start":477.84,"end":478.6,"text":"那麼我說一下","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000228","start":478.6,"end":482.44,"text":"因為不過Anyone那個接票都是會在明年卸任","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000228","start":478.6,"end":482.44,"text":"因為不過Anyone那個鮑威爾都是會在明年卸任","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000229","start":482.44,"end":485.2,"text":"所以明年卸任以後","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000230","start":485.2,"end":489.0,"text":"如果上來一個特朗普的粉絲","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000231","start":489.0,"end":491.2,"text":"就是或他的他比較喜歡的人","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -240,7 +240,7 @@
 {"id":"seg-000240","start":512.84,"end":515.16,"text":"就是上兩周可能我們講過這個問題","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000241","start":515.16,"end":518.76,"text":"就是我有點沒找到那個ppd","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000242","start":518.76,"end":521.52,"text":"就是我們看兩個指標吧","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000243","start":521.52,"end":525.6,"text":"第一個指標就是從訂口的商品上來看","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000243","start":521.52,"end":525.6,"text":"第一個指標就是從進口的商品上來看","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000244","start":525.6,"end":527.72,"text":"明確的這個價格在上升的","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000245","start":527.72,"end":531.16,"text":"第二個就是公司對於有多少的意願","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000246","start":531.16,"end":534.2,"text":"應該是兩三個星期前","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -274,7 +274,7 @@
 {"id":"seg-000274","start":617.36,"end":620.4,"text":"它都要在比方說在那個今年夏天","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000275","start":620.4,"end":621.6,"text":"或者是今年年底之前","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000276","start":621.6,"end":623.44,"text":"理論上都要推出關稅","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000277","start":623.44,"end":626.04,"text":"但是因為有中期權權","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000277","start":623.44,"end":626.04,"text":"但是因為有中期選舉","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000278","start":626.04,"end":628.68,"text":"所以推出藥品的這個關稅","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000279","start":628.68,"end":630.32,"text":"其實是個非常敏感的事情","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000280","start":630.32,"end":633.24,"text":"那就因為這個直接抬高了很多醫療的成本","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -337,7 +337,7 @@
 {"id":"seg-000337","start":742.56,"end":746.8,"text":"一方面是這個公司本身的盈利導致","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000338","start":746.8,"end":748.8,"text":"那麼在這個情況下","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000339","start":748.8,"end":750.6,"text":"現在估值確實比較高","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000340","start":750.6,"end":752.96,"text":"但是tell risk顯著的下降","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000340","start":750.6,"end":752.96,"text":"但是tail risk顯著的下降","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000341","start":752.96,"end":753.8,"text":"現在來看","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000342","start":753.8,"end":755.44,"text":"就是我不覺得","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000343","start":755.44,"end":759.32,"text":"川普的政府會再採取這些政策","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -378,10 +378,10 @@
 {"id":"seg-000378","start":828.56,"end":830.12,"text":"但是歐洲和中國","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000379","start":830.12,"end":832.08,"text":"正在經歷一個估值的成功","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000380","start":832.08,"end":833.44,"text":"我們去年也說到過","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000381","start":833.44,"end":835.56,"text":"就是說Telrescu是有","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000382","start":835.56,"end":838.04,"text":"微步風險是有往上和往下的","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000381","start":833.44,"end":835.56,"text":"就是說tail risk是有","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000382","start":835.56,"end":838.04,"text":"尾部風險是有往上和往下的","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000383","start":838.04,"end":839.16,"text":"在歐洲和中國","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000384","start":839.16,"end":841.32,"text":"可能會產生往上的微步風險","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000384","start":839.16,"end":841.32,"text":"可能會產生往上的尾部風險","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000385","start":841.32,"end":842.24,"text":"就是它暴漲","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000386","start":842.24,"end":844.04,"text":"但是這個暴漲可能是短期的","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000387","start":844.04,"end":847.16,"text":"因為它確實沒有exceptionism","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -429,7 +429,7 @@
 {"id":"seg-000429","start":926.24,"end":928.76,"text":"它都medic expectation","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000430","start":928.76,"end":931.0,"text":"而且給出不少的預期","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000431","start":931.0,"end":932.88,"text":"金融公司的盈利也不錯","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000432","start":932.88,"end":935.56,"text":"就是說包括JP Morgan和GovernsX","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000432","start":932.88,"end":935.56,"text":"就是說包括JP Morgan和Goldman Sachs","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000433","start":935.56,"end":937.44,"text":"他們的業績都是不錯","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000434","start":937.44,"end":939.88,"text":"所以就是一方面是業績推動","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000435","start":939.88,"end":942.56,"text":"第二方面是我們叫做技術性的推動","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -438,13 +438,13 @@
 {"id":"seg-000438","start":946.6,"end":948.0,"text":"波動率的下降","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000439","start":948.0,"end":949.16,"text":"比方說現在來看到的話","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000440","start":949.2,"end":950.96,"text":"一個星期的波動率1.28","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000441","start":950.96,"end":953.0,"text":"那麼Impliable 1.28","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000441","start":950.96,"end":953.0,"text":"那麼implied 1.28","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000442","start":953.0,"end":955.64,"text":"然後我們看到半導體的Vol","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000443","start":955.64,"end":956.64,"text":"這個星期的Vol","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000444","start":956.64,"end":957.68,"text":"Weekly的Vol","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000445","start":957.68,"end":960.68,"text":"半導體的那些公司的Set","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000446","start":960.68,"end":964.04,"text":"Vol可能是5.8萬多少","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000447","start":964.04,"end":966.44,"text":"就整體看到Vixx在16","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000447","start":964.04,"end":966.44,"text":"就整體看到VIX在16","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000448","start":966.44,"end":969.2,"text":"所以基本上看到波動率的下降","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000449","start":969.2,"end":972.08,"text":"導致那些叫Systematic Position","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000450","start":972.08,"end":975.4,"text":"Systematic Position就是包括CTA","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -539,10 +539,10 @@
 {"id":"seg-000539","start":1151.04,"end":1153.04,"text":"導致我們以前的那種","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000540","start":1153.04,"end":1155.36,"text":"就是readbook","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000541","start":1155.36,"end":1158.08,"text":"就是我們的那個做利率的那些東西","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000542","start":1158.08,"end":1159.0,"text":"必須減少投存","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000542","start":1158.08,"end":1159.0,"text":"必須減少頭寸","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000543","start":1159.0,"end":1160.12,"text":"不許自己去押注","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000544","start":1160.12,"end":1162.56,"text":"不許那個market maker去押注","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000545","start":1162.56,"end":1164.12,"text":"那這些各種官洋規定","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000545","start":1162.56,"end":1164.12,"text":"那這些各種官樣規定","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000546","start":1164.12,"end":1166.16,"text":"其實都是將低金融公司收益的","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000547","start":1166.16,"end":1167.6,"text":"而且要求公清公司","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000548","start":1167.6,"end":1169.16,"text":"有很大的資本金","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -554,7 +554,7 @@
 {"id":"seg-000554","start":1184.28,"end":1186.48,"text":"銀行對於低風險資產","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000555","start":1186.48,"end":1188.88,"text":"一些槓桿要求會被放開","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000556","start":1188.88,"end":1191.04,"text":"那這個之前我們說過","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000557","start":1191.04,"end":1194.8,"text":"那個ESLR這個東西會放開","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000557","start":1191.04,"end":1194.8,"text":"那個SLR這個東西會放開","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000558","start":1194.8,"end":1197.72,"text":"那麼第二方面就是secat會放開","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000559","start":1197.72,"end":1200.2,"text":"就是銀行最低資本金的要求","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000560","start":1200.2,"end":1202.96,"text":"就這個是相當於我們一類資本","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -615,7 +615,7 @@
 {"id":"seg-000615","start":1304.44,"end":1305.84,"text":"港股確實漲了很多","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000616","start":1305.84,"end":1308.28,"text":"但是我覺得它是一個不健全的漲","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000617","start":1308.28,"end":1310.96,"text":"因為它沒有融資量的漲","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000618","start":1310.96,"end":1313.32,"text":"就是跟美國的這個SNP是不一樣的","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000618","start":1310.96,"end":1313.32,"text":"就是跟美國的這個S&P是不一樣的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000619","start":1313.32,"end":1315.04,"text":"人家是有交易量","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000620","start":1315.04,"end":1316.08,"text":"有價格","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000621","start":1316.08,"end":1317.36,"text":"然後有融資量","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -703,7 +703,7 @@
 {"id":"seg-000703","start":1457.64,"end":1459.08,"text":"我雖然我調用了一次","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000704","start":1459.08,"end":1461.2,"text":"但是它這個計算並不是一次性的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000705","start":1461.2,"end":1464.96,"text":"它在那個雲端是要消耗很多token去計算","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000706","start":1464.96,"end":1467.68,"text":"所以它變成兩個函數成起來","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000706","start":1464.96,"end":1467.68,"text":"所以它變成兩個函數乘起來","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000707","start":1467.68,"end":1469.76,"text":"那麼整個token的使用量","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000708","start":1469.76,"end":1472.28,"text":"我覺得就是一條指數的函數上升","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000709","start":1472.28,"end":1473.64,"text":"那這個函數的上升","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -731,7 +731,7 @@
 {"id":"seg-000731","start":1517.96,"end":1519.68,"text":"還要那個凡指數性的下降","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000732","start":1519.68,"end":1521.6,"text":"然後你要更先進的東西","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000733","start":1521.6,"end":1523.56,"text":"我必須要token價格要降下來","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000734","start":1523.56,"end":1526.32,"text":"所以這三個函數等於成起來","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000734","start":1523.56,"end":1526.32,"text":"所以這三個函數等於乘起來","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000735","start":1526.32,"end":1527.68,"text":"因為我使用量","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000736","start":1527.68,"end":1529.72,"text":"然後每一次調用要用更多token","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000737","start":1529.72,"end":1531.12,"text":"token價格還要下降","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -773,12 +773,12 @@
 {"id":"seg-000773","start":1597.84,"end":1600.04,"text":"這個的結果就是","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000774","start":1600.04,"end":1602.44,"text":"就是整個供不應求的市場","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000775","start":1602.44,"end":1603.8,"text":"所以我們就覺得","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000776","start":1603.8,"end":1607.28,"text":"就是銀行層面的這個Clapax","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000776","start":1603.8,"end":1607.28,"text":"就是銀行層面的這個CAPEX","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000777","start":1607.28,"end":1611.16,"text":"現在銀行層面的這個資本金的放換","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000778","start":1611.16,"end":1612.72,"text":"其實同時的話","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000779","start":1612.72,"end":1614.72,"text":"也會在未來一段時間反補","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000780","start":1614.72,"end":1617.24,"text":"就是說我們現在要做的這種Clapax","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000781","start":1617.32,"end":1619.4,"text":"很多公司層面的Clapax","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000780","start":1614.72,"end":1617.24,"text":"就是說我們現在要做的這種CAPEX","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000781","start":1617.32,"end":1619.4,"text":"很多公司層面的CAPEX","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000782","start":1619.4,"end":1622.16,"text":"包括半導體公司之類的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000783","start":1622.16,"end":1624.12,"text":"那麼這個是構成了","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000784","start":1624.12,"end":1627.08,"text":"我覺得整體我最近一段時間","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -825,7 +825,7 @@
 {"id":"seg-000825","start":1709.24,"end":1710.44,"text":"那麼中國再增加消費","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000826","start":1710.44,"end":1712.04,"text":"增加消費結果怎麼樣","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000827","start":1712.04,"end":1715.8,"text":"我們出了表說拿5月份的數據來看","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000828","start":1715.8,"end":1717.96,"text":"這是5月份上海的統計劇的數據","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000828","start":1715.8,"end":1717.96,"text":"這是5月份上海的統計局的數據","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000829","start":1717.96,"end":1719.28,"text":"那麼5月份","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000830","start":1719.28,"end":1720.8,"text":"那個2025年5月份","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000831","start":1720.8,"end":1724.52,"text":"那個同比消費社會消費總額增加7.5","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -846,14 +846,14 @@
 {"id":"seg-000846","start":1751.32,"end":1753.64,"text":"所以深圳是下降1到5月份","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000847","start":1753.64,"end":1754.72,"text":"下降1.3","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000848","start":1754.72,"end":1757.84,"text":"北京1到5月份下降2.8","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000849","start":1757.84,"end":1759.56,"text":"這個是雪淋淋的數據","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000849","start":1757.84,"end":1759.56,"text":"這個是血淋淋的數據","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000850","start":1759.56,"end":1761.52,"text":"就是你真的花了錢下去","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000851","start":1761.56,"end":1764.48,"text":"做了這個消費的支持","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000852","start":1764.48,"end":1767.36,"text":"經濟在消費層面如此的下滑","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000853","start":1767.36,"end":1769.08,"text":"還是這麼嚴重的下滑","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000854","start":1769.08,"end":1770.76,"text":"那麼在下半年的時候","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000855","start":1770.76,"end":1771.8,"text":"其實已經發令了","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000856","start":1771.8,"end":1773.92,"text":"沒有去年9月份開始已經基本就貨幣了","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000856","start":1771.8,"end":1773.92,"text":"沒有去年9月份開始已經基本就貨幣化","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000857","start":1773.92,"end":1774.92,"text":"已經看進去了","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000858","start":1774.92,"end":1776.68,"text":"然後今年也開始直接發消費","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000859","start":1776.68,"end":1779.92,"text":"就是國補已經開始做消費補助了","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -881,35 +881,35 @@
 {"id":"seg-000881","start":1828.68,"end":1830.88,"text":"就是跟當時德國以前的通脹人","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000882","start":1830.88,"end":1831.84,"text":"完全找回事情","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000883","start":1831.84,"end":1833.44,"text":"你工資螺旋上升不了","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000884","start":1833.44,"end":1835.0,"text":"因為你產能過身","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000884","start":1833.44,"end":1835.0,"text":"因為你產能過剩","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000885","start":1835.0,"end":1836.64,"text":"因為你沒有工作崗位","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000886","start":1836.64,"end":1838.76,"text":"所以你的工資是上不去的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000887","start":1838.76,"end":1841.16,"text":"那麼你用漲價去庫存的辦法","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000888","start":1841.16,"end":1842.2,"text":"我覺得很難完成","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000889","start":1842.2,"end":1843.88,"text":"就基本面非常差","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000890","start":1843.88,"end":1846.12,"text":"那麼從資本市場上來說","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000891","start":1846.12,"end":1847.0,"text":"你可以炒一包","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000891","start":1846.12,"end":1847.0,"text":"你可以炒一波","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000892","start":1847.0,"end":1851.8,"text":"相反你現在可以在那裡拿保險公司的錢去惡炒","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000893","start":1851.8,"end":1853.2,"text":"現在確實在這麼幹","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000894","start":1853.2,"end":1855.08,"text":"但是最後結果會怎麼樣","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000895","start":1855.08,"end":1857.92,"text":"我是騙悲觀的","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000896","start":1857.92,"end":1859.32,"text":"我是對於這件事情騙悲觀","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000895","start":1855.08,"end":1857.92,"text":"我是偏悲觀的","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000896","start":1857.92,"end":1859.32,"text":"我是對於這件事情偏悲觀","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000897","start":1859.32,"end":1861.8,"text":"當你恢復融資功能之後","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000898","start":1861.8,"end":1863.2,"text":"這個市場走到哪裡","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000899","start":1863.2,"end":1865.28,"text":"那麼才是走到哪裡","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000900","start":1865.28,"end":1866.72,"text":"我這個就是具體的數據","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000901","start":1866.72,"end":1868.28,"text":"你反正深圳和北京數據","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000902","start":1868.28,"end":1870.88,"text":"你們可以自己去統計劇的網站上看一下","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000902","start":1868.28,"end":1870.88,"text":"你們可以自己去統計局的網站上看一下","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000903","start":1870.88,"end":1872.76,"text":"因為國家已經不公布","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000904","start":1872.76,"end":1875.92,"text":"很多項目的具體的數據已經不公布了","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000905","start":1875.92,"end":1879.08,"text":"但是地方性的統計劇還是公布這些數據","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000905","start":1875.92,"end":1879.08,"text":"但是地方性的統計局還是公布這些數據","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000906","start":1879.08,"end":1881.24,"text":"你們可以去查一下地方的比方說","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000907","start":1881.24,"end":1882.48,"text":"消費數據","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000908","start":1882.48,"end":1885.72,"text":"查一下的地方的私營部門的固定資產投資","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000909","start":1885.72,"end":1887.76,"text":"然後把今年數據和去年數據","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000910","start":1887.76,"end":1890.04,"text":"這兩個原始數據要處於一比","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000910","start":1887.76,"end":1890.04,"text":"這兩個原始數據要除以一比","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000911","start":1890.04,"end":1891.36,"text":"在各個方面","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000912","start":1891.36,"end":1893.44,"text":"每個城市的數據要處於一比","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000912","start":1891.36,"end":1893.44,"text":"每個城市的數據要除以一比","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000913","start":1893.44,"end":1896.84,"text":"所以這個就是更加能夠清醒的認識到","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000914","start":1896.84,"end":1898.48,"text":"現在中國大概是什麼情況","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000915","start":1898.48,"end":1899.48,"text":"所以說如果說","chapter":"chapter-06","source":"faster-whisper-small"}

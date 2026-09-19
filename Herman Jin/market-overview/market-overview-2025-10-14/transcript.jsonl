@@ -4,8 +4,8 @@
 {"id":"seg-000004","start":13.8,"end":16.6,"text":"那我这个讲的时候小心一点","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000005","start":16.6,"end":18.6,"text":"两周前其实我们讲到几个事情","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000006","start":18.6,"end":20.5,"text":"就第一 政府关门","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000007","start":20.5,"end":23.6,"text":"就是特朗普当时和民主党两边stand off","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000008","start":23.6,"end":27.6,"text":"stand off之后呢 就是我们其实预期到他可能会关门","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000007","start":20.5,"end":23.6,"text":"就是特朗普当时和民主党两边standoff","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000008","start":23.6,"end":27.6,"text":"standoff之后呢 就是我们其实预期到他可能会关门","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000009","start":27.6,"end":30.7,"text":"但确实没想到他会关门关这么长时间","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000010","start":30.7,"end":33.7,"text":"我讲一下我觉得能够讲几件事情吧","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000011","start":33.7,"end":39.0,"text":"第一个就是美国政府关门和美国一些政治的move","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -41,22 +41,22 @@
 {"id":"seg-000041","start":135.9,"end":141.3,"text":"然后第三个其实就是说一下那个市场","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000042","start":141.3,"end":142.7,"text":"其实很大的波动之后呢","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000043","start":142.7,"end":144.2,"text":"导致了就是Crypto市场","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000044","start":144.2,"end":148.0,"text":"就是据话链市场异动","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000045","start":148.0,"end":151.2,"text":"那据话链市场发生了一个巨大的一个包仓事件","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000046","start":151.2,"end":154.3,"text":"其实这个事情其实两三年一次的包仓事件","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000044","start":144.2,"end":148.0,"text":"就是區塊鏈市场异动","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000045","start":148.0,"end":151.2,"text":"那區塊鏈市场发生了一个巨大的一个爆倉事件","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000046","start":151.2,"end":154.3,"text":"其实这个事情其实两三年一次的爆倉事件","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000047","start":154.3,"end":157.5,"text":"那比特币虽然没有跌特别多","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000048","start":157.5,"end":159.4,"text":"但是一众山上的小屁都跌了","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000048","start":157.5,"end":159.4,"text":"但是一众山寨幣都跌了","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000049","start":159.4,"end":161.6,"text":"基本上都被清仓式的下跌","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000050","start":161.6,"end":163.1,"text":"那我讲讲背后的原因","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000051","start":163.1,"end":167.1,"text":"因为这件事情很多投资人都是在那里","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000052","start":167.1,"end":169.2,"text":"在推特上面骂那个骂必然","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000052","start":167.1,"end":169.2,"text":"在推特上面骂那个罵幣安","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000053","start":169.2,"end":171.4,"text":"那我觉得其实并不是这么一回事情","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000054","start":171.4,"end":175.5,"text":"那么先说一下那个政治上的问题","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000055","start":175.5,"end":179.1,"text":"就是说首先那个特朗普跟民主党两边","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000056","start":179.1,"end":181.4,"text":"对于AC affordable care","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000056","start":179.1,"end":181.4,"text":"对于ACA affordable care","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000057","start":181.4,"end":183.8,"text":"是不是加到 affordable care的补贴","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000058","start":183.8,"end":186.1,"text":"是不是延长继续加到这个比喻","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000059","start":186.1,"end":188.4,"text":"就现在那个八九里面去","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000059","start":186.1,"end":188.4,"text":"就现在那个法案里面去","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000060","start":188.4,"end":190.2,"text":"要他们那个相当于民主党","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000061","start":190.2,"end":193.8,"text":"对于共和党要求他们加进去作为先知条件","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000062","start":193.8,"end":198.0,"text":"那么其实我觉得这一次的两边的矛盾这么大","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -64,7 +64,7 @@
 {"id":"seg-000064","start":199.0,"end":203.2,"text":"第一个是本身 affordable care是民主党当时执政的","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000065","start":203.2,"end":209.5,"text":"他们认为他们执政的一个很重要的成果","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000066","start":209.5,"end":211.2,"text":"就是给了所有人的意料","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000067","start":211.2,"end":215.8,"text":"但是共和党或者是Trump 马卡档认为他被滥用","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000067","start":211.2,"end":215.8,"text":"但是共和党或者是Trump MAGA认为他被滥用","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000068","start":215.8,"end":217.2,"text":"觉得他是一个巨大失败","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000069","start":217.2,"end":218.1,"text":"把他去掉","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000070","start":218.1,"end":220.8,"text":"所以这个 affordable care这个东西","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -72,16 +72,16 @@
 {"id":"seg-000072","start":223.6,"end":226.3,"text":"就是他们是完全的 mutually exclusive","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000073","start":226.7,"end":230.0,"text":"双方完全没有在这个事情上是没有共同点的","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000074","start":230.0,"end":232.7,"text":"那么他们两边在这件事情上朝前","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000075","start":232.7,"end":235.6,"text":"就是会封建对卖盲的","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000075","start":232.7,"end":235.6,"text":"就是会分裂對立的","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000076","start":235.6,"end":237.3,"text":"现在是这样一个状态","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000077","start":237.3,"end":242.1,"text":"第二个就是现在议院和那个知情部门","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000078","start":242.1,"end":244.4,"text":"和白宫之间的信任的丧失","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000079","start":244.4,"end":245.5,"text":"这个信任丧失","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000080","start":245.5,"end":248.7,"text":"其实我是感觉要怪到最高法院的","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000081","start":248.7,"end":250.4,"text":"就是美国最高法院","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000082","start":250.4,"end":254.4,"text":"其实赋予了总统很多exceptible order的权利","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000083","start":254.4,"end":257.9,"text":"以前exceptible order确实是可以这样去执行","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000084","start":257.9,"end":260.4,"text":"但是exceptible order没有人这样烂用","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000082","start":250.4,"end":254.4,"text":"其实赋予了总统很多executive order的权利","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000083","start":254.4,"end":257.9,"text":"以前executive order确实是可以这样去执行","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000084","start":257.9,"end":260.4,"text":"但是executive order没有人这样濫用","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000085","start":260.4,"end":264.1,"text":"就比方说我要做个事情","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000086","start":264.1,"end":264.8,"text":"我要加关税","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000087","start":264.8,"end":266.1,"text":"那我要通过国会吧","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -119,18 +119,18 @@
 {"id":"seg-000119","start":352.6,"end":353.9,"text":"特别是中间派","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000120","start":353.9,"end":358.3,"text":"中间派他当时是一般都是指责那个","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000121","start":358.3,"end":362.5,"text":"或几乎所有人都是指责那个发起的发起政府关门的","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000122","start":362.5,"end":366.1,"text":"但是问题这一次左派的学民就是","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000122","start":362.5,"end":366.1,"text":"但是问题这一次左派的選民就是","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000123","start":366.2,"end":369.8,"text":"无论你那个民主党的那个议员怎么搞","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000124","start":369.8,"end":371.0,"text":"我都是支持民主党","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000125","start":371.0,"end":373.0,"text":"右派都是去支持特朗普","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000126","start":373.0,"end":375.7,"text":"所以两边的两级风化特别厉害","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000127","start":375.7,"end":378.0,"text":"就这次是非常polarize","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000128","start":378.0,"end":381.0,"text":"那个这个polarize的结果","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000129","start":381.0,"end":388.6,"text":"也是特朗普前一段时间指证过于独裁的一个结果吧","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000129","start":381.0,"end":388.6,"text":"也是特朗普前一段时间指責过于独裁的一个结果吧","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000130","start":388.6,"end":389.5,"text":"就是他过于独裁","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000131","start":389.5,"end":391.5,"text":"导致左派的人非常反对他","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000132","start":391.5,"end":393.6,"text":"反正你们就谁要站出来反对向川普","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000133","start":393.6,"end":395.8,"text":"不然的话就是他就无法五天了","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000133","start":393.6,"end":395.8,"text":"不然的话就是他就無法連任了","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000134","start":396.8,"end":399.2,"text":"中间的选民其实两边都怪","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000135","start":399.2,"end":402.2,"text":"所以现在没有民意一边倒去blame","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000136","start":402.2,"end":405.3,"text":"相反有一些你去闹说这个事情","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -147,7 +147,7 @@
 {"id":"seg-000147","start":426.8,"end":429.0,"text":"那个加拿大他又很强硬","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000148","start":429.0,"end":432.5,"text":"然后他对于右派的国家他是不强硬的","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000149","start":432.5,"end":435.2,"text":"就是比方说他对于普京对吧","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000150","start":435.2,"end":437.8,"text":"普京他要标网自己是右派","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000150","start":435.2,"end":437.8,"text":"普京他要標榜自己是右派","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000151","start":437.8,"end":439.8,"text":"还有对于一些比方说对于中国","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000152","start":439.8,"end":441.6,"text":"对于朝鲜他都不怎么强硬","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000153","start":441.6,"end":443.8,"text":"所以你说他真的他口","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -174,7 +174,7 @@
 {"id":"seg-000174","start":652.5,"end":656.4,"text":"当川普发生政策风险的时候","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000175","start":656.4,"end":659.9,"text":"他对内可能会更加强硬","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000176","start":659.9,"end":662.7,"text":"然后他对外相对来说更容易打扣","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000177","start":662.7,"end":665.4,"text":"然后讲一下AR bubble的事情","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000177","start":662.7,"end":665.4,"text":"然后讲一下AI bubble的事情","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000178","start":665.4,"end":666.6,"text":"最近要发很多业奖","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000179","start":666.6,"end":668.5,"text":"很多公司业绩大家可以去看","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000180","start":668.5,"end":672.7,"text":"那么公司业绩其实总体先总结一下","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -186,19 +186,19 @@
 {"id":"seg-000186","start":680.7,"end":684.9,"text":"就是那个Growth大百分之六","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000187","start":684.9,"end":687.2,"text":"二季度的时候是百分之十一","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000188","start":687.2,"end":691.5,"text":"所以这一次非常可能会带来一大堆的beat","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000189","start":691.6,"end":692.9,"text":"就是特别是AR sector","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000189","start":691.6,"end":692.9,"text":"就是特别是AI sector","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000190","start":692.9,"end":694.1,"text":"会带来一大堆beat","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000191","start":694.1,"end":695.9,"text":"一大堆的超预期","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000192","start":695.9,"end":698.6,"text":"因为整体预期","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000193","start":698.6,"end":700.8,"text":"就是用预期来看的话","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000194","start":700.8,"end":702.7,"text":"Mac attack就大的科技公司的","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000194","start":700.8,"end":702.7,"text":"mega-cap就大的科技公司的","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000195","start":702.7,"end":704.6,"text":"CAPEX投入是15%","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000196","start":704.6,"end":705.1,"text":"是用这个","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000197","start":705.1,"end":708.1,"text":"但是没有原因看到他们真的调到15%","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000198","start":708.1,"end":709.4,"text":"现在都要30%以上了","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000199","start":709.4,"end":711.0,"text":"所以其实是30","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000200","start":711.0,"end":712.5,"text":"所以你很有可能带来","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000201","start":712.5,"end":715.5,"text":"整个AR带动好业的就全部beat","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000201","start":712.5,"end":715.5,"text":"整个AI带动好业的就全部beat","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000202","start":715.5,"end":716.5,"text":"beat 500 basis 1","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000203","start":716.5,"end":717.6,"text":"就beat 5%之类的","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000204","start":717.6,"end":718.6,"text":"我觉得都有可能","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -211,12 +211,12 @@
 {"id":"seg-000211","start":732.8,"end":734.0,"text":"就是我们说两个车轮","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000212","start":734.2,"end":736.1,"text":"一个是美国财政的车轮","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000213","start":736.4,"end":740.4,"text":"一个是就不是美国全球财政的车轮","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000214","start":740.4,"end":741.6,"text":"财政大洲旗","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000214","start":740.4,"end":741.6,"text":"财政大周期","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000215","start":741.6,"end":744.4,"text":"第二个是AI泡沫","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000216","start":744.4,"end":746.6,"text":"或者AI现在有点泡沫了","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000217","start":746.6,"end":747.9,"text":"AI的大洲旗","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000218","start":747.9,"end":750.3,"text":"AI算力需求的大洲旗","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000219","start":750.3,"end":752.9,"text":"所以这两个大洲旗什么时候结束","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000217","start":746.6,"end":747.9,"text":"AI的大周期","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000218","start":747.9,"end":750.3,"text":"AI算力需求的大周期","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000219","start":750.3,"end":752.9,"text":"所以这两个大周期什么时候结束","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000220","start":752.9,"end":754.2,"text":"因为我讲到","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000221","start":754.2,"end":756.4,"text":"这个基督业绩肯定我觉得都beat很多","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000222","start":757.1,"end":758.8,"text":"先说宏观上","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -225,13 +225,13 @@
 {"id":"seg-000225","start":762.1,"end":763.8,"text":"就是财政洲旗分两部分","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000226","start":763.8,"end":767.1,"text":"一部分是我们的BBB法案","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000227","start":767.1,"end":768.8,"text":"特别在美国的BBB法案","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000228","start":768.8,"end":772.9,"text":"那个财政上造成经济证捕回馈","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000228","start":768.8,"end":772.9,"text":"那个财政上造成經濟刺激回馈","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000229","start":772.9,"end":775.2,"text":"应该是明年一季度以后","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000230","start":775.2,"end":776.5,"text":"就会造成这种回馈","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000231","start":776.5,"end":778.2,"text":"甚至一季度中间就会","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000232","start":778.2,"end":780.2,"text":"因为11月份他退税了","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000233","start":780.2,"end":781.6,"text":"然后这个事情","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000234","start":781.6,"end":783.2,"text":"Government standoff这个把决的事情","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000234","start":781.6,"end":783.2,"text":"Government standoff这个解決的事情","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000235","start":783.2,"end":783.7,"text":"总会解决","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000236","start":783.7,"end":784.7,"text":"你不管他多长时间","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000237","start":784.7,"end":786.0,"text":"他肯定会解决的","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -253,11 +253,11 @@
 {"id":"seg-000253","start":809.8,"end":811.0,"text":"或者补助消费啊什么的","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000254","start":811.0,"end":813.2,"text":"这个趋势不太能改变","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000255","start":813.2,"end":814.9,"text":"你政府消费","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000256","start":814.9,"end":816.0,"text":"包括他在修落","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000257","start":816.0,"end":818.3,"text":"包括在地方政府在搞很多设龙","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000258","start":818.3,"end":820.1,"text":"就是设龙其实就非法机制","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000256","start":814.9,"end":816.0,"text":"包括他在修路","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000257","start":816.0,"end":818.3,"text":"包括在地方政府在搞很多融資平台","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000258","start":818.3,"end":820.1,"text":"就是融資平台其实就非法机制","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000259","start":820.1,"end":821.2,"text":"然后弄了几十万","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000260","start":821.2,"end":824.1,"text":"也继续去搞修落基建这些东西","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000260","start":821.2,"end":824.1,"text":"也继续去搞修路基建这些东西","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000261","start":824.1,"end":824.8,"text":"那必须得搞","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000262","start":824.8,"end":825.4,"text":"不搞的话","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000263","start":825.4,"end":826.7,"text":"他们全部要恶死","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -266,7 +266,7 @@
 {"id":"seg-000266","start":831.4,"end":833.7,"text":"德国也在也在","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000267","start":833.7,"end":835.7,"text":"也在5000亿的方案方案","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000268","start":835.7,"end":836.8,"text":"或者是后面法国","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000269","start":836.8,"end":839.1,"text":"现在在闹那个异火眼","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000269","start":836.8,"end":839.1,"text":"现在在闹那个議會","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000270","start":839.1,"end":841.7,"text":"就是我在选新的新的","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000271","start":841.7,"end":843.4,"text":"新的总理","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000272","start":843.4,"end":844.5,"text":"然后出来以后","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -290,41 +290,41 @@
 {"id":"seg-000290","start":873.1,"end":875.0,"text":"但是财政周期是直接到的","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000291","start":875.0,"end":877.2,"text":"而且在疫情的时候是证明了","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000292","start":877.2,"end":879.2,"text":"财政周期是直接会导致","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000293","start":879.2,"end":879.7,"text":"通脏","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000293","start":879.2,"end":879.7,"text":"通脹","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000294","start":879.7,"end":880.8,"text":"直接导致就相当于","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000295","start":880.8,"end":883.5,"text":"这个强行级的要消更快","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000296","start":883.5,"end":884.8,"text":"那么他不是一个卖钮","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000296","start":883.5,"end":884.8,"text":"那么他不是一个慢鈕","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000297","start":884.8,"end":885.7,"text":"他是个快钮","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000298","start":885.7,"end":887.8,"text":"所以财政周期导致通脏","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000298","start":885.7,"end":887.8,"text":"所以财政周期导致通脹","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000299","start":887.8,"end":890.8,"text":"我觉得会相对来说","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000300","start":890.8,"end":891.9,"text":"更加立杆建议一点","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000300","start":890.8,"end":891.9,"text":"更加立竿見影一点","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000301","start":891.9,"end":893.6,"text":"你不会看到一个","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000302","start":893.6,"end":896.5,"text":"三年五年这样的一个周期","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000303","start":896.5,"end":898.8,"text":"就是财政周期没有通脏","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000303","start":896.5,"end":898.8,"text":"就是财政周期没有通脹","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000304","start":898.8,"end":900.5,"text":"所以我个人感觉","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000305","start":900.5,"end":905.0,"text":"就是二六年之后是有可能会有风险","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000306","start":905.0,"end":906.8,"text":"就是二六年之后二六年没问题","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000307","start":906.8,"end":907.8,"text":"那没有那么快","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000308","start":907.8,"end":908.9,"text":"他通脏","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000309","start":908.9,"end":912.0,"text":"那么通脏就是时刻关注的一个逆波数据","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000308","start":907.8,"end":908.9,"text":"他通脹","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000309","start":908.9,"end":912.0,"text":"那么通脹就是时刻关注的一个逆風数据","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000310","start":912.0,"end":915.0,"text":"就是这个是会让财政周期停下","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000311","start":915.0,"end":918.4,"text":"但现在大家都在准备弄","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000312","start":918.4,"end":921.8,"text":"然后但是通脏有两方面的offset","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000312","start":918.4,"end":921.8,"text":"然后但是通脹有两方面的offset","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000313","start":921.8,"end":924.0,"text":"第一个其实各方面的deregulation","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000314","start":924.0,"end":925.9,"text":"包括对AI的deregulation","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000315","start":925.9,"end":928.8,"text":"包括AI的发展都会改善通脏","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000315","start":925.9,"end":928.8,"text":"包括AI的发展都会改善通脹","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000316","start":928.8,"end":929.3,"text":"第二呢","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000317","start":929.3,"end":930.8,"text":"中国现在严重通缩","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000318","start":930.8,"end":932.9,"text":"这个严重通缩的生产过","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000319","start":932.9,"end":936.4,"text":"是帮助全世界解决财政","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000320","start":936.4,"end":939.8,"text":"乱花钱可能通脏的一个很好的气点","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000320","start":936.4,"end":939.8,"text":"乱花钱可能通脹的一个很好的气点","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000321","start":939.8,"end":942.5,"text":"所以这个是两个","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000322","start":942.5,"end":944.8,"text":"就几个offset的这个factor","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000323","start":944.8,"end":946.5,"text":"所以大家关注最后通脏情况","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000323","start":944.8,"end":946.5,"text":"所以大家关注最后通脹情况","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000324","start":946.5,"end":947.9,"text":"会怎么样","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000325","start":947.9,"end":948.4,"text":"第二个呢","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000326","start":948.4,"end":952.0,"text":"是业绩的就是公司的故事","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000327","start":952.0,"end":956.1,"text":"AI就是财政的周期的结束是通脏","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000327","start":952.0,"end":956.1,"text":"AI就是财政的周期的结束是通脹","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000328","start":956.1,"end":957.9,"text":"AI周期结束是什么","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000329","start":957.9,"end":963.1,"text":"AI周期结束我觉得是OpenAI正式2C","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000330","start":963.1,"end":965.1,"text":"正式2C或正式上市","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -460,9 +460,9 @@
 {"id":"seg-000460","start":1206.9,"end":1208.2,"text":"他们这些Digital Media","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000461","start":1208.2,"end":1209.5,"text":"已经被证明了","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000462","start":1209.5,"end":1211.8,"text":"我用AI马上提高效率","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000463","start":1211.8,"end":1212.8,"text":"增加我的马诊","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000463","start":1211.8,"end":1212.8,"text":"增加我的毛利","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000464","start":1212.8,"end":1215.9,"text":"增加不但增加我的收入","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000465","start":1215.9,"end":1217.0,"text":"还增加我马诊","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000465","start":1215.9,"end":1217.0,"text":"还增加我毛利","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000466","start":1217.0,"end":1218.6,"text":"还增加我的毛利率","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000467","start":1218.6,"end":1221.0,"text":"它的投资收益是肉眼可见的","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000468","start":1221.0,"end":1222.5,"text":"因为这个马上卖广告","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -521,17 +521,17 @@
 {"id":"seg-000521","start":1315.5,"end":1317.4,"text":"跟00年不是一个level的吧","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000522","start":1317.4,"end":1317.8,"text":"第二呢","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000523","start":1317.8,"end":1319.9,"text":"你看这个","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000524","start":1319.9,"end":1322.4,"text":"戴兰和生兰的比较","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000524","start":1319.9,"end":1322.4,"text":"淡藍和深藍的比较","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000525","start":1322.4,"end":1323.7,"text":"比方说00年","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000526","start":1323.7,"end":1325.0,"text":"欧洲的这个TMT","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000527","start":1325.0,"end":1326.7,"text":"肯定是泡沫最最大","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000528","start":1326.7,"end":1328.2,"text":"那个比美国还要大","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000529","start":1328.2,"end":1332.3,"text":"因为你那个戴兰的是盈利的","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000529","start":1328.2,"end":1332.3,"text":"因为你那个淡藍的是盈利的","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000530","start":1332.3,"end":1335.0,"text":"对于盈利对于你这个公司股价的","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000531","start":1335.0,"end":1337.9,"text":"这个就是我我这个赚的钱","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000532","start":1337.9,"end":1339.5,"text":"到底是批议赚的钱","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000532","start":1337.9,"end":1339.5,"text":"到底是市盈率赚的钱","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000533","start":1339.5,"end":1341.9,"text":"就是multiple我的倍数增加了","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000534","start":1341.9,"end":1343.5,"text":"还是我额尼盈利增加","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000534","start":1341.9,"end":1343.5,"text":"还是我盈利盈利增加","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000535","start":1343.5,"end":1344.8,"text":"盈利在增加的时候","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000536","start":1344.8,"end":1345.7,"text":"一定会增加倍数","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000537","start":1345.7,"end":1346.6,"text":"这是必然的","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -549,11 +549,11 @@
 {"id":"seg-000549","start":1361.5,"end":1361.9,"text":"不错","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000550","start":1361.9,"end":1363.5,"text":"就是你这个不到一半一半","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000551","start":1363.5,"end":1365.0,"text":"就大部分都是淡蓝的","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000552","start":1365.0,"end":1366.5,"text":"都是奥尼","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000553","start":1366.5,"end":1367.3,"text":"奥尼增长出来","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000554","start":1367.3,"end":1369.1,"text":"所以我认为是阿务尼增长出来的","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000555","start":1369.1,"end":1371.1,"text":"阿务尼或投资增长出来的","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000556","start":1371.1,"end":1373.1,"text":"那你回头看吴尔的全世界","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000552","start":1365.0,"end":1366.5,"text":"都是盈利","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000553","start":1366.5,"end":1367.3,"text":"盈利增长出来","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000554","start":1367.3,"end":1369.1,"text":"所以我认为是盈利增长出来的","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000555","start":1369.1,"end":1371.1,"text":"盈利或投资增长出来的","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000556","start":1371.1,"end":1373.1,"text":"那你回头看全球的全世界","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000557","start":1373.1,"end":1373.9,"text":"那一半一半","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000558","start":1373.9,"end":1376.1,"text":"他们泡沫更大","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000559","start":1376.1,"end":1377.5,"text":"如果简单这样看的话","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -567,11 +567,11 @@
 {"id":"seg-000567","start":1389.6,"end":1390.0,"text":"对吧","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000568","start":1390.0,"end":1390.7,"text":"你要从","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000569","start":1390.7,"end":1391.2,"text":"你要从","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000570","start":1391.2,"end":1393.7,"text":"不是光从批议的估值角度来看","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000571","start":1393.7,"end":1394.7,"text":"批议估值","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000572","start":1394.7,"end":1396.6,"text":"看看中国好像批议估值不错","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000573","start":1396.6,"end":1398.2,"text":"但是你要看这个投资周益","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000574","start":1398.2,"end":1401.2,"text":"这个中国投资周益不太能看","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000570","start":1391.2,"end":1393.7,"text":"不是光从市盈率的估值角度来看","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000571","start":1393.7,"end":1394.7,"text":"市盈率估值","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000572","start":1394.7,"end":1396.6,"text":"看看中国好像市盈率估值不错","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000573","start":1396.6,"end":1398.2,"text":"但是你要看这个投資收益率","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000574","start":1398.2,"end":1401.2,"text":"这个中国投資收益率不太能看","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000575","start":1401.2,"end":1402.9,"text":"所以是这么一个情况","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000576","start":1402.9,"end":1404.3,"text":"然后","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000577","start":1404.3,"end":1408.0,"text":"其实政府的大周期","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -582,7 +582,7 @@
 {"id":"seg-000582","start":1414.4,"end":1415.8,"text":"政府在花钱","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000583","start":1415.8,"end":1417.3,"text":"同时的话去监管","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000584","start":1417.3,"end":1419.5,"text":"然后去监管本身也会带动","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000585","start":1419.5,"end":1422.3,"text":"明宁部门的对于政府的这个投资","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000585","start":1419.5,"end":1422.3,"text":"民營部門的对于政府的这个投资","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000586","start":1422.3,"end":1424.9,"text":"那么政府去监管这个事情","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000587","start":1424.9,"end":1427.1,"text":"是两个","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000588","start":1427.1,"end":1429.6,"text":"政府去监管我觉得最最最重要的","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -591,14 +591,14 @@
 {"id":"seg-000591","start":1433.8,"end":1434.8,"text":"出来搞这些事情","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000592","start":1434.8,"end":1436.1,"text":"投资什么的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000593","start":1436.1,"end":1437.6,"text":"那个","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000594","start":1437.6,"end":1439.5,"text":"美国在巴萨尔三下面","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000595","start":1439.5,"end":1442.1,"text":"就08年时候在巴萨尔三下面有一个监管","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000594","start":1437.6,"end":1439.5,"text":"美国在巴塞爾三下面","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000595","start":1439.5,"end":1442.1,"text":"就08年时候在巴塞爾三下面有一个监管","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000596","start":1442.1,"end":1444.4,"text":"是说T1 Capital","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000597","start":1444.4,"end":1445.7,"text":"依类向下资本","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000598","start":1445.7,"end":1448.2,"text":"依类资本向下处于你通通","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000599","start":1448.2,"end":1449.1,"text":"所有的exposition","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000600","start":1449.1,"end":1450.5,"text":"你所有的风险长口","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000601","start":1450.5,"end":1451.8,"text":"不能高于一个版本笔","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000597","start":1444.4,"end":1445.7,"text":"一級向下资本","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000598","start":1445.7,"end":1448.2,"text":"一級资本向下处于你通通","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000599","start":1448.2,"end":1449.1,"text":"所有的exposure","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000600","start":1449.1,"end":1450.5,"text":"你所有的風險敞口","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000601","start":1450.5,"end":1451.8,"text":"不能高于一个資本比率","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000602","start":1451.8,"end":1454.2,"text":"然后那个","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000603","start":1454.2,"end":1456.2,"text":"高于的话你就不能分红","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000604","start":1456.2,"end":1458.4,"text":"然后奖金好像也受影响","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -613,14 +613,14 @@
 {"id":"seg-000613","start":1473.4,"end":1475.5,"text":"政府去监管会把中间","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000614","start":1475.5,"end":1478.2,"text":"比方说国债从分母里面给去掉","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000615","start":1478.2,"end":1479.2,"text":"就是Total Expo","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000616","start":1479.2,"end":1480.6,"text":"总的风险长口","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000616","start":1479.2,"end":1480.6,"text":"总的風險敞口","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000617","start":1480.6,"end":1482.2,"text":"中间要把国债去掉","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000618","start":1482.2,"end":1484.3,"text":"然后你上面比方说","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000619","start":1484.3,"end":1487.2,"text":"有一个版本笔里面有一个","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000620","start":1487.2,"end":1488.1,"text":"有个版本笔","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000621","start":1488.1,"end":1489.5,"text":"这个版本笔要降低","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000619","start":1484.3,"end":1487.2,"text":"有一个資本比率里面有一个","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000620","start":1487.2,"end":1488.1,"text":"有个資本比率","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000621","start":1488.1,"end":1489.5,"text":"这个資本比率要降低","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000622","start":1489.5,"end":1492.7,"text":"所以银行在不增加资本金的情况下","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000623","start":1492.7,"end":1496.4,"text":"可以增加4到5万亿的风险长口","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000623","start":1492.7,"end":1496.4,"text":"可以增加4到5万亿的風險敞口","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000624","start":1496.4,"end":1497.7,"text":"这个是很大","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000625","start":1497.7,"end":1501.1,"text":"所以这个会比你连储降息作用还大","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000626","start":1501.1,"end":1502.7,"text":"因为他们可以去买国债","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -629,25 +629,25 @@
 {"id":"seg-000629","start":1505.2,"end":1506.8,"text":"现在不需要记录了","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000630","start":1506.8,"end":1508.6,"text":"那我去养券我套利","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000631","start":1508.6,"end":1509.3,"text":"我去套国家","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000632","start":1509.3,"end":1511.7,"text":"我可以加10倍、20倍、50倍、100倍钢杆去搞","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000632","start":1509.3,"end":1511.7,"text":"我可以加10倍、20倍、50倍、100倍杠杆去搞","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000633","start":1511.7,"end":1517.4,"text":"所以整个市场上的流动性就会多很多","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000634","start":1517.4,"end":1518.2,"text":"就是这个","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000635","start":1518.2,"end":1520.9,"text":"因为你想包括美国国债以前买的比较多的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000636","start":1520.9,"end":1522.1,"text":"都是投行","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000637","start":1522.1,"end":1523.6,"text":"不是外国投资人","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000638","start":1523.6,"end":1525.2,"text":"都是Hedge Fund投行","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000639","start":1525.2,"end":1527.6,"text":"这些最大的买价","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000640","start":1527.6,"end":1529.3,"text":"因为他们都是加的钢杆买的","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000639","start":1525.2,"end":1527.6,"text":"这些最大的買家","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000640","start":1527.6,"end":1529.3,"text":"因为他们都是加的杠杆买的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000641","start":1529.3,"end":1532.6,"text":"然后美国特别是以前国债利率","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000642","start":1533.6,"end":1535.0,"text":"刚刚降息降到0","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000643","start":1535.0,"end":1536.0,"text":"利率比较陡的时候","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000644","start":1536.0,"end":1540.2,"text":"那个时候我们去套短期债去","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000645","start":1540.2,"end":1542.7,"text":"拿短期债去养长期债去套利","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000646","start":1542.7,"end":1545.9,"text":"那这个中间可以把自然浮达表做很大","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000646","start":1542.7,"end":1545.9,"text":"那这个中间可以把資產負債表做很大","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000647","start":1545.9,"end":1548.9,"text":"只是后来各种监管上来就没法弄","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000648","start":1548.9,"end":1551.2,"text":"所以这个如果可以继续做的话","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000649","start":1551.2,"end":1553.2,"text":"它释放流动性会非常大","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000650","start":1553.2,"end":1555.8,"text":"就是这是也是一个重要的财神周期","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000650","start":1553.2,"end":1555.8,"text":"就是这是也是一个重要的財政周期","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000651","start":1555.8,"end":1558.8,"text":"所以现在我是觉得26年后面","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000652","start":1558.8,"end":1565.0,"text":"它的就是现在没有完全你说泡沫跑到头了","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000653","start":1565.0,"end":1568.2,"text":"跟00年的时候泡沫跑到头","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -660,7 +660,7 @@
 {"id":"seg-000660","start":1580.7,"end":1583.2,"text":"人家等于甲方不停的给你订单","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000661","start":1583.2,"end":1585.7,"text":"那个进口增加比较incorrect","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000662","start":1585.7,"end":1588.3,"text":"就是说是不是国内的通缩走掉了","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000663","start":1588.3,"end":1590.2,"text":"但是你打开分享数据看","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000663","start":1588.3,"end":1590.2,"text":"但是你打开分項数据看","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000664","start":1590.2,"end":1593.2,"text":"就是其实进口中间有很多的高科技","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000665","start":1593.2,"end":1596.0,"text":"然后有很多那个有很多高科技","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000666","start":1596.0,"end":1598.4,"text":"然后有很多比较飞机","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -686,7 +686,7 @@
 {"id":"seg-000686","start":1641.3,"end":1642.8,"text":"所以这个是中国经济","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000687","start":1642.8,"end":1644.0,"text":"争过经济的基本面","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000688","start":1644.0,"end":1647.5,"text":"其实相对来说我觉得还是比较长","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000689","start":1648.1,"end":1651.9,"text":"然后最后说一下BN的严重的包仓时间","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000689","start":1648.1,"end":1651.9,"text":"然后最后说一下BN的严重的爆倉时间","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000690","start":1651.9,"end":1655.6,"text":"这几个投资是一个案例","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000691","start":1655.6,"end":1656.5,"text":"就把跌到零了","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000692","start":1657.5,"end":1659.6,"text":"市场上在那里怪BN","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -701,19 +701,19 @@
 {"id":"seg-000701","start":1675.9,"end":1678.9,"text":"就是很多人一旦这种发生跌成零","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000702","start":1678.9,"end":1681.7,"text":"或者是那个USDE和USDT脱钩","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000703","start":1681.7,"end":1683.2,"text":"这种事情一旦发生","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000704","start":1683.2,"end":1685.7,"text":"大家马上第一个反应就说BN做恶","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000704","start":1683.2,"end":1685.7,"text":"大家马上第一个反应就说BN作惡","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000705","start":1685.7,"end":1686.6,"text":"其实并不是这样","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000706","start":1686.6,"end":1687.9,"text":"并不是交易所做","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000707","start":1687.9,"end":1690.3,"text":"那你说当时还发生过石油价格","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000708","start":1690.3,"end":1691.1,"text":"BN付的","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000709","start":1691.1,"end":1692.8,"text":"那难道是CME在做恶吗","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000708","start":1690.3,"end":1691.1,"text":"BN負的","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000709","start":1691.1,"end":1692.8,"text":"那难道是CME在作惡吗","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000710","start":1692.8,"end":1693.4,"text":"那不是","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000711","start":1693.4,"end":1696.4,"text":"是因为市场上加的杠杆投存太多了","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000712","start":1696.4,"end":1697.8,"text":"所以杠杆投存太多","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000711","start":1693.4,"end":1696.4,"text":"是因为市场上加的杠杆头寸太多了","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000712","start":1696.4,"end":1697.8,"text":"所以杠杆头寸太多","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000713","start":1697.8,"end":1700.0,"text":"一下子平仓一起爆仓的时候","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000714","start":1700.0,"end":1700.7,"text":"乔太挤","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000715","start":1700.7,"end":1701.4,"text":"他挤不过来","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000716","start":1701.4,"end":1702.9,"text":"就把他挤成付的了","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000716","start":1701.4,"end":1702.9,"text":"就把他挤成負的了","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000717","start":1702.9,"end":1705.1,"text":"这不是一个理性的一个价格","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000718","start":1705.1,"end":1706.6,"text":"那疫情的时候确实发生过","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000719","start":1706.6,"end":1708.0,"text":"就是石油价格跌成负责","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -722,8 +722,8 @@
 {"id":"seg-000722","start":1709.8,"end":1710.4,"text":"不是","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000723","start":1710.4,"end":1711.9,"text":"我给你有还付你钱","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000724","start":1711.9,"end":1712.8,"text":"不make sense","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000725","start":1712.8,"end":1715.7,"text":"所以这个都是交易投存导致的","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000726","start":1715.7,"end":1717.4,"text":"那么在B权发生的什么事情","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000725","start":1712.8,"end":1715.7,"text":"所以这个都是交易头寸导致的","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000726","start":1715.7,"end":1717.4,"text":"那么在幣圈发生的什么事情","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000727","start":1717.4,"end":1720.4,"text":"其实本质上有很多野生做市场","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000728","start":1720.4,"end":1722.3,"text":"做市场就等于是我在那里跌的时候","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000729","start":1722.3,"end":1723.0,"text":"就不停的买","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -731,18 +731,18 @@
 {"id":"seg-000731","start":1724.3,"end":1724.8,"text":"对吧","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000732","start":1724.8,"end":1726.4,"text":"等于给市场提供流动性","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000733","start":1726.4,"end":1727.3,"text":"自己赚钱","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000734","start":1727.3,"end":1729.8,"text":"在B权波动率这么大的市场里面","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000735","start":1729.8,"end":1731.5,"text":"小B做实是非常赚钱","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000736","start":1731.5,"end":1732.5,"text":"像这种小B做实","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000734","start":1727.3,"end":1729.8,"text":"在幣圈波动率这么大的市场里面","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000735","start":1729.8,"end":1731.5,"text":"小幣做市是非常赚钱","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000736","start":1731.5,"end":1732.5,"text":"像这种小幣做市","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000737","start":1732.5,"end":1733.8,"text":"他都非常赚钱","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000738","start":1733.8,"end":1735.0,"text":"但是小B做实有个风险","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000738","start":1733.8,"end":1735.0,"text":"但是小幣做市有个风险","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000739","start":1735.0,"end":1736.5,"text":"他会暴涨或暴跌","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000740","start":1736.5,"end":1737.7,"text":"那如果暴涨暴跌","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000741","start":1737.7,"end":1738.7,"text":"跌个3050","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000742","start":1738.7,"end":1742.2,"text":"那我一个token我的损失是平方数","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000743","start":1742.2,"end":1743.1,"text":"因为我不停的接待","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000743","start":1742.2,"end":1743.1,"text":"因为我不停的借貸","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000744","start":1743.1,"end":1743.9,"text":"我是平方数","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000745","start":1743.9,"end":1745.3,"text":"所以我怎么去分控的","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000745","start":1743.9,"end":1745.3,"text":"所以我怎么去風控的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000746","start":1745.3,"end":1746.3,"text":"他们一般来说","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000747","start":1746.3,"end":1747.3,"text":"我不止算","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000748","start":1747.3,"end":1748.4,"text":"我限仓","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -750,10 +750,10 @@
 {"id":"seg-000750","start":1749.7,"end":1751.8,"text":"我比方说这里跌了30%","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000751","start":1751.8,"end":1753.1,"text":"我就限仓我就","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000752","start":1753.1,"end":1754.2,"text":"我就不加仓为了","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000753","start":1754.2,"end":1755.5,"text":"我就不继续接待","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000753","start":1754.2,"end":1755.5,"text":"我就不继续借貸","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000754","start":1755.5,"end":1757.1,"text":"我不要平方数的损失","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000755","start":1757.1,"end":1759.6,"text":"但是我可以忍受它跌到0","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000756","start":1759.6,"end":1760.9,"text":"跌到0我也不会保抢","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000756","start":1759.6,"end":1760.9,"text":"跌到0我也不会爆倉","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000757","start":1760.9,"end":1764.2,"text":"因为我手上同时持有100个token","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000758","start":1764.2,"end":1765.6,"text":"我手上同时持有","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000759","start":1765.6,"end":1766.9,"text":"表示50个token","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -766,8 +766,8 @@
 {"id":"seg-000766","start":1775.4,"end":1776.3,"text":"我还是能忍住","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000767","start":1776.3,"end":1777.7,"text":"因为你跌到0","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000768","start":1777.7,"end":1778.8,"text":"你要反台","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000769","start":1778.8,"end":1780.5,"text":"所以这个做实策略","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000770","start":1780.5,"end":1783.0,"text":"是很多野生做实上做的事情","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000769","start":1778.8,"end":1780.5,"text":"所以这个做市策略","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000770","start":1780.5,"end":1783.0,"text":"是很多野生做市上做的事情","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000771","start":1783.0,"end":1784.1,"text":"但是问题是","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000772","start":1784.1,"end":1785.8,"text":"那个trump发生","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000773","start":1785.8,"end":1787.6,"text":"那个发了那个关税以后","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -780,7 +780,7 @@
 {"id":"seg-000780","start":1797.7,"end":1799.6,"text":"一个篮子最大的问题是","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000781","start":1799.6,"end":1801.9,"text":"你是假设它的关联度是负的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000782","start":1801.9,"end":1802.8,"text":"但是问题是","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000783","start":1802.8,"end":1804.1,"text":"市场发生几端情况的时候","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000783","start":1802.8,"end":1804.1,"text":"市场发生極端情况的时候","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000784","start":1804.1,"end":1805.3,"text":"关联度是1","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000785","start":1805.3,"end":1807.9,"text":"那我这个token跌了30的时候","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000786","start":1807.9,"end":1809.0,"text":"这个token也跌了30","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -788,18 +788,18 @@
 {"id":"seg-000788","start":1810.8,"end":1812.3,"text":"每个token多往你跌30","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000789","start":1812.3,"end":1813.1,"text":"不要说跌30","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000790","start":1813.1,"end":1814.6,"text":"跌5%你就受不了了","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000791","start":1814.6,"end":1817.7,"text":"所以有一些做实上就止损","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000792","start":1817.7,"end":1819.1,"text":"那做实上止损的时候","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000791","start":1814.6,"end":1817.7,"text":"所以有一些做市上就止损","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000792","start":1817.7,"end":1819.1,"text":"那做市上止损的时候","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000793","start":1819.1,"end":1820.0,"text":"才是把自己","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000794","start":1820.0,"end":1821.1,"text":"他们用的统一账户","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000795","start":1821.1,"end":1823.1,"text":"所有的资产都放在一起的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000796","start":1823.1,"end":1823.8,"text":"统一账户","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000797","start":1823.8,"end":1825.0,"text":"那统一账户的时候","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000798","start":1825.0,"end":1826.2,"text":"他就止损的时候","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000799","start":1826.2,"end":1829.2,"text":"就导致一键倾仓","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000800","start":1829.2,"end":1830.2,"text":"就一键倾仓","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000801","start":1830.2,"end":1832.0,"text":"就是把他手上手存全部卖出来","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000802","start":1832.0,"end":1833.7,"text":"本来做实上在这里不卖的","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000799","start":1826.2,"end":1829.2,"text":"就导致一鍵清倉","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000800","start":1829.2,"end":1830.2,"text":"就一鍵清倉","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000801","start":1830.2,"end":1832.0,"text":"就是把他手上持倉全部卖出来","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000802","start":1832.0,"end":1833.7,"text":"本来做市上在这里不卖的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000803","start":1833.7,"end":1835.2,"text":"跌到这里他也是不卖的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000804","start":1835.2,"end":1837.9,"text":"但是他后来发生的时候就卖出来","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000805","start":1837.9,"end":1839.2,"text":"卖出来的时候","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -813,18 +813,18 @@
 {"id":"seg-000813","start":1853.1,"end":1855.6,"text":"所以他们等于是在买usdt","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000814","start":1855.6,"end":1859.0,"text":"然后然后等于借usdt买usdt","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000815","start":1859.0,"end":1860.8,"text":"就是循环制压杠杆","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000816","start":1860.8,"end":1862.2,"text":"那么vip笼","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000817","start":1862.2,"end":1863.9,"text":"像我们这种用vip笼的还好","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000818","start":1863.9,"end":1866.0,"text":"因为他不报仓的","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000816","start":1860.8,"end":1862.2,"text":"那么VIP賬戶","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000817","start":1862.2,"end":1863.9,"text":"像我们这种用VIP賬戶的还好","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000818","start":1863.9,"end":1866.0,"text":"因为他不爆倉的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000819","start":1866.0,"end":1868.7,"text":"他或者是没有没有特别大的问题","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000820","start":1868.7,"end":1870.8,"text":"但是如果是马金笼","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000820","start":1868.7,"end":1870.8,"text":"但是如果是保證金賬戶","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000821","start":1870.8,"end":1871.9,"text":"然后来做的话呢","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000822","start":1871.9,"end":1874.1,"text":"他们要随时被止损","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000823","start":1874.1,"end":1875.3,"text":"那么有人在倾仓的时候","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000823","start":1874.1,"end":1875.3,"text":"那么有人在清倉的时候","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000824","start":1875.3,"end":1876.9,"text":"把usdt可能也倾掉了","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000825","start":1876.9,"end":1878.4,"text":"然后那个导致了","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000826","start":1878.4,"end":1881.1,"text":"他们做连环杠杆的人就报仓了","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000827","start":1881.1,"end":1882.6,"text":"连环杠杆的人报仓以后","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000826","start":1878.4,"end":1881.1,"text":"他们做连环杠杆的人就爆倉了","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000827","start":1881.1,"end":1882.6,"text":"连环杠杆的人爆倉以后","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000828","start":1882.6,"end":1885.6,"text":"把usdt因为bn的参考","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000829","start":1885.6,"end":1887.8,"text":"参考价格不是链上的这个价格","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000830","start":1887.8,"end":1889.0,"text":"就是实际的盘子价格","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -833,18 +833,18 @@
 {"id":"seg-000833","start":1892.8,"end":1895.9,"text":"打爆了跌往0.66还是跌多少圈","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000834","start":1895.9,"end":1898.3,"text":"那个接着呢","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000835","start":1898.3,"end":1902.0,"text":"就是有很多有usdt的账户上的","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000836","start":1902.0,"end":1904.4,"text":"统一账户就集体报仓","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000836","start":1902.0,"end":1904.4,"text":"统一账户就集体爆倉","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000837","start":1904.4,"end":1907.4,"text":"所以这个是其实本质上来说","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000838","start":1907.4,"end":1908.5,"text":"是一个市场","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000839","start":1908.5,"end":1909.6,"text":"因为突发事件","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000840","start":1909.6,"end":1912.2,"text":"导致的delabage去钢杆","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000841","start":1912.2,"end":1914.4,"text":"这个去钢杆发生了以后","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000842","start":1914.4,"end":1917.9,"text":"就引发了就是去钢杆的下跌","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000840","start":1909.6,"end":1912.2,"text":"导致的deleverage去杠杆","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000841","start":1912.2,"end":1914.4,"text":"这个去杠杆发生了以后","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000842","start":1914.4,"end":1917.9,"text":"就引发了就是去杠杆的下跌","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000843","start":1917.9,"end":1920.3,"text":"那你肯定这个价钱你根本就不用看","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000844","start":1920.3,"end":1922.2,"text":"这个你跌跌成0","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000845","start":1922.2,"end":1923.8,"text":"那么不是也谈会去了吗","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000846","start":1923.8,"end":1926.1,"text":"那个下跌的这个价格是没法看","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000847","start":1926.1,"end":1928.3,"text":"但是去钢杆跌了以后","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000847","start":1926.1,"end":1928.3,"text":"但是去杠杆跌了以后","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000848","start":1928.3,"end":1930.3,"text":"就又说到了以太坊这个东西","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000849","start":1930.3,"end":1931.6,"text":"其实不是很靠谱","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000850","start":1931.6,"end":1935.0,"text":"因为以太坊的一秒钟的TPS","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -854,14 +854,14 @@
 {"id":"seg-000854","start":1943.9,"end":1946.6,"text":"像马斯卡比萨卡都是几万比","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000855","start":1946.6,"end":1948.4,"text":"2万比了","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000856","start":1948.4,"end":1950.4,"text":"你只有这一点清算能力","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000857","start":1950.4,"end":1952.6,"text":"一下子利涯上就变了很拥挤","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000857","start":1950.4,"end":1952.6,"text":"一下子流動性上就变了很拥挤","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000858","start":1952.6,"end":1953.8,"text":"很拥挤以后呢","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000859","start":1953.8,"end":1955.1,"text":"这个大家就要进价","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000860","start":1955.1,"end":1957.4,"text":"你你来清算我清算谁清算","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000861","start":1957.4,"end":1958.1,"text":"先肯定进价","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000862","start":1958.1,"end":1959.2,"text":"进价很高","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000863","start":1959.2,"end":1961.0,"text":"那进价高的必然可能有个设置","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000864","start":1961.0,"end":1963.8,"text":"就是说出路金的时候","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000864","start":1961.0,"end":1963.8,"text":"就是说出金的时候","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000865","start":1963.8,"end":1967.8,"text":"那个价钱如果等于是你用的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000866","start":1967.9,"end":1968.7,"text":"进价太高","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000867","start":1968.7,"end":1970.1,"text":"比方说我要花100块钱","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -872,8 +872,8 @@
 {"id":"seg-000872","start":1974.1,"end":1975.1,"text":"所以必然呢","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000873","start":1975.1,"end":1976.5,"text":"就是在以太坊上","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000874","start":1976.5,"end":1978.1,"text":"有非常短暂的时间","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000875","start":1978.1,"end":1979.7,"text":"没有办法提避转币","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000876","start":1979.7,"end":1981.4,"text":"那又把这个整个暴藏时间","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000875","start":1978.1,"end":1979.7,"text":"没有办法提幣轉幣","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000876","start":1979.7,"end":1981.4,"text":"那又把这个整个爆倉时间","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000877","start":1981.4,"end":1982.4,"text":"就更加深化","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000878","start":1982.4,"end":1983.2,"text":"变得更加严重","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000879","start":1983.2,"end":1984.5,"text":"所以你就看到了","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -882,7 +882,7 @@
 {"id":"seg-000882","start":1986.2,"end":1988.0,"text":"通通往下跌成这个样子","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000883","start":1988.0,"end":1990.8,"text":"所以这个有一系列的事情造成","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000884","start":1990.8,"end":1992.9,"text":"并不是简单归结成","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000885","start":1992.9,"end":1994.6,"text":"就是交易所比方做作恶啊","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000885","start":1992.9,"end":1994.6,"text":"就是交易所比方作惡啊","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000886","start":1994.6,"end":1995.3,"text":"或什么的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000887","start":1995.3,"end":1995.9,"text":"好吧","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000888","start":1995.9,"end":1997.7,"text":"所以今天就把这件事情","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -890,5 +890,5 @@
 {"id":"seg-000890","start":1998.4,"end":1999.9,"text":"因为这个这个是微博啊","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000891","start":1999.9,"end":2001.6,"text":"就重重重录的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000892","start":2001.6,"end":2004.6,"text":"然后那个那个有什么问题","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000893","start":2004.6,"end":2006.1,"text":"你们可以直接自信了","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000893","start":2004.6,"end":2006.1,"text":"你们可以直接提問了","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000894","start":2006.1,"end":2006.4,"text":"好吧","chapter":"chapter-06","source":"faster-whisper-small"}

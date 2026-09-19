@@ -1,12 +1,12 @@
 {"id":"seg-000001","start":0.0,"end":8.7,"text":"好,谢谢大家,然后我觉得上一周市场最主要的就是那个美联储的会议","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000002","start":8.7,"end":17.92,"text":"然后我今天其实想,我看到网上有各种说法吧,就是那个Kevin Wash为什么这么硬派","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000002","start":8.7,"end":17.92,"text":"然后我今天其实想,我看到网上有各种说法吧,就是那个Kevin Warsh为什么这么硬派","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000003","start":17.92,"end":23.3,"text":"然后大流大致的说法是这样子,就是觉得那个美联储现在变得更加硬派一点的","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000004","start":23.3,"end":29.7,"text":"然后让市场觉得它能够控制通章,然后控制通章要把那个长端利率砸下来一些","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000004","start":23.3,"end":29.7,"text":"然后让市场觉得它能够控制通胀,然后控制通胀要把那个长端利率砸下来一些","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000005","start":29.7,"end":36.62,"text":"使得这个美国融资产门变低,因为整个政府的债务看上去不算sustainable,不是可持续的","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000006","start":36.62,"end":42.24,"text":"然后我个人有一些不同的看法,就是对于那个美联储的政策","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000007","start":42.24,"end":47.88,"text":"然后我觉得今天我想,因为说半导体来说的话,讲了好几个星期了","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000008","start":47.88,"end":53.0,"text":"我觉得大致的方向还是我上两周讲的这个方向,我等会过一下","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000009","start":53.0,"end":59.4,"text":"接下去7月份,就是7月份要出二纪录的季报,然后我觉得二纪录季报的时候","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000009","start":53.0,"end":59.4,"text":"接下去7月份,就是7月份要出二季度的季报,然后我觉得二季度季报的时候","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000010","start":60.1,"end":66.26,"text":"要注意些什么东西,然后我觉得今天我想说一下美联储和美国货币政策","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000011","start":66.26,"end":73.38,"text":"然后特别是我对长端利率的一个看法,就是5年10年吧,那个利率的一个看法","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000012","start":73.38,"end":79.82,"text":"然后和对美国这个美元还有这个美债这个地位的一个看法","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -15,18 +15,18 @@
 {"id":"seg-000015","start":95.0,"end":99.96,"text":"因为先回顾一下美联储的决定,美联储利率没有变","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000016","start":99.96,"end":104.32,"text":"但是它最主要的两个,一个是减少了communication,减少了这个沟通","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000017","start":104.32,"end":112.38,"text":"然后呢,第二个呢,就是不给那个相对不给Fed out了,不给那个预计,它是想把利率交给市场","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000018","start":112.38,"end":118.14,"text":"所以一面发的呢,就是短端长了很多,短端的利率上了很多,如果整个cov在flat","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000018","start":112.38,"end":118.14,"text":"所以一面发的呢,就是短端长了很多,短端的利率上了很多,如果整个curve在flat","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000019","start":118.94,"end":126.02,"text":"然后我觉得包括长期交易的方向对于长端利率的看法,我都是跟很多人相反","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000020","start":126.02,"end":132.82,"text":"我觉得长端利率要在这个时点往后,在一个比较长的周期里面,应该是往上跑,而不是往下跑","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000021","start":132.82,"end":139.32,"text":"然后整个利率应该变得steep,就是变得更到,tempremia变高,而不是变低","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000021","start":132.82,"end":139.32,"text":"然后整个利率应该变得steep,就是变得更到,term premium变高,而不是变低","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000022","start":139.32,"end":147.84,"text":"所以这个是我个人的看法,所以我说一下我整个的逻辑,包括我对联储为什么要做这件事情的一个个人的看法","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000023","start":149.24,"end":156.2,"text":"首先我引误一个概念,就是你的利率,是不是美国的利率没有办法维持在现在这个位置","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000023","start":149.24,"end":156.2,"text":"首先我引入一个概念,就是你的利率,是不是美国的利率没有办法维持在现在这个位置","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000024","start":156.22,"end":162.82,"text":"其实对于美元或者是维持在这个位置的利率太高,债务扩展以后会不会影响美元地位","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000025","start":163.46,"end":172.14,"text":"首先我觉得这是不会的,就是你在美元不管在什么样的利率上,然后不管美元借了多少债,都不太会去影响美元的地位","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000026","start":172.62,"end":178.86,"text":"因为美元地位本质上是美国是全世界最大的一个债务交易市场","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000027","start":179.3,"end":184.42,"text":"也就是说他欠债欠人多,是他这个债务的流动性更好,他就变成一个储位","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000028","start":184.42,"end":189.04,"text":"他的储位的地位是由债务的归过来的,就是他深度很高,是这么来的","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000029","start":189.48,"end":195.72,"text":"然后第二呢,他的这个美元储位的地位取决于美元美国的法律,就也不是他的军事吧","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000027","start":179.3,"end":184.42,"text":"也就是说他欠债欠人多,是他这个债务的流动性更好,他就变成一个储备","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000028","start":184.42,"end":189.04,"text":"他的储备的地位是由债务的归过来的,就是他深度很高,是这么来的","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000029","start":189.48,"end":195.72,"text":"然后第二呢,他的这个美元储备的地位取决于美元美国的法律,就也不是他的军事吧","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000030","start":196.04,"end":203.28,"text":"就主要是全世界金融底层的法律,就是你原代码是人家英语写的,人家暗利法写的","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000031","start":203.76,"end":208.28,"text":"这个原代码是美元,你是不可能取代他的,这个事情我们之前讲过好多次","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000032","start":209.14,"end":216.1,"text":"包括你看所有的抵押品啊,CICA抵押品啊,包括结算啊,都是这么原来做","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -46,20 +46,20 @@
 {"id":"seg-000046","start":299.3,"end":308.06,"text":"其实你看那个DC的环境,20年到2022年的环境,其实公共部门的债务增加和私营部门的债务增加是差不多的,速度是差不多的","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000047","start":308.54,"end":315.78,"text":"但是问题当你利率变高的时候,你的公共部门就会挤压私营部门,获得更多的债券和债券的比率","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000048","start":316.24,"end":321.36,"text":"因为整个经济的增长,它本质上还是quadrox,信贷增长","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000049","start":321.76,"end":329.96,"text":"中间当然有一些比方说钢杆率的问题,但跑掉这些钢杆的问题,基本上就是把它经济增长当成一个信贷增长","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000049","start":321.76,"end":329.96,"text":"中间当然有一些比方说杠杆率的问题,但跑掉这些杠杆的问题,基本上就是把它经济增长当成一个信贷增长","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000050","start":330.28,"end":343.32,"text":"那你信贷增长就来自于私营部门和来自于公共部门,如果说公共部门获得的债务更多,那么它就会公共部门获得债务更多","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000051","start":343.38,"end":352.14,"text":"那它的比率就是政府的力量就会更大,其实最终就是你政府的力量有多大,政府的融资在国家经济增长中间占多少比率","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000052","start":352.78,"end":358.62,"text":"往往政府的比率,就奥斯丹利带,这是总的持有的债务,就奥斯丹利带","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000053","start":359.14,"end":364.86,"text":"持有的比率越大呢,然后发债的比率越大呢,然后你往往就会变成更加无效","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000054","start":365.32,"end":377.72,"text":"所以这是一个快乐的陷阱,就是当我每一块钱,就除了二二年,二二年可能有一次经济几亿几乎变零了吧,所以这个点又可以参考","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000055","start":378.24,"end":386.76,"text":"但是如果你看二一年到二五年的话,整体的就是美国,你的信贷增加的时候","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000056","start":387.04,"end":394.04,"text":"你的经济增长需要多少信贷来拉动,这个东西会越来越大,就是有点像细毒","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000057","start":394.34,"end":404.46,"text":"所以细毒的过程你是要吸更多的毒,所以你要吸更多的东西,你才能够获得同样的快感一样的,就是你要拉动同样一块钱的几厘平","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000056","start":387.04,"end":394.04,"text":"你的经济增长需要多少信贷来拉动,这个东西会越来越大,就是有点像吸毒","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000057","start":394.34,"end":404.46,"text":"所以吸毒的过程你是要吸更多的毒,所以你要吸更多的东西,你才能够获得同样的快感一样的,就是你要拉动同样一块钱的几厘平","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000058","start":404.46,"end":410.14,"text":"你需要的信贷增长是越来越大,这个事情的中国人有很明确的这个反馈,就是中国其实干","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000059","start":410.66,"end":417.94,"text":"干信贷增加,然后干国家投入,这个东西比美国早很多,所以中国有更加切身的体会,那么","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000060","start":418.92,"end":423.0,"text":"一旦你进入了快乐supermao,就是我们叫做进入了这个","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000061","start":424.88,"end":431.76,"text":"信贷的大规模增加的时候,你有没有可能走回头路的,有很多人试图走过回头路,对吧,我们那个","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000062","start":432.8,"end":442.84,"text":"这凭错了,是吧,我们搞过,中国就搞过什么去去去,那个供给色改革,然后搞过地方政府发展限制,没有用了","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000062","start":432.8,"end":442.84,"text":"这凭错了,是吧,我们搞过,中国就搞过什么去去去,那个供给侧改革,然后搞过地方政府发展限制,没有用了","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000063","start":443.2,"end":447.4,"text":"就你任何一个地方政府,你看他预算怎么能降下来,在中国,在全世界都是一样","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000064","start":447.96,"end":454.84,"text":"因为这里面,这个权力是个好东西,就是从不管地方政府,或者是","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000065","start":455.36,"end":463.12,"text":"集中化的权力是好东西,你越多的话,你能做事情越多,你也能说完权力,你也能够做各种各样的东西,你能够","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -67,21 +67,21 @@
 {"id":"seg-000067","start":471.48,"end":475.48,"text":"就一般来说政府占用的资源越多,就是发展一样的,就是你","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000068","start":475.66,"end":482.06,"text":"你发的债务越多,所以你会占领更多的政府,全国的这个资源","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000069","start":482.62,"end":488.34,"text":"然后你会让整个经济变得更加无效,这是一个铁三角的规律,在中国也是","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000070","start":489.06,"end":496.9,"text":"私营经济发展,比率越高的时候,经济越有货力,然后政府比率被迫再提高,因为它发展,它要带动经济发展","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000070","start":489.06,"end":496.9,"text":"私营经济发展,比率越高的时候,经济越活力,然后政府比率被迫再提高,因为它发展,它要带动经济发展","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000071","start":497.42,"end":503.3,"text":"它能够承受更高的利息,然后它有更好的,甚至有的时候在中国,不对等的那个利率","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000072","start":504.12,"end":510.16,"text":"它的利率可能还更低,但是在这个环境里面,它能够占用更多的经济资源的时候","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000073","start":510.48,"end":514.8,"text":"它国家的整体的效率一定是下降,这个是好语问","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000073","start":510.48,"end":514.8,"text":"它国家的整体的效率一定是下降,这个是好问题","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000074","start":515.32,"end":520.56,"text":"所以这个两个才是快乐supernova真正的问题,就是债券","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000075","start":521.52,"end":524.96,"text":"我们叫做阿达予基的真正的问题,美国还没走到这一步","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000076","start":525.56,"end":529.52,"text":"就是说你一旦你走到这一步以后,你会发现这个国家有点像英国","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000077","start":529.82,"end":537.74,"text":"就是英国现在那个债务已经开始比政府支付,比经济增长要Normal GDP","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000078","start":538.34,"end":546.42,"text":"就是民意GDP要高了,所以这个环境里面政府会获得越来越大权力,因为这里面不光是一个经济的问题","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000078","start":538.34,"end":546.42,"text":"就是名义GDP要高了,所以这个环境里面政府会获得越来越大权力,因为这里面不光是一个经济的问题","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000079","start":546.54,"end":553.02,"text":"这个后面还有政治的问题,就是政府会获得越来越大的权力,然后去比较说干移民复平","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000080","start":553.32,"end":560.6,"text":"然后去在什么这个故意念改革,这种鸟是在美国很少发展出来","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000081","start":561.32,"end":566.04,"text":"即使民主党政府都还没能干出来,但是在欧洲很多国家已经开始了","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000082","start":566.28,"end":574.44,"text":"所以这个会有很多的政治的影响,那么在这个过程中间呢,要把这个clock,要把这个时钟搬回去","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000083","start":575.0,"end":579.04,"text":"其实要搬到什么时候,要搬回到2008年","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000084","start":579.5,"end":586.78,"text":"2008年以后,其实这个也是Tabin Wash一直在说,他说到包括我要做qt,我要把利率变低","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000084","start":579.5,"end":586.78,"text":"2008年以后,其实这个也是Kevin Warsh一直在说,他说到包括我要做qt,我要把利率变低","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000085","start":587.38,"end":595.54,"text":"然后其实是不希望这个阿达玉际或者是不希望政府融资的比率一直在提高的过程中间","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000086","start":596.1,"end":600.5,"text":"损害私营部门的这个社会资源,然后损害整个社会的效率","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000087","start":600.98,"end":607.98,"text":"但这个事情的,我不觉得他们会成功,因为我刚讲政府的债它本质就是一个系统","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -90,11 +90,11 @@
 {"id":"seg-000090","start":617.04,"end":625.4,"text":"那么原来用什么东西在控制这个阿赫际呢,就是控制这个利润,就是说阿不能大预计","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000091","start":626.0,"end":631.12,"text":"那么什么东西在控制这个利润,其实一旦你国家要不停的发展的时候","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000092","start":631.38,"end":640.58,"text":"你假设你正常情况不停的发展,没有一个中央正义,央行在那里控制利率的情况下,你的利率会一直往上跑","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000093","start":641.42,"end":649.14,"text":"所以当Tabin Wash说到我要把利率还给市场,就它基本上这个意思,就是我不给fat dot,然后我不给","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000093","start":641.42,"end":649.14,"text":"所以当Kevin Warsh说到我要把利率还给市场,就它基本上这个意思,就是我不给dot plot,然后我不给","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000094","start":649.74,"end":657.7,"text":"不给前瞻性的指引,然后我们完全按照通胀来,我要去控制通胀,然后其实本质上我也不想做QE,他不想做QE","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000095","start":658.4,"end":665.56,"text":"然后我不想给于,就我不想去控制市场的长期利率,控制市场长期利率有不同的给法","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000096","start":665.92,"end":674.2,"text":"比方说你给他一个指引,比方说两年的指引,或者是你给他一个QE,或者是日本搞的YCC,他都是一个控制长短利率","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000097","start":674.68,"end":681.68,"text":"其实本质Kavin的意思,Kavin Wash的意思是我只控制短短的利率,然后我这个东西是跟着通胀来的,你们就看数据就好了","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000097","start":674.68,"end":681.68,"text":"其实本质Kevin的意思,Kevin Warsh的意思是我只控制短短的利率,然后我这个东西是跟着通胀来的,你们就看数据就好了","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000098","start":682.14,"end":688.22,"text":"所以你不要来问我,我对长期利率是什么样的指引,或者长期利率怎么样,长期利率是一个市场决定的东西","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000099","start":688.94,"end":696.42,"text":"所以市场交易出来,那08年期就市场交易出来,但是你如果放弃对于短端利率R的控制的话","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000100","start":697.58,"end":704.54,"text":"那个会有什么结果呢,就是会有大量的发债,因为现在既存的情况和08年是不一样的","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -114,29 +114,29 @@
 {"id":"seg-000114","start":786.12,"end":790.64,"text":"然后你要发去,发到长端,发到五年,发到十年,你供需的问题就会让你利率上去","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000115","start":791.14,"end":798.22,"text":"然后你利率上去就要控制一下你的这个花钱的节奏,所以这个是一个非常理想化的一个情况","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000116","start":798.42,"end":803.14,"text":"但是实际的如果他这么做,他把他把这个R给放开,他把利率放开","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000117","start":803.5,"end":808.06,"text":"其实我就是觉得长端利率会进,长债会进入一个长雄","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000117","start":803.5,"end":808.06,"text":"其实我就是觉得长端利率会进,长债会进入一个长熊","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000118","start":808.78,"end":812.86,"text":"就是比较长的雄市,那个利率会慢慢慢慢一直在往上跑","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000119","start":813.5,"end":818.86,"text":"那个特别是五年到十年期的这些利率,因为五年到十年期的需求没有那么大","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000120","start":819.16,"end":825.28,"text":"当然在今年看上去还可以,因为今年的其实是其实是银行在去监管","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000121","start":825.76,"end":830.8,"text":"去监管的时候呢,你本身不放在那个balance 上,不放在那个","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000122","start":831.88,"end":836.8,"text":"我们叫做 risk capital 就是那个风险资产上,本来是放在风险资产上的那些资产","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000123","start":837.24,"end":841.96,"text":"被银行从风险资产里面拿出去了,所以就是国债,所以银行买国债","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000124","start":842.82,"end":845.94,"text":"它是等于是可以钢杆随便买","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000124","start":842.82,"end":845.94,"text":"它是等于是可以杠杆随便买","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000125","start":846.54,"end":855.38,"text":"那么大概我之前说过,就是大概增加4万5到5万亿的银行资产负责表啊,就是可增投的资产负责表","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000126","start":855.9,"end":863.22,"text":"所以你在今年可能没有看到这么明显的反应,但是如果我们连处,这个看后面几期了,接下去有看","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000127","start":864.0,"end":873.16,"text":"Kavin 接下去是不是这么干,就是如果是这么干下去的话,他理论上他是会持续的给到长端一个往上的推动力","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000127","start":864.0,"end":873.16,"text":"Kevin 接下去是不是这么干,就是如果是这么干下去的话,他理论上他是会持续的给到长端一个往上的推动力","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000128","start":873.16,"end":877.36,"text":"就是利率往上的推动力,因为供应很大,就是会一直有供应","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000129","start":877.84,"end":887.0,"text":"然后,原来是怎么去控制这个啊,就是YCC 包括QE,它其实控制利率嘛,控制利率其实就是硬钱","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000130","start":887.64,"end":892.68,"text":"然后,控制利率是硬钱的,这个硬钱马上会造成空招,理论上来说","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000131","start":893.32,"end":902.52,"text":"但是,未来让硬钱不造成动仗,所以美联储、欧洲央行行和所有人都在对金融端,对金融公司进行去钢杆","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000132","start":903.36,"end":907.28,"text":"就是08年的钢杆,其实一直去到20年、25年,然后才去完","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000133","start":907.8,"end":915.0,"text":"然后,这个过程中间其实,你把整个银行的钢杆率可能从30、35,看着更高","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000134","start":915.56,"end":920.8,"text":"黎文报的时候35、40万,然后一直降到15,就把整个钢杆率降下来","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000129","start":877.84,"end":887.0,"text":"然后,原来是怎么去控制这个啊,就是YCC 包括QE,它其实控制利率嘛,控制利率其实就是印钱","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000130","start":887.64,"end":892.68,"text":"然后,控制利率是印钱的,这个印钱马上会造成通胀,理论上来说","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000131","start":893.32,"end":902.52,"text":"但是,未来让印钱不造成动荡,所以美联储、欧洲央行行和所有人都在对金融端,对金融公司进行去杠杆","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000132","start":903.36,"end":907.28,"text":"就是08年的杠杆,其实一直去到20年、25年,然后才去完","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000133","start":907.8,"end":915.0,"text":"然后,这个过程中间其实,你把整个银行的杠杆率可能从30、35,看着更高","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000134","start":915.56,"end":920.8,"text":"黎文报的时候35、40万,然后一直降到15,就把整个杠杆率降下来","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000135","start":921.18,"end":929.94,"text":"所以,你可以这样认为,就变相的来说,其实YCC、日本的YCC、QE,他们做的事情都是一样的","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000136","start":929.94,"end":933.9,"text":"就是在央行层面去剥夺了商业银行的资源","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000137","start":934.54,"end":938.42,"text":"在政府层面,你发债,你是剥夺了民营企业的资源","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000138","start":938.42,"end":943.62,"text":"就是,政府每进的一步都是人民的一大退步","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000139","start":943.86,"end":947.06,"text":"这个在任何一个国家,任何一个成权都是,都是适用","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000139","start":943.86,"end":947.06,"text":"这个在任何一个国家,任何一个政权都是,都是适用","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000140","start":947.48,"end":952.4,"text":"所以,所以,你政府层面的发债,你占有了民营的资源","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000141","start":952.4,"end":957.36,"text":"但是,你YCC和货币上面的发债,你是让银行去监管","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000142","start":957.36,"end":963.08,"text":"那银行进行的监管,你是剥夺了金融本身的这个金融机构的这个资源","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -149,14 +149,14 @@
 {"id":"seg-000149","start":987.22,"end":992.3,"text":"这个你也能够理解了,就说白宫为什么,包括在这次伊朗事件","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000150","start":992.3,"end":998.74,"text":"包括一直持续的,它对于股市门,或者对于资本市场,它这么在意","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000151","start":998.74,"end":1001.58,"text":"因为它已经堵上去了,它现在要做的经济改革","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000152","start":1001.58,"end":1004.86,"text":"包括在利率层面,在联绩层面的经济改革","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000152","start":1001.58,"end":1004.86,"text":"包括在利率层面,在经济层面的经济改革","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000153","start":1004.86,"end":1008.56,"text":"和你后面的,都取决于你的这个蓄水池","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000154","start":1008.56,"end":1011.44,"text":"就取决于你这个Growth能不能增长起来","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000155","start":1011.44,"end":1015.4,"text":"如果市场崩掉的话,你马上进入债务的上限","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000156","start":1015.4,"end":1022.8,"text":"就是,进入一旦进入你的债务超巨型的时候,央行就会很明显的面临两个抉择","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000157","start":1022.8,"end":1029.76,"text":"就是你要抉择选通账,还是你要抉择去控制上当利率","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000158","start":1029.86,"end":1033.66,"text":"就是你要控制上当利率,你就把这个通账给放弃掉","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000159","start":1033.66,"end":1039.28,"text":"也就是在现在在美国这种情况下,如果说你要控制上当利率,你要不放弃通账","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000157","start":1022.8,"end":1029.76,"text":"就是你要抉择选通胀,还是你要抉择去控制长端利率","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000158","start":1029.86,"end":1033.66,"text":"就是你要控制长端利率,你就把这个通胀给放弃掉","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000159","start":1033.66,"end":1039.28,"text":"也就是在现在在美国这种情况下,如果说你要控制长端利率,你要不放弃通胀","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000160","start":1039.28,"end":1044.62,"text":"你就必须金融继续监管,然后让银行的杠杆才降低","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000161","start":1044.62,"end":1051.84,"text":"就欧洲干的这些事情,就是每一个政府权力大的国家,就往往就会淡出这些鸟试","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000162","start":1051.84,"end":1058.06,"text":"然后让银行去监管,银行加监管,加各种各样监管,加各种各样合规","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -166,9 +166,9 @@
 {"id":"seg-000166","start":1069.88,"end":1074.14,"text":"然后搞各种各样的所谓的各种各样改革,什么供应链刚","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000167","start":1074.14,"end":1077.44,"text":"这种鸟试基本上都是欧洲这些政府能够去做的","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000168","start":1077.44,"end":1086.46,"text":"然后你在整个去负责这个责任的时候,你现在其实银行层面已经没有什么空间","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000169","start":1086.46,"end":1088.62,"text":"可以继续去去港版的","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000169","start":1086.46,"end":1088.62,"text":"可以继续去去杠杆的","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000170","start":1088.62,"end":1095.34,"text":"所以你很有可能当你再去维护你的利率的时候","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000171","start":1095.34,"end":1099.14,"text":"你要债务不增加,不爆发增加的话,那你的通脏就要上去","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000171","start":1095.34,"end":1099.14,"text":"你要债务不增加,不爆发增加的话,那你的通胀就要上去","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000172","start":1099.14,"end":1103.34,"text":"所以这个是它的dynamic,这是美联储现在的dynamic","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000173","start":1103.34,"end":1108.18,"text":"也是一个现在在这个时点最后一个路线选择","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000174","start":1108.18,"end":1109.94,"text":"就是你到底要走哪条路","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -186,7 +186,7 @@
 {"id":"seg-000186","start":1149.18,"end":1152.9,"text":"所以它的这个growth会一直高于当时的利率","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000187","start":1152.9,"end":1154.42,"text":"就是中国也是这样子","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000188","start":1154.42,"end":1156.34,"text":"所以你这个游戏才能够玩下去","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000189","start":1156.34,"end":1159.94,"text":"然后你的债才没有爆掉,然后你的债才没刀顶","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000189","start":1156.34,"end":1159.94,"text":"然后你的债才没有爆掉,然后你的债才没到顶","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000190","start":1159.94,"end":1163.06,"text":"但是大家都知道你的蓄水池是有底线的","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000191","start":1163.06,"end":1165.82,"text":"你不可能无限制的往上搞","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000192","start":1165.82,"end":1171.54,"text":"所以当你的债务最终政府的投入越来越大","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -202,9 +202,9 @@
 {"id":"seg-000202","start":1192.34,"end":1193.62,"text":"他也想去做这样改革","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000203","start":1193.62,"end":1198.78,"text":"只是说美国现在的这个growth取决于培案","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000204","start":1198.78,"end":1202.02,"text":"取决于他觉得他可能有新生生产力","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000205","start":1202.02,"end":1203.18,"text":"新制生产力","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000206","start":1203.18,"end":1204.5,"text":"这个叫新制生产力","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000207","start":1204.5,"end":1206.5,"text":"他们可能有他们的新制生产力","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000205","start":1202.02,"end":1203.18,"text":"新质生产力","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000206","start":1203.18,"end":1204.5,"text":"这个叫新质生产力","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000207","start":1204.5,"end":1206.5,"text":"他们可能有他们的新质生产力","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000208","start":1206.5,"end":1209.9,"text":"因为你长期的要把增长变大","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000209","start":1209.9,"end":1211.3,"text":"你不光是要有蓄水池","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000210","start":1211.3,"end":1212.58,"text":"就是财富小营","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -220,15 +220,15 @@
 {"id":"seg-000220","start":1239.02,"end":1240.02,"text":"日本为什么这么多债","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000221","start":1240.02,"end":1242.02,"text":"他还持续补充问题呢","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000222","start":1242.02,"end":1243.62,"text":"我补充一下","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000223","start":1243.62,"end":1245.26,"text":"因为日本的俄罗斯特别地","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000223","start":1243.62,"end":1245.26,"text":"因为日本的利率特别地","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000224","start":1245.26,"end":1247.38,"text":"就是他当年的泡沫破掉以后","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000225","start":1247.38,"end":1249.34,"text":"包括人口问题","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000226","start":1249.38,"end":1251.14,"text":"所以导致他长期的通缩","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000227","start":1251.14,"end":1252.42,"text":"他长期的通缩","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000228","start":1252.42,"end":1256.58,"text":"他一方面在大量的发展","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000229","start":1256.58,"end":1258.74,"text":"就是第一方面在YCC控制","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000230","start":1258.74,"end":1260.62,"text":"然后一方面对所有的钢杆","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000231","start":1260.62,"end":1262.14,"text":"再接近加钢杆","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000230","start":1258.74,"end":1260.62,"text":"然后一方面对所有的杠杆","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000231","start":1260.62,"end":1262.14,"text":"再接近加杠杆","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000232","start":1262.14,"end":1263.86,"text":"然后一方面经济又变得很差","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000233","start":1263.86,"end":1264.58,"text":"经济增长","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000234","start":1264.58,"end":1265.82,"text":"增长变低","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -255,22 +255,22 @@
 {"id":"seg-000255","start":1315.22,"end":1319.14,"text":"我对后面的资本市场风险","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000256","start":1319.14,"end":1321.14,"text":"我觉得还是不小","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000257","start":1321.14,"end":1322.66,"text":"然后我说一下","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000258","start":1322.66,"end":1324.94,"text":"这个讲一下货币政策和利比奥","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000258","start":1322.66,"end":1324.94,"text":"这个讲一下货币政策和利率","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000259","start":1324.94,"end":1328.1,"text":"然后我讲一下对后面几个","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000260","start":1328.1,"end":1330.42,"text":"hyperscale的烈期的预期","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000261","start":1330.42,"end":1336.46,"text":"我觉得每年处基本上是这样子","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000262","start":1336.46,"end":1340.38,"text":"就是说几个hyperscale主要看两方面","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000263","start":1340.38,"end":1342.62,"text":"就一个我们上次讲说看Kapex","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000263","start":1340.38,"end":1342.62,"text":"就一个我们上次讲说看CAPEX","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000264","start":1342.62,"end":1345.98,"text":"看你下年明年投入多少","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000265","start":1345.98,"end":1348.38,"text":"然后第二个看AI","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000266","start":1348.38,"end":1351.62,"text":"我是感觉在七月份这次业绩的时候","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000267","start":1351.62,"end":1354.02,"text":"AI的讨论会原来的多","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000268","start":1354.02,"end":1355.7,"text":"就是两方面的AI","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000269","start":1355.7,"end":1358.54,"text":"一方面是说当谷歌这种公司","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000270","start":1358.54,"end":1360.02,"text":"我投入这么多Kapex","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000270","start":1358.54,"end":1360.02,"text":"我投入这么多CAPEX","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000271","start":1360.02,"end":1361.94,"text":"然后我收入多少钱","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000272","start":1361.94,"end":1364.02,"text":"然后收入这些钱","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000273","start":1364.02,"end":1367.14,"text":"我是不是可以支持我的Kapex","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000273","start":1364.02,"end":1367.14,"text":"我是不是可以支持我的CAPEX","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000274","start":1367.14,"end":1369.46,"text":"然后我收入来至于谁","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000275","start":1369.46,"end":1370.46,"text":"我收入谷歌","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000276","start":1370.46,"end":1374.82,"text":"谷歌是一个完全可以自己内循环的公司","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -278,7 +278,7 @@
 {"id":"seg-000278","start":1377.06,"end":1380.5,"text":"所以他账会被看得更加清楚","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000279","start":1380.5,"end":1381.22,"text":"其他几家","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000280","start":1381.22,"end":1383.22,"text":"因为他的收入来源是来于","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000281","start":1383.22,"end":1386.42,"text":"Infovic OpenAI那两家模型公司","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000281","start":1383.22,"end":1386.42,"text":"Anthropic OpenAI那两家模型公司","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000282","start":1386.42,"end":1388.86,"text":"所以他模型公司的账是分开的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000283","start":1388.9,"end":1389.94,"text":"模型公司也没有上市","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000284","start":1389.94,"end":1391.82,"text":"但基本上这样大家都知道","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -287,7 +287,7 @@
 {"id":"seg-000287","start":1396.7,"end":1400.38,"text":"所以你会看你的增长AR","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000288","start":1400.38,"end":1402.42,"text":"是不是justifiable","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000289","start":1402.42,"end":1405.62,"text":"就是你不光是看我给语音","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000290","start":1405.62,"end":1407.66,"text":"我给酸力中心提供了多少钱","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000290","start":1405.62,"end":1407.66,"text":"我给算力中心提供了多少钱","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000291","start":1407.66,"end":1410.58,"text":"我也要看我前面的模型公司的收入","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000292","start":1410.58,"end":1412.06,"text":"是不是可以被justifiable","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000293","start":1412.06,"end":1413.94,"text":"所以这个我觉得是第一个","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -299,7 +299,7 @@
 {"id":"seg-000299","start":1426.74,"end":1429.54,"text":"在继续拥抱AR的时候","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000300","start":1429.54,"end":1432.14,"text":"对于成本投入的一个利益","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000301","start":1432.14,"end":1433.82,"text":"因为现在我看下去","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000302","start":1433.82,"end":1436.46,"text":"像如果用Infovic这些模型的话","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000302","start":1433.82,"end":1436.46,"text":"像如果用Anthropic这些模型的话","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000303","start":1436.46,"end":1437.62,"text":"成本就很高","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000304","start":1437.62,"end":1438.7,"text":"就我自己用的话","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000305","start":1438.7,"end":1441.26,"text":"可能一天一千多块钱","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -322,7 +322,7 @@
 {"id":"seg-000322","start":1471.74,"end":1473.46,"text":"还是考虑我到底花多少钱","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000323","start":1473.46,"end":1475.26,"text":"我聊天比方说上次是","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000324","start":1475.26,"end":1478.7,"text":"我说等讯好像就已经降低了","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000325","start":1478.7,"end":1480.26,"text":"降低的那个每个人用的扣大了","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000325","start":1478.7,"end":1480.26,"text":"降低的那个每个人用的token了","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000326","start":1480.26,"end":1480.74,"text":"对吧","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000327","start":1480.74,"end":1482.74,"text":"然后越来越多这样的公司","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000328","start":1482.74,"end":1483.94,"text":"干这种事情的话","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -353,7 +353,7 @@
 {"id":"seg-000353","start":1532.02,"end":1533.78,"text":"这个问题就纳入讨论了","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000354","start":1533.78,"end":1534.86,"text":"因为在年初的时候","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000355","start":1534.86,"end":1536.42,"text":"我们讲那个今年的","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000356","start":1536.42,"end":1538.62,"text":"佛沃的PE基本上讲到二七年年底","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000356","start":1536.42,"end":1538.62,"text":"forward的PE基本上讲到二七年年底","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000357","start":1538.62,"end":1540.14,"text":"二七年到底怎么做CAPEX","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000358","start":1540.14,"end":1541.38,"text":"其实不大清晰的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000359","start":1541.38,"end":1543.14,"text":"二六年是一个清晰的途径","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -370,12 +370,12 @@
 {"id":"seg-000370","start":1560.22,"end":1562.02,"text":"所以你当你开一个公司估值","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000371","start":1562.02,"end":1563.46,"text":"现在大部分的公司的估值","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000372","start":1563.46,"end":1564.98,"text":"都已经估到二八年去了","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000373","start":1564.98,"end":1567.5,"text":"就是二八年的给了二八年的佛沃的","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000373","start":1564.98,"end":1567.5,"text":"就是二八年的给了二八年的forward的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000374","start":1567.5,"end":1569.7,"text":"那你二八年的钱哪来的问题","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000375","start":1569.7,"end":1571.3,"text":"很快也会有人问","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000376","start":1571.3,"end":1574.42,"text":"那最简单的就是模型公司","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000377","start":1574.42,"end":1575.58,"text":"然后模型公司收入","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000378","start":1575.58,"end":1577.54,"text":"开始能够Chestify这些","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000378","start":1575.58,"end":1577.54,"text":"开始能够justify这些","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000379","start":1577.54,"end":1579.66,"text":"这些CAPEX","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000380","start":1579.66,"end":1581.38,"text":"但但我觉得很难","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000381","start":1581.38,"end":1583.26,"text":"那至少很难一错而就","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -397,7 +397,7 @@
 {"id":"seg-000397","start":1621.3,"end":1623.38,"text":"它包括TPU","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000398","start":1623.38,"end":1624.42,"text":"TPU是便宜","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000399","start":1624.42,"end":1626.1,"text":"那那个PerformanceWatts","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000400","start":1626.1,"end":1628.3,"text":"是远远不如MV的卡的","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000400","start":1626.1,"end":1628.3,"text":"是远远不如NV的卡的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000401","start":1628.3,"end":1629.06,"text":"那它凭什么","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000402","start":1629.06,"end":1630.42,"text":"它的模型可以一直领先","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000403","start":1630.42,"end":1632.34,"text":"我从来就没觉得它模型能一直领先","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -425,8 +425,8 @@
 {"id":"seg-000425","start":1677.26,"end":1678.82,"text":"要非常挣挣好好","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000426","start":1678.82,"end":1681.82,"text":"你要模型的模型的收入","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000427","start":1682.82,"end":1684.34,"text":"非常好","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000428","start":1684.34,"end":1688.22,"text":"然后给出的tapax预期不高也不低","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000429","start":1688.22,"end":1690.74,"text":"因为你tapax预期太高的话","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000428","start":1684.34,"end":1688.22,"text":"然后给出的CAPEX预期不高也不低","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000429","start":1688.22,"end":1690.74,"text":"因为你CAPEX预期太高的话","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000430","start":1690.74,"end":1692.18,"text":"市场一定会崩盘","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000431","start":1692.18,"end":1693.82,"text":"就是市场会觉得你没有钱","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000432","start":1693.82,"end":1694.86,"text":"就我刚刚问的问题","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -440,9 +440,9 @@
 {"id":"seg-000440","start":1705.86,"end":1707.06,"text":"你美国GDP才多少","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000441","start":1707.06,"end":1709.06,"text":"你哪里的融资那么多钱","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000442","start":1709.06,"end":1710.46,"text":"所以这个问题","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000443","start":1710.46,"end":1712.58,"text":"如果你是把tapax弄的很高","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000443","start":1710.46,"end":1712.58,"text":"如果你是把CAPEX弄的很高","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000444","start":1712.58,"end":1715.38,"text":"那是必然要出爆掉的","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000445","start":1715.38,"end":1717.06,"text":"然后如果你tapax弄的低了","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000445","start":1715.38,"end":1717.06,"text":"然后如果你CAPEX弄的低了","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000446","start":1717.06,"end":1719.06,"text":"大家马上对半岛第一轮赏","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000447","start":1719.06,"end":1721.06,"text":"就是觉得我现在给你二百年","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000448","start":1721.06,"end":1721.74,"text":"故事给太高了","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -458,8 +458,8 @@
 {"id":"seg-000458","start":1744.98,"end":1745.5,"text":"对","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000459","start":1745.5,"end":1747.82,"text":"然后但是你要往","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000460","start":1747.82,"end":1749.62,"text":"但是一旦上面有个风险","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000461","start":1749.62,"end":1751.3,"text":"比方说cpu 迭累了","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000462","start":1751.3,"end":1752.7,"text":"然后800幅迭累了","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000461","start":1749.62,"end":1751.3,"text":"比方说cpu 迭代了","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000462","start":1751.3,"end":1752.7,"text":"然后800V迭代了","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000463","start":1752.7,"end":1753.98,"text":"或变慢了","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000464","start":1753.98,"end":1757.22,"text":"或者我我本来几年就是明年迭发","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000465","start":1757.22,"end":1758.82,"text":"然后他都觉得今年迭发","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -476,7 +476,7 @@
 {"id":"seg-000476","start":1778.62,"end":1781.42,"text":"所以我是觉得七月份的这个","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000477","start":1781.42,"end":1784.06,"text":"七月份的这个不太容易给","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000478","start":1784.06,"end":1785.58,"text":"七月份整个整个","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000479","start":1785.58,"end":1788.34,"text":"特别是四大云城开拍四大云给","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000479","start":1785.58,"end":1788.34,"text":"特别是四大云厂开拍四大云给","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000480","start":1788.38,"end":1791.5,"text":"然后讲到其他公司的原因","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000481","start":1791.5,"end":1793.66,"text":"其他公司的原因统统没有问题","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000482","start":1793.66,"end":1794.42,"text":"有半导体","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -491,7 +491,7 @@
 {"id":"seg-000491","start":1813.14,"end":1814.06,"text":"它不大应该存在","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000492","start":1814.06,"end":1816.06,"text":"这公司应该直接死掉","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000493","start":1816.06,"end":1819.06,"text":"就新的技术","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000494","start":1819.06,"end":1820.62,"text":"像Serebus这种新的技术","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000494","start":1819.06,"end":1820.62,"text":"像Cerebras这种新的技术","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000495","start":1820.62,"end":1823.02,"text":"都是LBI的单独拿过来","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000496","start":1823.02,"end":1825.62,"text":"就是去决于你的能拿多少供应","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000497","start":1825.62,"end":1827.74,"text":"所以你会在整个行业","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -506,7 +506,7 @@
 {"id":"seg-000506","start":1843.94,"end":1847.34,"text":"所以这个是确实半导体大作企","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000507","start":1847.34,"end":1849.26,"text":"但是小心上面的方向","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000508","start":1849.26,"end":1850.86,"text":"上面才是我们真正关注的","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000509","start":1850.86,"end":1853.7,"text":"所以关注的是云长的业绩","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000509","start":1850.86,"end":1853.7,"text":"所以关注的是云厂的业绩","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000510","start":1853.7,"end":1855.74,"text":"你不用去关注个股","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000511","start":1855.74,"end":1856.98,"text":"个股都没事","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000512","start":1856.98,"end":1859.02,"text":"他们的业绩都很好","chapter":"chapter-06","source":"faster-whisper-small"}
