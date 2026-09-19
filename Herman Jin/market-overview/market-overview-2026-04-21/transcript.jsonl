@@ -231,7 +231,7 @@
 {"id":"seg-000231","start":535.16,"end":536.64,"text":"你可以認為它是無限","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000232","start":536.64,"end":540.76,"text":"然後包括我上次也講到mithios","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000233","start":540.76,"end":542.36,"text":"你可以認為","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000234","start":542.36,"end":545.04,"text":"那個Andopic最好的模型","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000234","start":542.36,"end":545.04,"text":"那個Anthropic最好的模型","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000235","start":545.04,"end":546.88,"text":"它為什麼只開放給公司","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000236","start":546.88,"end":549.24,"text":"它說是因為安全原因","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000237","start":549.24,"end":549.52,"text":"對吧","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -242,9 +242,9 @@
 {"id":"seg-000242","start":555.52,"end":557.36,"text":"就是你其實也沒有搶到這個地","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000243","start":557.36,"end":558.96,"text":"我們用下來","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000244","start":558.96,"end":561.76,"text":"Corex和那個4.6沒有差太多","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000245","start":561.76,"end":565.72,"text":"那是GPT和那個Andopic的模型","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000245","start":561.76,"end":565.72,"text":"那是GPT和那個Anthropic的模型","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000246","start":565.72,"end":566.36,"text":"差沒有太多","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000247","start":566.36,"end":568.88,"text":"那Andopic可能是在那個execution上","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000247","start":566.36,"end":568.88,"text":"那Anthropic可能是在那個execution上","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000248","start":568.88,"end":571.12,"text":"不會確實會好意","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000249","start":571.12,"end":574.84,"text":"但是本質是它的算力不夠","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000250","start":574.84,"end":576.28,"text":"它只能給企業端用","chapter":"chapter-02","source":"faster-whisper-small"}

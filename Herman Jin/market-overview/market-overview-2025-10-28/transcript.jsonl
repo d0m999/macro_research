@@ -386,7 +386,7 @@
 {"id":"seg-000386","start":962.72,"end":968.08,"text":"然後做大量槓桿的","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000387","start":968.08,"end":970.48,"text":"大量槓桿其實跟隨交易","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000388","start":970.48,"end":973.52,"text":"然後做VIX strategy","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000389","start":973.52,"end":975.36,"text":"就是Vo很低我就加槓桿買","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000389","start":973.52,"end":975.36,"text":"就是vol很低我就加槓桿買","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000390","start":975.36,"end":976.64,"text":"那麼這些交易都很多","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000391","start":976.64,"end":977.44,"text":"這些交易","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000392","start":977.44,"end":980.64,"text":"而且是你看上去每個交易策略是獨立的","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -399,10 +399,10 @@
 {"id":"seg-000399","start":992.88,"end":995.28,"text":"其實期權Market影響很大的時候","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000400","start":995.28,"end":997.12,"text":"其實上週的話","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000401","start":997.12,"end":999.76,"text":"是因為期權Option的Market出了問題","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000402","start":999.76,"end":1003.84,"text":"那就是當我賣Vo的時候","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000403","start":1003.84,"end":1005.92,"text":"Vo上升市場劇烈波動","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000404","start":1005.92,"end":1007.76,"text":"我要把這個Vo買回來","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000405","start":1007.76,"end":1008.96,"text":"我把這個Vo買回來","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000402","start":999.76,"end":1003.84,"text":"那就是當我賣vol的時候","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000403","start":1003.84,"end":1005.92,"text":"vol上升市場劇烈波動","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000404","start":1005.92,"end":1007.76,"text":"我要把這個vol買回來","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000405","start":1007.76,"end":1008.96,"text":"我把這個vol買回來","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000406","start":1008.96,"end":1009.76,"text":"把Option買回來","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000407","start":1009.76,"end":1011.44,"text":"投行就要去賣出Option","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000408","start":1011.44,"end":1012.96,"text":"投行就銷竿","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -412,7 +412,7 @@
 {"id":"seg-000412","start":1018.24,"end":1019.84,"text":"所以它會順著砸盤","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000413","start":1019.84,"end":1021.44,"text":"然後它會砸得更深","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000414","start":1021.44,"end":1024.08,"text":"那麼但問題是你如果像CDSMarket","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000415","start":1024.08,"end":1026.64,"text":"比方說CDS上面Vo也會變大","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000415","start":1024.08,"end":1026.64,"text":"比方說CDS上面vol也會變大","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000416","start":1026.64,"end":1028.4,"text":"那麼期權Market上它也砸盤","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000417","start":1028.4,"end":1029.92,"text":"它把期權Spring搞得很高","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000418","start":1029.92,"end":1031.76,"text":"然後在股票上面它也砸盤","chapter":"chapter-04","source":"faster-whisper-small"}

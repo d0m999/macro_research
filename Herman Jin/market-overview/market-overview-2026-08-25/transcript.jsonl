@@ -312,8 +312,8 @@
 {"id":"seg-000312","start":842.26,"end":845.36,"text":"他是面临了微软","chapter":"ai-value-chain","source":"faster-whisper-small"}
 {"id":"seg-000313","start":845.36,"end":847.92,"text":"把企业端AI的需求","chapter":"ai-value-chain","source":"faster-whisper-small"}
 {"id":"seg-000314","start":847.92,"end":850.28,"text":"百分之百分之四十五十","chapter":"ai-value-chain","source":"faster-whisper-small"}
-{"id":"seg-000315","start":850.28,"end":853.76,"text":"原来是用用那个Andopic的","chapter":"ai-value-chain","source":"faster-whisper-small"}
-{"id":"seg-000316","start":853.76,"end":856.08,"text":"用OpenAI和Andopic","chapter":"ai-value-chain","source":"faster-whisper-small"}
+{"id":"seg-000315","start":850.28,"end":853.76,"text":"原来是用用那个Anthropic的","chapter":"ai-value-chain","source":"faster-whisper-small"}
+{"id":"seg-000316","start":853.76,"end":856.08,"text":"用OpenAI和Anthropic","chapter":"ai-value-chain","source":"faster-whisper-small"}
 {"id":"seg-000317","start":856.08,"end":858.72,"text":"然后他要把它用OpenAI","chapter":"ai-value-chain","source":"faster-whisper-small"}
 {"id":"seg-000318","start":858.72,"end":860.56,"text":"微软应该主要是用OpenAI吧","chapter":"ai-value-chain","source":"faster-whisper-small"}
 {"id":"seg-000319","start":860.56,"end":862.8,"text":"那OpenAI速度也在下降","chapter":"ai-value-chain","source":"faster-whisper-small"}
@@ -552,10 +552,10 @@
 {"id":"seg-000552","start":1378.1,"end":1380.18,"text":"并没有直接跟股市应该相关","chapter":"long-rates","source":"faster-whisper-small"}
 {"id":"seg-000553","start":1380.18,"end":1383.24,"text":"它跟股市的multiple是相关","chapter":"long-rates","source":"faster-whisper-small"}
 {"id":"seg-000554","start":1383.24,"end":1385.24,"text":"就是我的估值是相关","chapter":"long-rates","source":"faster-whisper-small"}
-{"id":"seg-000555","start":1385.24,"end":1387.32,"text":"比方说现在Foreward looking","chapter":"long-rates","source":"faster-whisper-small"}
+{"id":"seg-000555","start":1385.24,"end":1387.32,"text":"比方说现在forward looking","chapter":"long-rates","source":"faster-whisper-small"}
 {"id":"seg-000556","start":1387.32,"end":1388.48,"text":"长期来看的话","chapter":"long-rates","source":"faster-whisper-small"}
-{"id":"seg-000557","start":1388.48,"end":1389.6,"text":"我看Foreward就都很大了","chapter":"long-rates","source":"faster-whisper-small"}
-{"id":"seg-000558","start":1391.88,"end":1393.36,"text":"现在Foreward looking长期来看","chapter":"long-rates","source":"faster-whisper-small"}
+{"id":"seg-000557","start":1388.48,"end":1389.6,"text":"我看forward就都很大了","chapter":"long-rates","source":"faster-whisper-small"}
+{"id":"seg-000558","start":1391.88,"end":1393.36,"text":"现在forward looking长期来看","chapter":"long-rates","source":"faster-whisper-small"}
 {"id":"seg-000559","start":1393.36,"end":1396.96,"text":"SP500的话是大概是有bp 20vp","chapter":"long-rates","source":"faster-whisper-small"}
 {"id":"seg-000560","start":1396.96,"end":1398.88,"text":"那么长期来看","chapter":"policy-fork","source":"faster-whisper-small"}
 {"id":"seg-000561","start":1398.88,"end":1400.88,"text":"那现在这个位置其实已经","chapter":"policy-fork","source":"faster-whisper-small"}
@@ -565,8 +565,8 @@
 {"id":"seg-000565","start":1408.68,"end":1411.66,"text":"它盈利增长是很快的","chapter":"policy-fork","source":"faster-whisper-small"}
 {"id":"seg-000566","start":1411.66,"end":1413.9,"text":"那么但是你的股价上升","chapter":"policy-fork","source":"faster-whisper-small"}
 {"id":"seg-000567","start":1413.9,"end":1415.06,"text":"没有达到它盈利增长","chapter":"policy-fork","source":"faster-whisper-small"}
-{"id":"seg-000568","start":1415.06,"end":1417.02,"text":"它其实Forewardp一直在掉","chapter":"policy-fork","source":"faster-whisper-small"}
-{"id":"seg-000569","start":1417.02,"end":1419.34,"text":"就26年的时候Forewardp一直在掉","chapter":"policy-fork","source":"faster-whisper-small"}
+{"id":"seg-000568","start":1415.06,"end":1417.02,"text":"它其实forwardp一直在掉","chapter":"policy-fork","source":"faster-whisper-small"}
+{"id":"seg-000569","start":1417.02,"end":1419.34,"text":"就26年的时候forwardp一直在掉","chapter":"policy-fork","source":"faster-whisper-small"}
 {"id":"seg-000570","start":1419.34,"end":1421.86,"text":"那么这个对应的就是长短利率上升","chapter":"policy-fork","source":"faster-whisper-small"}
 {"id":"seg-000571","start":1421.86,"end":1423.34,"text":"我觉得长短利率上升这件事情","chapter":"policy-fork","source":"faster-whisper-small"}
 {"id":"seg-000572","start":1423.34,"end":1425.14,"text":"对整个市场影响","chapter":"policy-fork","source":"faster-whisper-small"}

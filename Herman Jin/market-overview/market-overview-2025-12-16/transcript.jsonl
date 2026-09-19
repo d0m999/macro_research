@@ -449,8 +449,8 @@
 {"id":"seg-000449","start":1123.8,"end":1125.2,"text":"沒有水分的增長","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000450","start":1125.2,"end":1127.1,"text":"我說中國的事情","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000451","start":1127.1,"end":1129.1,"text":"我是結合BOJ","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000452","start":1129.1,"end":1131.8,"text":"結合日本央行的江西去講","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000453","start":1131.8,"end":1135.3,"text":"日本江行大概率明天是會降息的","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000452","start":1129.1,"end":1131.8,"text":"結合日本央行的降息去講","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000453","start":1131.8,"end":1135.3,"text":"日本央行大概率明天是會降息的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000454","start":1135.3,"end":1137.9,"text":"不是明天19號是8號後天","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000455","start":1137.9,"end":1140.6,"text":"那個大後天是要降息的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000456","start":1140.6,"end":1142.7,"text":"然後那個大家市場定價","chapter":"chapter-05","source":"faster-whisper-small"}
