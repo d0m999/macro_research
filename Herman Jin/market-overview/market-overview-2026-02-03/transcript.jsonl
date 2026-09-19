@@ -187,7 +187,7 @@
 {"id":"seg-000187","start":482.82,"end":483.74,"text":"dollar rate沒有","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000188","start":483.74,"end":485.26,"text":"你說你理論上來說","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000189","start":485.26,"end":486.14,"text":"如果說是真的","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000190","start":486.14,"end":488.78,"text":"那個覺得他要把國債權賣掉","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000190","start":486.14,"end":488.78,"text":"那個覺得他要把國債券賣掉","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000191","start":488.78,"end":489.66,"text":"要做QT了","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000192","start":489.66,"end":490.66,"text":"我們把國債賣掉","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000193","start":490.66,"end":491.7,"text":"等於是做QT","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -530,8 +530,8 @@
 {"id":"seg-000530","start":1049.62,"end":1051.78,"text":"我沒有回購你這個地方貸款","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000531","start":1051.78,"end":1054.86,"text":"然後我還要限制你的財政的額度","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000532","start":1054.86,"end":1056.02,"text":"就是你吃這個額度","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000533","start":1056.02,"end":1057.86,"text":"然後我決定可不可以回購你債權","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000534","start":1057.86,"end":1058.58,"text":"因為我不回購債權","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000533","start":1056.02,"end":1057.86,"text":"然後我決定可不可以回購你債券","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000534","start":1057.86,"end":1058.58,"text":"因為我不回購債券","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000535","start":1058.58,"end":1060.14,"text":"他們全死","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000536","start":1060.14,"end":1061.94,"text":"然後保持歐債危機","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000537","start":1061.94,"end":1063.38,"text":"以及歐債危機之後","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -705,7 +705,7 @@
 {"id":"seg-000705","start":1357.9,"end":1360.02,"text":"就是你要想一下他為什麼狂漲","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000706","start":1360.02,"end":1361.34,"text":"就是他狂漲的原因","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000707","start":1361.34,"end":1363.46,"text":"是因為現貨squeeze","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000708","start":1363.46,"end":1366.34,"text":"就是現貨Bicom","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000708","start":1363.46,"end":1366.34,"text":"就是現貨逼空","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000709","start":1366.34,"end":1368.74,"text":"川普在1月份的時候","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000710","start":1368.74,"end":1372.46,"text":"說他要對Precious Metal就是那個金屬","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000711","start":1372.46,"end":1373.38,"text":"所有的這些","chapter":"chapter-05","source":"faster-whisper-small"}

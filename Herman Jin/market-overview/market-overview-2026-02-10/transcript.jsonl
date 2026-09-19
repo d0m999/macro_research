@@ -201,7 +201,7 @@
 {"id":"seg-000201","start":430.44,"end":431.52,"text":"昨天有一些NY","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000202","start":431.52,"end":433.88,"text":"但是不会在预期说","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000203","start":433.88,"end":435.76,"text":"因为要在大选前面","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000204","start":435.76,"end":438.4,"text":"为了稳定去看社会议员","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000204","start":435.76,"end":438.4,"text":"为了稳定去看设置止远","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000205","start":438.4,"end":441.28,"text":"所以我看到上周五","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000206","start":441.28,"end":443.28,"text":"上周五的美股的反弹","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000207","start":443.28,"end":444.48,"text":"包括周一的反弹","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -354,7 +354,7 @@
 {"id":"seg-000354","start":770.64,"end":777.24,"text":"就昨天上周报的Codex确实是B 卡训练的模型","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000355","start":777.24,"end":779.0,"text":"但是除了这个以外","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000356","start":779.0,"end":781.08,"text":"就是我们如果回到上周那个时点","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000357","start":781.08,"end":785.2,"text":"没有看到一个比系列卡就GPU比系列卡训练的模型","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000357","start":781.08,"end":785.2,"text":"没有看到一个比卡就GPU比卡训练的模型","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000358","start":785.2,"end":786.8,"text":"也就是在那个时点上","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000359","start":786.8,"end":789.2,"text":"TPU的跟GPU的差距没那么大","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000360","start":789.2,"end":791.0,"text":"特别在大規模算力上","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -363,7 +363,7 @@
 {"id":"seg-000363","start":795.32,"end":800.24,"text":"但是你要是一个大規模邊界量級的模型的话","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000364","start":800.68,"end":805.04,"text":"GPU的那个Performance Browser这些优势还是很大的","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000365","start":805.04,"end":806.84,"text":"但是新的卡没有上来","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000366","start":806.84,"end":812.24,"text":"所以比100这个GP模型NVLink","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000366","start":806.84,"end":812.24,"text":"所以B100这个GP模型NVLink","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000367","start":812.24,"end":813.72,"text":"那个没有还没有上线","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000368","start":813.72,"end":815.24,"text":"没有用这个东西去训练模型","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000369","start":815.24,"end":816.64,"text":"B 卡的模型没出来","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -573,7 +573,7 @@
 {"id":"seg-000573","start":1222.0,"end":1225.04,"text":"而且1000亿美元的毛利是90%","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000574","start":1225.04,"end":1226.56,"text":"也就是大家会认为","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000575","start":1226.56,"end":1229.04,"text":"软件这个生意被改变了","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000576","start":1229.04,"end":1232.32,"text":"软件这个生意原来是一个药厂生意","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000576","start":1229.04,"end":1232.32,"text":"软件这个生意原来是一个药方生意","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000577","start":1232.32,"end":1234.72,"text":"就是我现在做一个Pattern","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000578","start":1234.72,"end":1236.4,"text":"然后我我表现说","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000579","start":1236.4,"end":1237.24,"text":"我申请一个信号","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -811,9 +811,9 @@
 {"id":"seg-000811","start":1712.72,"end":1714.16,"text":"一家是Microsoft","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000812","start":1714.16,"end":1715.64,"text":"他们一定要加入这个东西","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000813","start":1715.64,"end":1716.8,"text":"为什么","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000814","start":1716.84,"end":1719.8,"text":"因为我今天多说几句关于原样的","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000814","start":1716.84,"end":1719.8,"text":"因为我今天多说几句关于原谅的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000815","start":1719.8,"end":1721.96,"text":"我看我可能没有Q&A","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000816","start":1721.96,"end":1723.24,"text":"我今天多说几句原样的","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000816","start":1721.96,"end":1723.24,"text":"我今天多说几句原谅的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000817","start":1723.24,"end":1724.48,"text":"为什么他们要加入","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000818","start":1724.48,"end":1726.0,"text":"因为他们不加入的话","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000819","start":1726.0,"end":1729.24,"text":"原来躺赢的语音的模式也被改变了","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -894,7 +894,7 @@
 {"id":"seg-000894","start":1861.88,"end":1863.36,"text":"我就是要上钱的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000895","start":1863.36,"end":1864.16,"text":"然后","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000896","start":1864.16,"end":1865.88,"text":"当然原来它是个lab","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000897","start":1865.88,"end":1866.8,"text":"欧元牙是个lab","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000897","start":1865.88,"end":1866.8,"text":"OpenAI是个lab","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000898","start":1866.8,"end":1868.24,"text":"那很多人就觉得","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000899","start":1868.24,"end":1869.8,"text":"不应该变成这么","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000900","start":1869.8,"end":1870.68,"text":"profit oriented","chapter":"chapter-06","source":"faster-whisper-small"}

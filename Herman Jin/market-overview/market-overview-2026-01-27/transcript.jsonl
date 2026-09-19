@@ -28,7 +28,7 @@
 {"id":"seg-000028","start":80.04,"end":82.84,"text":"然後加上英偉達的那些營利情況","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000029","start":82.84,"end":84.82,"text":"但英偉達營利","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000030","start":84.82,"end":87.0,"text":"然後這些雲的營利情況","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000031","start":87.0,"end":89.8,"text":"和雲的其實大家關注的比較cat tax的情況","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000031","start":87.0,"end":89.8,"text":"和雲的其實大家關注的比較CAPEX的情況","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000032","start":89.8,"end":92.58,"text":"然後我說一下我的看法就是earnings的看法","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000033","start":92.58,"end":94.22,"text":"然後和earnings的看法","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000034","start":94.22,"end":97.82,"text":"然後日元的匯率利率的看法","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -122,8 +122,8 @@
 {"id":"seg-000122","start":333.98,"end":335.7,"text":"它繼續繼續搞財政政策","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000123","start":335.7,"end":337.38,"text":"所以大家覺得OK","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000124","start":337.38,"end":339.88,"text":"那你沒有辦法拼命引錢了","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000125","start":339.88,"end":342.38,"text":"然後那個利率的起勁","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000126","start":342.38,"end":343.78,"text":"我就把利率給你包含","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000125","start":339.88,"end":342.38,"text":"然後那個利率的期權","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000126","start":342.38,"end":343.78,"text":"我就把利率給你包涵","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000127","start":343.78,"end":346.82,"text":"所以這個利率債其實十年期","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000128","start":346.82,"end":348.62,"text":"其實這是十年期","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000129","start":348.62,"end":351.06,"text":"其實更長期的整個Curve都在變steepen","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -141,10 +141,10 @@
 {"id":"seg-000141","start":388.08,"end":390.92,"text":"那個我們看到BOJ出來的聲明","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000142","start":390.92,"end":392.72,"text":"5.1大本來大家預期的聲明","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000143","start":392.72,"end":394.0,"text":"它是會非常強硬的","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000144","start":394.0,"end":396.84,"text":"就是我相對來說會更加好歸是一點","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000144","start":394.0,"end":396.84,"text":"就是我相對來說會更加hawkish是一點","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000145","start":396.84,"end":399.26,"text":"但是它實際的聲明出來講到了一個問題","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000146","start":399.26,"end":405.82,"text":"就是說如果說它對於日元貶值","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000147","start":405.82,"end":410.7,"text":"可能對通脹帶來有意的影響是刻意說了這麼一句話","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000147","start":405.82,"end":410.7,"text":"可能對通脹帶來外溢的影響是刻意說了這麼一句話","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000148","start":410.7,"end":413.62,"text":"所以大家覺得日元可能會繼續貶值","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000149","start":413.62,"end":419.1,"text":"然後他們BOJ沒有辦法真正採取非常強硬的措施","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000150","start":419.1,"end":423.62,"text":"特別是在政府財政政策可能會更加寬鬆","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -667,8 +667,8 @@
 {"id":"seg-000667","start":1552.98,"end":1555.26,"text":"英特爾我私下推測上講過很多次","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000668","start":1555.26,"end":1558.98,"text":"英特爾是他們那個做CPU的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000669","start":1558.98,"end":1560.54,"text":"其實不太敢","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000670","start":1560.54,"end":1562.78,"text":"當時在落後現場上去做投入","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000671","start":1562.78,"end":1565.38,"text":"然後但是落後現場的需求太大","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000670","start":1560.54,"end":1562.78,"text":"當時在落後製程上去做投入","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000671","start":1562.78,"end":1565.38,"text":"然後但是落後製程的需求太大","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000672","start":1565.38,"end":1568.18,"text":"然後他們其實存貨已經全部用完了","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000673","start":1568.22,"end":1571.26,"text":"然後就是我要市場上太多了","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000674","start":1571.26,"end":1572.14,"text":"存貨用完了","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -868,8 +868,8 @@
 {"id":"seg-000868","start":1926.66,"end":1928.34,"text":"或者幾個月兩個季度","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000869","start":1928.34,"end":1929.46,"text":"但是公司盈利","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000870","start":1929.46,"end":1930.74,"text":"我們看到是","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000871","start":1930.74,"end":1931.9,"text":"後面的奧尼口","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000872","start":1931.9,"end":1933.74,"text":"我們對奧尼的看法","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000871","start":1930.74,"end":1931.9,"text":"後面的earning口","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000872","start":1931.9,"end":1933.74,"text":"我們對earning的看法","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000873","start":1933.74,"end":1935.74,"text":"是偏樂觀","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000874","start":1935.74,"end":1938.78,"text":"就特別是對於雲GPU的缺貨","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000875","start":1938.78,"end":1940.14,"text":"CPU不是","chapter":"chapter-06","source":"faster-whisper-small"}

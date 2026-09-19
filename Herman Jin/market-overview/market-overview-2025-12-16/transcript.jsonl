@@ -25,7 +25,7 @@
 {"id":"seg-000025","start":82.8,"end":85.36,"text":"就讓我們一直覺得美聯儲降息完成以後","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000026","start":85.36,"end":86.4,"text":"就是一個真空期","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000027","start":86.4,"end":89.2,"text":"就是你其實手上沒有牌","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000028","start":89.2,"end":95.6,"text":"12月22號公司的拜拜基本上都結束","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000028","start":89.2,"end":95.6,"text":"12月22號公司的buyback基本上都結束","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000029","start":95.6,"end":97.14,"text":"所以從資金流上來說","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000030","start":97.14,"end":100.46,"text":"你也沒有很多的強制性的錢要買進來","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000031","start":100.46,"end":106.1,"text":"從整個基本面來看","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -85,7 +85,7 @@
 {"id":"seg-000085","start":265.6,"end":269.5,"text":"美聯儲的講話是Powell相對來說是比較軟弱的","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000086","start":269.5,"end":270.6,"text":"因為Powell講到幾個","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000087","start":270.6,"end":274.1,"text":"雖然他despite他一邊有人希望降了更多","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000088","start":274.1,"end":277.0,"text":"一邊有人下期希望不要講一些","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000088","start":274.1,"end":277.0,"text":"一邊有人下注希望不要講一些","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000089","start":277.0,"end":279.4,"text":"那麼但是他講話相對來說是比較軟弱","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000090","start":279.4,"end":283.0,"text":"他第一個說就是 job creation","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000091","start":283.0,"end":287.0,"text":"就是我們看到的經濟數據可能相對來說","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -225,7 +225,7 @@
 {"id":"seg-000225","start":656.8,"end":658.7,"text":"然後市場就會很敏感","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000226","start":658.7,"end":660.7,"text":"這種情況下就是很容易點","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000227","start":660.7,"end":662.8,"text":"然後大家可以很容易去質疑","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000228","start":662.8,"end":667.6,"text":"但是我個人認為在現在質疑的篡位已經很重了","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000228","start":662.8,"end":667.6,"text":"但是我個人認為在現在質疑的倉位已經很重了","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000229","start":667.6,"end":670.4,"text":"特別在CDS在那個Oracle的CDS上","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000230","start":670.4,"end":672.5,"text":"Oracle CDS當然可以看到一張圖","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000231","start":672.5,"end":674.0,"text":"我這個圖忘記貼上來","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -270,15 +270,15 @@
 {"id":"seg-000270","start":757.1,"end":759.4,"text":"就是這個power值的","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000271","start":759.4,"end":762.0,"text":"然後犧牲的這個能效比","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000272","start":762.0,"end":764.3,"text":"但你要把這個東西拆開來算的話","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000273","start":764.3,"end":766.2,"text":"其實阿瓦購並沒有那麼便宜","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000274","start":766.2,"end":768.6,"text":"阿瓦購的麻煩也要50%啊","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000273","start":764.3,"end":766.2,"text":"其實Avago並沒有那麼便宜","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000274","start":766.2,"end":768.6,"text":"Avago的麻煩也要50%啊","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000275","start":768.6,"end":772.2,"text":"然後它還有潛在等於是幫那個","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000276","start":772.2,"end":773.8,"text":"谷歌做了一個前導/鋪墊","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000277","start":773.8,"end":776.0,"text":"你把那個阿瓦購算進去也要50%","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000277","start":773.8,"end":776.0,"text":"你把那個Avago算進去也要50%","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000278","start":776.0,"end":778.0,"text":"它也得去TSMC有便宜","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000279","start":778.0,"end":779.0,"text":"也得去分產能","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000280","start":779.0,"end":781.0,"text":"那為什麼英偉達的","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000281","start":781.0,"end":782.6,"text":"就是阿瓦購難道設計能力","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000281","start":781.0,"end":782.6,"text":"就是Avago難道設計能力","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000282","start":782.6,"end":784.6,"text":"能夠比那個英偉達強很多","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000283","start":784.6,"end":786.0,"text":"這肯定是不存在的","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000284","start":786.0,"end":788.2,"text":"所以現在整體晶片上來說","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -401,7 +401,7 @@
 {"id":"seg-000401","start":1017.7,"end":1020.8,"text":"一直到後面的晶片","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000402","start":1020.8,"end":1023.2,"text":"到Wafer","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000403","start":1023.2,"end":1025.0,"text":"然後到Wafer後面subject","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000404","start":1026.0,"end":1027.2,"text":"騙的那個東西","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000404","start":1026.0,"end":1027.2,"text":"片的那個東西","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000405","start":1027.2,"end":1029.7,"text":"就是整個行業性的","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000406","start":1029.7,"end":1032.8,"text":"從頭到底的全部在缺貨","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000407","start":1032.8,"end":1035.0,"text":"所以大概至少在半導體裡面","chapter":"chapter-04","source":"faster-whisper-small"}

@@ -352,7 +352,7 @@
 {"id":"seg-000352","start":776.7,"end":778.22,"text":"在你一个没有产业革命的时候","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000353","start":778.22,"end":779.34,"text":"是平均受伤害","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000354","start":779.34,"end":780.46,"text":"你有的时候","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000355","start":780.46,"end":782.7,"text":"你是虚别性受伤害","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000355","start":780.46,"end":782.7,"text":"你是区别性受伤害","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000356","start":782.7,"end":783.78,"text":"政府不受伤害","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000357","start":783.78,"end":785.34,"text":"不要算一样会借钱","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000358","start":785.34,"end":786.94,"text":"不会因为5%","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -715,7 +715,7 @@
 {"id":"seg-000715","start":1449.34,"end":1451.14,"text":"我看一下那个","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000716","start":1451.14,"end":1452.1,"text":"prime book","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000717","start":1452.1,"end":1454.1,"text":"两个说你放在六个月的周期","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000718","start":1454.1,"end":1455.06,"text":"它其实是个D位","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000718","start":1454.1,"end":1455.06,"text":"它其实是个低位","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000719","start":1455.06,"end":1455.38,"text":"对吧","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000720","start":1455.38,"end":1456.58,"text":"这个上去","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000721","start":1456.58,"end":1458.06,"text":"但是最近稍微","chapter":"chapter-05","source":"faster-whisper-small"}

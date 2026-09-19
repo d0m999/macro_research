@@ -574,9 +574,9 @@
 {"id":"seg-000574","start":1267.7,"end":1271.6,"text":"所以DDR可能和HBM用的是一個流片的線","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000575","start":1271.6,"end":1276.5,"text":"那你可以把這個當成GPU和HBM的外掛","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000576","start":1276.5,"end":1277.5,"text":"為了這個圖畫對不了","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000577","start":1277.5,"end":1281.7,"text":"我也不是直接做DWE的","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000577","start":1277.5,"end":1281.7,"text":"我也不是直接做NRE的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000578","start":1281.7,"end":1284.8,"text":"但是現在你最新的那個服務器","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000579","start":1284.8,"end":1290.4,"text":"DDR5X服務器上面有12個CPU上有12個那個碰到","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000579","start":1284.8,"end":1290.4,"text":"DDR5X服務器上面有12個CPU上有12個那個通道","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000580","start":1290.4,"end":1291.4,"text":"你就這樣理解","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000581","start":1291.4,"end":1295.0,"text":"就是我用原來的CPU肯定是不行的","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000582","start":1295.0,"end":1300.4,"text":"因為我現在服務器需要的那個內存越來越大了","chapter":"chapter-05","source":"faster-whisper-small"}
@@ -789,7 +789,7 @@
 {"id":"seg-000789","start":1694.9,"end":1695.9,"text":"一直在下降","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000790","start":1695.9,"end":1696.9,"text":"就疊帶的速度在下降","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000791","start":1696.9,"end":1697.9,"text":"所以手機廠","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000792","start":1697.9,"end":1699.9,"text":"為什麼都要去坐車呢","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000792","start":1697.9,"end":1699.9,"text":"為什麼都要去造車呢","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000793","start":1699.9,"end":1700.9,"text":"因為手機疊帶速度下降了","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000794","start":1700.9,"end":1701.9,"text":"產能過剩了","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000795","start":1701.9,"end":1703.9,"text":"它麻將在降低","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -849,7 +849,7 @@
 {"id":"seg-000849","start":1779.9,"end":1780.9,"text":"那個","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000850","start":1780.9,"end":1781.9,"text":"那個應該新的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000851","start":1781.9,"end":1782.9,"text":"價錢廠70% 70%","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000852","start":1782.9,"end":1784.9,"text":"那個就是地利亞","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000852","start":1782.9,"end":1784.9,"text":"那個就是低壓","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000853","start":1784.9,"end":1785.9,"text":"然後","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000854","start":1785.9,"end":1786.9,"text":"所以我是覺得","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000855","start":1786.9,"end":1788.9,"text":"這樣是一個趨勢","chapter":"chapter-06","source":"faster-whisper-small"}

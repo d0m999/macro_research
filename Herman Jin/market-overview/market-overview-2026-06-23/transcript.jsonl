@@ -49,7 +49,7 @@
 {"id":"seg-000049","start":321.76,"end":329.96,"text":"中间当然有一些比方说杠杆率的问题,但跑掉这些杠杆的问题,基本上就是把它经济增长当成一个信贷增长","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000050","start":330.28,"end":343.32,"text":"那你信贷增长就来自于私营部门和来自于公共部门,如果说公共部门获得的债务更多,那么它就会公共部门获得债务更多","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000051","start":343.38,"end":352.14,"text":"那它的比率就是政府的力量就会更大,其实最终就是你政府的力量有多大,政府的融资在国家经济增长中间占多少比率","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000052","start":352.78,"end":358.62,"text":"往往政府的比率,就奥斯丹利带,这是总的持有的债务,就奥斯丹利带","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000052","start":352.78,"end":358.62,"text":"往往政府的比率,就outstanding,这是总的持有的债务,就outstanding","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000053","start":359.14,"end":364.86,"text":"持有的比率越大呢,然后发债的比率越大呢,然后你往往就会变成更加无效","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000054","start":365.32,"end":377.72,"text":"所以这是一个快乐的陷阱,就是当我每一块钱,就除了二二年,二二年可能有一次经济几亿几乎变零了吧,所以这个点又可以参考","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000055","start":378.24,"end":386.76,"text":"但是如果你看二一年到二五年的话,整体的就是美国,你的信贷增加的时候","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -106,7 +106,7 @@
 {"id":"seg-000106","start":738.34,"end":744.82,"text":"所以你把利率还给市场,就是你会有大量的发债,然后这个债务还在增加","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000107","start":745.98,"end":753.66,"text":"你的需求端,你从哪里来,新的需求端呢,就是你当然今年你可以做银行的那个去检管","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000108","start":753.66,"end":760.38,"text":"然后你把那个需求端带起来,但你是每一年持续的要给到市场新的需求端来解决他债务的问题","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000109","start":760.74,"end":766.74,"text":"如果不解决他债务利率就会往上跑,所以这个也符合了,其实连处这个东西也符合了","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000109","start":760.74,"end":766.74,"text":"如果不解决他债务利率就会往上跑,所以这个也符合了,其实联储这个东西也符合了","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000110","start":766.8,"end":772.4,"text":"有时候他的一个意图啊,就是说你国家的债务什么时候能够无限吗,不能无限","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000111","start":772.72,"end":776.36,"text":"不能无限让市场来调解你,然后把利率给你搞高,那长端利率给你搞高","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000112","start":776.76,"end":782.36,"text":"因为你本身短期利率 guidance,也就是能够发个20%吧,tbl能够发到20%","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -123,7 +123,7 @@
 {"id":"seg-000123","start":837.24,"end":841.96,"text":"被银行从风险资产里面拿出去了,所以就是国债,所以银行买国债","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000124","start":842.82,"end":845.94,"text":"它是等于是可以杠杆随便买","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000125","start":846.54,"end":855.38,"text":"那么大概我之前说过,就是大概增加4万5到5万亿的银行资产负责表啊,就是可增投的资产负责表","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000126","start":855.9,"end":863.22,"text":"所以你在今年可能没有看到这么明显的反应,但是如果我们连处,这个看后面几期了,接下去有看","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000126","start":855.9,"end":863.22,"text":"所以你在今年可能没有看到这么明显的反应,但是如果我们联储,这个看后面几期了,接下去有看","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000127","start":864.0,"end":873.16,"text":"Kevin 接下去是不是这么干,就是如果是这么干下去的话,他理论上他是会持续的给到长端一个往上的推动力","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000128","start":873.16,"end":877.36,"text":"就是利率往上的推动力,因为供应很大,就是会一直有供应","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000129","start":877.84,"end":887.0,"text":"然后,原来是怎么去控制这个啊,就是YCC 包括QE,它其实控制利率嘛,控制利率其实就是印钱","chapter":"chapter-03","source":"faster-whisper-small"}
@@ -193,7 +193,7 @@
 {"id":"seg-000193","start":1171.54,"end":1173.1,"text":"政府的融资越来越大","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000194","start":1173.1,"end":1176.14,"text":"然后挤压了越来越多的资源之后","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000195","start":1176.14,"end":1177.9,"text":"你的效率不停地降低","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000196","start":1177.9,"end":1179.9,"text":"那么你这个债务总是要保得","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000196","start":1177.9,"end":1179.9,"text":"那么你这个债务总是要爆的","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000197","start":1179.9,"end":1183.82,"text":"我们从其实14年15年","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000198","start":1183.82,"end":1187.3,"text":"然后好几次就是想去做一些改革","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000199","start":1187.3,"end":1188.7,"text":"然后把这个问题执着","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -257,7 +257,7 @@
 {"id":"seg-000257","start":1321.14,"end":1322.66,"text":"然后我说一下","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000258","start":1322.66,"end":1324.94,"text":"这个讲一下货币政策和利率","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000259","start":1324.94,"end":1328.1,"text":"然后我讲一下对后面几个","chapter":"chapter-05","source":"faster-whisper-small"}
-{"id":"seg-000260","start":1328.1,"end":1330.42,"text":"hyperscale的烈期的预期","chapter":"chapter-05","source":"faster-whisper-small"}
+{"id":"seg-000260","start":1328.1,"end":1330.42,"text":"hyperscale的业绩的预期","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000261","start":1330.42,"end":1336.46,"text":"我觉得每年处基本上是这样子","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000262","start":1336.46,"end":1340.38,"text":"就是说几个hyperscale主要看两方面","chapter":"chapter-05","source":"faster-whisper-small"}
 {"id":"seg-000263","start":1340.38,"end":1342.62,"text":"就一个我们上次讲说看CAPEX","chapter":"chapter-05","source":"faster-whisper-small"}

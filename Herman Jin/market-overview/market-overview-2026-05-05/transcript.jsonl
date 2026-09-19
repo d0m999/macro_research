@@ -855,13 +855,13 @@
 {"id":"seg-000855","start":1924.44,"end":1926.6,"text":"你说从平均的水平往上跑了","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000856","start":1926.6,"end":1927.2,"text":"十几个败财","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000857","start":1927.2,"end":1928.6,"text":"是蛮吓人的","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000858","start":1928.6,"end":1931.4,"text":"没有变成像alloc当时的状态","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000859","start":1931.4,"end":1934.88,"text":"但是如果meta被定价成alloc","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000860","start":1934.88,"end":1936.84,"text":"那alloc cds长了很多","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000861","start":1936.84,"end":1940.12,"text":"meta被定价成alloc那种状态的话","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000862","start":1940.12,"end":1941.88,"text":"不要像alloc这么严重","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000858","start":1928.6,"end":1931.4,"text":"没有变成像Oracle当时的状态","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000859","start":1931.4,"end":1934.88,"text":"但是如果meta被定价成Oracle","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000860","start":1934.88,"end":1936.84,"text":"那Oracle cds长了很多","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000861","start":1936.84,"end":1940.12,"text":"meta被定价成Oracle那种状态的话","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000862","start":1940.12,"end":1941.88,"text":"不要像Oracle这么严重","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000863","start":1941.88,"end":1943.44,"text":"但是只要有这方面的定价","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000864","start":1943.44,"end":1945.6,"text":"meta很难做出像alloc这样的决策","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000864","start":1943.44,"end":1945.6,"text":"meta很难做出像Oracle这样的决策","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000865","start":1947.48,"end":1949.48,"text":"这个是为什么的","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000866","start":1949.48,"end":1950.08,"text":"怎么说呢","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000867","start":1950.08,"end":1956.04,"text":"就是meta虽然zacor决定性也是很强","chapter":"chapter-06","source":"faster-whisper-small"}
@@ -879,7 +879,7 @@
 {"id":"seg-000879","start":1980.84,"end":1981.64,"text":"对吧","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000880","start":1981.64,"end":1985.56,"text":"然后如果说是有这样类似的情况发生的时候","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000881","start":1985.56,"end":1988.92,"text":"那么大家开始定价这个问题的时候","chapter":"chapter-06","source":"faster-whisper-small"}
-{"id":"seg-000882","start":1988.92,"end":1991.44,"text":"因为hyperscale包括alloc","chapter":"chapter-06","source":"faster-whisper-small"}
+{"id":"seg-000882","start":1988.92,"end":1991.44,"text":"因为hyperscale包括Oracle","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000883","start":1991.44,"end":1992.64,"text":"他们这些语音","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000884","start":1992.64,"end":1995.76,"text":"它是相当于说槓桿最高的这个玩家","chapter":"chapter-06","source":"faster-whisper-small"}
 {"id":"seg-000885","start":1995.76,"end":1996.52,"text":"在这里面","chapter":"chapter-06","source":"faster-whisper-small"}

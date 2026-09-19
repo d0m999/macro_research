@@ -151,7 +151,7 @@
 {"id":"seg-000151","start":376.74,"end":378.46,"text":"第二個就是在金融行業","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000152","start":378.46,"end":380.82,"text":"金融我們看到金融的機報","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000153","start":380.82,"end":382.38,"text":"那麼並沒有","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000154","start":382.38,"end":383.86,"text":"機票並沒有什麼特別大的問題","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000154","start":382.38,"end":383.86,"text":"季報並沒有什麼特別大的問題","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000155","start":383.86,"end":385.14,"text":"然後NL都還不錯","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000156","start":385.14,"end":387.42,"text":"然後但是金融行業","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000157","start":387.42,"end":388.78,"text":"那個有一些波動","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -426,7 +426,7 @@
 {"id":"seg-000426","start":937.14,"end":938.94,"text":"我們叫敘事講故事","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000427","start":938.94,"end":942.34,"text":"第二個是盈利就盈利","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000428","start":942.34,"end":944.14,"text":"盈利最最確定","chapter":"chapter-03","source":"faster-whisper-small"}
-{"id":"seg-000429","start":944.14,"end":945.5,"text":"十大是增長","chapter":"chapter-03","source":"faster-whisper-small"}
+{"id":"seg-000429","start":944.14,"end":945.5,"text":"實大是增長","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000430","start":945.5,"end":947.22,"text":"最確定性最高的公司","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000431","start":947.22,"end":948.14,"text":"敘事最差","chapter":"chapter-03","source":"faster-whisper-small"}
 {"id":"seg-000432","start":948.14,"end":949.3,"text":"增長了最少","chapter":"chapter-03","source":"faster-whisper-small"}

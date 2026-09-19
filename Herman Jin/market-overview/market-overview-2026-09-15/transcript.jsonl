@@ -4,7 +4,7 @@
 {"id":"seg-000004","start":10.0,"end":13.06,"text":"然後通脹的數據我分析大概通脹的數據","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000005","start":13.06,"end":15.1,"text":"然後這次加息的預期","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000006","start":15.1,"end":17.14,"text":"然後最近以來","chapter":"chapter-01","source":"faster-whisper-small"}
-{"id":"seg-000007","start":17.14,"end":19.96,"text":"宏觀的我認識的反正宏觀H房","chapter":"chapter-01","source":"faster-whisper-small"}
+{"id":"seg-000007","start":17.14,"end":19.96,"text":"宏觀的我認識的反正宏觀HF","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000008","start":19.96,"end":24.84,"text":"基本上對AI或者對於整個市場風險頭寸都非常不一致","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000009","start":24.84,"end":26.36,"text":"所以我說一下市場倉位","chapter":"chapter-01","source":"faster-whisper-small"}
 {"id":"seg-000010","start":26.36,"end":28.16,"text":"然後利率最近對市場影響","chapter":"chapter-01","source":"faster-whisper-small"}
@@ -196,11 +196,11 @@
 {"id":"seg-000196","start":526.14,"end":531.52,"text":"所以最後那個它市場定價了它加兩次Fed到加了4次","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000197","start":531.52,"end":532.8,"text":"最後它加了一次","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000198","start":532.8,"end":534.32,"text":"就基本上沒怎麽加","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000199","start":534.32,"end":540.72,"text":"那麽使得市場其實認為我們會在一個很長期的DC的環境裏面","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000199","start":534.32,"end":540.72,"text":"那麽使得市場其實認為我們會在一個很長期的低息的環境裏面","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000200","start":540.92,"end":544.04,"text":"當時美國其實經濟增長也是基本上也是靠美聯儲","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000201","start":544.04,"end":549.68,"text":"當然沒有一個新的這個沒了新的一個生產效率提高點","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000202","start":549.68,"end":551.98,"text":"所以","chapter":"chapter-02","source":"faster-whisper-small"}
-{"id":"seg-000203","start":551.98,"end":557.1,"text":"市場在18年的時候已經整整經歷了10年DC的環境","chapter":"chapter-02","source":"faster-whisper-small"}
+{"id":"seg-000203","start":551.98,"end":557.1,"text":"市場在18年的時候已經整整經歷了10年低息的環境","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000204","start":557.1,"end":559.92,"text":"已經既定俗成了就市場已經","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000205","start":559.92,"end":562.48,"text":"已經忘記08年以前利息漲什麽樣子","chapter":"chapter-02","source":"faster-whisper-small"}
 {"id":"seg-000206","start":562.48,"end":564.28,"text":"就是高息的環境是長什麽樣子","chapter":"chapter-02","source":"faster-whisper-small"}
@@ -373,7 +373,7 @@
 {"id":"seg-000373","start":992.52,"end":996.44,"text":"我認為整體經濟完全沒有辦法支持","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000374","start":996.44,"end":998.0,"text":"一個長期的加息","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000375","start":998.0,"end":1001.52,"text":"但是Nonetheless無論這個東西","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000376","start":1001.52,"end":1004.04,"text":"長期的加息三年五已經被停價了","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000376","start":1001.52,"end":1004.04,"text":"長期的加息三年五已經被定價了","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000377","start":1004.04,"end":1007.36,"text":"而且整個Curve都已經被拉起來","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000378","start":1007.36,"end":1009.72,"text":"所以在利率上面","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000379","start":1009.72,"end":1013.08,"text":"我個人感覺是過度定價","chapter":"chapter-04","source":"faster-whisper-small"}
@@ -452,11 +452,11 @@
 {"id":"seg-000452","start":1165.32,"end":1166.8,"text":"你不能說7600點","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000453","start":1166.8,"end":1167.76,"text":"或者多少點","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000454","start":1167.76,"end":1170.08,"text":"這個東西背後其實帶著盈利的","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000455","start":1170.08,"end":1172.4,"text":"你應該看4P來代表","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000455","start":1170.08,"end":1172.4,"text":"你應該看forward PE來代表","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000456","start":1172.4,"end":1173.88,"text":"我真正的估值在那裡","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000457","start":1173.88,"end":1175.92,"text":"4P已經被壓制了很久了","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000457","start":1173.88,"end":1175.92,"text":"forward PE已經被壓制了很久了","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000458","start":1175.92,"end":1177.16,"text":"壓制了大概大半年了吧","chapter":"chapter-04","source":"faster-whisper-small"}
-{"id":"seg-000459","start":1178.28,"end":1179.88,"text":"然後現在的4P","chapter":"chapter-04","source":"faster-whisper-small"}
+{"id":"seg-000459","start":1178.28,"end":1179.88,"text":"然後現在的forward PE","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000460","start":1179.88,"end":1182.12,"text":"就是說我們從S&P估值角度來講","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000461","start":1182.12,"end":1183.52,"text":"就S&P的價值","chapter":"chapter-04","source":"faster-whisper-small"}
 {"id":"seg-000462","start":1183.52,"end":1186.72,"text":"你肯定不能說你現在7000點","chapter":"chapter-04","source":"faster-whisper-small"}
