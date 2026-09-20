@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "pipeline": "herman-jin-video-archive",
-  "observed_on": "2026-09-02",
+  "observed_on": "2026-09-16",
   "scope": {
     "start_date": "2025-01-01",
-    "end_date": "2026-08-26",
+    "end_date": "2026-09-15",
     "source_channel": {
       "name": "Shanghao Jin",
       "handle": "@shanghaojin",
@@ -58,7 +58,7 @@
     }
   },
   "status_counts": {
-    "complete": 53,
+    "complete": 56,
     "complete_existing": 3
   },
   "entries": {
@@ -931,14 +931,59 @@
       "transcript_count": 780,
       "deck_count": 9,
       "completed_on": "2026-09-02"
+    },
+    "2qnPZaOwEFE": {
+      "package_id": "market-overview-2026-09-08",
+      "upload_date": "2026-09-08",
+      "status": "complete",
+      "last_transition": "2026-09-12",
+      "attempts": 4,
+      "model": "faster-whisper-small",
+      "audio_format": "m4a",
+      "failure_code": null,
+      "failure_detail": null,
+      "download_format": "18",
+      "actual_resolution": "640x360",
+      "transcript_count": 961,
+      "deck_count": 27,
+      "completed_on": "2026-09-12"
+    },
+    "df816GNfpPw": {
+      "package_id": "market-overview-2026-09-01",
+      "upload_date": "2026-09-01",
+      "status": "complete",
+      "last_transition": "2026-09-16",
+      "attempts": 8,
+      "model": "faster-whisper-small",
+      "audio_format": "m4a",
+      "failure_code": null,
+      "failure_detail": null,
+      "download_format": "18",
+      "actual_resolution": "640x360",
+      "transcript_count": 1038,
+      "deck_count": 19,
+      "completed_on": "2026-09-16"
+    },
+    "sZi9d2wjmFE": {
+      "package_id": "market-overview-2026-09-15",
+      "upload_date": "2026-09-15",
+      "status": "complete",
+      "last_transition": "2026-09-16",
+      "attempts": 2,
+      "model": "faster-whisper-small",
+      "audio_format": "m4a",
+      "failure_code": null,
+      "failure_detail": null,
+      "download_format": "18",
+      "actual_resolution": "640x360",
+      "transcript_count": 836,
+      "deck_count": 17,
+      "completed_on": "2026-09-16"
     }
   },
   "agent_index_policy": "only_accepted_complete_packages",
-  "next_action": "no_pending_videos",
+  "next_action": "队列已清空。09-01（1038 段/19 图）与 09-15（836 段/17 图）均已发布并入索引，全库 59 个包。本轮为 09-16 补录，磁盘/内存闸门曾临时放宽（DISK_GATE 25->22->21 后复原、MEMORY_GATE 35->28 后复原），硬保护 DISK_ABORT=20 / MEMORY_ABORT=20 全程未动。",
   "pipeline_state": "complete",
-  "active_video": null,
-  "active_package": null,
-  "active_stage": null,
   "checkpoint": {
     "recorded_on": "2026-08-29",
     "reason": "network retest passed the relaxed single-worker gate and small range probes, but full media download still returns HTTP 403 after approximately 2 MiB through HTTP and SOCKS proxy; media stages remain blocked",
@@ -1053,5 +1098,5 @@
       "stages_may_overlap": false
     }
   },
-  "updated_on": "2026-09-02"
+  "updated_on": "2026-09-16"
 }

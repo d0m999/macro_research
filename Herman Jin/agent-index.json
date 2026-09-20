@@ -14,17 +14,50 @@
       "ocr/"
     ],
     "separate_materials": {
-      "readable": "_readable/",
       "source": "_source/"
-    }
+    },
+    "x_directory_template": "x-archive/x-YYYY-MM-DD/"
   },
   "packages": [
+    {
+      "id": "x-2026-09-19",
+      "title": "Herman Jin X（@ShanghaoJin）2026 年 1–9 月全量归档",
+      "date": "2026-09-19",
+      "package_type": "x-archive",
+      "manifest": "x-archive/x-2026-09-19/manifest.json",
+      "readable": null,
+      "source": "_source/x-2026-09-19/"
+    },
+    {
+      "id": "market-overview-2026-09-15",
+      "title": "市场概述2026年9月15日",
+      "date": "2026-09-15",
+      "manifest": "market-overview/market-overview-2026-09-15/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-09-15/"
+    },
+    {
+      "id": "market-overview-2026-09-08",
+      "title": "市场概述2026年9月8日",
+      "date": "2026-09-08",
+      "manifest": "market-overview/market-overview-2026-09-08/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-09-08/"
+    },
+    {
+      "id": "market-overview-2026-09-01",
+      "title": "市场概述2026年9月1日",
+      "date": "2026-09-01",
+      "manifest": "market-overview/market-overview-2026-09-01/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-09-01/"
+    },
     {
       "id": "market-overview-2026-08-25",
       "title": "市场概述2026年8月25日",
       "date": "2026-08-25",
       "manifest": "market-overview/market-overview-2026-08-25/manifest.json",
-      "readable": "_readable/market-overview-2026-08-25.html",
+      "readable": null,
       "source": "_source/market-overview-2026-08-25/"
     },
     {
@@ -32,7 +65,7 @@
       "title": "市场概述2026年8月4日",
       "date": "2026-08-04",
       "manifest": "market-overview/market-overview-2026-08-04/manifest.json",
-      "readable": "_readable/market-overview-2026-08-04.html",
+      "readable": null,
       "source": "_source/market-overview-2026-08-04/"
     },
     {
@@ -56,7 +89,7 @@
       "title": "市场概述2026年6月30日",
       "date": "2026-06-30",
       "manifest": "market-overview/market-overview-2026-06-30/manifest.json",
-      "readable": "_readable/market-overview-2026-06-30.html",
+      "readable": null,
       "source": "_source/market-overview-2026-06-30/"
     },
     {
@@ -468,5 +501,5 @@
       "source": "_source/market-overview-2025-01-07/"
     }
   ],
-  "generated_on": "2026-09-02"
+  "generated_on": "2026-09-16"
 }

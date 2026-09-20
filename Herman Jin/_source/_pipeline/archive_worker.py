@@ -53,8 +53,21 @@ TRANSCRIBE_WORKER = PIPELINE / "transcribe_worker.py"
 DOWNLOAD_CPU_GATE = 40.0
 PROCESS_CPU_GATE = 40.0
 PAUSE_CPU_GATE = 35.0
+# --- 2026-09-16 临时放宽记录（已复原，非当前值）---
+# 当天为补录 09-01 / 09-15 两期曾把启动阈值 35.0 下调为 28.0：
+# 本机 16 GiB 内存 + swap 已用 18+ GiB，memory_pressure 的 free percentage 长时间钉在 31-33%，
+# 连续 25 分钟以上拿不到 3 次 >=35% 采样（CPU idle 与磁盘均充裕，唯一卡点即内存）。
+# 硬保护 MEMORY_ABORT 全程未动（始终 20.0）。
+# **两期跑完后已于 2026-09-16 复原为 35.0**；详见 `.workbuddy/memory/2026-09-16.md`。
 MEMORY_GATE = 35.0
 MEMORY_ABORT = 20.0
+# --- 2026-09-15 临时放宽记录（已复原，非当前值）---
+# 当天为补录 09-01 / 09-15 两期曾两次临时下调磁盘闸门：25.0 -> 22.0 -> 21.0，
+# 原因：可用磁盘低于原阈值，而单期实际占用 <0.5 GiB，属绝对值阈值与实际需求脱钩。
+# 硬保护 DISK_ABORT_GIB 全程未动（始终 20.0）。
+# **2026-09-15 22:27 用户指示暂停任务时已复原为 25.0**；两期均未跑完，
+# 下次续跑需按当时实测空闲重新判断是否放宽，并再次标注与复原。
+# 详见 `.workbuddy/memory/2026-09-15.md`。
 DISK_GATE_GIB = 25.0
 DISK_ABORT_GIB = 20.0
 CHECK_INTERVAL = 30
@@ -156,34 +169,64 @@ def safe_remove_staging_tree(path: Path) -> None:
     path.rmdir()
 
 
+def probe_stdout(command: list[str]) -> str | None:
+    """执行系统探测命令；当执行环境禁止调用该命令时返回 None，不抛异常。"""
+    try:
+        result = subprocess.run(command, capture_output=True, text=True, check=False)
+    except OSError:
+        return None
+    return result.stdout
+
+
+def cpu_idle_percent() -> float | None:
+    """读取 CPU 空闲百分比。
+
+    首选与历史行为一致的 `/usr/bin/top`。部分执行环境（沙箱/无 Full Disk
+    Access 的宿主进程）会直接拒绝执行 top，此时退回到 psutil 的等价实现，
+    保证闸门语义（空闲百分比 + 相同阈值）不变。
+    """
+    output = probe_stdout(["/usr/bin/top", "-l", "1", "-n", "0"])
+    if output:
+        match = re.search(r"([0-9]+(?:\.[0-9]+)?)% idle", output)
+        if match:
+            return float(match.group(1))
+    try:
+        import psutil
+    except ImportError:
+        return None
+    return float(psutil.cpu_times_percent(interval=1.0).idle)
+
+
 def resource_snapshot() -> dict[str, Any]:
-    cpu_idle = None
-    top = subprocess.run(
-        ["/usr/bin/top", "-l", "1", "-n", "0"],
-        capture_output=True,
-        text=True,
-        check=False,
-    )
-    match = re.search(r"([0-9]+(?:\.[0-9]+)?)% idle", top.stdout)
-    if match:
-        cpu_idle = float(match.group(1))
+    cpu_idle = cpu_idle_percent()
 
     memory_free = None
-    memory = subprocess.run(
-        ["/usr/bin/memory_pressure", "-Q"],
-        capture_output=True,
-        text=True,
-        check=False,
-    )
-    match = re.search(r"free percentage:\s*([0-9]+)%", memory.stdout)
-    if match:
-        memory_free = float(match.group(1))
+    memory_output = probe_stdout(["/usr/bin/memory_pressure", "-Q"])
+    if memory_output is None:
+        try:
+            import psutil
+
+            memory_free = float(psutil.virtual_memory().available / psutil.virtual_memory().total * 100)
+        except ImportError:
+            memory_free = None
+    else:
+        match = re.search(r"free percentage:\s*([0-9]+)%", memory_output)
+        if match:
+            memory_free = float(match.group(1))
 
     swapouts = None
-    vm = subprocess.run(["/usr/bin/vm_stat"], capture_output=True, text=True, check=False)
-    match = re.search(r"Swapouts:\s*([0-9]+)", vm.stdout)
-    if match:
-        swapouts = int(match.group(1))
+    vm_output = probe_stdout(["/usr/bin/vm_stat"])
+    if vm_output is None:
+        try:
+            import psutil
+
+            swapouts = int(psutil.swap_memory().sout)
+        except ImportError:
+            swapouts = None
+    else:
+        match = re.search(r"Swapouts:\s*([0-9]+)", vm_output)
+        if match:
+            swapouts = int(match.group(1))
 
     usage = shutil.disk_usage(ROOT)
     disk_free_gib = usage.free / (1024**3)

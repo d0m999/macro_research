@@ -22,6 +22,10 @@
 - 四个本次续跑期次已完成：`2025-02-11`（1285 条转录、14 个 Deck 画面）、`2025-01-21`（949 条、3 个）、`2025-01-14`（721 条、11 个）、`2025-01-07`（780 条、9 个）。
 - 新增包的 `manifest.related_materials.readable_html` 和索引 `readable` 均为 `null`；没有生成新的 HTML。
 - 三个 `complete_existing` 包及其三个 `_readable/*.html` 保留原样；`agent-index.json` 已登记全部 56 个验收通过的包。
+
+  > **补注（2026-09-14）**：上述三个 `_readable/*.html` 已删除，`_readable/` 目录亦已移除。该目录为独立于数据包的阅读页，不属于机器可读层（`manifest.json` / `transcript.jsonl` / `deck.jsonl` / `slides/` / `ocr/`），删除后全部 57 个包的结构与往期一致。
+  > 同步改动：三个包的 `manifest.related_materials.readable_html` 置为 `null`；`agent-index.json` 中对应三个包的 `readable` 置为 `null`，并移除 `conventions.separate_materials.readable`（现仅保留 `"source": "_source/"`）。
+  > 原句保留在此，供追溯当时口径。
 - 没有把签名媒体 URL 写入诊断文件。
 
 ## 资源策略
