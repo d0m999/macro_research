@@ -29,7 +29,7 @@ description: "建立可审计的 DCF 估值模型，包含历史财务、经营�
 4. **计算资本成本**：逐项展示 risk-free、beta、ERP、cost of debt、tax 和资本权重的来源或状态。若关键输入缺失，保留未完成状态，不伪造精确 WACC。
 5. **终值与 bridge**：保证 Gordon Growth 分母数学有效；分别展示 PV of forecast FCF、PV of terminal value、EV adjustments、equity value、diluted shares 和 per-share value。
 6. **情景与敏感性**：轴中心精确对应 base case；每个单元格完整重算。轴范围来自本模型驱动、用户输入或 `MODEL_DERIVED` 情景。
-7. **验证与交付**：运行 `python3 scripts/validate_dcf.py <file>` 做数学/结构检查，再运行统一 artifact 验证器。报告数据缺口和公式求值限制。
+7. **验证与交付**：从仓库根目录运行 `python3 .agents/skills/dcf-model/scripts/validate_dcf.py <file>` 做数学/结构检查，再运行统一 artifact 验证器。报告数据缺口和公式求值限制。
 
 ## 模型不变量
 

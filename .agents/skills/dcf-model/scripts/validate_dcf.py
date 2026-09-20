@@ -13,6 +13,31 @@ from typing import Any
 EXCEL_ERRORS = {"#VALUE!", "#DIV/0!", "#REF!", "#NAME?", "#NULL!", "#NUM!", "#N/A"}
 
 
+def formula_has_unquoted_excel_error(formula_text: str) -> bool:
+    """Return whether a formula contains an Excel error outside string literals."""
+    unquoted: list[str] = []
+    in_string = False
+    string_start: int | None = None
+    index = 0
+    while index < len(formula_text):
+        character = formula_text[index]
+        if character != '"':
+            if not in_string:
+                unquoted.append(character)
+            index += 1
+            continue
+        if in_string and index + 1 < len(formula_text) and formula_text[index + 1] == '"':
+            index += 2
+            continue
+        in_string = not in_string
+        string_start = index if in_string else None
+        index += 1
+    if string_start is not None:
+        unquoted.extend(formula_text[string_start:])
+    searchable_text = "".join(unquoted)
+    return any(token in searchable_text for token in EXCEL_ERRORS)
+
+
 def adjacent_number(sheet: Any, row: int, column: int) -> float | None:
     for offset in range(1, 5):
         value = sheet.cell(row, column + offset).value
@@ -60,7 +85,7 @@ def validate(path: Path, args: argparse.Namespace) -> dict[str, Any]:
             for cell in row:
                 if isinstance(cell.value, str) and cell.value.startswith("="):
                     formula_count += 1
-                    if any(token in cell.value for token in EXCEL_ERRORS):
+                    if formula_has_unquoted_excel_error(cell.value):
                         errors.append(f"Invalid reference literal in {sheet_name}!{cell.coordinate}")
                 cached = value_sheet[cell.coordinate].value
                 if isinstance(cached, str) and cached in EXCEL_ERRORS:

@@ -16,6 +16,15 @@ from xml.etree import ElementTree
 
 
 SUPPORTED = {".xlsx": "xlsx", ".pptx": "pptx", ".docx": "docx"}
+EXCEL_ERROR_TOKENS = {
+    "#VALUE!",
+    "#DIV/0!",
+    "#REF!",
+    "#NAME?",
+    "#NULL!",
+    "#NUM!",
+    "#N/A",
+}
 
 
 def result_template(file_format: str | None) -> dict[str, Any]:
@@ -44,6 +53,31 @@ def resolve_package_target(base: str, target: str) -> str:
     if target.startswith("/"):
         return target.lstrip("/")
     return posixpath.normpath(posixpath.join(base, target))
+
+
+def formula_has_unquoted_excel_error(formula_text: str) -> bool:
+    """Return whether a formula contains an Excel error outside string literals."""
+    unquoted: list[str] = []
+    in_string = False
+    string_start: int | None = None
+    index = 0
+    while index < len(formula_text):
+        character = formula_text[index]
+        if character != '"':
+            if not in_string:
+                unquoted.append(character)
+            index += 1
+            continue
+        if in_string and index + 1 < len(formula_text) and formula_text[index + 1] == '"':
+            index += 2
+            continue
+        in_string = not in_string
+        string_start = index if in_string else None
+        index += 1
+    if string_start is not None:
+        unquoted.extend(formula_text[string_start:])
+    searchable_text = "".join(unquoted)
+    return any(token in searchable_text for token in EXCEL_ERROR_TOKENS)
 
 
 def safe_package_names(archive: zipfile.ZipFile) -> tuple[bool, list[str]]:
@@ -126,7 +160,6 @@ def validate_xlsx(archive: zipfile.ZipFile, result: dict[str, Any]) -> bool:
     formula_count = 0
     formula_xml_errors: list[str] = []
     formula_text_errors: list[str] = []
-    excel_error_tokens = {"#VALUE!", "#DIV/0!", "#REF!", "#NAME?", "#NULL!", "#NUM!", "#N/A"}
     for name in sorted(n for n in names if n.startswith("xl/worksheets/") and n.endswith(".xml")):
         try:
             root = parse_xml(archive, name)
@@ -134,7 +167,7 @@ def validate_xlsx(archive: zipfile.ZipFile, result: dict[str, Any]) -> bool:
                 if node.tag.endswith("}f"):
                     formula_count += 1
                     formula_text = node.text or ""
-                    if any(token in formula_text for token in excel_error_tokens):
+                    if formula_has_unquoted_excel_error(formula_text):
                         formula_text_errors.append(f"{name}: {formula_text}")
                 if node.tag.endswith("}c") and node.attrib.get("t") == "e":
                     cached_error = next(
@@ -231,13 +264,22 @@ def try_quick_look(path: Path, result: dict[str, Any]) -> None:
         }
         return
     with tempfile.TemporaryDirectory(prefix="financial-artifact-preview-") as directory:
-        completed = subprocess.run(
-            [qlmanage, "-t", "-s", "1400", "-o", directory, str(path)],
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL,
-            timeout=30,
-            check=False,
-        )
+        try:
+            completed = subprocess.run(
+                [qlmanage, "-t", "-s", "1400", "-o", directory, str(path)],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                timeout=30,
+                check=False,
+            )
+        except subprocess.TimeoutExpired:
+            result["visual_review"] = {
+                "status": "unverified",
+                "method": "Quick Look thumbnail",
+                "marker": "FULL_RENDER_UNVERIFIED",
+                "detail": "Quick Look timed out after 30 seconds; no rendered preview was verified.",
+            }
+            return
         previews = [item.name for item in Path(directory).iterdir()]
     result["visual_review"] = {
         "status": "thumbnail_generated" if completed.returncode == 0 and previews else "unverified",
