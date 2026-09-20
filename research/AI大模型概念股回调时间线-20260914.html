@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>美股 AI 大模型概念股：这轮下跌从什么时候开始</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#ffffff; --line:#e5e7eb; --ink:#1a1d21; --ink2:#4b5158; --ink3:#8b9198;
+    --red:#d92b2b; --green:#0f9d58; --blue:#2563eb; --amber:#b45309; --amberbg:#fff7ed;
+    --radius:12px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+       line-height:1.65;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1040px;margin:0 auto;padding:32px 22px 64px;}
+  h1{font-size:26px;line-height:1.35;margin:0 0 8px;letter-spacing:-.3px;}
+  .sub{color:var(--ink3);font-size:13px;margin-bottom:26px;}
+  .sub b{color:var(--ink2);font-weight:600;}
+  h2{font-size:18px;margin:38px 0 14px;padding-left:11px;border-left:4px solid var(--ink);}
+  h3{font-size:15px;margin:22px 0 10px;color:var(--ink2);}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;}
+  .lead{background:#fff;border:1px solid var(--line);border-left:5px solid var(--ink);
+        border-radius:var(--radius);padding:20px 22px;margin-bottom:8px;}
+  .lead p{margin:0 0 10px;font-size:15px;}
+  .lead p:last-child{margin-bottom:0;}
+  .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 4px;}
+  .kpi{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 17px;}
+  .kpi .lab{font-size:12px;color:var(--ink3);letter-spacing:.4px;margin-bottom:7px;}
+  .kpi .big{font-size:22px;font-weight:700;letter-spacing:-.4px;}
+  .kpi .note{font-size:12.5px;color:var(--ink2);margin-top:6px;line-height:1.5;}
+  .red{color:var(--red);} .green{color:var(--green);} .blue{color:var(--blue);} .amber{color:var(--amber);}
+  .chart{width:100%;height:400px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:6px;}
+  .chart.sm{height:340px;}
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);
+        border-radius:var(--radius);overflow:hidden;font-size:13.5px;}
+  th,td{padding:9px 11px;text-align:right;border-bottom:1px solid #f0f1f3;white-space:nowrap;}
+  th{background:#fafbfc;color:var(--ink2);font-weight:600;font-size:12.5px;text-align:right;}
+  th:first-child,td:first-child{text-align:left;}
+  td.name{font-weight:600;}
+  td.tag{color:var(--ink3);font-size:12px;font-weight:400;}
+  tr:last-child td{border-bottom:none;}
+  tbody tr:hover{background:#fafbfc;}
+  .timeline{position:relative;margin:6px 0 0;padding-left:26px;}
+  .timeline:before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line);}
+  .tl{position:relative;margin-bottom:16px;}
+  .tl:before{content:"";position:absolute;left:-24px;top:6px;width:11px;height:11px;border-radius:50%;
+             background:#fff;border:2.5px solid var(--ink3);}
+  .tl.hot:before{border-color:var(--red);}
+  .tl.cool:before{border-color:var(--green);}
+  .tl .dt{font-size:12.5px;color:var(--ink3);font-weight:600;letter-spacing:.3px;}
+  .tl .tt{font-size:14.5px;font-weight:650;margin:1px 0 2px;}
+  .tl .dd{font-size:13px;color:var(--ink2);}
+  ul{margin:8px 0 0;padding-left:20px;font-size:14px;}
+  li{margin-bottom:6px;}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;}
+  .box h4{margin:0 0 8px;font-size:14px;}
+  .box p{font-size:13.5px;color:var(--ink2);margin:0 0 8px;}
+  .warn{background:var(--amberbg);border:1px solid #fed7aa;border-radius:var(--radius);
+        padding:14px 18px;font-size:13.5px;color:#7c3f08;margin-top:16px;}
+  .disc{margin-top:34px;padding:14px 18px;background:#fff;border:1px dashed var(--line);
+        border-radius:var(--radius);font-size:12.5px;color:var(--ink3);line-height:1.7;}
+  .src{font-size:12px;color:var(--ink3);margin-top:8px;}
+  @media (max-width:760px){
+    .kpis,.two{grid-template-columns:1fr;}
+    .wrap{padding:20px 14px 48px;}
+    table{font-size:12px;}
+    th,td{padding:7px 8px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>美股 AI 大模型概念股：这轮下跌从什么时候开始？</h1>
+  <div class="sub">
+    数据基准：<b>2026-09-11 美股收盘</b>（9/14 为周一盘前，美股尚未开盘）　·　数据源：<b>WeStock 行情库</b>（日线 close 口径）　·　报告生成：2026-09-14
+  </div>
+
+  <div class="lead">
+    <p><b>一句话答案：不是一次跌，是两波，起点不同。</b></p>
+    <p>① <b>第一波（主跌）：2026 年 6 月下旬见顶。</b>半导体/算力这条线在 <b>6/22</b> 见顶（费半 SOX 历史高点），7/17 跌入技术性熊市，<b>7/29</b> 见底；等权最大回撤约 <b class="red">-29%</b>。而"大模型/云/应用"这一支其实更早，<b>6 月 1 日</b>就见顶了。</p>
+    <p>② <b>第二波（正在发生）：2026 年 9 月 10 日。</b>导火索是 PPI 升温 + 油价破百 + 30 年期美债收益率创 2007 年以来新高，市场对美联储加息的定价骤升；AI 硬件/存储/光通信全线回落。今天 9/14 盘前 AI 硬件再度普跌 <b class="red">3%~6.5%</b>。</p>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi">
+      <div class="lab">第一波起点 · 板块整体</div>
+      <div class="big red">2026-06-22</div>
+      <div class="note">半导体/算力见顶。7/17 费半较高点回撤 &gt;20%，正式跌入技术性熊市；7/29 见底。</div>
+    </div>
+    <div class="kpi">
+      <div class="lab">第一波起点 · 大模型/云/应用</div>
+      <div class="big red">2026-06-01</div>
+      <div class="note">甲骨文、CoreWeave、博通等"模型+资本开支"标的更早见顶，比半导体早约三周。</div>
+    </div>
+    <div class="kpi">
+      <div class="lab">第二波起点 · 至今</div>
+      <div class="big red">2026-09-10</div>
+      <div class="note">通胀+加息叙事触发；9/11 指数反弹但 AI 硬件未修复，9/14 盘前再度下挫。</div>
+    </div>
+  </div>
+
+  <h2>一、2026 年 AI 板块走势全景</h2>
+  <p style="font-size:14px;color:var(--ink2);margin:0 0 14px;">
+    下图把 AI 相关标的按等权归一化处理（2026-01-02 首个收盘 = 1.00），拆成两条线看。可以清楚看到：
+    <b>大模型/云/应用这条线在 6 月初先见顶、7 月下旬见底；半导体/算力这条线在 6 月下旬见顶、7 月底见底。</b>
+    两条线在 8 月同步修复，9 月 8~9 日几乎回到前高附近，随后 9/10 掉头。
+  </p>
+  <div id="chart1" class="chart"></div>
+  <div class="src">数据源：WeStock 行情库日线收盘价；两条曲线均为组内等权归一化（每 3 个交易日取样）。</div>
+
+  <h2>二、个股见顶时间高度分化</h2>
+  <p style="font-size:14px;color:var(--ink2);margin:0 0 14px;">
+    "AI 概念股什么时候开始跌"没有统一答案——<b>同样是 AI 主线，见顶时间从 1 月拉到 8 月底，跨度超过半年。</b>
+    下表按「当前距年内收盘高点回撤」排序，回撤越深越靠前。
+  </p>
+  <table id="tbl1">
+    <thead>
+      <tr><th>标的</th><th>链条位置</th><th>年内收盘高点</th><th>见顶日</th><th>阶段低点</th><th>峰谷回撤</th><th>9/11 收盘</th><th>当前距高点</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div class="src">数据源：WeStock 行情库，2026-01-02 至 2026-09-11 日线收盘价。峰谷回撤 = 阶段低点 / 年内收盘高点 − 1；当前距高点 = 9/11 收盘 / 年内收盘高点 − 1。</div>
+
+  <h2>三、三个关键节点</h2>
+  <div class="timeline">
+    <div class="tl hot">
+      <div class="dt">2026-06-01 · 06-22</div>
+      <div class="tt">见顶：大模型/云/应用先跌，半导体跟上</div>
+      <div class="dd">甲骨文 6/1 见顶（248.15）、博通 6/2、超微电脑 6/2、美光/AMD/台积电 6 月底；费半与 SOXX 拖到 <b>6/22</b> 才创历史高点。英伟达更早，<b>5/14</b> 就已见顶。</div>
+    </div>
+    <div class="tl hot">
+      <div class="dt">2026-07-16 · 07-17</div>
+      <div class="tt">触发与确认：Kimi K3 开源 + 资本开支回报质疑 + 杠杆去化</div>
+      <div class="dd">7/16 月之暗面发布 Kimi K3 开源大模型，冲击"闭源模型/算力永远紧缺"的叙事；叠加市场质疑 6,000 亿美元级的 hyperscaler 资本开支能否兑现回报、半导体主题基金单周净流出创本世纪纪录。<b>7/17 费半较 6/22 高点回撤超 20%，正式进入技术性熊市</b>，单周跌约 10%，为 2025 年 4 月以来最大周跌幅。</div>
+    </div>
+    <div class="tl cool">
+      <div class="dt">2026-07-29</div>
+      <div class="tt">第一波见底</div>
+      <div class="dd">等权口径下 7/29 见底（SOXX 465.00、MU 739.00、INTC 81.88、AMD 429.56），峰谷最大回撤约 <b>-29%</b>。8 月全线修复，微软 7/31 单周 +21.8%，Palantir 8 月单月 +51%，AMD、美光 9 月初创出或逼近新高。</div>
+    </div>
+    <div class="tl hot">
+      <div class="dt">2026-09-10 → 现在</div>
+      <div class="tt">第二波：通胀与加息叙事触发</div>
+      <div class="dd">8 月 PPI 环比 +0.4%、同比 5.4%；布伦特原油突破 105 美元；30 年期美债收益率升至 2007 年以来最高，市场对美联储下周加息的概率定价升至约 70%。<b>9/10 费半 -2.66%</b>，美光 -4.90%、英特尔 -5.57%、AMD -3.36%、英伟达 -2.26%。9/11 三大指数反弹，但 AI 硬件基本没跟上；<b>9/14 盘前再度普跌 3%~6.5%。</b></div>
+    </div>
+  </div>
+
+  <h2>四、9/10 与 9/14 盘前：跌的是哪些</h2>
+  <p style="font-size:14px;color:var(--ink2);margin:0 0 14px;">
+    第二波下跌的结构很清晰——<b>越靠近"算力硬件"跌得越狠，越靠近"平台/应用"跌得越少</b>。软件代表 Palantir 盘前甚至是涨的，微软几乎不动。
+  </p>
+  <div id="chart2" class="chart sm"></div>
+  <div class="src">数据源：WeStock 行情库。9/10 为收盘涨跌幅；9/14 为周一美股盘前（北京时间 9/14 18:30 前后）报价相对 9/11 收盘的涨跌幅。</div>
+
+  <h2>五、为什么会跌：两层原因，别混为一谈</h2>
+  <div class="two">
+    <div class="box">
+      <h4>第一波（6-7 月）：AI 自己的估值与筹码问题</h4>
+      <p>① 涨太多——费半 3 月低点到 6 月高点涨超 100%，二季度单季 +81%，闪迪半年 +857%，价格透支未来业绩。</p>
+      <p>② 筹码太挤——半导体成散户热门标的，杠杆 ETF 规模激增，上涨被动加仓、下跌被动抛售，放大波动；7 月 SOX 单月振幅创 2020 年以来最极端。</p>
+      <p>③ 叙事被挑战——Kimi K3 让市场第一次认真质疑"闭源模型+算力永远紧缺"；同时 Meta、微软出租闲置算力，削弱溢价逻辑。</p>
+      <p>④ 利率环境转鹰——中东冲突后美联储官员转鹰，年内加息预期升温，长久期成长股估值被压。</p>
+    </div>
+    <div class="box">
+      <h4>第二波（9 月）：主要是宏观，不是 AI 基本面</h4>
+      <p>① 通胀反弹——8 月 PPI 同比 5.4%，能源成本向通胀传导；欧央行已二次加息。</p>
+      <p>② 油价破百——布伦特两天从 101 涨破 105；霍尔木兹海峡地缘持续。</p>
+      <p>③ 长端利率创新高——30 年期美债收益率 5.37%，2007 年以来最高，直接压缩高估值资产。</p>
+      <p>④ 加息定价——市场已完全定价最迟 10 月加息，下周加息概率约 70%。</p>
+      <p style="margin-bottom:0;"><b>这一波更像是"分母端"（利率）打击，而不是"分子端"（AI 盈利）恶化。</b></p>
+    </div>
+  </div>
+
+  <h2>六、接下来盯什么</h2>
+  <ul>
+    <li><b>利率波动率而非利率水平</b>：市场能否消化加息，关键看 6M×10Y vol 是否抬升；若长端只是台阶式上移、vol 不炸，估值下修是渐进的。</li>
+    <li><b>hyperscaler 资本开支指引是否继续上调</b>：这是 8 月修复的核心支撑，一旦转向，第二波会从"估值杀"升级为"逻辑杀"。</li>
+    <li><b>存储/HBM 价格与紧缺叙事</b>：美光、SK 海力士是本轮最拥挤也最真实紧缺的一环，它的价格走势是 AI 需求的高频代理。</li>
+    <li><b>9/10 之后的量能</b>：9/11 指数反弹而 AI 硬件未跟，属于"背离"；若 9/14 晚间继续放量下跌，则第二波从 1 天扩展为一段。</li>
+    <li><b>分化是否延续</b>：平台/应用（微软、Palantir）相对抗跌，若这种"从硬件转向现金流平台"的轮动持续，AI 主线不会整体终结，但内部结构会重排。</li>
+  </ul>
+
+  <div class="warn">
+    <b>口径提示：</b>"AI 大模型概念股"没有统一定义。本报告把标的分为"算力/半导体"与"大模型/云/应用"两组讨论；
+    SOX 指数在不同数据源存在多个点位口径（11,433 / 14,655 等），本报告统一使用 <b>SOXX ETF</b> 日线口径作为费半代理（6/22 高点 655.01，现 527.07，距高 -19.5%）。
+    另：9/14 为周一，美股尚未开盘，当日数据为盘前报价。
+  </div>
+
+  <div class="disc">
+    <b>免责声明</b>：以上内容基于公开数据和量化分析，仅供参考，不构成投资建议。市场有风险，投资需谨慎。任何投资决策应结合个人风险承受能力、资金状况和投资目标独立判断，必要时咨询持牌专业机构。过往表现不预示未来收益。<br>
+    <b>数据来源</b>：WeStock 行情库（日线/实时行情）；宏观与事件描述参考公开财经报道（第一财经、中国基金报、证券时报等），属非一手来源，需核实原文。
+  </div>
+
+</div>
+
+<script>
+var D = {"dates": ["01-02", "01-07", "01-12", "01-15", "01-21", "01-26", "01-29", "02-03", "02-06", "02-11", "02-17", "02-20", "02-25", "03-02", "03-05", "03-10", "03-13", "03-18", "03-23", "03-26", "03-31", "04-06", "04-09", "04-14", "04-17", "04-22", "04-27", "04-30", "05-05", "05-08", "05-13", "05-18", "05-21", "05-27", "06-01", "06-04", "06-09", "06-12", "06-17", "06-23", "06-26", "07-01", "07-07", "07-10", "07-15", "07-20", "07-23", "07-28", "07-31", "08-05", "08-10", "08-13", "08-18", "08-21", "08-26", "08-31", "09-03", "09-09", "09-11"], "semi": [1.0, 1.0075, 1.0188, 1.0409, 1.0945, 1.0578, 1.1127, 1.0815, 1.0928, 1.1382, 1.1014, 1.1195, 1.1611, 1.1121, 1.0993, 1.1189, 1.0936, 1.1103, 1.0501, 1.0199, 1.0204, 1.0744, 1.1884, 1.2765, 1.3136, 1.3464, 1.4581, 1.4832, 1.5833, 1.7754, 1.7851, 1.6588, 1.7401, 1.863, 1.9328, 1.9304, 1.7954, 1.854, 1.8733, 1.9278, 1.9117, 1.8884, 1.7664, 1.8444, 1.755, 1.6652, 1.7923, 1.5794, 1.5978, 1.7187, 1.6917, 1.8028, 1.7344, 1.7033, 1.6845, 1.6955, 1.7004, 1.8148, 1.7786], "app": [1.0, 1.0212, 1.0551, 1.0358, 1.0005, 1.0439, 1.0308, 0.9901, 0.9274, 0.9402, 0.9136, 0.9232, 0.9379, 0.9074, 0.9213, 0.9132, 0.91, 0.9162, 0.915, 0.8638, 0.8706, 0.8866, 0.9198, 1.0178, 1.0547, 1.0813, 1.0507, 1.0364, 1.087, 1.0789, 1.0604, 1.0473, 1.0543, 1.0519, 1.149, 1.0836, 1.0093, 0.9805, 1.0065, 0.9513, 0.9117, 0.9322, 0.9423, 0.9506, 0.9475, 0.9155, 0.8784, 0.8599, 0.9242, 1.0149, 1.0392, 1.0628, 1.0026, 1.0045, 1.0139, 1.017, 1.0268, 1.0344, 1.0197], "nvda": [1.0, 1.0014, 0.9793, 0.9905, 0.9707, 0.9874, 1.0194, 0.9549, 0.9818, 1.0064, 0.9795, 1.0051, 1.0355, 0.9663, 0.9708, 0.9784, 0.9545, 0.9553, 0.9301, 0.9068, 0.9235, 0.9406, 0.9738, 1.0406, 1.0679, 1.0723, 1.147, 1.0568, 1.0405, 1.1395, 1.1958, 1.1772, 1.1624, 1.1258, 1.188, 1.1579, 1.1024, 1.0865, 1.0837, 1.0593, 1.0195, 1.0462, 1.0428, 1.1171, 1.1252, 1.0764, 1.1054, 1.0432, 1.063, 1.1608, 1.152, 1.193, 1.1636, 1.137, 1.1102, 1.1691, 1.2097, 1.1844, 1.1559], "orcl": [1.0, 0.9853, 1.0458, 0.9701, 0.8885, 0.9322, 0.8636, 0.7903, 0.7298, 0.803, 0.7867, 0.7566, 0.7557, 0.7626, 0.7909, 0.7634, 0.7926, 0.7813, 0.7886, 0.7297, 0.7517, 0.7437, 0.7044, 0.8329, 0.8945, 0.9581, 0.8838, 0.8246, 0.9471, 1.0012, 0.9696, 0.9535, 0.9696, 0.9757, 1.2679, 1.2076, 1.0516, 0.9408, 0.9378, 0.8439, 0.7589, 0.7281, 0.7235, 0.7186, 0.677, 0.6202, 0.6134, 0.6129, 0.6636, 0.7378, 0.7718, 0.7982, 0.7296, 0.7484, 0.7607, 0.7619, 0.7871, 0.8259, 0.7679], "mu": [1.0, 1.0765, 1.0965, 1.0672, 1.2336, 1.2336, 1.3816, 1.3298, 1.2513, 1.3009, 1.2675, 1.3575, 1.3601, 1.3083, 1.2588, 1.278, 1.351, 1.4639, 1.2819, 1.1269, 1.0711, 1.1976, 1.3363, 1.4763, 1.4427, 1.5455, 1.6631, 1.6396, 2.0297, 2.3677, 2.5478, 2.1607, 2.4161, 2.9434, 3.2829, 3.1577, 2.9671, 3.1121, 3.3073, 3.3345, 3.5899, 3.2727, 2.975, 3.1047, 2.8669, 2.7438, 3.1393, 2.6014, 2.6093, 2.8317, 2.7297, 3.0113, 2.9826, 3.0651, 2.9751, 3.0395, 3.0377, 3.2584, 3.0919], "rec_names": ["AMD", "CoreWeave", "英特尔", "美光", "甲骨文", "博通", "台积电ADR", "英伟达", "Palantir", "微软"], "rec_0910": [-3.36, -6.13, -5.57, -4.9, -5.38, -0.97, -1.68, -2.26, -2.18, 0.16], "rec_pre": [-5.13, -6.51, -5.67, -4.96, -3.27, -3.01, -2.99, -2.85, 0.33, -0.54], "rows": [{"code": "usORCL", "name": "甲骨文 (ORCL)", "tag": "AI 云/OCI", "peak_d": "2026-06-01", "peak_c": 248.15, "tro_d": "2026-07-24", "tro_c": 114.99, "cur": 150.28, "dd": -39.4, "pk_dd": -53.7, "ytd": -23.2}, {"code": "usCRWV", "name": "CoreWeave (CRWV)", "tag": "AI 云", "peak_d": "2026-05-06", "peak_c": 137.98, "tro_d": "2026-07-29", "tro_c": 60.82, "cur": 88.99, "dd": -35.5, "pk_dd": -55.9, "ytd": 12.2}, {"code": "usVRT", "name": "维谛 (VRT)", "tag": "数据中心电力", "peak_d": "2026-05-14", "peak_c": 376.23, "tro_d": "2026-07-29", "tro_c": 223.04, "cur": 257.06, "dd": -31.7, "pk_dd": -40.7, "ytd": 46.4}, {"code": "usINTC", "name": "英特尔 (INTC)", "tag": "CPU/代工", "peak_d": "2026-06-22", "peak_c": 140.94, "tro_d": "2026-07-29", "tro_c": 81.88, "cur": 102.94, "dd": -27.0, "pk_dd": -41.9, "ytd": 161.4}, {"code": "usAVGO", "name": "博通 (AVGO)", "tag": "定制 ASIC", "peak_d": "2026-06-02", "peak_c": 481.57, "tro_d": "2026-08-26", "tro_c": 355.59, "cur": 361.99, "dd": -24.8, "pk_dd": -26.2, "ytd": 4.1}, {"code": "usSMCI", "name": "超微电脑 (SMCI)", "tag": "AI 服务器", "peak_d": "2026-06-02", "peak_c": 50.17, "tro_d": "2026-07-20", "tro_c": 23.83, "cur": 40.1, "dd": -20.1, "pk_dd": -52.5, "ytd": 29.5}, {"code": "usMU", "name": "美光 (MU)", "tag": "存储/HBM", "peak_d": "2026-06-25", "peak_c": 1213.56, "tro_d": "2026-07-29", "tro_c": 739.0, "cur": 975.26, "dd": -19.6, "pk_dd": -39.1, "ytd": 209.2}, {"code": "usSOXX", "name": "半导体ETF(SOXX)", "tag": "费半代理", "peak_d": "2026-06-22", "peak_c": 655.01, "tro_d": "2026-07-29", "tro_c": 465.0, "cur": 527.07, "dd": -19.5, "pk_dd": -29.0, "ytd": 68.0}, {"code": "usGOOGL", "name": "谷歌 (GOOGL)", "tag": "模型+云", "peak_d": "2026-05-13", "peak_c": 402.62, "tro_d": "2026-07-23", "tro_c": 317.69, "cur": 338.5, "dd": -15.9, "pk_dd": -21.1, "ytd": 7.4}, {"code": "usMETA", "name": "Meta (META)", "tag": "模型+资本开支", "peak_d": "2026-01-29", "peak_c": 738.31, "tro_d": "2026-03-27", "tro_c": 525.72, "cur": 648.03, "dd": -12.2, "pk_dd": -28.8, "ytd": -0.4}, {"code": "usAMD", "name": "AMD (AMD)", "tag": "AI 加速卡", "peak_d": "2026-06-30", "peak_c": 580.91, "tro_d": "2026-07-29", "tro_c": 429.56, "cur": 516.13, "dd": -11.2, "pk_dd": -26.1, "ytd": 131.0}, {"code": "usPLTR", "name": "Palantir (PLTR)", "tag": "AI 应用", "peak_d": "2026-08-31", "peak_c": 186.38, "tro_d": "2026-09-10", "tro_c": 165.86, "cur": 167.23, "dd": -10.3, "pk_dd": -11.0, "ytd": -0.4}, {"code": "usAMZN", "name": "亚马逊 (AMZN)", "tag": "云+模型", "peak_d": "2026-08-03", "peak_c": 284.02, "tro_d": "2026-09-10", "tro_c": 251.89, "cur": 256.78, "dd": -9.6, "pk_dd": -11.3, "ytd": 13.4}, {"code": "usTSM", "name": "台积电ADR (TSM)", "tag": "代工", "peak_d": "2026-06-30", "peak_c": 477.57, "tro_d": "2026-07-29", "tro_c": 374.67, "cur": 433.24, "dd": -9.3, "pk_dd": -21.5, "ytd": 35.6}, {"code": "usNVDA", "name": "英伟达 (NVDA)", "tag": "AI 算力核心", "peak_d": "2026-05-14", "peak_c": 235.74, "tro_d": "2026-07-29", "tro_c": 190.01, "cur": 218.29, "dd": -7.4, "pk_dd": -19.4, "ytd": 15.6}, {"code": "usMSFT", "name": "微软 (MSFT)", "tag": "云+模型", "peak_d": "2026-08-28", "peak_c": 513.53, "tro_d": "2026-09-09", "tro_c": 491.65, "cur": 495.63, "dd": -3.5, "pk_dd": -4.3, "ytd": 4.8}]};
+
+var RED = '#d92b2b', GREEN = '#0f9d58', BLUE = '#2563eb', GREY = '#8b9198', AMBER = '#b45309';
+
+function nearest(arr, t) {
+  var bi = 0, bd = 1e9;
+  for (var i = 0; i < arr.length; i++) {
+    var a = arr[i].split('-').map(Number);
+    var b = t.split('-').map(Number);
+    var diff = Math.abs(a[0] * 31 + a[1] - (b[0] * 31 + b[1]));
+    if (diff < bd) { bd = diff; bi = i; }
+  }
+  return bi;
+}
+
+var chart1 = echarts.init(document.getElementById('chart1'));
+chart1.setOption({
+  tooltip: { trigger: 'axis', valueFormatter: function (v) { return v === null || v === undefined ? '-' : (v * 100).toFixed(1); } },
+  legend: { data: ['算力 / 半导体（等权）', '大模型 / 云 / 应用（等权）', '英伟达', '甲骨文', '美光'], top: 6, textStyle: { color: '#4b5158', fontSize: 12 } },
+  grid: { left: 52, right: 24, top: 46, bottom: 40 },
+  xAxis: {
+    type: 'category',
+    data: D.dates,
+    axisLabel: { color: GREY, fontSize: 11, interval: 9 },
+    axisLine: { lineStyle: { color: '#e5e7eb' } },
+    axisTick: { show: false }
+  },
+  yAxis: {
+    type: 'value',
+    name: '归一化（01-02 = 1.00）',
+    nameTextStyle: { color: GREY, fontSize: 11 },
+    axisLabel: { color: GREY, fontSize: 11 },
+    splitLine: { lineStyle: { color: '#f0f1f3' } }
+  },
+  series: [
+    {
+      name: '算力 / 半导体（等权）', type: 'line', smooth: true, symbol: 'none',
+      lineStyle: { width: 2.6, color: BLUE }, itemStyle: { color: BLUE },
+      data: D.semi,
+      markLine: {
+        silent: true, symbol: 'none',
+        label: { formatter: '6/22 算力见顶', color: RED, fontSize: 11, position: 'insideEndTop' },
+        lineStyle: { color: RED, type: 'dashed', width: 1.4 },
+        data: [{ xAxis: nearest(D.dates, '06-22') }]
+      },
+      markPoint: {
+        symbol: 'circle', symbolSize: 9,
+        itemStyle: { color: GREEN },
+        label: { formatter: '7/29 见底', color: GREEN, fontSize: 11, position: 'bottom' },
+        data: [{ coord: [nearest(D.dates, '07-29'), D.semi[nearest(D.dates, '07-29')]] }]
+      }
+    },
+    {
+      name: '大模型 / 云 / 应用（等权）', type: 'line', smooth: true, symbol: 'none',
+      lineStyle: { width: 2.6, color: RED }, itemStyle: { color: RED },
+      data: D.app,
+      markLine: {
+        silent: true, symbol: 'none',
+        label: { formatter: '6/1 应用端先见顶', color: AMBER, fontSize: 11, position: 'insideStartTop' },
+        lineStyle: { color: AMBER, type: 'dashed', width: 1.4 },
+        data: [{ xAxis: nearest(D.dates, '06-01') }]
+      }
+    },
+    { name: '英伟达', type: 'line', smooth: true, symbol: 'none', lineStyle: { width: 1.3, color: '#94a3b8' }, data: D.nvda },
+    { name: '甲骨文', type: 'line', smooth: true, symbol: 'none', lineStyle: { width: 1.3, color: '#c084fc' }, data: D.orcl },
+    { name: '美光', type: 'line', smooth: true, symbol: 'none', lineStyle: { width: 1.3, color: '#14b8a6' }, data: D.mu }
+  ]
+});
+
+var chart2 = echarts.init(document.getElementById('chart2'));
+chart2.setOption({
+  tooltip: { trigger: 'axis', valueFormatter: function (v) { return v.toFixed(2) + '%'; } },
+  legend: { data: ['9/10 单日', '9/14 盘前'], top: 6, textStyle: { color: '#4b5158', fontSize: 12 } },
+  grid: { left: 66, right: 30, top: 44, bottom: 26 },
+  xAxis: {
+    type: 'value', axisLabel: { color: GREY, fontSize: 11, formatter: '{value}%' },
+    splitLine: { lineStyle: { color: '#f0f1f3' } }
+  },
+  yAxis: {
+    type: 'category', data: D.rec_names.slice().reverse(),
+    axisLabel: { color: '#4b5158', fontSize: 12 },
+    axisLine: { lineStyle: { color: '#e5e7eb' } }, axisTick: { show: false }
+  },
+  series: [
+    { name: '9/10 单日', type: 'bar', barWidth: 11, itemStyle: { color: '#93c5fd' }, data: D.rec_0910.slice().reverse() },
+    { name: '9/14 盘前', type: 'bar', barWidth: 11, itemStyle: { color: RED }, data: D.rec_pre.slice().reverse() }
+  ]
+});
+
+var tb = document.querySelector('#tbl1 tbody');
+var html = '';
+for (var i = 0; i < D.rows.length; i++) {
+  var r = D.rows[i];
+  var cls = r.dd < -15 ? 'red' : (r.dd < -8 ? 'amber' : 'green');
+  html += '<tr>'
+    + '<td class="name">' + r.name + '</td>'
+    + '<td class="tag">' + r.tag + '</td>'
+    + '<td>' + r.peak_c.toFixed(2) + '</td>'
+    + '<td>' + r.peak_d + '</td>'
+    + '<td>' + r.tro_d + '　' + r.tro_c.toFixed(2) + '</td>'
+    + '<td class="red">' + r.pk_dd.toFixed(1) + '%</td>'
+    + '<td>' + r.cur.toFixed(2) + '</td>'
+    + '<td class="' + cls + '"><b>' + r.dd.toFixed(1) + '%</b></td>'
+    + '</tr>';
+}
+tb.innerHTML = html;
+
+window.addEventListener('resize', function () { chart1.resize(); chart2.resize(); });
+</script>
+</body>
+</html>
