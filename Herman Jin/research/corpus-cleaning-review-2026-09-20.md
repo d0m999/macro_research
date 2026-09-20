@@ -171,7 +171,7 @@
 
 ### 10.5 挂起 5+1 项
 
-1. `audio-worklist.md` / `asr-results.json` 未归档进仓库 —— 84 条封存的唯一前提。
+1. ~~`audio-worklist.md` / `asr-results.json` 未归档进仓库~~ → 已归档：`research/audio-worklist-2026-09-20.md`（233 条）/`research/asr-results-2026-09-20.json`（269 clips），84 条封存前提已满足。
 2. 5 组保留项：`利普臺`×2、`MyOption`、`Mao`、`DPC`@2026-01-06。
 3. 索引库未落盘。
 4. X 侧未处理。
