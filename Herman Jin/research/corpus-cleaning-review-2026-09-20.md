@@ -140,50 +140,40 @@
 
 ## 10. 全轮次总账（2026-09-20 14:35 结算）
 
-### 10.1 七个清洗轮次
+### 10.1 六个清洗轮次
 
 | # | commit | 规模 | 方法 |
 |---|---|---|---|
-| 1 | `363d76b` | 59 包（含三个新包首次入库 2,835 行）／约 5,380 处替换 | Tier A/B/C 错词表（字面替换） |
-| 2 | `9d0b90f` | 8 包 / 23 行 | Tier A/B 大小写变体 + 可文本判定的 `needs_review` |
+| 1 | `363d76b` | 59 包（含三个新包首次入库 2,835 行）／约 **5,380 处**替换 | Tier A/B/C 错词表 |
+| 2 | `9d0b90f` | 8 包 / 23 行 | 大小写变体 + 可文本判定项 |
 | 3 | `e5d3251` | 13 包 / 26 行 | token-mining + Tier C 变体 |
-| 4 | `e129a04` | 33 包 / 109 行 | review 后：高置信清单 + 存疑 7 组上下文/新闻判定（含 41 行前轮遗留） |
-| 5 | `5dd4158` | 27 包 / 112 行 | **音频验证轮**：faster-whisper-small 重听 269 clip，裁定 232 条候选 |
-| 6 | `af53b56` | 3 包 / 3 行 | 保留项文本判定（ON RRP / DeepSeek / Lip-Bu Tan） |
+| 4 | `e129a04` | 33 包 / 109 行 | review 后：高置信清单 + 存疑 7 组上下文/新闻判定 |
+| 5 | `5dd4158` | 27 包 / 112 行 | **音频验证轮**（269 clip 重听，裁定 232 条） |
+| 6 | `af53b56` | 3 包 / 3 行 | 保留项判定（ON RRP / DeepSeek / Lip-Bu Tan） |
 
-> 另有 `a9a1f31`（3 包 `readable_html` 置 `null`）属归档结构统一，不计入清洗。
+另 `a9a1f31` 是归档结构统一（`readable_html` 置 null），不计入清洗。**累计文本替换：轮 2-6 = 273 行**，加首轮全量。
 
-**累计文本替换（轮 2-6）**：273 行。**轮 1** 为全量首轮（约 5,380 处）。
+### 10.2 修了什么
 
-### 10.2 修正类型分布
+- **专名**：`Abago→Avago`、`Babao→Marvell`、`Allocore/Oroco/AUROCO→Oracle`、`Corecom→Qualcomm`、`GSMG→TSMC`、`Nedrillion→Nvidia`、`Lemon Brother→Lehman Brothers`
+- **宏观/货币市场**：`ONI→ON RRP`、`BLG→BOJ`、`NIN→earning`、`CTA-Resparity→risk parity`、`tel risk→tail risk`
+- **一词多义（纯文本判不出）**：`Teloff` = 2×Trump put + 1×effective tariff；`WOW` = VOL / option wall
+- **中文同音**：`假方/以方/以防→甲方/乙方`、`房屋→防务`、`進價→溢價`、`7權→期權`
+- **其他**：`DPC/dpsc→DeepSeek`、`AutoLong→auto loan`、`Covif→Covid`、`Aging→AI`、`Ned→NAND`
 
-| 类型 | 实例 |
-|---|---|
-| 公司/标的专名 | `Abago→Avago`、`Babao→Marvell`、`Allocore/alloc/Oroco/AUROCO/Aurocross→Oracle`、`Corecom→Qualcomm`、`GSMG→TSMC`、`Nedrillion→Nvidia`、`Lemon Brother→Lehman Brothers` |
-| 宏观/货币市场术语 | `ONI interest resource→ON RRP interest rate`、`BLG→BOJ`、`NIN→earning`、`CTA-Resparity→CTA risk parity`、`tel risk→tail risk` |
-| 一词多义（纯文本无法判） | `Teloff`：2 处 `Trump`（Trump put）+ 1 处 `tariff`（effective tariff）；`WOW`：`VOL` / `option wall` |
-| 中文同音 | `假方/以方/以防→甲方/乙方`、`房屋→防务`、`進價→溢價`、`7權→期權`、`漫年以方→万年乙方` |
-| 其他金融/口语 | `DPC/dpsc→DeepSeek`、`AutoLong→auto loan`、`Covif→Covid`、`Aging→AI`、`Ned→NAND`、`Bound mental→fundamental` |
+### 10.3 方法演进了五步
 
-### 10.3 方法演进（四轮）
+字面错词表 → 词典过滤挖候选（2,644 token 型 → 205 个非词典候选）→ **词族近邻回扫** → **三证据法**（同段上下文／全库已有正确词形反证／外部资料闭合，缺一不改）→ **音频复核**（机器只当第二意见，同听且无解的一律保留）。
 
-1. **字面错词表**（轮 1-3）——覆盖高频专名，快，但同音变体必漏（`Tale Risk` 修了 `tel risk` 还在）。
-2. **词典过滤 + 频次挖掘**（review 提出）——2,644 token 型 → 205 个非词典候选，定位低频长尾。
-3. **词族近邻全库回扫**——修完必须按词族回扫，实测补出裸 `Resparity` 2 处。
-4. **三证据法判定**（review 确立）——同段上下文自解释 / 全库已有正确词形反证 / 外部资料闭合专名，**缺一不改**。
-5. **音频复核**（轮 5）——机器只当第二意见，与原文同听且语义无解的一律保留。
+### 10.4 全程不变式
 
-### 10.4 交付物
+59 包 / 52,518 段；**行数、seg ID、非 text 字段零变动**（每轮都做逐行 diff）；基线 `generated: 11:11:37`，59/59 回读一致。
 
-- 语料：59 包 / 52,518 段，基线 `market-overview/transcript-sha256.json`（`generated: 2026-09-20T11:11:37+08:00`），59/59 回读一致；**行数、seg ID、非 text 字段全程零变动**。
-- 文档：本报告（§1-§10）；`agent-index.json` 60 条包登记。
-- 备份：`/tmp/hj-clean-backup-20260920/`（25 个 jsonl + 旧基线）。
-- 能力固化：`herman-jin-video-archive` 技能新增「转录文本清洗」节 + 触发词。
+### 10.5 挂起 5+1 项
 
-### 10.5 挂起项
-
-1. `audio-worklist.md` / `asr-results.json` 未归档进仓库（§8 缺口）——84 条封存的唯一前提。
-2. 保留项：`利普臺`×2、`MyOption`、`Mao`、`DPC`@2026-01-06。
-3. 索引库（B3）未落盘；X 侧（B4）未处理。
-4. main 领先 origin 9 个 commit，**未 push**。
-5. 与本线无关的未提交改动：`.agents/*`(3)、`_source/_pipeline/*`(4)、`agent-index.json`。
+1. `audio-worklist.md` / `asr-results.json` 未归档进仓库 —— 84 条封存的唯一前提。
+2. 5 组保留项：`利普臺`×2、`MyOption`、`Mao`、`DPC`@2026-01-06。
+3. 索引库未落盘。
+4. X 侧未处理。
+5. **main ahead 10，未 push**。
+6. （结算核验新增）“能力已固化进 `herman-jin-video-archive` 技能”不成立：`~/.claude/skills`、`~/.agents/skills`、本仓 `.agents/skills` 均无此技能，全库零引用。技能待建。
