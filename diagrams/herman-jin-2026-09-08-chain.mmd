@@ -1,0 +1,76 @@
+%% Herman Jin《市场概述 2026-09-08》推理链
+%% 用法：任意 Mermaid 渲染器（mermaid.live / mmdc）打开即可出图
+%% 实线＝推理步；粗虚线＝分支结论；点线＝我的怀疑点
+graph TD
+    Q["听众焦虑<br/>加息会不会打崩风险资产？<br/>（他连续第三期被动回应）"]
+
+    subgraph L1["① 数据层"]
+        D1["9/4 非农 +162k，上月负值上修<br/>与他『数据会很差』的预期相反"]
+        D2["拆开：休闲酒店 +59k（世界杯）<br/>地方教育（开学季）<br/>制造 +16k / 建筑 +22k<br/>金属机械 6k·非住宅 8k → 数据中心<br/>金融·信息科技 为负"]
+        D3["3M 均值仅 71k｜时薪 3.1%（4 月 3.6%）｜周工时 40.5h"]
+        D4["通胀来自【商品】：关税传导 + 石油<br/>时薪自 26 年未抬头"]
+        D5["∴ 头条强、趋势平；输入性 ≠ 可持续<br/>加息解决不了输入性通胀"]
+    end
+
+    subgraph L2["② 利率层：两个问题 + 一个结果"]
+        R0["先回答两个问题，再看一个结果"]
+        R1["Q1 持续性？<br/>消费信贷远低于 21–22<br/>工资 +3%（非 7%）<br/>→ 否"]
+        R2["Q2 无序性？<br/>判据 6m10y swaption vol<br/>10y 4.0% → 4.81%（≈265bp）未失控<br/>→ 否"]
+        R3["结果：利率【水平】只压缩 multiple<br/>暴跌来自利率【波动率】失控 → 去杠杆<br/>已定价 2–2.5 次（至 2028-08）"]
+    end
+
+    CONC["∴ 加息 ≠ 崩盘<br/>稳步上行只是价格调整"]
+
+    subgraph L3["③ 结构层：利率该往哪去（本期最重框架）"]
+        S1["历史：长端 ≈ 名义 GDP<br/>2008 后人口·效率不增<br/>只能印钱硬撑 → 人为 1–2% 利差<br/>≡ 日本 YCC"]
+        S2["AI 首次真实提升效率<br/>→ 名义 GDP 6–6.5%（卖方 4.7–4.8）<br/>→ 长端本就该更高"]
+        S3["K 型：上腿不在乎 5–8%<br/>下腿在乎 → 加息杀下腿<br/>但经济体是加权平均"]
+        S4["P/E 对应【增长率】<br/>增长不够 → multiple 被压缩<br/>NVDA 增长 70% 只给 12x『不合理』"]
+    end
+
+    subgraph L4["④ 风险层：保险丝"]
+        F0["原有：AR 增速 · Hyperscaler CDS · 卡折旧"]
+        JP["新增【日本】<br/>债务/GDP：日本 204% vs 美国 126%<br/>10y 从零升上来 + 通胀预期高<br/>债券全在金融机构账上<br/>非通缩环境 → 不敢印钱"]
+        MON["持续监控两问<br/>① 利率 vol 有无失控<br/>② 是否持续性过程"]
+    end
+
+    subgraph L5["⑤ 仓位·波动率层"]
+        P1["GS Prime<br/>PB 在 Anthropic 坏消息期间【仍买】TMT 动量<br/>7 月去杠杆已结束<br/>Gross/Net 双低"]
+        P2["波动率坍缩<br/>利率 Vol 降 → 加息已 pricing<br/>单股 Vol 腰斩<br/>AI basket 1M ATM IV ≈ 65"]
+        P3["∴ 负面消息砸不动 → 跌不动了<br/>错配：估值向下的腿 ＝ 增长向上的腿<br/>→ 机会"]
+    end
+
+    subgraph L6["⑥ 反证层"]
+        C1["『这次像 2000 年』不成立<br/>2000 年体系外无钱流入<br/>现在体系外花钱很多（coding·研究）"]
+        C2["CSP 是万亿级、经历过 2000 年的公司<br/>按自己手上的数据定 CAPEX<br/>（微软手握全部 Copilot 数据）"]
+        C3["Anthropic 65B<br/>① 剔除中国厂商蒸馏的 token<br/>② 按 IPO 口径把付 Amazon ~35% 从毛额改净额<br/>→ 口径调整，非需求崩塌"]
+    end
+
+    Q --> D1
+    D1 --> D2 --> D3
+    D1 --> D4 --> D5
+    D3 --> R0
+    D5 --> R0
+    R0 --> R1
+    R0 --> R2
+    R1 --> R3
+    R2 --> R3
+    R3 ==> CONC
+    CONC --> S1 --> S2 --> S3 --> S4
+    CONC --> F0
+    S3 -.-> JP
+    JP --> MON
+    CONC --> P1 --> P3
+    CONC --> P2 --> P3
+    CONC --> C1 --> C2
+    P3 --> C3
+
+    SUS1["⚠ 本期 60%+ 篇幅给宏观时钟<br/>而他自认宏观择时最弱"] -.-> CONC
+    SUS2["⚠ swaption vol 是事后确认型指标<br/>滞后于价格"] -.-> R2
+    SUS3["⚠ 日本段为新增·尚未验证"] -.-> JP
+    SUS4["⚠ Anthropic 两口径可证伪<br/>等 S-1 验证"] -.-> C3
+
+    classDef conc fill:#fdf3e3,stroke:#b79a4c,stroke-width:2px,color:#18222d
+    classDef sus fill:#f7f4ee,stroke:#a9a29a,stroke-dasharray:3 3,color:#68737d
+    class CONC conc
+    class SUS1,SUS2,SUS3,SUS4 sus

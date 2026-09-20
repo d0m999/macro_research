@@ -1,0 +1,81 @@
+%% Herman Jin 2026-09 上半月（9/1、9/8、9/15 三期复盘 + X 公开发言）总推理链
+%% 用法：任意 Mermaid 渲染器（mermaid.live / mmdc）打开即可出图
+%% 实线＝推理步；粗线＝核心结论；点线＝风险/反证；X 节点＝公开推文，与内部转录互为印证
+graph TD
+    subgraph DATA["① 数据层：头条强、结构弱"]
+        NFP["非农 +162k 超预期<br/>但：世界杯酒吧 +59k · 开学季地方教育岗<br/>→ 季节性，不能证明过热"]
+        CPI["CPI 环比 0.29 vs 预期 0.23<br/>小超但不差；核心 CPI 不高"]
+        SUP["通胀来源 = 商品端<br/>关税传导 + 伊朗战争油价<br/>= supply shock"]
+        WAGE["无工资-物价螺旋<br/>时薪 3.1% ＜ 核心通胀 3.3% ＜ 利率<br/>consumer credit 2.6 远低于 21–22"]
+    end
+
+    subgraph RATE["② 利率层：加息 ≠ 崩盘"]
+        H1["9/16 大概率加息一次<br/>= credibility hike<br/>（Warsh 鹰话放出去了，鸽派也会顺从）<br/>概率 86% → 94%"]
+        H2["市场已定价 3.5–4 次<br/>要暴跌需超预期加到 5 次<br/>→ 没有这个基础"]
+        H3["无序性判据：6m10y swaption vol<br/>利率稳步上行但 vol 未失控<br/>→ 不是 2022 式快速加息"]
+        H4["18 年/22 年暴跌的本质<br/>= 加息次数【超预期】，非加息本身<br/>现在定价已远超 18 年"]
+        H5["加息解决不了供应端通胀<br/>『加息造不出一桶油、一块芯片』<br/>（高盛 Weekend Macro Call 同观点）"]
+        H6["『制造衰退控油价』= 无稽之谈<br/>dual mandate 历来增长优先（除 Volcker）<br/>且油价需求端变量在中国"]
+    end
+
+    subgraph STRUCT["③ 结构层：K 型经济 + 利率重构"]
+        K1["AI 算力中心 2.2 年回本<br/>不在乎利率 5% 还是 8%<br/>加息只杀 K 型下腿（实体/白领）"]
+        K2["AI 是几十年来首次真实效率提升<br/>→ 名义 GDP 6–6.5%<br/>→ 长端利率本就该更高<br/>（2008 后人为压低 1–2% ≈ YCC）"]
+        K3["估值错配<br/>NVDA 增长 70%·毛利 70% 只有 12x PE<br/>星巴克 36x；S&P 19.3x 只比关税底贵 5%<br/>→ 远离增长慢的公司"]
+        K4["这不是 2000 年<br/>① 体系外的钱在流入（coding·研究）<br/>② CSP 是万亿级、按自己数据定 capex<br/>③ 所有人喊泡沫时泡沫不破<br/>『现在是 1950，不是 2000』"]
+    end
+
+    subgraph POS["④ 仓位·波动率层：跌不动"]
+        P1["仓位轻<br/>fundamental book 降到解放日水平<br/>prime book 在 Anthropic 坏消息期仍买 TMT<br/>7 月去杠杆已结束"]
+        P2["波动率坍缩<br/>AI basket vol 120 → 65<br/>→ vol control 策略被迫加仓<br/>利率 vol 没升 = 加息已 pricing"]
+        P3["对冲基金逃跑是职业结构<br/>（相对收益 + 投资人交代），非绝对收益判断<br/>『我拿去帮我也跑』"]
+    end
+
+    subgraph RISK["⑤ 风险层（他自认的担心）"]
+        RK1["日本＝最大隐患<br/>债务率最高 · 利率从零升上来<br/>国债全在金融机构账上<br/>非通缩环境不敢印钱"]
+        RK2["AI 监管风波<br/>= 中期选举前左派政治操作<br/>Dalio 谈监管的真实动机：<br/>定价权正被云厂/开源拿走<br/>受益者只有中国<br/>但监管要过总统，现政府 pro-business"]
+        RK3["油价：霍尔木兹『付钱就能过』<br/>（胡塞也寻财）<br/>利率与油价定价都挺满"]
+        RK4["ECB/日本强硬不可持续<br/>非全球货币撑不起 high for longer<br/>下一个 inflection point 看谁先缩"]
+    end
+
+    subgraph XPOST["⑥ X 公开发言（与转录互为印证）"]
+        X1["9/14：大家担心宏观·对冲基金避险<br/>7 月去杠杆后 AI path 明显<br/>→ 押大回撤没意义"]
+        X2["9/15：要求 Anthropic 把<br/>『10–20% 概率毁灭人类』写进 IPO 10-K"]
+        X3["9/9：OAI Pro 订阅额度减半<br/>模型公司不在乎 DAU<br/>（定价权在云厂，微软卖得更贵）"]
+        X4["9/10：『以后少说利率宏观』<br/>（三期复盘 60%+ 篇幅在讲利率的自嘲）"]
+        X5["INTC：hype 多了对短期噪音谨慎<br/>长期仍看基本面"]
+    end
+
+    CONC["核心结论：谨慎乐观，不减仓<br/>加息一次已被 pricing；估值错配 = 机会<br/>唯一真性风险在监管与日本"]
+
+    NFP --> H1
+    CPI --> H1
+    SUP --> H5
+    SUP --> H6
+    WAGE --> H2
+    WAGE --> H4
+    H1 --> H2
+    H2 --> H3
+    H3 --> H4
+    H4 ==> CONC
+    H5 ==> CONC
+    K1 --> K3
+    K2 --> K3
+    K3 ==> CONC
+    K4 ==> CONC
+    P1 --> CONC
+    P2 --> CONC
+    P3 --> CONC
+    RK1 -.-> CONC
+    RK2 -.-> CONC
+    RK3 -.-> CONC
+    RK4 -.-> CONC
+    X1 -. 印证 .-> CONC
+    X2 -. 印证 .-> RK2
+    X3 -. 印证 .-> RK2
+    X4 -. 印证 .-> RATE
+
+    classDef conc fill:#fdf3e3,stroke:#b79a4c,stroke-width:2px,color:#18222d
+    classDef risk fill:#f7f4ee,stroke:#a9a29a,stroke-dasharray:3 3,color:#68737d
+    class CONC conc
+    class RK1,RK2,RK3,RK4 risk
