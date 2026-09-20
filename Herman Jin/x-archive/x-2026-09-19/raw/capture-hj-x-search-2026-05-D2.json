@@ -1,0 +1,6169 @@
+{
+  "target": "https://x.com/search?q=from%3AShanghaoJin%20since%3A2026-05-11%20until%3A2026-05-21&f=live",
+  "captured_at": "2026-09-19T06:49:17.976Z",
+  "stop_reason": "no_new_content",
+  "max_rounds": 60,
+  "stop_before": "2026-05-11",
+  "rounds_used": 49,
+  "count": 480,
+  "diagnostics": [
+    {
+      "round": 10,
+      "size": 140,
+      "mine": 140,
+      "oldest": "2026-05-19",
+      "scrollH": 28382,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 11,
+      "size": 154,
+      "mine": 154,
+      "oldest": "2026-05-18",
+      "scrollH": 28300,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 12,
+      "size": 160,
+      "mine": 160,
+      "oldest": "2026-05-18",
+      "scrollH": 32338,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 13,
+      "size": 173,
+      "mine": 173,
+      "oldest": "2026-05-18",
+      "scrollH": 31753,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 14,
+      "size": 180,
+      "mine": 180,
+      "oldest": "2026-05-18",
+      "scrollH": 34681,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 15,
+      "size": 198,
+      "mine": 198,
+      "oldest": "2026-05-17",
+      "scrollH": 34553,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 16,
+      "size": 200,
+      "mine": 200,
+      "oldest": "2026-05-17",
+      "scrollH": 37400,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 17,
+      "size": 220,
+      "mine": 220,
+      "oldest": "2026-05-16",
+      "scrollH": 41075,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 18,
+      "size": 235,
+      "mine": 235,
+      "oldest": "2026-05-16",
+      "scrollH": 40660,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 19,
+      "size": 240,
+      "mine": 240,
+      "oldest": "2026-05-16",
+      "scrollH": 44346,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 20,
+      "size": 257,
+      "mine": 257,
+      "oldest": "2026-05-15",
+      "scrollH": 44130,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 21,
+      "size": 260,
+      "mine": 260,
+      "oldest": "2026-05-15",
+      "scrollH": 47321,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 22,
+      "size": 279,
+      "mine": 279,
+      "oldest": "2026-05-15",
+      "scrollH": 50709,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 23,
+      "size": 293,
+      "mine": 293,
+      "oldest": "2026-05-15",
+      "scrollH": 50177,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 24,
+      "size": 300,
+      "mine": 300,
+      "oldest": "2026-05-15",
+      "scrollH": 54389,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 25,
+      "size": 313,
+      "mine": 313,
+      "oldest": "2026-05-14",
+      "scrollH": 53741,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 26,
+      "size": 320,
+      "mine": 320,
+      "oldest": "2026-05-14",
+      "scrollH": 57265,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 27,
+      "size": 336,
+      "mine": 336,
+      "oldest": "2026-05-14",
+      "scrollH": 56881,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 28,
+      "size": 340,
+      "mine": 340,
+      "oldest": "2026-05-14",
+      "scrollH": 60011,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 29,
+      "size": 360,
+      "mine": 360,
+      "oldest": "2026-05-14",
+      "scrollH": 65130,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 30,
+      "size": 368,
+      "mine": 368,
+      "oldest": "2026-05-13",
+      "scrollH": 64643,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 31,
+      "size": 376,
+      "mine": 376,
+      "oldest": "2026-05-13",
+      "scrollH": 64339,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 32,
+      "size": 380,
+      "mine": 380,
+      "oldest": "2026-05-13",
+      "scrollH": 67253,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 33,
+      "size": 400,
+      "mine": 400,
+      "oldest": "2026-05-13",
+      "scrollH": 71619,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 34,
+      "size": 410,
+      "mine": 410,
+      "oldest": "2026-05-13",
+      "scrollH": 70794,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 35,
+      "size": 420,
+      "mine": 420,
+      "oldest": "2026-05-13",
+      "scrollH": 75364,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 36,
+      "size": 430,
+      "mine": 430,
+      "oldest": "2026-05-13",
+      "scrollH": 74552,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 37,
+      "size": 440,
+      "mine": 440,
+      "oldest": "2026-05-11",
+      "scrollH": 77824,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 38,
+      "size": 455,
+      "mine": 455,
+      "oldest": "2026-05-11",
+      "scrollH": 77599,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 39,
+      "size": 460,
+      "mine": 460,
+      "oldest": "2026-05-11",
+      "scrollH": 80997,
+      "scrollHGrew": true,
+      "noNew": 0
+    },
+    {
+      "round": 40,
+      "size": 477,
+      "mine": 477,
+      "oldest": "2026-05-11",
+      "scrollH": 80718,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 41,
+      "size": 480,
+      "mine": 480,
+      "oldest": "2026-05-11",
+      "scrollH": 80718,
+      "scrollHGrew": false,
+      "noNew": 0
+    },
+    {
+      "round": 42,
+      "size": 480,
+      "mine": 480,
+      "oldest": "2026-05-11",
+      "scrollH": 80718,
+      "scrollHGrew": false,
+      "noNew": 1
+    },
+    {
+      "round": 43,
+      "size": 480,
+      "mine": 480,
+      "oldest": "2026-05-11",
+      "scrollH": 80718,
+      "scrollHGrew": false,
+      "noNew": 2
+    },
+    {
+      "round": 44,
+      "size": 480,
+      "mine": 480,
+      "oldest": "2026-05-11",
+      "scrollH": 80718,
+      "scrollHGrew": false,
+      "noNew": 3
+    },
+    {
+      "round": 45,
+      "size": 480,
+      "mine": 480,
+      "oldest": "2026-05-11",
+      "scrollH": 80718,
+      "scrollHGrew": false,
+      "noNew": 4
+    },
+    {
+      "round": 46,
+      "size": 480,
+      "mine": 480,
+      "oldest": "2026-05-11",
+      "scrollH": 80718,
+      "scrollHGrew": false,
+      "noNew": 5
+    },
+    {
+      "round": 47,
+      "size": 480,
+      "mine": 480,
+      "oldest": "2026-05-11",
+      "scrollH": 80718,
+      "scrollHGrew": false,
+      "noNew": 6
+    },
+    {
+      "round": 48,
+      "size": 480,
+      "mine": 480,
+      "oldest": "2026-05-11",
+      "scrollH": 80718,
+      "scrollHGrew": false,
+      "noNew": 7
+    },
+    {
+      "round": 49,
+      "size": 480,
+      "mine": 480,
+      "oldest": "2026-05-11T12:22:06.000Z",
+      "note": "8 轮无新增（覆盖已到下界）"
+    }
+  ],
+  "rows": [
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057441597101625358",
+      "status_url": "/ShanghaoJin/status/2057441597101625358",
+      "datetime": "2026-05-21T12:41:16.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "RYANHINGSHING",
+      "texts": [
+        "我“听劝”给删完了 哈哈哈🤣"
+      ],
+      "dom_order": 0
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057300480699814030",
+      "status_url": "/ShanghaoJin/status/2057300480699814030",
+      "datetime": "2026-05-21T03:20:32.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "backtest_more",
+      "texts": [
+        "🤣哈哈哈"
+      ],
+      "dom_order": 1
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057277854472400971",
+      "status_url": "/ShanghaoJin/status/2057277854472400971",
+      "datetime": "2026-05-21T01:50:37.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "clausiusiv",
+      "texts": [
+        "cien和nok差不多吧"
+      ],
+      "dom_order": 2
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057273586852008042",
+      "status_url": "/ShanghaoJin/status/2057273586852008042",
+      "datetime": "2026-05-21T01:33:40.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "miraclexxu",
+      "texts": [
+        "我删了～～～ 哈哈哈"
+      ],
+      "dom_order": 3
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057272579044655482",
+      "status_url": "/ShanghaoJin/status/2057272579044655482",
+      "datetime": "2026-05-21T01:29:39.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "留了一段温和一点的，比较真实的被我删了"
+      ],
+      "dom_order": 4
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057249022881259575",
+      "status_url": "/ShanghaoJin/status/2057249022881259575",
+      "datetime": "2026-05-20T23:56:03.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "LZ41576310",
+      "texts": [
+        "😂"
+      ],
+      "dom_order": 5
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057247537917239471",
+      "status_url": "/ShanghaoJin/status/2057247537917239471",
+      "datetime": "2026-05-20T23:50:09.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "DaveSantaMonica",
+      "texts": [
+        "全世界找不出第二家\n\n然后告诉你可以分红，是honor、员工福利"
+      ],
+      "dom_order": 6
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057244579666239656",
+      "status_url": "/ShanghaoJin/status/2057244579666239656",
+      "datetime": "2026-05-20T23:38:24.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bincho8424",
+      "texts": [
+        "那些年比较斯文\n\n现在进去水花都没有一个\n\n你们看谁敢像我这样喷他的吗"
+      ],
+      "dom_order": 7
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057240388935839952",
+      "status_url": "/ShanghaoJin/status/2057240388935839952",
+      "datetime": "2026-05-20T23:21:45.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "yeke7788",
+      "texts": [
+        "😂你问问中国半导体行业的人，谁敢我这样公开写菊花厂？\n\n我已经算胆子够大了"
+      ],
+      "dom_order": 8
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057240067413008499",
+      "status_url": "/ShanghaoJin/status/2057240067413008499",
+      "datetime": "2026-05-20T23:20:28.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Yilingsanma",
+      "texts": [
+        "现在协议锁7年…."
+      ],
+      "dom_order": 9
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057239787887788131",
+      "status_url": "/ShanghaoJin/status/2057239787887788131",
+      "datetime": "2026-05-20T23:19:21.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "KalekMich7668",
+      "texts": [
+        "那当然，你看中国存储走出来多么艰难，阻力不都是华为吗？\n\n中国本土晶圆厂与境外技术合作的，都被华为冠上叛徒逻辑，像疯狗一样撕咬\n\n他们宣传用外国技术路线开发，会影响中国“独立自主”\n\n其实就是自己不行、还偷不了、老外不让他用，你们也都别用了"
+      ],
+      "dom_order": 10
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057235582556995806",
+      "status_url": "/ShanghaoJin/status/2057235582556995806",
+      "datetime": "2026-05-20T23:02:39.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "caiming",
+      "texts": [
+        "无，点了也没独立\n\n半导体是全球协作行业，是人类智慧之集合\n\n不存在独立自主一说，就是骗爱国韭\n\n晶圆厂就是ASML + LRCX + AMAT，用别人机器、靠别人维护、搬一点都要ASML人来弄。你叫这独立自主？你用的蚀刻材料又有多少独立自主的？\n\n你告诉我HW这害群之马具体做了什么科技、怎么让我们独立自主了？"
+      ],
+      "dom_order": 11
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057184288836379021",
+      "status_url": "/ShanghaoJin/status/2057184288836379021",
+      "datetime": "2026-05-20T19:38:49.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "忘记了？",
+        "孙哥曾苦口婆心教育我，关于网上冲浪的必胜心法。\n那就是，网络撕逼只能按照咖位，从下往上撕，不能从上往下撕。\n简而言之，就是要撕就撕比自己牛逼的人。\n\n撕不如自己的人，不仅会让自己降咖，还会让自己卷入剪不断理还乱的是非之地，百害无一利。"
+      ],
+      "dom_order": 12
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057183480283619370",
+      "status_url": "/ShanghaoJin/status/2057183480283619370",
+      "datetime": "2026-05-20T19:35:36.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "caiming",
+      "texts": [
+        "你去问问中国干半导体的谁不对HW牙根咬碎，还得吞下不敢骂\n\n真得感谢他，感谢任教主全家"
+      ],
+      "dom_order": 13
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057178689025307116",
+      "status_url": "/ShanghaoJin/status/2057178689025307116",
+      "datetime": "2026-05-20T19:16:34.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bluepearl821",
+      "texts": [
+        "刚刚睡醒，回去继续🤣"
+      ],
+      "dom_order": 14
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057178039453430172",
+      "status_url": "/ShanghaoJin/status/2057178039453430172",
+      "datetime": "2026-05-20T19:13:59.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "168X_Fortune",
+      "texts": [
+        "谢谢～～～"
+      ],
+      "dom_order": 15
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057091573754876294",
+      "status_url": "/ShanghaoJin/status/2057091573754876294",
+      "datetime": "2026-05-20T13:30:24.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "haliluya8911",
+      "texts": [
+        "👍"
+      ],
+      "dom_order": 16
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057075859518054574",
+      "status_url": "/ShanghaoJin/status/2057075859518054574",
+      "datetime": "2026-05-20T12:27:58.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "caiming",
+      "texts": [
+        "美国没有只是制裁了华为，其他人（小米、Oppo Vivo）都是可以去台积电流片的。他非要搅屎，搅的大家没活路\n\n主要他那套用DUV多次曝光的路线是点错科技树，完全浪费钱、浪费人才、浪费时间走弯路\n\n为了自己做爱国生意"
+      ],
+      "dom_order": 17
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057074382846169573",
+      "status_url": "/ShanghaoJin/status/2057074382846169573",
+      "datetime": "2026-05-20T12:22:06.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "2DG这个技术路线能不能走出来我一直把不准\n\n如果Ayar labs真的有点东西，以后rack内真用起来\n\n这个票起码10倍，存粹挂彩票了"
+      ],
+      "dom_order": 18
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057072532273172912",
+      "status_url": "/ShanghaoJin/status/2057072532273172912",
+      "datetime": "2026-05-20T12:14:44.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "RYANHINGSHING",
+      "texts": [
+        "说得好\n\n谢谢大家🙏"
+      ],
+      "dom_order": 19
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057072177325957453",
+      "status_url": "/ShanghaoJin/status/2057072177325957453",
+      "datetime": "2026-05-20T12:13:20.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "另外如果rack变大把需求全塞里面，HBM变多、更复杂agentic flow，rack 内部的通信量大幅上升，过几年scale in也会变得必要"
+      ],
+      "dom_order": 20
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057072035789185275",
+      "status_url": "/ShanghaoJin/status/2057072035789185275",
+      "datetime": "2026-05-20T12:12:46.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "实际情况是更多存储 = rack更高功率密度，需要更多服务器/节点 \n\n所以rack层的 port 数量和带宽需求同步增加，这情况就必然需要升级光模块"
+      ],
+      "dom_order": 21
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057066333423145200",
+      "status_url": "/ShanghaoJin/status/2057066333423145200",
+      "datetime": "2026-05-20T11:50:06.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "如果只有最简单的单次推理，那么你说的才是对的"
+      ],
+      "dom_order": 22
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057065290220072983",
+      "status_url": "/ShanghaoJin/status/2057065290220072983",
+      "datetime": "2026-05-20T11:45:58.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Guccylan",
+      "texts": [
+        "1. squeeze players from other countries out of market\n\n2. sell property to exit\n\n3. bankrupt"
+      ],
+      "dom_order": 23
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057064944081023196",
+      "status_url": "/ShanghaoJin/status/2057064944081023196",
+      "datetime": "2026-05-20T11:44:35.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "内存越多通讯交互需求越多啊"
+      ],
+      "dom_order": 24
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057064610210136399",
+      "status_url": "/ShanghaoJin/status/2057064610210136399",
+      "datetime": "2026-05-20T11:43:16.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "JostCui",
+      "texts": [
+        "30很难做参考，短期里10y超过4.6%已经有点过分了\n\n但是不建议顶着市场反向去做，大家在定价战争油价"
+      ],
+      "dom_order": 25
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057053268317270361",
+      "status_url": "/ShanghaoJin/status/2057053268317270361",
+      "datetime": "2026-05-20T10:58:12.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "dw_2772",
+      "texts": [
+        "那个是解决ACE到AOC之间的方案"
+      ],
+      "dom_order": 26
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057053084963213509",
+      "status_url": "/ShanghaoJin/status/2057053084963213509",
+      "datetime": "2026-05-20T10:57:28.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "fyi",
+        "主要问题是随着大集群变大，现在方案的dsp功耗太高了。而且3.2T之后，如此高速信号质量都很难保障。这些是物理上限，你要堆叠GPU内需就绕不过去\n\nrack内似乎只有Ayar在做"
+      ],
+      "dom_order": 27
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057052883615621363",
+      "status_url": "/ShanghaoJin/status/2057052883615621363",
+      "datetime": "2026-05-20T10:56:40.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "主要问题是随着大集群变大，现在方案的dsp功耗太高了。而且3.2T之后，如此高速信号质量都很难保障。这些是物理上限，你要堆叠GPU内需就绕不过去\n\nrack内似乎只有Ayar在做"
+      ],
+      "dom_order": 28
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057047166317892014",
+      "status_url": "/ShanghaoJin/status/2057047166317892014",
+      "datetime": "2026-05-20T10:33:57.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "PhyrexNi",
+      "texts": [
+        "中国超高压特高压变电输送非常强\n\n但问题是～～没卡"
+      ],
+      "dom_order": 29
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057046497863270751",
+      "status_url": "/ShanghaoJin/status/2057046497863270751",
+      "datetime": "2026-05-20T10:31:17.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "MGHND1994",
+      "texts": [
+        "可以突破，永远放弃武力攻台、香港一人一票选特首。让美国开绿灯卖给你"
+      ],
+      "dom_order": 30
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057045432321356142",
+      "status_url": "/ShanghaoJin/status/2057045432321356142",
+      "datetime": "2026-05-20T10:27:03.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "dmjk001",
+      "texts": [
+        "为什么每次中国半导体好像要有些起色的时候，\n\n任教主～～你都要出来撒百草枯呢？\n\n活生生邪修把中芯产线全变成费片，然后“搅屎棍”搞的同行都不能买设备、不能去TSM流片，接着你自己却悄悄去找壳子去TSM下单",
+        "邪修好牛逼啊，真有人会去帮任我行洗底裤\n\n要不说下3nm流出来要多久，良率多少，敢用这种片的手机准备卖多少钱？3万？\n\n3万都不够你回本的，不过是多点费片呗？"
+      ],
+      "dom_order": 31
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057044203029631157",
+      "status_url": "/ShanghaoJin/status/2057044203029631157",
+      "datetime": "2026-05-20T10:22:10.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jun20183",
+      "texts": [
+        "这个确实没错，给任教主一个credit"
+      ],
+      "dom_order": 32
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057043780369576292",
+      "status_url": "/ShanghaoJin/status/2057043780369576292",
+      "datetime": "2026-05-20T10:20:29.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Roywang63393641",
+      "texts": [
+        "咋也不知道任教主咋忽悠的\n\n总之哪里都有他来搅屎棍，没这个搅屎棍中国半导体比现在强的多了"
+      ],
+      "dom_order": 33
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057043412839522412",
+      "status_url": "/ShanghaoJin/status/2057043412839522412",
+      "datetime": "2026-05-20T10:19:02.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "JAXXIAO1",
+      "texts": [
+        "存储缺货比较迫在眉睫，但是缺货给的估值太高，把HBM估值给溢价到DDR上了"
+      ],
+      "dom_order": 34
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057043200851030098",
+      "status_url": "/ShanghaoJin/status/2057043200851030098",
+      "datetime": "2026-05-20T10:18:11.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "guyuanxime20873",
+      "texts": [
+        "爱信谁信谁"
+      ],
+      "dom_order": 35
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057043089903247598",
+      "status_url": "/ShanghaoJin/status/2057043089903247598",
+      "datetime": "2026-05-20T10:17:45.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "fwoshi0",
+      "texts": [
+        "可以啊，多次多次多次曝光\n\n然后2次0.9^2 4次 0.9^4 你自己算良率呗\n\n擦…. 中芯14nm有0.9么？"
+      ],
+      "dom_order": 36
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057042761631842309",
+      "status_url": "/ShanghaoJin/status/2057042761631842309",
+      "datetime": "2026-05-20T10:16:27.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "dmjk001",
+      "texts": [
+        "邪修好牛逼啊，真有人会去帮任我行洗底裤\n\n要不说下3nm流出来要多久，良率多少，敢用这种片的手机准备卖多少钱？3万？\n\n3万都不够你回本的，不过是多点费片呗？"
+      ],
+      "dom_order": 37
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057042049875181818",
+      "status_url": "/ShanghaoJin/status/2057042049875181818",
+      "datetime": "2026-05-20T10:13:37.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "RYANHINGSHING",
+      "texts": [
+        "会\n\n谢谢大家😂"
+      ],
+      "dom_order": 38
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057041538782532049",
+      "status_url": "/ShanghaoJin/status/2057041538782532049",
+      "datetime": "2026-05-20T10:11:35.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "zapzupzep",
+      "texts": [
+        "Bank managers dont want non-performings\n\nSo as long as you have revenue, they’ll provide you loans even if the company is losing money\n\nTheir bet is if property price jump again like it did in 2015–2020, they could simply sell the factory to a real estate developer and retire"
+      ],
+      "dom_order": 39
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057038012232708175",
+      "status_url": "/ShanghaoJin/status/2057038012232708175",
+      "datetime": "2026-05-20T09:57:34.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "SDStudio10",
+      "texts": [
+        "据说OAI订单也很大，小单都不接了\n\n我抄了面包底，😃"
+      ],
+      "dom_order": 40
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057037798495121554",
+      "status_url": "/ShanghaoJin/status/2057037798495121554",
+      "datetime": "2026-05-20T09:56:43.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Chrisshiejc",
+      "texts": [
+        "因为存储不需要升级，产能没CPU GPU大，token需求加大。CSP一加量部署，存储就短期紧张、体感很深\n\n但是没注意到的是：光通缺的不但是量，还需要升级，最大问题是随着升级要产品大迭代（现在pluggable有“易中天”勉强够）升级之后产能迭代双缺口\n\n目前无解"
+      ],
+      "dom_order": 41
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057036526840869247",
+      "status_url": "/ShanghaoJin/status/2057036526840869247",
+      "datetime": "2026-05-20T09:51:40.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "zoomad99",
+      "texts": [
+        "完全相反"
+      ],
+      "dom_order": 42
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057034935010296063",
+      "status_url": "/ShanghaoJin/status/2057034935010296063",
+      "datetime": "2026-05-20T09:45:21.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "zoomad99",
+      "texts": [
+        "存储定价太超前了，因为缺货缺在当下"
+      ],
+      "dom_order": 43
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057034099198709913",
+      "status_url": "/ShanghaoJin/status/2057034099198709913",
+      "datetime": "2026-05-20T09:42:01.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "hgsjshsgsh",
+      "texts": [
+        "光模块6寸良率都跟屎一样，你去搞12寸？"
+      ],
+      "dom_order": 44
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057033912736743534",
+      "status_url": "/ShanghaoJin/status/2057033912736743534",
+      "datetime": "2026-05-20T09:41:17.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "hgsjshsgsh",
+      "texts": [
+        "如果光模块不用迭代= GPU不用说迭代"
+      ],
+      "dom_order": 45
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057033320878555334",
+      "status_url": "/ShanghaoJin/status/2057033320878555334",
+      "datetime": "2026-05-20T09:38:56.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "RYANHINGSHING",
+      "texts": [
+        "长存技术真心不错的"
+      ],
+      "dom_order": 46
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057032067813445778",
+      "status_url": "/ShanghaoJin/status/2057032067813445778",
+      "datetime": "2026-05-20T09:33:57.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "tianhm",
+      "texts": [
+        "你买的ddr5？为什么觉得不好？"
+      ],
+      "dom_order": 47
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057031629462532483",
+      "status_url": "/ShanghaoJin/status/2057031629462532483",
+      "datetime": "2026-05-20T09:32:12.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "sun_finn66909",
+      "texts": [
+        "有道理，你多买点就好了，不用说服我"
+      ],
+      "dom_order": 48
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057031409810972714",
+      "status_url": "/ShanghaoJin/status/2057031409810972714",
+      "datetime": "2026-05-20T09:31:20.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "dw_2772",
+      "texts": [
+        "铜不会被那么快被取代\n\n光都没产能怎么取代"
+      ],
+      "dom_order": 49
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057029177082257836",
+      "status_url": "/ShanghaoJin/status/2057029177082257836",
+      "datetime": "2026-05-20T09:22:28.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "theFloridaBird",
+      "texts": [
+        "我是中国人，我在吹啊"
+      ],
+      "dom_order": 50
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057028768561250518",
+      "status_url": "/ShanghaoJin/status/2057028768561250518",
+      "datetime": "2026-05-20T09:20:50.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "hgsjshsgsh",
+      "texts": [
+        "弱弱的问你下\n\n按照你这个逻辑AI模型越来越大，卷集群算力，GPU不停升级的情况下，通讯带宽需求是不会上升的？\n\n还有，如果按照你说光模块用10年逻辑，为啥没2年就从100g迭代到了1.6T，家伙们是闲着钱太多吗？\n\n😦！"
+      ],
+      "dom_order": 51
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057022410566885446",
+      "status_url": "/ShanghaoJin/status/2057022410566885446",
+      "datetime": "2026-05-20T08:55:34.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "hgsjshsgsh",
+      "texts": [
+        "半导体都一样，但是算力需求在指数级上升\n\n在大集群算力需要提高的道路上，最卡的是通讯"
+      ],
+      "dom_order": 52
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057021779055702310",
+      "status_url": "/ShanghaoJin/status/2057021779055702310",
+      "datetime": "2026-05-20T08:53:04.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Gugabed",
+      "texts": [
+        "they dont care about manufacturing, all of them are just unwilling and desperately waiting for property price to rebound \n\nThey have no way out"
+      ],
+      "dom_order": 53
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057007475573117352",
+      "status_url": "/ShanghaoJin/status/2057007475573117352",
+      "datetime": "2026-05-20T07:56:14.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "imawsomebtw",
+      "texts": [
+        "🤷"
+      ],
+      "dom_order": 54
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057006992028557817",
+      "status_url": "/ShanghaoJin/status/2057006992028557817",
+      "datetime": "2026-05-20T07:54:18.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "humphilomath",
+      "texts": [
+        "Chinese manufacturer usually secure land from local governments before they investing factories\n\nThen, pledge it as collateral with operating cash flow to borrow from the banks\n\nBut in order to keep the lights on while waiting for property price to rise, they have to dump"
+      ],
+      "dom_order": 55
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2057000020860363208",
+      "status_url": "/ShanghaoJin/status/2057000020860363208",
+      "datetime": "2026-05-20T07:26:36.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "罗马的奴隶个个觉得共和国马上要亡\n\n“怎么能虐待我们这些提供生产力的呢”\n\n就是这么简单的逻辑，让他们多骂骂长鑫长存",
+        "我就是跟随领导视察的大金主单位，GJ的cash是从我们这边实打实投出去的，体量大到外包团队无法想象好吗。而且买了什么设备，先进制程这些到了什么阶段这些外包团队怎么可能清楚？我每次跟随视察的时候看着那些外包团队的年轻人无精打采的样子都恨不能上去抽一巴掌。。。"
+      ],
+      "dom_order": 56
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056998546600296690",
+      "status_url": "/ShanghaoJin/status/2056998546600296690",
+      "datetime": "2026-05-20T07:20:45.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "xiaoqq5wll",
+      "texts": [
+        "HBM当然可以用PE\n\n但是他们大头都是DDR，Hynix可能60%不到，三星要超过70%"
+      ],
+      "dom_order": 57
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056995921263800794",
+      "status_url": "/ShanghaoJin/status/2056995921263800794",
+      "datetime": "2026-05-20T07:10:19.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "tony_wood2005",
+      "texts": [
+        "还有就是存储是眼前要用缺货，光是要堆叠提高算力的真正瓶颈\n\n所以存储是感受特别明显，跟着涨价股票翻倍"
+      ],
+      "dom_order": 58
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056995411995574472",
+      "status_url": "/ShanghaoJin/status/2056995411995574472",
+      "datetime": "2026-05-20T07:08:18.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "BIZLENS_X",
+      "texts": [
+        "翻倍"
+      ],
+      "dom_order": 59
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056995000114954282",
+      "status_url": "/ShanghaoJin/status/2056995000114954282",
+      "datetime": "2026-05-20T07:06:39.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "0101world",
+      "texts": [
+        "主要散户和基金经理看不懂光，存储比较存粹能理解"
+      ],
+      "dom_order": 60
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056994858674553251",
+      "status_url": "/ShanghaoJin/status/2056994858674553251",
+      "datetime": "2026-05-20T07:06:06.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "xiaoqq5wll",
+      "texts": [
+        "不买"
+      ],
+      "dom_order": 61
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056994779008041323",
+      "status_url": "/ShanghaoJin/status/2056994779008041323",
+      "datetime": "2026-05-20T07:05:47.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "tvatrader",
+      "texts": [
+        "一个是产品 一个是商品\n\nHBM是产品 DDR是商品\n\n那么缺货你为什么不去给SOI定PE\n\n他PIC上占80%，一样可见缺货"
+      ],
+      "dom_order": 62
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056985141399175611",
+      "status_url": "/ShanghaoJin/status/2056985141399175611",
+      "datetime": "2026-05-20T06:27:29.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "0xastra",
+      "texts": [
+        "各人赚个人的钱\n\n买存储是赚不懂半导体的基金+ fomo散户的钱，往往也很香"
+      ],
+      "dom_order": 63
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056984775051841778",
+      "status_url": "/ShanghaoJin/status/2056984775051841778",
+      "datetime": "2026-05-20T06:26:01.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "rickawsb",
+      "texts": [
+        "光不是"
+      ],
+      "dom_order": 64
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056984533682241781",
+      "status_url": "/ShanghaoJin/status/2056984533682241781",
+      "datetime": "2026-05-20T06:25:04.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "zzzlll334939",
+      "texts": [
+        "长鑫破发…… ？\n\n真的能有机会给我捡钱吗，借您吉言啊"
+      ],
+      "dom_order": 65
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056970272625008641",
+      "status_url": "/ShanghaoJin/status/2056970272625008641",
+      "datetime": "2026-05-20T05:28:24.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "rickawsb",
+      "texts": [
+        "我可能太保守，如果错了说明需求持续大到可怕\n\n即使这种情况，最后算力瓶颈还是在光通，而且更加严重。按2年周期表现是不会比存储差的\n\n但是压住存储的风险是，按PE投，万一错是要血流成河的",
+        "改吧～～存储是缺货缺在眼前，而且有存货，能切产能，能扩产出业绩。所以涨得急\n\n但是，提高算力真的瓶颈在光连接\n\n反正我是不认存储PE估值的"
+      ],
+      "dom_order": 66
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056969339451199805",
+      "status_url": "/ShanghaoJin/status/2056969339451199805",
+      "datetime": "2026-05-20T05:24:41.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "rickawsb",
+      "texts": [
+        "改吧～～存储是缺货缺在眼前，而且有存货，能切产能，能扩产出业绩。所以涨得急\n\n但是，提高算力真的瓶颈在光连接\n\n反正我是不认存储PE估值的"
+      ],
+      "dom_order": 67
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056968347636642271",
+      "status_url": "/ShanghaoJin/status/2056968347636642271",
+      "datetime": "2026-05-20T05:20:45.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "TiezhuCrypto",
+      "texts": [
+        "中国半导体的结界就是EUV，完全突破不了\n\n但是存储是能凑合的GPU凑合不了"
+      ],
+      "dom_order": 68
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056936248544305537",
+      "status_url": "/ShanghaoJin/status/2056936248544305537",
+      "datetime": "2026-05-20T03:13:12.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Pathusa",
+      "texts": [
+        "😡….."
+      ],
+      "dom_order": 69
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056936037365260377",
+      "status_url": "/ShanghaoJin/status/2056936037365260377",
+      "datetime": "2026-05-20T03:12:21.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "humphilomath",
+      "texts": [
+        "then they’re robbing taxpayers and banks. China has tons of these."
+      ],
+      "dom_order": 70
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056933132285424027",
+      "status_url": "/ShanghaoJin/status/2056933132285424027",
+      "datetime": "2026-05-20T03:00:49.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Pathusa",
+      "texts": [
+        "😈你尝试过啥，说来听听，我也去试试"
+      ],
+      "dom_order": 71
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056918550024237524",
+      "status_url": "/ShanghaoJin/status/2056918550024237524",
+      "datetime": "2026-05-20T02:02:52.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "miraclexxu",
+      "texts": [
+        "有道理….."
+      ],
+      "dom_order": 72
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056916031051067686",
+      "status_url": "/ShanghaoJin/status/2056916031051067686",
+      "datetime": "2026-05-20T01:52:52.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Amoskkzj",
+      "texts": [
+        "盈利驱动"
+      ],
+      "dom_order": 73
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056915913086218619",
+      "status_url": "/ShanghaoJin/status/2056915913086218619",
+      "datetime": "2026-05-20T01:52:23.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "xem_churchill",
+      "texts": [
+        "不可能，没有一个环节能扩产的，很多还是物理限制。比如检测需要更长时间，等等"
+      ],
+      "dom_order": 74
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056905874191605903",
+      "status_url": "/ShanghaoJin/status/2056905874191605903",
+      "datetime": "2026-05-20T01:12:30.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "DNFCFLOL1024",
+      "texts": [
+        "对～～20块看好INTC，他们差点把我十八的祖宗都骂一遍"
+      ],
+      "dom_order": 75
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056905596692234265",
+      "status_url": "/ShanghaoJin/status/2056905596692234265",
+      "datetime": "2026-05-20T01:11:24.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "washiontan",
+      "texts": [
+        "我说的都是上了大所的"
+      ],
+      "dom_order": 76
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056905405050302696",
+      "status_url": "/ShanghaoJin/status/2056905405050302696",
+      "datetime": "2026-05-20T01:10:38.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "XiaoZha62335239",
+      "texts": [
+        "2DG二级估值也快20亿了\n\nAyar labs估值37亿，性价比肯定Ayar更高啊"
+      ],
+      "dom_order": 77
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056905028762550780",
+      "status_url": "/ShanghaoJin/status/2056905028762550780",
+      "datetime": "2026-05-20T01:09:08.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "DNFCFLOL1024",
+      "texts": [
+        "没有～～我不推荐股票，谢谢"
+      ],
+      "dom_order": 78
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056904866551960004",
+      "status_url": "/ShanghaoJin/status/2056904866551960004",
+      "datetime": "2026-05-20T01:08:30.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "zzzlll334939",
+      "texts": [
+        "人家良率已经上去了，为什么是垃圾？"
+      ],
+      "dom_order": 79
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056904705436160207",
+      "status_url": "/ShanghaoJin/status/2056904705436160207",
+      "datetime": "2026-05-20T01:07:51.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "tang22748503",
+      "texts": [
+        "2DG现在在SuperNova 的多波长整列上用\n\n不过Ayar本身是多供应商策略，LITE也在推阵列"
+      ],
+      "dom_order": 80
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056898646327828614",
+      "status_url": "/ShanghaoJin/status/2056898646327828614",
+      "datetime": "2026-05-20T00:43:47.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bluepearl821",
+      "texts": [
+        "精神分裂的是如此啦"
+      ],
+      "dom_order": 81
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056898461812015272",
+      "status_url": "/ShanghaoJin/status/2056898461812015272",
+      "datetime": "2026-05-20T00:43:03.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "whatthehell_t",
+      "texts": [
+        "我香港的强基金选的是美股，今年投资收益15%。他们应该都在开香槟"
+      ],
+      "dom_order": 82
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056898097524187442",
+      "status_url": "/ShanghaoJin/status/2056898097524187442",
+      "datetime": "2026-05-20T00:41:36.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "BCeasoul16174",
+      "texts": [
+        "CPO扩产才难，从hybird binding，到alignment，到检测，每个良率都低，每个过程都扩不出来"
+      ],
+      "dom_order": 83
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056896683880194395",
+      "status_url": "/ShanghaoJin/status/2056896683880194395",
+      "datetime": "2026-05-20T00:35:59.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "我说的是上了大交易所所dex平台、或者二线所上币的哦\n\n哪些dex上互割的几千U水平发盘子"
+      ],
+      "dom_order": 84
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056896324864528410",
+      "status_url": "/ShanghaoJin/status/2056896324864528410",
+      "datetime": "2026-05-20T00:34:33.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "success_cw",
+      "texts": [
+        "链上盘子没几百U的多的是"
+      ],
+      "dom_order": 85
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056894572350128175",
+      "status_url": "/ShanghaoJin/status/2056894572350128175",
+      "datetime": "2026-05-20T00:27:35.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Joeblac68421251",
+      "texts": [
+        "大部分没那么多"
+      ],
+      "dom_order": 86
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056894378262900951",
+      "status_url": "/ShanghaoJin/status/2056894378262900951",
+      "datetime": "2026-05-20T00:26:49.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "PurrAlpha88",
+      "texts": [
+        "没跑赢纳斯达克的男人"
+      ],
+      "dom_order": 87
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056894247509598557",
+      "status_url": "/ShanghaoJin/status/2056894247509598557",
+      "datetime": "2026-05-20T00:26:18.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Roverlife999",
+      "texts": [
+        "你去看看中际旭创、光迅，以前的茅台\n\n只要持续赚钱，A股也一样涨\n\nA股只是持续盈利能力公司少而已"
+      ],
+      "dom_order": 88
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056893926506913959",
+      "status_url": "/ShanghaoJin/status/2056893926506913959",
+      "datetime": "2026-05-20T00:25:01.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Joho198510",
+      "texts": [
+        "见多了，告诉你们下",
+        "在区块链发币、发盘子的无一例外都是割韭菜\n\n而且是基本上是屌丝割屌丝\n\n我见过的大部分连几百万U都拿不出来，还要找做事商借钱来帮他们拉盘。而且每个都声称自己有CX了多少大爷大妈"
+      ],
+      "dom_order": 89
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056893821984923827",
+      "status_url": "/ShanghaoJin/status/2056893821984923827",
+      "datetime": "2026-05-20T00:24:37.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Joho198510",
+      "texts": [
+        "在区块链发币、发盘子的无一例外都是割韭菜\n\n而且是基本上是屌丝割屌丝\n\n我见过的大部分连几百万U都拿不出来，还要找做事商借钱来帮他们拉盘。而且每个都声称自己有CX了多少大爷大妈"
+      ],
+      "dom_order": 90
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056892606463046058",
+      "status_url": "/ShanghaoJin/status/2056892606463046058",
+      "datetime": "2026-05-20T00:19:47.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "beefcubee",
+      "texts": [
+        "HDD要跟光抢玻璃，价格又上不去…."
+      ],
+      "dom_order": 91
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056891822887387378",
+      "status_url": "/ShanghaoJin/status/2056891822887387378",
+      "datetime": "2026-05-20T00:16:40.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Pathusa",
+      "texts": [
+        "🤣 强制自己每天不停质疑自己，不要进信息茧房\n\n然后就变成了精神病"
+      ],
+      "dom_order": 92
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056882788562047166",
+      "status_url": "/ShanghaoJin/status/2056882788562047166",
+      "datetime": "2026-05-19T23:40:46.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "LZ41576310",
+      "texts": [
+        "宏观是黄昏、微观是黎明\n\n我每天挤在中间好像精神分裂症患者",
+        "信AI的其实是个小圈子，你去华尔街做credit的人、做宏观的人圈子问一问\n\n他们全觉得我在痴人说梦"
+      ],
+      "dom_order": 93
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056882534173348339",
+      "status_url": "/ShanghaoJin/status/2056882534173348339",
+      "datetime": "2026-05-19T23:39:45.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "swh16888",
+      "texts": [
+        "我每天好像精神分裂"
+      ],
+      "dom_order": 94
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056882253977022881",
+      "status_url": "/ShanghaoJin/status/2056882253977022881",
+      "datetime": "2026-05-19T23:38:39.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "卡脖子投资，不光要看卡哪，更要关注哪卡更久、卡更死\n\n眼光拉高，半导体全缺货，我早就说过every dog has its time\n\n存储确实扩产虽非一蹴而就，但毕竟是有扩产经验的行业。我不质疑缺货，我质疑永久缺货，质疑给增长估值\n\n光相比没扩产经验，应对AI需要要扩产+迭代，中处处被卡。CPO决无可能及时上量"
+      ],
+      "dom_order": 95
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056878828669338008",
+      "status_url": "/ShanghaoJin/status/2056878828669338008",
+      "datetime": "2026-05-19T23:25:02.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "eclipse111222",
+      "texts": [
+        "yes"
+      ],
+      "dom_order": 96
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056865988289945794",
+      "status_url": "/ShanghaoJin/status/2056865988289945794",
+      "datetime": "2026-05-19T22:34:00.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "不是美国人Ayar Labs老股也不能买吗？"
+      ],
+      "dom_order": 97
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056861338849378787",
+      "status_url": "/ShanghaoJin/status/2056861338849378787",
+      "datetime": "2026-05-19T22:15:32.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "whyyoutouzhele",
+      "texts": [
+        "在风口猪都能飞，那这些外包团队捕风捉影的话来看空中国有史以来最赚钱的半导体公司\n\n那只无脑黑、是跟自己钱包过不去"
+      ],
+      "dom_order": 98
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056858558206226543",
+      "status_url": "/ShanghaoJin/status/2056858558206226543",
+      "datetime": "2026-05-19T22:04:29.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "NakMuayLA",
+      "texts": [
+        "天天在拉，他们天天有新号…"
+      ],
+      "dom_order": 99
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056733659496071358",
+      "status_url": "/ShanghaoJin/status/2056733659496071358",
+      "datetime": "2026-05-19T13:48:11.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "LZ41576310",
+      "texts": [
+        "信AI的其实是个小圈子，你去华尔街做credit的人、做宏观的人圈子问一问\n\n他们全觉得我在痴人说梦"
+      ],
+      "dom_order": 100
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056733342239006890",
+      "status_url": "/ShanghaoJin/status/2056733342239006890",
+      "datetime": "2026-05-19T13:46:55.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "RYANHINGSHING",
+      "texts": [
+        "等他们看空capex被业绩打脸\n\n无脑空IGV被拉飞\n\n当这两个因素同频，IGV中闪光的就会破茧而出，获得新生（ATH）\n\n今年必然能看到"
+      ],
+      "dom_order": 101
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056691396074205516",
+      "status_url": "/ShanghaoJin/status/2056691396074205516",
+      "datetime": "2026-05-19T11:00:14.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "cmooreshekou",
+      "texts": [
+        "不太会发900亿，最后一轮都3700亿了"
+      ],
+      "dom_order": 102
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056682274662600751",
+      "status_url": "/ShanghaoJin/status/2056682274662600751",
+      "datetime": "2026-05-19T10:24:00.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "guyuanxime20873",
+      "texts": [
+        "所以你去喷他别来喷我"
+      ],
+      "dom_order": 103
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056681797958934744",
+      "status_url": "/ShanghaoJin/status/2056681797958934744",
+      "datetime": "2026-05-19T10:22:06.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Joe_Cheng23",
+      "texts": [
+        "扩产决心极大，效果不好说"
+      ],
+      "dom_order": 104
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056640294549098781",
+      "status_url": "/ShanghaoJin/status/2056640294549098781",
+      "datetime": "2026-05-19T07:37:11.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "我错了，原来风险偏好最高的从来不是币圈…..\n\nKorean are amazing",
+        "Risk appetite in South Korea is exploding:\n\nMargin loans outstanding on Korean stocks are up to a record $24.3 billion.\n\nSince the start of 2025, margin debt has surged +140% and is up +32% since the beginning of this year alone.\n\nTo put this into perspective, the value of"
+      ],
+      "dom_order": 105
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056639555160465577",
+      "status_url": "/ShanghaoJin/status/2056639555160465577",
+      "datetime": "2026-05-19T07:34:15.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "the604og",
+      "texts": [
+        "那也不是一蹴而就的\n\n现在Trump既要还要，要发债搞赤字，还要利率降下去"
+      ],
+      "dom_order": 106
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056628269706019148",
+      "status_url": "/ShanghaoJin/status/2056628269706019148",
+      "datetime": "2026-05-19T06:49:24.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "didiliu222",
+      "texts": [
+        "别急设备没那么好买全"
+      ],
+      "dom_order": 107
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056601276717396156",
+      "status_url": "/ShanghaoJin/status/2056601276717396156",
+      "datetime": "2026-05-19T05:02:08.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "168MrZ",
+      "texts": [
+        "他还要，让不让其他人活了？"
+      ],
+      "dom_order": 108
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056599660874358884",
+      "status_url": "/ShanghaoJin/status/2056599660874358884",
+      "datetime": "2026-05-19T04:55:43.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jasonnotes0206",
+      "texts": [
+        "对，但我心理差距太大了，我肯定买不下手"
+      ],
+      "dom_order": 109
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056599483442724886",
+      "status_url": "/ShanghaoJin/status/2056599483442724886",
+      "datetime": "2026-05-19T04:55:01.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "cattom54180",
+      "texts": [
+        "来得及的 没那么快"
+      ],
+      "dom_order": 110
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056599336218497429",
+      "status_url": "/ShanghaoJin/status/2056599336218497429",
+      "datetime": "2026-05-19T04:54:26.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "rickawsb",
+      "texts": [
+        "蔡司不限制中国，扩产难度大家都一样\n\n光才是真扩不出来，光芯检测都有十几分钟"
+      ],
+      "dom_order": 111
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056598513379864947",
+      "status_url": "/ShanghaoJin/status/2056598513379864947",
+      "datetime": "2026-05-19T04:51:09.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jasonnotes0206",
+      "texts": [
+        "存储吗？"
+      ],
+      "dom_order": 112
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056593835682410817",
+      "status_url": "/ShanghaoJin/status/2056593835682410817",
+      "datetime": "2026-05-19T04:32:34.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "himself65",
+      "texts": [
+        "哈哈哈哈～～上周看到他们吹我就知道要完犊子了"
+      ],
+      "dom_order": 113
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056592849043706358",
+      "status_url": "/ShanghaoJin/status/2056592849043706358",
+      "datetime": "2026-05-19T04:28:39.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "xbhuslapwk",
+      "texts": [
+        "胡说八道….."
+      ],
+      "dom_order": 114
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056592766587871644",
+      "status_url": "/ShanghaoJin/status/2056592766587871644",
+      "datetime": "2026-05-19T04:28:19.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ereavd",
+      "texts": [
+        "差2nm PHY"
+      ],
+      "dom_order": 115
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056592643183009930",
+      "status_url": "/ShanghaoJin/status/2056592643183009930",
+      "datetime": "2026-05-19T04:27:50.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Balder13946731",
+      "texts": [
+        "DDR崩盘了HBM wafer也一起下去了\n\n哪怕挺着HBM封装，公司出货大头都是DDR，公司盈利也…."
+      ],
+      "dom_order": 116
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056591878909509818",
+      "status_url": "/ShanghaoJin/status/2056591878909509818",
+      "datetime": "2026-05-19T04:24:48.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "alexchenhit",
+      "texts": [
+        "你们不要瞎开玩笑，怎么可能呢，干DDR的凭什么这估值？没那么多散户，科创还是很多机构的"
+      ],
+      "dom_order": 117
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056591378231267496",
+      "status_url": "/ShanghaoJin/status/2056591378231267496",
+      "datetime": "2026-05-19T04:22:48.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "chrisw09010901",
+      "texts": [
+        "而且你敢买吗\n\n我心里的AAOI就是single digit，现在100多还在吹，我怎么可能买"
+      ],
+      "dom_order": 118
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056588599047696805",
+      "status_url": "/ShanghaoJin/status/2056588599047696805",
+      "datetime": "2026-05-19T04:11:46.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "好问题\n\n为什么有时候知道要回调也不一定要操作\n\n1. 回调与否是不确定的\n\n2. 回调幅度也是走一步看一步的\n\n要高抛低吸就需要“卖对”和“买对”，在你很确定有信心的长期标的上做这样的事情“良率”太低不值得",
+        "大回调的时候为什么Jin老师不打算减仓？"
+      ],
+      "dom_order": 119
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056586433683669193",
+      "status_url": "/ShanghaoJin/status/2056586433683669193",
+      "datetime": "2026-05-19T04:03:09.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "wong07076",
+      "texts": [
+        "直接看GS FCI也可以，有eq分类的"
+      ],
+      "dom_order": 120
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056586093420753109",
+      "status_url": "/ShanghaoJin/status/2056586093420753109",
+      "datetime": "2026-05-19T04:01:48.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Xiaoyu_Liu",
+      "texts": [
+        "不需要那么久…."
+      ],
+      "dom_order": 121
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056585898876420413",
+      "status_url": "/ShanghaoJin/status/2056585898876420413",
+      "datetime": "2026-05-19T04:01:02.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "rickawsb",
+      "texts": [
+        "全部工序缺货，连北方华创都需要扩产\n\n但是扩产扩多少是个未来玄学，举国之力扩产是个过去式事实"
+      ],
+      "dom_order": 122
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056583443635638776",
+      "status_url": "/ShanghaoJin/status/2056583443635638776",
+      "datetime": "2026-05-19T03:51:17.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "wong07076",
+      "texts": [
+        "deleverage\n\n银行流动性不等于股票一定涨"
+      ],
+      "dom_order": 123
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056581618274623823",
+      "status_url": "/ShanghaoJin/status/2056581618274623823",
+      "datetime": "2026-05-19T03:44:01.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "rickawsb",
+      "texts": [
+        "看看发改委能整合多少现有DUV了\n\n2023-2025买了很多在邪修"
+      ],
+      "dom_order": 124
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056575368283500656",
+      "status_url": "/ShanghaoJin/status/2056575368283500656",
+      "datetime": "2026-05-19T03:19:11.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "yao30059829",
+      "texts": [
+        "不同线问出来不同价，我问的是比较上游对下游报价"
+      ],
+      "dom_order": 125
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056574825674715153",
+      "status_url": "/ShanghaoJin/status/2056574825674715153",
+      "datetime": "2026-05-19T03:17:02.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "labubu_trader",
+      "texts": [
+        "he actually sold before April …"
+      ],
+      "dom_order": 126
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056572498934907299",
+      "status_url": "/ShanghaoJin/status/2056572498934907299",
+      "datetime": "2026-05-19T03:07:47.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "joedhammer",
+      "texts": [
+        "华强北H100溢价40%"
+      ],
+      "dom_order": 127
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056569195341750389",
+      "status_url": "/ShanghaoJin/status/2056569195341750389",
+      "datetime": "2026-05-19T02:54:40.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "SwiftCat2012",
+      "texts": [
+        "不是采购赚钱，是销售要赚钱\n\n批发都是给大批发商的，所以才会有“条子”\n\n条子的货都还在厂里没出来呢\n\n条子价跌了50%明白吗"
+      ],
+      "dom_order": 128
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056568501633204603",
+      "status_url": "/ShanghaoJin/status/2056568501633204603",
+      "datetime": "2026-05-19T02:51:54.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "rickawsb",
+      "texts": [
+        "MU不也在用DUV么"
+      ],
+      "dom_order": 129
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056566441927962739",
+      "status_url": "/ShanghaoJin/status/2056566441927962739",
+      "datetime": "2026-05-19T02:43:43.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "SwiftCat2012",
+      "texts": [
+        "理想、吉利汽车的存储采购订单很多都是走华强北的\n\n存储公司销售不要赚钱吗？"
+      ],
+      "dom_order": 130
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056561803434578088",
+      "status_url": "/ShanghaoJin/status/2056561803434578088",
+      "datetime": "2026-05-19T02:25:17.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "FengLeo150196",
+      "texts": [
+        "最贵一笔8.1"
+      ],
+      "dom_order": 131
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056561653396001122",
+      "status_url": "/ShanghaoJin/status/2056561653396001122",
+      "datetime": "2026-05-19T02:24:41.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "liu_shuo4202",
+      "texts": [
+        "😂确实每天都在crypto收现金流"
+      ],
+      "dom_order": 132
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056561417986482354",
+      "status_url": "/ShanghaoJin/status/2056561417986482354",
+      "datetime": "2026-05-19T02:23:45.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "SwiftCat2012",
+      "texts": [
+        "ddr5跟hbm不是一个wafer出来的？"
+      ],
+      "dom_order": 133
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056561212176109866",
+      "status_url": "/ShanghaoJin/status/2056561212176109866",
+      "datetime": "2026-05-19T02:22:56.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "SwiftCat2012",
+      "texts": [
+        "ddr5条子一样腰斩了\n\n你去华强北问问就知道了"
+      ],
+      "dom_order": 134
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056555524905382085",
+      "status_url": "/ShanghaoJin/status/2056555524905382085",
+      "datetime": "2026-05-19T02:00:20.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "balu34620726",
+      "texts": [
+        "必须有不小仓位"
+      ],
+      "dom_order": 135
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056526658287571453",
+      "status_url": "/ShanghaoJin/status/2056526658287571453",
+      "datetime": "2026-05-19T00:05:38.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "cc11344",
+      "texts": [
+        "有920 有900-，加一起900出头吧"
+      ],
+      "dom_order": 136
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056526324127424563",
+      "status_url": "/ShanghaoJin/status/2056526324127424563",
+      "datetime": "2026-05-19T00:04:18.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "sketchy50997123",
+      "texts": [
+        "因为肯定不会太快"
+      ],
+      "dom_order": 137
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056525826510967080",
+      "status_url": "/ShanghaoJin/status/2056525826510967080",
+      "datetime": "2026-05-19T00:02:20.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Q1wSM098LTClrW0",
+      "texts": [
+        "30x 我已经觉得1.5T 20x很过分很过分了…."
+      ],
+      "dom_order": 138
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056525608977625155",
+      "status_url": "/ShanghaoJin/status/2056525608977625155",
+      "datetime": "2026-05-19T00:01:28.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "sketchy50997123",
+      "texts": [
+        "那你卖了吧\n\n我们投资理念不同，我先拿2年不看"
+      ],
+      "dom_order": 139
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056525348809167040",
+      "status_url": "/ShanghaoJin/status/2056525348809167040",
+      "datetime": "2026-05-19T00:00:26.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "yao30059829",
+      "texts": [
+        "华强北囤存储的心都在滴血，我经常channel check的"
+      ],
+      "dom_order": 140
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056525086774210819",
+      "status_url": "/ShanghaoJin/status/2056525086774210819",
+      "datetime": "2026-05-18T23:59:23.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Joeblac68421251",
+      "texts": [
+        "给20倍中国溢价还保守？😱"
+      ],
+      "dom_order": 141
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056524711753036090",
+      "status_url": "/ShanghaoJin/status/2056524711753036090",
+      "datetime": "2026-05-18T23:57:54.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "fafa_liu_",
+      "texts": [
+        "有的"
+      ],
+      "dom_order": 142
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056524656677634325",
+      "status_url": "/ShanghaoJin/status/2056524656677634325",
+      "datetime": "2026-05-18T23:57:41.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Huggle1909063",
+      "texts": [
+        "ATH吧"
+      ],
+      "dom_order": 143
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056524534631850245",
+      "status_url": "/ShanghaoJin/status/2056524534631850245",
+      "datetime": "2026-05-18T23:57:12.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Ross1811215",
+      "texts": [
+        "为什么nok和AMD是小票？\n\nPoet 2DG NVTS这些才是小票\n\n当然我还有有个GS的证券账户常年囤着不看的，里面是goog aapl和meta。一年不会操作一次的"
+      ],
+      "dom_order": 144
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056523946867208343",
+      "status_url": "/ShanghaoJin/status/2056523946867208343",
+      "datetime": "2026-05-18T23:54:51.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "moneyinyes",
+      "texts": [
+        "共振向下的时候不管，看着\n\n反正有crypto补充现金流，继续买"
+      ],
+      "dom_order": 145
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056523603529941447",
+      "status_url": "/ShanghaoJin/status/2056523603529941447",
+      "datetime": "2026-05-18T23:53:30.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "lucaspinker",
+      "texts": [
+        "有的 190左右成本"
+      ],
+      "dom_order": 146
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056522164434866623",
+      "status_url": "/ShanghaoJin/status/2056522164434866623",
+      "datetime": "2026-05-18T23:47:46.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "chaojinmuchu1",
+      "texts": [
+        "怎么可能一条直线不回调\n\n我还是有不少Nok AMD"
+      ],
+      "dom_order": 147
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056521758400991656",
+      "status_url": "/ShanghaoJin/status/2056521758400991656",
+      "datetime": "2026-05-18T23:46:10.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "我觉得不会直接1.5T，上市定价是按照去年盈利估值的。中国韭菜看到瞬间翻倍都不一定敢买\n\n但是应该很快，隔几个星期、1-2个月就要到\n\n我对A股韭性不是太了解，胡言乱语下",
+        "长鑫一上市就直奔1.5亿，有可能吗？现在市场蠢蠢欲动，到处是报道。"
+      ],
+      "dom_order": 148
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056521150969295317",
+      "status_url": "/ShanghaoJin/status/2056521150969295317",
+      "datetime": "2026-05-18T23:43:45.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "hglgY8rAiQ62493",
+      "texts": [
+        "人家扩产是有序的，第一目标不是扩产，是保证盈利率\n\n有些人扩产就是为了市场份额去的"
+      ],
+      "dom_order": 149
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056520061607981163",
+      "status_url": "/ShanghaoJin/status/2056520061607981163",
+      "datetime": "2026-05-18T23:39:25.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "chaojinmuchu1",
+      "texts": [
+        "我卖早了，intc好痛….."
+      ],
+      "dom_order": 150
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056519910302560277",
+      "status_url": "/ShanghaoJin/status/2056519910302560277",
+      "datetime": "2026-05-18T23:38:49.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "rdd147",
+      "texts": [
+        "this wont end well as it always does"
+      ],
+      "dom_order": 151
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056518736975417847",
+      "status_url": "/ShanghaoJin/status/2056518736975417847",
+      "datetime": "2026-05-18T23:34:09.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "他们说的好像人家刚刚下的单一样，笑死我了"
+      ],
+      "dom_order": 152
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056518388843970944",
+      "status_url": "/ShanghaoJin/status/2056518388843970944",
+      "datetime": "2026-05-18T23:32:46.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "btw \n\n买设备还是不容易的～～\n\n做HBM还是不过关的～～"
+      ],
+      "dom_order": 153
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056518088485749015",
+      "status_url": "/ShanghaoJin/status/2056518088485749015",
+      "datetime": "2026-05-18T23:31:35.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "我说的长鑫长存扩产DDR“农村包围城市”的时候被大家喷的狗血淋头\n\n你们应该去喷 Kye-hyun Kyung",
+        "Kye-hyun Kyung, Samsung Electronics Senior Advisor: \"Memory prices to fall in H2 next year… Korea must cultivate deep-tech manufacturing\"\n\nKye-hyun Kyung, Senior Advisor and former head of Samsung Electronics' Device Solutions (DS) Division, forecast that memory semiconductor"
+      ],
+      "dom_order": 154
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056516594810102254",
+      "status_url": "/ShanghaoJin/status/2056516594810102254",
+      "datetime": "2026-05-18T23:25:39.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jimijimiaba",
+      "texts": [
+        "克制是心态不需要要努力\n\n我说的是那种蹲着“打狗”的努力"
+      ],
+      "dom_order": 155
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056512309137412520",
+      "status_url": "/ShanghaoJin/status/2056512309137412520",
+      "datetime": "2026-05-18T23:08:37.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "hey_xiami",
+      "texts": [
+        "我买了，但是总仓位还是很轻，在宏观恶化被充分定价之前我不会下大仓位的\n\n5月份属于半踏空，当时手上只有AMD和Nok"
+      ],
+      "dom_order": 156
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056511730814206195",
+      "status_url": "/ShanghaoJin/status/2056511730814206195",
+      "datetime": "2026-05-18T23:06:19.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "MarsCarsChipDip",
+      "texts": [
+        "三安要RMB才能买"
+      ],
+      "dom_order": 157
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056505504256671894",
+      "status_url": "/ShanghaoJin/status/2056505504256671894",
+      "datetime": "2026-05-18T22:41:34.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "labubu_trader",
+      "texts": [
+        "yes！"
+      ],
+      "dom_order": 158
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056502650057977875",
+      "status_url": "/ShanghaoJin/status/2056502650057977875",
+      "datetime": "2026-05-18T22:30:14.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Ross1811215",
+      "texts": [
+        "买了\n\n我有挺多Nok和最近买了Lite"
+      ],
+      "dom_order": 159
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056409419802694085",
+      "status_url": "/ShanghaoJin/status/2056409419802694085",
+      "datetime": "2026-05-18T16:19:46.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "SwiftCat2012",
+      "texts": [
+        "感觉A股半导体美股化，美股板块轮动A股化"
+      ],
+      "dom_order": 160
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056408475153138071",
+      "status_url": "/ShanghaoJin/status/2056408475153138071",
+      "datetime": "2026-05-18T16:16:01.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "RYANHINGSHING",
+      "texts": [
+        "不太会因为利差去做carry unwind\n\n要么资产波动太大，要么汇率从问题"
+      ],
+      "dom_order": 161
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056407132845867451",
+      "status_url": "/ShanghaoJin/status/2056407132845867451",
+      "datetime": "2026-05-18T16:10:41.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "JackMarsCat",
+      "texts": [
+        "我觉得光都没啥问题"
+      ],
+      "dom_order": 162
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056406165043794188",
+      "status_url": "/ShanghaoJin/status/2056406165043794188",
+      "datetime": "2026-05-18T16:06:50.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Cyc1ing1313",
+      "texts": [
+        "对 我也在研究"
+      ],
+      "dom_order": 163
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056404071989530718",
+      "status_url": "/ShanghaoJin/status/2056404071989530718",
+      "datetime": "2026-05-18T15:58:31.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "erwinhee7",
+      "texts": [
+        "fyi",
+        "考试成绩出来一堆70、80的都开始欢呼开始涨\n\n默默地最后一个NVDA～～99/100\n\n大家顿时安静了 x.com/ShanghaoJin/st…"
+      ],
+      "dom_order": 164
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056403384840982597",
+      "status_url": "/ShanghaoJin/status/2056403384840982597",
+      "datetime": "2026-05-18T15:55:47.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "WSLHB",
+      "texts": [
+        "有点耐心"
+      ],
+      "dom_order": 165
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056403211733667976",
+      "status_url": "/ShanghaoJin/status/2056403211733667976",
+      "datetime": "2026-05-18T15:55:06.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "MTK MicroLED值得关注\n\n这标志着大家从brandwidth转向brandwidth与lantency兼顾，是光里的一个标志性的事件"
+      ],
+      "dom_order": 166
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056400821445894144",
+      "status_url": "/ShanghaoJin/status/2056400821445894144",
+      "datetime": "2026-05-18T15:45:36.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "LZ41576310",
+      "texts": [
+        "谁让他们集火骂我一年多….."
+      ],
+      "dom_order": 167
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056396885825577315",
+      "status_url": "/ShanghaoJin/status/2056396885825577315",
+      "datetime": "2026-05-18T15:29:58.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "打球靠的是自己挥杆的“节奏”\n\n节奏这个东西很难形容\n\n反正追着球跑，上去急着马上要打的，基本水平不会太好"
+      ],
+      "dom_order": 168
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056396302578335956",
+      "status_url": "/ShanghaoJin/status/2056396302578335956",
+      "datetime": "2026-05-18T15:27:39.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jasonnotes0206",
+      "texts": [
+        "bank reserves + RRP + TGA\n\nSOFR -IORB/ SOFR \n\n在看这些变化量，天天看、看多就有感觉了"
+      ],
+      "dom_order": 169
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056394683736273115",
+      "status_url": "/ShanghaoJin/status/2056394683736273115",
+      "datetime": "2026-05-18T15:21:13.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "无意冒犯～～但是中国人从小教育“勤劳致富、要努力”是一句谬论\n\n特别在投资上，努力往往是不归路\n\n散户要做的恰恰是躺平，把好自己熟悉的“节奏”",
+        "别的不说，币圈人很勤奋的，每天顶着时差研究土狗协议、扫链，生怕买不到便宜的盘子，关键还经常拿着土狗宁愿到归零也不走，这两点特质战胜了80%的散户"
+      ],
+      "dom_order": 170
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056393512292343880",
+      "status_url": "/ShanghaoJin/status/2056393512292343880",
+      "datetime": "2026-05-18T15:16:33.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "WooStalk",
+      "texts": [
+        "08年整个市场流动性紧缩是“因”\n\n债券大涨、黄金大跌、股市大跌、美元大涨是“果”\n\n有明确因，当然关联度强拉"
+      ],
+      "dom_order": 171
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056392531416584668",
+      "status_url": "/ShanghaoJin/status/2056392531416584668",
+      "datetime": "2026-05-18T15:12:40.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "dearbaibabybus",
+      "texts": [
+        "反大部分韭菜常识：10yrUSD与股票关联度很低的\n\n10yr需要在特定情况下才会强关联，比如rate vol飙升、比如维持很长时间、比如SIVB时候发生的债券deleverage导致流动性紧张\n\n现在不存在银行流动性紧张，简单就是股票逼空结束，回调而已"
+      ],
+      "dom_order": 172
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056390650053218487",
+      "status_url": "/ShanghaoJin/status/2056390650053218487",
+      "datetime": "2026-05-18T15:05:11.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "h_kobserver",
+      "texts": [
+        "牛🐮 好办法"
+      ],
+      "dom_order": 173
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056390504200409555",
+      "status_url": "/ShanghaoJin/status/2056390504200409555",
+      "datetime": "2026-05-18T15:04:36.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jojowamikko",
+      "texts": [
+        "就看着他们跌，想好自己心理价位"
+      ],
+      "dom_order": 174
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056390257621565549",
+      "status_url": "/ShanghaoJin/status/2056390257621565549",
+      "datetime": "2026-05-18T15:03:37.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "wyn05230602",
+      "texts": [
+        "我没卖"
+      ],
+      "dom_order": 175
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056390092135215569",
+      "status_url": "/ShanghaoJin/status/2056390092135215569",
+      "datetime": "2026-05-18T15:02:58.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "信了吗？\n\n币圈魔咒屡试不爽",
+        "币圈的都在研究硬件半导体，你们可以看看软件，特别是AI受益的那几个\n\n我觉得打破short igv long semi是今年金矿，很多软件确实会被AI吃掉，但并不是每一个。大家会意识到不能无脑空igv，毕竟中间还有个Orcl呢 x.com/mrzhang5825104…"
+      ],
+      "dom_order": 176
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056389968990515343",
+      "status_url": "/ShanghaoJin/status/2056389968990515343",
+      "datetime": "2026-05-18T15:02:29.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bluepearl821",
+      "texts": [
+        "pltr理论上也是AI收益的"
+      ],
+      "dom_order": 177
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056281281957425548",
+      "status_url": "/ShanghaoJin/status/2056281281957425548",
+      "datetime": "2026-05-18T07:50:36.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jinghui30",
+      "texts": [
+        "下跌"
+      ],
+      "dom_order": 178
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056222605124993326",
+      "status_url": "/ShanghaoJin/status/2056222605124993326",
+      "datetime": "2026-05-18T03:57:26.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jimijimiaba",
+      "texts": [
+        "那你是低估了AI读取大数据的能力了"
+      ],
+      "dom_order": 179
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056048415591829820",
+      "status_url": "/ShanghaoJin/status/2056048415591829820",
+      "datetime": "2026-05-17T16:25:16.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "DaBao250",
+      "texts": [
+        "也不至于第一天就飞1.5t吧 😵‍💫"
+      ],
+      "dom_order": 180
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056047340285558880",
+      "status_url": "/ShanghaoJin/status/2056047340285558880",
+      "datetime": "2026-05-17T16:21:00.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Bill29823155011",
+      "texts": [
+        "不会马上到的，感觉开始几天也就5000亿（纯瞎猜）"
+      ],
+      "dom_order": 181
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056036915841999122",
+      "status_url": "/ShanghaoJin/status/2056036915841999122",
+      "datetime": "2026-05-17T15:39:34.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "RYANHINGSHING",
+      "texts": [
+        "Brilliant European plan— is to keep focusing on Green energy, \n\nopen the doors to mass Muslim, \n\nand hand over tech and manufacturing straight to China\n\nIt is turning itself into South Africa 2.0 soon"
+      ],
+      "dom_order": 182
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2056034415504167178",
+      "status_url": "/ShanghaoJin/status/2056034415504167178",
+      "datetime": "2026-05-17T15:29:38.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jukan05",
+      "texts": [
+        "I think its market cap could past 1.5T RMB after IPO (220b)"
+      ],
+      "dom_order": 183
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055871991178219654",
+      "status_url": "/ShanghaoJin/status/2055871991178219654",
+      "datetime": "2026-05-17T04:44:13.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "liuhaot89549511",
+      "texts": [
+        "token需求 capex投入"
+      ],
+      "dom_order": 184
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055866237302018458",
+      "status_url": "/ShanghaoJin/status/2055866237302018458",
+      "datetime": "2026-05-17T04:21:21.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "nnnnnniiccoo",
+      "texts": [
+        "不想推荐我低价买的票让人家买，回撤一下我被骂死"
+      ],
+      "dom_order": 185
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055862717047885990",
+      "status_url": "/ShanghaoJin/status/2055862717047885990",
+      "datetime": "2026-05-17T04:07:22.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ll4038010816951",
+      "texts": [
+        "我说的是业务模式，lite业务杂些，起飞落后与中际旭创。nok比cien起来的慢"
+      ],
+      "dom_order": 186
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055857977941492139",
+      "status_url": "/ShanghaoJin/status/2055857977941492139",
+      "datetime": "2026-05-17T03:48:32.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "我不是看好orcl么\n\n那天他们直接问我光，都没问“现在最看好什么”"
+      ],
+      "dom_order": 187
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055856687207317631",
+      "status_url": "/ShanghaoJin/status/2055856687207317631",
+      "datetime": "2026-05-17T03:43:24.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "kklmt123456",
+      "texts": [
+        "币圈kol还会指点你硬件怎么看；告诉我宏观利率怎么走"
+      ],
+      "dom_order": 188
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055856554860281857",
+      "status_url": "/ShanghaoJin/status/2055856554860281857",
+      "datetime": "2026-05-17T03:42:53.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "kklmt123456",
+      "texts": [
+        "哈哈哈哈😂"
+      ],
+      "dom_order": 189
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055851494063448139",
+      "status_url": "/ShanghaoJin/status/2055851494063448139",
+      "datetime": "2026-05-17T03:22:46.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "dw_2772",
+      "texts": [
+        "全世界的“奥特曼”都在打dsp，Celestial那个光芯片+XPU 还没真起量\n\n概念先行，撑业绩的是dsp"
+      ],
+      "dom_order": 190
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055845879329018170",
+      "status_url": "/ShanghaoJin/status/2055845879329018170",
+      "datetime": "2026-05-17T03:00:28.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "AnastasiaYeung",
+      "texts": [
+        "我被喷的还不够吗….."
+      ],
+      "dom_order": 191
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055845553683230971",
+      "status_url": "/ShanghaoJin/status/2055845553683230971",
+      "datetime": "2026-05-17T02:59:10.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "HougeSol",
+      "texts": [
+        "http://\n5802.jp 底层衬底"
+      ],
+      "dom_order": 192
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055844829687587070",
+      "status_url": "/ShanghaoJin/status/2055844829687587070",
+      "datetime": "2026-05-17T02:56:17.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Organic_Figs",
+      "texts": [
+        "像不像一年多前的lite？"
+      ],
+      "dom_order": 193
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055843331796787542",
+      "status_url": "/ShanghaoJin/status/2055843331796787542",
+      "datetime": "2026-05-17T02:50:20.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bluepearl821",
+      "texts": [
+        "amzn卖丹炉，msft自己用，ROI肯定不好\n\n如果训练模型没搞定，必然大跌～～\n\n然而，只要功夫深，铁杵磨成针，有算力LLM早晚的事"
+      ],
+      "dom_order": 194
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055838630493692125",
+      "status_url": "/ShanghaoJin/status/2055838630493692125",
+      "datetime": "2026-05-17T02:31:39.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "UKpremier2024",
+      "texts": [
+        "要看票的，光跌了就珍惜吧"
+      ],
+      "dom_order": 195
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055838294525771846",
+      "status_url": "/ShanghaoJin/status/2055838294525771846",
+      "datetime": "2026-05-17T02:30:19.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Davidrunaway",
+      "texts": [
+        "如果真开出两粒煤球…. \n\n那就买吧～～"
+      ],
+      "dom_order": 196
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055837568189731055",
+      "status_url": "/ShanghaoJin/status/2055837568189731055",
+      "datetime": "2026-05-17T02:27:26.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Davidrunaway",
+      "texts": [
+        "msft看开AI模型训练香炉，两颗金丹还是两粒煤球\n\n两颗金丹他就是去年goog"
+      ],
+      "dom_order": 197
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055837287179845718",
+      "status_url": "/ShanghaoJin/status/2055837287179845718",
+      "datetime": "2026-05-17T02:26:19.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "dw_2772",
+      "texts": [
+        "nok买了我就忘记了，不看了"
+      ],
+      "dom_order": 198
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055823902480412722",
+      "status_url": "/ShanghaoJin/status/2055823902480412722",
+      "datetime": "2026-05-17T01:33:08.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "lala_oldtang",
+      "texts": [
+        "真可以…"
+      ],
+      "dom_order": 199
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055823373289263347",
+      "status_url": "/ShanghaoJin/status/2055823373289263347",
+      "datetime": "2026-05-17T01:31:02.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "NicolasZfogk",
+      "texts": [
+        "👍"
+      ],
+      "dom_order": 200
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055822940353208637",
+      "status_url": "/ShanghaoJin/status/2055822940353208637",
+      "datetime": "2026-05-17T01:29:18.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "lala_oldtang",
+      "texts": [
+        "信这些？\n\n啧啧啧～～～\n\n币圈我只信自己拉盘"
+      ],
+      "dom_order": 201
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055819703176892675",
+      "status_url": "/ShanghaoJin/status/2055819703176892675",
+      "datetime": "2026-05-17T01:16:27.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "CovestorhlLee",
+      "texts": [
+        "所以得“早信”加“长信”才无敌"
+      ],
+      "dom_order": 202
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055817990894150054",
+      "status_url": "/ShanghaoJin/status/2055817990894150054",
+      "datetime": "2026-05-17T01:09:38.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "btcpiggy",
+      "texts": [
+        "😂 没有敌意啊…."
+      ],
+      "dom_order": 203
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055817731929502125",
+      "status_url": "/ShanghaoJin/status/2055817731929502125",
+      "datetime": "2026-05-17T01:08:37.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "mimighost008",
+      "texts": [
+        "别说散户，我来回操作一样死"
+      ],
+      "dom_order": 204
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055814164569092434",
+      "status_url": "/ShanghaoJin/status/2055814164569092434",
+      "datetime": "2026-05-17T00:54:26.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ethmusk69",
+      "texts": [
+        "不回答了，回答太多次了"
+      ],
+      "dom_order": 205
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055813651819528315",
+      "status_url": "/ShanghaoJin/status/2055813651819528315",
+      "datetime": "2026-05-17T00:52:24.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "因为AI实际应该取代一部分软件、和一部分用软件的人\n\n同时应该助力一部分软件、和一部分用软件的人"
+      ],
+      "dom_order": 206
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055812549917249654",
+      "status_url": "/ShanghaoJin/status/2055812549917249654",
+      "datetime": "2026-05-17T00:48:01.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Huggle1909063",
+      "texts": [
+        "求之不得啊"
+      ],
+      "dom_order": 207
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055808277142028342",
+      "status_url": "/ShanghaoJin/status/2055808277142028342",
+      "datetime": "2026-05-17T00:31:02.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "币圈的都在研究硬件半导体，你们可以看看软件，特别是AI受益的那几个\n\n我觉得打破short igv long semi是今年金矿，很多软件确实会被AI吃掉，但并不是每一个。大家会意识到不能无脑空igv，毕竟中间还有个Orcl呢",
+        "金老师，软件这波会反弹吗，我目前有msft 和orcl，特别是msft 基本没咋涨也会跟着半导体一起吗"
+      ],
+      "dom_order": 208
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055806598845722874",
+      "status_url": "/ShanghaoJin/status/2055806598845722874",
+      "datetime": "2026-05-17T00:24:22.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "mingyue220",
+      "texts": [
+        "可以"
+      ],
+      "dom_order": 209
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055806195844383183",
+      "status_url": "/ShanghaoJin/status/2055806195844383183",
+      "datetime": "2026-05-17T00:22:46.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "mrzhang58251041",
+      "texts": [
+        "semi平仓 软件会好过一点的"
+      ],
+      "dom_order": 210
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055805538060177457",
+      "status_url": "/ShanghaoJin/status/2055805538060177457",
+      "datetime": "2026-05-17T00:20:09.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "himself65",
+      "texts": [
+        "互ping 👍"
+      ],
+      "dom_order": 211
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055804713959113118",
+      "status_url": "/ShanghaoJin/status/2055804713959113118",
+      "datetime": "2026-05-17T00:16:53.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "MercuryLee2022",
+      "texts": [
+        "相信我：投资上，这种勤奋只会让你归零"
+      ],
+      "dom_order": 212
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055804266456240356",
+      "status_url": "/ShanghaoJin/status/2055804266456240356",
+      "datetime": "2026-05-17T00:15:06.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "himself65",
+      "texts": [
+        "没事我本来就跑早了…. 仓位不重就不打算动了"
+      ],
+      "dom_order": 213
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055803330140762456",
+      "status_url": "/ShanghaoJin/status/2055803330140762456",
+      "datetime": "2026-05-17T00:11:23.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "XiaoZha62335239",
+      "texts": [
+        "我不够钱才卖的😂"
+      ],
+      "dom_order": 214
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055802800102363304",
+      "status_url": "/ShanghaoJin/status/2055802800102363304",
+      "datetime": "2026-05-17T00:09:17.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "SwiftCat2012",
+      "texts": [
+        "经济药衰退，比如meta万一广告收入降速了，会不会质疑呢？"
+      ],
+      "dom_order": 215
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055802518576521293",
+      "status_url": "/ShanghaoJin/status/2055802518576521293",
+      "datetime": "2026-05-17T00:08:10.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "stometaverse",
+      "texts": [
+        "对，比知识重要\n\n但是信息渠道同时掌握在少数有知识的人手上"
+      ],
+      "dom_order": 216
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055802319481229773",
+      "status_url": "/ShanghaoJin/status/2055802319481229773",
+      "datetime": "2026-05-17T00:07:22.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "WooStalk",
+      "texts": [
+        "那是这几天，5月初开始很猛的"
+      ],
+      "dom_order": 217
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055802077457309990",
+      "status_url": "/ShanghaoJin/status/2055802077457309990",
+      "datetime": "2026-05-17T00:06:24.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Huggle1909063",
+      "texts": [
+        "哪有一半这种好事，能回调25%烧高香吧\n\ninp wafer被中国限制，买家都优先溢价给线宽、噪音最好的Lite\n\ninp的事情让瓶颈从制造端提到前端了，Lite反而更强。lite tower感觉都调不了"
+      ],
+      "dom_order": 218
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055799830346342830",
+      "status_url": "/ShanghaoJin/status/2055799830346342830",
+      "datetime": "2026-05-16T23:57:29.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Huggle1909063",
+      "texts": [
+        "不能"
+      ],
+      "dom_order": 219
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055799728106037374",
+      "status_url": "/ShanghaoJin/status/2055799728106037374",
+      "datetime": "2026-05-16T23:57:04.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "yao30059829",
+      "texts": [
+        "我经常是信息太早，持股体验不好"
+      ],
+      "dom_order": 220
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055799557846655287",
+      "status_url": "/ShanghaoJin/status/2055799557846655287",
+      "datetime": "2026-05-16T23:56:24.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Zf6dCAGz08emM9s",
+      "texts": [
+        "后信就要有耐心也可以\n\n要么做先信，我说了你先买进去 😂"
+      ],
+      "dom_order": 221
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055799211342581946",
+      "status_url": "/ShanghaoJin/status/2055799211342581946",
+      "datetime": "2026-05-16T23:55:01.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "你卖put托着，赌徒买call拉盘"
+      ],
+      "dom_order": 222
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055798963106877837",
+      "status_url": "/ShanghaoJin/status/2055798963106877837",
+      "datetime": "2026-05-16T23:54:02.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "returner007",
+      "texts": [
+        "你看option skewness就知道了\n\n还有leverage etf成交量和非常集中的单票option成交量"
+      ],
+      "dom_order": 223
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055798036681613779",
+      "status_url": "/ShanghaoJin/status/2055798036681613779",
+      "datetime": "2026-05-16T23:50:21.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "最重要的是，如果币圈小伙伴靠学X推特，就是“后信”资本\n\n只能当“先信”、至少“中信”或者“长信”。绝对不能后信还没耐心",
+        "为什么呢？\n\n因为他们1.没有基础知识；2.没有真实信息渠道\n\n不否认币圈很多小伙伴非常努力，但是存粹从X学习，可以了解市场，不能当作投资建议的\n\n投资一个公司更长期，需要关注、研究的更加深入才能下注；而一个meme只需要大家热度讨论就能“冲”了"
+      ],
+      "dom_order": 224
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055797336715251962",
+      "status_url": "/ShanghaoJin/status/2055797336715251962",
+      "datetime": "2026-05-16T23:47:34.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Ryan76589177",
+      "texts": [
+        "币圈永远最后一波"
+      ],
+      "dom_order": 225
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055797155932361123",
+      "status_url": "/ShanghaoJin/status/2055797155932361123",
+      "datetime": "2026-05-16T23:46:51.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "我开始减仓之后的上涨很大程度上是靠大量卖put 买call 加上杠杆squeeze上去的\n\n即使中间有一半是real money买入，至少需要把杠杆给平了。瞎猜：先按5/1的水平先调整回去一半？走一步看一步吧\n\n这轮调整很难特别深，模型端没有质疑、Hyperscaler信贷没质疑、投入没质疑、衰退没定价\n\n共振我感觉要年底"
+      ],
+      "dom_order": 226
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055795117160829201",
+      "status_url": "/ShanghaoJin/status/2055795117160829201",
+      "datetime": "2026-05-16T23:38:45.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "有些贴子写的还是基本正确的\n\n就是热度太高了"
+      ],
+      "dom_order": 227
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055794934960304635",
+      "status_url": "/ShanghaoJin/status/2055794934960304635",
+      "datetime": "2026-05-16T23:38:01.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Infinite_JoeC",
+      "texts": [
+        "即使应该以后用PE过程也不是一蹴而就的"
+      ],
+      "dom_order": 228
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055794329114083816",
+      "status_url": "/ShanghaoJin/status/2055794329114083816",
+      "datetime": "2026-05-16T23:35:37.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "linck230038",
+      "texts": [
+        "我以为他们都把我拉黑了…."
+      ],
+      "dom_order": 229
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055794073341169927",
+      "status_url": "/ShanghaoJin/status/2055794073341169927",
+      "datetime": "2026-05-16T23:34:36.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "dearbaibabybus",
+      "texts": [
+        "还是打完麻药的患者…."
+      ],
+      "dom_order": 230
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055793917346607519",
+      "status_url": "/ShanghaoJin/status/2055793917346607519",
+      "datetime": "2026-05-16T23:33:59.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "QT9277",
+      "texts": [
+        "对"
+      ],
+      "dom_order": 231
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055793764636250134",
+      "status_url": "/ShanghaoJin/status/2055793764636250134",
+      "datetime": "2026-05-16T23:33:22.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "看到无数币圈KOL开始讨论存储和光，说的确实煞有介事\n\n吓得我毛骨悚然 \nhttps://\nx.com/dearbaibabybus\n/dearbaibabybus/status/2055793508355600562\n…"
+      ],
+      "dom_order": 232
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055793099629375669",
+      "status_url": "/ShanghaoJin/status/2055793099629375669",
+      "datetime": "2026-05-16T23:30:44.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "dearbaibabybus",
+      "texts": [
+        "吓死我了😱"
+      ],
+      "dom_order": 233
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055792758863147086",
+      "status_url": "/ShanghaoJin/status/2055792758863147086",
+      "datetime": "2026-05-16T23:29:23.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "为什么呢？\n\n因为他们1.没有基础知识；2.没有真实信息渠道\n\n不否认币圈很多小伙伴非常努力，但是存粹从X学习，可以了解市场，不能当作投资建议的\n\n投资一个公司更长期，需要关注、研究的更加深入才能下注；而一个meme只需要大家热度讨论就能“冲”了"
+      ],
+      "dom_order": 234
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055791562253344895",
+      "status_url": "/ShanghaoJin/status/2055791562253344895",
+      "datetime": "2026-05-16T23:24:37.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "一个市场，当你发现你关注的币圈KOL们都在煞有其事地研究的时候，不是3am也至少1:30am了"
+      ],
+      "dom_order": 235
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055790803176608053",
+      "status_url": "/ShanghaoJin/status/2055790803176608053",
+      "datetime": "2026-05-16T23:21:36.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "0Koyama",
+      "texts": [
+        "即使不合理，不要跟市场对着干"
+      ],
+      "dom_order": 236
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055568078176706644",
+      "status_url": "/ShanghaoJin/status/2055568078176706644",
+      "datetime": "2026-05-16T08:36:35.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "WjrYri",
+      "texts": [
+        "inp有点看中国政策啊，缺货肯定缺，缺货是不是等于给这个估值又是另外回事了"
+      ],
+      "dom_order": 237
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055566947966992816",
+      "status_url": "/ShanghaoJin/status/2055566947966992816",
+      "datetime": "2026-05-16T08:32:05.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "gariniseko",
+      "texts": [
+        "这种都不算宝藏了\n\n18快Intc 10以下aaoi \n\n这种才算宝藏"
+      ],
+      "dom_order": 238
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055553787386122749",
+      "status_url": "/ShanghaoJin/status/2055553787386122749",
+      "datetime": "2026-05-16T07:39:47.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Co0Oo00",
+      "texts": [
+        "不行不行 我不能只吃素.."
+      ],
+      "dom_order": 239
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055553369872421199",
+      "status_url": "/ShanghaoJin/status/2055553369872421199",
+      "datetime": "2026-05-16T07:38:08.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "二级宝藏现在太少了，很难挖了\n\n一级还是有不少"
+      ],
+      "dom_order": 240
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055540154169978882",
+      "status_url": "/ShanghaoJin/status/2055540154169978882",
+      "datetime": "2026-05-16T06:45:37.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "我已早卖飞，谢谢～～"
+      ],
+      "dom_order": 241
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055509301813506411",
+      "status_url": "/ShanghaoJin/status/2055509301813506411",
+      "datetime": "2026-05-16T04:43:01.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jiangjiangjohn",
+      "texts": [
+        "是啊～AI取代的不是软件，而是用软件的人"
+      ],
+      "dom_order": 242
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055501931230249182",
+      "status_url": "/ShanghaoJin/status/2055501931230249182",
+      "datetime": "2026-05-16T04:13:44.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "2237783583lw",
+      "texts": [
+        "新主席让委员们硬着头皮降息还是很难的"
+      ],
+      "dom_order": 243
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055501707531206913",
+      "status_url": "/ShanghaoJin/status/2055501707531206913",
+      "datetime": "2026-05-16T04:12:51.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "cranewang42",
+      "texts": [
+        "iren不如nbis"
+      ],
+      "dom_order": 244
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055499945961283664",
+      "status_url": "/ShanghaoJin/status/2055499945961283664",
+      "datetime": "2026-05-16T04:05:51.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "yalieb194602",
+      "texts": [
+        "硅基取代昂贵的碳基生命\n\n越是没钱不越应该用token替代人吗"
+      ],
+      "dom_order": 245
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055499419043484134",
+      "status_url": "/ShanghaoJin/status/2055499419043484134",
+      "datetime": "2026-05-16T04:03:45.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "yalieb194602",
+      "texts": [
+        "通胀看变量"
+      ],
+      "dom_order": 246
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055499158027661420",
+      "status_url": "/ShanghaoJin/status/2055499158027661420",
+      "datetime": "2026-05-16T04:02:43.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "kaptonia",
+      "texts": [
+        "当时10yr很低，现在已经在4.5%以上了\n\n不否认现在空国债在势头上，你觉得能打到多少？5%？超过SIVB倒闭？\n\n如果定价衰退，10yr又回跌到多少？"
+      ],
+      "dom_order": 247
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055495368213930489",
+      "status_url": "/ShanghaoJin/status/2055495368213930489",
+      "datetime": "2026-05-16T03:47:39.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "要区分今年vs俄乌战争油价上涨的区别\n\n并不是油价导致当时通胀，而是疫情时扩张财政政策、COVID移民完全停滞、劳动参与率极低。整个劳动力供应短缺且缺乏弹性，像堆积的干柴被点燃了\n\n油价从来不是2021-2023通胀的“罪魁祸首”，而是催化剂\n\n虽然这次石油危机更加严重，但没有当时这种通胀基础"
+      ],
+      "dom_order": 248
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055490390137122899",
+      "status_url": "/ShanghaoJin/status/2055490390137122899",
+      "datetime": "2026-05-16T03:27:52.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "edwardjjiang",
+      "texts": [
+        "不太可能"
+      ],
+      "dom_order": 249
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055487918320537745",
+      "status_url": "/ShanghaoJin/status/2055487918320537745",
+      "datetime": "2026-05-16T03:18:03.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "tommyto31797993",
+      "texts": [
+        "看伊朗搞到什么地步\n\n我说过现在宏观没开始price in最坏情况呢"
+      ],
+      "dom_order": 250
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055485845449453826",
+      "status_url": "/ShanghaoJin/status/2055485845449453826",
+      "datetime": "2026-05-16T03:09:49.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "Warsh“小媳妇”，一边通胀上升，一边大总统谆谆教诲就在耳后\n\n联储内部分歧很大，他或许想降息，但是可能性很小\n\n然而，通胀不是结构性的，并没有工资螺旋上涨迹象。冲击性通胀，更需要担心年底消费、需求下降\n\n但市场还是会先无脑空长债，压通胀。就像前几天Semi 被leverage up时，现在别跟市场对着干",
+        "泡沫有往上的，也有往下的\n\n不在疯狂的时候做对手盘，但是知道现在是疯狂"
+      ],
+      "dom_order": 251
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055311927086293146",
+      "status_url": "/ShanghaoJin/status/2055311927086293146",
+      "datetime": "2026-05-15T15:38:43.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "AndyjiAGI",
+      "texts": [
+        "然后设备来不及生产"
+      ],
+      "dom_order": 252
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055311731061383390",
+      "status_url": "/ShanghaoJin/status/2055311731061383390",
+      "datetime": "2026-05-15T15:37:57.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "beefcubee",
+      "texts": [
+        "NV 没有换酒瓶啊\n\nwafer价格涨不了，TSM靠packaging赚钱\n\n怎么可能让你拿了wafer去其他地方做packaing？"
+      ],
+      "dom_order": 253
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055296582090891754",
+      "status_url": "/ShanghaoJin/status/2055296582090891754",
+      "datetime": "2026-05-15T14:37:45.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "paofanyang",
+      "texts": [
+        "是啊～～"
+      ],
+      "dom_order": 254
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055295804404031850",
+      "status_url": "/ShanghaoJin/status/2055295804404031850",
+      "datetime": "2026-05-15T14:34:39.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Aidy090909",
+      "texts": [
+        "这是一个long short策略，一旦走反去杠杆，就逆向平仓"
+      ],
+      "dom_order": 255
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055295521305268592",
+      "status_url": "/ShanghaoJin/status/2055295521305268592",
+      "datetime": "2026-05-15T14:33:32.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "Goog想直接去TSMC下单，说明巨头已经看清楚token factory模式\n\n要持续地拼capex、拼token成本、就要比价、比投入效率。就不像过去那样做“好好先生”，要斤斤计较卷起来\n\n但未来几年踢开Avgo/Mtk、还想把封装拿去intc，这几乎是不可能的！\n\n你见过有人买茅台酒，不但要跳过经销商，还不要买酒瓶子的吗？",
+        "“药厂” vs “工厂”\n\n软件模式用户越多越好，衡量DAU，中国总习惯以甲方自居\n\nAI模式是token factory。“工厂”的电力、芯片供应都有限。想的是有限的产量卖给哪个高质量用户、怎么提高工厂产量\n\n我作为一个重度付费用户价值超过100个一般用户 x.com/shanghaojin/st…"
+      ],
+      "dom_order": 256
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055293348131537288",
+      "status_url": "/ShanghaoJin/status/2055293348131537288",
+      "datetime": "2026-05-15T14:24:54.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "半导体刚刚deleverage 软件几乎肯定涨"
+      ],
+      "dom_order": 257
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055293212370321456",
+      "status_url": "/ShanghaoJin/status/2055293212370321456",
+      "datetime": "2026-05-15T14:24:21.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "AntonLaVay",
+      "texts": [
+        "orcl在semi deleverage时候不会太惨\n\n他在igv中占9%，很多hf long semi short software"
+      ],
+      "dom_order": 258
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055292723037680002",
+      "status_url": "/ShanghaoJin/status/2055292723037680002",
+      "datetime": "2026-05-15T14:22:25.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "没缘分….. 随便买点吧，至少抄了你们底"
+      ],
+      "dom_order": 259
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055289008633327840",
+      "status_url": "/ShanghaoJin/status/2055289008633327840",
+      "datetime": "2026-05-15T14:07:39.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "laikankan4399",
+      "texts": [
+        "我只能说我有仓位，仓位Nok比较多，你进什么、你的风控与我都不同"
+      ],
+      "dom_order": 260
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055285942014120011",
+      "status_url": "/ShanghaoJin/status/2055285942014120011",
+      "datetime": "2026-05-15T13:55:28.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "keyahayek",
+      "texts": [
+        "我好像都没去过啊～～"
+      ],
+      "dom_order": 261
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055285707040825617",
+      "status_url": "/ShanghaoJin/status/2055285707040825617",
+      "datetime": "2026-05-15T13:54:32.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "决定250+放个order 看看有没有缘分\n\n随便拍脑袋的没有任何理由，就像semi 杠杆deleverage一样不讲道理"
+      ],
+      "dom_order": 262
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055279131383013789",
+      "status_url": "/ShanghaoJin/status/2055279131383013789",
+      "datetime": "2026-05-15T13:28:24.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jhqsh8888",
+      "texts": [
+        "好久没回去了 😭"
+      ],
+      "dom_order": 263
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055240732051677683",
+      "status_url": "/ShanghaoJin/status/2055240732051677683",
+      "datetime": "2026-05-15T10:55:49.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "RYANHINGSHING",
+      "texts": [
+        "上海去甬府"
+      ],
+      "dom_order": 264
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055240614770598035",
+      "status_url": "/ShanghaoJin/status/2055240614770598035",
+      "datetime": "2026-05-15T10:55:21.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "RYANHINGSHING",
+      "texts": [
+        "佳乐汤包—黄河路\n\n甬府—锦江饭店\n\nboiling crab — 新天地旁边\n\n复性公园里有个咖啡馆面包很好吃\n\n福1039/1088也可以\n\n瑞福源— 街坊的本地菜\n\nCoquille—蒙自路"
+      ],
+      "dom_order": 265
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055237103886496204",
+      "status_url": "/ShanghaoJin/status/2055237103886496204",
+      "datetime": "2026-05-15T10:41:24.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "QihongF44102",
+      "texts": [
+        "存储收入大因为他75%收入是DDR\n\n你说rack 内的HBM不比光多多少\n\n你要给DDR商品增长估值？那你怎么不给油田增长估值呢？"
+      ],
+      "dom_order": 266
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055210585852379387",
+      "status_url": "/ShanghaoJin/status/2055210585852379387",
+      "datetime": "2026-05-15T08:56:02.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "3倍杠杆，涨的时候rebalance一直在加仓滚单；跌的时候rebalance一直在低位卖货\n\n杠杆ETF，再大的牛市都会归零"
+      ],
+      "dom_order": 267
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055210002651169260",
+      "status_url": "/ShanghaoJin/status/2055210002651169260",
+      "datetime": "2026-05-15T08:53:43.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "不用开盲盒，\n\n我今天100%确定地告诉你，5年后归零",
+        "满仓 soxl 砸进去  5 年后开盲盒"
+      ],
+      "dom_order": 268
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055209540224954473",
+      "status_url": "/ShanghaoJin/status/2055209540224954473",
+      "datetime": "2026-05-15T08:51:52.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "qinbafrank",
+      "texts": [
+        "还是DDR商品性质那么大，能不能拿PE估值的问题"
+      ],
+      "dom_order": 269
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055187611724198300",
+      "status_url": "/ShanghaoJin/status/2055187611724198300",
+      "datetime": "2026-05-15T07:24:44.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "RYANHINGSHING",
+      "texts": [
+        "对，半导体设备缺成这样\n\n后面闭眼5年黄金期"
+      ],
+      "dom_order": 270
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055187051021287609",
+      "status_url": "/ShanghaoJin/status/2055187051021287609",
+      "datetime": "2026-05-15T07:22:31.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "RYANHINGSHING",
+      "texts": [
+        "长鑫长存概念股\n\ndisclaimer:\n\n鄙人不具体关心A股宏观、资金面、对手盘。这是存粹产业观点，可以当我胡言乱语",
+        "北方华创可以的！"
+      ],
+      "dom_order": 271
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055186367337083075",
+      "status_url": "/ShanghaoJin/status/2055186367337083075",
+      "datetime": "2026-05-15T07:19:48.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "长鑫概念股"
+      ],
+      "dom_order": 272
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055186276798857330",
+      "status_url": "/ShanghaoJin/status/2055186276798857330",
+      "datetime": "2026-05-15T07:19:26.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "RYANHINGSHING",
+      "texts": [
+        "北方华创可以的！"
+      ],
+      "dom_order": 273
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055184315538088225",
+      "status_url": "/ShanghaoJin/status/2055184315538088225",
+      "datetime": "2026-05-15T07:11:38.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "wong07076",
+      "texts": [
+        "就是小媳妇难做人"
+      ],
+      "dom_order": 274
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055162700070866967",
+      "status_url": "/ShanghaoJin/status/2055162700070866967",
+      "datetime": "2026-05-15T05:45:45.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "fi56622380",
+      "texts": [
+        "👍"
+      ],
+      "dom_order": 275
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055158886492192780",
+      "status_url": "/ShanghaoJin/status/2055158886492192780",
+      "datetime": "2026-05-15T05:30:36.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bluepearl821",
+      "texts": [
+        "他太贪、太携私恨、太鼠目寸光"
+      ],
+      "dom_order": 276
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055144438201291003",
+      "status_url": "/ShanghaoJin/status/2055144438201291003",
+      "datetime": "2026-05-15T04:33:11.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "lijngxng288667",
+      "texts": [
+        "调整需要共振，只能说有可能性，需要继续观察"
+      ],
+      "dom_order": 277
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055144017793626361",
+      "status_url": "/ShanghaoJin/status/2055144017793626361",
+      "datetime": "2026-05-15T04:31:31.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "lijngxng288667",
+      "texts": [
+        "对的"
+      ],
+      "dom_order": 278
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055140150074830876",
+      "status_url": "/ShanghaoJin/status/2055140150074830876",
+      "datetime": "2026-05-15T04:16:09.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "YanyanQ65151",
+      "texts": [
+        "设备现在也缺货"
+      ],
+      "dom_order": 279
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055134795488022873",
+      "status_url": "/ShanghaoJin/status/2055134795488022873",
+      "datetime": "2026-05-15T03:54:52.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "lanque300825",
+      "texts": [
+        "不怕不怕，虹吸、板块轮动、回调都会发生，且很正常\n\n但是半导体大周期不可阻挡，应缺尽缺、应涨尽涨"
+      ],
+      "dom_order": 280
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055133213509722447",
+      "status_url": "/ShanghaoJin/status/2055133213509722447",
+      "datetime": "2026-05-15T03:48:35.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "joedhammer",
+      "texts": [
+        "笑死😂"
+      ],
+      "dom_order": 281
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055127674620940354",
+      "status_url": "/ShanghaoJin/status/2055127674620940354",
+      "datetime": "2026-05-15T03:26:34.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "lvli6933",
+      "texts": [
+        "是啊～"
+      ],
+      "dom_order": 282
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055125279853670622",
+      "status_url": "/ShanghaoJin/status/2055125279853670622",
+      "datetime": "2026-05-15T03:17:03.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Pathusa",
+      "texts": [
+        "所以我昨天盘中没下手，安心睡觉去了"
+      ],
+      "dom_order": 283
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055124729208696998",
+      "status_url": "/ShanghaoJin/status/2055124729208696998",
+      "datetime": "2026-05-15T03:14:52.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Lanarksh1re",
+      "texts": [
+        "第一天可以买啊，而且前几天没有涨跌停"
+      ],
+      "dom_order": 284
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055124588317782258",
+      "status_url": "/ShanghaoJin/status/2055124588317782258",
+      "datetime": "2026-05-15T03:14:18.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "fi56622380",
+      "texts": [
+        "我也买了点娱乐，主要抄大家底\n\n早上嘴资群都说自己被挂树上了，抄他们底好开心"
+      ],
+      "dom_order": 285
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055124249103511651",
+      "status_url": "/ShanghaoJin/status/2055124249103511651",
+      "datetime": "2026-05-15T03:12:58.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "cherryPayment",
+      "texts": [
+        "就是这个道理，问题在rack里面成本占比光模块很高的"
+      ],
+      "dom_order": 286
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055123748928549331",
+      "status_url": "/ShanghaoJin/status/2055123748928549331",
+      "datetime": "2026-05-15T03:10:58.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "YanyanQ65151",
+      "texts": [
+        "哦哦 那我理解错了，抱歉抱歉"
+      ],
+      "dom_order": 287
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055123594955645372",
+      "status_url": "/ShanghaoJin/status/2055123594955645372",
+      "datetime": "2026-05-15T03:10:22.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "dhubxk1",
+      "texts": [
+        "确实这样！"
+      ],
+      "dom_order": 288
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055123492245569753",
+      "status_url": "/ShanghaoJin/status/2055123492245569753",
+      "datetime": "2026-05-15T03:09:57.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "chouyou74",
+      "texts": [
+        "人家不让你“抄”就是阻止产业升级？"
+      ],
+      "dom_order": 289
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055123021518852505",
+      "status_url": "/ShanghaoJin/status/2055123021518852505",
+      "datetime": "2026-05-15T03:08:05.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Cyc1ing1313",
+      "texts": [
+        "互相抄底，机会难得"
+      ],
+      "dom_order": 290
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055122907974799483",
+      "status_url": "/ShanghaoJin/status/2055122907974799483",
+      "datetime": "2026-05-15T03:07:38.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "eclipse111222",
+      "texts": [
+        "会解决的，清理下一些股东"
+      ],
+      "dom_order": 291
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055122716135727607",
+      "status_url": "/ShanghaoJin/status/2055122716135727607",
+      "datetime": "2026-05-15T03:06:52.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "YanyanQ65151",
+      "texts": [
+        "人家供应连个零头都不到，谁有空来顾及你这“市场”\n\n你看看大模型让不让中国人用就完了\n\n你不用说服我“中国市场很大”你去说服下OAI goog和Anthropic。不是我不要中国人客户，是他们不要"
+      ],
+      "dom_order": 292
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055120515262812596",
+      "status_url": "/ShanghaoJin/status/2055120515262812596",
+      "datetime": "2026-05-15T02:58:07.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "eclipse111222",
+      "texts": [
+        "打错了…. 不上头…."
+      ],
+      "dom_order": 293
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055120361344434202",
+      "status_url": "/ShanghaoJin/status/2055120361344434202",
+      "datetime": "2026-05-15T02:57:31.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "KigoAdusa",
+      "texts": [
+        "我一般对无脑黑会劝他理智一点\n\n但是碰上粉红直接拉黑"
+      ],
+      "dom_order": 294
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055118741688791535",
+      "status_url": "/ShanghaoJin/status/2055118741688791535",
+      "datetime": "2026-05-15T02:51:04.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "majia84314310",
+      "texts": [
+        "而且高质量客户会因为使用变得更高质量，碾压、淘汰低质量客户\n\n互联网时代是屌丝翻身，AI时代是精英逆袭"
+      ],
+      "dom_order": 295
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055118325475360789",
+      "status_url": "/ShanghaoJin/status/2055118325475360789",
+      "datetime": "2026-05-15T02:49:25.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "zeddddd_1",
+      "texts": [
+        "泡沫有往上的，也有往下的\n\n不在疯狂的时候做对手盘，但是知道现在是疯狂"
+      ],
+      "dom_order": 296
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055118073540325528",
+      "status_url": "/ShanghaoJin/status/2055118073540325528",
+      "datetime": "2026-05-15T02:48:25.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "勉为其难抄一下，我确实不对这个票不上头\n\n但想到居然能抄下你的底，还是让我忍不住开心下 \nhttps://\nx.com/himself65/stat\n/himself65/status/2054999596666138989\n…"
+      ],
+      "dom_order": 297
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055115517418180996",
+      "status_url": "/ShanghaoJin/status/2055115517418180996",
+      "datetime": "2026-05-15T02:38:16.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "rz649510",
+      "texts": [
+        "哈哈哈～～\n\n没错，我就是对他有偏见、讨厌他👎"
+      ],
+      "dom_order": 298
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055115292498653341",
+      "status_url": "/ShanghaoJin/status/2055115292498653341",
+      "datetime": "2026-05-15T02:37:22.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Dennishohyeong",
+      "texts": [
+        "“任我行”最恨的不是美帝，是同窗老朱"
+      ],
+      "dom_order": 299
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055115042438398033",
+      "status_url": "/ShanghaoJin/status/2055115042438398033",
+      "datetime": "2026-05-15T02:36:22.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "lala_oldtang",
+      "texts": [
+        "“药厂” vs “工厂”\n\n软件模式用户越多越好，衡量DAU，中国总习惯以甲方自居\n\nAI模式是token factory。“工厂”的电力、芯片供应都有限。想的是有限的产量卖给哪个高质量用户、怎么提高工厂产量\n\n我作为一个重度付费用户价值超过100个一般用户",
+        "AI不缺用户，缺的是供应\n\n模型公司不在乎中国这个“市场”，是不是国人有点不适应啦？"
+      ],
+      "dom_order": 300
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055114025659515048",
+      "status_url": "/ShanghaoJin/status/2055114025659515048",
+      "datetime": "2026-05-15T02:32:20.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "YanyanQ65151",
+      "texts": [
+        "token factory，需要高强度、高质量用户，不以量取胜"
+      ],
+      "dom_order": 301
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055113137788182787",
+      "status_url": "/ShanghaoJin/status/2055113137788182787",
+      "datetime": "2026-05-15T02:28:48.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "LucyBuilding",
+      "texts": [
+        "感觉追赶者，且前几年capex现在出产能的公司都不错"
+      ],
+      "dom_order": 302
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055112801212133443",
+      "status_url": "/ShanghaoJin/status/2055112801212133443",
+      "datetime": "2026-05-15T02:27:28.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "LucyBuilding",
+      "texts": [
+        "感谢感谢🙏"
+      ],
+      "dom_order": 303
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2055112495615054179",
+      "status_url": "/ShanghaoJin/status/2055112495615054179",
+      "datetime": "2026-05-15T02:26:15.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "lala_oldtang",
+      "texts": [
+        "AI不缺用户，缺的是供应\n\n模型公司不在乎中国这个“市场”，是不是国人有点不适应啦？"
+      ],
+      "dom_order": 304
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054973345750487265",
+      "status_url": "/ShanghaoJin/status/2054973345750487265",
+      "datetime": "2026-05-14T17:13:19.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "这个选曲子的品味，啧啧啧～（YMCA外）\n\n只能说“不是一家人不入一家门”",
+        "国宴收尾曲：特朗普专属BGM"
+      ],
+      "dom_order": 305
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054968372627210511",
+      "status_url": "/ShanghaoJin/status/2054968372627210511",
+      "datetime": "2026-05-14T16:53:34.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Tracy15434285",
+      "texts": [
+        "赶紧删除…."
+      ],
+      "dom_order": 306
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054967204698096027",
+      "status_url": "/ShanghaoJin/status/2054967204698096027",
+      "datetime": "2026-05-14T16:48:55.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "NsY3l",
+      "texts": [
+        "对～～"
+      ],
+      "dom_order": 307
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054960414904254898",
+      "status_url": "/ShanghaoJin/status/2054960414904254898",
+      "datetime": "2026-05-14T16:21:56.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "dearbaibabybus",
+      "texts": [
+        "接着～～“ORCL能不能买”"
+      ],
+      "dom_order": 308
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054957608113783058",
+      "status_url": "/ShanghaoJin/status/2054957608113783058",
+      "datetime": "2026-05-14T16:10:47.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "puckser",
+      "texts": [
+        "伊朗"
+      ],
+      "dom_order": 309
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054949959854969047",
+      "status_url": "/ShanghaoJin/status/2054949959854969047",
+      "datetime": "2026-05-14T15:40:24.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Pathusa",
+      "texts": [
+        "哈哈哈🤣"
+      ],
+      "dom_order": 310
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054949311943942502",
+      "status_url": "/ShanghaoJin/status/2054949311943942502",
+      "datetime": "2026-05-14T15:37:49.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "arkhipov563430",
+      "texts": [
+        "开盘可能也就300b—500bil，25年盈利还没起来呢\n\n坚决买这个位置能买到的"
+      ],
+      "dom_order": 311
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054947978595770868",
+      "status_url": "/ShanghaoJin/status/2054947978595770868",
+      "datetime": "2026-05-14T15:32:31.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "换2DG\n\n都赌博了，赌凶点"
+      ],
+      "dom_order": 312
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054946371770396842",
+      "status_url": "/ShanghaoJin/status/2054946371770396842",
+      "datetime": "2026-05-14T15:26:08.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Q1wSM098LTClrW0",
+      "texts": [
+        "1.5万亿+"
+      ],
+      "dom_order": 313
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054946366338761163",
+      "status_url": "/ShanghaoJin/status/2054946366338761163",
+      "datetime": "2026-05-14T15:26:07.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "GuantaoHe7",
+      "texts": [
+        "冲长鑫的学会了吧"
+      ],
+      "dom_order": 314
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054945811142984028",
+      "status_url": "/ShanghaoJin/status/2054945811142984028",
+      "datetime": "2026-05-14T15:23:55.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "happyskygood",
+      "texts": [
+        "tsmc不买EUV是谁说的？\n\n他们成熟制程是折旧完了拿着“收租”，做各种代工\n\n没有人永DUV去做GPU CPU的！"
+      ],
+      "dom_order": 315
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054945300083814455",
+      "status_url": "/ShanghaoJin/status/2054945300083814455",
+      "datetime": "2026-05-14T15:21:53.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Bill29823155011",
+      "texts": [
+        "成熟制程利好 \n\n开放买设备了"
+      ],
+      "dom_order": 316
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054944277890019623",
+      "status_url": "/ShanghaoJin/status/2054944277890019623",
+      "datetime": "2026-05-14T15:17:49.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "NsY3l",
+      "texts": [
+        "随便卖给中国人的意思….."
+      ],
+      "dom_order": 317
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054943639437299971",
+      "status_url": "/ShanghaoJin/status/2054943639437299971",
+      "datetime": "2026-05-14T15:15:17.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "WangCalist39284",
+      "texts": [
+        "长鑫不影响，不利好那些邪修的"
+      ],
+      "dom_order": 318
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054943570914865395",
+      "status_url": "/ShanghaoJin/status/2054943570914865395",
+      "datetime": "2026-05-14T15:15:00.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "WangCalist39284",
+      "texts": [
+        "非常不利好"
+      ],
+      "dom_order": 319
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054943326089232623",
+      "status_url": "/ShanghaoJin/status/2054943326089232623",
+      "datetime": "2026-05-14T15:14:02.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "zhuanbull",
+      "texts": [
+        "芯片公司啊，随便卖了"
+      ],
+      "dom_order": 320
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054943213535023320",
+      "status_url": "/ShanghaoJin/status/2054943213535023320",
+      "datetime": "2026-05-14T15:13:35.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "szzelda01",
+      "texts": [
+        "这次我感觉有点不一样，都没人关注你了"
+      ],
+      "dom_order": 321
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054943010425807039",
+      "status_url": "/ShanghaoJin/status/2054943010425807039",
+      "datetime": "2026-05-14T15:12:47.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Rickylu88",
+      "texts": [
+        "我得到的消息"
+      ],
+      "dom_order": 322
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054941834410070152",
+      "status_url": "/ShanghaoJin/status/2054941834410070152",
+      "datetime": "2026-05-14T15:08:06.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "真正的TACO里面包着的是北京烤鸭\n\n整个对华关税可能全面休战延长。芬太尼完全取消，24%惩罚关税继续延期\n\n还实质松绑科技管制：如暂停301调查、穿透性芯片管制。成熟制程芯片、设备全部开放\n\n除了EUV几乎中国要的全给了\n\n原来美国优先这句话是说给欧洲盟友们听的？"
+      ],
+      "dom_order": 323
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054939200055873650",
+      "status_url": "/ShanghaoJin/status/2054939200055873650",
+      "datetime": "2026-05-14T14:57:38.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "CabritaMar72132",
+      "texts": [
+        "不信也得信啊"
+      ],
+      "dom_order": 324
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054939032875106789",
+      "status_url": "/ShanghaoJin/status/2054939032875106789",
+      "datetime": "2026-05-14T14:56:59.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "XiaoZha62335239",
+      "texts": [
+        "握手了～～怪兽卡应该不可能了？"
+      ],
+      "dom_order": 325
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054938851177865404",
+      "status_url": "/ShanghaoJin/status/2054938851177865404",
+      "datetime": "2026-05-14T14:56:15.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "InvidiaIra0530",
+      "texts": [
+        "我也是局部下跌才买的"
+      ],
+      "dom_order": 326
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054936096300253342",
+      "status_url": "/ShanghaoJin/status/2054936096300253342",
+      "datetime": "2026-05-14T14:45:18.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "wcysunrise",
+      "texts": [
+        "120有点贵\n\n我从来不会在涨的时候买东西"
+      ],
+      "dom_order": 327
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054935585253691723",
+      "status_url": "/ShanghaoJin/status/2054935585253691723",
+      "datetime": "2026-05-14T14:43:17.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "考试成绩出来一堆70、80的都开始欢呼开始涨\n\n默默地最后一个NVDA～～99/100\n\n大家顿时安静了",
+        "所有人都在下注哪条咸鱼要翻身、黑马要考第二\n\n全忘记了年纪第一的学霸要出业绩，几乎都没人关心了？ x.com/diyas_1989/sta…"
+      ],
+      "dom_order": 328
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054933847213760831",
+      "status_url": "/ShanghaoJin/status/2054933847213760831",
+      "datetime": "2026-05-14T14:36:22.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "manX90054326571",
+      "texts": [
+        "我几时说长鑫要当世界第一了？\n\n不要无脑红，更不要痴呆黑，赚钱公司为什么不能看好，你管他技术哪里来的？\n\n人家产的DDR反正全球统一的，年10b美元盈利是真金白银的吧\n\n去年400亿估值，今年700亿盈利，他爱想啥想啥"
+      ],
+      "dom_order": 329
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054914095347023918",
+      "status_url": "/ShanghaoJin/status/2054914095347023918",
+      "datetime": "2026-05-14T13:17:53.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "RYANHINGSHING",
+      "texts": [
+        "不修，是对今上不尊\n\n中国特有生态，我在邪修耗费真气，你凭什么不修？凭什么赚钱？举报你！"
+      ],
+      "dom_order": 330
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054913418956804413",
+      "status_url": "/ShanghaoJin/status/2054913418956804413",
+      "datetime": "2026-05-14T13:15:12.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "SwiftCat2012",
+      "texts": [
+        "1000USD成本的手机卡才造就了2万的华为国产手机\n\n再涨价？"
+      ],
+      "dom_order": 331
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054912847579353590",
+      "status_url": "/ShanghaoJin/status/2054912847579353590",
+      "datetime": "2026-05-14T13:12:55.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "rand__gen",
+      "texts": [
+        "把钱丢水里，做出一堆废片，不知道有啥用\n\n而且科技开发也是纯粹浪费"
+      ],
+      "dom_order": 332
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054909023359795645",
+      "status_url": "/ShanghaoJin/status/2054909023359795645",
+      "datetime": "2026-05-14T12:57:44.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "而且现在开放DUV n次曝光的技术p用没有\n\n纯粹点错科技树，等真有了EUV全部重新开发一次"
+      ],
+      "dom_order": 333
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054908754785910820",
+      "status_url": "/ShanghaoJin/status/2054908754785910820",
+      "datetime": "2026-05-14T12:56:40.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "AndrewYin233",
+      "texts": [
+        "邪修路上越走越远"
+      ],
+      "dom_order": 334
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054908611047072088",
+      "status_url": "/ShanghaoJin/status/2054908611047072088",
+      "datetime": "2026-05-14T12:56:05.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "168MrZ",
+      "texts": [
+        "期待期待😋"
+      ],
+      "dom_order": 335
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054908255785398464",
+      "status_url": "/ShanghaoJin/status/2054908255785398464",
+      "datetime": "2026-05-14T12:54:41.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "RYANHINGSHING",
+      "texts": [
+        "就是魔教魔头“任我行”，非要带着全员一体邪修，不修就给你塞三尸脑神丹"
+      ],
+      "dom_order": 336
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054886143494422610",
+      "status_url": "/ShanghaoJin/status/2054886143494422610",
+      "datetime": "2026-05-14T11:26:49.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "168MrZ",
+      "texts": [
+        "辛苦辛苦～～"
+      ],
+      "dom_order": 337
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054781110287237146",
+      "status_url": "/ShanghaoJin/status/2054781110287237146",
+      "datetime": "2026-05-14T04:29:27.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "有道理！"
+      ],
+      "dom_order": 338
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054780342297629087",
+      "status_url": "/ShanghaoJin/status/2054780342297629087",
+      "datetime": "2026-05-14T04:26:24.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ThanksuTrump",
+      "texts": [
+        "缺货+ 有些采购必须国产\n\n长鑫产能还是不够"
+      ],
+      "dom_order": 339
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054766852723909028",
+      "status_url": "/ShanghaoJin/status/2054766852723909028",
+      "datetime": "2026-05-14T03:32:48.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "laikankan4399",
+      "texts": [
+        "我看好长鑫\n\n我非常看好长鑫\n\n我非常非常看好长鑫\n\n想象下，5年前“厉害”的时候华为上市"
+      ],
+      "dom_order": 340
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054764984182399180",
+      "status_url": "/ShanghaoJin/status/2054764984182399180",
+      "datetime": "2026-05-14T03:25:22.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Alex06425829",
+      "texts": [
+        "不同市场情况看的指标不同的….😂\n\n我还能被训练成一个skill么"
+      ],
+      "dom_order": 341
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054764792158773392",
+      "status_url": "/ShanghaoJin/status/2054764792158773392",
+      "datetime": "2026-05-14T03:24:36.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "blessky_haha",
+      "texts": [
+        "不会"
+      ],
+      "dom_order": 342
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054747380193673444",
+      "status_url": "/ShanghaoJin/status/2054747380193673444",
+      "datetime": "2026-05-14T02:15:25.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Leo85205278",
+      "texts": [
+        "不卖给他们"
+      ],
+      "dom_order": 343
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054743636819238981",
+      "status_url": "/ShanghaoJin/status/2054743636819238981",
+      "datetime": "2026-05-14T02:00:32.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jkl_showmaker",
+      "texts": [
+        "是的，但是你们这样打磨他就变好了"
+      ],
+      "dom_order": 344
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054739418347622404",
+      "status_url": "/ShanghaoJin/status/2054739418347622404",
+      "datetime": "2026-05-14T01:43:47.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jukan05",
+      "texts": [
+        "You were right. \n\nI checked again this morning. DDR prices have gone up 3-5% on average in just the last few days\n\nThe bare dies have jumped even harder, up to 20% in certain extreme cases"
+      ],
+      "dom_order": 345
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054734760489230844",
+      "status_url": "/ShanghaoJin/status/2054734760489230844",
+      "datetime": "2026-05-14T01:25:16.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "NsY3l",
+      "texts": [
+        "境外人开户有点麻烦，得问券商"
+      ],
+      "dom_order": 346
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054734595321675806",
+      "status_url": "/ShanghaoJin/status/2054734595321675806",
+      "datetime": "2026-05-14T01:24:37.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "qiyng01085212",
+      "texts": [
+        "要中国暂住证这种一堆东西"
+      ],
+      "dom_order": 347
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054733219220902329",
+      "status_url": "/ShanghaoJin/status/2054733219220902329",
+      "datetime": "2026-05-14T01:19:09.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "中国半导体不行是因为邪修，非要在DUV屎上雕花做出EUV的效果、开发CPU、GPU\n\n但凡这种“国产替代”干的越多，越不值钱\n\n成熟制程的都值钱，或者在变成值钱的路上\n\n不要小看中国，追赶速度非常快的。他们只是无法突破结界",
+        "师父为啥可以买华虹呢？它在长鑫有投资还是？"
+      ],
+      "dom_order": 348
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054729742973350115",
+      "status_url": "/ShanghaoJin/status/2054729742973350115",
+      "datetime": "2026-05-14T01:05:20.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jasonnotes0206",
+      "texts": [
+        "买华虹吧"
+      ],
+      "dom_order": 349
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054728664655536328",
+      "status_url": "/ShanghaoJin/status/2054728664655536328",
+      "datetime": "2026-05-14T01:01:03.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "laikankan4399",
+      "texts": [
+        "科创"
+      ],
+      "dom_order": 350
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054728419804602428",
+      "status_url": "/ShanghaoJin/status/2054728419804602428",
+      "datetime": "2026-05-14T01:00:04.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "diyas_1989",
+      "texts": [
+        "Sigh, i dont have too much CNY"
+      ],
+      "dom_order": 351
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054728281942028320",
+      "status_url": "/ShanghaoJin/status/2054728281942028320",
+      "datetime": "2026-05-14T00:59:32.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "qiyng01085212",
+      "texts": [
+        "科创，当天直接买，别恐高"
+      ],
+      "dom_order": 352
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054728111238107413",
+      "status_url": "/ShanghaoJin/status/2054728111238107413",
+      "datetime": "2026-05-14T00:58:51.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "LZ41576310",
+      "texts": [
+        "那么在乎那2%吗"
+      ],
+      "dom_order": 353
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054727820421857677",
+      "status_url": "/ShanghaoJin/status/2054727820421857677",
+      "datetime": "2026-05-14T00:57:42.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "长鑫一定、100%会被炒成“中国半导体之光”，甚至政治上夺取任总在半导体的绝对垄断话语权\n\n你们知道长鑫的DDR5已经从折价25%到略微溢价vs Hynix了吗（中国采购硬性规定原因）",
+        "YMTC & CXMT will be one of the most explosive trades of this year x.com/dnystedt/statu…"
+      ],
+      "dom_order": 354
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054725180833075664",
+      "status_url": "/ShanghaoJin/status/2054725180833075664",
+      "datetime": "2026-05-14T00:47:12.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "LZ41576310",
+      "texts": [
+        "每条都不是，加一起就是"
+      ],
+      "dom_order": 355
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054719776958869773",
+      "status_url": "/ShanghaoJin/status/2054719776958869773",
+      "datetime": "2026-05-14T00:25:44.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Aidy090909",
+      "texts": [
+        "🤣 好吧好吧"
+      ],
+      "dom_order": 356
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054719307557507113",
+      "status_url": "/ShanghaoJin/status/2054719307557507113",
+      "datetime": "2026-05-14T00:23:52.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "LZ41576310",
+      "texts": [
+        "我那周偷懒没发视频，但是发了个推，群里说了要反弹…."
+      ],
+      "dom_order": 357
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054718353273761936",
+      "status_url": "/ShanghaoJin/status/2054718353273761936",
+      "datetime": "2026-05-14T00:20:04.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Green_AAPL",
+      "texts": [
+        "会"
+      ],
+      "dom_order": 358
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054717494989054110",
+      "status_url": "/ShanghaoJin/status/2054717494989054110",
+      "datetime": "2026-05-14T00:16:40.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Aiallmaker",
+      "texts": [
+        "rack层协同，供货商锁货、投资\n\n妥妥的AI时代苹果啊"
+      ],
+      "dom_order": 359
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054705217611182330",
+      "status_url": "/ShanghaoJin/status/2054705217611182330",
+      "datetime": "2026-05-13T23:27:53.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "vcahappy2024",
+      "texts": [
+        "考试复习错书怪谁？"
+      ],
+      "dom_order": 360
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054704604395479422",
+      "status_url": "/ShanghaoJin/status/2054704604395479422",
+      "datetime": "2026-05-13T23:25:26.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Green_AAPL",
+      "texts": [
+        "人家市值高，不能这样比啊"
+      ],
+      "dom_order": 361
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054704484966973636",
+      "status_url": "/ShanghaoJin/status/2054704484966973636",
+      "datetime": "2026-05-13T23:24:58.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "mimighost008",
+      "texts": [
+        "每人定义不同"
+      ],
+      "dom_order": 362
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054704339298779353",
+      "status_url": "/ShanghaoJin/status/2054704339298779353",
+      "datetime": "2026-05-13T23:24:23.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "100cc_art",
+      "texts": [
+        "以前NV是学霸，业绩确实是扣分制。那是因为没人押注其他的，关注度都在他头上，预期又很高\n\n这次不同，旁边遍地开花，大家会发现他的growth远超估值更高的AMD，门槛远超他的供货商们"
+      ],
+      "dom_order": 363
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054702296093937733",
+      "status_url": "/ShanghaoJin/status/2054702296093937733",
+      "datetime": "2026-05-13T23:16:16.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "CovestorhlLee",
+      "texts": [
+        "再加一个通胀影响货币政策"
+      ],
+      "dom_order": 364
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054702145258352655",
+      "status_url": "/ShanghaoJin/status/2054702145258352655",
+      "datetime": "2026-05-13T23:15:40.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "所有人都在下注哪条咸鱼要翻身、黑马要考第二\n\n全忘记了年纪第一的学霸要出业绩，几乎都没人关心了？",
+        "nvda 300+ is secured x.com/CulperResearch…"
+      ],
+      "dom_order": 365
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054700897742336308",
+      "status_url": "/ShanghaoJin/status/2054700897742336308",
+      "datetime": "2026-05-13T23:10:43.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "其实今年业绩翻本，不在于选什么标的\n\n而是在于明确宏观拐点出现的时候敢于all in\n\n至于是买了42的intc；220的AMD；还是330的MU，其实差别没并那么大",
+        "解释下\n\n1. CTA卖到头，下周开始无论涨跌转为买方\n\n2. 企业回购，养老金rebalance\n\n3. 流动性极度到极限\n\n4. Long only买盘完全冻结、Prime book严重做空\n\n5. neg gamma超过去年\n\n6. 10yUSD vol超去年，过度紧张（相对于利率，利率vol梗打压股价）\n\n7. call skew严重，没人看多  x.com/ShanghaoJin/st…"
+      ],
+      "dom_order": 366
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054687919190016386",
+      "status_url": "/ShanghaoJin/status/2054687919190016386",
+      "datetime": "2026-05-13T22:19:08.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "AntonLaVay",
+      "texts": [
+        "原来跟单才是王道"
+      ],
+      "dom_order": 367
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054640763833860395",
+      "status_url": "/ShanghaoJin/status/2054640763833860395",
+      "datetime": "2026-05-13T19:11:46.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "I will double check tomorrow"
+      ],
+      "dom_order": 368
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054640436497862983",
+      "status_url": "/ShanghaoJin/status/2054640436497862983",
+      "datetime": "2026-05-13T19:10:28.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jukan05",
+      "texts": [
+        "I knew from Huaqiangbei that DDR4 “contact” (not spot) prices have been falling nonstop since Q1\n\nMet with a major distributor this Tuesday was told that no matter how much positive news comes out, the price has stayed completely sluggish"
+      ],
+      "dom_order": 369
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054621131253104786",
+      "status_url": "/ShanghaoJin/status/2054621131253104786",
+      "datetime": "2026-05-13T17:53:45.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "himself65",
+      "texts": [
+        "在我心里他还只有10，这样就不会瞎卖了"
+      ],
+      "dom_order": 370
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054556770069258364",
+      "status_url": "/ShanghaoJin/status/2054556770069258364",
+      "datetime": "2026-05-13T13:38:00.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "SUPX在中东搞项目，你让他现在能怎么样？"
+      ],
+      "dom_order": 371
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054556446961147936",
+      "status_url": "/ShanghaoJin/status/2054556446961147936",
+      "datetime": "2026-05-13T13:36:43.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Balloon_Capital",
+      "texts": [
+        "这个小人居然还follow了我，在🎈处点评的人一概拉黑\n\nSUPX买张彩票亏了，我有让一个人买吗？\n\n我对intc什么态度，是人都知道。我太菜不配你这个智商的关注",
+        "年初还不看好Intc，现在又在说他早买了问别人去年九月为什么不买"
+      ],
+      "dom_order": 372
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054555708469985401",
+      "status_url": "/ShanghaoJin/status/2054555708469985401",
+      "datetime": "2026-05-13T13:33:47.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "StephenShi12",
+      "texts": [
+        "1. 他们有项目方做市把你的订单搬去Bn\n\n2. 交钱（刷交易量）可能参与项目方一起割韭菜\n\n3. 所有其他人全是韭菜，选择性给你成交。给你搞600ms延时"
+      ],
+      "dom_order": 373
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054555294827761958",
+      "status_url": "/ShanghaoJin/status/2054555294827761958",
+      "datetime": "2026-05-13T13:32:08.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "StephenShi12",
+      "texts": [
+        "貔貅盘，街边赌档"
+      ],
+      "dom_order": 374
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054549761865453838",
+      "status_url": "/ShanghaoJin/status/2054549761865453838",
+      "datetime": "2026-05-13T13:10:09.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Wu407403579",
+      "texts": [
+        "如果要给Pe的假设条件是一直有这样的margin，也就到长期缺货\n\n这个需要3年后验证",
+        "HBM部分当然应该给PE估值，但DDR暂时给不了\n\n然而，tricky的地方是他们share同一wafer，DDR margin也变很高\n\n这个现象CPU上没有发生（PC还是消费电子，从PC切线程需要几个月，INTC/AMD产品不同）PC margin很低\n\n所以我非常不想直接给存储公司存粹PE估值\n\n大概率要错过华丽的上涨，但最后未必比光多多少"
+      ],
+      "dom_order": 375
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054538047434473672",
+      "status_url": "/ShanghaoJin/status/2054538047434473672",
+      "datetime": "2026-05-13T12:23:36.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "divram_ai",
+      "texts": [
+        "1. 他本身能力差\n\n2. 手机换机时间变长、内存变贵\n\n3. 其他概念猴年马月"
+      ],
+      "dom_order": 376
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054537778533482673",
+      "status_url": "/ShanghaoJin/status/2054537778533482673",
+      "datetime": "2026-05-13T12:22:32.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "kaikaihaha11",
+      "texts": [
+        "我封都封不过来"
+      ],
+      "dom_order": 377
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054515931251106136",
+      "status_url": "/ShanghaoJin/status/2054515931251106136",
+      "datetime": "2026-05-13T10:55:43.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "168X_Fortune",
+      "texts": [
+        "感谢安排"
+      ],
+      "dom_order": 378
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054512875394482635",
+      "status_url": "/ShanghaoJin/status/2054512875394482635",
+      "datetime": "2026-05-13T10:43:35.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "laikankan4399",
+      "texts": [
+        "谢谢～～"
+      ],
+      "dom_order": 379
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054512446308762005",
+      "status_url": "/ShanghaoJin/status/2054512446308762005",
+      "datetime": "2026-05-13T10:41:52.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "himself65",
+      "texts": [
+        "分享下，功德无量🙏"
+      ],
+      "dom_order": 380
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054511894208426312",
+      "status_url": "/ShanghaoJin/status/2054511894208426312",
+      "datetime": "2026-05-13T10:39:41.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "感谢感谢"
+      ],
+      "dom_order": 381
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054511803712082333",
+      "status_url": "/ShanghaoJin/status/2054511803712082333",
+      "datetime": "2026-05-13T10:39:19.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "更正一下6\n\n这是市场行情，以前低一点，现在高一点 🤣"
+      ],
+      "dom_order": 382
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054510794583482785",
+      "status_url": "/ShanghaoJin/status/2054510794583482785",
+      "datetime": "2026-05-13T10:35:19.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bluepearl821",
+      "texts": [
+        "太给面子了，加个WhatsApp吧"
+      ],
+      "dom_order": 383
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054510668729192629",
+      "status_url": "/ShanghaoJin/status/2054510668729192629",
+      "datetime": "2026-05-13T10:34:49.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "LZ41576310",
+      "texts": [
+        "这个有录音"
+      ],
+      "dom_order": 384
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054510607433695682",
+      "status_url": "/ShanghaoJin/status/2054510607433695682",
+      "datetime": "2026-05-13T10:34:34.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Wu407403579",
+      "texts": [
+        "我有个存储帖子讲过这个道理的"
+      ],
+      "dom_order": 385
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054510208760926349",
+      "status_url": "/ShanghaoJin/status/2054510208760926349",
+      "datetime": "2026-05-13T10:32:59.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "168MrZ",
+      "texts": [
+        "辛苦辛苦"
+      ],
+      "dom_order": 386
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054510038866366649",
+      "status_url": "/ShanghaoJin/status/2054510038866366649",
+      "datetime": "2026-05-13T10:32:18.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "laikankan4399",
+      "texts": [
+        "PE买要求有点高\n\n长鑫报材料了，上市第一天大胆买，开始没有涨跌限制"
+      ],
+      "dom_order": 387
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054495276627537988",
+      "status_url": "/ShanghaoJin/status/2054495276627537988",
+      "datetime": "2026-05-13T09:33:39.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Jeff03065130",
+      "texts": [
+        "我有lite"
+      ],
+      "dom_order": 388
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054491054267896271",
+      "status_url": "/ShanghaoJin/status/2054491054267896271",
+      "datetime": "2026-05-13T09:16:52.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "XiaoZha62335239",
+      "texts": [
+        "没有没有，你可以赚基金钱\n\n知道这个不是行业钱就行"
+      ],
+      "dom_order": 389
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054490387239301500",
+      "status_url": "/ShanghaoJin/status/2054490387239301500",
+      "datetime": "2026-05-13T09:14:13.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "truthforservice",
+      "texts": [
+        "清退官员股份而已"
+      ],
+      "dom_order": 390
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054453345595855095",
+      "status_url": "/ShanghaoJin/status/2054453345595855095",
+      "datetime": "2026-05-13T06:47:02.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "找了个朋友帮我主持下space"
+      ],
+      "dom_order": 391
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054447579958772031",
+      "status_url": "/ShanghaoJin/status/2054447579958772031",
+      "datetime": "2026-05-13T06:24:07.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "123456789bzur",
+      "texts": [
+        "发个新的"
+      ],
+      "dom_order": 392
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054444218740089335",
+      "status_url": "/ShanghaoJin/status/2054444218740089335",
+      "datetime": "2026-05-13T06:10:46.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "TY20255718",
+      "texts": [
+        "我认知外"
+      ],
+      "dom_order": 393
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054443422392758710",
+      "status_url": "/ShanghaoJin/status/2054443422392758710",
+      "datetime": "2026-05-13T06:07:36.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "TY20255718",
+      "texts": [
+        "不信不信，我是真不信\n\n香港基金都抱团干crcl，我也不信\n\n我连存储估值都质疑的人，别说这些了"
+      ],
+      "dom_order": 394
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054443114849587496",
+      "status_url": "/ShanghaoJin/status/2054443114849587496",
+      "datetime": "2026-05-13T06:06:22.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Cyc1ing1313",
+      "texts": [
+        "现在orcl nok可能性价比高一点"
+      ],
+      "dom_order": 395
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054442383140679867",
+      "status_url": "/ShanghaoJin/status/2054442383140679867",
+      "datetime": "2026-05-13T06:03:28.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "NsY3l",
+      "texts": [
+        "我持续的在买，最贵的一笔是8.1\n\n我一样无法给你建议"
+      ],
+      "dom_order": 396
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054442107386069062",
+      "status_url": "/ShanghaoJin/status/2054442107386069062",
+      "datetime": "2026-05-13T06:02:22.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "kimihuang",
+      "texts": [
+        "只能说我确实下跌时买了BTC，确实没有买ETH\n\n别给我吸仇恨了，ETH狂徒很多的，我还在好多ETH builder群里呢"
+      ],
+      "dom_order": 397
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054440723660022267",
+      "status_url": "/ShanghaoJin/status/2054440723660022267",
+      "datetime": "2026-05-13T05:56:52.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "xjp32698837",
+      "texts": [
+        "阶段性的"
+      ],
+      "dom_order": 398
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054440579925463256",
+      "status_url": "/ShanghaoJin/status/2054440579925463256",
+      "datetime": "2026-05-13T05:56:18.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Bill29823155011",
+      "texts": [
+        "对"
+      ],
+      "dom_order": 399
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054440519728767259",
+      "status_url": "/ShanghaoJin/status/2054440519728767259",
+      "datetime": "2026-05-13T05:56:04.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jiewey01",
+      "texts": [
+        "找CX"
+      ],
+      "dom_order": 400
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054440412341993689",
+      "status_url": "/ShanghaoJin/status/2054440412341993689",
+      "datetime": "2026-05-13T05:55:38.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "LYkfZSEY5B5MMr1",
+      "texts": [
+        "包括问AMD NOK AAOI的也是，我看好也不敢说\n\n因为我心态不同了，自己买的时候价格很低，涨了几倍导致我即使看好，心态上我也没发说出“去买”两个字"
+      ],
+      "dom_order": 401
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054439546285326635",
+      "status_url": "/ShanghaoJin/status/2054439546285326635",
+      "datetime": "2026-05-13T05:52:12.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Cyc1ing1313",
+      "texts": [
+        "24年10月你在干啥呢吗？"
+      ],
+      "dom_order": 402
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054439383424716864",
+      "status_url": "/ShanghaoJin/status/2054439383424716864",
+      "datetime": "2026-05-13T05:51:33.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "TY20255718",
+      "texts": [
+        "不是 \n\nrwa是打通了证券上链\n\n问题证券流动性好，为什么要rwa，都是些庄股不敢在监管下割韭菜。非要去币圈割"
+      ],
+      "dom_order": 403
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054439118634172592",
+      "status_url": "/ShanghaoJin/status/2054439118634172592",
+      "datetime": "2026-05-13T05:50:30.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "TY20255718",
+      "texts": [
+        "币圈的事情先假设是骗子，再去找0.1%不是骗子的事情\n\n其实找了0.1%也没啥意义，世界那么大…."
+      ],
+      "dom_order": 404
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054438822679875815",
+      "status_url": "/ShanghaoJin/status/2054438822679875815",
+      "datetime": "2026-05-13T05:49:19.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "TY20255718",
+      "texts": [
+        "你找出一张债券区块链settle没有不用euroclear\n\n你们要自己到自己建一条机房链与传统web3的区别\n\n要知道清算 vs清算厚上链的区别"
+      ],
+      "dom_order": 405
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054438150534255059",
+      "status_url": "/ShanghaoJin/status/2054438150534255059",
+      "datetime": "2026-05-13T05:46:39.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "当时劝一个币圈的朋友，山寨要全归零，听我的去买半导体吧\n\n很多时候，快就是慢、慢就是快\n\n他说哪怕知道股票 BTC能赚钱也不会买，因为涨太少，没法爆发翻身。而且，劝我不要再提“山寨归零的傻逼言论”了。说我不是这个圈子的人，都不懂币圈\n\n关于INTC言论被币圈大V们联合网暴，看他们最近自己开始吹了",
+        "I have always consistently $INTC as a top investment over a three-year horizon. \n\nAs long as its 18A process node can emerge as a viable alternative to TSMC, which I believe is inevitable from a technological standpoint, this alone should be sufficient to justify a $500B market"
+      ],
+      "dom_order": 406
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054435291247874432",
+      "status_url": "/ShanghaoJin/status/2054435291247874432",
+      "datetime": "2026-05-13T05:35:17.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "TY20255718",
+      "texts": [
+        "我不知道eth能不能炒\n\n但是如果要做settlement肯定得有标的，你找不到标的就是看了fake news\n\nrwa诉求是垃圾股票在股市卖不掉，去卖给币圈韭菜"
+      ],
+      "dom_order": 407
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054426427903377718",
+      "status_url": "/ShanghaoJin/status/2054426427903377718",
+      "datetime": "2026-05-13T05:00:04.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "HAOHONG_CFA",
+      "texts": [
+        "Maotai? That cant be real?"
+      ],
+      "dom_order": 408
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054426139305906615",
+      "status_url": "/ShanghaoJin/status/2054426139305906615",
+      "datetime": "2026-05-13T04:58:55.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Seasui23",
+      "texts": [
+        "随便一条区块链，技术上能经得住以下测试吗\n\n还有那群做区块链安全检测的公司，橡皮图章还不如模型跑一次",
+        "更加垃圾，我用Opus 4.7 几天就能给你写一个出来"
+      ],
+      "dom_order": 409
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054424984043573277",
+      "status_url": "/ShanghaoJin/status/2054424984043573277",
+      "datetime": "2026-05-13T04:54:20.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "TY20255718",
+      "texts": [
+        "胡扯～～谁告诉你？\n\n来把GS 哪个note用ETH settle告诉我下，把具体settle的券名字写出来\n\n有Euroclear为什么要用ETH？"
+      ],
+      "dom_order": 410
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054424438939287645",
+      "status_url": "/ShanghaoJin/status/2054424438939287645",
+      "datetime": "2026-05-13T04:52:10.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Alwayslj8",
+      "texts": [
+        "他还要继续到处讨饭"
+      ],
+      "dom_order": 411
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054403817668788344",
+      "status_url": "/ShanghaoJin/status/2054403817668788344",
+      "datetime": "2026-05-13T03:30:13.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bluepearl821",
+      "texts": [
+        "我在X space吧"
+      ],
+      "dom_order": 412
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054403729248657485",
+      "status_url": "/ShanghaoJin/status/2054403729248657485",
+      "datetime": "2026-05-13T03:29:52.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Seasui23",
+      "texts": [
+        "更加垃圾，我用Opus 4.7 几天就能给你写一个出来"
+      ],
+      "dom_order": 413
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054402949082939614",
+      "status_url": "/ShanghaoJin/status/2054402949082939614",
+      "datetime": "2026-05-13T03:26:46.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Seasui23",
+      "texts": [
+        "更加垃圾"
+      ],
+      "dom_order": 414
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054402771693297726",
+      "status_url": "/ShanghaoJin/status/2054402771693297726",
+      "datetime": "2026-05-13T03:26:04.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "南帝不去场子撑不住啊"
+      ],
+      "dom_order": 415
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054401435274813686",
+      "status_url": "/ShanghaoJin/status/2054401435274813686",
+      "datetime": "2026-05-13T03:20:45.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "不能怪Tom Lee，只能怪木头姐蠢、草台班子到不可想象\n\nETH做结算的故事也会真相信，最基础的去问下每秒60笔交易TPS，怎么替代swift\n\n这种行为只能说明她是韭菜，人云亦云。基本辩证思维与行业研究也没，应该先学学用GPT问问题\n\n难怪基金回撤起来那么吓人",
+        "她可能是Tom Lee骗局的最大受害机构吧🥲"
+      ],
+      "dom_order": 416
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054396065378697549",
+      "status_url": "/ShanghaoJin/status/2054396065378697549",
+      "datetime": "2026-05-13T02:59:25.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "diyas_1989",
+      "texts": [
+        "taking photo"
+      ],
+      "dom_order": 417
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054395825657467181",
+      "status_url": "/ShanghaoJin/status/2054395825657467181",
+      "datetime": "2026-05-13T02:58:28.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "himself65",
+      "texts": [
+        "干华虹什么事…."
+      ],
+      "dom_order": 418
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054395433183830485",
+      "status_url": "/ShanghaoJin/status/2054395433183830485",
+      "datetime": "2026-05-13T02:56:54.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "moneyinyes",
+      "texts": [
+        "👌"
+      ],
+      "dom_order": 419
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054393989525389718",
+      "status_url": "/ShanghaoJin/status/2054393989525389718",
+      "datetime": "2026-05-13T02:51:10.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Aiallmaker",
+      "texts": [
+        "她基金回撤简直灾难"
+      ],
+      "dom_order": 420
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054393213113508156",
+      "status_url": "/ShanghaoJin/status/2054393213113508156",
+      "datetime": "2026-05-13T02:48:05.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "如果他们能开始法律诉讼\n\n最好能打到最高法院，拿个宪法解释判例，那么真是拨乱反正、普大喜奔了",
+        "就在上周，美国司法部(DOJ)宣布，调查发现洛杉矶加州大学(UCLA)医学院在招生政策上违反了联邦反歧视法律，\n\n在招生的过程中，歧视白人和亚裔学生并偏向黑人和西班牙裔学生。\n\n司法部引用数据显示，2023年和2024年被录取的黑人和西班牙裔学生的平均GPA和考试成绩低于白人和亚裔学生。"
+      ],
+      "dom_order": 421
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054392554276417622",
+      "status_url": "/ShanghaoJin/status/2054392554276417622",
+      "datetime": "2026-05-13T02:45:28.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Bill29823155011",
+      "texts": [
+        "今天下午3点"
+      ],
+      "dom_order": 422
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054392421447066041",
+      "status_url": "/ShanghaoJin/status/2054392421447066041",
+      "datetime": "2026-05-13T02:44:56.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "humphilomath",
+      "texts": [
+        "新时代农奴"
+      ],
+      "dom_order": 423
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054392327003906063",
+      "status_url": "/ShanghaoJin/status/2054392327003906063",
+      "datetime": "2026-05-13T02:44:34.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Janus00117",
+      "texts": [
+        "对！"
+      ],
+      "dom_order": 424
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054388776781410321",
+      "status_url": "/ShanghaoJin/status/2054388776781410321",
+      "datetime": "2026-05-13T02:30:27.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "所有上链的东西你可以99.999%先有罪假定是骗子\n\n等事实证明OW了再说",
+        "现在不是芯片在带情绪，是Anthropic在带心率\n\n链上股价这套更像空气炸锅，看着很热，掀开全是空的"
+      ],
+      "dom_order": 425
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054388478449004597",
+      "status_url": "/ShanghaoJin/status/2054388478449004597",
+      "datetime": "2026-05-13T02:29:16.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "AndyjiAGI",
+      "texts": [
+        "然后上链瞎炒，开对赌外盘\n\n中国底层CX韭菜怎么像💩一样，沾边都变臭\n\n上轮web3也曾经是高级的词，黄金白银是全球宏观品\n\n现在来AI，半导体了"
+      ],
+      "dom_order": 426
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054381712055181726",
+      "status_url": "/ShanghaoJin/status/2054381712055181726",
+      "datetime": "2026-05-13T02:02:23.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "humphilomath",
+      "texts": [
+        "人矿还想分红？！"
+      ],
+      "dom_order": 427
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054380740230754701",
+      "status_url": "/ShanghaoJin/status/2054380740230754701",
+      "datetime": "2026-05-13T01:58:31.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "YT_laoshishuo",
+      "texts": [
+        "那你是没用过吧"
+      ],
+      "dom_order": 428
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054380651500257308",
+      "status_url": "/ShanghaoJin/status/2054380651500257308",
+      "datetime": "2026-05-13T01:58:10.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "1. Anthropic没算力公开推出Mythos\n\n2. GPT5.5 一样需要半导体算力\n\n我更正下，fomo的是以Anthropic OAI主导的算力。fomo半导体直接转化成算力，变成生产力",
+        "那问题有点大啊 4.7 vs 5.5 这一代GPT更强 企业订阅数据是滞后的\n不过也说不好 下一代可能Claude又更强了"
+      ],
+      "dom_order": 429
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054364835761262982",
+      "status_url": "/ShanghaoJin/status/2054364835761262982",
+      "datetime": "2026-05-13T00:55:19.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "这轮FOMO的是半导体吗？\n\n不是～～其实FOMO的是Anthropic\n\n半导体调整归调整，真正拐点只会出现在AI模型、或者模型公司收入被质疑的时候\n\n币圈搅屎棍们把他们股票上链凑热度，被人家公司拒绝承认，这种价格没有任何参考度"
+      ],
+      "dom_order": 430
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054174617938604256",
+      "status_url": "/ShanghaoJin/status/2054174617938604256",
+      "datetime": "2026-05-12T12:19:28.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "FengXiong79932",
+      "texts": [
+        "跟上面四位比是垃圾，跟中国那些比肯定强的多"
+      ],
+      "dom_order": 431
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054163628883091583",
+      "status_url": "/ShanghaoJin/status/2054163628883091583",
+      "datetime": "2026-05-12T11:35:48.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Db2025_1m",
+      "texts": [
+        "报材料了….."
+      ],
+      "dom_order": 432
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054152507597951395",
+      "status_url": "/ShanghaoJin/status/2054152507597951395",
+      "datetime": "2026-05-12T10:51:36.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "难道下面的都不够格，访华非带着大垃圾qcom是什么意思？\n\n华山论剑请裘千丈…",
+        "我准备把Lisa Su, Hock Tan, Jensen Huang, Lip Bu Tan,称为东邪西毒、南帝北丐\n\nMorris Chang是中神通"
+      ],
+      "dom_order": 433
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054128256320995427",
+      "status_url": "/ShanghaoJin/status/2054128256320995427",
+      "datetime": "2026-05-12T09:15:14.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "显然你是那个在DJ桌上跳舞的"
+      ],
+      "dom_order": 434
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054070464084078807",
+      "status_url": "/ShanghaoJin/status/2054070464084078807",
+      "datetime": "2026-05-12T05:25:36.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "这都可以～～那我不得能收9.9？"
+      ],
+      "dom_order": 435
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054042681534493018",
+      "status_url": "/ShanghaoJin/status/2054042681534493018",
+      "datetime": "2026-05-12T03:35:12.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "jacky200304",
+      "texts": [
+        "我早知道这个了….. \n\n我只是玩下抽象才说"
+      ],
+      "dom_order": 436
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2054029082988552570",
+      "status_url": "/ShanghaoJin/status/2054029082988552570",
+      "datetime": "2026-05-12T02:41:10.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "Popinaplem",
+      "texts": [
+        "我以为他是fin…."
+      ],
+      "dom_order": 437
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053979712536654085",
+      "status_url": "/ShanghaoJin/status/2053979712536654085",
+      "datetime": "2026-05-11T23:24:59.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "liu_shuo4202",
+      "texts": [
+        "然后光爆发了，快即慢、慢即快"
+      ],
+      "dom_order": 438
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053971082080833597",
+      "status_url": "/ShanghaoJin/status/2053971082080833597",
+      "datetime": "2026-05-11T22:50:41.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "zycxfyhxzh",
+      "texts": [
+        "需求是多方面来完成的，不光靠硬件\n\n而因为需求太大，上面加一起HBM需求“未来几年”还是满的\n\n不过，我质疑的是MU的估值方式。不能整体把公司当成长股估值"
+      ],
+      "dom_order": 439
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053883185491259895",
+      "status_url": "/ShanghaoJin/status/2053883185491259895",
+      "datetime": "2026-05-11T17:01:25.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "GIGIQ007",
+      "texts": [
+        "想着UAE不是有低价电嘛～～"
+      ],
+      "dom_order": 440
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053882760998379888",
+      "status_url": "/ShanghaoJin/status/2053882760998379888",
+      "datetime": "2026-05-11T16:59:44.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "GIGIQ007",
+      "texts": [
+        "彩票归零，在UAE建算力中心，😂"
+      ],
+      "dom_order": 441
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053879695754805546",
+      "status_url": "/ShanghaoJin/status/2053879695754805546",
+      "datetime": "2026-05-11T16:47:33.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "这些票的正确打开方式，不看价格直接买\n\n买完不到10倍绝对别走，到了坚决走掉\n\n跌了不看，归零就归零"
+      ],
+      "dom_order": 442
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053878821800366099",
+      "status_url": "/ShanghaoJin/status/2053878821800366099",
+      "datetime": "2026-05-11T16:44:04.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "himself65",
+      "texts": [
+        "肯定不如他懂😂"
+      ],
+      "dom_order": 443
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053878634860134545",
+      "status_url": "/ShanghaoJin/status/2053878634860134545",
+      "datetime": "2026-05-11T16:43:20.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "历史以来证明这个公司能力就是💩\n\n现在反正有设计能力的都涨，你就看他出片拉不拉就完了"
+      ],
+      "dom_order": 444
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053872821030502451",
+      "status_url": "/ShanghaoJin/status/2053872821030502451",
+      "datetime": "2026-05-11T16:20:14.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "💩"
+      ],
+      "dom_order": 445
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053859604464070880",
+      "status_url": "/ShanghaoJin/status/2053859604464070880",
+      "datetime": "2026-05-11T15:27:43.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "dw_2772",
+      "texts": [
+        "now"
+      ],
+      "dom_order": 446
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053857575993745862",
+      "status_url": "/ShanghaoJin/status/2053857575993745862",
+      "datetime": "2026-05-11T15:19:39.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "beefcubee",
+      "texts": [
+        "他检讨了下为什么选输，觉得因为不够左"
+      ],
+      "dom_order": 447
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053856519863869515",
+      "status_url": "/ShanghaoJin/status/2053856519863869515",
+      "datetime": "2026-05-11T15:15:27.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "NsY3l",
+      "texts": [
+        "这种股票就不看价格，不涨10倍宁可归零也不卖"
+      ],
+      "dom_order": 448
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053855869578907894",
+      "status_url": "/ShanghaoJin/status/2053855869578907894",
+      "datetime": "2026-05-11T15:12:52.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "xzcfrank",
+      "texts": [
+        "是个瑞典公司在德国上市 SIVE"
+      ],
+      "dom_order": 449
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053855776125653296",
+      "status_url": "/ShanghaoJin/status/2053855776125653296",
+      "datetime": "2026-05-11T15:12:30.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "xzcfrank",
+      "texts": [
+        "德国的"
+      ],
+      "dom_order": 450
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053855486823518701",
+      "status_url": "/ShanghaoJin/status/2053855486823518701",
+      "datetime": "2026-05-11T15:11:21.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "AntonLaVay",
+      "texts": [
+        "都是潜力股\n\n只是风险大，不适合我"
+      ],
+      "dom_order": 451
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053855145235218892",
+      "status_url": "/ShanghaoJin/status/2053855145235218892",
+      "datetime": "2026-05-11T15:10:00.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "澄清下我从来不给骗人ticker害人\n\n这4个股票都是有巨大爆发潜力，甚至至今估值还不算启动的\n\n只是很抽象，我不会买而已"
+      ],
+      "dom_order": 452
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053854841966104747",
+      "status_url": "/ShanghaoJin/status/2053854841966104747",
+      "datetime": "2026-05-11T15:08:47.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "100cc_art",
+      "texts": [
+        "上门四个都是好股"
+      ],
+      "dom_order": 453
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053854461697941869",
+      "status_url": "/ShanghaoJin/status/2053854461697941869",
+      "datetime": "2026-05-11T15:07:17.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "excu4e16421",
+      "texts": [
+        "挺好，反正故事要27年才知道真的假的"
+      ],
+      "dom_order": 454
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053854180905975816",
+      "status_url": "/ShanghaoJin/status/2053854180905975816",
+      "datetime": "2026-05-11T15:06:10.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ynzchn1545156",
+      "texts": [
+        "扩产在任何地方都很慢的"
+      ],
+      "dom_order": 455
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053853570332778640",
+      "status_url": "/ShanghaoJin/status/2053853570332778640",
+      "datetime": "2026-05-11T15:03:44.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ynzchn1545156",
+      "texts": [
+        "很久…."
+      ],
+      "dom_order": 456
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053853479798808830",
+      "status_url": "/ShanghaoJin/status/2053853479798808830",
+      "datetime": "2026-05-11T15:03:22.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "sun_finn66909",
+      "texts": [
+        "+HIMX、2DG\n\n要玩抽象我可以比你们更抽象\n\n给几个1:30am去DJ桌上跳舞的货，都有正儿八经的故事\n\n供搏身家的去冲，放心～我不割韭菜，肯定好过山寨币",
+        "送你2个ticker：MRAM NVTS\n\n可能比较适合你"
+      ],
+      "dom_order": 457
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053849150895366304",
+      "status_url": "/ShanghaoJin/status/2053849150895366304",
+      "datetime": "2026-05-11T14:46:10.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "sun_finn66909",
+      "texts": [
+        "送你2个ticker：MRAM NVTS\n\n可能比较适合你"
+      ],
+      "dom_order": 458
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053848233982755295",
+      "status_url": "/ShanghaoJin/status/2053848233982755295",
+      "datetime": "2026-05-11T14:42:32.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "我不了解AI产业链，你们还是别跟我对话了\n\n我在干什么？居然煞有其事地跟一个币圈的人解释公司估值和半导体。我真是个蠢材",
+        "先了解下AI产业链吧"
+      ],
+      "dom_order": 459
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053847871196365221",
+      "status_url": "/ShanghaoJin/status/2053847871196365221",
+      "datetime": "2026-05-11T14:41:05.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "ShanghaoJin",
+      "texts": [
+        "我在干什么，居然跟一个币圈的人讲怎么估值公司\n\n我真的个蠢材"
+      ],
+      "dom_order": 460
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053847463166144555",
+      "status_url": "/ShanghaoJin/status/2053847463166144555",
+      "datetime": "2026-05-11T14:39:28.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "sun_finn66909",
+      "texts": [
+        "高位一直加仓光\n\n我很菜的，你还是别跟我对话了"
+      ],
+      "dom_order": 461
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053847003772424274",
+      "status_url": "/ShanghaoJin/status/2053847003772424274",
+      "datetime": "2026-05-11T14:37:38.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "fff_franklin",
+      "texts": [
+        "历史巧合无意义"
+      ],
+      "dom_order": 462
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053844759349973005",
+      "status_url": "/ShanghaoJin/status/2053844759349973005",
+      "datetime": "2026-05-11T14:28:43.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "skipfornow2556",
+      "texts": [
+        "我只局限买几个股票"
+      ],
+      "dom_order": 463
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053841284935364985",
+      "status_url": "/ShanghaoJin/status/2053841284935364985",
+      "datetime": "2026-05-11T14:14:55.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "vix8b",
+      "texts": [
+        "对对"
+      ],
+      "dom_order": 464
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053838433572057540",
+      "status_url": "/ShanghaoJin/status/2053838433572057540",
+      "datetime": "2026-05-11T14:03:35.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "有没有可能家伙是被人来回骗，骗出ptsd了呢？\n\n以他的智商，骗人可能并不是特别容易"
+      ],
+      "dom_order": 465
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053836322662674631",
+      "status_url": "/ShanghaoJin/status/2053836322662674631",
+      "datetime": "2026-05-11T13:55:12.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "sun_finn66909",
+      "texts": [
+        "你不用说服我，你买你的我买我的\n\n我上周买了Lite，我觉得能睡着"
+      ],
+      "dom_order": 466
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053836161895006569",
+      "status_url": "/ShanghaoJin/status/2053836161895006569",
+      "datetime": "2026-05-11T13:54:34.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "sun_finn66909",
+      "texts": [
+        "石油公司也有这种协议，没用～不认增长估值"
+      ],
+      "dom_order": 467
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053835937436905888",
+      "status_url": "/ShanghaoJin/status/2053835937436905888",
+      "datetime": "2026-05-11T13:53:40.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "tekkamandeadend",
+      "texts": [
+        "我那么孤落寡闻肯定不知道啊"
+      ],
+      "dom_order": 468
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053834444730188188",
+      "status_url": "/ShanghaoJin/status/2053834444730188188",
+      "datetime": "2026-05-11T13:47:44.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "miraclexxu",
+      "texts": [
+        "鸡犬升天，我也还剩一点点，帮鸿海做背板连接的\n\n我唱多的就剩ORCL没翻身了"
+      ],
+      "dom_order": 469
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053826048689926382",
+      "status_url": "/ShanghaoJin/status/2053826048689926382",
+      "datetime": "2026-05-11T13:14:22.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "NsY3l",
+      "texts": [
+        "借花献佛"
+      ],
+      "dom_order": 470
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053823880649929093",
+      "status_url": "/ShanghaoJin/status/2053823880649929093",
+      "datetime": "2026-05-11T13:05:46.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "0xWaroy",
+      "texts": [
+        "那等等呗，谁给机会追谁"
+      ],
+      "dom_order": 471
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053818479380504748",
+      "status_url": "/ShanghaoJin/status/2053818479380504748",
+      "datetime": "2026-05-11T12:44:18.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "LilyH2024",
+      "texts": [
+        "我卖了告诉你…."
+      ],
+      "dom_order": 472
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053818326510661684",
+      "status_url": "/ShanghaoJin/status/2053818326510661684",
+      "datetime": "2026-05-11T12:43:41.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "NsY3l",
+      "texts": [
+        "都行，奥特曼不分强弱，珍惜他们每次让人上车的机会\n\nLite最近不是在跌吗"
+      ],
+      "dom_order": 473
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053817965993398272",
+      "status_url": "/ShanghaoJin/status/2053817965993398272",
+      "datetime": "2026-05-11T12:42:15.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "XiaoZha62335239",
+      "texts": [
+        "韩国人怎么比得上美国韭菜，人傻钱多"
+      ],
+      "dom_order": 474
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053816045341937765",
+      "status_url": "/ShanghaoJin/status/2053816045341937765",
+      "datetime": "2026-05-11T12:34:37.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "bboczeng",
+      "texts": [
+        "对QCom评论一个字 ～～💩"
+      ],
+      "dom_order": 475
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053815920691433643",
+      "status_url": "/ShanghaoJin/status/2053815920691433643",
+      "datetime": "2026-05-11T12:34:08.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "YangJerry197020",
+      "texts": [
+        "纯粹市值太高拉不动\n\nMU也快太高了"
+      ],
+      "dom_order": 476
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053815373737443497",
+      "status_url": "/ShanghaoJin/status/2053815373737443497",
+      "datetime": "2026-05-11T12:31:57.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "悄悄准备放大家鸽子，晚点搞个Q&A space吧"
+      ],
+      "dom_order": 477
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053815087299993708",
+      "status_url": "/ShanghaoJin/status/2053815087299993708",
+      "datetime": "2026-05-11T12:30:49.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "LilyH2024",
+      "texts": [
+        "没卖"
+      ],
+      "dom_order": 478
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2053812892903022994",
+      "status_url": "/ShanghaoJin/status/2053812892903022994",
+      "datetime": "2026-05-11T12:22:06.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": "0xlixia",
+      "texts": [
+        "我没卖"
+      ],
+      "dom_order": 479
+    }
+  ]
+}

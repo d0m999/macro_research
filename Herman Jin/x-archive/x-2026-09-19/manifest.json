@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "package_type": "x-archive",
+  "acquisition": {
+    "captured_on": "2026-09-19",
+    "coverage": "2026-01-01 → 2026-09-19（2026 全年至抓取日）",
+    "method": "headless-chrome-cdp-dom",
+    "targets": {
+      "posts": "https://x.com/ShanghaoJin（profile 页深度滚动，219 轮；该页不含回复）",
+      "full_content": "https://x.com/search?q=from:ShanghaoJin 分段抓取 × 20 个区间（整月 + 旬段）"
+    },
+    "note_x_search_rate_limit": "X 搜索对连续深滚有限流：累计约 100 轮后页面被清空（scrollH 收敛到视口高度、article 归零），需冷却 5~10 分钟恢复。故 5 月起改用旬粒度（每段 15~55 轮）规避。",
+    "stop_reason_profile": "reached_date_floor",
+    "rounds_used_profile": 219,
+    "search_files": [
+      "hj-x-search-2026-01.json",
+      "hj-x-search-2026-02.json",
+      "hj-x-search-2026-03.json",
+      "hj-x-search-2026-04.json",
+      "hj-x-search-2026-05-D1.json",
+      "hj-x-search-2026-05-D2.json",
+      "hj-x-search-2026-05-D3.json",
+      "hj-x-search-2026-05.json",
+      "hj-x-search-2026-06-D1.json",
+      "hj-x-search-2026-06-D2.json",
+      "hj-x-search-2026-06-D3.json",
+      "hj-x-search-2026-06.json",
+      "hj-x-search-2026-07-D1.json",
+      "hj-x-search-2026-07-D2.json",
+      "hj-x-search-2026-07-D3.json",
+      "hj-x-search-2026-08-D1.json",
+      "hj-x-search-2026-08-D2.json",
+      "hj-x-search-2026-08-D3.json",
+      "hj-x-search-2026-09-D1.json",
+      "hj-x-search-2026-09-D2.json"
+    ],
+    "note": "低频、只读、个人存档；登录态由本机浏览器 cookie 副本提供，副本用后即删"
+  },
+  "source_account": {
+    "handle": "@ShanghaoJin",
+    "display_name": "Herman Jin",
+    "platform": "x"
+  },
+  "posts": {
+    "record_count": 1273,
+    "file": "posts.jsonl"
+  },
+  "replies": {
+    "record_count": 6400,
+    "file": "replies.jsonl"
+  },
+  "threads": {
+    "note": "thread_id 为抓取时按会话邻接生成的分组，非 X 官方 thread 标识",
+    "count": 7673
+  },
+  "files": [
+    "manifest.json",
+    "posts.jsonl",
+    "replies.jsonl",
+    "media/",
+    "raw/"
+  ],
+  "evidence_boundary": "数据来自页面 DOM 深度滚动抓取，非官方 API。主帖取 profile 页（该页不含回复，实测 100% 为他本人）；回复取搜索页内容全集与主帖的差集。搜索结果的 DOM 不含 'Replying to @xxx'，故 in_reply_to_user 多数为空，少数由 with_replies 页 DOM 邻接推断补得 —— 属推断而非 X 自身元数据。正文为可见文本，未做图像 OCR；引用他人内容为原文附带、不代表本人观点。X 长帖存在 'Show more' 折叠，超长正文可能未完整展开。",
+  "related_materials": {
+    "source": "_source/x-2026-09-19/"
+  },
+  "generated_on": "2026-09-19T08:27:31.543727+00:00"
+}
