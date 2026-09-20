@@ -1,0 +1,4 @@
+# Downloaded validation tables and data snapshots stay local.
+*
+!.gitignore
+!README.md

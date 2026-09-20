@@ -1,0 +1,55 @@
+%% BTCUSDT 永续：指标与价格波动的反馈关系
+graph TD
+    P["价格 P<br/>BTCUSDT 永续<br/>方向 × 波动幅度"]
+    FLOW["成交与主动流<br/>Volume / Delta / CVD<br/>主动单穿透流动性"]
+    REPOS["持仓重配<br/>开仓 / 平仓<br/>成交不等于开仓方向"]
+    OI["OI_BTC<br/>未平仓 BTC 存量<br/>全市场多空总量相等"]
+    NOTIONAL["OI_USDT<br/>P × OI_BTC<br/>TV 侧为派生名义敞口"]
+    LIQ["Liquidations<br/>强制平仓事件"]
+    CROWD["Funding Rate + 多空比<br/>资金成本 / 拥挤代理"]
+    STATE["P × ΔOI 联读<br/>四种状态只能说明风险扩张/收缩<br/>与回补、止损或新仓位机制一致"]
+    BOUNDARY["数据来源边界<br/>TV OI_BTC ≈ Binance sumOpenInterest<br/>原生 USDT 值：Binance sumOpenInterestValue<br/>TV 无独立 OI_USDT 序列"]
+    LIMIT["解释边界<br/>实线：可能的市场反馈机制<br/>虚线：观察/口径核对<br/>单指标不能证明净多/净空或因果"]
+
+    P <-->|波动 ↔ 主动成交| FLOW
+    FLOW -->|开/平仓成分| REPOS
+    REPOS -->|改变 ΔOI| OI
+    REPOS -->|改变成交结构| FLOW
+    P -->|价格项（机械）| NOTIONAL
+    OI -->|数量项| NOTIONAL
+    NOTIONAL -->|敞口越大，敏感度越高| LIQ
+    OI -->|存量规模| LIQ
+    P -->|触发阈值| LIQ
+    LIQ -->|强平冲击| P
+    LIQ -->|去杠杆| OI
+    LIQ -->|被动成交| FLOW
+
+    P -->|价格/溢价反馈| CROWD
+    REPOS -->|持仓改变拥挤| CROWD
+    CROWD -->|成本影响调仓| REPOS
+    CROWD -->|脆弱方向| LIQ
+
+    P -.->|观察轴| STATE
+    OI -.->|观察轴| STATE
+    STATE -.->|联读，不是方向证明| LIMIT
+    BOUNDARY -.->|字段/量纲核对| P
+    BOUNDARY -.->|原生值对照| NOTIONAL
+    BOUNDARY -.->|字段口径核对| OI
+    P -.-> LIMIT
+    OI -.-> LIMIT
+
+    classDef price fill:#ffe7e7,stroke:#b54747,color:#6b1f1f,stroke-width:2px
+    classDef observed fill:#e8f1ff,stroke:#3478c9,color:#17365d,stroke-width:1.5px
+    classDef mechanism fill:#fff5d6,stroke:#c48a00,color:#5b4100,stroke-width:1.5px
+    classDef derived fill:#f2ecff,stroke:#7b5cc7,color:#35205e,stroke-width:1.5px
+    classDef event fill:#fff0e6,stroke:#c66a2b,color:#65300e,stroke-width:1.5px
+    classDef boundary fill:#f4f4f4,stroke:#777,color:#333,stroke-width:1.5px
+    classDef caveat fill:#fff0f0,stroke:#b54747,color:#6b1f1f,stroke-width:1.5px
+
+    class P price
+    class FLOW,OI observed
+    class REPOS,CROWD mechanism
+    class NOTIONAL derived
+    class LIQ event
+    class STATE,BOUNDARY boundary
+    class LIMIT caveat
