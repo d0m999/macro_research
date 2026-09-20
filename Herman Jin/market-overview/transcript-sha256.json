@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-20T03:46:21+08:00",
-  "scope": "Herman Jin/market-overview/*/transcript.jsonl post ASR audio verification (faster-whisper-small, 269 clips)",
+  "generated": "2026-09-20T11:11:37+08:00",
+  "scope": "Herman Jin/market-overview/*/transcript.jsonl post ASR audio verification (faster-whisper-small, 269 clips) + ONI->ON RRP, dpsc->DeepSeek, 利普壇->Lip-Bu Tan (worklist adjudication round)",
   "total_lines": 52518,
   "files": {
     "2025-01-07": {
@@ -28,7 +28,7 @@
       "lines": 606
     },
     "2025-03-04": {
-      "sha256": "25500be9d5c3247bf17e5aee005936aff0873a71b76944bf26cf7956e4521064",
+      "sha256": "01f5755b2350e4bf689b131cbb839b4b7b2c19e4d2eb3e205df452576b149d62",
       "lines": 830
     },
     "2025-03-11": {
@@ -84,7 +84,7 @@
       "lines": 1048
     },
     "2025-07-08": {
-      "sha256": "27b14fd6f736def01b56e5d669a3ea23aa7c2ef2a8acd805f7351bdae9e3610e",
+      "sha256": "10cffe2fd7ec748ebf6795648d9d768fd0bd1551bf9d74dffd1578fe488451a7",
       "lines": 944
     },
     "2025-07-22": {
@@ -184,7 +184,7 @@
       "lines": 1038
     },
     "2026-04-21": {
-      "sha256": "d7e4467f5e9499df91289aac45936dae0ec26c7c92c37f633905bd4170d820d6",
+      "sha256": "543fd59edf9f6e104492b4eea674daf7ba57e2504332b8a04a755fd5f8af195e",
       "lines": 976
     },
     "2026-05-05": {
