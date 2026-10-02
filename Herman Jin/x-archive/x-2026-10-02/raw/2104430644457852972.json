@@ -1,0 +1,97 @@
+{
+  "captured_at": "2026-10-02T05:49:17.011337+00:00",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2104430644457852972&lang=en&token=x",
+  "http_status": 200,
+  "response_sha256": "efcd0933bc5dc34b6bfff5be87cbbde00bec29b071b5d309739654aad1d0fa6f",
+  "tweet": {
+    "__typename": "Tweet",
+    "favorite_count": 156,
+    "lang": "zh",
+    "created_at": "2026-09-28T04:38:58.000Z",
+    "display_text_range": [
+      0,
+      74
+    ],
+    "entities": {},
+    "id_str": "2104430644457852972",
+    "text": "这周市场调整是很正常\n\n但我对打穿下面gamma wall还是非常存疑，毕竟现在基金仓位不够重、杠杠不高\n\n小概率事件要发生必须得伊朗兄弟们努力努力",
+    "user": {
+      "id_str": "858124064476479488",
+      "name": "Herman Jin",
+      "screen_name": "ShanghaoJin",
+      "is_blue_verified": true,
+      "profile_image_shape": "Circle",
+      "verified": false,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg"
+    },
+    "edit_control": {
+      "edit_tweet_ids": [
+        "2104430644457852972"
+      ],
+      "editable_until_msecs": "1790573938000",
+      "edits_remaining": "5",
+      "is_edit_eligible": true
+    },
+    "conversation_count": 13,
+    "news_action_type": "conversation",
+    "quoted_tweet": {
+      "favorite_count": 55,
+      "in_reply_to_screen_name": "ShanghaoJin",
+      "in_reply_to_status_id_str": "2104241949507305952",
+      "in_reply_to_user_id_str": "858124064476479488",
+      "lang": "zh",
+      "reply_count": 4,
+      "retweet_count": 2,
+      "created_at": "2026-09-27T16:11:35.000Z",
+      "display_text_range": [
+        27,
+        66
+      ],
+      "entities": {
+        "user_mentions": [
+          {
+            "id_str": "2068808382186708992",
+            "indices": [
+              0,
+              15
+            ],
+            "name": "Francois",
+            "screen_name": "FrancoisPouine"
+          },
+          {
+            "id_str": "2063073064758157312",
+            "indices": [
+              16,
+              26
+            ],
+            "name": "Babybus",
+            "screen_name": "BabybusFL"
+          }
+        ]
+      },
+      "id_str": "2104242558696374374",
+      "text": "@FrancoisPouine @BabybusFL IR vol变高+ pension卖一些32b\n\n具体多大影响不太好说，少折腾",
+      "user": {
+        "id_str": "858124064476479488",
+        "name": "Herman Jin",
+        "screen_name": "ShanghaoJin",
+        "is_blue_verified": true,
+        "profile_image_shape": "Circle",
+        "verified": false,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg"
+      },
+      "edit_control": {
+        "edit_tweet_ids": [
+          "2104242558696374374"
+        ],
+        "editable_until_msecs": "1790529095000",
+        "edits_remaining": "5",
+        "is_edit_eligible": false
+      },
+      "isEdited": false,
+      "isStaleEdit": false
+    },
+    "isEdited": false,
+    "isStaleEdit": false
+  }
+}

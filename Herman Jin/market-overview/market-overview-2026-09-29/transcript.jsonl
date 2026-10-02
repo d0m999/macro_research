@@ -1,0 +1,687 @@
+{"id": "seg-000001", "start": 0.0, "end": 4.34, "text": "好 谢谢啊 我今天先开始", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000002", "start": 4.34, "end": 8.46, "text": "然后我说一下 因为上周好像我们没有讲market", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000003", "start": 8.46, "end": 12.9, "text": "没有讲市场 然后其实主要是几个事情吧 这几周", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000004", "start": 12.9, "end": 18.7, "text": "一个是通胀的问题 然后通胀的问题其实已经加过一次息了", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000005", "start": 18.7, "end": 21.14, "text": "大家比较关心的是下一次加息或怎么样", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000006", "start": 21.14, "end": 25.74, "text": "那么其实也不完全是因为通胀和加息", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000007", "start": 25.74, "end": 28.66, "text": "那个十年期利率最近涨非常的高", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000008", "start": 29.06, "end": 32.06, "text": "我在周末的时候提醒过一次", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000009", "start": 32.06, "end": 34.66, "text": "就说那个 周末说我提醒过", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000010", "start": 34.66, "end": 37.26, "text": "就这周可能市场会有一些压力吧", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000011", "start": 37.26, "end": 38.66, "text": "这周整体市场会有一些压力", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000012", "start": 38.66, "end": 43.26, "text": "但是这个并不改变我们整体对AI或者是对于", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000013", "start": 43.26, "end": 46.66, "text": "拜脑体对于现在整个市场的大规", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000014", "start": 46.66, "end": 50.16, "text": "更加长期的一个看法 我觉得这个没有变化", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000015", "start": 50.16, "end": 53.66, "text": "但是呢 就说在技术上这一周会有一些压力", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000016", "start": 53.66, "end": 59.46, "text": "我大为讲一下为什么 宏观上面通胀的问题", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000017", "start": 59.46, "end": 63.56, "text": "并不是光看油价 其实有很大程度上", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000018", "start": 63.56, "end": 66.46, "text": "它是看diesel 看refinery 就是什么", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000019", "start": 66.46, "end": 71.26, "text": "diesel就是柴油这些价钱 看那个裂解差的价钱", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000020", "start": 71.26, "end": 75.16, "text": "然后先说一下 先说一下中国和美国谈判吧", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000021", "start": 75.16, "end": 79.16, "text": "因为这个是新闻上大家关心比较多的事情", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000022", "start": 79.16, "end": 83.76, "text": "第一个 美国第一次铺了一个特别大的红地毯", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000023", "start": 83.76, "end": 85.66, "text": "然后铺了一个特别大的红地毯", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000024", "start": 85.66, "end": 90.06, "text": "那个Trump到机场去接习近平", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000025", "start": 90.06, "end": 93.96, "text": "也就是两边这一次的会谈", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000026", "start": 93.96, "end": 98.06, "text": "我觉得面子工程都做到极致了", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000027", "start": 98.06, "end": 100.36, "text": "中国送了美国大熊猫嘛", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000028", "start": 100.36, "end": 103.56, "text": "然后美国方面直接去接他", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000029", "start": 103.56, "end": 107.26, "text": "然后互相谈赌之间都非常友善", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000030", "start": 107.26, "end": 112.36, "text": "但是实际的东西 我们在市场上没有看到特别多实际的东西", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000031", "start": 112.36, "end": 115.16, "text": "主要实际的东西就是那两个月的extension", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000032", "start": 115.16, "end": 118.96, "text": "就是两个月的延期 对于关税延期同时的话", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000033", "start": 118.96, "end": 122.86, "text": "中国方面对于稀土出口的一个延期", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000034", "start": 122.86, "end": 126.46, "text": "那么美国时候也讲了 关于美国其实讲了两个问题", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000035", "start": 126.46, "end": 131.06, "text": "第一个是稀土 稀土的安全性 稀土的出口", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000036", "start": 131.06, "end": 133.76, "text": "那么中国其实只延了两期", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000037", "start": 133.76, "end": 138.16, "text": "但是从关税角度来讲 可能这个稀土出口数量还是不够的", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000038", "start": 138.16, "end": 143.46, "text": "也就是两国其实有很多的意见的不同", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000039", "start": 143.46, "end": 150.56, "text": "我这腾讯过也 我就说两国其实有很多的分歧", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000040", "start": 150.56, "end": 156.26, "text": "但是两国的分歧是很难由一次元首的会议直接解决的", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000041", "start": 156.26, "end": 163.66, "text": "双方弹术是会需要一个持续谈判的过程", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000042", "start": 163.66, "end": 167.56, "text": "这个谈判的过程我觉得是会比较痛苦的", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000043", "start": 167.56, "end": 171.96, "text": "最好的点可能就在两国元首就见面的时候", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000044", "start": 171.96, "end": 178.96, "text": "然后大家做足姿态 包括中国后面和美国互相一个捧场", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000045", "start": 178.96, "end": 182.06, "text": "吉拉林一个捧场APAC 大家会捧场", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000046", "start": 182.06, "end": 185.66, "text": "那么中国这一次有一个特点", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000047", "start": 185.66, "end": 190.56, "text": "就是这个是包括Goldman Sachs 包括不少华尔街的人的一个", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000048", "start": 190.56, "end": 192.46, "text": "觉得看上去有点悲观的事情", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000049", "start": 192.46, "end": 196.56, "text": "就是中国其实没有代表团 没有企业家代表团", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000050", "start": 196.56, "end": 202.06, "text": "那么这个原因中间就讲到中国可能对和美国的一些合作", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000051", "start": 202.06, "end": 206.36, "text": "没有那么的热心了 没有代企业家没有代试谈实际的东西", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000052", "start": 206.36, "end": 209.66, "text": "但是实际的东西可能不一定是在美国谈", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000053", "start": 209.66, "end": 213.66, "text": "你可以看英特尔的CEO在哪里 年代上海", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000054", "start": 213.66, "end": 217.96, "text": "所以在上海可能本身就在", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000055", "start": 217.96, "end": 221.26, "text": "就是两边会谈中间本身就在谈很多事情", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000056", "start": 221.26, "end": 226.76, "text": "那为什么没有去 我个人感觉不完全是因为政治的原因", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000057", "start": 226.76, "end": 229.86, "text": "就是不完全因为对美国政治的原因吧", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000058", "start": 229.86, "end": 232.06, "text": "主要是可能是中国内部的原因", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000059", "start": 232.06, "end": 237.26, "text": "就是中国老大不太愿意再为企业家嘴边站谈", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000060", "start": 237.26, "end": 238.86, "text": "因为最近的一些发展", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000061", "start": 238.86, "end": 241.26, "text": "他不一定特别愿意再去为企业家站谈", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000062", "start": 241.26, "end": 244.76, "text": "也不应该 就从他讲过来说", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000063", "start": 244.76, "end": 248.76, "text": "有很多的变化在中国内部的一些企业的变化", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000064", "start": 248.76, "end": 250.46, "text": "可能最近也会发生了", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000065", "start": 250.96, "end": 252.96, "text": "我觉得可能是这样一个事情", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000066", "start": 252.96, "end": 255.76, "text": "讲的比较隐晦一点", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000067", "start": 255.76, "end": 258.86, "text": "但是总体来说我觉得中国和美国要关注", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000068", "start": 258.86, "end": 262.56, "text": "就这次谈判之后的结果后面继续的", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000069", "start": 262.56, "end": 264.86, "text": "你说芯片到底能够出口多少", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000070", "start": 264.86, "end": 267.86, "text": "包括Railers", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000071", "start": 267.86, "end": 270.06, "text": "我觉得中间最最重要的一件事情", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000072", "start": 270.06, "end": 272.86, "text": "其实相反是成品油", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000073", "start": 272.86, "end": 274.66, "text": "就美国也提到了成品油的问题", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000074", "start": 274.66, "end": 277.06, "text": "就是你可以看到最近的油价", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000075", "start": 277.06, "end": 279.16, "text": "就我刚刚讲一下大概的通胀情况", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000076", "start": 279.16, "end": 283.06, "text": "这个是互相有很多unresolved的事情", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000077", "start": 283.06, "end": 285.06, "text": "就是中美之间其实核心的问题", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000078", "start": 285.06, "end": 286.56, "text": "一个是台湾 对吧", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000079", "start": 286.56, "end": 290.26, "text": "一个是中国美国本身中国的地位的问题", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000080", "start": 290.26, "end": 293.36, "text": "就是是极具还是美国主导的时间", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000081", "start": 293.36, "end": 297.06, "text": "这两个核心的问题都是解决不了的", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000082", "start": 297.06, "end": 300.36, "text": "所以他的会谈的过程会比较长", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000083", "start": 300.36, "end": 302.26, "text": "但是缓和是肯定", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000084", "start": 302.26, "end": 304.66, "text": "就中国在经济上必须要跟美国缓和", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000085", "start": 304.66, "end": 308.06, "text": "而且经济上中美的互补性特别强", "chapter": "chapter-01", "source": "faster-whisper-small"}
+{"id": "seg-000086", "start": 308.06, "end": 310.36, "text": "中国是严重的通缩", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000087", "start": 310.36, "end": 311.86, "text": "包括你们可以看", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000088", "start": 311.86, "end": 314.86, "text": "我刚刚刚刚会讲一下refinery的问题", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000089", "start": 314.86, "end": 318.46, "text": "中国的地炼山东的很多地炼其实都在亏钱", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000090", "start": 318.46, "end": 320.66, "text": "就是那个炼油厂都在亏钱", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000091", "start": 320.66, "end": 323.06, "text": "全球的裂解差现在已经到100了", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000092", "start": 323.06, "end": 324.46, "text": "严重的地方到100", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000093", "start": 324.46, "end": 327.06, "text": "不严重的地方可能下新加坡70", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000094", "start": 327.06, "end": 329.26, "text": "新加坡西海蛮的七八十", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000095", "start": 329.26, "end": 331.46, "text": "然后严重的两个说", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000096", "start": 331.46, "end": 336.16, "text": "东海那些可能90到100就非常高", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000097", "start": 336.16, "end": 339.16, "text": "但是中国的炼油厂其实还在亏钱", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000098", "start": 339.16, "end": 340.56, "text": "因为中国没有内需", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000099", "start": 340.56, "end": 343.46, "text": "然后加上中国发改委可能要给路条", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000100", "start": 343.46, "end": 345.56, "text": "不给路条他不让你出口", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000101", "start": 345.56, "end": 347.86, "text": "就中国的制造业", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000102", "start": 347.86, "end": 350.16, "text": "最近可以看到制造业的毛利在上升", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000103", "start": 350.16, "end": 352.76, "text": "但整体制造业的毛利或者是产业的毛利", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000104", "start": 352.76, "end": 353.76, "text": "还是很低的", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000105", "start": 353.76, "end": 355.66, "text": "那么在美国是严重缺国", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000106", "start": 355.66, "end": 362.06, "text": "所以在美国是AI带动的整体的产业的需求非常大", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000107", "start": 362.06, "end": 366.26, "text": "然后这个产业的需求甚至外研到发电机", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000108", "start": 366.26, "end": 368.96, "text": "外研到工业的各个方面", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000109", "start": 368.96, "end": 373.86, "text": "那么这些中国是他这个都是会导致通胀的", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000110", "start": 373.86, "end": 376.06, "text": "中国是向世界输出通缩的", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000111", "start": 376.06, "end": 380.26, "text": "就是缓和通胀的一个重要的力量", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000112", "start": 380.26, "end": 382.06, "text": "所以给大家补血", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000113", "start": 382.06, "end": 384.16, "text": "包括这次伊朗的问题", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000114", "start": 384.16, "end": 386.36, "text": "其实都是中国在补血", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000115", "start": 386.36, "end": 389.26, "text": "伊朗封了海峡", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000116", "start": 389.26, "end": 394.16, "text": "然后中国每天在减少石油的进口和减少石油的消费", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000117", "start": 394.16, "end": 395.36, "text": "因为确实是没有", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000118", "start": 395.36, "end": 396.46, "text": "原来是囤油", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000119", "start": 396.46, "end": 399.96, "text": "中国那个价钱稍微高一点就没法消费", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000120", "start": 399.96, "end": 401.66, "text": "所以经济上的互补性很强", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000121", "start": 401.66, "end": 404.66, "text": "所以我觉得后面就接下去", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000122", "start": 404.66, "end": 408.16, "text": "至少在川普任期那两年不太会出", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000123", "start": 408.16, "end": 409.16, "text": "这次会议之后", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000124", "start": 409.16, "end": 411.66, "text": "我感觉不太会出比较严重的问题", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000125", "start": 411.66, "end": 414.56, "text": "这才是真正的我们叫做市场的tail risk", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000126", "start": 414.56, "end": 415.56, "text": "尾部风险", "chapter": "chapter-02", "source": "faster-whisper-small"}
+{"id": "seg-000127", "start": 415.56, "end": 422.56, "text": "伊朗这种很难称为尾部风险", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000128", "start": 422.56, "end": 426.26, "text": "就是你可以看一下石油的问题吧", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000129", "start": 426.26, "end": 427.86, "text": "石油我看看我有没有那个", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000130", "start": 430.66, "end": 433.86, "text": "这边可能没有一个出口多少的图案", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000131", "start": 433.86, "end": 434.76, "text": "现在有一个图案", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000132", "start": 434.76, "end": 436.56, "text": "对石油出口图", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000133", "start": 437.66, "end": 439.96, "text": "确实是每天降低了不少", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000134", "start": 439.96, "end": 441.76, "text": "就比较说降低了7个million barrel", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000135", "start": 441.76, "end": 445.86, "text": "现在就跟战前降低了7到8个million barrel", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000136", "start": 445.86, "end": 449.86, "text": "但是全球同时的话也在减少就是需求", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000137", "start": 449.86, "end": 453.36, "text": "中国这边本身就贡献了3个", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000138", "start": 453.36, "end": 454.36, "text": "3个美元", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000139", "start": 454.36, "end": 455.06, "text": "3个到5个", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000140", "start": 456.16, "end": 457.36, "text": "每天的贡献这些", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000141", "start": 459.36, "end": 460.06, "text": "减少需求", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000142", "start": 460.06, "end": 461.96, "text": "那欧洲美国也在减少", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000143", "start": 461.96, "end": 464.56, "text": "然后其他有些地方在增产", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000144", "start": 464.56, "end": 467.06, "text": "其实原油crude oil本身", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000145", "start": 468.16, "end": 469.06, "text": "价格是很高", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000146", "start": 469.06, "end": 471.26, "text": "就是你现在大家都在减少库存", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000147", "start": 471.26, "end": 474.16, "text": "crude oil本身不是一个最大的问题", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000148", "start": 474.16, "end": 478.06, "text": "最大的问题是在柴油上面", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000149", "start": 478.06, "end": 481.06, "text": "也就是伊朗和美国在对峙", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000150", "start": 481.06, "end": 483.46, "text": "但是伊朗因为他对海峡的封锁", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000151", "start": 483.46, "end": 485.76, "text": "导致了很多炼油厂本身在中东", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000152", "start": 485.76, "end": 489.06, "text": "这些炼油厂或者全球供应链的供应链的纹乱", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000153", "start": 489.06, "end": 491.56, "text": "在石油产业上的供应链的纹乱", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000154", "start": 491.56, "end": 496.96, "text": "这个体现在就是我们叫做crack spread", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000155", "start": 496.96, "end": 497.76, "text": "就是什么", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000156", "start": 497.76, "end": 500.16, "text": "裂解差上是特别明显", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000157", "start": 500.16, "end": 503.36, "text": "就现在的裂解差在一段时间", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000158", "start": 503.36, "end": 505.56, "text": "稍微有MOU的时候稍微好了一点", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000159", "start": 505.56, "end": 507.36, "text": "但是最近又上去了", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000160", "start": 507.36, "end": 508.66, "text": "就刚刚打仗和现在", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000161", "start": 508.66, "end": 510.46, "text": "那基本上裂解差到一半", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000162", "start": 510.46, "end": 514.56, "text": "你想真正影响PCE的是什么东西呢", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000163", "start": 514.56, "end": 517.86, "text": "是飞机的比方说飞机机票", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000164", "start": 520.06, "end": 520.96, "text": "CPI影响", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000165", "start": 520.96, "end": 522.96, "text": "就石油是直接影响CPI的", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000166", "start": 522.96, "end": 524.66, "text": "但是要影响到PCE的话", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000167", "start": 524.66, "end": 528.36, "text": "其实是需要成品油的角度更加影响", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000168", "start": 528.36, "end": 528.86, "text": "那么", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000169", "start": 534.06, "end": 535.76, "text": "成品油的价格里面", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000170", "start": 535.76, "end": 537.76, "text": "因为成品油的价格更加影响的话", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000171", "start": 537.76, "end": 540.56, "text": "那中国而且把成品油的那个订单", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000172", "start": 540.56, "end": 542.76, "text": "其实给停掉了", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000173", "start": 542.76, "end": 547.16, "text": "所以真正威胁到美国通胀", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000174", "start": 547.16, "end": 549.86, "text": "包括Trump最近在说", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000175", "start": 549.86, "end": 552.16, "text": "美国要就Band这个", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000176", "start": 552.16, "end": 554.06, "text": "叫停止成品油出口", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000177", "start": 554.06, "end": 555.76, "text": "美国要停止成品油出口", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000178", "start": 555.76, "end": 560.46, "text": "所以如果说中国是不能够把这个成品油打开的话", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000179", "start": 560.46, "end": 563.06, "text": "其实对整体的全球的供应", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000180", "start": 563.06, "end": 565.56, "text": "特别是对欧洲是极其其负面", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000181", "start": 565.56, "end": 567.36, "text": "欧洲的", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000182", "start": 567.36, "end": 570.26, "text": "欧洲是一方面俄罗斯的那个炼油厂被查了", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000183", "start": 570.26, "end": 573.96, "text": "就被物理性物理性物理性减产", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000184", "start": 573.96, "end": 576.06, "text": "中东再被伊朗减产", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000185", "start": 576.06, "end": 577.56, "text": "中国再封锁", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000186", "start": 577.56, "end": 579.46, "text": "然后美国再减产", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000187", "start": 579.46, "end": 582.66, "text": "其实中国和美国是两个成品油出口的绝对大头", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000188", "start": 582.66, "end": 585.26, "text": "就是生产力的绝对大头", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000189", "start": 585.26, "end": 588.56, "text": "这两个如果现在在一个是不增产", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000190", "start": 588.56, "end": 591.16, "text": "中国如果是不增加产量", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000191", "start": 591.16, "end": 593.36, "text": "美国是限制出口的话", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000192", "start": 593.36, "end": 596.56, "text": "那么欧洲的柴油价钱到冬天是会非常可怕", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000193", "start": 596.56, "end": 598.06, "text": "所以真正影响是谁呢", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000194", "start": 598.06, "end": 599.16, "text": "真正影响是欧洲", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000195", "start": 599.16, "end": 600.36, "text": "欧洲", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000196", "start": 600.36, "end": 603.36, "text": "这个影响甚至会影响到你的油的影响", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000197", "start": 603.36, "end": 604.66, "text": "能源的影响", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000198", "start": 604.66, "end": 607.66, "text": "也影响到你后面数据中心的建设", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000199", "start": 607.66, "end": 610.96, "text": "也影响到你后面AI的发展", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000200", "start": 610.96, "end": 612.36, "text": "一个很简单的事情", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000201", "start": 612.36, "end": 615.56, "text": "就是24年开始打的欧洲战争", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000202", "start": 615.56, "end": 617.76, "text": "其实让欧洲真正落后了", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000203", "start": 617.76, "end": 620.36, "text": "你现在一直维持一个低烈度的", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000204", "start": 620.36, "end": 623.56, "text": "就是伊朗能不能维持一个低烈度的战争", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000205", "start": 623.56, "end": 632.56, "text": "取决于中国会不会帮美国去把成品油的出口给打开", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000206", "start": 632.56, "end": 637.76, "text": "中国如果是一个更正面的态度", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000207", "start": 637.76, "end": 640.76, "text": "其实美国是可以维持在伊朗一个低烈度战争", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000208", "start": 640.76, "end": 643.06, "text": "其实你说霍尔木兹海峡封锁", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000209", "start": 643.06, "end": 644.46, "text": "它并不是完全封锁", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000210", "start": 644.46, "end": 647.86, "text": "它还是一直是有传适能够开出来", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000211", "start": 647.86, "end": 651.56, "text": "就是它这个是能够维持在这个水平", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000212", "start": 651.56, "end": 653.36, "text": "真正不能维持的是欧洲", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000213", "start": 653.36, "end": 655.06, "text": "欧洲会受到很大伤害", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000214", "start": 655.06, "end": 657.56, "text": "那么说一下中国的情况吧", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000215", "start": 657.56, "end": 659.66, "text": "中国如果能够进一步放开", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000216", "start": 659.66, "end": 663.16, "text": "大概一到两个million barrel成品油出口", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000217", "start": 663.16, "end": 667.46, "text": "然后中国其实自己的存量大概在11亿吨", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000218", "start": 668.46, "end": 670.86, "text": "中国的储量是非常大", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000219", "start": 670.86, "end": 673.46, "text": "就成品油的储存能量是非常大", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000220", "start": 673.46, "end": 677.26, "text": "然后它可以维持相当长的一段时间让它出口", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000221", "start": 677.26, "end": 682.26, "text": "因为你本身你三桶油都现在国内这个价钱大概在20吧", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000222", "start": 682.26, "end": 684.26, "text": "就这个差价是在20", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000223", "start": 684.26, "end": 687.26, "text": "然后国内差价在20", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000224", "start": 687.26, "end": 689.26, "text": "新加坡的差价", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000225", "start": 689.26, "end": 691.26, "text": "这个新加坡的差价我看一下", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000226", "start": 691.26, "end": 692.26, "text": "对这个新加坡的差价", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000227", "start": 692.26, "end": 695.06, "text": "新加坡的差价用的是用的油跟你是一样的油", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000228", "start": 695.06, "end": 697.06, "text": "但是这两天可能也到70去了", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000229", "start": 697.06, "end": 698.34, "text": "也到70几去了", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000230", "start": 698.34, "end": 704.48, "text": "那个国内现在整体的生产效率在66", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000231", "start": 704.48, "end": 707.56, "text": "就是它有大量的富裕的产能", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000232", "start": 707.56, "end": 712.16, "text": "有人把这个数据拿去比较说我今年中国已经比去年多了", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000233", "start": 712.16, "end": 713.7, "text": "这个不太make sense", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000234", "start": 713.7, "end": 716.78, "text": "因为中国还有大量的富裕的产能", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000235", "start": 716.78, "end": 720.62, "text": "中国其实有大量的成品油的库存", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000236", "start": 720.62, "end": 726.24, "text": "然后市场上有极大的这个成品油的价差", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000237", "start": 726.24, "end": 728.8, "text": "相当于外面有剧多的钱你可以赚", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000238", "start": 728.8, "end": 732.12, "text": "但是为了战略的考虑中国没有让它出口", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000239", "start": 732.12, "end": 735.46, "text": "所以发改委如果比较多的放出调子", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000240", "start": 735.46, "end": 738.52, "text": "我听说可能在这次会议之前有这个说法", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000241", "start": 738.52, "end": 740.32, "text": "要放出一些放出更大的调子", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000242", "start": 740.32, "end": 744.42, "text": "其实对这个对美国和全球的通胀的影响", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000243", "start": 744.42, "end": 751.08, "text": "包括是对于diesel的这个spread影响都会非常正面", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000244", "start": 751.08, "end": 753.38, "text": "我引用一个高盛的预期吧", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000245", "start": 753.58, "end": 757.68, "text": "高盛的预期是觉得如果发改委进一步把它打开", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000246", "start": 757.68, "end": 760.24, "text": "这个裂解差可以降到40", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000247", "start": 760.24, "end": 765.12, "text": "就是比现在比较说80到90的水平降到40", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000248", "start": 765.12, "end": 767.16, "text": "但是中国如果不打开", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000249", "start": 767.16, "end": 771.0, "text": "然后不打开这个石油价钱肯定不会回去的", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000250", "start": 771.0, "end": 774.08, "text": "但是中国如果不打开甚至限制进一步限制出口", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000251", "start": 774.08, "end": 776.24, "text": "然后美国也限制出口", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000252", "start": 776.24, "end": 781.52, "text": "欧洲的diesel价钱可以往上跑50%以上", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000253", "start": 781.52, "end": 785.62, "text": "所以这个冬天对于欧洲人来讲就会非常非常非常多", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000254", "start": 785.62, "end": 788.94, "text": "你真正打仗你回头看", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000255", "start": 788.94, "end": 790.74, "text": "真正打了一脑的仗", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000256", "start": 790.74, "end": 792.78, "text": "但是成本谁在担呢", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000257", "start": 792.78, "end": 794.58, "text": "成本其实是欧洲在担", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000258", "start": 794.58, "end": 797.38, "text": "这是一个比较痛苦的事情", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000259", "start": 797.38, "end": 801.74, "text": "然后这是Goldman Sachs的看法", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000260", "start": 801.74, "end": 805.58, "text": "就是大概Goldman Sachs的看法就是我刚刚讲的就是tail risk", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000261", "start": 805.58, "end": 807.9, "text": "就是欧洲会wrong drive", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000262", "start": 807.9, "end": 809.94, "text": "就是 Europe整个欧洲问题", "chapter": "chapter-03", "source": "faster-whisper-small"}
+{"id": "seg-000263", "start": 810.16, "end": 815.0, "text": "那么第二呢就说到他的最后的一个影响", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000264", "start": 815.0, "end": 816.08, "text": "其实", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000265", "start": 821.96, "end": 823.44, "text": "其实他的影响是什么", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000266", "start": 823.44, "end": 825.56, "text": "影响是全球货币政策编辑", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000267", "start": 826.52, "end": 830.56, "text": "我们之前讲过美国有没有通胀的问题", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000268", "start": 830.56, "end": 833.92, "text": "我现在还是觉得美国其实没有核心通胀", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000269", "start": 833.92, "end": 835.56, "text": "美国通胀是transitory", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000270", "start": 835.56, "end": 838.4, "text": "是真实是那个短期的", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000271", "start": 838.42, "end": 840.66, "text": "我们讲美国通胀的几方面的影响", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000272", "start": 840.66, "end": 842.3, "text": "我们先讲一下美国通胀", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000273", "start": 842.3, "end": 843.58, "text": "美国通胀几方面影响", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000274", "start": 843.58, "end": 847.86, "text": "第一个就是它正面的就往上的压力是输入性", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000275", "start": 847.86, "end": 848.5, "text": "就是油", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000276", "start": 848.5, "end": 850.66, "text": "你反正你加息你也不能影响油", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000277", "start": 850.66, "end": 853.38, "text": "现在加息最多市场油的外益性的", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000278", "start": 853.38, "end": 856.42, "text": "就是油价上涨通胀预期上升", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000279", "start": 856.42, "end": 858.02, "text": "压住这个通胀预期", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000280", "start": 858.02, "end": 858.7, "text": "然后", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000281", "start": 859.38, "end": 861.34, "text": "一个是石油价格", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000282", "start": 861.34, "end": 862.94, "text": "第二个是关税", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000283", "start": 862.94, "end": 865.06, "text": "其实你看一年期的话", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000284", "start": 865.06, "end": 866.28, "text": "其实关税影响", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000285", "start": 866.28, "end": 868.88, "text": "就是month-on-month比较多的是在1月份", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000286", "start": 868.88, "end": 870.96, "text": "在今年的一二季度", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000287", "start": 870.96, "end": 873.12, "text": "接下去关税影响在下降", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000288", "start": 873.12, "end": 876.12, "text": "所以在现在这个时点", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000289", "start": 876.12, "end": 881.32, "text": "核心PCE也还有0.8左右是受到关税影响", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000290", "start": 881.32, "end": 884.04, "text": "这个关税影响可能还在0.8左右", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000291", "start": 884.04, "end": 887.84, "text": "那么但是他们每个month-on-month的影响", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000292", "start": 887.84, "end": 889.12, "text": "一直在下降0.6左右", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000293", "start": 889.12, "end": 890.68, "text": "现在大概0.6左右", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000294", "start": 890.68, "end": 893.8, "text": "然后month-on-month的影响其实在下降", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000295", "start": 893.8, "end": 896.86, "text": "所以你如果今天在8月份", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000296", "start": 896.86, "end": 898.86, "text": "就介绍8月份的数据", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000297", "start": 898.86, "end": 900.1, "text": "8月份数据完了", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000298", "start": 900.1, "end": 901.82, "text": "就是比方说你9月份", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000299", "start": 901.82, "end": 902.26, "text": "10月份", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000300", "start": 902.26, "end": 902.86, "text": "11月份", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000301", "start": 902.86, "end": 906.1, "text": "你到了10月11月之后", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000302", "start": 906.1, "end": 911.98, "text": "这一部分的对核心PCE的影响就会下降", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000303", "start": 911.98, "end": 913.94, "text": "然后第三部分往上的", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000304", "start": 913.94, "end": 920.14, "text": "就是AI data center导致软件硬件上升", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000305", "start": 920.14, "end": 921.84, "text": "软件硬件上升", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000306", "start": 921.84, "end": 926.28, "text": "再加上Wash可能会调一下", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000307", "start": 926.28, "end": 930.44, "text": "Gamma Wash可能会调一下PCE的组成", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000308", "start": 930.44, "end": 934.2, "text": "所以关测的重点可能不太一样", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000309", "start": 934.2, "end": 936.12, "text": "最终你整个网上的力量", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000310", "start": 936.12, "end": 937.6, "text": "网上调到1%", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000311", "start": 937.6, "end": 940.56, "text": "但1%里面有0.6%是关税", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000312", "start": 940.56, "end": 943.24, "text": "然后可能有0.2%", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000313", "start": 943.24, "end": 946.68, "text": "0.2是石油导致的", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000314", "start": 946.68, "end": 949.16, "text": "石油导致的有一些影响都已经出来了", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000315", "start": 949.26, "end": 951.58, "text": "就是你接下去还会有些什么影响", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000316", "start": 951.58, "end": 954.9, "text": "中间当然影响最大的是飞机机票", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000317", "start": 954.9, "end": 957.06, "text": "然后飞机机票油压一掌", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000318", "start": 957.06, "end": 959.14, "text": "就燃油什么叫什么", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000319", "start": 959.14, "end": 961.02, "text": "中国叫什么燃油增制罪", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000320", "start": 961.02, "end": 963.78, "text": "就是美国是直接调飞机机票", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000321", "start": 963.78, "end": 967.86, "text": "所以这个影响是非常直接的", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000322", "start": 967.86, "end": 971.58, "text": "所以这三方面力量", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000323", "start": 971.58, "end": 975.14, "text": "其实带动了整体的通胀的往上的压力", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000324", "start": 975.14, "end": 978.86, "text": "但为什么我觉得美国其实通常并不严重", "chapter": "chapter-04", "source": "faster-whisper-small"}
+{"id": "seg-000325", "start": 978.86, "end": 980.56, "text": "然后往下压力是什么东西", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000326", "start": 980.56, "end": 984.36, "text": "往下压力是一个是房租", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000327", "start": 984.36, "end": 987.64, "text": "就是那个我shelter", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000328", "start": 987.64, "end": 990.92, "text": "shelter这个东西是有lagging的", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000329", "start": 990.92, "end": 993.2, "text": "所以shelter其实一直在往下跑", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000330", "start": 993.2, "end": 995.72, "text": "就是你美国整体房租一直在往下跑", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000331", "start": 995.72, "end": 997.72, "text": "第二个就是工资", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000332", "start": 997.72, "end": 1000.52, "text": "工资里面我们现在看到", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000333", "start": 1000.52, "end": 1002.92, "text": "month-on-monthnonfarm payroll", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000334", "start": 1002.92, "end": 1004.6, "text": "大概因为ai", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000335", "start": 1004.6, "end": 1006.48, "text": "我们叫ai sensitive的职业", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000336", "start": 1006.58, "end": 1009.94, "text": "ai sensitive的职业大概减少1万到15000人", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000337", "start": 1009.94, "end": 1013.14, "text": "data center建设能够补过来几千个", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000338", "start": 1013.14, "end": 1014.94, "text": "没有越不太一样", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000339", "start": 1014.94, "end": 1018.82, "text": "所以你会看到因为ai其实是有很小幅的", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000340", "start": 1018.82, "end": 1019.78, "text": "没打算的吧", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000341", "start": 1019.78, "end": 1020.9, "text": "不会7000人", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000342", "start": 1020.9, "end": 1024.46, "text": "所以你因为ai其实是有很小幅的", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000343", "start": 1024.46, "end": 1026.62, "text": "就是人在事业建设工作", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000344", "start": 1026.62, "end": 1028.66, "text": "但是这个是量变引起制变", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000345", "start": 1028.66, "end": 1030.42, "text": "就是你ai到了某个程度", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000346", "start": 1030.42, "end": 1033.38, "text": "他的ai sensitive的人的事业会很多的", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000347", "start": 1033.38, "end": 1034.22, "text": "或一下子出来", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000348", "start": 1034.22, "end": 1035.06, "text": "这是一个", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000349", "start": 1035.16, "end": 1037.2, "text": "第二个既是你维持现在这个规模", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000350", "start": 1037.2, "end": 1038.08, "text": "人减少", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000351", "start": 1038.08, "end": 1039.0, "text": "相当于人减少", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000352", "start": 1039.0, "end": 1042.96, "text": "最终我们认为10年期5年期", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000353", "start": 1042.96, "end": 1045.92, "text": "可能减少25%的工作市场", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000354", "start": 1045.92, "end": 1047.08, "text": "就现在的工作", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000355", "start": 1047.08, "end": 1048.24, "text": "现在学的工作里面", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000356", "start": 1048.24, "end": 1049.32, "text": "至少减少25%", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000357", "start": 1050.48, "end": 1052.6, "text": "可能其实还会远远不止", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000358", "start": 1052.6, "end": 1054.28, "text": "那么你减少这些工作市场", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000359", "start": 1054.28, "end": 1055.52, "text": "其实就是减少工作", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000360", "start": 1055.52, "end": 1057.28, "text": "工资的人提高效率", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000361", "start": 1057.28, "end": 1058.44, "text": "你这个过程里面", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000362", "start": 1058.44, "end": 1063.28, "text": "你必然对于现有的工资螺旋上身是有很大压力", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000363", "start": 1063.28, "end": 1066.86, "text": "也就是你会看到往上升的这些动力", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000364", "start": 1066.86, "end": 1068.94, "text": "在未来一年里面不会变那么重要", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000365", "start": 1068.94, "end": 1071.14, "text": "就未来半年都不会变那么重要", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000366", "start": 1071.14, "end": 1074.22, "text": "就除非伊朗低烈度一直打打打很久的", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000367", "start": 1074.22, "end": 1076.78, "text": "然后但是石油就会变成", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000368", "start": 1076.78, "end": 1078.26, "text": "5亿个推动的力量", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000369", "start": 1078.26, "end": 1079.98, "text": "主要的力量不是石油", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000370", "start": 1079.98, "end": 1082.9, "text": "就是现在PCE的上升主要力量并不是石油", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000371", "start": 1082.9, "end": 1087.38, "text": "PCE上升主要力量是关税是这一块", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000372", "start": 1087.38, "end": 1089.78, "text": "所以你会看到这个力量是往下", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000373", "start": 1089.8, "end": 1094.08, "text": "但是通缩的力量或者是限制通胀的力量", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000374", "start": 1094.08, "end": 1095.24, "text": "它是持续性的", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000375", "start": 1095.24, "end": 1096.72, "text": "而且时间更长", "chapter": "chapter-05", "source": "faster-whisper-small"}
+{"id": "seg-000376", "start": 1096.72, "end": 1099.4, "text": "所以你可以认为说联储会加息", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000377", "start": 1099.4, "end": 1101.92, "text": "联储加息有一个很重要的原因", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000378", "start": 1101.92, "end": 1104.88, "text": "是第一个全球都在加息", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000379", "start": 1104.88, "end": 1107.16, "text": "欧洲是真的受到了通胀影响", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000380", "start": 1107.16, "end": 1112.0, "text": "而且ECB不是dual mandate", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000381", "start": 1112.0, "end": 1114.68, "text": "它dual mandate就是不是要换通胀", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000382", "start": 1114.68, "end": 1115.32, "text": "要看增长", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000383", "start": 1115.32, "end": 1118.04, "text": "它是只看通胀", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000384", "start": 1118.04, "end": 1121.66, "text": "第二人家是真的是看通胀本身", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000385", "start": 1121.66, "end": 1123.38, "text": "不像美国看PCE", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000386", "start": 1123.38, "end": 1125.98, "text": "所以从欧洲来讲", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000387", "start": 1125.98, "end": 1130.62, "text": "欧洲发生的更加严重的可能导致通胀的问题", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000388", "start": 1130.62, "end": 1132.22, "text": "就是它的油价上升", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000389", "start": 1132.22, "end": 1134.02, "text": "它diesel价钱的影响", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000390", "start": 1134.02, "end": 1136.46, "text": "对欧洲的影响肯定是比对美国还要大", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000391", "start": 1136.46, "end": 1137.94, "text": "然后美国油产能的", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000392", "start": 1137.94, "end": 1139.78, "text": "对美国还是确实是油产能", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000393", "start": 1139.78, "end": 1141.86, "text": "它而且有可能会限制", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000394", "start": 1141.86, "end": 1144.54, "text": "所以这个而且欧洲", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000395", "start": 1144.54, "end": 1146.78, "text": "你原来的俄罗斯的炼油厂也没了", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000396", "start": 1147.4, "end": 1149.8, "text": "然后俄罗斯的天然气也受到了影响", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000397", "start": 1149.8, "end": 1155.8, "text": "所以整个两场战争打到最痛的其实都是欧洲", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000398", "start": 1155.8, "end": 1157.68, "text": "这个这个这是肯定", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000399", "start": 1157.68, "end": 1160.56, "text": "那么在全球所有的央行里面", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000400", "start": 1160.56, "end": 1162.2, "text": "因为这个伊朗的问题", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000401", "start": 1162.2, "end": 1163.4, "text": "所以你可以看", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000402", "start": 1163.4, "end": 1166.76, "text": "这过去三个月和现在比较虚线都是", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000403", "start": 1166.76, "end": 1170.12, "text": "这里虚线都是三个月前加息的预期", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000404", "start": 1170.12, "end": 1172.04, "text": "实现实现在加息的预期", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000405", "start": 1172.04, "end": 1174.16, "text": "就是整体的加息预期在上升", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000406", "start": 1174.16, "end": 1175.96, "text": "这个不是Kamal Wash高", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000407", "start": 1176.02, "end": 1177.42, "text": "这个是包括ECB", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000408", "start": 1177.42, "end": 1178.66, "text": "包括BOJ", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000409", "start": 1178.66, "end": 1179.58, "text": "包括美国", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000410", "start": 1179.58, "end": 1182.18, "text": "大家是一起一起动力", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000411", "start": 1182.18, "end": 1185.06, "text": "那么从美联储的角度来说", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000412", "start": 1185.06, "end": 1187.26, "text": "其实美联储", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000413", "start": 1187.26, "end": 1190.86, "text": "我感觉是Kamal Wash放了很硬的吊子", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000414", "start": 1190.86, "end": 1192.7, "text": "所以放了这个很硬的吊子之后", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000415", "start": 1192.7, "end": 1194.62, "text": "它包括上次讲的时候", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000416", "start": 1194.62, "end": 1195.58, "text": "他讲还讲到一个", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000417", "start": 1195.58, "end": 1198.78, "text": "就是说我未来过去五年以来", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000418", "start": 1198.78, "end": 1200.74, "text": "其实通常都没有控制住", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000419", "start": 1200.74, "end": 1202.26, "text": "这PCE都比较高", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000420", "start": 1202.26, "end": 1204.26, "text": "然后我们的增长上来", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000421", "start": 1204.56, "end": 1205.96, "text": "那个失业上来讲", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000422", "start": 1205.96, "end": 1207.56, "text": "失业率一直是服务", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000423", "start": 1207.56, "end": 1209.32, "text": "失业率比较高", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000424", "start": 1209.32, "end": 1211.0, "text": "所以他定了这个吊子", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000425", "start": 1211.0, "end": 1212.56, "text": "导致市场给他定价", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000426", "start": 1212.56, "end": 1214.76, "text": "在四季都是肯定要加一次息", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000427", "start": 1214.76, "end": 1216.28, "text": "这个不光是美国的问题", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000428", "start": 1216.28, "end": 1218.44, "text": "是全球都在走这个问题", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000429", "start": 1218.44, "end": 1220.76, "text": "那么我们回过来讲利率", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000430", "start": 1220.76, "end": 1226.72, "text": "就是加息是不是一定导致美国资产问题", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000431", "start": 1226.72, "end": 1228.4, "text": "这个好像我们上次视频就讲过", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000432", "start": 1228.4, "end": 1230.0, "text": "我觉得不是", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000433", "start": 1230.0, "end": 1232.44, "text": "加息会导致很多企业到美国去的", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000434", "start": 1232.46, "end": 1236.66, "text": "就是美国加息本身是让资金更容易回流美国", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000435", "start": 1236.66, "end": 1237.8, "text": "而且全球都在加", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000436", "start": 1237.82, "end": 1239.58, "text": "你又不是美国一加", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000437", "start": 1239.58, "end": 1241.34, "text": "然后第二个问题", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000438", "start": 1241.34, "end": 1246.0, "text": "就是说利率本身影响比较大的是利率的", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000439", "start": 1246.0, "end": 1248.06, "text": "所以长端利率的", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000440", "start": 1248.06, "end": 1249.34, "text": "而不是加息", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000441", "start": 1249.34, "end": 1250.74, "text": "不是加息导致的", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000442", "start": 1250.74, "end": 1255.46, "text": "那么第三个就是说到美债的问题", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000443", "start": 1255.46, "end": 1258.94, "text": "其实你可以看central bank持有债券", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000444", "start": 1258.94, "end": 1261.42, "text": "美国是相对来说最低的", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000445", "start": 1261.48, "end": 1265.2, "text": "你BOE英国这种你把它放开少一点的话", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000446", "start": 1265.2, "end": 1268.68, "text": "如果是ECB和BOJ", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000447", "start": 1268.68, "end": 1270.92, "text": "就是欧洲 日本和美国别", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000448", "start": 1270.92, "end": 1272.28, "text": "就这三条线", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000449", "start": 1272.28, "end": 1274.52, "text": "你可以明确的知道", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000450", "start": 1274.52, "end": 1280.28, "text": "就是美国央行持有的资产是最少", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000451", "start": 1280.28, "end": 1282.32, "text": "就在几个大国里面相对", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000452", "start": 1282.32, "end": 1283.56, "text": "对上中国要高", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000453", "start": 1283.56, "end": 1285.88, "text": "那中国这边数据我就不放了", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000454", "start": 1285.88, "end": 1287.2, "text": "因为腾讯过一年", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000455", "start": 1287.2, "end": 1288.88, "text": "我就不去放这个东西", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000456", "start": 1288.88, "end": 1292.06, "text": "然后这个相对来说", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000457", "start": 1292.06, "end": 1293.18, "text": "就是这是一个", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000458", "start": 1293.18, "end": 1293.66, "text": "第二个", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000459", "start": 1293.66, "end": 1296.02, "text": "你说债务美国债务出问题", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000460", "start": 1296.02, "end": 1297.54, "text": "利率到了5% 6%", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000461", "start": 1297.54, "end": 1298.46, "text": "美国没有办法支持", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000462", "start": 1298.46, "end": 1299.9, "text": "这个也无忌之坛", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000463", "start": 1299.9, "end": 1305.06, "text": "因为美国现在GDP增长6.5% 6-7%", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000464", "start": 1305.06, "end": 1307.02, "text": "然后赤字是6", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000465", "start": 1307.02, "end": 1309.98, "text": "所以不是一个很很痛快的过程", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000466", "start": 1309.98, "end": 1313.82, "text": "但是他肯定不是一个会导致奥斯德利", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000467", "start": 1313.82, "end": 1317.5, "text": "导致他那个导致他那个债务性紧缩", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000468", "start": 1317.5, "end": 1319.64, "text": "或者是要债务节省的", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000469", "start": 1319.64, "end": 1321.2, "text": "没有到这里", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000470", "start": 1321.2, "end": 1324.36, "text": "所以从宏观来上来讲", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000471", "start": 1324.36, "end": 1325.8, "text": "他并不是一个特别大的问题", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000472", "start": 1325.8, "end": 1327.08, "text": "就是我这样看", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000473", "start": 1327.08, "end": 1328.6, "text": "那个宏观上来讲", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000474", "start": 1328.6, "end": 1330.96, "text": "当然有一个很大的变数是一郎", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000475", "start": 1330.96, "end": 1334.64, "text": "就是你到底原油会到什么位置", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000476", "start": 1334.64, "end": 1336.48, "text": "但是我回过来说的", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000477", "start": 1336.48, "end": 1337.48, "text": "刚刚你原油的事情", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000478", "start": 1337.48, "end": 1342.88, "text": "原油里面最危险的其实是这个crack", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000479", "start": 1342.88, "end": 1343.44, "text": "你叫什么", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000480", "start": 1343.44, "end": 1344.6, "text": "裂解差", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000481", "start": 1344.6, "end": 1347.24, "text": "就是你的原油和成品油的价格", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000482", "start": 1347.3, "end": 1349.38, "text": "成品油而不是原油", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000483", "start": 1349.38, "end": 1354.66, "text": "才是真正影响你的通胀和各方面", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000484", "start": 1354.66, "end": 1356.14, "text": "老百姓的体感", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000485", "start": 1356.14, "end": 1357.94, "text": "也就是说你原油正在网上涨", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000486", "start": 1357.94, "end": 1359.3, "text": "10块钱20块钱", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000487", "start": 1359.3, "end": 1361.42, "text": "然后成品油降下去344", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000488", "start": 1361.42, "end": 1367.86, "text": "这个对于人的体感其实是变得更好的", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000489", "start": 1367.86, "end": 1368.94, "text": "这么一个事情", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000490", "start": 1368.94, "end": 1374.18, "text": "所以宏观上我觉得本身不是需要特别担心", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000491", "start": 1374.18, "end": 1375.98, "text": "但是宏观要小心一个", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000492", "start": 1375.98, "end": 1377.78, "text": "哎呦 为什么这里下了", "chapter": "chapter-06", "source": "faster-whisper-small"}
+{"id": "seg-000493", "start": 1377.78, "end": 1381.0, "text": "宏观在短期里面是有点缝陷", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000494", "start": 1381.0, "end": 1381.72, "text": "就是短期", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000495", "start": 1381.72, "end": 1386.16, "text": "我刚刚我其实中午的时候在说的这个事情", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000496", "start": 1386.16, "end": 1391.72, "text": "就是因为上个星期的利率升了", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000497", "start": 1391.72, "end": 1392.76, "text": "时代太快了", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000498", "start": 1392.76, "end": 1394.56, "text": "上个星期利率升得快呢", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000499", "start": 1394.56, "end": 1397.72, "text": "其实主要的问题是", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000500", "start": 1397.72, "end": 1399.52, "text": "这个不是利率", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000501", "start": 1399.52, "end": 1400.84, "text": "没关系", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000502", "start": 1400.84, "end": 1402.72, "text": "那个上星期利率升的时代太快", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000503", "start": 1402.72, "end": 1408.74, "text": "主要的问题其实是那个10年期有个拍卖", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000504", "start": 1408.74, "end": 1410.38, "text": "这个拍卖效果不是很好", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000505", "start": 1410.38, "end": 1412.66, "text": "所以拍卖出了问题以后", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000506", "start": 1412.66, "end": 1414.78, "text": "导致上个星期的利率在飙升", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000507", "start": 1414.78, "end": 1415.94, "text": "飙升升了", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000508", "start": 1415.94, "end": 1421.02, "text": "也就是现在Pension在大家开始定价higher for longer", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000509", "start": 1421.02, "end": 1422.78, "text": "每年出higher for longer", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000510", "start": 1422.78, "end": 1424.5, "text": "在定价higher for longer的时候", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000511", "start": 1424.5, "end": 1426.22, "text": "石油价钱一直杀不住", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000512", "start": 1426.22, "end": 1427.86, "text": "或者是diesel价钱一直杀不住", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000513", "start": 1427.86, "end": 1429.98, "text": "你那个柴油价一直杀不住", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000514", "start": 1429.98, "end": 1431.46, "text": "所以在这个时点上", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000515", "start": 1431.46, "end": 1433.76, "text": "我们都知道10年期利率", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000516", "start": 1433.76, "end": 1435.52, "text": "过短期里面超涨", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000517", "start": 1435.52, "end": 1438.2, "text": "或者是对于Pension来说", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000518", "start": 1438.2, "end": 1439.68, "text": "确实都是有价值的", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000519", "start": 1439.68, "end": 1442.36, "text": "但是我要不要在现在这个时点杀进去买", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000520", "start": 1442.36, "end": 1445.24, "text": "所以市场是一个确实买房的状态", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000521", "start": 1445.24, "end": 1447.92, "text": "然后9月份的时候供应又特别大", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000522", "start": 1447.92, "end": 1450.68, "text": "就9月份的供应不光是在国债", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000523", "start": 1450.68, "end": 1451.8, "text": "在那个credit", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000524", "start": 1451.8, "end": 1454.24, "text": "在这个信贷债都很大的", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000525", "start": 1454.24, "end": 1456.32, "text": "所以你供应很大的时候", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000526", "start": 1456.32, "end": 1458.44, "text": "然后市场有很多负面消息", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000527", "start": 1458.44, "end": 1459.52, "text": "没有催化纪", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000528", "start": 1459.52, "end": 1460.72, "text": "我虽然知道你这公司", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000529", "start": 1460.72, "end": 1462.7, "text": "我现在知道你这公司估值很好", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000530", "start": 1462.7, "end": 1463.14, "text": "对吧", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000531", "start": 1463.14, "end": 1464.06, "text": "但是有人砸牌", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000532", "start": 1464.06, "end": 1464.9, "text": "那我肯定不动", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000533", "start": 1464.9, "end": 1466.86, "text": "我等你砸完了", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000534", "start": 1466.86, "end": 1469.54, "text": "或者是等一个更好的时点再去入场", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000535", "start": 1469.54, "end": 1473.26, "text": "所以在长端里面买盘比较少", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000536", "start": 1473.26, "end": 1474.78, "text": "看到长端买盘比较少", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000537", "start": 1474.78, "end": 1475.98, "text": "供应比较多", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000538", "start": 1475.98, "end": 1480.22, "text": "那么这个结果就导致了上两个星期", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000539", "start": 1480.22, "end": 1481.78, "text": "上一个星期两个星期", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000540", "start": 1481.78, "end": 1484.14, "text": "那个10年期的vol很大", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000541", "start": 1484.14, "end": 1486.9, "text": "我之前一直讲的就是10年期的", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000542", "start": 1486.9, "end": 1488.3, "text": "就利率的vol", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000543", "start": 1488.3, "end": 1492.12, "text": "而不是利率本身会导致市场的波动", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000544", "start": 1492.12, "end": 1495.68, "text": "那么这个是一个比较负面的宏观指标", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000545", "start": 1495.68, "end": 1496.76, "text": "第二个", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000546", "start": 1496.76, "end": 1498.72, "text": "那个流动性", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000547", "start": 1498.72, "end": 1500.12, "text": "因为利率", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000548", "start": 1500.12, "end": 1501.84, "text": "当然流动性的指标", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000549", "start": 1501.84, "end": 1502.8, "text": "包括的利率", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000550", "start": 1502.8, "end": 1503.84, "text": "包括credit spread", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000551", "start": 1503.84, "end": 1506.08, "text": "包括equity股票vol的", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000552", "start": 1506.08, "end": 1507.8, "text": "包括这是一个综合的", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000553", "start": 1507.8, "end": 1509.2, "text": "你可以看JCI的话", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000554", "start": 1509.2, "end": 1513.88, "text": "JCI就是表示他的流动性才是变差", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000555", "start": 1513.88, "end": 1516.44, "text": "这个如果你放开6个月来看", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000556", "start": 1517.42, "end": 1519.14, "text": "6个月就是相当于", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000557", "start": 1519.14, "end": 1520.9, "text": "最差可能是今年3月份", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000558", "start": 1520.9, "end": 1522.7, "text": "今年3月份的时候有一次标策", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000559", "start": 1522.7, "end": 1525.74, "text": "但是这个至少是过去几个月里面", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000560", "start": 1525.74, "end": 1527.34, "text": "比较差的一个点", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000561", "start": 1527.34, "end": 1529.66, "text": "跟7月份的时候差不多", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000562", "start": 1529.66, "end": 1533.02, "text": "所以流动性比较差", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000563", "start": 1533.02, "end": 1535.34, "text": "然后", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000564", "start": 1535.34, "end": 1536.26, "text": "流动性比较差", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000565", "start": 1536.26, "end": 1537.66, "text": "interest rate vol在上升", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000566", "start": 1537.66, "end": 1540.42, "text": "然后credit spread在上升", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000567", "start": 1540.42, "end": 1545.38, "text": "就是ig的credit spread和high yield credit spread", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000568", "start": 1545.38, "end": 1546.18, "text": "同时在上升", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000569", "start": 1546.18, "end": 1547.72, "text": "还有升了更多", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000570", "start": 1547.72, "end": 1549.56, "text": "但是high yield上升为什么", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000571", "start": 1549.56, "end": 1552.16, "text": "其实中间有很大的原因", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000572", "start": 1552.16, "end": 1554.16, "text": "是9月份的供应很大", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000573", "start": 1554.16, "end": 1556.8, "text": "就是它并不是一定是市场的恐慌", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000574", "start": 1556.8, "end": 1557.92, "text": "就是债这个东西", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000575", "start": 1557.92, "end": 1559.2, "text": "包括国债这个东西", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000576", "start": 1559.2, "end": 1561.64, "text": "你其实最后是供需", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000577", "start": 1561.64, "end": 1565.68, "text": "也就是需求方愿不愿意在你放出供应的时候", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000578", "start": 1565.68, "end": 1567.6, "text": "那个时点去买", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000579", "start": 1567.6, "end": 1568.76, "text": "一般都不太愿意的", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000580", "start": 1568.76, "end": 1570.84, "text": "所以它是会有这个波动", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000581", "start": 1570.84, "end": 1571.88, "text": "那么9月份的时候", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000582", "start": 1571.88, "end": 1575.0, "text": "确实还有的这个需求出来比较多", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000583", "start": 1575.0, "end": 1578.06, "text": "然后其实大家上", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000584", "start": 1578.06, "end": 1580.5, "text": "Orlox那个事情", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000585", "start": 1580.5, "end": 1582.82, "text": "就是Orlox那个那个项目被delay", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000586", "start": 1582.82, "end": 1585.14, "text": "所以那个里面的债又是Orlox的", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000587", "start": 1585.14, "end": 1588.34, "text": "所以本身这个然后会有一些疏忽", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000588", "start": 1588.34, "end": 1592.98, "text": "所以这个里面本身会对整体债的供需有一些影响", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000589", "start": 1592.98, "end": 1595.42, "text": "但是10月份的供应没有很多", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000590", "start": 1595.42, "end": 1597.78, "text": "所以你回头往前看的话", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000591", "start": 1597.78, "end": 1599.38, "text": "就是你在短期里面", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000592", "start": 1599.38, "end": 1601.94, "text": "你会看到这些风险指标在累积", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000593", "start": 1602.0, "end": 1604.0, "text": "而且累积的同时", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000594", "start": 1604.0, "end": 1609.48, "text": "在星期三", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000595", "start": 1609.48, "end": 1611.76, "text": "星期三之前就是两天", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000596", "start": 1611.76, "end": 1614.4, "text": "month-end rebalance要卖出320亿", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000597", "start": 1614.4, "end": 1616.28, "text": "这规模不小的", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000598", "start": 1616.28, "end": 1617.28, "text": "就是在美国", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000599", "start": 1617.28, "end": 1620.72, "text": "就是对冲基金的这个持倉", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000600", "start": 1620.72, "end": 1622.88, "text": "就调整320亿", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000601", "start": 1622.88, "end": 1625.68, "text": "这320亿是结合这些量化指标", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000602", "start": 1625.68, "end": 1627.64, "text": "都不太好的情况下给你卖出来的", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000603", "start": 1627.64, "end": 1631.32, "text": "所以我周五在讲的就是这个问题", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000604", "start": 1631.32, "end": 1634.38, "text": "你市场在短期的调整不可避免必然", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000605", "start": 1634.38, "end": 1638.78, "text": "但是你虽然有短期的调整", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000606", "start": 1638.78, "end": 1642.62, "text": "但你整体你包括看市场的估值", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000607", "start": 1642.62, "end": 1643.74, "text": "或者你看价值", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000608", "start": 1643.74, "end": 1645.06, "text": "从价值角度来讲", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000609", "start": 1645.06, "end": 1646.42, "text": "觉得问题不是很大", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000610", "start": 1646.42, "end": 1647.94, "text": "再加上有很多模型的问题", "chapter": "chapter-07", "source": "faster-whisper-small"}
+{"id": "seg-000611", "start": 1647.94, "end": 1649.14, "text": "就是模型的事情", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000612", "start": 1649.14, "end": 1653.5, "text": "你从现在大家模型的渗透率", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000613", "start": 1653.5, "end": 1654.42, "text": "就Muse出来", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000614", "start": 1654.42, "end": 1656.74, "text": "我觉得有一个比较重要的", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000615", "start": 1656.74, "end": 1659.14, "text": "比较乐观的点", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000616", "start": 1659.14, "end": 1660.7, "text": "我不是对Muse这东西引力", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000617", "start": 1660.7, "end": 1663.4, "text": "或者是Muse到底抢到什么地步", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000618", "start": 1663.4, "end": 1665.68, "text": "它看上去像一个大型的豆包", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000619", "start": 1665.68, "end": 1667.16, "text": "但是这个大型的豆包", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000620", "start": 1667.16, "end": 1669.2, "text": "会让整体的AI的渗透率", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000621", "start": 1669.2, "end": 1670.0, "text": "会变了变", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000622", "start": 1670.0, "end": 1670.92, "text": "就会增强", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000623", "start": 1670.92, "end": 1673.64, "text": "所以你要从整个产业来看", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000624", "start": 1673.64, "end": 1675.24, "text": "我们现在看到的", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000625", "start": 1675.24, "end": 1678.8, "text": "它的供应的瓶颈并没有未改善", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000626", "start": 1678.8, "end": 1682.08, "text": "就整体供应瓶颈其实没有改善", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000627", "start": 1682.08, "end": 1684.04, "text": "然后估值体系上来说", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000628", "start": 1684.04, "end": 1685.84, "text": "相对来说还是比较低的", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000629", "start": 1685.84, "end": 1688.88, "text": "然后第三个就是", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000630", "start": 1688.88, "end": 1690.86, "text": "对冲基金的整体仓位", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000631", "start": 1690.86, "end": 1692.26, "text": "我就net position", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000632", "start": 1692.26, "end": 1693.58, "text": "核流", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000633", "start": 1693.58, "end": 1694.9, "text": "就那我看一下", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000634", "start": 1694.9, "end": 1696.22, "text": "Planbug", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000635", "start": 1696.22, "end": 1700.18, "text": "这个你可以看对冲基金的整体", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000636", "start": 1700.18, "end": 1702.78, "text": "这个gross leverage", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000637", "start": 1702.78, "end": 1704.38, "text": "其实你可以把它看成", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000638", "start": 1704.38, "end": 1705.86, "text": "相当于Momentum 仓位", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000639", "start": 1705.86, "end": 1706.66, "text": "要动量仓位", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000640", "start": 1706.66, "end": 1707.54, "text": "都是在这个地方", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000641", "start": 1707.54, "end": 1708.7, "text": "然后多头仓位", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000642", "start": 1708.7, "end": 1710.34, "text": "就看net leverage", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000643", "start": 1710.34, "end": 1712.06, "text": "就净仓位", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000644", "start": 1712.06, "end": 1715.7, "text": "其实这两个仓位的指标看上去", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000645", "start": 1715.7, "end": 1716.54, "text": "包括郎小瑞", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000646", "start": 1716.54, "end": 1717.74, "text": "看上去都不是特别", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000647", "start": 1717.74, "end": 1719.12, "text": "就没有特别大的问题", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000648", "start": 1719.12, "end": 1721.24, "text": "也就是对冲基金仓位没有很重", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000649", "start": 1721.24, "end": 1723.08, "text": "也就是现在市场上", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000650", "start": 1723.08, "end": 1724.52, "text": "虽然在短期里面有很多", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000651", "start": 1724.52, "end": 1725.6, "text": "量化指标的问题", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000652", "start": 1725.6, "end": 1727.04, "text": "然后也有人砸盘", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000653", "start": 1727.04, "end": 1729.08, "text": "就是那个pension fund要砸盘", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000654", "start": 1729.08, "end": 1730.48, "text": "然后我们别预期", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000655", "start": 1730.48, "end": 1731.8, "text": "他有可能会要点", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000656", "start": 1731.8, "end": 1733.8, "text": "但是整体仓位不是很高", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000657", "start": 1733.8, "end": 1735.72, "text": "整体仓位不是很高", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000658", "start": 1735.72, "end": 1738.64, "text": "估值也不是很高", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000659", "start": 1738.64, "end": 1740.52, "text": "宏观上来说", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000660", "start": 1740.52, "end": 1743.64, "text": "通胀的问题也是比较短期的", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000661", "start": 1743.64, "end": 1745.92, "text": "我觉得就是你要看半年以后", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000662", "start": 1745.92, "end": 1747.4, "text": "很多的问题都没有", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000663", "start": 1747.42, "end": 1749.38, "text": "主要的问题关税关税没有", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000664", "start": 1749.38, "end": 1752.66, "text": "所以但是大家把整个", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000665", "start": 1752.66, "end": 1754.98, "text": "整个升息的预期调了很高", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000666", "start": 1754.98, "end": 1757.26, "text": "就是你看过去", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000667", "start": 1757.26, "end": 1758.62, "text": "三个月前和三个月之后", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000668", "start": 1758.62, "end": 1759.98, "text": "升息预期调了很高", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000669", "start": 1759.98, "end": 1761.26, "text": "所以我觉得", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000670", "start": 1761.26, "end": 1763.02, "text": "在往下施加压力板", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000671", "start": 1763.02, "end": 1765.66, "text": "但是下面有一个有一个floor", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000672", "start": 1765.66, "end": 1766.74, "text": "相当于下面有一个", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000673", "start": 1766.74, "end": 1767.94, "text": "下面有个地板", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000674", "start": 1767.94, "end": 1770.06, "text": "再往这个地板施加压力", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000675", "start": 1770.06, "end": 1771.7, "text": "可以继续往下砸一砸", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000676", "start": 1771.7, "end": 1773.54, "text": "就短期里面可以继续往下砸一砸", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000677", "start": 1773.54, "end": 1777.02, "text": "但是整体市场", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000678", "start": 1777.04, "end": 1777.8, "text": "就中长期", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000679", "start": 1777.8, "end": 1779.32, "text": "就甚至中期", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000680", "start": 1779.32, "end": 1781.44, "text": "我觉得都还是偏乐观", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000681", "start": 1781.44, "end": 1782.04, "text": "好吧", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000682", "start": 1782.04, "end": 1785.16, "text": "我简单这样跟大家沟通一下", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000683", "start": 1785.16, "end": 1788.64, "text": "然后这周可能市场波动会比较大", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000684", "start": 1788.64, "end": 1790.6, "text": "在周四之前会波动比较大", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000685", "start": 1790.6, "end": 1792.64, "text": "然后我们下周再聊吧", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000686", "start": 1792.64, "end": 1793.88, "text": "然后看看有什么问题吧", "chapter": "chapter-08", "source": "faster-whisper-small"}
+{"id": "seg-000687", "start": 1793.88, "end": 1794.96, "text": "我等会把那个关一下", "chapter": "chapter-08", "source": "faster-whisper-small"}

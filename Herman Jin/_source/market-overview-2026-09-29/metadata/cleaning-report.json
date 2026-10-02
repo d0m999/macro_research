@@ -1,0 +1,1673 @@
+{
+  "cleaned_on": "2026-10-02",
+  "raw_segments": 687,
+  "output_segments": 687,
+  "changed_segments": 101,
+  "changes": [
+    {
+      "segment_id": "seg-000016",
+      "start": 53.660000000000004,
+      "end": 59.46,
+      "before": "我大为讲一下为什么 鸿宽上面通胀的问题",
+      "after": "我大为讲一下为什么 宏观上面通胀的问题",
+      "replacements": [
+        {
+          "from": "鸿宽",
+          "to": "宏观"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000018",
+      "start": 63.56,
+      "end": 66.46000000000001,
+      "before": "它是看dezo 看refinery 就是什么",
+      "after": "它是看diesel 看refinery 就是什么",
+      "replacements": [
+        {
+          "from": "dezo",
+          "to": "diesel"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000019",
+      "start": 66.46000000000001,
+      "end": 71.26,
+      "before": "dezo就是采有这些价钱 看那个烈解茶的价钱",
+      "after": "diesel就是柴油这些价钱 看那个裂解差的价钱",
+      "replacements": [
+        {
+          "from": "烈解茶",
+          "to": "裂解差"
+        },
+        {
+          "from": "dezo",
+          "to": "diesel"
+        },
+        {
+          "from": "采有",
+          "to": "柴油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000047",
+      "start": 185.66,
+      "end": 190.56,
+      "before": "就是这个是包括狗们 包括不少华尔街的人的一个",
+      "after": "就是这个是包括Goldman Sachs 包括不少华尔街的人的一个",
+      "replacements": [
+        {
+          "from": "狗们",
+          "to": "Goldman Sachs"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000072",
+      "start": 270.06,
+      "end": 272.86,
+      "before": "其实相反是陈平友",
+      "after": "其实相反是成品油",
+      "replacements": [
+        {
+          "from": "陈平友",
+          "to": "成品油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000073",
+      "start": 272.86,
+      "end": 274.66,
+      "before": "就美国也提到了陈平友的问题",
+      "after": "就美国也提到了成品油的问题",
+      "replacements": [
+        {
+          "from": "陈平友",
+          "to": "成品油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000089",
+      "start": 314.86,
+      "end": 318.46,
+      "before": "中国的地链山东的很多地链其实都在亏钱",
+      "after": "中国的地炼山东的很多地炼其实都在亏钱",
+      "replacements": [
+        {
+          "from": "地链",
+          "to": "地炼"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000090",
+      "start": 318.46,
+      "end": 320.66,
+      "before": "就是那个链油厂都在亏钱",
+      "after": "就是那个炼油厂都在亏钱",
+      "replacements": [
+        {
+          "from": "链油厂",
+          "to": "炼油厂"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000091",
+      "start": 320.66,
+      "end": 323.06,
+      "before": "全球的列解差现在已经到100了",
+      "after": "全球的裂解差现在已经到100了",
+      "replacements": [
+        {
+          "from": "列解差",
+          "to": "裂解差"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000097",
+      "start": 336.16,
+      "end": 339.16,
+      "before": "但是中国的链油厂其实还在亏钱",
+      "after": "但是中国的炼油厂其实还在亏钱",
+      "replacements": [
+        {
+          "from": "链油厂",
+          "to": "炼油厂"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000109",
+      "start": 368.96,
+      "end": 373.86,
+      "before": "那么这些中国是他这个都是会导致通脏的",
+      "after": "那么这些中国是他这个都是会导致通胀的",
+      "replacements": [
+        {
+          "from": "通脏",
+          "to": "通胀"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000111",
+      "start": 376.06,
+      "end": 380.26,
+      "before": "就是缓和通脏的一个重要的力量",
+      "after": "就是缓和通胀的一个重要的力量",
+      "replacements": [
+        {
+          "from": "通脏",
+          "to": "通胀"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000118",
+      "start": 395.36,
+      "end": 396.46,
+      "before": "原来是囤友",
+      "after": "原来是囤油",
+      "replacements": [
+        {
+          "from": "囤友",
+          "to": "囤油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000125",
+      "start": 411.65999999999997,
+      "end": 414.56,
+      "before": "这才是真正的我们叫做市场的tale risk",
+      "after": "这才是真正的我们叫做市场的tail risk",
+      "replacements": [
+        {
+          "from": "tale risk",
+          "to": "tail risk"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000126",
+      "start": 414.56,
+      "end": 415.56,
+      "before": "微步风险",
+      "after": "尾部风险",
+      "replacements": [
+        {
+          "from": "微步风险",
+          "to": "尾部风险"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000127",
+      "start": 415.56,
+      "end": 422.56,
+      "before": "伊朗这种很难称为伪步风险",
+      "after": "伊朗这种很难称为尾部风险",
+      "replacements": [
+        {
+          "from": "伪步风险",
+          "to": "尾部风险"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000144",
+      "start": 464.56,
+      "end": 467.06,
+      "before": "其实原有cruel oil本身",
+      "after": "其实原油crude oil本身",
+      "replacements": [
+        {
+          "from": "cruel oil",
+          "to": "crude oil"
+        },
+        {
+          "from": "原有",
+          "to": "原油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000147",
+      "start": 471.26,
+      "end": 474.15999999999997,
+      "before": "cruel oil本身不是一个最大的问题",
+      "after": "crude oil本身不是一个最大的问题",
+      "replacements": [
+        {
+          "from": "cruel oil",
+          "to": "crude oil"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000151",
+      "start": 483.46,
+      "end": 485.76,
+      "before": "导致了很多链油厂本身在中东",
+      "after": "导致了很多炼油厂本身在中东",
+      "replacements": [
+        {
+          "from": "链油厂",
+          "to": "炼油厂"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000152",
+      "start": 485.76,
+      "end": 489.06,
+      "before": "这些链油厂或者全球供应链的供应链的纹乱",
+      "after": "这些炼油厂或者全球供应链的供应链的纹乱",
+      "replacements": [
+        {
+          "from": "链油厂",
+          "to": "炼油厂"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000156",
+      "start": 497.76,
+      "end": 500.15999999999997,
+      "before": "列解插上是特别明显",
+      "after": "裂解差上是特别明显",
+      "replacements": [
+        {
+          "from": "列解插",
+          "to": "裂解差"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000157",
+      "start": 500.16,
+      "end": 503.36,
+      "before": "就现在的列解插在一段时间",
+      "after": "就现在的裂解差在一段时间",
+      "replacements": [
+        {
+          "from": "列解插",
+          "to": "裂解差"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000161",
+      "start": 508.66,
+      "end": 510.46000000000004,
+      "before": "那基本上列解插到一半",
+      "after": "那基本上裂解差到一半",
+      "replacements": [
+        {
+          "from": "列解插",
+          "to": "裂解差"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000167",
+      "start": 524.6600000000001,
+      "end": 528.36,
+      "before": "其实是需要成品有的角度更加影响",
+      "after": "其实是需要成品油的角度更加影响",
+      "replacements": [
+        {
+          "from": "成品有",
+          "to": "成品油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000169",
+      "start": 534.0600000000001,
+      "end": 535.76,
+      "before": "成品有的价格里面",
+      "after": "成品油的价格里面",
+      "replacements": [
+        {
+          "from": "成品有",
+          "to": "成品油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000170",
+      "start": 535.76,
+      "end": 537.76,
+      "before": "因为成品有的价格更加影响的话",
+      "after": "因为成品油的价格更加影响的话",
+      "replacements": [
+        {
+          "from": "成品有",
+          "to": "成品油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000171",
+      "start": 537.76,
+      "end": 540.5600000000001,
+      "before": "那中国而且把成品有的那个订单",
+      "after": "那中国而且把成品油的那个订单",
+      "replacements": [
+        {
+          "from": "成品有",
+          "to": "成品油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000203",
+      "start": 617.76,
+      "end": 620.36,
+      "before": "你现在一直维持一个低裂度的",
+      "after": "你现在一直维持一个低烈度的",
+      "replacements": [
+        {
+          "from": "低裂度",
+          "to": "低烈度"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000204",
+      "start": 620.36,
+      "end": 623.5600000000001,
+      "before": "就是伊朗能不能维持一个低裂度的战争",
+      "after": "就是伊朗能不能维持一个低烈度的战争",
+      "replacements": [
+        {
+          "from": "低裂度",
+          "to": "低烈度"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000207",
+      "start": 637.76,
+      "end": 640.76,
+      "before": "其实美国是可以维持在伊朗一个低裂度战争",
+      "after": "其实美国是可以维持在伊朗一个低烈度战争",
+      "replacements": [
+        {
+          "from": "低裂度",
+          "to": "低烈度"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000208",
+      "start": 640.76,
+      "end": 643.06,
+      "before": "其实你说护士木斯海峡封锁",
+      "after": "其实你说霍尔木兹海峡封锁",
+      "replacements": [
+        {
+          "from": "护士木斯",
+          "to": "霍尔木兹"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000239",
+      "start": 732.12,
+      "end": 735.46,
+      "before": "所以发达为如果比较多的放出调子",
+      "after": "所以发改委如果比较多的放出调子",
+      "replacements": [
+        {
+          "from": "发达为",
+          "to": "发改委"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000243",
+      "start": 744.42,
+      "end": 751.08,
+      "before": "包括是对于迪索的这个spread影响都会非常正面",
+      "after": "包括是对于diesel的这个spread影响都会非常正面",
+      "replacements": [
+        {
+          "from": "迪索",
+          "to": "diesel"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000245",
+      "start": 753.58,
+      "end": 757.68,
+      "before": "高盛的预期是觉得如果发该我进一步把它打开",
+      "after": "高盛的预期是觉得如果发改委进一步把它打开",
+      "replacements": [
+        {
+          "from": "发该我",
+          "to": "发改委"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000246",
+      "start": 757.68,
+      "end": 760.24,
+      "before": "这个列解差可以降到40",
+      "after": "这个裂解差可以降到40",
+      "replacements": [
+        {
+          "from": "列解差",
+          "to": "裂解差"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000252",
+      "start": 776.24,
+      "end": 781.52,
+      "before": "欧洲的底走价钱可以往上跑50%以上",
+      "after": "欧洲的diesel价钱可以往上跑50%以上",
+      "replacements": [
+        {
+          "from": "底走",
+          "to": "diesel"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000259",
+      "start": 797.38,
+      "end": 801.74,
+      "before": "然后这是国门的看法",
+      "after": "然后这是Goldman Sachs的看法",
+      "replacements": [
+        {
+          "from": "国门",
+          "to": "Goldman Sachs"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000260",
+      "start": 801.74,
+      "end": 805.5799999999999,
+      "before": "就是大概国门的看法就是我刚刚讲的就是tell risk",
+      "after": "就是大概Goldman Sachs的看法就是我刚刚讲的就是tail risk",
+      "replacements": [
+        {
+          "from": "tell risk",
+          "to": "tail risk"
+        },
+        {
+          "from": "国门",
+          "to": "Goldman Sachs"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000269",
+      "start": 833.9200000000001,
+      "end": 835.5600000000001,
+      "before": "美国通胀是transit rate",
+      "after": "美国通胀是transitory",
+      "replacements": [
+        {
+          "from": "transit rate",
+          "to": "transitory"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000285",
+      "start": 866.2800000000001,
+      "end": 868.8800000000001,
+      "before": "就是Menthaw months比较多的是在1月份",
+      "after": "就是month-on-month比较多的是在1月份",
+      "replacements": [
+        {
+          "from": "Menthaw months",
+          "to": "month-on-month"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000289",
+      "start": 876.12,
+      "end": 881.32,
+      "before": "核心PC也还有0.8左右是受到关税影响",
+      "after": "核心PCE也还有0.8左右是受到关税影响",
+      "replacements": [
+        {
+          "from": "核心PC",
+          "to": "核心PCE"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000291",
+      "start": 884.0400000000001,
+      "end": 887.84,
+      "before": "那么但是他们每个Menthaw months的影响",
+      "after": "那么但是他们每个month-on-month的影响",
+      "replacements": [
+        {
+          "from": "Menthaw months",
+          "to": "month-on-month"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000294",
+      "start": 890.6800000000001,
+      "end": 893.8000000000001,
+      "before": "然后Menthaw months的影响其实在下降",
+      "after": "然后month-on-month的影响其实在下降",
+      "replacements": [
+        {
+          "from": "Menthaw months",
+          "to": "month-on-month"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000302",
+      "start": 906.1,
+      "end": 911.98,
+      "before": "这一部分的对核心PC的影响就会下降",
+      "after": "这一部分的对核心PCE的影响就会下降",
+      "replacements": [
+        {
+          "from": "核心PC",
+          "to": "核心PCE"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000304",
+      "start": 913.94,
+      "end": 920.1400000000001,
+      "before": "就是AR data center导致软件硬件上升",
+      "after": "就是AI data center导致软件硬件上升",
+      "replacements": [
+        {
+          "from": "AR data center",
+          "to": "AI data center"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000307",
+      "start": 926.28,
+      "end": 930.4399999999999,
+      "before": "Gamma Wash可能会调一下PC的组成",
+      "after": "Gamma Wash可能会调一下PCE的组成",
+      "replacements": [
+        {
+          "from": "PC的组成",
+          "to": "PCE的组成"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000327",
+      "start": 984.36,
+      "end": 987.64,
+      "before": "就是那个我shout",
+      "after": "就是那个我shelter",
+      "replacements": [
+        {
+          "from": "shout",
+          "to": "shelter"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000328",
+      "start": 987.64,
+      "end": 990.92,
+      "before": "shout这个东西是有lagging的",
+      "after": "shelter这个东西是有lagging的",
+      "replacements": [
+        {
+          "from": "shout",
+          "to": "shelter"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000329",
+      "start": 990.92,
+      "end": 993.2,
+      "before": "所以shout其实一直在往下跑",
+      "after": "所以shelter其实一直在往下跑",
+      "replacements": [
+        {
+          "from": "shout",
+          "to": "shelter"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000333",
+      "start": 1000.52,
+      "end": 1002.9200000000001,
+      "before": "Monsign once能放payroll",
+      "after": "month-on-monthnonfarm payroll",
+      "replacements": [
+        {
+          "from": "Monsign once",
+          "to": "month-on-month"
+        },
+        {
+          "from": "能放payroll",
+          "to": "nonfarm payroll"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000366",
+      "start": 1071.1399999999999,
+      "end": 1074.22,
+      "before": "就除非伊朗低劣度一直打打打很久的",
+      "after": "就除非伊朗低烈度一直打打打很久的",
+      "replacements": [
+        {
+          "from": "低劣度",
+          "to": "低烈度"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000376",
+      "start": 1096.72,
+      "end": 1099.3999999999999,
+      "before": "所以你可以认为说廉储会加息",
+      "after": "所以你可以认为说联储会加息",
+      "replacements": [
+        {
+          "from": "廉储",
+          "to": "联储"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000377",
+      "start": 1099.3999999999999,
+      "end": 1101.92,
+      "before": "廉储加息有一个很重要的原因",
+      "after": "联储加息有一个很重要的原因",
+      "replacements": [
+        {
+          "from": "廉储",
+          "to": "联储"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000389",
+      "start": 1132.22,
+      "end": 1134.02,
+      "before": "它抵走价钱的影响",
+      "after": "它diesel价钱的影响",
+      "replacements": [
+        {
+          "from": "抵走",
+          "to": "diesel"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000395",
+      "start": 1144.54,
+      "end": 1146.78,
+      "before": "你原来的俄罗斯的链油厂也没了",
+      "after": "你原来的俄罗斯的炼油厂也没了",
+      "replacements": [
+        {
+          "from": "链油厂",
+          "to": "炼油厂"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000402",
+      "start": 1163.3999999999999,
+      "end": 1166.76,
+      "before": "这过去三个月和现在比较虚现都是",
+      "after": "这过去三个月和现在比较虚线都是",
+      "replacements": [
+        {
+          "from": "虚现",
+          "to": "虚线"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000403",
+      "start": 1166.76,
+      "end": 1170.12,
+      "before": "这里虚现都是三个月前加息的预期",
+      "after": "这里虚线都是三个月前加息的预期",
+      "replacements": [
+        {
+          "from": "虚现",
+          "to": "虚线"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000408",
+      "start": 1177.42,
+      "end": 1178.66,
+      "before": "包括BaoJ",
+      "after": "包括BOJ",
+      "replacements": [
+        {
+          "from": "BaoJ",
+          "to": "BOJ"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000419",
+      "start": 1200.74,
+      "end": 1202.26,
+      "before": "这PC都比较高",
+      "after": "这PCE都比较高",
+      "replacements": [
+        {
+          "from": "PC都",
+          "to": "PCE都"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000443",
+      "start": 1255.46,
+      "end": 1258.94,
+      "before": "其实你可以看Santra Bank持有债券",
+      "after": "其实你可以看central bank持有债券",
+      "replacements": [
+        {
+          "from": "Santra Bank",
+          "to": "central bank"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000445",
+      "start": 1261.48,
+      "end": 1265.2,
+      "before": "你BUE英国这种你把它放开少一点的话",
+      "after": "你BOE英国这种你把它放开少一点的话",
+      "replacements": [
+        {
+          "from": "BUE",
+          "to": "BOE"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000446",
+      "start": 1265.2,
+      "end": 1268.68,
+      "before": "如果是ECB和BUG",
+      "after": "如果是ECB和BOJ",
+      "replacements": [
+        {
+          "from": "BUG",
+          "to": "BOJ"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000463",
+      "start": 1299.9,
+      "end": 1305.0600000000002,
+      "before": "因为美国现在几地平增长6.5% 6-7%",
+      "after": "因为美国现在GDP增长6.5% 6-7%",
+      "replacements": [
+        {
+          "from": "几地平",
+          "to": "GDP"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000470",
+      "start": 1321.2,
+      "end": 1324.36,
+      "before": "所以从红瓜来上来讲",
+      "after": "所以从宏观来上来讲",
+      "replacements": [
+        {
+          "from": "红瓜",
+          "to": "宏观"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000473",
+      "start": 1327.08,
+      "end": 1328.6,
+      "before": "那个红瓜上来讲",
+      "after": "那个宏观上来讲",
+      "replacements": [
+        {
+          "from": "红瓜",
+          "to": "宏观"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000475",
+      "start": 1330.96,
+      "end": 1334.64,
+      "before": "就是你到底原有会到什么位置",
+      "after": "就是你到底原油会到什么位置",
+      "replacements": [
+        {
+          "from": "原有",
+          "to": "原油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000477",
+      "start": 1336.48,
+      "end": 1337.48,
+      "before": "刚刚你原有的事情",
+      "after": "刚刚你原油的事情",
+      "replacements": [
+        {
+          "from": "原有",
+          "to": "原油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000478",
+      "start": 1337.48,
+      "end": 1342.88,
+      "before": "原有里面最危险的其实是这个crack",
+      "after": "原油里面最危险的其实是这个crack",
+      "replacements": [
+        {
+          "from": "原有",
+          "to": "原油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000480",
+      "start": 1343.44,
+      "end": 1344.6,
+      "before": "列解差",
+      "after": "裂解差",
+      "replacements": [
+        {
+          "from": "列解差",
+          "to": "裂解差"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000481",
+      "start": 1344.6,
+      "end": 1347.24,
+      "before": "就是你的原有和陈平友的价格",
+      "after": "就是你的原油和成品油的价格",
+      "replacements": [
+        {
+          "from": "陈平友",
+          "to": "成品油"
+        },
+        {
+          "from": "原有",
+          "to": "原油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000482",
+      "start": 1347.3,
+      "end": 1349.38,
+      "before": "陈平友而不是原有",
+      "after": "成品油而不是原油",
+      "replacements": [
+        {
+          "from": "陈平友",
+          "to": "成品油"
+        },
+        {
+          "from": "原有",
+          "to": "原油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000485",
+      "start": 1356.14,
+      "end": 1357.94,
+      "before": "也就是说你原有正在网上涨",
+      "after": "也就是说你原油正在网上涨",
+      "replacements": [
+        {
+          "from": "原有",
+          "to": "原油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000487",
+      "start": 1359.3,
+      "end": 1361.42,
+      "before": "然后陈平友降下去344",
+      "after": "然后成品油降下去344",
+      "replacements": [
+        {
+          "from": "陈平友",
+          "to": "成品油"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000490",
+      "start": 1368.94,
+      "end": 1374.18,
+      "before": "所以红瓜上我觉得本身不是需要特别担心",
+      "after": "所以宏观上我觉得本身不是需要特别担心",
+      "replacements": [
+        {
+          "from": "红瓜",
+          "to": "宏观"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000491",
+      "start": 1374.18,
+      "end": 1375.98,
+      "before": "但是红瓜要小心一个",
+      "after": "但是宏观要小心一个",
+      "replacements": [
+        {
+          "from": "红瓜",
+          "to": "宏观"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000493",
+      "start": 1377.78,
+      "end": 1381.0,
+      "before": "红瓜在短期里面是有点缝陷",
+      "after": "宏观在短期里面是有点缝陷",
+      "replacements": [
+        {
+          "from": "红瓜",
+          "to": "宏观"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000508",
+      "start": 1415.94,
+      "end": 1421.02,
+      "before": "也就是现在Pension在大家开始定价HIFLonger",
+      "after": "也就是现在Pension在大家开始定价higher for longer",
+      "replacements": [
+        {
+          "from": "HIFLonger",
+          "to": "higher for longer"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000509",
+      "start": 1421.02,
+      "end": 1422.78,
+      "before": "每年出HIFLonger",
+      "after": "每年出higher for longer",
+      "replacements": [
+        {
+          "from": "HIFLonger",
+          "to": "higher for longer"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000510",
+      "start": 1422.78,
+      "end": 1424.5,
+      "before": "在定价HIFLonger的时候",
+      "after": "在定价higher for longer的时候",
+      "replacements": [
+        {
+          "from": "HIFLonger",
+          "to": "higher for longer"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000512",
+      "start": 1426.22,
+      "end": 1427.8600000000001,
+      "before": "或者是迪索价钱一直杀不住",
+      "after": "或者是diesel价钱一直杀不住",
+      "replacements": [
+        {
+          "from": "迪索",
+          "to": "diesel"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000523",
+      "start": 1450.68,
+      "end": 1451.8,
+      "before": "在那个quietage",
+      "after": "在那个credit",
+      "replacements": [
+        {
+          "from": "quietage",
+          "to": "credit"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000540",
+      "start": 1481.78,
+      "end": 1484.14,
+      "before": "那个10年期的vowel很大",
+      "after": "那个10年期的vol很大",
+      "replacements": [
+        {
+          "from": "vowel",
+          "to": "vol"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000542",
+      "start": 1486.9,
+      "end": 1488.3,
+      "before": "就利率的vowel",
+      "after": "就利率的vol",
+      "replacements": [
+        {
+          "from": "vowel",
+          "to": "vol"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000544",
+      "start": 1492.12,
+      "end": 1495.68,
+      "before": "那么这个是一个比较负面的红湾质量",
+      "after": "那么这个是一个比较负面的宏观指标",
+      "replacements": [
+        {
+          "from": "红湾质量",
+          "to": "宏观指标"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000550",
+      "start": 1502.8,
+      "end": 1503.84,
+      "before": "包括quietage spread",
+      "after": "包括credit spread",
+      "replacements": [
+        {
+          "from": "quietage",
+          "to": "credit"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000551",
+      "start": 1503.84,
+      "end": 1506.08,
+      "before": "包括equity股票vowel的",
+      "after": "包括equity股票vol的",
+      "replacements": [
+        {
+          "from": "vowel",
+          "to": "vol"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000565",
+      "start": 1536.26,
+      "end": 1537.66,
+      "before": "intrusive vowel在上升",
+      "after": "interest rate vol在上升",
+      "replacements": [
+        {
+          "from": "intrusive vowel",
+          "to": "interest rate vol"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000566",
+      "start": 1537.66,
+      "end": 1540.42,
+      "before": "然后quietage spread在上升",
+      "after": "然后credit spread在上升",
+      "replacements": [
+        {
+          "from": "quietage",
+          "to": "credit"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000567",
+      "start": 1540.42,
+      "end": 1545.38,
+      "before": "就是ig的quietage spread和hi-o quietage spread",
+      "after": "就是ig的credit spread和high yield credit spread",
+      "replacements": [
+        {
+          "from": "quietage",
+          "to": "credit"
+        },
+        {
+          "from": "hi-o",
+          "to": "high yield"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000570",
+      "start": 1547.72,
+      "end": 1549.5600000000002,
+      "before": "但是hi-o上升为什么",
+      "after": "但是high yield上升为什么",
+      "replacements": [
+        {
+          "from": "hi-o",
+          "to": "high yield"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000596",
+      "start": 1611.76,
+      "end": 1614.4,
+      "before": "Mentz and Rebalance要卖出320亿",
+      "after": "month-end rebalance要卖出320亿",
+      "replacements": [
+        {
+          "from": "Mentz and Rebalance",
+          "to": "month-end rebalance"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000631",
+      "start": 1690.8600000000001,
+      "end": 1692.2600000000002,
+      "before": "我就NAT Position",
+      "after": "我就net position",
+      "replacements": [
+        {
+          "from": "NAT Position",
+          "to": "net position"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000636",
+      "start": 1700.18,
+      "end": 1702.7800000000002,
+      "before": "这个Growse Leverage",
+      "after": "这个gross leverage",
+      "replacements": [
+        {
+          "from": "Growse Leverage",
+          "to": "gross leverage"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000639",
+      "start": 1705.8600000000001,
+      "end": 1706.66,
+      "before": "要动轮仓位",
+      "after": "要动量仓位",
+      "replacements": [
+        {
+          "from": "动轮仓位",
+          "to": "动量仓位"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000642",
+      "start": 1708.7,
+      "end": 1710.3400000000001,
+      "before": "就看NAT Leverage",
+      "after": "就看net leverage",
+      "replacements": [
+        {
+          "from": "NAT Leverage",
+          "to": "net leverage"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000643",
+      "start": 1710.3400000000001,
+      "end": 1712.0600000000002,
+      "before": "就进仓位",
+      "after": "就净仓位",
+      "replacements": [
+        {
+          "from": "进仓位",
+          "to": "净仓位"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000653",
+      "start": 1727.04,
+      "end": 1729.08,
+      "before": "就是那个Panchin Fountain要砸盘",
+      "after": "就是那个pension fund要砸盘",
+      "replacements": [
+        {
+          "from": "Panchin Fountain",
+          "to": "pension fund"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000665",
+      "start": 1752.66,
+      "end": 1754.98,
+      "before": "整个深吸的预期调了很高",
+      "after": "整个升息的预期调了很高",
+      "replacements": [
+        {
+          "from": "深吸的预期",
+          "to": "升息的预期"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000668",
+      "start": 1758.6200000000001,
+      "end": 1759.98,
+      "before": "深吸预期调了很高",
+      "after": "升息预期调了很高",
+      "replacements": [
+        {
+          "from": "深吸预期",
+          "to": "升息预期"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000671",
+      "start": 1763.02,
+      "end": 1765.66,
+      "before": "但是下面有一个有一个flow",
+      "after": "但是下面有一个有一个floor",
+      "replacements": [
+        {
+          "from": "flow",
+          "to": "floor"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    },
+    {
+      "segment_id": "seg-000678",
+      "start": 1777.04,
+      "end": 1777.8,
+      "before": "就中场期",
+      "after": "就中长期",
+      "replacements": [
+        {
+          "from": "中场期",
+          "to": "中长期"
+        }
+      ],
+      "basis": "context-supported ASR terminology cleanup; not manual audio adjudication"
+    }
+  ],
+  "timing_policy": "preserve every segment; round seconds to 3 decimals; no merge/drop/reorder",
+  "numbers_policy": "no numeric replacements; source values are automatic recognition, not verified facts",
+  "unresolved_segments": [
+    {
+      "segment_id": "seg-000013",
+      "text": "拜脑体对于现在整个市场的大规",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000039",
+      "text": "我这腾讯过也 我就说两国其实有很多的分歧",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000045",
+      "text": "吉拉林一个捧场APAC 大家会捧场",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000070",
+      "text": "包括Railers",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000094",
+      "text": "新加坡西海蛮的七八十",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000096",
+      "text": "东海那些可能90到100就非常高",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000138",
+      "text": "3个美元",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000201",
+      "text": "就是24年开始打的欧洲战争",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000217",
+      "text": "然后中国其实自己的存量大概在11亿吨",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000261",
+      "text": "就是欧洲会wrong drive",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000306",
+      "text": "再加上Wash可能会调一下",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000307",
+      "text": "Gamma Wash可能会调一下PCE的组成",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000319",
+      "text": "中国叫什么燃油增制罪",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000338",
+      "text": "没有越不太一样",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000340",
+      "text": "没打算的吧",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000341",
+      "text": "不会7000人",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000343",
+      "text": "就是人在事业建设工作",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000353",
+      "text": "可能减少25%的工作市场",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000368",
+      "text": "5亿个推动的力量",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000406",
+      "text": "这个不是Kamal Wash高",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000413",
+      "text": "我感觉是Kamal Wash放了很硬的吊子",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000422",
+      "text": "失业率一直是服务",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000454",
+      "text": "因为腾讯过一年",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000466",
+      "text": "但是他肯定不是一个会导致奥斯德利",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000487",
+      "text": "然后成品油降下去344",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000509",
+      "text": "每年出higher for longer",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000520",
+      "text": "所以市场是一个确实买房的状态",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000553",
+      "text": "你可以看JCI的话",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000554",
+      "text": "JCI就是表示他的流动性才是变差",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000582",
+      "text": "确实还有的这个需求出来比较多",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000584",
+      "text": "Orlox那个事情",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000585",
+      "text": "就是Orlox那个那个项目被delay",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000586",
+      "text": "所以那个里面的债又是Orlox的",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000599",
+      "text": "就是对冲基金的这个持倉",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000616",
+      "text": "我不是对Muse这东西引力",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000617",
+      "text": "或者是Muse到底抢到什么地步",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000625",
+      "text": "它的供应的瓶颈并没有未改善",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000632",
+      "text": "核流",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000634",
+      "text": "Planbug",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000645",
+      "text": "包括郎小瑞",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    },
+    {
+      "segment_id": "seg-000655",
+      "text": "他有可能会要点",
+      "reason": "ambiguous proper noun, phrase, number/unit, or internal inconsistency; retained"
+    }
+  ],
+  "manual_audio_review": false,
+  "asr_method": {
+    "model": "faster-whisper-small",
+    "compute_type": "int8",
+    "cpu_threads": 1,
+    "num_workers": 1,
+    "stage1_beam_size": 5,
+    "stage2_beam_size": 1,
+    "resume_at_seconds": 697.0600000000001
+  }
+}

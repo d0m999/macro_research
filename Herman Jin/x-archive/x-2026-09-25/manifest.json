@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "package_type": "x-archive",
+  "acquisition": {
+    "captured_on": "2026-09-25",
+    "coverage": "2026-01-01 → 2026-09-25（基线 2026-09-19 包 + 09-18→09-25 增量补抓）",
+    "method": "headless-chrome-cdp-dom",
+    "targets": {
+      "posts_baseline": "https://x.com/ShanghaoJin（profile 页深度滚动；基线包沿用）",
+      "incremental_full_content": "https://x.com/search?q=from%3AShanghaoJin%20since%3A2026-09-19%20until%3A2026-09-26&f=live（11 轮 / 134 条）",
+      "incremental_posts": "https://x.com/ShanghaoJin（profile 页 14 轮 / 88 条，用于主帖差集判定）",
+      "full_text_patch": "近 30 天 12 条命中逐条打开详情页并展开 Show more 补全正文"
+    },
+    "note_incremental": "仓库已有包覆盖至 09-19，故本次只补 09-18→09-25 窗口；profile 页置顶帖会让 date-floor 提前触发，取主帖集合时关闭了 STOP_BEFORE 并靠事后日期筛选。",
+    "stop_reason_search": "reached_date_floor",
+    "rounds_used": {
+      "search_recent": 11,
+      "profile_posts": 14
+    }
+  },
+  "source_account": {
+    "handle": "@ShanghaoJin",
+    "display_name": "Herman Jin",
+    "platform": "x"
+  },
+  "posts": {
+    "record_count": 1305,
+    "file": "posts.jsonl"
+  },
+  "replies": {
+    "record_count": 6494,
+    "file": "replies.jsonl"
+  },
+  "threads": {
+    "note": "thread_id 为抓取时按会话邻接生成的分组，非 X 官方 thread 标识",
+    "count": 7799
+  },
+  "files": [
+    "manifest.json",
+    "posts.jsonl",
+    "replies.jsonl",
+    "media/",
+    "raw/"
+  ],
+  "evidence_boundary": "数据来自页面 DOM 深度滚动抓取，非官方 API。主帖取 profile 页（该页不含回复）；回复取搜索页内容全集与主帖的差集。搜索结果 DOM 不含 'Replying to @xxx'，故 in_reply_to_user 多数为空 —— 属推断而非 X 自身元数据。近 30 天部分条目已逐条打开详情页展开 'Show more' 补全正文，但被 X 折叠的 t.co 链接仍未还原。media/ 为空（未抓图），未做 OCR；引用他人内容为原文附带、不代表本人观点。",
+  "related_materials": {
+    "source": "_source/x-2026-09-19/"
+  },
+  "generated_on": "2026-09-25T16:34:50.805577+00:00"
+}

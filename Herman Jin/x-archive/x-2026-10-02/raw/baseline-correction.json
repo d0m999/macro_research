@@ -1,0 +1,50 @@
+{
+  "post_id": "2103484885013086227",
+  "reason": "DOM mixed quoted timestamp/body into outer post; official author separation",
+  "original": {
+    "id": "post-001305",
+    "post_id": "2103484885013086227",
+    "created_at": "2026-09-25T09:42:23.000Z",
+    "text": "很简单，想想GPU比例开始提高时候的NV\n\n不要觉得夸张，只会更夸张 如果agentic AI帶動GPU : CPU 走到 1 : 1，大家想像下未來幾年cpu的high cagr \n\n$INTC $AMD $ARM x.com/supplyradarx/s…",
+    "thread_id": "thread-6522",
+    "source": "x-web-capture"
+  },
+  "corrected": {
+    "id": "post-001305",
+    "post_id": "2103484885013086227",
+    "created_at": "2026-09-25T14:00:52.000Z",
+    "text": "很简单，想想GPU比例开始提高时候的NV\n\n不要觉得夸张，只会更夸张",
+    "lang": "zh",
+    "links": [],
+    "thread_id": "T-5013086227",
+    "thread_id_is_self_root": true,
+    "thread_id_basis": "local_record_id_fallback; not official conversation_id",
+    "author_handle": "ShanghaoJin",
+    "source": "x-syndication",
+    "source_url": "https://x.com/ShanghaoJin/status/2103484885013086227",
+    "source_lang": "zh",
+    "captured_at": "2026-10-02T05:49:25.215763+00:00",
+    "text_completeness": "official_returned_text",
+    "text_provenance": {
+      "identity_and_time_source": "https://cdn.syndication.twimg.com/tweet-result?id=2103484885013086227&lang=en&token=x",
+      "captured_at": "2026-10-02T05:49:25.215763+00:00",
+      "response_sha256": "df849f07668f74eaf1dfb67ca39f07bb753856ed778f8ad441738e68ba02d1b1",
+      "official_text": "很简单，想想GPU比例开始提高时候的NV\n\n不要觉得夸张，只会更夸张",
+      "body_source": "official_syndication",
+      "full_body_verified_by_official_endpoint": true
+    },
+    "post_type": "quote",
+    "media": [],
+    "media_count": 0,
+    "quoted_tweet": {
+      "post_id": "2103419838110843115",
+      "author_handle": "RYANHINGSHING",
+      "created_at": "2026-09-25T09:42:23.000Z",
+      "text": "如果agentic AI帶動GPU : CPU 走到 1 : 1，大家想像下未來幾年cpu的high cagr \n\n$INTC $AMD $ARM",
+      "source_url": "https://x.com/RYANHINGSHING/status/2103419838110843115",
+      "text_completeness": "official_returned_text",
+      "attribution": "context_author_only; not the outer post author opinion"
+    }
+  },
+  "old_package_modified": false
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.1",
+  "package_type": "x-research-agent-index",
+  "description": "Serenity（X: @aleabitoreddit，中文圈称「白毛股神 / 白毛女」）的 X 语料索引。只保留清洗后的语料，读取 data/clean/ 下的 posts.jsonl 与 replies.jsonl。",
+  "identity_note": "本仓库主体为匿名账号 Serenity（@aleabitoreddit，白发二次元头像，2025-07 启用 X）。与 Herman Jin（@ShanghaoJin，露脸做《市场概述》视频的分析师）是两个不同的人，勿混。",
+  "data": {
+    "clean": {
+      "path": "data/clean/",
+      "files": [
+        "posts.jsonl",
+        "replies.jsonl"
+      ],
+      "counts": {
+        "posts": 1812,
+        "replies": 5082
+      },
+      "report": "data/clean/cleaning-report-2026-10-02.md",
+      "dropped_ids": "data/clean/dropped-emoji-only-ids.txt",
+      "cleaned_on": "2026-10-02",
+      "coverage": "2025-07-02 → 2026-10-02（UTC+8 已收录记录范围；09-21 后为已发现增量，非全量时间线）",
+      "fields_added_by_cleaning": [
+        "lang",
+        "links",
+        "thread_id",
+        "thread_id_is_self_root",
+        "is_self_thread",
+        "root_in_pkg",
+        "thread_id_basis",
+        "source_url",
+        "source_lang",
+        "captured_at",
+        "text_completeness",
+        "text_provenance",
+        "post_type",
+        "quoted_tweet",
+        "reply_context",
+        "media"
+      ],
+      "note": "thread_id 是 T-<原帖ID后10位> 的本地唯一键，不代表真实会话根。历史回复父帖 ID 不可得；10-02 新增记录填写官方返回的父帖 ID，并将他人引用/父帖与本人正文分离。历史 6 条纯表情回复保持剔除，本次无新增剔除。",
+      "provenance": "2026-09-21 基线来自 X DOM 深度滚动，其原始归档已按既有需求删除；该历史事实不变。2026-10-02 新增 39 条，官方公开嵌入接口核对作者、时间、短正文和长帖开头；25 条长帖使用带来源标记的镜像全文。新记录保留 source-evidence 与逐条 provenance，未重建历史 raw 包。",
+      "reports": [
+        "data/clean/cleaning-report-2026-09-21.md",
+        "data/clean/cleaning-report-2026-10-02.md"
+      ],
+      "source_evidence": "data/clean/source-evidence-2026-10-02.jsonl",
+      "latest_created_at_utc": "2026-10-01T17:38:37.000Z",
+      "complete_timeline": false,
+      "last_increment": {
+        "captured_on": "2026-10-02",
+        "posts": 18,
+        "replies": 21,
+        "total": 39,
+        "official_returned_text": 14,
+        "mirror_full_text_official_prefix_matched": 25,
+        "independent_mirror_full_text_agreements": 24
+      }
+    }
+  }
+}

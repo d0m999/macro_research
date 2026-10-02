@@ -1,0 +1,73 @@
+{
+  "captured_at": "2026-10-02T05:49:18.974485+00:00",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2105859953563193609&lang=en&token=x",
+  "http_status": 200,
+  "response_sha256": "7e6030d3825b888e61e812c1fb06c1d1547bc37c3b275f1ce978a9703924f22f",
+  "tweet": {
+    "__typename": "Tweet",
+    "favorite_count": 60,
+    "lang": "zh",
+    "created_at": "2026-10-02T03:18:32.000Z",
+    "display_text_range": [
+      0,
+      68
+    ],
+    "entities": {},
+    "id_str": "2105859953563193609",
+    "text": "当时，台湾整整一代人，努力、拼搏，然后把钱、技术全投入大陆体系\n\n香港的繁华也是大陆用英美法的对外“分红”窗口\n\n曾经的美好往往过眼云烟",
+    "user": {
+      "id_str": "858124064476479488",
+      "name": "Herman Jin",
+      "screen_name": "ShanghaoJin",
+      "is_blue_verified": true,
+      "profile_image_shape": "Circle",
+      "verified": false,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg"
+    },
+    "edit_control": {
+      "edit_tweet_ids": [
+        "2105859953563193609"
+      ],
+      "editable_until_msecs": "1790914712000",
+      "edits_remaining": "5",
+      "is_edit_eligible": true
+    },
+    "conversation_count": 13,
+    "news_action_type": "conversation",
+    "quoted_tweet": {
+      "favorite_count": 17,
+      "lang": "zh",
+      "reply_count": 2,
+      "retweet_count": 0,
+      "created_at": "2026-10-01T17:24:55.000Z",
+      "display_text_range": [
+        0,
+        156
+      ],
+      "entities": {},
+      "id_str": "2105710566794801408",
+      "text": "年紀小的時候, 聽說香港繁榮, 彼時(2008)台灣的經濟死氣沉沉, 那時候的年輕人夢想著去國外工作, 歐美日港新都是夢想選項。\n\n曾經也有香港的offer, 奈何拿不到visa, 只好向灣區出發。\n\n第一次入境香港已經是疫情後。LKF名聲在外, 卻比我想像的還蕭條。蕭條的原因太多, 也許是法規, 也許是疫情,",
+      "user": {
+        "id_str": "2887049886",
+        "name": "SWH | (168, 168)",
+        "screen_name": "swh16888",
+        "is_blue_verified": true,
+        "profile_image_shape": "Circle",
+        "verified": false,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1494244053285801986/R2gSZhyA_normal.jpg"
+      },
+      "edit_control": {
+        "edit_tweet_ids": [
+          "2105710566794801408"
+        ],
+        "editable_until_msecs": "1790879095000",
+        "edits_remaining": "5",
+        "is_edit_eligible": true
+      },
+      "isEdited": false,
+      "isStaleEdit": false
+    },
+    "isEdited": false,
+    "isStaleEdit": false
+  }
+}

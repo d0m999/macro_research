@@ -1,0 +1,223 @@
+{
+  "target": "https://x.com/ShanghaoJin/status/2103484885013086227",
+  "captured_at": "2026-09-25T15:19:40.105Z",
+  "stop_reason": "max_rounds",
+  "max_rounds": 6,
+  "stop_before": "2020-01-01",
+  "rounds_used": 6,
+  "count": 13,
+  "diagnostics": [
+    {
+      "round": 1,
+      "size": 13,
+      "mine": 2,
+      "oldest": "2026-09-24",
+      "scrollH": 4785,
+      "scrollHGrew": null,
+      "noNew": 0
+    },
+    {
+      "round": 2,
+      "size": 13,
+      "mine": 2,
+      "oldest": "2026-09-24",
+      "scrollH": 4785,
+      "scrollHGrew": false,
+      "noNew": 1
+    },
+    {
+      "round": 3,
+      "size": 13,
+      "mine": 2,
+      "oldest": "2026-09-24",
+      "scrollH": 4785,
+      "scrollHGrew": false,
+      "noNew": 2
+    },
+    {
+      "round": 4,
+      "size": 13,
+      "mine": 2,
+      "oldest": "2026-09-24",
+      "scrollH": 4785,
+      "scrollHGrew": false,
+      "noNew": 3
+    },
+    {
+      "round": 5,
+      "size": 13,
+      "mine": 2,
+      "oldest": "2026-09-24",
+      "note": "停滞退避 #1"
+    },
+    {
+      "round": 6,
+      "size": 13,
+      "mine": 2,
+      "oldest": "2026-09-24",
+      "scrollH": 4785,
+      "scrollHGrew": false,
+      "noNew": 0
+    }
+  ],
+  "rows": [
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2103484885013086227",
+      "status_url": "/ShanghaoJin/status/2103484885013086227",
+      "datetime": "2026-09-25T09:42:23.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "很简单，想想GPU比例开始提高时候的NV\n\n不要觉得夸张，只会更夸张",
+        "如果agentic AI帶動GPU : CPU 走到 1 : 1，大家想像下未來幾年cpu的high cagr \n\n$INTC $AMD $ARM x.com/supplyradarx/s…"
+      ],
+      "dom_order": 0
+    },
+    {
+      "author_handle": "cassian_w76008",
+      "post_id": "2103490754845065628",
+      "status_url": "/cassian_w76008/status/2103490754845065628",
+      "datetime": "2026-09-25T14:24:11.000Z",
+      "display_name": "Cassian W",
+      "reply_to_handle": null,
+      "texts": [
+        "那存储也一样继续起飞？agentic能力对cpu dram nand的需求毕竟是雨露均沾的。"
+      ],
+      "dom_order": 1
+    },
+    {
+      "author_handle": "rouandabout",
+      "post_id": "2103488952275775652",
+      "status_url": "/rouandabout/status/2103488952275775652",
+      "datetime": "2026-09-25T14:17:01.000Z",
+      "display_name": "KIloG88",
+      "reply_to_handle": null,
+      "texts": [
+        "到底用的 x86还是 arm，还是 both？ 选择太多太散"
+      ],
+      "dom_order": 2
+    },
+    {
+      "author_handle": "ianai_lab",
+      "post_id": "2103486472661917893",
+      "status_url": "/ianai_lab/status/2103486472661917893",
+      "datetime": "2026-09-25T14:07:10.000Z",
+      "display_name": "ian 🧡 $DOG",
+      "reply_to_handle": null,
+      "texts": [
+        "只是NV只有一家，CPU有两家分🤔"
+      ],
+      "dom_order": 3
+    },
+    {
+      "author_handle": "tony_wood2005",
+      "post_id": "2103486219892269539",
+      "status_url": "/tony_wood2005/status/2103486219892269539",
+      "datetime": "2026-09-25T14:06:10.000Z",
+      "display_name": "tony smith",
+      "reply_to_handle": null,
+      "texts": [
+        "資金價格正在變貴\nCPU不像GPU一樣一家獨大\n也不像HBM一樣主要是現貨市場\n悠著點"
+      ],
+      "dom_order": 4
+    },
+    {
+      "author_handle": "SupplyRadarX",
+      "post_id": "2103493805983126003",
+      "status_url": "/SupplyRadarX/status/2103493805983126003",
+      "datetime": "2026-09-25T14:36:19.000Z",
+      "display_name": "Sirin｜供应链雷达",
+      "reply_to_handle": null,
+      "texts": [
+        "金老师跟梁老师真的很像 AI Infra 的风向标😂 很多东西都是你们先看到，市场后面才开始交易。\n@ShanghaoJin\n \n@RYANHINGSHING\n \n\n我现在越来越觉得，CPU 这条线不能只看总量。GPU:CPU 比例如果继续变化，真正关键的还是新增 workload 最后落到 x86，还是 hyperscaler 自研 Arm。"
+      ],
+      "dom_order": 5
+    },
+    {
+      "author_handle": "Jespabe",
+      "post_id": "2103486551137354088",
+      "status_url": "/Jespabe/status/2103486551137354088",
+      "datetime": "2026-09-25T14:07:29.000Z",
+      "display_name": "Laigt Bringer",
+      "reply_to_handle": null,
+      "texts": [
+        "$AMD\n is a bubble. NVIDIA never exceeded a forward P/E of 40x, even in its heyday. AMD seems to be settled in the 50–60 range, and everyone is fine with it."
+      ],
+      "dom_order": 6
+    },
+    {
+      "author_handle": "om_mtsr",
+      "post_id": "2103485177641275797",
+      "status_url": "/om_mtsr/status/2103485177641275797",
+      "datetime": "2026-09-25T14:02:01.000Z",
+      "display_name": "币安手续费减免",
+      "reply_to_handle": null,
+      "texts": [
+        "GPU占比一上来，想象力都得重新估值了"
+      ],
+      "dom_order": 7
+    },
+    {
+      "author_handle": "Boehlke0",
+      "post_id": "2103502019621429598",
+      "status_url": "/Boehlke0/status/2103502019621429598",
+      "datetime": "2026-09-25T15:08:57.000Z",
+      "display_name": "Murello",
+      "reply_to_handle": null,
+      "texts": [
+        "月"
+      ],
+      "dom_order": 8
+    },
+    {
+      "author_handle": "ShanghaoJin",
+      "post_id": "2103264733164097849",
+      "status_url": "/ShanghaoJin/status/2103264733164097849",
+      "datetime": "2026-09-24T23:26:03.000Z",
+      "display_name": "Herman Jin",
+      "reply_to_handle": null,
+      "texts": [
+        "我很喜欢一说法：过去1987-1999年利率远远比今天高，市场为什么不怕？\n\n因为没那么多对宏观一知半解的分析员散播恐惧\n\nYes～～长端上升会压缩“静态”PE估值，但很多行业并不在静态\n\n利率升高对整体流动性影响是mixed的，会让全球资金聚拢美国。对纯依靠流动性资产是负面的，但对增长、盈利加速资产正面"
+      ],
+      "dom_order": 9
+    },
+    {
+      "author_handle": "TJ_Research",
+      "post_id": "2103187304709775453",
+      "status_url": "/TJ_Research/status/2103187304709775453",
+      "datetime": "2026-09-24T18:18:23.000Z",
+      "display_name": "投资TALK君",
+      "reply_to_handle": null,
+      "texts": [
+        "我认为机构在利用利率上涨杀跌大盘的时候加仓半导体，但我没有证据🤪"
+      ],
+      "dom_order": 10
+    },
+    {
+      "author_handle": "qinbafrank",
+      "post_id": "2103379192146735169",
+      "status_url": "/qinbafrank/status/2103379192146735169",
+      "datetime": "2026-09-25T07:00:52.000Z",
+      "display_name": "qinbafrank",
+      "reply_to_handle": null,
+      "texts": [
+        "AI基建正在成为美国历史上最大的经济押注，哥伦比亚商学院教授 Stijn van Nieuwerburgh预计2025–32年这八年间美国在数据中心、电力、网络和AI专用设备上的总投资约10.3万亿美元，年均约占GDP的3.63%。这比历史上规模最大的铁路建设浪潮（2.24%）还高，也明显高于公路和光纤建设。",
+        "长债收益率飙升对美股有没有影响？会怎么体现出来？其实影响就在下面两张图：1）受损组：标普等权和道指从8月下旬以来持续走低；2）扛住还是创新高：标普和纳指8月下旬到上周中也是震荡小跌，过去一周强势反弹，纳指更强势（油价见顶预期驱动宏观缓和）。这是为何？\n\n个人角度核心逻辑是：  x.com/qinbafrank/sta…"
+      ],
+      "dom_order": 11
+    },
+    {
+      "author_handle": "Web3Lanju",
+      "post_id": "2103089859992904031",
+      "status_url": "/Web3Lanju/status/2103089859992904031",
+      "datetime": "2026-09-24T11:51:10.000Z",
+      "display_name": "HeyIts小懒橘🌻.",
+      "reply_to_handle": null,
+      "texts": [
+        "Nike跌了78%，Chipotle跌了52%，Constellation跌了55%。\n\n这些不是什么垃圾股，是美国消费的门面。\n\n沃尔玛距高点跌了18%，好市多跌17%，麦当劳跌30%，家得宝跌27%，从超市到快餐到家装，全线回撤。\n\nNetflix跌42%，Uber跌30%，Booking跌32%。消费者连娱乐和出行都在砍。"
+      ],
+      "dom_order": 12
+    }
+  ]
+}

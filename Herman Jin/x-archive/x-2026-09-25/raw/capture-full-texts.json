@@ -1,0 +1,342 @@
+{
+  "2092428460039999551": {
+    "url": "https://x.com/ShanghaoJin/status/2092428460039999551",
+    "matched": true,
+    "datetime": "2026-08-26T01:46:34.000Z",
+    "full_text": "It hasnt outperformed $INTC since I invested in Jan",
+    "thread": [
+      {
+        "url": "/ShanghaoJin/status/2092427735528505547",
+        "text": "Anthropic retention rate is actually collapsing😭\n\nNote to myself, be more careful with illiquid bets like PE"
+      },
+      {
+        "url": "/ShanghaoJin/status/2092428460039999551",
+        "text": "It hasnt outperformed \n$INTC\n since I invested in Jan"
+      },
+      {
+        "url": "/bqB9Ml6aFloKS99/status/2092459139180138799",
+        "text": "时间终将审判流动性幻觉。 为你亮灯，为你转身，为你爆灯 💡"
+      },
+      {
+        "url": "/harasi199/status/2093580748041429346",
+        "text": "没事 惩罚你 挠你脚心"
+      }
+    ],
+    "n_articles": 4
+  },
+  "2095869898115391682": {
+    "url": "https://x.com/ShanghaoJin/status/2095869898115391682",
+    "matched": true,
+    "datetime": "2026-09-04T13:41:37.000Z",
+    "full_text": "intc 但是他们边缘耦合器可以发现坏片的时刻比较晚，测试角度TSM方案挺好的",
+    "thread": [
+      {
+        "url": "/ShanghaoJin/status/2095865024413872374",
+        "text": "封装、测试——光真正要的是规模交付\n\n主流选择了heterogeneous：EIC、PIC各自把良率、产能做上去，最后再”拼”\n\n量产难度没有消失，变成了几个新环节：逐级测试（质检）、精密键合设备（ASMPT施工工具）、先进封装产能（TSM SoIC 施工产能）"
+      },
+      {
+        "url": "/jiewey01/status/2095869135859384539",
+        "text": "想請問 金老師 \"先进封装产能（TSM SoIC 施工产能）\" 如果TSM 不夠 金老師認為那誰是可能人選(追趕者)呢?"
+      },
+      {
+        "url": "/ShanghaoJin/status/2095869898115391682",
+        "text": "intc 但是他们边缘耦合器可以发现坏片的时刻比较晚，测试角度TSM方案挺好的"
+      },
+      {
+        "url": "/jiewey01/status/2095870127015395575",
+        "text": "感謝金老師 🙏🫡🫡🫡"
+      },
+      {
+        "url": "/Tay2438/status/2095891021360177373",
+        "text": "其实现在TSM也在优化EC的检测方法。前段时间买了炬光的技术授权，就是在EC的wafer上埋MPLA和垂直光学耦合器，这样在insertion2测试的时候，可以直接从垂直方向做EC的检测，晶圆级测试上就能搞定了（和光栅耦合一样）。"
+      }
+    ],
+    "n_articles": 5
+  },
+  "2096997583730479431": {
+    "url": "https://x.com/ShanghaoJin/status/2096997583730479431",
+    "matched": true,
+    "datetime": "2026-09-07T16:22:38.000Z",
+    "full_text": "话反过来说，不管加息不加息，明年底intc轻轻松松涨到200 goog下了3m片订单，cpu明年一股6快左右 分分钟跌到80好像也没咋样啊？",
+    "thread": [
+      {
+        "url": "/cherryPayment/status/2096758274066465046",
+        "text": "80多是可能的\n\n但如果你把加息当为前提条件的话，其实就是默认了会加息，这样就不太公正\n\n目前来看加息还是46开， 然后你也需要考虑price in的概率"
+      },
+      {
+        "url": "/ShanghaoJin/status/2096997583730479431",
+        "text": "话反过来说，不管加息不加息，明年底intc轻轻松松涨到200\n\ngoog下了3m片订单，cpu明年一股6快左右\n\n分分钟跌到80好像也没咋样啊？"
+      },
+      {
+        "url": "/cherryPayment/status/2097031564571914458",
+        "text": "但不少人开始骂～"
+      },
+      {
+        "url": "/f6834f363c7e45c/status/2097168020212941130",
+        "text": "我记得老师对Orcl也说过类似的话，怕......\n当然这俩没有可比性"
+      },
+      {
+        "url": "/ShanghaoJin/status/2097168436468302207",
+        "text": "orcl我认错剁你可能没看到"
+      }
+    ],
+    "n_articles": 28
+  },
+  "2097700839641199042": {
+    "url": "https://x.com/ShanghaoJin/status/2097700839641199042",
+    "matched": true,
+    "datetime": "2026-09-08T22:10:10.000Z",
+    "full_text": "CPU和NAND都会缺死的 本来每台device需要的资源，变成了agent需求。agent调用都要用CPU的",
+    "thread": [
+      {
+        "url": "/ShanghaoJin/status/2097700839641199042",
+        "text": "CPU和NAND都会缺死的\n\n本来每台device需要的资源，变成了agent需求。agent调用都要用CPU的"
+      },
+      {
+        "url": "/RYANHINGSHING/status/2097701199395115125",
+        "text": "$INTC\n ，打晕自己，2030年起来变富翁🤔"
+      },
+      {
+        "url": "/CovestorhlLee/status/2097702423296962724",
+        "text": "缺和股价涨是两回事儿。比如说，存储芯片、英特尔这种 Foundry（代工），还有光模块和检测设备都缺的话，在现在情况下，按股价的涨幅潜力来讲，金老师最看好哪个？"
+      },
+      {
+        "url": "/ShanghaoJin/status/2097709802906644582",
+        "text": "涨幅肯定CPO检测> BE > INTC\n\n但是你也得看持仓波动，回撤啊"
+      },
+      {
+        "url": "/jakevin7/status/2098102808868528352",
+        "text": "CPU肯定后面要缺死，cloud agent 是以后的趋势"
+      }
+    ],
+    "n_articles": 14
+  },
+  "2097709802906644582": {
+    "url": "https://x.com/ShanghaoJin/status/2097709802906644582",
+    "matched": true,
+    "datetime": "2026-09-09T15:32:45.000Z",
+    "full_text": "涨幅肯定CPO检测> BE > INTC 但是你也得看持仓波动，回撤啊",
+    "thread": [
+      {
+        "url": "/ShanghaoJin/status/2097700839641199042",
+        "text": "CPU和NAND都会缺死的\n\n本来每台device需要的资源，变成了agent需求。agent调用都要用CPU的"
+      },
+      {
+        "url": "/CovestorhlLee/status/2097702423296962724",
+        "text": "缺和股价涨是两回事儿。比如说，存储芯片、英特尔这种 Foundry（代工），还有光模块和检测设备都缺的话，在现在情况下，按股价的涨幅潜力来讲，金老师最看好哪个？"
+      },
+      {
+        "url": "/ShanghaoJin/status/2097709802906644582",
+        "text": "涨幅肯定CPO检测> BE > INTC\n\n但是你也得看持仓波动，回撤啊"
+      },
+      {
+        "url": "/CovestorhlLee/status/2097710295305097544",
+        "text": "多谢分享。\n\n是的，是的，波动肯定要考虑的。\n现在最大持仓是 Intel"
+      }
+    ],
+    "n_articles": 4
+  },
+  "2097777737499042189": {
+    "url": "https://x.com/ShanghaoJin/status/2097777737499042189",
+    "matched": true,
+    "datetime": "2026-09-09T20:02:42.000Z",
+    "full_text": "The reunification of TW, if it happens, will end the AI dream for everyone and collapse the global economy It will create the biggest deleveraging in capital markets since 2008 INTC will not survive but surely sink with it together 😱",
+    "thread": [
+      {
+        "url": "/Alex_Intel_/status/2097684347612733741",
+        "text": "This note from Northland was also kinda funny because it's the first wallstreet analyst I've seen upgrade Intel on a belief that Taiwan will likely be blockaded or invaded in the next few years lol.\n\n\"In our view, it is not an if; it is a when, reuniting with China. China’s"
+      },
+      {
+        "url": "/ShanghaoJin/status/2097777737499042189",
+        "text": "The reunification of TW, if it happens, will end the AI dream for everyone and collapse the global economy\n\nIt will create the biggest deleveraging in capital markets since 2008\n\nINTC will not survive but surely sink with it together 😱"
+      },
+      {
+        "url": "/Alex_Intel_/status/2097780547825315958",
+        "text": "Imagine if one company produced 90% of the oil\n\nThen 90% goes to zero. Then another company has the 10% of the oil...\n\nSupply chain hurdles figure themselves out quickly. Where wafer manufacturing exists does not"
+      },
+      {
+        "url": "/ShanghaoJin/status/2097861937367580779",
+        "text": "$INTC\n it own Arrow Lake and Lunar Lake are still printing at TSMC"
+      },
+      {
+        "url": "/LiuLiuX8866/status/2097802692521517459",
+        "text": "要是台湾都能统一，老美怕是最后学苏联，霸权陨落，最终解体😂"
+      }
+    ],
+    "n_articles": 28
+  },
+  "2097861937367580779": {
+    "url": "https://x.com/ShanghaoJin/status/2097861937367580779",
+    "matched": true,
+    "datetime": "2026-09-10T01:37:16.000Z",
+    "full_text": "$INTC it own Arrow Lake and Lunar Lake are still printing at TSMC",
+    "thread": [
+      {
+        "url": "/Alex_Intel_/status/2097684347612733741",
+        "text": "This note from Northland was also kinda funny because it's the first wallstreet analyst I've seen upgrade Intel on a belief that Taiwan will likely be blockaded or invaded in the next few years lol.\n\n\"In our view, it is not an if; it is a when, reuniting with China. China’s"
+      },
+      {
+        "url": "/ShanghaoJin/status/2097777737499042189",
+        "text": "The reunification of TW, if it happens, will end the AI dream for everyone and collapse the global economy\n\nIt will create the biggest deleveraging in capital markets since 2008\n\nINTC will not survive but surely sink with it together 😱"
+      },
+      {
+        "url": "/Alex_Intel_/status/2097780547825315958",
+        "text": "Imagine if one company produced 90% of the oil\n\nThen 90% goes to zero. Then another company has the 10% of the oil...\n\nSupply chain hurdles figure themselves out quickly. Where wafer manufacturing exists does not"
+      },
+      {
+        "url": "/ShanghaoJin/status/2097861937367580779",
+        "text": "$INTC\n it own Arrow Lake and Lunar Lake are still printing at TSMC"
+      },
+      {
+        "url": "/Alex_Intel_/status/2097862689733435691",
+        "text": "So?\n\nIntel could lose every single TSMC related product wouldn't matter. Wafer prices 6x at a minimum. All that matters"
+      }
+    ],
+    "n_articles": 6
+  },
+  "2097863156064546834": {
+    "url": "https://x.com/ShanghaoJin/status/2097863156064546834",
+    "matched": true,
+    "datetime": "2026-09-10T01:42:07.000Z",
+    "full_text": "Intc will lose all its suppliers…..",
+    "thread": [
+      {
+        "url": "/Alex_Intel_/status/2097684347612733741",
+        "text": "This note from Northland was also kinda funny because it's the first wallstreet analyst I've seen upgrade Intel on a belief that Taiwan will likely be blockaded or invaded in the next few years lol.\n\n\"In our view, it is not an if; it is a when, reuniting with China. China’s"
+      },
+      {
+        "url": "/ShanghaoJin/status/2097777737499042189",
+        "text": "The reunification of TW, if it happens, will end the AI dream for everyone and collapse the global economy\n\nIt will create the biggest deleveraging in capital markets since 2008\n\nINTC will not survive but surely sink with it together 😱"
+      },
+      {
+        "url": "/Alex_Intel_/status/2097780547825315958",
+        "text": "Imagine if one company produced 90% of the oil\n\nThen 90% goes to zero. Then another company has the 10% of the oil...\n\nSupply chain hurdles figure themselves out quickly. Where wafer manufacturing exists does not"
+      },
+      {
+        "url": "/ShanghaoJin/status/2097861937367580779",
+        "text": "$INTC\n it own Arrow Lake and Lunar Lake are still printing at TSMC"
+      },
+      {
+        "url": "/Alex_Intel_/status/2097862689733435691",
+        "text": "So?\n\nIntel could lose every single TSMC related product wouldn't matter. Wafer prices 6x at a minimum. All that matters"
+      }
+    ],
+    "n_articles": 8
+  },
+  "2101178202119196708": {
+    "url": "https://x.com/ShanghaoJin/status/2101178202119196708",
+    "matched": true,
+    "datetime": "2026-09-18T21:42:31.000Z",
+    "full_text": "😭完了～～",
+    "thread": [
+      {
+        "url": "/jimcramer/status/2101064351306191049/photo/1",
+        "text": "😭完了～～"
+      },
+      {
+        "url": "/GodfatherLebrun/status/2101179167052366249",
+        "text": "为啥完了啊 金老师"
+      },
+      {
+        "url": "/ShanghaoJin/status/2101180561142509991",
+        "text": "反指….. 哈哈哈"
+      },
+      {
+        "url": "/ayudante/status/2041797177870356497/analytics",
+        "text": "正在招聘助理！  \n不想在数字营销的最前线大展身手吗？  \n\n 💼SEO/广告/GA咨询/工程师/总监\n\n・连续15期盈利  \n・Google国内首家认证合作伙伴  \n・年薪400〜1000万・可全程远程"
+      },
+      {
+        "url": "/LIWEI_TWCapital/status/2101193691297886601",
+        "text": ""
+      }
+    ],
+    "n_articles": 24
+  },
+  "2102049552979394949": {
+    "url": "https://x.com/ShanghaoJin/status/2102049552979394949",
+    "matched": true,
+    "datetime": "2026-09-21T13:43:44.000Z",
+    "full_text": "长坡厚雪",
+    "thread": [
+      {
+        "url": "/ShanghaoJin/status/2102049552979394949",
+        "text": "长坡厚雪"
+      },
+      {
+        "url": "/Rzhang1024/status/2102053488545103888",
+        "text": "“长坡厚雪”指我对长线非常看好，但要清醒短期盈利、margin预期”\n\n金老师是在提醒不要太FOMO吗～"
+      },
+      {
+        "url": "/ShanghaoJin/status/2102055009399820547",
+        "text": "就是intc潜力没有爆发完，一层层很多\n\n放在3年周期都是很好标的"
+      },
+      {
+        "url": "/LiamWang1990/status/2102052180945449234",
+        "text": "金老师 录视频不这周"
+      },
+      {
+        "url": "/ZengQingli22668/status/2102438944042525022",
+        "text": "请教一下金老师，甲骨文能长坡厚雪吗？"
+      }
+    ],
+    "n_articles": 18
+  },
+  "2102054195419627851": {
+    "url": "https://x.com/ShanghaoJin/status/2102054195419627851",
+    "matched": true,
+    "datetime": "2026-09-09T14:57:08.000Z",
+    "full_text": "谁说半导体只有存储会缺货？ 另外，点评下Muse: 是个非常丝滑的产品，但2C AI才刚“开局”，现在说Meta终将如何还有点远。毕竟Apple都可以做个预装，并没启动呢",
+    "thread": [
+      {
+        "url": "/ShanghaoJin/status/2102054195419627851",
+        "text": "谁说半导体只有存储会缺货？\n\n另外，点评下Muse: 是个非常丝滑的产品，但2C AI才刚“开局”，现在说Meta终将如何还有点远。毕竟Apple都可以做个预装，并没启动呢"
+      },
+      {
+        "url": "/ShawnXFong/status/2102063920450293852",
+        "text": "agent所需的CPU，需要配套存储才能运行啊，所以存储的紧缺又雪上加霜了。"
+      },
+      {
+        "url": "/ShanghaoJin/status/2102069765737234525",
+        "text": "agent端多了，需要的是NAND，推理才需要HBM"
+      },
+      {
+        "url": "/totalwar_japan/status/2102910892950044911/photo/1",
+        "text": "／  \n「城泊」成对中奖🏯  \n＼  \n\n第二弹  \n\n期待已久的日语对应！  \n全面战争：幕府将军２  \n完整版发售纪念🎉  \n\n▼参与方法  \n①关注\n@totalwar_japan\n  \n②在10/4 23:59前转推本帖  \n③中奖者将通过DM通知  \n\n加入愿望单可提高中奖率🎯  \n※详情请查看评论区💬"
+      },
+      {
+        "url": "/SupplyRadarX/status/2102064283391795443",
+        "text": "认同。Agent 真正放量后，缺的可能不只是 CPU 和 NAND。\nHBM → Enterprise SSD → Switch → 800G/1.6T Optics → Power → Cooling → Data Center capacity，整个 AI Infra 都会被重新拉一遍需求。\n我会先看 lead time、ASP 和扩产，供应链通常比财报更早说话。"
+      }
+    ],
+    "n_articles": 22
+  },
+  "2103484885013086227": {
+    "url": "https://x.com/ShanghaoJin/status/2103484885013086227",
+    "matched": true,
+    "datetime": "2026-09-25T09:42:23.000Z",
+    "full_text": "很简单，想想GPU比例开始提高时候的NV 不要觉得夸张，只会更夸张",
+    "thread": [
+      {
+        "url": "/ShanghaoJin/status/2103484885013086227",
+        "text": "很简单，想想GPU比例开始提高时候的NV\n\n不要觉得夸张，只会更夸张"
+      },
+      {
+        "url": "/cassian_w76008/status/2103490754845065628",
+        "text": "那存储也一样继续起飞？agentic能力对cpu dram nand的需求毕竟是雨露均沾的。"
+      },
+      {
+        "url": "/ShanghaoJin/status/2103509009521377519",
+        "text": "Nand > dram"
+      },
+      {
+        "url": "/Jespabe/status/2103486551137354088",
+        "text": "$AMD\n is a bubble. NVIDIA never exceeded a forward P/E of 40x, even in its heyday. AMD seems to be settled in the 50–60 range, and everyone is fine with it."
+      },
+      {
+        "url": "/ShanghaoJin/status/2103508917917774117",
+        "text": "Because mkt is expecting AMD to take shares"
+      }
+    ],
+    "n_articles": 15
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.1",
+  "package_type": "x-archive",
+  "acquisition": {
+    "captured_on": "2026-10-02",
+    "method": "official-public-syndication-by-id",
+    "baseline_package": "../x-2026-09-25/",
+    "new_record_count": 16,
+    "coverage": "已发现并核验的增量样本；没有连续完整的官方时间线，不能视为截止日期前全量覆盖。",
+    "complete_timeline": false,
+    "discovery_gap": "尤其 2026-09-25 晚至 09-27；增量集合沿用本轮研究发现的 16 个 ID。"
+  },
+  "source_account": {
+    "handle": "@ShanghaoJin",
+    "display_name": "Herman Jin",
+    "platform": "x"
+  },
+  "posts": {
+    "record_count": 1315,
+    "file": "posts.jsonl"
+  },
+  "replies": {
+    "record_count": 6500,
+    "file": "replies.jsonl"
+  },
+  "threads": {
+    "count": 6542,
+    "inherited_duplicate_keys": 1273,
+    "note": "旧记录保留旧 thread_id；新增 T-<ID后10位> 只是本地唯一键，不是官方会话根；回复父 ID 来自官方接口。"
+  },
+  "files": [
+    "manifest.json",
+    "posts.jsonl",
+    "replies.jsonl",
+    "media/",
+    "raw/"
+  ],
+  "evidence_boundary": "旧数据继承原包的 DOM 和引用混排边界。新增正文只含外层作者内容，quoted_tweet/reply_context 单独归属；所有新增正文由官方接口直接返回。新增本人的 1 张图片已下载，引用帖图片与旧包图片未补抓。",
+  "cleaning": {
+    "report": "raw/cleaning-report.md",
+    "baseline_corrections": "raw/baseline-correction.json",
+    "deduplication_key": "post_id/reply_id",
+    "baseline_modified": false
+  },
+  "generated_on": "2026-10-02T06:02:48.910201+00:00"
+}

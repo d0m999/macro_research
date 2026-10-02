@@ -1,0 +1,76 @@
+{
+  "captured_at": "2026-10-02T05:49:18.983995+00:00",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2105858154919874719&lang=en&token=x",
+  "http_status": 200,
+  "response_sha256": "b428cbf0ea05d2c2c076c0ba89bda7c1e8ad86da17319c418c4d63a499d282da",
+  "tweet": {
+    "__typename": "Tweet",
+    "favorite_count": 50,
+    "lang": "zh",
+    "created_at": "2026-10-02T03:11:23.000Z",
+    "display_text_range": [
+      0,
+      43
+    ],
+    "entities": {},
+    "id_str": "2105858154919874719",
+    "text": "更新下情况，远洋捕捞过于破坏底栖生态，近期大大改善\n\n转而变得更加恐怖的是税务跨省执法",
+    "user": {
+      "id_str": "858124064476479488",
+      "name": "Herman Jin",
+      "screen_name": "ShanghaoJin",
+      "is_blue_verified": true,
+      "profile_image_shape": "Circle",
+      "verified": false,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg"
+    },
+    "edit_control": {
+      "edit_tweet_ids": [
+        "2105858154919874719"
+      ],
+      "editable_until_msecs": "1790914283000",
+      "edits_remaining": "5",
+      "is_edit_eligible": true
+    },
+    "conversation_count": 7,
+    "news_action_type": "conversation",
+    "quoted_tweet": {
+      "conversation_control": {
+        "policy": "Co"
+      },
+      "favorite_count": 96,
+      "lang": "zh",
+      "reply_count": 5,
+      "retweet_count": 8,
+      "created_at": "2026-10-01T16:30:10.000Z",
+      "display_text_range": [
+        0,
+        41
+      ],
+      "entities": {},
+      "id_str": "2105696784479899982",
+      "text": "对，中国应该杜绝跨省执法，建立类似FBI的中央警察署，只有国家警察才可以跨省执法。",
+      "user": {
+        "id_str": "31083308",
+        "name": "王海滨的财经闲谈",
+        "screen_name": "wangwatchworld",
+        "is_blue_verified": true,
+        "profile_image_shape": "Circle",
+        "verified": false,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/2006039778651955207/Atd_m4bI_normal.jpg"
+      },
+      "edit_control": {
+        "edit_tweet_ids": [
+          "2105696784479899982"
+        ],
+        "editable_until_msecs": "1790875810000",
+        "edits_remaining": "5",
+        "is_edit_eligible": true
+      },
+      "isEdited": false,
+      "isStaleEdit": false
+    },
+    "isEdited": false,
+    "isStaleEdit": false
+  }
+}

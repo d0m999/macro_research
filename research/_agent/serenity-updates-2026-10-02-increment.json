@@ -1,0 +1,762 @@
+{
+  "as_of": "2026-10-02 Asia/Singapore",
+  "coverage": "可见增量下限；候选发现依赖公开镜像，未取得完整官方时间线。每条作者、ID、created_at 经 X 官方 syndication 核验；中文摘要依据官方可见正文，部分长帖后半段由镜像补足，逐条见 summary_evidence。",
+  "baseline": {
+    "posts_count": 1794,
+    "replies_count": 5061,
+    "posts_latest_utc": "2026-09-21T05:27:38.000Z",
+    "replies_latest_utc": "2026-09-21T05:40:07.000Z"
+  },
+  "counts": {
+    "引用帖": 5,
+    "回复": 21,
+    "主帖": 13
+  },
+  "total": 39,
+  "primary_topic_counts": {
+    "CPU需求": 5,
+    "光通信产能与融资": 8,
+    "Neocloud": 4,
+    "AI进展、大厂供应链与业绩": 6,
+    "市场与投资方法": 4,
+    "存储、小盘与论点跟踪": 4,
+    "机器人": 2,
+    "个人与社区": 6
+  },
+  "cpu_direct_count": 5,
+  "cpu_related_count": 2,
+  "records": [
+    {
+      "id": "2102062423499047004",
+      "author": "aleabitoreddit",
+      "kind": "引用帖",
+      "created_at_utc": "2026-09-21T15:48:30.000Z",
+      "created_at_sgt": "2026-09-21T23:48:30+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2102062423499047004",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2102062423499047004&lang=en&token=x",
+      "primary_topic": "CPU需求",
+      "cpu_scope": "核心",
+      "summary_zh": "列举 AMD、INTC、ARM 当日涨幅；镜像全文将 CPU:GPU 比例预期和新 AI 产品的 CPU 需求列为关键变化。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://serenitystock.com/posts/cmubfppao00010ief9xyjdwrw"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2102067535915123156",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-21T16:08:49.000Z",
+      "created_at_sgt": "2026-09-22T00:08:49+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2102067535915123156",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2102067535915123156&lang=en&token=x",
+      "primary_topic": "光通信产能与融资",
+      "cpu_scope": "无",
+      "summary_zh": "强调 SIVE、AAOI 的兑现窗口在 2027 年；讨论 CW DFB 激光扩产、外部代工与光模块收入爬坡。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/AMD"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2102070202779492802",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-21T16:19:25.000Z",
+      "created_at_sgt": "2026-09-22T00:19:25+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2102070202779492802",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2102070202779492802&lang=en&token=x",
+      "primary_topic": "Neocloud",
+      "cpu_scope": "无",
+      "summary_zh": "反驳看空 Nebius 的报告：认为 NBIS 融资较可持续，GPU 云价格上调 17%–21%；镜像补充 ClickHouse、Avride 等分部价值。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/NBIS"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2102114073836228810",
+      "author": "aleabitoreddit",
+      "kind": "引用帖",
+      "created_at_utc": "2026-09-21T19:13:45.000Z",
+      "created_at_sgt": "2026-09-22T03:13:45+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2102114073836228810",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2102114073836228810&lang=en&token=x",
+      "primary_topic": "AI进展、大厂供应链与业绩",
+      "cpu_scope": "无",
+      "summary_zh": "将 AI 的文明影响比作农业革命，认为物理 AI 大规模部署前仍处早期。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://texxr.com/handle/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2102247915251224980",
+      "author": "aleabitoreddit",
+      "kind": "主帖",
+      "created_at_utc": "2026-09-22T04:05:35.000Z",
+      "created_at_sgt": "2026-09-22T12:05:35+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2102247915251224980",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2102247915251224980&lang=en&token=x",
+      "primary_topic": "CPU需求",
+      "cpu_scope": "核心",
+      "summary_zh": "体验 Meta Muse 长任务后，将浏览器/VM 的后台需求联系到 AMD、INTC、ARM CPU，以及 NIC、SSD、DRAM。Intel 只能满足约 50% 客户需求的引述在镜像后半段。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://serenitystock.com/posts/cmuc9q1u900020ibb864hsxqh",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/AMD"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2102256045938852015",
+      "author": "aleabitoreddit",
+      "kind": "主帖",
+      "created_at_utc": "2026-09-22T04:37:54.000Z",
+      "created_at_sgt": "2026-09-22T12:37:54+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2102256045938852015",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2102256045938852015&lang=en&token=x",
+      "primary_topic": "市场与投资方法",
+      "cpu_scope": "无",
+      "summary_zh": "讨论 BTC、ETH 反弹，HOOD/COIN、链上股票交易和监管豁免；将加密市场作为高 beta AI 风险偏好的观察指标。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/HOOD"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2102391630515110126",
+      "author": "aleabitoreddit",
+      "kind": "主帖",
+      "created_at_utc": "2026-09-22T13:36:39.000Z",
+      "created_at_sgt": "2026-09-22T21:36:39+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2102391630515110126",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2102391630515110126&lang=en&token=x",
+      "primary_topic": "市场与投资方法",
+      "cpu_scope": "无",
+      "summary_zh": "讨论传统低 P/E、回购和股息型价值投资与 AI 时代的高增长机会之间的变化。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/ESMT"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2102565495342010529",
+      "author": "aleabitoreddit",
+      "kind": "主帖",
+      "created_at_utc": "2026-09-23T01:07:32.000Z",
+      "created_at_sgt": "2026-09-23T09:07:32+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2102565495342010529",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2102565495342010529&lang=en&token=x",
+      "primary_topic": "AI进展、大厂供应链与业绩",
+      "cpu_scope": "无",
+      "summary_zh": "转述 Musk 关于 AI 超越人类的时间表，并对照 Anthropic 的 2026–2028 建设、2028–2030 增长阶段判断。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2102569588433334309",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-23T01:23:48.000Z",
+      "created_at_sgt": "2026-09-23T09:23:48+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2102569588433334309",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2102569588433334309&lang=en&token=x",
+      "primary_topic": "存储、小盘与论点跟踪",
+      "cpu_scope": "无",
+      "summary_zh": "以存储 LTA 到 2031 年、AVGO/NVDA 受供给约束的增长预期和 SIVE 激光需求缺口，说明供需紧张可能持续。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/SIVE"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2102763548715753927",
+      "author": "aleabitoreddit",
+      "kind": "主帖",
+      "created_at_utc": "2026-09-23T14:14:32.000Z",
+      "created_at_sgt": "2026-09-23T22:14:32+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2102763548715753927",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2102763548715753927&lang=en&token=x",
+      "primary_topic": "光通信产能与融资",
+      "cpu_scope": "无",
+      "summary_zh": "整理 ECOC 的 LITE/Win Semi/SIVE 进展：Spectrum-6 CPO 的高功率激光需求、NPO、多波长外置激光与代工扩产。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/SIVE"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2102766392336580670",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-23T14:25:50.000Z",
+      "created_at_sgt": "2026-09-23T22:25:50+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2102766392336580670",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2102766392336580670&lang=en&token=x",
+      "primary_topic": "光通信产能与融资",
+      "cpu_scope": "无",
+      "summary_zh": "回应 LPK 新消息，表示会继续查客户/交易对方，尚未给出调查结论。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/LPK"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2102790422007550083",
+      "author": "aleabitoreddit",
+      "kind": "引用帖",
+      "created_at_utc": "2026-09-23T16:01:19.000Z",
+      "created_at_sgt": "2026-09-24T00:01:19+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2102790422007550083",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2102790422007550083&lang=en&token=x",
+      "primary_topic": "存储、小盘与论点跟踪",
+      "cpu_scope": "关联",
+      "summary_zh": "披露近期买入韩国小市值供应商，供货范围包括存储、测试、设备、光器件和 CPU 相关；称市值约 3,000 万至 2.5 亿美元，因波动风险不公开名单。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://serenitystock.com/posts/cmueamgp500010i5xmuwuceg6",
+        "https://aistockmonitor.io/smart-money/aleabitoreddit",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/MU"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2102792299432530153",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-23T16:08:46.000Z",
+      "created_at_sgt": "2026-09-24T00:08:46+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2102792299432530153",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2102792299432530153&lang=en&token=x",
+      "primary_topic": "存储、小盘与论点跟踪",
+      "cpu_scope": "无",
+      "summary_zh": "解释韩国小盘组合规模太小而不公开个股，愿意分享研究方法和主题。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2102793298561970218",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-23T16:12:45.000Z",
+      "created_at_sgt": "2026-09-24T00:12:45+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2102793298561970218",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2102793298561970218&lang=en&token=x",
+      "primary_topic": "存储、小盘与论点跟踪",
+      "cpu_scope": "关联",
+      "summary_zh": "称目前主要验证上半年 INTC、ARM、MU、SIVE、AAOI、AXTI、NBIS 的既有论点；近期新增方向主要是 ESMT 传统存储与 CCXI 人形机器人。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/INTC"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2103139052363133062",
+      "author": "aleabitoreddit",
+      "kind": "引用帖",
+      "created_at_utc": "2026-09-24T15:06:39.000Z",
+      "created_at_sgt": "2026-09-24T23:06:39+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2103139052363133062",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2103139052363133062&lang=en&token=x",
+      "primary_topic": "Neocloud",
+      "cpu_scope": "无",
+      "summary_zh": "重申将 Neocloud 投资主线集中到 Nebius；镜像全文讨论 Oracle Project Jupiter 付款保障、不可抗力通知及 NBIS 分部价值。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://serenitystock.com/posts/cmufq3vce00020i46a7pdo5fq",
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2103142262729556021",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-24T15:19:24.000Z",
+      "created_at_sgt": "2026-09-24T23:19:24+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2103142262729556021",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2103142262729556021&lang=en&token=x",
+      "primary_topic": "Neocloud",
+      "cpu_scope": "无",
+      "summary_zh": "表示已经修正与 IREN 相关的先前分歧。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2103142451020267583",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-24T15:20:09.000Z",
+      "created_at_sgt": "2026-09-24T23:20:09+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2103142451020267583",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2103142451020267583&lang=en&token=x",
+      "primary_topic": "机器人",
+      "cpu_scope": "无",
+      "summary_zh": "表示仍持有 CCXI，上市事件尚未发生，当前波动对其论点意义有限。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/CCXI"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2103144796110061704",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-24T15:29:28.000Z",
+      "created_at_sgt": "2026-09-24T23:29:28+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2103144796110061704",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2103144796110061704&lang=en&token=x",
+      "primary_topic": "Neocloud",
+      "cpu_scope": "无",
+      "summary_zh": "认为 IREN 完成 60 亿美元 ATM 后股价条件会改善；看好 Mirantis 收购补足软件和集群能力。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2103151990146801812",
+      "author": "aleabitoreddit",
+      "kind": "引用帖",
+      "created_at_utc": "2026-09-24T15:58:03.000Z",
+      "created_at_sgt": "2026-09-24T23:58:03+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2103151990146801812",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2103151990146801812&lang=en&token=x",
+      "primary_topic": "光通信产能与融资",
+      "cpu_scope": "无",
+      "summary_zh": "批评 AAOI 重复 ATM 增发造成卖压；仍看好 2027 年经营爬坡，但要求改善融资方式与资金需求可见性。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://serenitystock.com/posts/cmufq3vce00010i46ig5lmj6z",
+        "https://aistockmonitor.io/smart-money/aleabitoreddit",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/AAOI"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2103155274274209796",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-24T16:11:06.000Z",
+      "created_at_sgt": "2026-09-25T00:11:06+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2103155274274209796",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2103155274274209796&lang=en&token=x",
+      "primary_topic": "光通信产能与融资",
+      "cpu_scope": "无",
+      "summary_zh": "追问 AAOI ATM 循环何时结束和总融资额，支持扩产但希望明确 LTA、私募、ATM 的组合。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2103156967053394241",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-24T16:17:50.000Z",
+      "created_at_sgt": "2026-09-25T00:17:50+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2103156967053394241",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2103156967053394241&lang=en&token=x",
+      "primary_topic": "光通信产能与融资",
+      "cpu_scope": "无",
+      "summary_zh": "以 LITE/COHR 融资对照 AAOI；预期 AAOI 2027 上半年爬坡后更多靠经营现金流支持，当前争议集中在建设期融资。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/AAOI"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2103161145934963178",
+      "author": "aleabitoreddit",
+      "kind": "主帖",
+      "created_at_utc": "2026-09-24T16:34:26.000Z",
+      "created_at_sgt": "2026-09-25T00:34:26+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2103161145934963178",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2103161145934963178&lang=en&token=x",
+      "primary_topic": "市场与投资方法",
+      "cpu_scope": "无",
+      "summary_zh": "转述美伊讨论分阶段重开霍尔木兹的报道，解释 SPY/QQQ 的即时波动及中期选举动机。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2103232350348001701",
+      "author": "aleabitoreddit",
+      "kind": "主帖",
+      "created_at_utc": "2026-09-24T21:17:23.000Z",
+      "created_at_sgt": "2026-09-25T05:17:23+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2103232350348001701",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2103232350348001701&lang=en&token=x",
+      "primary_topic": "CPU需求",
+      "cpu_scope": "核心",
+      "summary_zh": "讨论 Akamai–Anthropic 116 亿美元、7 年 CPU 算力合同；列出约 55 亿美元 capex、2026 年新增 17 亿美元预采购，并点名 AMD/MU。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://serenitystock.com/posts/cmug2w4yi00010id5y50epe33",
+        "https://aistockmonitor.io/smart-money/aleabitoreddit",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/AMD"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2103233602721132744",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-24T21:22:21.000Z",
+      "created_at_sgt": "2026-09-25T05:22:21+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2103233602721132744",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2103233602721132744&lang=en&token=x",
+      "primary_topic": "CPU需求",
+      "cpu_scope": "核心",
+      "summary_zh": "回应当时是否持有 AKAM 的提问时答否，将受益环节指向 ARM/INTC/AMD 和 Samsung/MU/SK Hynix；认为 AMD 对该客户更敏感。JBL 采购链判断由镜像后半段补充。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/AMD"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false,
+      "conversation_context_support": {
+        "source": "official.parent in serenity-updates-2026-10-02-official.json",
+        "parent_id": "2103232741680795719",
+        "parent_author": "blkslymn",
+        "parent_url": "https://x.com/blkslymn/status/2103232741680795719",
+        "interpretation_zh": "官方响应内的父帖明确询问是否持有 AKAM；答否仅描述 2026-09-24 21:22 UTC 当时的自述，不代表目前持仓。"
+      }
+    },
+    {
+      "id": "2103237386054570314",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-24T21:37:23.000Z",
+      "created_at_sgt": "2026-09-25T05:37:23+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2103237386054570314",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2103237386054570314&lang=en&token=x",
+      "primary_topic": "CPU需求",
+      "cpu_scope": "核心",
+      "summary_zh": "认为兑现 Akamai 合同需要大量 CPU 和存储，因此上游组件供应链可能是更大的受益者。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2103350532777943281",
+      "author": "aleabitoreddit",
+      "kind": "主帖",
+      "created_at_utc": "2026-09-25T05:07:00.000Z",
+      "created_at_sgt": "2026-09-25T13:07:00+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2103350532777943281",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2103350532777943281&lang=en&token=x",
+      "primary_topic": "个人与社区",
+      "cpu_scope": "无",
+      "summary_zh": "中秋问候，感叹百万粉丝的规模。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2103353556724293650",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-25T05:19:00.000Z",
+      "created_at_sgt": "2026-09-25T13:19:00+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2103353556724293650",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2103353556724293650&lang=en&token=x",
+      "primary_topic": "个人与社区",
+      "cpu_scope": "无",
+      "summary_zh": "用旧金山人口对比粉丝数量，表达面对规模增长的感受。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2103490181525631382",
+      "author": "aleabitoreddit",
+      "kind": "主帖",
+      "created_at_utc": "2026-09-25T14:21:54.000Z",
+      "created_at_sgt": "2026-09-25T22:21:54+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2103490181525631382",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2103490181525631382&lang=en&token=x",
+      "primary_topic": "市场与投资方法",
+      "cpu_scope": "无",
+      "summary_zh": "用三明治涨价讨论长期通胀，认为股票/SPY 有助于跟上生活成本。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/SPY"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2104698369591706069",
+      "author": "aleabitoreddit",
+      "kind": "主帖",
+      "created_at_utc": "2026-09-28T22:22:49.000Z",
+      "created_at_sgt": "2026-09-29T06:22:49+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2104698369591706069",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2104698369591706069&lang=en&token=x",
+      "primary_topic": "AI进展、大厂供应链与业绩",
+      "cpu_scope": "无",
+      "summary_zh": "提及 AMD–World Labs 和物理 AI。镜像后半段还讨论 NVIDIA 锁定 LITE 激光产能、回购、Samsung FC-BGA/MRVL 基板瓶颈及 AI 安全发布节奏。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://serenitystock.com/posts/cmulwyymw00010ihgmzsvllyz",
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2104709202891735244",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-28T23:05:52.000Z",
+      "created_at_sgt": "2026-09-29T07:05:52+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2104709202891735244",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2104709202891735244&lang=en&token=x",
+      "primary_topic": "个人与社区",
+      "cpu_scope": "无",
+      "summary_zh": "更新生病情况及行业交流；镜像后半段提到 beamformer 技术的重要性。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2105151002760679706",
+      "author": "aleabitoreddit",
+      "kind": "主帖",
+      "created_at_utc": "2026-09-30T04:21:25.000Z",
+      "created_at_sgt": "2026-09-30T12:21:25+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2105151002760679706",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2105151002760679706&lang=en&token=x",
+      "primary_topic": "AI进展、大厂供应链与业绩",
+      "cpu_scope": "无",
+      "summary_zh": "讨论 Amazon 对金像电的私募投资，以及从 PCB、光互连、激光、代工组装到 ASIC 的供应链股权/认股权布局。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://serenitystock.com/posts/cmunp977l00010ia73b98f7bq",
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2105155546940891140",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-30T04:39:28.000Z",
+      "created_at_sgt": "2026-09-30T12:39:28+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2105155546940891140",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2105155546940891140&lang=en&token=x",
+      "primary_topic": "个人与社区",
+      "cpu_scope": "无",
+      "summary_zh": "更新生病情况，提及试用一个 US Gov LLM。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2105377657043206492",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-30T19:22:04.000Z",
+      "created_at_sgt": "2026-10-01T03:22:04+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2105377657043206492",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2105377657043206492&lang=en&token=x",
+      "primary_topic": "AI进展、大厂供应链与业绩",
+      "cpu_scope": "无",
+      "summary_zh": "认为 JBL 财报表现好；若自己与市场反应判断不同，可能存在研究机会。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/JBL"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2105397070681248021",
+      "author": "aleabitoreddit",
+      "kind": "主帖",
+      "created_at_utc": "2026-09-30T20:39:12.000Z",
+      "created_at_sgt": "2026-10-01T04:39:12+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2105397070681248021",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2105397070681248021&lang=en&token=x",
+      "primary_topic": "AI进展、大厂供应链与业绩",
+      "cpu_scope": "无",
+      "summary_zh": "讨论 Gemini 4 Argon 与其他前沿模型的基准表现；表示稍后会评论 MU/JBL 财报。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://serenitystock.com/posts/cmuonjag000010ibofx338jjy",
+        "https://aistockmonitor.io/smart-money/aleabitoreddit",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/GOOGL"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2105421038922481986",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-30T22:14:27.000Z",
+      "created_at_sgt": "2026-10-01T06:14:27+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2105421038922481986",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2105421038922481986&lang=en&token=x",
+      "primary_topic": "个人与社区",
+      "cpu_scope": "无",
+      "summary_zh": "用日文回复健康关心并感谢支持。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2105425820529635503",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-09-30T22:33:27.000Z",
+      "created_at_sgt": "2026-10-01T06:33:27+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2105425820529635503",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2105425820529635503&lang=en&token=x",
+      "primary_topic": "个人与社区",
+      "cpu_scope": "无",
+      "summary_zh": "回应多伦多家庭邀请，谈到偶尔前往当地音乐节。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2105709782854435274",
+      "author": "aleabitoreddit",
+      "kind": "主帖",
+      "created_at_utc": "2026-10-01T17:21:49.000Z",
+      "created_at_sgt": "2026-10-02T01:21:49+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2105709782854435274",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2105709782854435274&lang=en&token=x",
+      "primary_topic": "光通信产能与融资",
+      "cpu_scope": "无",
+      "summary_zh": "讨论潜在 FCC 规则可能从中国制造 3.2T 光模块开始；镜像全文延伸到美国 BOM 比例、激光定价、InP、SMTC/MXL/SIVE 等供应商。",
+      "summary_evidence": "official_identity_date_excerpt_plus_mirror_tail",
+      "discovery_sources": [
+        "https://serenitystock.com/posts/cmupuf98500010i84y5twh6we",
+        "https://twstalker.com/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2105711409271292255",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-10-01T17:28:16.000Z",
+      "created_at_sgt": "2026-10-02T01:28:16+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2105711409271292255",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2105711409271292255&lang=en&token=x",
+      "primary_topic": "光通信产能与融资",
+      "cpu_scope": "无",
+      "summary_zh": "补充 SIVE 美国代工伙伴判断来自对 2024 年披露的排除法，仍属于推断。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://zamantika.com/en/profile/aleabitoreddit"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    },
+    {
+      "id": "2105714014307397969",
+      "author": "aleabitoreddit",
+      "kind": "回复",
+      "created_at_utc": "2026-10-01T17:38:37.000Z",
+      "created_at_sgt": "2026-10-02T01:38:37+08:00",
+      "original_url": "https://x.com/aleabitoreddit/status/2105714014307397969",
+      "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2105714014307397969&lang=en&token=x",
+      "primary_topic": "机器人",
+      "cpu_scope": "无",
+      "summary_zh": "表示 Agility Robotics 尚未上市，等待本季度 CCXI 的上市公告。",
+      "summary_evidence": "official_excerpt",
+      "discovery_sources": [
+        "https://aistockmonitor.io/smart-money/aleabitoreddit",
+        "https://aistockmonitor.io/api/smart-money/aleabitoreddit/ticker/CCXI"
+      ],
+      "local_id_duplicate": false,
+      "quoted_content_counted_as_author": false
+    }
+  ]
+}

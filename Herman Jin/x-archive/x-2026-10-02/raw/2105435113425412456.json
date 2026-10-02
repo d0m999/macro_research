@@ -1,0 +1,209 @@
+{
+  "captured_at": "2026-10-02T05:49:17.699914+00:00",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2105435113425412456&lang=en&token=x",
+  "http_status": 200,
+  "response_sha256": "b41faea32ee4475fa455c815e6f2d836c2b4c6a6e43e4da290e3463427a89db5",
+  "tweet": {
+    "__typename": "Tweet",
+    "favorite_count": 66,
+    "lang": "en",
+    "created_at": "2026-09-30T23:10:22.000Z",
+    "display_text_range": [
+      0,
+      155
+    ],
+    "entities": {},
+    "id_str": "2105435113425412456",
+    "text": "Compute is the true entry ticket for models\n\nThe game is simply: you either build up the computing power to train, or find a good “teacher” to distill from",
+    "user": {
+      "id_str": "858124064476479488",
+      "name": "Herman Jin",
+      "screen_name": "ShanghaoJin",
+      "is_blue_verified": true,
+      "profile_image_shape": "Circle",
+      "verified": false,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg"
+    },
+    "edit_control": {
+      "edit_tweet_ids": [
+        "2105435113425412456"
+      ],
+      "editable_until_msecs": "1790813422000",
+      "edits_remaining": "5",
+      "is_edit_eligible": true
+    },
+    "conversation_count": 3,
+    "news_action_type": "conversation",
+    "quoted_tweet": {
+      "favorite_count": 6482,
+      "in_reply_to_screen_name": "Google",
+      "in_reply_to_status_id_str": "2105388143902175529",
+      "in_reply_to_user_id_str": "20536157",
+      "lang": "en",
+      "possibly_sensitive": false,
+      "reply_count": 200,
+      "retweet_count": 531,
+      "created_at": "2026-09-30T20:03:45.000Z",
+      "display_text_range": [
+        0,
+        197
+      ],
+      "entities": {
+        "media": [
+          {
+            "display_url": "pic.x.com/wQzNpp7Dx4",
+            "expanded_url": "https://x.com/Google/status/2105388146665890056/photo/1",
+            "indices": [
+              198,
+              221
+            ],
+            "url": "https://t.co/wQzNpp7Dx4"
+          }
+        ]
+      },
+      "id_str": "2105388146665890056",
+      "text": "Gemini 4 Argon is our next era of frontier intelligence.\n\nIt shows significant improvements across benchmarks, setting a new state of the art for real-world long-horizon software engineering tasks. https://t.co/wQzNpp7Dx4",
+      "user": {
+        "id_str": "20536157",
+        "name": "Google",
+        "screen_name": "Google",
+        "is_blue_verified": true,
+        "profile_image_shape": "Square",
+        "verified": false,
+        "verified_type": "Business",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/2042749771337564160/AgOFPEL3_normal.jpg"
+      },
+      "edit_control": {
+        "edit_tweet_ids": [
+          "2105388146665890056"
+        ],
+        "editable_until_msecs": "1790802225000",
+        "edits_remaining": "5",
+        "is_edit_eligible": false
+      },
+      "mediaDetails": [
+        {
+          "display_url": "pic.x.com/wQzNpp7Dx4",
+          "expanded_url": "https://x.com/Google/status/2105388146665890056/photo/1",
+          "ext_media_availability": {
+            "status": "Available"
+          },
+          "indices": [
+            198,
+            221
+          ],
+          "media_url_https": "https://pbs.twimg.com/media/HTfViXzWcAAi4IL.png",
+          "original_info": {
+            "focus_rects": [
+              {
+                "h": 551,
+                "w": 984,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "h": 984,
+                "w": 984,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "h": 987,
+                "w": 866,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "h": 987,
+                "w": 494,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "h": 987,
+                "w": 984,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "height": 987,
+            "width": 984
+          },
+          "sizes": {
+            "large": {
+              "h": 987,
+              "resize": "fit",
+              "w": 984
+            },
+            "medium": {
+              "h": 987,
+              "resize": "fit",
+              "w": 984
+            },
+            "small": {
+              "h": 680,
+              "resize": "fit",
+              "w": 678
+            },
+            "thumb": {
+              "h": 150,
+              "resize": "crop",
+              "w": 150
+            }
+          },
+          "type": "photo",
+          "url": "https://t.co/wQzNpp7Dx4"
+        }
+      ],
+      "photos": [
+        {
+          "backgroundColor": {
+            "red": 204,
+            "green": 214,
+            "blue": 221
+          },
+          "cropCandidates": [
+            {
+              "h": 551,
+              "w": 984,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "h": 984,
+              "w": 984,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "h": 987,
+              "w": 866,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "h": 987,
+              "w": 494,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "h": 987,
+              "w": 984,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "expandedUrl": "https://x.com/Google/status/2105388146665890056/photo/1",
+          "url": "https://pbs.twimg.com/media/HTfViXzWcAAi4IL.png",
+          "width": 984,
+          "height": 987
+        }
+      ],
+      "isEdited": false,
+      "isStaleEdit": false
+    },
+    "isEdited": false,
+    "isStaleEdit": false
+  }
+}

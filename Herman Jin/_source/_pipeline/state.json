@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "pipeline": "herman-jin-video-archive",
-  "observed_on": "2026-09-16",
+  "observed_on": "2026-10-02",
   "scope": {
     "start_date": "2025-01-01",
-    "end_date": "2026-09-15",
+    "end_date": "2026-09-29",
     "source_channel": {
       "name": "Shanghao Jin",
       "handle": "@shanghaojin",
@@ -58,8 +58,8 @@
     }
   },
   "status_counts": {
-    "complete": 56,
-    "complete_existing": 3
+    "complete_existing": 3,
+    "complete": 57
   },
   "entries": {
     "TQ3G5Jf-yNM": {
@@ -979,10 +979,24 @@
       "transcript_count": 836,
       "deck_count": 17,
       "completed_on": "2026-09-16"
+    },
+    "Ca6l5KCuGoc": {
+      "package_id": "market-overview-2026-09-29",
+      "upload_date": "2026-09-29",
+      "status": "complete",
+      "last_transition": "2026-10-02",
+      "attempts": 1,
+      "model": "faster-whisper-small",
+      "audio_format": "m4a",
+      "download_format": "18",
+      "actual_resolution": "640x360",
+      "transcript_count": 687,
+      "deck_count": 14,
+      "completed_on": "2026-10-02"
     }
   },
   "agent_index_policy": "only_accepted_complete_packages",
-  "next_action": "队列已清空。09-01（1038 段/19 图）与 09-15（836 段/17 图）均已发布并入索引，全库 59 个包。本轮为 09-16 补录，磁盘/内存闸门曾临时放宽（DISK_GATE 25->22->21 后复原、MEMORY_GATE 35->28 后复原），硬保护 DISK_ABORT=20 / MEMORY_ABORT=20 全程未动。",
+  "next_action": "当前登记的 60 个视频包已完成；本次新增 2026-09-29：687 段转录、14 个去重研究画面及 OCR。X 增量完整性单独见 X manifest，不代表完整账号时间线。",
   "pipeline_state": "complete",
   "checkpoint": {
     "recorded_on": "2026-08-29",
@@ -1098,5 +1112,11 @@
       "stages_may_overlap": false
     }
   },
-  "updated_on": "2026-09-16"
+  "updated_on": "2026-10-02",
+  "last_incremental_import": {
+    "recorded_on": "2026-10-02",
+    "video_id": "Ca6l5KCuGoc",
+    "validation": "_source/market-overview-2026-09-29/diagnostics/validation.json",
+    "note": "登记数量按实际 entries 重算；保留既有 resource_gate 和历史 checkpoint。"
+  }
 }

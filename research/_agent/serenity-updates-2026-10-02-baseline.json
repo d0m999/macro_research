@@ -1,0 +1,476 @@
+{
+  "posts": {
+    "count": 1794,
+    "max_id_local_record": {
+      "id": "post-001794",
+      "post_id": "2101906175046635887",
+      "created_at": "2026-09-21T05:27:38.000Z",
+      "text": "The main duo $SKHY and Samsung are having a fun day. I'm still long memory (eg. $EWY / $DRAM ) since if capacity agreements extend 3-5 years... and your analysts model 2.8-3.3x 2027E. Risk/reward is attractive over time. But I think legacy memory a very interesting trade",
+      "lang": "en",
+      "links": [],
+      "thread_id": "T-5046635887",
+      "source": "x-web-capture"
+    },
+    "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2101906175046635887&lang=en&token=x",
+    "official_response": {
+      "__typename": "Tweet",
+      "favorite_count": 1040,
+      "lang": "en",
+      "possibly_sensitive": false,
+      "created_at": "2026-09-21T05:27:38.000Z",
+      "display_text_range": [
+        0,
+        275
+      ],
+      "entities": {
+        "media": [
+          {
+            "display_url": "pic.x.com/SG50lI3Lv2",
+            "expanded_url": "https://x.com/aleabitoreddit/status/2101906175046635887/photo/1",
+            "indices": [
+              276,
+              299
+            ],
+            "url": "https://t.co/SG50lI3Lv2"
+          }
+        ],
+        "symbols": [
+          {
+            "indices": [
+              13,
+              18
+            ],
+            "text": "SKHY"
+          },
+          {
+            "indices": [
+              82,
+              86
+            ],
+            "text": "EWY"
+          },
+          {
+            "indices": [
+              89,
+              94
+            ],
+            "text": "DRAM"
+          }
+        ]
+      },
+      "id_str": "2101906175046635887",
+      "text": "The main duo $SKHY and Samsung are having a fun day. \n\nI'm still long memory (eg. $EWY / $DRAM ) since if capacity agreements extend 3-5 years... and your analysts model 2.8-3.3x 2027E. Risk/reward is attractive over time. \n\nBut I think legacy memory a very interesting trade https://t.co/SG50lI3Lv2",
+      "user": {
+        "id_str": "1940360837547565056",
+        "name": "Serenity",
+        "screen_name": "aleabitoreddit",
+        "is_blue_verified": true,
+        "profile_image_shape": "Circle",
+        "verified": false,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1996176688414367744/LXfA_lIx_normal.jpg",
+        "highlighted_label": {
+          "badge": {
+            "url": "https://pbs.twimg.com/profile_images/2071341570792779776/x6ION4vt_bigger.jpg"
+          },
+          "description": "Serenity Research",
+          "url": {
+            "url": "https://twitter.com/SerenityRSH",
+            "url_type": "DeepLink"
+          },
+          "user_label_display_type": "Badge",
+          "user_label_type": "BusinessLabel"
+        }
+      },
+      "edit_control": {
+        "edit_tweet_ids": [
+          "2101906175046635887"
+        ],
+        "editable_until_msecs": "1789972058000",
+        "edits_remaining": "5",
+        "is_edit_eligible": true
+      },
+      "mediaDetails": [
+        {
+          "display_url": "pic.x.com/SG50lI3Lv2",
+          "expanded_url": "https://x.com/aleabitoreddit/status/2101906175046635887/photo/1",
+          "ext_media_availability": {
+            "status": "Available"
+          },
+          "indices": [
+            276,
+            299
+          ],
+          "media_url_https": "https://pbs.twimg.com/media/HSt1Pc6akAAlAfD.jpg",
+          "original_info": {
+            "focus_rects": [
+              {
+                "h": 547,
+                "w": 976,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "h": 960,
+                "w": 960,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "h": 960,
+                "w": 842,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "h": 960,
+                "w": 480,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "h": 960,
+                "w": 976,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "height": 960,
+            "width": 976
+          },
+          "sizes": {
+            "large": {
+              "h": 960,
+              "resize": "fit",
+              "w": 976
+            },
+            "medium": {
+              "h": 960,
+              "resize": "fit",
+              "w": 976
+            },
+            "small": {
+              "h": 669,
+              "resize": "fit",
+              "w": 680
+            },
+            "thumb": {
+              "h": 150,
+              "resize": "crop",
+              "w": 150
+            }
+          },
+          "type": "photo",
+          "url": "https://t.co/SG50lI3Lv2"
+        },
+        {
+          "display_url": "pic.x.com/SG50lI3Lv2",
+          "expanded_url": "https://x.com/aleabitoreddit/status/2101906175046635887/photo/1",
+          "ext_media_availability": {
+            "status": "Available"
+          },
+          "indices": [
+            276,
+            299
+          ],
+          "media_url_https": "https://pbs.twimg.com/media/HSt1QGQaIAAhOnA.jpg",
+          "original_info": {
+            "focus_rects": [
+              {
+                "h": 763,
+                "w": 1362,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "h": 1042,
+                "w": 1042,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "h": 1042,
+                "w": 914,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "h": 1042,
+                "w": 521,
+                "x": 114,
+                "y": 0
+              },
+              {
+                "h": 1042,
+                "w": 1362,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "height": 1042,
+            "width": 1362
+          },
+          "sizes": {
+            "large": {
+              "h": 1042,
+              "resize": "fit",
+              "w": 1362
+            },
+            "medium": {
+              "h": 918,
+              "resize": "fit",
+              "w": 1200
+            },
+            "small": {
+              "h": 520,
+              "resize": "fit",
+              "w": 680
+            },
+            "thumb": {
+              "h": 150,
+              "resize": "crop",
+              "w": 150
+            }
+          },
+          "type": "photo",
+          "url": "https://t.co/SG50lI3Lv2"
+        }
+      ],
+      "photos": [
+        {
+          "backgroundColor": {
+            "red": 204,
+            "green": 214,
+            "blue": 221
+          },
+          "cropCandidates": [
+            {
+              "h": 547,
+              "w": 976,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "h": 960,
+              "w": 960,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "h": 960,
+              "w": 842,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "h": 960,
+              "w": 480,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "h": 960,
+              "w": 976,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "expandedUrl": "https://x.com/aleabitoreddit/status/2101906175046635887/photo/1",
+          "url": "https://pbs.twimg.com/media/HSt1Pc6akAAlAfD.jpg",
+          "width": 976,
+          "height": 960
+        },
+        {
+          "backgroundColor": {
+            "red": 204,
+            "green": 214,
+            "blue": 221
+          },
+          "cropCandidates": [
+            {
+              "h": 763,
+              "w": 1362,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "h": 1042,
+              "w": 1042,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "h": 1042,
+              "w": 914,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "h": 1042,
+              "w": 521,
+              "x": 114,
+              "y": 0
+            },
+            {
+              "h": 1042,
+              "w": 1362,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "expandedUrl": "https://x.com/aleabitoreddit/status/2101906175046635887/photo/1",
+          "url": "https://pbs.twimg.com/media/HSt1QGQaIAAhOnA.jpg",
+          "width": 1362,
+          "height": 1042
+        }
+      ],
+      "conversation_count": 93,
+      "news_action_type": "conversation",
+      "isEdited": false,
+      "isStaleEdit": false,
+      "note_tweet": {
+        "id": "Tm90ZVR3ZWV0UmVzdWx0czoyMTAxOTA2MTc0OTUwMTIxNDcz"
+      }
+    }
+  },
+  "replies": {
+    "count": 5061,
+    "max_id_local_record": {
+      "id": "reply-005067",
+      "reply_id": "2101909316957872324",
+      "in_reply_to_post_id": null,
+      "in_reply_to_user": "@DanilSer33",
+      "is_self_thread": false,
+      "root_in_pkg": false,
+      "created_at": "2026-09-21T05:40:07.000Z",
+      "text": "I personally think $ESMT should be a lot higher since July net income was absurd (~$111M, <2 annualized July RR). Growing revenue ~16.5% M/M is also absurd from July -> August. And I did track their products, which has high sensitivity to hikes... (which are heavily expected",
+      "lang": "en",
+      "links": [],
+      "thread_id": "T-6957872324",
+      "media_count": 0,
+      "source": "x-web-capture",
+      "thread_id_is_self_root": true
+    },
+    "official_endpoint": "https://cdn.syndication.twimg.com/tweet-result?id=2101909316957872324&lang=en&token=x",
+    "official_response": {
+      "__typename": "Tweet",
+      "favorite_count": 59,
+      "in_reply_to_screen_name": "DanilSer33",
+      "in_reply_to_status_id_str": "2101906593315278913",
+      "in_reply_to_user_id_str": "1470256998163886082",
+      "lang": "en",
+      "created_at": "2026-09-21T05:40:07.000Z",
+      "display_text_range": [
+        12,
+        295
+      ],
+      "entities": {
+        "symbols": [
+          {
+            "indices": [
+              31,
+              36
+            ],
+            "text": "ESMT"
+          }
+        ],
+        "user_mentions": [
+          {
+            "id_str": "1470256998163886082",
+            "indices": [
+              0,
+              11
+            ],
+            "name": "Danil Sereda",
+            "screen_name": "DanilSer33"
+          }
+        ]
+      },
+      "id_str": "2101909316957872324",
+      "text": "@DanilSer33 I personally think $ESMT should be a lot higher since July net income was absurd (~$111M, &lt;2 annualized July RR). Growing revenue ~16.5% M/M is also absurd from July -&gt; August. \n\nAnd I did track their products, which has high sensitivity to hikes... (which are heavily expected",
+      "user": {
+        "id_str": "1940360837547565056",
+        "name": "Serenity",
+        "screen_name": "aleabitoreddit",
+        "is_blue_verified": true,
+        "profile_image_shape": "Circle",
+        "verified": false,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1996176688414367744/LXfA_lIx_normal.jpg",
+        "highlighted_label": {
+          "badge": {
+            "url": "https://pbs.twimg.com/profile_images/2071341570792779776/x6ION4vt_bigger.jpg"
+          },
+          "description": "Serenity Research",
+          "url": {
+            "url": "https://twitter.com/SerenityRSH",
+            "url_type": "DeepLink"
+          },
+          "user_label_display_type": "Badge",
+          "user_label_type": "BusinessLabel"
+        }
+      },
+      "edit_control": {
+        "edit_tweet_ids": [
+          "2101909316957872324"
+        ],
+        "editable_until_msecs": "1789972807000",
+        "edits_remaining": "5",
+        "is_edit_eligible": false
+      },
+      "conversation_count": 5,
+      "news_action_type": "conversation",
+      "parent": {
+        "favorite_count": 6,
+        "in_reply_to_screen_name": "aleabitoreddit",
+        "in_reply_to_status_id_str": "2101906175046635887",
+        "in_reply_to_user_id_str": "1940360837547565056",
+        "lang": "en",
+        "reply_count": 3,
+        "retweet_count": 0,
+        "created_at": "2026-09-21T05:29:18.000Z",
+        "display_text_range": [
+          16,
+          107
+        ],
+        "entities": {
+          "user_mentions": [
+            {
+              "id_str": "1940360837547565056",
+              "indices": [
+                0,
+                15
+              ],
+              "name": "Serenity",
+              "screen_name": "aleabitoreddit"
+            }
+          ]
+        },
+        "id_str": "2101906593315278913",
+        "text": "@aleabitoreddit ESMT doesn’t react the same way today. Interesting to hear your thoughts why that may be so",
+        "user": {
+          "id_str": "1470256998163886082",
+          "name": "Danil Sereda",
+          "screen_name": "DanilSer33",
+          "is_blue_verified": true,
+          "profile_image_shape": "Circle",
+          "verified": false,
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1645747976206266371/B7uSMLT8_normal.jpg"
+        },
+        "edit_control": {
+          "edit_tweet_ids": [
+            "2101906593315278913"
+          ],
+          "editable_until_msecs": "1789972158000",
+          "edits_remaining": "5",
+          "is_edit_eligible": false
+        },
+        "isEdited": false,
+        "isStaleEdit": false
+      },
+      "isEdited": false,
+      "isStaleEdit": false,
+      "note_tweet": {
+        "id": "Tm90ZVR3ZWV0UmVzdWx0czoyMTAxOTA5MzE2OTA3NDc5MDQw"
+      }
+    }
+  }
+}

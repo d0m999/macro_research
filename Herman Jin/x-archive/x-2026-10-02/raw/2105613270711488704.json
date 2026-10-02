@@ -1,0 +1,40 @@
+{
+  "captured_at": "2026-10-02T05:49:18.395700+00:00",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2105613270711488704&lang=en&token=x",
+  "http_status": 200,
+  "response_sha256": "2a890a3d8a803814902c9d9c2a451408a21d7fd6cf59ccdfd4398cda48808649",
+  "tweet": {
+    "__typename": "Tweet",
+    "favorite_count": 57,
+    "lang": "zh",
+    "created_at": "2026-10-01T10:58:18.000Z",
+    "display_text_range": [
+      0,
+      105
+    ],
+    "entities": {},
+    "id_str": "2105613270711488704",
+    "text": "非常正确的看法\n\n本来存储没优化是因为便宜，现在变那么贵，大家全在优化你\n\n而且AI需要token效率提升、成本下降，所以要站在token deflation一边，尽量不要站在token inflation那边",
+    "user": {
+      "id_str": "858124064476479488",
+      "name": "Herman Jin",
+      "screen_name": "ShanghaoJin",
+      "is_blue_verified": true,
+      "profile_image_shape": "Circle",
+      "verified": false,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg"
+    },
+    "edit_control": {
+      "edit_tweet_ids": [
+        "2105613270711488704"
+      ],
+      "editable_until_msecs": "1790855898000",
+      "edits_remaining": "5",
+      "is_edit_eligible": true
+    },
+    "conversation_count": 3,
+    "news_action_type": "conversation",
+    "isEdited": false,
+    "isStaleEdit": false
+  }
+}

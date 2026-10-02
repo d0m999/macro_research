@@ -1,0 +1,103 @@
+{
+  "captured_at": "2026-10-02T05:49:17.034141+00:00",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2105229354141929789&lang=en&token=x",
+  "http_status": 200,
+  "response_sha256": "7c496e80e5883a85bcde947731aee033a9838506f84ea07723c0a8deb076edc4",
+  "tweet": {
+    "__typename": "Tweet",
+    "favorite_count": 63,
+    "in_reply_to_screen_name": "Strideracc",
+    "in_reply_to_status_id_str": "2105205442410602571",
+    "in_reply_to_user_id_str": "277927326",
+    "lang": "zh",
+    "created_at": "2026-09-30T09:32:45.000Z",
+    "display_text_range": [
+      12,
+      175
+    ],
+    "entities": {
+      "user_mentions": [
+        {
+          "id_str": "277927326",
+          "indices": [
+            0,
+            11
+          ],
+          "name": "Strider/acc",
+          "screen_name": "Strideracc"
+        }
+      ]
+    },
+    "id_str": "2105229354141929789",
+    "text": "@Strideracc 模仿效果远远不及\n\n1. 要把热榜的小说让模型标注下（标记可能还得人来打）\n\n2. 你要把霸榜小说章节拿出来先喂给teacher（包括章节阅读）\n\n3. 给生成一个章节大要让模型（给rag）不停生成章节，然后用teacher去打分\n\n4. 把打分数据记录下来，然后把记录的数据train进小模型\n\n5. 用小模型写，会被惊艳到",
+    "user": {
+      "id_str": "858124064476479488",
+      "name": "Herman Jin",
+      "screen_name": "ShanghaoJin",
+      "is_blue_verified": true,
+      "profile_image_shape": "Circle",
+      "verified": false,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg"
+    },
+    "edit_control": {
+      "edit_tweet_ids": [
+        "2105229354141929789"
+      ],
+      "editable_until_msecs": "1790764365000",
+      "edits_remaining": "5",
+      "is_edit_eligible": false
+    },
+    "conversation_count": 5,
+    "news_action_type": "conversation",
+    "parent": {
+      "favorite_count": 0,
+      "in_reply_to_screen_name": "ShanghaoJin",
+      "in_reply_to_status_id_str": "2105111597714898986",
+      "in_reply_to_user_id_str": "858124064476479488",
+      "lang": "zh",
+      "reply_count": 1,
+      "retweet_count": 0,
+      "created_at": "2026-09-30T07:57:44.000Z",
+      "display_text_range": [
+        13,
+        71
+      ],
+      "entities": {
+        "user_mentions": [
+          {
+            "id_str": "858124064476479488",
+            "indices": [
+              0,
+              12
+            ],
+            "name": "Herman Jin",
+            "screen_name": "ShanghaoJin"
+          }
+        ]
+      },
+      "id_str": "2105205442410602571",
+      "text": "@ShanghaoJin 真的是，一直有让模型写同人的需求，还没尝试过自己调教，但是目前体验下最好的就是让frontier model模型仿写",
+      "user": {
+        "id_str": "277927326",
+        "name": "Strider/acc",
+        "screen_name": "Strideracc",
+        "is_blue_verified": true,
+        "profile_image_shape": "Circle",
+        "verified": false,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1704815179551383552/AQRkTjDC_normal.jpg"
+      },
+      "edit_control": {
+        "edit_tweet_ids": [
+          "2105205442410602571"
+        ],
+        "editable_until_msecs": "1790758664000",
+        "edits_remaining": "5",
+        "is_edit_eligible": false
+      },
+      "isEdited": false,
+      "isStaleEdit": false
+    },
+    "isEdited": false,
+    "isStaleEdit": false
+  }
+}

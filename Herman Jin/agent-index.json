@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "package_type": "video-research-agent-index",
-  "description": "Herman Jin 市场概述视频的 agent 数据入口。优先读取各 package 的 manifest.json，再按需读取 transcript.jsonl、deck.jsonl 和 slides/*.png。",
+  "description": "Herman Jin 市场概述视频与 X 语料的 agent 数据入口。优先读各 package 的 manifest.json，再读对应转录、帖子、回复或 Deck；X 日期包可能为累计快照，跨包使用原帖 ID 去重。",
   "conventions": {
     "video_directory_template": "market-overview/market-overview-YYYY-MM-DD/",
     "agent_files": [
@@ -19,6 +19,32 @@
     "x_directory_template": "x-archive/x-YYYY-MM-DD/"
   },
   "packages": [
+    {
+      "id": "x-2026-10-02",
+      "title": "Herman Jin X：09-25 基线及截至 10-02 的已核验增量",
+      "date": "2026-10-02",
+      "package_type": "x-archive",
+      "manifest": "x-archive/x-2026-10-02/manifest.json",
+      "readable": null,
+      "source": "x-archive/x-2026-10-02/raw/"
+    },
+    {
+      "id": "market-overview-2026-09-29",
+      "title": "市场概述2026年9月29日",
+      "date": "2026-09-29",
+      "manifest": "market-overview/market-overview-2026-09-29/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-09-29/"
+    },
+    {
+      "id": "x-2026-09-25",
+      "title": "Herman Jin X（@ShanghaoJin）2026 年 1–9 月全量归档（含 09-19→09-25 增量）",
+      "date": "2026-09-25",
+      "package_type": "x-archive",
+      "manifest": "x-archive/x-2026-09-25/manifest.json",
+      "readable": null,
+      "source": "x-archive/x-2026-09-25/raw/"
+    },
     {
       "id": "x-2026-09-19",
       "title": "Herman Jin X（@ShanghaoJin）2026 年 1–9 月全量归档",
@@ -501,5 +527,5 @@
       "source": "_source/market-overview-2025-01-07/"
     }
   ],
-  "generated_on": "2026-09-16"
+  "generated_on": "2026-10-02"
 }

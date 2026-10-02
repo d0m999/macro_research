@@ -1,0 +1,97 @@
+{
+  "captured_at": "2026-10-02T05:49:25.215763+00:00",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2103484885013086227&lang=en&token=x",
+  "http_status": 200,
+  "response_sha256": "df849f07668f74eaf1dfb67ca39f07bb753856ed778f8ad441738e68ba02d1b1",
+  "tweet": {
+    "__typename": "Tweet",
+    "favorite_count": 176,
+    "lang": "zh",
+    "created_at": "2026-09-25T14:00:52.000Z",
+    "display_text_range": [
+      0,
+      34
+    ],
+    "entities": {},
+    "id_str": "2103484885013086227",
+    "text": "很简单，想想GPU比例开始提高时候的NV\n\n不要觉得夸张，只会更夸张",
+    "user": {
+      "id_str": "858124064476479488",
+      "name": "Herman Jin",
+      "screen_name": "ShanghaoJin",
+      "is_blue_verified": true,
+      "profile_image_shape": "Circle",
+      "verified": false,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg"
+    },
+    "edit_control": {
+      "edit_tweet_ids": [
+        "2103484885013086227"
+      ],
+      "editable_until_msecs": "1790348452000",
+      "edits_remaining": "5",
+      "is_edit_eligible": true
+    },
+    "conversation_count": 11,
+    "news_action_type": "conversation",
+    "quoted_tweet": {
+      "favorite_count": 67,
+      "lang": "ja",
+      "reply_count": 11,
+      "retweet_count": 0,
+      "created_at": "2026-09-25T09:42:23.000Z",
+      "display_text_range": [
+        0,
+        73
+      ],
+      "entities": {
+        "symbols": [
+          {
+            "indices": [
+              58,
+              63
+            ],
+            "text": "INTC"
+          },
+          {
+            "indices": [
+              64,
+              68
+            ],
+            "text": "AMD"
+          },
+          {
+            "indices": [
+              69,
+              73
+            ],
+            "text": "ARM"
+          }
+        ]
+      },
+      "id_str": "2103419838110843115",
+      "text": "如果agentic AI帶動GPU : CPU 走到 1 : 1，大家想像下未來幾年cpu的high cagr \n\n$INTC $AMD $ARM",
+      "user": {
+        "id_str": "1639790142658609152",
+        "name": "Ryan Leung 梁興盛, CFA",
+        "screen_name": "RYANHINGSHING",
+        "is_blue_verified": true,
+        "profile_image_shape": "Circle",
+        "verified": false,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1897987922030477312/M-cHXVC8_normal.jpg"
+      },
+      "edit_control": {
+        "edit_tweet_ids": [
+          "2103419838110843115"
+        ],
+        "editable_until_msecs": "1790332943000",
+        "edits_remaining": "5",
+        "is_edit_eligible": true
+      },
+      "isEdited": false,
+      "isStaleEdit": false
+    },
+    "isEdited": false,
+    "isStaleEdit": false
+  }
+}

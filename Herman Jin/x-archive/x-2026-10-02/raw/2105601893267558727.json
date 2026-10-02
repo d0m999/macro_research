@@ -1,0 +1,40 @@
+{
+  "captured_at": "2026-10-02T05:49:18.293518+00:00",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2105601893267558727&lang=en&token=x",
+  "http_status": 200,
+  "response_sha256": "124fc4e1198e686f89f5471c3e6039e4c3b51085f9d2440ed267d8582936a1ed",
+  "tweet": {
+    "__typename": "Tweet",
+    "favorite_count": 297,
+    "lang": "zh",
+    "created_at": "2026-10-01T10:13:06.000Z",
+    "display_text_range": [
+      0,
+      103
+    ],
+    "entities": {},
+    "id_str": "2105601893267558727",
+    "text": "欧洲是两场低烈度、永续战的绝对、最大loser\n\n两场仗都极大影响能源供应，加之欧洲更左、本身不够pro business，导致他在AI竞赛开始直接被甩下车\n\n30年后，希望我们不会以今天看南非的眼光看欧洲",
+    "user": {
+      "id_str": "858124064476479488",
+      "name": "Herman Jin",
+      "screen_name": "ShanghaoJin",
+      "is_blue_verified": true,
+      "profile_image_shape": "Circle",
+      "verified": false,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg"
+    },
+    "edit_control": {
+      "edit_tweet_ids": [
+        "2105601893267558727"
+      ],
+      "editable_until_msecs": "1790853186000",
+      "edits_remaining": "5",
+      "is_edit_eligible": true
+    },
+    "conversation_count": 40,
+    "news_action_type": "conversation",
+    "isEdited": false,
+    "isStaleEdit": false
+  }
+}

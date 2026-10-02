@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-02T06:11:17.873336+00:00",
+  "x": {
+    "herman": {
+      "added": 16,
+      "posts": 1315,
+      "replies": 6500,
+      "preserved_old_records": 7798,
+      "corrected_baseline_ids_in_new_snapshot": [
+        "2103484885013086227"
+      ],
+      "text_completeness": {
+        "official_returned_text": 16
+      }
+    },
+    "serenity": {
+      "added": 39,
+      "posts": 1812,
+      "replies": 5082,
+      "preserved_old_records": 6855,
+      "corrected_baseline_ids_in_new_snapshot": [],
+      "text_completeness": {
+        "mirror_full_text_official_prefix_matched": 25,
+        "official_returned_text": 14
+      }
+    }
+  },
+  "video": {
+    "transcript_count": 687,
+    "deck_count": 14,
+    "raw_segments_preserved": 687,
+    "changed_segments": 101,
+    "unresolved_segments": 41
+  },
+  "video_packages": 61,
+  "video_transcript_lines": 58619,
+  "old_files_hash_verified_unchanged": 1028,
+  "serenity_old_file_bytes_preserved": true,
+  "existing_index_entries_preserved": true,
+  "existing_pipeline_entries_preserved": true,
+  "source_link_and_media_hash_checks": "passed",
+  "asr_all_segment_times_preserved": "passed",
+  "asr_numeric_tokens_preserved": "passed",
+  "coverage": "55 identified X records and one video imported; no full-timeline claim",
+  "entry_points": {
+    "herman_x": "Herman Jin/x-archive/x-2026-10-02/manifest.json",
+    "herman_video": "Herman Jin/market-overview/market-overview-2026-09-29/manifest.json",
+    "serenity": "Serenity/agent-index.json"
+  },
+  "source_quality": "25 long posts use clearly marked mirror full text; official identity/date/prefix verified; video ASR/OCR retain uncertainty",
+  "git_actions_at_validation": "no commit or push",
+  "commit_scope": {
+    "requested_on": "2026-10-02",
+    "new_x_records": 55,
+    "new_video_id": "Ca6l5KCuGoc",
+    "required_untracked_baselines": [
+      "Herman Jin/x-archive/x-2026-09-25/",
+      "Serenity/data/clean/"
+    ],
+    "committed_video_packages": 60,
+    "local_video_packages_at_import_validation": 61,
+    "excluded_preexisting_video_package": "market-overview-2026-05-14",
+    "diagnostic_logs": "kept local; not staged"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "captured_at": "2026-10-02T05:49:18.286303+00:00",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2105638094749995337&lang=en&token=x",
+  "http_status": 200,
+  "response_sha256": "2badb8b6d0c5a7623b44179745b3cd5da87641f59661a21f4beae1c30916a305",
+  "tweet": {
+    "__typename": "Tweet",
+    "favorite_count": 61,
+    "in_reply_to_screen_name": "SupplyRadarX",
+    "in_reply_to_status_id_str": "2105620053865492549",
+    "in_reply_to_user_id_str": "1161551554651910144",
+    "lang": "zh",
+    "created_at": "2026-10-01T12:36:57.000Z",
+    "display_text_range": [
+      14,
+      85
+    ],
+    "entities": {
+      "user_mentions": [
+        {
+          "id_str": "1161551554651910144",
+          "indices": [
+            0,
+            13
+          ],
+          "name": "Sirin｜供应链雷达",
+          "screen_name": "SupplyRadarX"
+        }
+      ]
+    },
+    "id_str": "2105638094749995337",
+    "text": "@SupplyRadarX AI带动的半导体需求是机会也是挑战\n\n稳定需求下无法被超越的产业链也可能被赶超。现在欧洲所有产业链都完全无法扩产\n\n我在想，十年后还会剩下多少",
+    "user": {
+      "id_str": "858124064476479488",
+      "name": "Herman Jin",
+      "screen_name": "ShanghaoJin",
+      "is_blue_verified": true,
+      "profile_image_shape": "Circle",
+      "verified": false,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg"
+    },
+    "edit_control": {
+      "edit_tweet_ids": [
+        "2105638094749995337"
+      ],
+      "editable_until_msecs": "1790861817000",
+      "edits_remaining": "5",
+      "is_edit_eligible": false
+    },
+    "conversation_count": 6,
+    "news_action_type": "conversation",
+    "parent": {
+      "favorite_count": 32,
+      "in_reply_to_screen_name": "ShanghaoJin",
+      "in_reply_to_status_id_str": "2105601893267558727",
+      "in_reply_to_user_id_str": "858124064476479488",
+      "lang": "zh",
+      "reply_count": 1,
+      "retweet_count": 0,
+      "created_at": "2026-10-01T11:25:16.000Z",
+      "display_text_range": [
+        13,
+        136
+      ],
+      "entities": {
+        "user_mentions": [
+          {
+            "id_str": "858124064476479488",
+            "indices": [
+              0,
+              12
+            ],
+            "name": "Herman Jin",
+            "screen_name": "ShanghaoJin"
+          }
+        ]
+      },
+      "id_str": "2105620053865492549",
+      "text": "@ShanghaoJin 让我想到当年的西班牙。工业化慢了一步，后面花了很长时间追赶。\n欧洲现在最怕的，不只是能源贵，而是能源成本高企的同时，又错过 AI 这轮生产力革命。\n能源可以重新找，产业链和人才一旦迁走，再回来就难了。\n所以 AI 这东西，不管喜不喜欢都得拥抱😂",
+      "user": {
+        "id_str": "1161551554651910144",
+        "name": "Sirin｜供应链雷达",
+        "screen_name": "SupplyRadarX",
+        "is_blue_verified": true,
+        "profile_image_shape": "Circle",
+        "verified": false,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/2104153980670734336/EouKDaJv_normal.jpg"
+      },
+      "edit_control": {
+        "edit_tweet_ids": [
+          "2105620053865492549"
+        ],
+        "editable_until_msecs": "1790857516000",
+        "edits_remaining": "5",
+        "is_edit_eligible": false
+      },
+      "isEdited": false,
+      "isStaleEdit": false
+    },
+    "isEdited": false,
+    "isStaleEdit": false
+  }
+}

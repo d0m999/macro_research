@@ -1,0 +1,127 @@
+{
+  "captured_at": "2026-10-02T05:49:18.885336+00:00",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2105858595980210528&lang=en&token=x",
+  "http_status": 200,
+  "response_sha256": "317d10f553b77587016d57fce6c720c14ebd19b5f0a1a008d2673da6a11b2e28",
+  "tweet": {
+    "__typename": "Tweet",
+    "favorite_count": 15,
+    "in_reply_to_screen_name": "BabybusFL",
+    "in_reply_to_status_id_str": "2105661232430588081",
+    "in_reply_to_user_id_str": "2063073064758157312",
+    "lang": "zh",
+    "created_at": "2026-10-02T03:13:08.000Z",
+    "display_text_range": [
+      11,
+      57
+    ],
+    "entities": {
+      "user_mentions": [
+        {
+          "id_str": "2063073064758157312",
+          "indices": [
+            0,
+            10
+          ],
+          "name": "Babybus",
+          "screen_name": "BabybusFL"
+        }
+      ]
+    },
+    "id_str": "2105858595980210528",
+    "text": "@BabybusFL 先爆多头，再爆空头\n\n长债空头被拉爆也是大概率事件，现在就是没人敢接飞刀，或者想接个更好的点",
+    "user": {
+      "id_str": "858124064476479488",
+      "name": "Herman Jin",
+      "screen_name": "ShanghaoJin",
+      "is_blue_verified": true,
+      "profile_image_shape": "Circle",
+      "verified": false,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg"
+    },
+    "edit_control": {
+      "edit_tweet_ids": [
+        "2105858595980210528"
+      ],
+      "editable_until_msecs": "1790914388000",
+      "edits_remaining": "5",
+      "is_edit_eligible": false
+    },
+    "conversation_count": 1,
+    "news_action_type": "conversation",
+    "parent": {
+      "favorite_count": 47,
+      "lang": "zh",
+      "reply_count": 9,
+      "retweet_count": 1,
+      "created_at": "2026-10-01T14:08:53.000Z",
+      "display_text_range": [
+        0,
+        24
+      ],
+      "entities": {},
+      "id_str": "2105661232430588081",
+      "text": "见顶了吧。这种情况就是 倒逼联储 和白宫做救市了",
+      "user": {
+        "id_str": "2063073064758157312",
+        "name": "Babybus",
+        "screen_name": "BabybusFL",
+        "is_blue_verified": true,
+        "profile_image_shape": "Circle",
+        "verified": false,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/2093017236453617664/pOO5wgdC_normal.jpg"
+      },
+      "edit_control": {
+        "edit_tweet_ids": [
+          "2105661232430588081"
+        ],
+        "editable_until_msecs": "1790867333000",
+        "edits_remaining": "5",
+        "is_edit_eligible": true
+      },
+      "quoted_tweet": {
+        "__typename": "Tweet",
+        "favorite_count": 0,
+        "in_reply_to_screen_name": "BabybusFL",
+        "in_reply_to_status_id_str": "2105036268685955271",
+        "in_reply_to_user_id_str": "2063073064758157312",
+        "lang": "zh",
+        "reply_count": 0,
+        "retweet_count": 0,
+        "created_at": "2026-10-01T14:04:59.000Z",
+        "display_text_range": [
+          11,
+          26
+        ],
+        "entities": {
+          "user_mentions": [
+            {
+              "id_str": "2063073064758157312",
+              "indices": [
+                0,
+                10
+              ],
+              "name": "Babybus",
+              "screen_name": "BabybusFL"
+            }
+          ]
+        },
+        "id_str": "2105660249248288963",
+        "text": "@BabybusFL 神 us30y 怎么看。。。。",
+        "user": {
+          "id_str": "1969470367082151936",
+          "name": "Brigitta Rooke",
+          "screen_name": "Andyy_928",
+          "is_blue_verified": false,
+          "profile_image_shape": "Circle",
+          "verified": false,
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/2053301643173859328/gqtjwCLK_normal.jpg"
+        }
+      },
+      "isEdited": false,
+      "isStaleEdit": false
+    },
+    "isEdited": false,
+    "isStaleEdit": false
+  }
+}

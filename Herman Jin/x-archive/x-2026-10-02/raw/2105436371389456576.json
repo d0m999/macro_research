@@ -1,0 +1,265 @@
+{
+  "captured_at": "2026-10-02T05:49:17.591049+00:00",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2105436371389456576&lang=en&token=x",
+  "http_status": 200,
+  "response_sha256": "bd15df616c4b96cdb0b60ebbdbeb87c560e48b7c45b65d1a69aeafa809a7e53d",
+  "tweet": {
+    "__typename": "Tweet",
+    "favorite_count": 46,
+    "in_reply_to_screen_name": "Balder13946731",
+    "in_reply_to_status_id_str": "2105403394378871077",
+    "in_reply_to_user_id_str": "1814168337540435968",
+    "lang": "zh",
+    "created_at": "2026-09-30T23:15:22.000Z",
+    "display_text_range": [
+      16,
+      94
+    ],
+    "entities": {
+      "user_mentions": [
+        {
+          "id_str": "1814168337540435968",
+          "indices": [
+            0,
+            15
+          ],
+          "name": "Balder",
+          "screen_name": "Balder13946731"
+        }
+      ]
+    },
+    "id_str": "2105436371389456576",
+    "text": "@Balder13946731 编程能力Astra裸模型也很弱\n\ncoding场景需要在agent层面做收敛，而不是让模型自己不停探索\n\n更多是Claude code和codex层面的事情",
+    "user": {
+      "id_str": "858124064476479488",
+      "name": "Herman Jin",
+      "screen_name": "ShanghaoJin",
+      "is_blue_verified": true,
+      "profile_image_shape": "Circle",
+      "verified": false,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg"
+    },
+    "edit_control": {
+      "edit_tweet_ids": [
+        "2105436371389456576"
+      ],
+      "editable_until_msecs": "1790813722000",
+      "edits_remaining": "5",
+      "is_edit_eligible": false
+    },
+    "conversation_count": 6,
+    "news_action_type": "conversation",
+    "parent": {
+      "favorite_count": 11,
+      "lang": "zh",
+      "reply_count": 7,
+      "retweet_count": 0,
+      "created_at": "2026-09-30T21:04:20.000Z",
+      "display_text_range": [
+        0,
+        106
+      ],
+      "entities": {},
+      "id_str": "2105403394378871077",
+      "text": "目前Gemini 4 仍然没有直接释放出来，只会是企业级小范围测试，虽然在Benchmark上疑似赶上Astra和Opus，但是多位内部员工以及企业用户声称其编程能力似乎没有十分强大，许多基础编程问题还是有困难。",
+      "user": {
+        "id_str": "1814168337540435968",
+        "name": "Balder",
+        "screen_name": "Balder13946731",
+        "is_blue_verified": true,
+        "profile_image_shape": "Circle",
+        "verified": false,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/2042409465748881408/7QQC60Qh_normal.jpg"
+      },
+      "edit_control": {
+        "edit_tweet_ids": [
+          "2105403394378871077"
+        ],
+        "editable_until_msecs": "1790805860000",
+        "edits_remaining": "5",
+        "is_edit_eligible": true
+      },
+      "quoted_tweet": {
+        "__typename": "Tweet",
+        "favorite_count": 573,
+        "lang": "en",
+        "possibly_sensitive": false,
+        "reply_count": 30,
+        "retweet_count": 45,
+        "created_at": "2026-09-30T20:00:40.000Z",
+        "display_text_range": [
+          0,
+          279
+        ],
+        "entities": {
+          "media": [
+            {
+              "display_url": "pic.x.com/ujTm1cE8qM",
+              "expanded_url": "https://x.com/wallstengine/status/2105387371739193810/photo/1",
+              "indices": [
+                280,
+                303
+              ],
+              "url": "https://t.co/ujTm1cE8qM"
+            }
+          ],
+          "symbols": [
+            {
+              "indices": [
+                0,
+                6
+              ],
+              "text": "GOOGL"
+            }
+          ]
+        },
+        "id_str": "2105387371739193810",
+        "text": "$GOOGL EMPLOYEES RAISE CONCERNS OVER GEMINI 4 CODING PERFORMANCE\n\nGoogle is preparing to launch Gemini 4, but some employees with access to the model say its strong benchmark results aren’t fully translating into real-world performance, according to Bloomberg.\n\nThe main concerns https://t.co/ujTm1cE8qM",
+        "user": {
+          "id_str": "1508426880860704771",
+          "name": "Wall St Engine",
+          "screen_name": "wallstengine",
+          "is_blue_verified": true,
+          "profile_image_shape": "Circle",
+          "verified": false,
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1691846947857178624/oZp5wB4r_normal.jpg",
+          "highlighted_label": {
+            "badge": {
+              "url": "https://pbs.twimg.com/profile_images/1992023020618092544/oixU2_L2_bigger.jpg"
+            },
+            "description": "Polymarket Money",
+            "url": {
+              "url": "https://twitter.com/PolymarketMoney",
+              "url_type": "DeepLink"
+            },
+            "user_label_display_type": "Badge",
+            "user_label_type": "BusinessLabel"
+          }
+        },
+        "mediaDetails": [
+          {
+            "display_url": "pic.x.com/ujTm1cE8qM",
+            "expanded_url": "https://x.com/wallstengine/status/2105387371739193810/photo/1",
+            "ext_media_availability": {
+              "status": "Available"
+            },
+            "indices": [
+              280,
+              303
+            ],
+            "media_url_https": "https://pbs.twimg.com/media/HTfWeUybcAARfEY.jpg",
+            "original_info": {
+              "focus_rects": [
+                {
+                  "h": 2150,
+                  "w": 3840,
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "h": 2160,
+                  "w": 2160,
+                  "x": 1680,
+                  "y": 0
+                },
+                {
+                  "h": 2160,
+                  "w": 1895,
+                  "x": 1945,
+                  "y": 0
+                },
+                {
+                  "h": 2160,
+                  "w": 1080,
+                  "x": 2436,
+                  "y": 0
+                },
+                {
+                  "h": 2160,
+                  "w": 3840,
+                  "x": 0,
+                  "y": 0
+                }
+              ],
+              "height": 2160,
+              "width": 3840
+            },
+            "sizes": {
+              "large": {
+                "h": 1152,
+                "resize": "fit",
+                "w": 2048
+              },
+              "medium": {
+                "h": 675,
+                "resize": "fit",
+                "w": 1200
+              },
+              "small": {
+                "h": 383,
+                "resize": "fit",
+                "w": 680
+              },
+              "thumb": {
+                "h": 150,
+                "resize": "crop",
+                "w": 150
+              }
+            },
+            "type": "photo",
+            "url": "https://t.co/ujTm1cE8qM"
+          }
+        ],
+        "photos": [
+          {
+            "backgroundColor": {
+              "red": 204,
+              "green": 214,
+              "blue": 221
+            },
+            "cropCandidates": [
+              {
+                "h": 2150,
+                "w": 3840,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "h": 2160,
+                "w": 2160,
+                "x": 1680,
+                "y": 0
+              },
+              {
+                "h": 2160,
+                "w": 1895,
+                "x": 1945,
+                "y": 0
+              },
+              {
+                "h": 2160,
+                "w": 1080,
+                "x": 2436,
+                "y": 0
+              },
+              {
+                "h": 2160,
+                "w": 3840,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "expandedUrl": "https://x.com/wallstengine/status/2105387371739193810/photo/1",
+            "url": "https://pbs.twimg.com/media/HTfWeUybcAARfEY.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        ]
+      },
+      "isEdited": false,
+      "isStaleEdit": false
+    },
+    "isEdited": false,
+    "isStaleEdit": false
+  }
+}

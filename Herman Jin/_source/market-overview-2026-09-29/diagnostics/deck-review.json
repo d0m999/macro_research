@@ -1,0 +1,199 @@
+{
+  "candidate_count": 105,
+  "distinct_research_screens": 14,
+  "groups": [
+    {
+      "slide_id": "slide-001",
+      "representative_candidate": 6,
+      "candidate_numbers": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "slide_id": "slide-002",
+      "representative_candidate": 11,
+      "candidate_numbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        52,
+        54
+      ]
+    },
+    {
+      "slide_id": "slide-003",
+      "representative_candidate": 24,
+      "candidate_numbers": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        51,
+        55
+      ]
+    },
+    {
+      "slide_id": "slide-004",
+      "representative_candidate": 26,
+      "candidate_numbers": [
+        26
+      ]
+    },
+    {
+      "slide_id": "slide-005",
+      "representative_candidate": 48,
+      "candidate_numbers": [
+        27,
+        46,
+        48
+      ]
+    },
+    {
+      "slide_id": "slide-006",
+      "representative_candidate": 67,
+      "candidate_numbers": [
+        28,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ]
+    },
+    {
+      "slide_id": "slide-007",
+      "representative_candidate": 30,
+      "candidate_numbers": [
+        29,
+        30,
+        31,
+        49
+      ]
+    },
+    {
+      "slide_id": "slide-008",
+      "representative_candidate": 44,
+      "candidate_numbers": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        47,
+        81,
+        82,
+        103
+      ]
+    },
+    {
+      "slide_id": "slide-009",
+      "representative_candidate": 50,
+      "candidate_numbers": [
+        50
+      ]
+    },
+    {
+      "slide_id": "slide-010",
+      "representative_candidate": 75,
+      "candidate_numbers": [
+        56,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        104,
+        105
+      ]
+    },
+    {
+      "slide_id": "slide-011",
+      "representative_candidate": 91,
+      "candidate_numbers": [
+        84,
+        90,
+        91,
+        92
+      ]
+    },
+    {
+      "slide_id": "slide-012",
+      "representative_candidate": 96,
+      "candidate_numbers": [
+        85,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ]
+    },
+    {
+      "slide_id": "slide-013",
+      "representative_candidate": 88,
+      "candidate_numbers": [
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "slide_id": "slide-014",
+      "representative_candidate": 101,
+      "candidate_numbers": [
+        100,
+        101,
+        102
+      ]
+    }
+  ],
+  "omitted_candidates": {
+    "1": "meeting cover without research content",
+    "2": "black transition",
+    "53": "partially painted transition between slides",
+    "83": "blank loading page"
+  },
+  "reason_for_manual_grouping": "Whole-frame perceptual hash merged distinct white dashboard pages and retained transition frames; visual review fixes coverage.",
+  "reviewed_on": "2026-10-02"
+}

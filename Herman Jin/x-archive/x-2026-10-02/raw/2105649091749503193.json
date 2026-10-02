@@ -1,0 +1,172 @@
+{
+  "captured_at": "2026-10-02T05:49:18.868486+00:00",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2105649091749503193&lang=en&token=x",
+  "http_status": 200,
+  "response_sha256": "c0f8731271f7b54749b1c76331118dbe5758fc3d1958958f2f3b176bd99087aa",
+  "tweet": {
+    "__typename": "Tweet",
+    "favorite_count": 146,
+    "lang": "zh",
+    "possibly_sensitive": false,
+    "created_at": "2026-10-01T13:20:39.000Z",
+    "display_text_range": [
+      0,
+      134
+    ],
+    "entities": {
+      "media": [
+        {
+          "display_url": "pic.x.com/Teims0Wvl4",
+          "expanded_url": "https://x.com/ShanghaoJin/status/2105649091749503193/photo/1",
+          "indices": [
+            135,
+            158
+          ],
+          "url": "https://t.co/Teims0Wvl4"
+        }
+      ]
+    },
+    "id_str": "2105649091749503193",
+    "text": "国庆节我一般躲着玩游戏，对“维港烟花”向来没什么热情\n\n上次看还是2019年，记得那年的烟花花团锦簇，但刚一开始，就忽然迎头一场大雨倾盆而下\n\n今年不知怎么又起了兴致，探头望了一眼。烟花声声依旧，只是不知为何，一丝风也没有。烟霾沉沉久久不散，白放了半天，连颜色都看不清 https://t.co/Teims0Wvl4",
+    "user": {
+      "id_str": "858124064476479488",
+      "name": "Herman Jin",
+      "screen_name": "ShanghaoJin",
+      "is_blue_verified": true,
+      "profile_image_shape": "Circle",
+      "verified": false,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg"
+    },
+    "edit_control": {
+      "edit_tweet_ids": [
+        "2105649091749503193"
+      ],
+      "editable_until_msecs": "1790864439000",
+      "edits_remaining": "5",
+      "is_edit_eligible": false
+    },
+    "mediaDetails": [
+      {
+        "display_url": "pic.x.com/Teims0Wvl4",
+        "expanded_url": "https://x.com/ShanghaoJin/status/2105649091749503193/photo/1",
+        "ext_media_availability": {
+          "status": "Available"
+        },
+        "indices": [
+          135,
+          158
+        ],
+        "media_url_https": "https://pbs.twimg.com/media/HTjEqwYagAASli4.jpg",
+        "original_info": {
+          "focus_rects": [
+            {
+              "h": 1147,
+              "w": 2048,
+              "x": 0,
+              "y": 389
+            },
+            {
+              "h": 1536,
+              "w": 1536,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "h": 1536,
+              "w": 1347,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "h": 1536,
+              "w": 768,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "h": 1536,
+              "w": 2048,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "height": 1536,
+          "width": 2048
+        },
+        "sizes": {
+          "large": {
+            "h": 1536,
+            "resize": "fit",
+            "w": 2048
+          },
+          "medium": {
+            "h": 900,
+            "resize": "fit",
+            "w": 1200
+          },
+          "small": {
+            "h": 510,
+            "resize": "fit",
+            "w": 680
+          },
+          "thumb": {
+            "h": 150,
+            "resize": "crop",
+            "w": 150
+          }
+        },
+        "type": "photo",
+        "url": "https://t.co/Teims0Wvl4"
+      }
+    ],
+    "photos": [
+      {
+        "backgroundColor": {
+          "red": 204,
+          "green": 214,
+          "blue": 221
+        },
+        "cropCandidates": [
+          {
+            "h": 1147,
+            "w": 2048,
+            "x": 0,
+            "y": 389
+          },
+          {
+            "h": 1536,
+            "w": 1536,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "h": 1536,
+            "w": 1347,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "h": 1536,
+            "w": 768,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "h": 1536,
+            "w": 2048,
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "expandedUrl": "https://x.com/ShanghaoJin/status/2105649091749503193/photo/1",
+        "url": "https://pbs.twimg.com/media/HTjEqwYagAASli4.jpg",
+        "width": 2048,
+        "height": 1536
+      }
+    ],
+    "conversation_count": 38,
+    "news_action_type": "conversation",
+    "isEdited": false,
+    "isStaleEdit": false
+  }
+}

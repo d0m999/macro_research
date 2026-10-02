@@ -1,0 +1,73 @@
+{
+  "captured_at": "2026-10-02T05:49:17.715200+00:00",
+  "url": "https://cdn.syndication.twimg.com/tweet-result?id=2105478257051361676&lang=en&token=x",
+  "http_status": 200,
+  "response_sha256": "f792f3e2c28d768ce8e2150422d19cea469df8bc31ecb68c73e3db6776784509",
+  "tweet": {
+    "__typename": "Tweet",
+    "favorite_count": 34,
+    "lang": "en",
+    "created_at": "2026-10-01T02:01:49.000Z",
+    "display_text_range": [
+      0,
+      56
+    ],
+    "entities": {},
+    "id_str": "2105478257051361676",
+    "text": "LOL 😂 exactly\n\nDoubt this fake news actually helps them",
+    "user": {
+      "id_str": "858124064476479488",
+      "name": "Herman Jin",
+      "screen_name": "ShanghaoJin",
+      "is_blue_verified": true,
+      "profile_image_shape": "Circle",
+      "verified": false,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1765746894008102912/8X9HsTj8_normal.jpg"
+    },
+    "edit_control": {
+      "edit_tweet_ids": [
+        "2105478257051361676"
+      ],
+      "editable_until_msecs": "1790823709000",
+      "edits_remaining": "5",
+      "is_edit_eligible": true
+    },
+    "conversation_count": 3,
+    "news_action_type": "conversation",
+    "quoted_tweet": {
+      "favorite_count": 132,
+      "lang": "en",
+      "reply_count": 14,
+      "retweet_count": 4,
+      "created_at": "2026-09-30T20:39:19.000Z",
+      "display_text_range": [
+        0,
+        114
+      ],
+      "entities": {},
+      "id_str": "2105397100620230806",
+      "text": "LMAO, Bears who played the quarterly rebalancing need to cover shorts tomorrow so have to release these fake news.",
+      "user": {
+        "id_str": "54811865",
+        "name": "3X Long Labubu",
+        "screen_name": "labubu_trader",
+        "is_blue_verified": true,
+        "profile_image_shape": "Circle",
+        "verified": false,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1930061717826113536/beBBZQZJ_normal.jpg"
+      },
+      "edit_control": {
+        "edit_tweet_ids": [
+          "2105397100620230806"
+        ],
+        "editable_until_msecs": "1790804359000",
+        "edits_remaining": "5",
+        "is_edit_eligible": true
+      },
+      "isEdited": false,
+      "isStaleEdit": false
+    },
+    "isEdited": false,
+    "isStaleEdit": false
+  }
+}

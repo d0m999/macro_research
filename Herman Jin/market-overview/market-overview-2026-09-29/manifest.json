@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "package_type": "video-research-agent-data",
+  "video": {
+    "id": "market-overview-2026-09-29",
+    "title": "市场概述2026年9月29日",
+    "date": "2026-09-29",
+    "source_url": "https://www.youtube.com/watch?v=Ca6l5KCuGoc",
+    "duration_seconds": 1795.065034,
+    "language": "zh"
+  },
+  "files": {
+    "transcript": "transcript.jsonl",
+    "deck": "deck.jsonl",
+    "slides_directory": "slides/",
+    "ocr_directory": "ocr/"
+  },
+  "related_materials": {
+    "readable_html": null,
+    "source_directory": "../../_source/market-overview-2026-09-29/"
+  },
+  "transcript": {
+    "record_count": 687,
+    "kind": "automatic_generated",
+    "timing": "native_segment_start_end",
+    "source_label": "faster-whisper small; resumed at 697.06s with beam 1 after beam 5; terminology cleanup logged",
+    "original_file": "../../_source/market-overview-2026-09-29/transcript/transcript_raw_zh.json",
+    "fields": [
+      "id",
+      "start",
+      "end",
+      "text",
+      "chapter",
+      "source"
+    ],
+    "cleaning_report": "../../_source/market-overview-2026-09-29/metadata/cleaning-report.json"
+  },
+  "deck": {
+    "record_count": 14,
+    "image_format": "png",
+    "image_role": "visual evidence; OCR is automatic",
+    "fields": [
+      "id",
+      "time_ranges",
+      "title",
+      "image",
+      "ocr_file",
+      "ocr",
+      "visual_type",
+      "summary",
+      "source_file",
+      "image_format"
+    ],
+    "sampling": "scene threshold .12 plus max 20s sample gap; 105 candidates visually reviewed and grouped into 14 distinct research screens",
+    "candidate_count": 105,
+    "time_ranges_semantics": "observed sample points, not continuous screen duration",
+    "ocr_method": "Tesseract eng+chi_sim+chi_tra psm 11 on enlarged content crop; native full frames preserved",
+    "title_source": "visual review; dashboard titles are editorial descriptions",
+    "quality_note": "360p source; OCR is noisy, especially dashboard figures. No numerical OCR correction or claim of full legibility."
+  },
+  "chapters": [
+    {
+      "id": "chapter-01",
+      "start": 0,
+      "end": 308.06,
+      "label": "市场压力与中美谈判"
+    },
+    {
+      "id": "chapter-02",
+      "start": 308.06,
+      "end": 415.56,
+      "label": "中国通缩与成品油供给"
+    },
+    {
+      "id": "chapter-03",
+      "start": 415.56,
+      "end": 810.16,
+      "label": "伊朗、炼油与欧洲能源"
+    },
+    {
+      "id": "chapter-04",
+      "start": 810.16,
+      "end": 978.86,
+      "label": "美国通胀传导"
+    },
+    {
+      "id": "chapter-05",
+      "start": 978.86,
+      "end": 1096.72,
+      "label": "房租、AI 与工资就业"
+    },
+    {
+      "id": "chapter-06",
+      "start": 1096.72,
+      "end": 1377.78,
+      "label": "全球货币政策与美债"
+    },
+    {
+      "id": "chapter-07",
+      "start": 1377.78,
+      "end": 1646.42,
+      "label": "短期利率、信用和再平衡"
+    },
+    {
+      "id": "chapter-08",
+      "start": 1646.42,
+      "end": 1795.065034,
+      "label": "AI 渗透率与中期仓位"
+    }
+  ],
+  "chapters_source": "editorial grouping after full transcript review; not publisher chapters",
+  "acquisition": {
+    "method": "yt-dlp public progressive format 18",
+    "actual_format_id": "18",
+    "actual_container": "mp4",
+    "actual_width": 640,
+    "actual_height": 360,
+    "audio_retained": true,
+    "source_media_sha256": "b4e971004f79dddfa38e4ba2299d6cc87c34be622e712772cf3e55df0014f4a1",
+    "no_available_captions": true
+  },
+  "evidence_boundary": "Automatic transcript and OCR may misrecognize names, figures, and labels. Context-supported terminology fixes are logged; unresolved text and all numerical values remain unadjudicated. No manual audio review.",
+  "generated_on": "2026-10-02"
+}

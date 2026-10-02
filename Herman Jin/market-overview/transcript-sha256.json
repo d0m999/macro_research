@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-20T11:11:37+08:00",
-  "scope": "Herman Jin/market-overview/*/transcript.jsonl post ASR audio verification (faster-whisper-small, 269 clips) + ONI->ON RRP, dpsc->DeepSeek, 利普壇->Lip-Bu Tan (worklist adjudication round)",
-  "total_lines": 52518,
+  "generated": "2026-10-02T14:08:48+08:00",
+  "scope": "Herman Jin/market-overview/*/transcript.jsonl post ASR audio verification (faster-whisper-small, 269 clips) + ONI->ON RRP, dpsc->DeepSeek, 利普壇->Lip-Bu Tan (worklist adjudication round)；+ 2026-09-29 新增 687 段，101 段术语/空白清洗留有逐项记录，41 段保留未裁定标记；无人工听音裁定。",
+  "total_lines": 53205,
   "files": {
     "2025-01-07": {
       "sha256": "878e61490d76c06461ab85916b98e4d9b606da1a8dc2619bcdd59b766b370f8a",
@@ -238,6 +238,10 @@
     "2026-09-15": {
       "sha256": "04ea1fa80e1ef7eb9df0d78535532cc8842c4fcfd11966e32d18a030a1def798",
       "lines": 836
+    },
+    "2026-09-29": {
+      "sha256": "5342e81fb333d927805e15b438f89ce96fcb13c7bf82562570baca7c2562416a",
+      "lines": 687
     }
   }
 }
