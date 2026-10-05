@@ -1,6 +1,8 @@
 # Public Source Policy
 
-本文件是包内数据来源的单一事实来源。所有研究、建模、估值和尽调 skill 都必须遵守它；具体 skill 只补充任务步骤，不得重新引入另一套来源优先级。
+本文件是包内数据来源合规裁决的单一事实来源。所有研究、建模、估值和尽调 skill 都必须遵守它；具体 skill 只补充任务步骤，不得重新引入另一套来源优先级。
+
+> 机器可读的数据源路由登记表：[`.agents/data-sources.jsonl`](data-sources.jsonl)（固定字段，一行一条）。**本表是本项目 skill 数据源路由的单一事实来源（2026-10-04 起）：所有 skill 确定与引用具体数据来源时必须先从本表路由（按 `data_types` × `markets` 过滤，经 `policy_status`/`auth`/`cost` 校验；无匹配时 fail-closed）。** `policy_status` 语义以本文件为准，登记表不改变本文件的裁决。
 
 ## 来源状态
 

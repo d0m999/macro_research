@@ -3,6 +3,7 @@
 This document provides examples, tips for success, common mistakes to avoid, and comprehensive quality checklists.
 
 **Source gate:** Use [`../../../PUBLIC-SOURCE-POLICY.md`](../../../PUBLIC-SOURCE-POLICY.md). Treat company guidance and opened filings as facts; label prior model inputs `USER_PROVIDED` and calculations `MODEL_DERIVED`. If no dated public comparison exists, use `SOURCE_UNAVAILABLE`.
+Resolve every concrete source from [`../../../data-sources.jsonl`](../../../data-sources.jsonl) (single source of truth for skill data-source routing): filter by `data_types` × `markets`; honor `policy_status`/`auth`/`cost`; fail closed when nothing matches.
 
 ## Example Headlines
 

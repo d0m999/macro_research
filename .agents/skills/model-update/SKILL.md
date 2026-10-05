@@ -10,6 +10,7 @@ description: "用新财报、公司 guidance、宏观数据或修订假设更新
 ## Public-source gate
 
 Read [`PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md) first. Historical actuals must come from opened filings or issuer materials; forward guidance from the issuer; macro inputs from official government or regulator pages; and market inputs from a validated public page or `USER_PROVIDED` export. Do not import analyst consensus, terminal data, or an entitlement-only feed. If neither a public nor user-provided input exists, record `SOURCE_UNAVAILABLE` and leave the estimate unchanged or omit it.
+Resolve every concrete source from [`../../data-sources.jsonl`](../../data-sources.jsonl) (single source of truth for skill data-source routing): filter by `data_types` × `markets`; honor `policy_status`/`auth`/`cost`; fail closed when nothing matches.
 
 ## Workflow
 

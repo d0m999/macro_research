@@ -1,15 +1,14 @@
 # Financial Services Public for Codex
 
-这是从 Anthropic `financial-services` 官方仓库筛选并改写的项目级 Codex skill 集合。它保留研究、估值、建模、交易尽调和材料整理的方法，但把主动数据来源收窄为可以公开核验的来源。
+这是从 Anthropic `financial-services` 官方仓库筛选并改写的项目级 Codex skill 集合。当前面向二级市场基本面研究，保留公司与行业研究、财报分析、估值、建模及财务数据整理；主动数据来源限于可以公开核验的来源。
 
 ## 上游与范围
 
 - 上游仓库：<https://github.com/anthropics/financial-services>
 - 固定上游 commit：`69cbc81467a5dced793eee03dec4658aa24ef856`
-- 导入范围：`equity-research`、`financial-analysis`、`investment-banking`、`private-equity` 四个 vertical 的 38 个金融 source `SKILL.md`
+- 导入范围：`equity-research`、`financial-analysis`、`investment-banking`、`private-equity` 四个 vertical 的 15 个金融 source `SKILL.md`
 - 未导入：上游 Claude marketplace、远程连接器配置、partner-built 插件和 agent bundled 副本
 - 原有通用 `skill-creator`、`xlsx-author`、`pptx-author` 已由 Codex 官方 skill/artifact capability 替代，不计入 active financial skills
-- 项目另有 1 个本地显式目录路由 `$financial-services`；active skills 合计 39 个
 - 许可：Apache License 2.0，见 [`LICENSE`](LICENSE)
 
 逐 skill 的来源分类、替换和保留理由见 [`SOURCE-AUDIT.md`](SOURCE-AUDIT.md)。
@@ -26,9 +25,9 @@
 
 ## 调用分层
 
-以下 12 个研究与估值入口允许自动发现：`catalyst-calendar`、`earnings-analysis`、`earnings-preview`、`idea-generation`、`initiating-coverage`、`model-update`、`morning-note`、`sector-overview`、`thesis-tracker`、`competitive-analysis`、`comps-analysis`、`dcf-model`。
+以下 11 个研究与估值入口允许自动发现：`catalyst-calendar`、`earnings-analysis`、`earnings-preview`、`idea-generation`、`initiating-coverage`、`model-update`、`morning-note`、`sector-overview`、`thesis-tracker`、`competitive-analysis`、`comps-analysis`。
 
-其余 27 个 skill 只在用户显式输入 `$skill-name` 时调用。记不住具体名称时使用 `$financial-services`；它只推荐一个主 skill 和最多两个后续 skill，不自动执行或创建新的总研究工作流。
+另外 4 个 skill 使用显式调用：`$3-statement-model`、`$audit-xls`、`$datapack-builder`、`$unit-economics`。
 
 每个 active skill 的 `agents/openai.yaml` 只维护 UI 名称、短说明和调用 policy；入口使用条件化 reference 指针做渐进披露。
 

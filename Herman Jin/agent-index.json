@@ -16,7 +16,10 @@
     "separate_materials": {
       "source": "_source/"
     },
-    "x_directory_template": "x-archive/x-YYYY-MM-DD/"
+    "x_directory_template": "x-archive/x-YYYY-MM-DD/",
+    "canonical_transcript": "market-overview/<package-id>/transcript.jsonl",
+    "review_records": "_review/review-checklist.json",
+    "maintenance_policy": "只维护本目录的一套正文；_source 为原始获取证据，_review 为核实记录，_index/derived 为可重建导出，均不是第二套维护语料。"
   },
   "packages": [
     {
@@ -149,6 +152,14 @@
       "manifest": "market-overview/market-overview-2026-05-19/manifest.json",
       "readable": null,
       "source": "_source/market-overview-2026-05-19/"
+    },
+    {
+      "id": "market-overview-2026-05-14",
+      "title": "前高盛 FICC 高管 Herman Jin：半导体缺货利好的是追赶者！光模块「应买尽买」，长鑫和长江存储是中国最值得投资公司 @shanghaojin",
+      "date": "2026-05-14",
+      "manifest": "market-overview/market-overview-2026-05-14/manifest.json",
+      "readable": null,
+      "source": "_source/market-overview-2026-05-14/"
     },
     {
       "id": "market-overview-2026-05-05",
@@ -527,5 +538,6 @@
       "source": "_source/market-overview-2025-01-07/"
     }
   ],
-  "generated_on": "2026-10-02"
+  "generated_on": "2026-10-02",
+  "updated_on": "2026-10-03"
 }

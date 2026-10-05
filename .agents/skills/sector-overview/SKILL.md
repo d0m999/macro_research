@@ -10,6 +10,7 @@ description: "研究行业边界、市场动态、价值链、竞争者、监管
 ## Public-source gate
 
 Read [`PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md) before research. Use government, regulator, official exchange, issuer filings/IR, public industry-association materials, or another fully accessible source with a citable methodology. A paid or inaccessible research report is not a source: replace the number with `SOURCE_UNAVAILABLE`, or label a transparent scenario as `MODEL_DERIVED`. Every market-size, share, growth, valuation, and transaction figure must point to an opened source.
+Resolve every concrete source from [`../../data-sources.jsonl`](../../data-sources.jsonl) (single source of truth for skill data-source routing): filter by `data_types` × `markets`; honor `policy_status`/`auth`/`cost`; fail closed when nothing matches.
 
 ## Workflow
 

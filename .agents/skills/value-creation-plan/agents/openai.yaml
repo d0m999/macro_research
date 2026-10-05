@@ -1,5 +1,0 @@
-interface:
-  display_name: "Value Creation Plan"
-  short_description: "把运营改进组织为 EBITDA bridge、行动、KPI 与责任机制"
-policy:
-  allow_implicit_invocation: false

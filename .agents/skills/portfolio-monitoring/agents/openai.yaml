@@ -1,5 +1,0 @@
-interface:
-  display_name: "Portfolio Monitoring"
-  short_description: "跟踪组合公司 KPI、预算差异、现金、债务和 covenant"
-policy:
-  allow_implicit_invocation: false

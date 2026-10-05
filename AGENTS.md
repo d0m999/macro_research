@@ -2,11 +2,17 @@
 
 ## Project Structure & Module Organization
 
-This repository is a TradingView/Pine Script research workspace, not a live trading engine. `PineScript/` contains standalone indicators grouped into `_L∞p/` core studies, `Open Interest/`, `Oscillator/`, `Price_Zones/`, and `Vol/`. `strategy-notes/` holds strategy assumptions and checklists; `strategy-notes/design/` contains self-contained HTML visualization mockups. `docs/` contains methodology and process notes. Read `CLAUDE.md` before changing scope or workflow assumptions.
+This repository holds **two active work streams plus one dormant research line**. Read `CLAUDE.md` first — it defines which stream a task belongs to and carries the hard constraints. Do not assume a task is Pine-related just because `PineScript/` exists.
+
+1. **Active, primary — KOL corpus archiving and view distillation.** `Herman Jin/` (1.6 GB, @ShanghaoJin) and `Serenity/` (@aleabitoreddit — a *different* person, do not conflate) hold scraped X posts/replies and YouTube transcripts. Deliverable is reasoning chains and a verified view list, **not** persona replication. Output lives in `research/Herman-Jin 观点 rollup.md` (untracked in git — see `CLAUDE.md` for the edit protocol) and `research/_agent/`.
+2. **Active, secondary — US equity / AI supply-chain fundamental research.** Hyperscaler CAPEX, CoWoS/HBM supply-demand gaps, single-name quick takes in `research/_agent/`; public-source channel validation in `GLW/`; 16 financial analysis skills under `.agents/skills/`.
+3. **Dormant — TradingView/Pine Script research.** `PineScript/` contains standalone indicators grouped into `_L∞p/` core studies, `Open Interest/`, `Oscillator/`, `Price_Zones/`, and `Vol/`. `strategy-notes/` holds strategy assumptions and checklists; `strategy-notes/design/` contains self-contained HTML visualization mockups. No new commits since 2026-09.
+
+`docs/` contains methodology and process notes.
 
 ## Build, Test, and Development Commands
 
-There is currently no package manager, build script, or local runtime. Useful checks are:
+There is no package manager or build script. Useful checks:
 
 ```bash
 git status --short --branch
@@ -15,15 +21,30 @@ rg -n '^//@version=|request\.security|lookahead|barstate\.isconfirmed' PineScrip
 git diff --check
 ```
 
+The financial-artifact validator in `.agents/` is the only automated test in the repo:
+
+```bash
+python3 -m unittest discover -s .agents/tests -p 'test_*.py'   # 4 tests, unittest; pytest is not installed
+python3 .agents/scripts/validate_financial_artifact.py <artifact.xlsx|.pptx|.docx>
+```
+
+Run it after touching `.agents/skills/` or any generated Office artifact.
+
 For Pine changes, paste the modified file into the TradingView Pine Editor, compile it, and inspect representative symbols and timeframes. Check data availability, closed-bar behavior, multi-timeframe requests, and alerts when relevant.
 
 ## Coding Style & Naming Conventions
 
-Prefer Pine Script v6 for new work; preserve v5 scripts unless migration is part of the change. Match the surrounding file’s indentation to avoid noisy diffs; use four spaces for new blocks where practical. Keep variables and inputs descriptive (`camelCase` is common), use clear helper names such as `f_*`, and keep user-facing labels/tooltips explicit. Use descriptive filenames within the existing category directories; do not rename files casually.
+**Pine:** prefer Pine Script v6 for new work; preserve v5 scripts unless migration is part of the change. Match the surrounding file’s indentation to avoid noisy diffs; use four spaces for new blocks where practical. Keep variables and inputs descriptive (`camelCase` is common), use clear helper names such as `f_*`, and keep user-facing labels/tooltips explicit. Use descriptive filenames within the existing category directories; do not rename files casually.
+
+**Research artifacts:** name corpus deliverables `*-YYYY-MM-DD.md` (or `-YYYY-MM-DD.json`) under `research/_agent/`, and keep the date in the filename rather than relying on mtime. Every chart ships a companion `*-notes-YYYY-MM-DD.md` with the data table, caveats, and the reproduction command; put the numeric constants in a block at the top of the chart script rather than hardcoding them in the drawing logic. Back up the corpus copy before editing and record the baseline MD5.
 
 ## Testing Guidelines
 
-No automated test framework or coverage target is configured. Treat TradingView compilation plus chart-level visual review as the acceptance test. For signal changes, verify confirmed-bar and repaint/lookahead behavior and document the data source, especially for OI. Do not treat a design mockup as proof that the Pine implementation exists.
+**Pine (dormant line):** treat TradingView compilation plus chart-level visual review as the acceptance test. For signal changes, verify confirmed-bar and repaint/lookahead behavior and document the data source, especially for OI. Do not treat a design mockup as proof that the Pine implementation exists.
+
+**Corpus distillation (primary line):** every claim needs a re-anchored citation (transcript line number, slide OCR, or dated social post) before it goes into a deliverable. Search **both** traditional and simplified character forms — a single-form keyword search misses roughly half the corpus. Mark the polarity of every ticker mentioned: corpus hit ≠ endorsement. See `CLAUDE.md` for the full rule set.
+
+**Financial artifacts:** run the validator in `.agents/tests/` and report `SOURCE_UNAVAILABLE` honestly rather than filling gaps with plausible numbers.
 
 ## Commit & Pull Request Guidelines
 
@@ -31,4 +52,8 @@ Use concise imperative subjects with the repository’s established prefixes: `f
 
 ## Security & Scope
 
-Never commit `.env`, credentials, logs, or generated data. Do not reintroduce the removed Python/FreqTrade execution layer, Docker deployment, or trading database without explicit authorization. Keep TradingView price data, exchange OI feeds, and native exchange OI claims clearly distinguished in code comments and research notes.
+Never commit `.env`, credentials, logs, or generated data.
+
+**Current repo state (2026-10-05).** 239 changes are uncommitted (`38 ?? + 93 D + 108 M`); the 93 deletions are all under `.agents/skills/`, which has been trimmed from a larger Anthropic import down to 16 skills. `.git` is 1.5 GB because `Herman Jin/` was committed wholesale in the past (3369 files, including 1717 PNGs and 57 m4a files) — see `CLAUDE.md` before proposing any history rewrite. A root `.env` exists with live exchange/OKX credentials; it is git-ignored but should be rotated or removed only on explicit instruction. Do not reintroduce the removed Python/FreqTrade execution layer, Docker deployment, or trading database without explicit authorization. Keep TradingView price data, exchange OI feeds, and native exchange OI claims clearly distinguished in code comments and research notes.
+
+**Corpus scope.** `research/_agent/` contains corpus updates, single-name deep dives, chart scripts with PNG/CSV, and one-off demos (`jev-ling-repro/`). Date-based corpus update packages are grouped under `research/_agent/corpus-updates/YYYY-MM-DD/`; chart assets and other files with established document or reproduction links retain their current paths. See the `_agent` README for navigation. `Serenity/` is **not** structured like `Herman Jin/`: it holds only `agent-index.json` plus six files under `data/clean/`, with no `x-archive/` or `_source/` yet. `Herman Jin/` is 1.6 GB — never `git add` it wholesale; stage named packages. Scraped social data is for private analysis only: do not republish raw transcripts or posts, and do not attribute derived views to a person beyond what the corpus actually supports. Scraping credentials and session state stay out of the repo. Distilled output is the user's research, not a publication.

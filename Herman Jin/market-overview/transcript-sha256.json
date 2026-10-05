@@ -1,14 +1,14 @@
 {
-  "generated": "2026-10-02T14:08:48+08:00",
-  "scope": "Herman Jin/market-overview/*/transcript.jsonl post ASR audio verification (faster-whisper-small, 269 clips) + ONI->ON RRP, dpsc->DeepSeek, 利普壇->Lip-Bu Tan (worklist adjudication round)；+ 2026-09-29 新增 687 段，101 段术语/空白清洗留有逐项记录，41 段保留未裁定标记；无人工听音裁定。",
-  "total_lines": 53205,
+  "generated": "2026-10-03T20:27:03+08:00",
+  "scope": "Herman Jin/market-overview/*/transcript.jsonl post ASR audio verification (faster-whisper-small, 269 clips) + ONI->ON RRP, dpsc->DeepSeek, 利普壇->Lip-Bu Tan (worklist adjudication round); + 2026-05-14 新增包（168X 专访，5414 段，baseline 60 包）; 2026-05-14 ASR 首轮清洗（91 处替换 / 84 行：Circle/Anthropic/OpenAI/EUV/DUV/Oracle/Victor/Herman/Hyperliquid/CoWoS/NVL72/Rack/Bitcoin/Lutnick/Bessent/Opus/Pension fund/CoreWeave/NeoCloud）; + 2026-05-14 二轮（依 168X 官方文章版闭合：GlobalFoundries/Glass Ceiling/AAOI/MediaTek/BTC/mNAV低于1/Collateral/GPT 5.5/OpenAI/Semi Maxi/封頂/CPO/晶圓廠/增芯）; + 2026-05-14 三轮（用户裁定词族：Sandex=Sandisk/林偉達+英偉大=英偉達/Semminton=半導體/Sami-Connector=semiconductor/Semic=semi；另依文章版 英塔=英特爾）; + 2026-05-14 四轮（系统回扫中英文残留：SLR/解綁/寬裕/估值(21)/英特爾(21)/DDR/長鑫/長存/海力士/毛利/灰色支付/支付寶/賣飛/Anthropic/Jensen/ASML/Mossad/MicroStrategy/SEC/AAOI/PDK/commodity/DUV/CoreWeave，中置信 SOFR/Money Market/lagging）; + 2026-05-14 五轮（依网络流传的完整逐字稿：SOFR/Term Premium/半導體估值/英偉達業績/鄭柵潔/發改委/省長/長鑫/暗網/CoreWeave/磷化銦/MD/IPO price）；+ 2026-09-29 新增 687 段，101 段术语/空白清洗留有逐项记录，41 段保留未裁定标记；无人工听音裁定。；2026-10-03：40 期逐项裁决合入唯一正式语料，保留旧物理行号；6 个失效段空锚点指向恢复段，待核实状态见 _review。",
+  "total_lines": 58619,
   "files": {
     "2025-01-07": {
-      "sha256": "878e61490d76c06461ab85916b98e4d9b606da1a8dc2619bcdd59b766b370f8a",
+      "sha256": "2c2cc0f3b67b45caed4342f773db35873408e438c6b35eed1b5f214e5a95f701",
       "lines": 780
     },
     "2025-01-14": {
-      "sha256": "c55868c6e1a54c8c42a262ca0a75cedffb700a52c67337276ff0733473aadcdc",
+      "sha256": "59e25a44f6a2d0aef2386494e67b2ab47a7e0a740b9e2a7b363c9bc7d6e9f155",
       "lines": 721
     },
     "2025-01-21": {
@@ -20,11 +20,11 @@
       "lines": 1285
     },
     "2025-02-18": {
-      "sha256": "b98737c0a50886d689bbd7957b03098e095d297db0a8f61e33e81abd1767c806",
+      "sha256": "38b70f3cf69c6aa9fe284a1c12405d8bd2ab02e1f8919e31939ca66ab479ec36",
       "lines": 1145
     },
     "2025-02-25": {
-      "sha256": "cd8110f3deab8fc10a75a0abb84c1268e276e16d281a3dfcc8df8eeaa38e9034",
+      "sha256": "e54834a25347f471d161b1935e22e4ba643b423ca6b02a95ef511832b0beadd7",
       "lines": 606
     },
     "2025-03-04": {
@@ -32,35 +32,35 @@
       "lines": 830
     },
     "2025-03-11": {
-      "sha256": "951eb2bf0dc0b8b92f28dc99d4333ede8f8ed250cb85c2753e9bf0063878df3e",
+      "sha256": "3f8566300201327af2ef5674549911f6dc30a194508a3bbb68782a067db4f5fc",
       "lines": 877
     },
     "2025-03-18": {
-      "sha256": "ad9f8e2a60fd2d43a64f429b14853531838bed8b68ee2fd220a18d34733bf317",
+      "sha256": "1a18caea6c9cad6c6b95bbf41e7f4fb88b3c978eb2a14ed6e2402d73f23bd53d",
       "lines": 931
     },
     "2025-04-01": {
-      "sha256": "35320bc8c56734c15c54a327a307e86675466f8fb750ee8146aa6b270b45ebdc",
+      "sha256": "674c545187501ba3b71380e4af39b51a0a16e9a539c7f1610732668dc676b5ed",
       "lines": 849
     },
     "2025-04-08": {
-      "sha256": "10b8d931978db218b2f25eb5b9bd5604c4a5ed0a2261a787e67f65b44401b650",
+      "sha256": "6472e4db59a4ce31b057a5431bc8eff5a17cc8a63ac2e43076358ef2cba6509c",
       "lines": 697
     },
     "2025-04-15": {
-      "sha256": "86390b9924188eeb3f83c65babbdaaf1f739d73f215264e4fe386e85c00f219c",
+      "sha256": "b6b5b9f0a3d7f83963fd56158a2463900eb81c0c4a14811e93846ae542b88773",
       "lines": 889
     },
     "2025-04-22": {
-      "sha256": "5d2ef48c7216ed2f2e6220b09d71c6a875e6e9d4cf8e93337a2c3c5e1f25b063",
+      "sha256": "7f9575b3b2eb7ff9c04ac7d8941d2a7beeea56c147b11ef4ebd223874cf46898",
       "lines": 875
     },
     "2025-04-29": {
-      "sha256": "e11262d2c7721d6489c61a88b75b7d65fa6d05a228f4760c11da110705a17b4e",
+      "sha256": "d01cad0ef9ccdffd95cbbd1731780bcae73b052da3c55459c5816fae7125c493",
       "lines": 922
     },
     "2025-05-13": {
-      "sha256": "c1cae7e4fab664cf2e8d1e9d968ef2e744cbdab874e47d0dd4e86aacc60231e1",
+      "sha256": "e7afb01a57369b260efdab8aa74453cee6b310fd45c812ce7118bd1f1c0ec906",
       "lines": 760
     },
     "2025-05-20": {
@@ -68,7 +68,7 @@
       "lines": 894
     },
     "2025-06-03": {
-      "sha256": "f0074b49e9211caa5d5516b8131f7c9a06c6b4b07be7a61d3a6ca218c105ef52",
+      "sha256": "0c0a7e9f3e020530a97ef0fc980c14626ca16c6829ad99f83e2e07a2be5d48a2",
       "lines": 872
     },
     "2025-06-10": {
@@ -76,15 +76,15 @@
       "lines": 947
     },
     "2025-06-24": {
-      "sha256": "40a0c3aa20f7bbe2e5b4c3c74447cc066ebcb5d6d94fae2073ac179d9a729890",
+      "sha256": "1ceaeb6c5576a1c6565c20b5f8bab0acc156af1cc1e89b8918140aa3245cd56f",
       "lines": 1088
     },
     "2025-07-02": {
-      "sha256": "c080272749884e363a6764b61d3be790ea7c87c92073bb48335c3a7f57b3d83e",
+      "sha256": "864ff073fa368eb97da56c6e35e756926e18ede163ae0e87be9fe2d66c44562e",
       "lines": 1048
     },
     "2025-07-08": {
-      "sha256": "10cffe2fd7ec748ebf6795648d9d768fd0bd1551bf9d74dffd1578fe488451a7",
+      "sha256": "4ba436951d1ce475d3855da072329ae8c74609c93d256e845cb2a32fb16d1546",
       "lines": 944
     },
     "2025-07-22": {
@@ -92,15 +92,15 @@
       "lines": 937
     },
     "2025-08-05": {
-      "sha256": "cdc5cbd1d9c31746d3e3cc2564217f3b538c778645e999e00ca96b645112eb5a",
+      "sha256": "a35a528174c36656547d306cd25dbb5bd22bc094bb0a1c424ead31dca96175f0",
       "lines": 554
     },
     "2025-08-12": {
-      "sha256": "a271fc6d898e57286cb7afb13d3bbb01f38a8ecc1b715d35cc0e87810d3646ee",
+      "sha256": "97a91a5b2d0f22a7c2391f8626aa064f0cecbed50c89900407d898ff81fda4fe",
       "lines": 679
     },
     "2025-09-02": {
-      "sha256": "0aad1f6621cd9a0e50a779acc644919406ea0a95855e2af2667727039edb5d38",
+      "sha256": "da66bb5036daa6fdcc8d0ef03f06f95821f974a7fd094c5a7d38594782e8e89b",
       "lines": 804
     },
     "2025-09-09": {
@@ -108,11 +108,11 @@
       "lines": 893
     },
     "2025-09-23": {
-      "sha256": "995d5bde8570db3acefeac46930b900ca0a0f9abf21d4062093f59172d7e4e8e",
+      "sha256": "92a14f783f4a4563f70a72ac4b50fc3faeac0ee8bf001fa08aa32e027dc0bd81",
       "lines": 810
     },
     "2025-09-30": {
-      "sha256": "19dccba5cedfd4e0f1e52acdc274d3132fa2e1feb726df73800d09c3efcbe912",
+      "sha256": "e3aa973942a5204b84d6f9016c7c2f96925829dd0be7c119340719963fc85dfe",
       "lines": 745
     },
     "2025-10-14": {
@@ -132,7 +132,7 @@
       "lines": 892
     },
     "2025-12-09": {
-      "sha256": "eef7d618965758c817555de21409640acbc1ad0fe2fe5defafed47030a8f042a",
+      "sha256": "c5ebda5c2b96b6dfbc2c80b79e6141229da5faf3b2ad6fd46c0bdff709dd7926",
       "lines": 1024
     },
     "2025-12-16": {
@@ -140,19 +140,19 @@
       "lines": 612
     },
     "2025-12-30": {
-      "sha256": "539a0eae659c13c4764e4e1b0f8ee7e27dc8aee74b88c00721eb93b0dc460169",
+      "sha256": "cebb412656748e411c253a4b54f186c314550241e2d8d6cd54f2fde8ca80fab9",
       "lines": 1207
     },
     "2026-01-06": {
-      "sha256": "4c9f323c664cbba75309cc4459c32ce8f3867f0995451528947844eb0fe58960",
+      "sha256": "bb9011107cfcc33a92dfacf97ce9dcced9e247e425b1c7e4376d167458cc5931",
       "lines": 946
     },
     "2026-01-20": {
-      "sha256": "8976687e587444f72073011b0b1d3f84577bad13079a1ca995960bd7184d58c9",
+      "sha256": "c77d62205f5c0e5365c3cdbca634aeab7ff031b0c86d41a65fc82adb588a9a1a",
       "lines": 968
     },
     "2026-01-27": {
-      "sha256": "66b0964fdc76dd84730f83e599d216006c7688ef177dffd46fa890f1e51f9e78",
+      "sha256": "d61a625468e56dc64b679a9d31b208b89e200da53289c4df0fe1c2de45b344ba",
       "lines": 924
     },
     "2026-02-03": {
@@ -164,35 +164,35 @@
       "lines": 1083
     },
     "2026-03-03": {
-      "sha256": "dce53e89f2ddc022ab4365ea8f100ded57584c22bd940fd14c9f50040d5bc23c",
+      "sha256": "715c51f065213f36b73b4f20ea5957caa2c933e52b80140b9d997e9c4b1fb906",
       "lines": 944
     },
     "2026-03-10": {
-      "sha256": "04f96afd9d40af1853d1a2b80d486100d98773785f12b4364cd986680b1036c5",
+      "sha256": "004a10d5e96ad80ac65e0956109274b33d6c2fd914a59cb95cc229cba0746b2b",
       "lines": 769
     },
     "2026-03-17": {
-      "sha256": "2cf8f0d0f0a711644397dad4ef47ebd1b8300ca1e4218682016a37df81e17526",
+      "sha256": "9fa463956bd4aba2e01eb1af6aa50d5c2a1e5bb1b9d186822c24341327c4d030",
       "lines": 792
     },
     "2026-03-24": {
-      "sha256": "5cd580b0509496a15d4d4e738bf02c13590c025962f5f62466880631b6410e63",
+      "sha256": "1644616256634dbd1b899770dadd67e414af46458d7e14b920c5d2dbfdfa5ef6",
       "lines": 849
     },
     "2026-04-14": {
-      "sha256": "5e52d41b6787ce4885fad2b0f8015bfeab8d7e0b5745cc14b204926088bbfb52",
+      "sha256": "9fabada397c890d5938c731739f403a0c1869f78196c1e679365f987af64041d",
       "lines": 1038
     },
     "2026-04-21": {
-      "sha256": "543fd59edf9f6e104492b4eea674daf7ba57e2504332b8a04a755fd5f8af195e",
+      "sha256": "3e51b593bd45e5730d1b96add1a2827dfafd44b2e519056c9c8756a3a1cd30f9",
       "lines": 976
     },
     "2026-05-05": {
-      "sha256": "5d0a35b5504fe45cce3ed2baaf75b707679f4ad19e51a7eb690d3b0b652a18f9",
+      "sha256": "0e9dafe3d35e54c3a00b7bcc25d9eaeee100af1194f22ef775a7ddb2f86e1577",
       "lines": 951
     },
     "2026-05-19": {
-      "sha256": "04b792bfd996b1a21355b773dad37122f7b079a01fbd1e249b68cac839c76a75",
+      "sha256": "0cc5b134ed43484d83dcff2d091b4e993cbe31294f56dfbf46fda6432dda48b6",
       "lines": 870
     },
     "2026-06-02": {
@@ -200,23 +200,23 @@
       "lines": 1040
     },
     "2026-06-09": {
-      "sha256": "5ce1f6fbe4e0fc1a1819d1dd4775a0aae0711ec469046303b95ed64a70351355",
+      "sha256": "f8dee48d89b4d1c41ca6fbdb07855a9c6a7999e8c4f84cb3d01478963bbf8776",
       "lines": 868
     },
     "2026-06-23": {
-      "sha256": "38a498f5d00eb42b8db0c217fc3fae30107ee22f6dffcfef782fbf7b917e1c66",
+      "sha256": "69cd6d34a77942c7272269177c3f3528e3d8b748bd0e0f4fc5fc14e24c0960b3",
       "lines": 529
     },
     "2026-06-30": {
-      "sha256": "a6d5a5116936d592729b8444e21cb7d5537e04818e0a0abe0610ac4b4282820b",
+      "sha256": "9803d75726dc1da81f12fe154b4ffb7fbd5a264d8efbfbe512d0c8279a95f66b",
       "lines": 653
     },
     "2026-07-14": {
-      "sha256": "6a993b0288198e012e376901a609445d976d4dc25ddcc3e487315f65d6c98a0e",
+      "sha256": "4593ff6eade211537f592164ab5145e21f32bd24454005d298e1226e24221ec1",
       "lines": 937
     },
     "2026-07-21": {
-      "sha256": "8f4efff9433117e78834b9535b0a027487963c4c09ccd3b051351ccc91daa939",
+      "sha256": "a65cffdde2e33e5bdc8cd7de868098ef7735004ba637619b0869e4c95213abd2",
       "lines": 963
     },
     "2026-08-04": {
@@ -228,7 +228,7 @@
       "lines": 771
     },
     "2026-09-01": {
-      "sha256": "58c23f639de5f91212f1f06f5e94bc22cb3a0fc2f8635ab38de6d8946649fc4a",
+      "sha256": "3da043d94a2ab922bd8b998e095477e3ae3236ec0a0b7911b577b805ef778b32",
       "lines": 1038
     },
     "2026-09-08": {
@@ -238,6 +238,10 @@
     "2026-09-15": {
       "sha256": "04ea1fa80e1ef7eb9df0d78535532cc8842c4fcfd11966e32d18a030a1def798",
       "lines": 836
+    },
+    "2026-05-14": {
+      "sha256": "09add531fcd78c41ab19b0d11263ada5443aef68b6263bf915d6296761441947",
+      "lines": 5414
     },
     "2026-09-29": {
       "sha256": "5342e81fb333d927805e15b438f89ce96fcb13c7bf82562570baca7c2562416a",

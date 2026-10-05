@@ -10,6 +10,7 @@ description: "顺序完成上市公司首次覆盖：公司研究、财务模型
 ## 全程契约
 
 - Task 1 前读取 [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md)，此后全程沿用同一 source manifest。
+- 具体数据源路由以 [`../../data-sources.jsonl`](../../data-sources.jsonl) 为准（本项目 skill 数据源路由的单一事实来源）：按 `data_types` × `markets` 过滤，经 `policy_status`/`auth`/`cost` 校验；无匹配时 fail-closed。
 - 创建或修改 `.xlsx`/`.docx` 前读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 - 用户只要求其中一项时，仅执行该项及其真正必需的前置工作，不扩大为完整报告。
 - 金融假设、估值区间和权重必须来自公司历史、公开同业数据、用户输入，或带推导的 `MODEL_DERIVED` 情景。

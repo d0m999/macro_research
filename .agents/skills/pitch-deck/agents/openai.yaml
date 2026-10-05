@@ -1,5 +1,0 @@
-interface:
-  display_name: "Pitch Deck"
-  short_description: "把用户模板和来源数据填入投资银行 pitch deck"
-policy:
-  allow_implicit_invocation: false

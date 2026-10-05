@@ -1,5 +1,0 @@
-interface:
-  display_name: "CIM Builder"
-  short_description: "把卖方材料整理为结构完整且来源清晰的专业 CIM 和引用"
-policy:
-  allow_implicit_invocation: false

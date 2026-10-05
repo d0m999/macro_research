@@ -2,7 +2,7 @@
 
 审计对象：Anthropic `financial-services` 上游 `69cbc81467a5dced793eee03dec4658aa24ef856`。
 
-导入策略：保留四个与 fundamental research、估值、建模和交易尽调直接相关的 vertical source，共 38 个金融 `SKILL.md`；不导入 Claude marketplace、远程 MCP 配置、partner-built 插件或 agent bundled 副本。每一行都对应一个已导入的金融 skill，`source treatment` 是该 skill 在 public-only 模式下可使用的输入边界。
+导入策略：面向二级市场基本面研究，从四个 vertical source 中保留 15 个金融 `SKILL.md`；不导入 Claude marketplace、远程 MCP 配置、partner-built 插件或 agent bundled 副本。每一行都对应一个已导入的金融 skill，`source treatment` 是该 skill 在 public-only 模式下可使用的输入边界。
 
 Active skills 直接维护在仓库根目录 [`.agents/skills/`](../../.agents/skills/)，仅由当前项目发现，不使用全局安装或软链接。
 
@@ -10,7 +10,6 @@ Active skills 直接维护在仓库根目录 [`.agents/skills/`](../../.agents/s
 
 - `PUBLIC_RESEARCH`：主动数据来自 SEC/官方发行人/政府监管公开资料或实际验证的公开市场页面。
 - `USER_MATERIAL_PROCESSING`：skill 主要处理用户提供的模型、文档或交易材料；这些输入不是公共来源。
-- `MODEL_ONLY`：主要是计算、格式化、质量检查或输出编排，不主动寻找金融数据。
 - `MIXED_FAIL_CLOSED`：同时有公开研究和非公开输入；非公开部分必须标为 `USER_PROVIDED`，没有公开替代路径时标记 `SOURCE_UNAVAILABLE`。
 
 ## 逐 skill 结果
@@ -28,39 +27,15 @@ Active skills 直接维护在仓库根目录 [`.agents/skills/`](../../.agents/s
 | `thesis-tracker` | equity-research | `MIXED_FAIL_CLOSED` | 事实变化引用公开来源；持仓/内部 thesis 只作为用户输入 |
 | `3-statement-model` | financial-analysis | `PUBLIC_RESEARCH` | SEC filings/XBRL 和发行人材料；tag 映射失败时不填数字 |
 | `audit-xls` | financial-analysis | `USER_MATERIAL_PROCESSING` | 只审计用户提供的 workbook；不主动寻找数据商或远程数据 |
-| `clean-data-xls` | financial-analysis | `USER_MATERIAL_PROCESSING` | 只清理用户提供的表格；清理不改变来源状态 |
 | `competitive-analysis` | financial-analysis | `PUBLIC_RESEARCH` | 公司 filings、官网、政府/监管/协会资料和可核验公开市场页面 |
 | `comps-analysis` | financial-analysis | `PUBLIC_RESEARCH` | actual comps 用 filings + 公开价格计算；forward comps 没有公开输入则省略/标缺失 |
-| `dcf-model` | financial-analysis | `PUBLIC_RESEARCH` | 历史输入用 filings；Treasury/官方宏观页面用于利率；beta/价格缺失则停止对应输出 |
-| `deck-refresh` | financial-analysis | `USER_MATERIAL_PROCESSING` | 只刷新用户提供 deck 中已有且可追溯的数字 |
-| `ib-check-deck` | financial-analysis | `USER_MATERIAL_PROCESSING` | 只检查用户提供的 presentation 和其内部引用 |
-| `lbo-model` | financial-analysis | `MIXED_FAIL_CLOSED` | 模型输入来自用户材料或公开 filings；债务条款/交易假设无公开依据就标 `USER_PROVIDED` |
-| `ppt-template-creator` | financial-analysis | `USER_MATERIAL_PROCESSING` | 只处理用户提供的 PowerPoint template |
-| `buyer-list` | investment-banking | `MIXED_FAIL_CLOSED` | 公司官网、SEC/监管 filings 和公开并购公告；私有 sponsor 数据不进入默认来源 |
-| `cim-builder` | investment-banking | `USER_MATERIAL_PROCESSING` | CIM 和管理层材料只能作为 `USER_PROVIDED` 输入 |
 | `datapack-builder` | investment-banking | `MIXED_FAIL_CLOSED` | public company 用 filings/官方页面；CIM、预算和内部包只能标 `USER_PROVIDED` |
-| `deal-tracker` | investment-banking | `USER_MATERIAL_PROCESSING` | 只处理用户提供的交易状态，不连接私有 CRM |
-| `merger-model` | investment-banking | `MIXED_FAIL_CLOSED` | 公开交易事实用 SEC/公司公告/监管文件；未公开条款必须由用户提供 |
-| `pitch-deck` | investment-banking | `USER_MATERIAL_PROCESSING` | 只处理用户提供的模板和数据 |
-| `process-letter` | investment-banking | `USER_MATERIAL_PROCESSING` | 只根据用户提供的流程事实起草 |
-| `strip-profile` | investment-banking | `PUBLIC_RESEARCH` | filings、发行人官网/IR、官方公告；市场价和 forward data 缺失则不补齐 |
-| `teaser` | investment-banking | `USER_MATERIAL_PROCESSING` | 只重组用户批准的交易材料，不生成未来源支持的数字 |
-| `ai-readiness` | private-equity | `MIXED_FAIL_CLOSED` | 公开公司可用公开 filings；portfolio package/data room 必须标 `USER_PROVIDED` |
-| `dd-checklist` | private-equity | `MIXED_FAIL_CLOSED` | 公开事实用官方来源；商业、合同、客户和供应链内部事实只来自用户材料 |
-| `dd-meeting-prep` | private-equity | `USER_MATERIAL_PROCESSING` | 会议问题基于用户提供的 context，不声称拥有专家网络或数据室 |
-| `deal-screening` | private-equity | `MIXED_FAIL_CLOSED` | public target 用公开材料；CIM/teaser 只作 `USER_PROVIDED` |
-| `deal-sourcing` | private-equity | `PUBLIC_RESEARCH` | 只发现有官方公开页面的公司；不访问 CRM、Gmail、Slack 或私有数据库 |
-| `ic-memo` | private-equity | `MIXED_FAIL_CLOSED` | memo 事实必须回链公开来源或标 `USER_PROVIDED`，不凭空补全回报数据 |
-| `portfolio-monitoring` | private-equity | `USER_MATERIAL_PROCESSING` | 只处理用户提供的 portfolio package；没有材料则 `SOURCE_UNAVAILABLE` |
-| `returns-analysis` | private-equity | `MODEL_ONLY` | 只计算用户/公开来源提供的输入，结果标 `MODEL_DERIVED` |
 | `unit-economics` | private-equity | `MIXED_FAIL_CLOSED` | 经营指标来自公开 filing 或用户材料；缺失不使用行业数据库补齐 |
-| `value-creation-plan` | private-equity | `USER_MATERIAL_PROCESSING` | 只使用用户提供的运营基线和明确假设 |
 
-## 本地路由与原生替代
+## 原生能力与调用方式
 
-- `$financial-services` 是本地 `MODEL_ONLY` 目录路由，只推荐主 skill 和最多两个后续 skill，不执行子 skill；它不是第 39 个上游来源。
 - 上游选择中的通用 `skill-creator`、`xlsx-author`、`pptx-author` 不再维护项目副本。Skill 创建使用当前 Codex 官方 `skill-creator`；Office artifact 按 [Codex 执行契约](../../.agents/CODEX-EXECUTION-POLICY.md)路由到 Spreadsheets、Presentations、Documents，并在能力不可用时受限回退。
-- 因而 active inventory 为 38 个上游金融 skill + 1 个本地路由 = 39 个；其中 12 个允许隐式调用，27 个只允许显式调用。
+- Active inventory 为 15 个上游金融 skill；其中 11 个允许隐式调用，4 个只允许显式调用。
 
 ## 移除的上游来源类别
 
@@ -70,7 +45,7 @@ Active skills 直接维护在仓库根目录 [`.agents/skills/`](../../.agents/s
 
 ## 审计完成条件
 
-- 38/38 个上游金融 `SKILL.md` 已导入并在上表分类；另有 1 个本地目录路由。
+- 当前保留的 15/15 个上游金融 `SKILL.md` 已在上表分类。
 - active skill 文本不再把付费/授权 provider 作为数据入口或优先级。
 - 所有数据敏感 skill 指向 [`.agents/PUBLIC-SOURCE-POLICY.md`](../../.agents/PUBLIC-SOURCE-POLICY.md)。
 - 项目级 skill 集合不包含 `.mcp.json`，不声明远程金融数据连接器。
@@ -98,10 +73,10 @@ Active skills 直接维护在仓库根目录 [`.agents/skills/`](../../.agents/s
 
 - Codex 项目发现目录：仓库根目录 `.agents/skills/`。
 - 独立 plugin manifest：已移除；不进行用户级或系统级安装。
-- 39/39 个 active `SKILL.md` frontmatter 通过官方 `quick_validate.py`。
-- 选定上游金融 inventory 为 38 个；加本地 `$financial-services` 后与项目级 39 个 active skill 精确匹配。
-- 39/39 个 `agents/openai.yaml` 可解析；调用 policy 精确为 12 个 `true`、27 个 `false`。
-- bundled Python scripts：语法编译检查通过。
+- 15/15 个 active `SKILL.md` frontmatter 通过官方 `quick_validate.py`。
+- 来源审计中的 15 个上游金融 skill 与项目级 active inventory 精确匹配。
+- 15/15 个 `agents/openai.yaml` 可解析；调用 policy 精确为 11 个 `true`、4 个 `false`。
+- 公共 artifact 验证脚本：语法检查通过。
 - 相对 Markdown links：全部解析到项目内实际文件。
 - 付费 provider、endpoint 和 `mcp__` 反向扫描：0 命中；`.mcp.json`：0 个。
 - skills 及本次刷新审计的 trailing whitespace：无。

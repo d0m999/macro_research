@@ -43,6 +43,14 @@ PYTHON = Path("/Library/Frameworks/Python.framework/Versions/3.10/bin/python3")
 FFMPEG = Path("/usr/local/bin/ffmpeg")
 FFPROBE = Path("/usr/local/bin/ffprobe")
 TESSERACT = Path("/usr/local/bin/tesseract")
+
+
+def _copy_with_clone(src: Path, dst: Path) -> None:
+    """交接复制：优先 APFS 克隆（共享物理块，避免两层各占一份磁盘），失败回退普通复制。"""
+    try:
+        subprocess.run(["cp", "-p", "-c", str(src), str(dst)], check=True, capture_output=True)
+    except Exception:
+        shutil.copy2(src, dst)
 TASKPOLICY = Path("/usr/sbin/taskpolicy")
 NICE = Path("/usr/bin/nice")
 
@@ -961,9 +969,9 @@ def write_standard_package(
     for index, item in enumerate(deck_items, start=1):
         filename = f"slide-{index:03d}.png"
         source_frame = paths["selected"] / filename
-        shutil.copy2(item["candidate"], source_frame)
+        _copy_with_clone(item["candidate"], source_frame)
         package_frame = work / "slides" / filename
-        shutil.copy2(source_frame, package_frame)
+        _copy_with_clone(source_frame, package_frame)
         ocr_filename = f"slide-{index:03d}.txt"
         ocr_path = work / "ocr" / ocr_filename
         write_text_atomic(ocr_path, item["ocr"])

@@ -1,5 +1,0 @@
-interface:
-  display_name: "Deal Sourcing"
-  short_description: "从公开页面发现目标并结合用户 prior-contact 起草 outreach"
-policy:
-  allow_implicit_invocation: false

@@ -59,7 +59,7 @@
   },
   "status_counts": {
     "complete_existing": 3,
-    "complete": 57
+    "complete": 58
   },
   "entries": {
     "TQ3G5Jf-yNM": {
@@ -980,6 +980,13 @@
       "deck_count": 17,
       "completed_on": "2026-09-16"
     },
+    "gGqxBY2L4wI": {
+      "package_id": "market-overview-2026-05-14",
+      "upload_date": "2026-05-14",
+      "status": "complete",
+      "last_transition": "2026-09-20",
+      "attempts": 0
+    },
     "Ca6l5KCuGoc": {
       "package_id": "market-overview-2026-09-29",
       "upload_date": "2026-09-29",
@@ -996,7 +1003,7 @@
     }
   },
   "agent_index_policy": "only_accepted_complete_packages",
-  "next_action": "当前登记的 60 个视频包已完成；本次新增 2026-09-29：687 段转录、14 个去重研究画面及 OCR。X 增量完整性单独见 X manifest，不代表完整账号时间线。",
+  "next_action": "当前登记的 61 个视频包已完成；本次新增 2026-09-29：687 段转录、14 个去重研究画面及 OCR。X 增量完整性单独见 X manifest，不代表完整账号时间线。",
   "pipeline_state": "complete",
   "checkpoint": {
     "recorded_on": "2026-08-29",

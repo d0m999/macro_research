@@ -10,6 +10,7 @@ description: "把公开 filing、发行人材料和用户提供的文件抽取�
 ## 必读契约
 
 - 收集或映射数据前读取 [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md)。
+- 具体数据源路由以 [`../../data-sources.jsonl`](../../data-sources.jsonl) 为准（本项目 skill 数据源路由的单一事实来源）：按 `data_types` × `markets` 过滤，经 `policy_status`/`auth`/`cost` 校验；无匹配时 fail-closed。
 - 创建或修改 `.xlsx` 前读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 - 设计字段和审计表时读取 [`references/datapack-schema.md`](references/datapack-schema.md)。
 - 发生期间、币种、会计口径或 entity 映射时读取 [`references/normalization.md`](references/normalization.md)。

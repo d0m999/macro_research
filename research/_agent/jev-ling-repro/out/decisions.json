@@ -1,0 +1,162 @@
+{
+ "source": "rule",
+ "model": null,
+ "entries": [
+  {
+   "holdDay": "2026-09-17",
+   "reportDay": "2026-09-16",
+   "ms": 0,
+   "answers": {
+    "BTCUSDT": {
+     "type": "choice",
+     "choice": "buy",
+     "probabilities": {
+      "buy": 0.3702,
+      "hold": 0.332,
+      "sell": 0.2977
+     },
+     "confidence": 0.3702,
+     "debug": {
+      "news": 0,
+      "mom": 0.399,
+      "pos": -0.496,
+      "score": 0.045
+     }
+    },
+    "ETHUSDT": {
+     "type": "choice",
+     "choice": "sell",
+     "probabilities": {
+      "buy": 0.3234,
+      "hold": 0.3332,
+      "sell": 0.3433
+     },
+     "confidence": 0.3433,
+     "debug": {
+      "news": 0,
+      "mom": 0.266,
+      "pos": -0.614,
+      "score": -0.012
+     }
+    }
+   }
+  },
+  {
+   "holdDay": "2026-09-18",
+   "reportDay": "2026-09-17",
+   "ms": 0,
+   "answers": {
+    "BTCUSDT": {
+     "type": "choice",
+     "choice": "sell",
+     "probabilities": {
+      "buy": 0.3238,
+      "hold": 0.3332,
+      "sell": 0.343
+     },
+     "confidence": 0.343,
+     "debug": {
+      "news": 0,
+      "mom": 0.166,
+      "pos": -0.412,
+      "score": -0.012
+     }
+    },
+    "ETHUSDT": {
+     "type": "choice",
+     "choice": "buy",
+     "probabilities": {
+      "buy": 0.3764,
+      "hold": 0.3316,
+      "sell": 0.2921
+     },
+     "confidence": 0.3764,
+     "debug": {
+      "news": 0,
+      "mom": 0.388,
+      "pos": -0.424,
+      "score": 0.053
+     }
+    }
+   }
+  },
+  {
+   "holdDay": "2026-09-19",
+   "reportDay": "2026-09-18",
+   "ms": 0,
+   "answers": {
+    "BTCUSDT": {
+     "type": "choice",
+     "choice": "buy",
+     "probabilities": {
+      "buy": 0.8114,
+      "hold": 0.1579,
+      "sell": 0.0307
+     },
+     "confidence": 0.8114,
+     "debug": {
+      "news": 0.467,
+      "mom": 0.998,
+      "pos": 0.84,
+      "score": 0.682
+     }
+    },
+    "ETHUSDT": {
+     "type": "choice",
+     "choice": "buy",
+     "probabilities": {
+      "buy": 0.8062,
+      "hold": 0.1615,
+      "sell": 0.0323
+     },
+     "confidence": 0.8062,
+     "debug": {
+      "news": 0.467,
+      "mom": 0.996,
+      "pos": 0.764,
+      "score": 0.67
+     }
+    }
+   }
+  },
+  {
+   "holdDay": "2026-09-20",
+   "reportDay": "2026-09-19",
+   "ms": 0,
+   "answers": {
+    "BTCUSDT": {
+     "type": "choice",
+     "choice": "buy",
+     "probabilities": {
+      "buy": 0.6872,
+      "hold": 0.2335,
+      "sell": 0.0793
+     },
+     "confidence": 0.6872,
+     "debug": {
+      "news": 0.467,
+      "mom": 0.244,
+      "pos": 0.8,
+      "score": 0.45
+     }
+    },
+    "ETHUSDT": {
+     "type": "choice",
+     "choice": "buy",
+     "probabilities": {
+      "buy": 0.7029,
+      "hold": 0.2251,
+      "sell": 0.0721
+     },
+     "confidence": 0.7029,
+     "debug": {
+      "news": 0.467,
+      "mom": 0.34,
+      "pos": 0.772,
+      "score": 0.475
+     }
+    }
+   }
+  }
+ ]
+}

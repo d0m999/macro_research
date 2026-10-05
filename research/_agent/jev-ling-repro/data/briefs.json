@@ -1,0 +1,651 @@
+[
+ {
+  "holdDay": "2026-09-17",
+  "reportDay": "2026-09-16",
+  "briefs": {
+   "BTCUSDT": {
+    "t": 1789603200000,
+    "day": "2026-09-17",
+    "px": 76206.01,
+    "ret24h": 0.0074,
+    "ret7d": -0.0268,
+    "vol24d": 0.0175,
+    "pos7d": 0.252,
+    "hi7d": 79890,
+    "lo7d": 74967.97
+   },
+   "ETHUSDT": {
+    "t": 1789603200000,
+    "day": "2026-09-17",
+    "px": 2418.26,
+    "ret24h": 0.0083,
+    "ret7d": -0.0202,
+    "vol24d": 0.0305,
+    "pos7d": 0.193,
+    "hi7d": 2665.99,
+    "lo7d": 2358.88
+   }
+  },
+  "headlines": [
+   {
+    "title": "Meta May Have Found a Fix for Its 'Pervert Glasses'",
+    "link": "https://decrypt.co/378448/meta-fix-pervert-glasses",
+    "ts": 1789593363000,
+    "day": "2026-09-16",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Crypto Tax Bill Clears House Committee After Clarity Act Setback",
+    "link": "https://decrypt.co/378449/crypto-tax-bill-clears-house-committee",
+    "ts": 1789595163000,
+    "day": "2026-09-16",
+    "feed": "decrypt"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "holdDay": "2026-09-18",
+  "reportDay": "2026-09-17",
+  "briefs": {
+   "BTCUSDT": {
+    "t": 1789689600000,
+    "day": "2026-09-18",
+    "px": 76417.01,
+    "ret24h": 0.0028,
+    "ret7d": -0.002,
+    "vol24d": 0.0167,
+    "pos7d": 0.294,
+    "hi7d": 79890,
+    "lo7d": 74967.97
+   },
+   "ETHUSDT": {
+    "t": 1789689600000,
+    "day": "2026-09-18",
+    "px": 2447.28,
+    "ret24h": 0.012,
+    "ret7d": 0.0037,
+    "vol24d": 0.0293,
+    "pos7d": 0.288,
+    "hi7d": 2665.99,
+    "lo7d": 2358.88
+   }
+  },
+  "headlines": [
+   {
+    "title": "House Committee Advances US Bitcoin Reserve Bill on Party-Line Split",
+    "link": "https://decrypt.co/378457/house-committee-advances-us-bitcoin-reserve-bill-on-party-line-split",
+    "ts": 1789640661000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Zcash Closes On $1,400 After Coinholders Vote to Keep Bitcoin-Style Halvings",
+    "link": "https://decrypt.co/378460/zcash-closes-on-1400-after-coinholders-vote-to-keep-bitcoin-style-halvings",
+    "ts": 1789646713000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Morning Minute: Crypto Rebounds After The Fed’s First Hike Since 2023",
+    "link": "https://decrypt.co/378462/morning-minute-crypto-rebounds-after-the-feds-first-hike-since-2023",
+    "ts": 1789647200000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Revolut Hackers Demand $3M Monero Ransom, Threaten to Sell Customer Data: Report",
+    "link": "https://decrypt.co/378472/revolut-hackers-demand-3m-monero-ransom-threaten-to-sell-customer-data-report",
+    "ts": 1789649581000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "What Is Arc? The Stablecoin Blockchain From USDC Issuer Circle",
+    "link": "https://decrypt.co/resources/what-is-arc-the-stablecoin-blockchain-from-usdc-issuer-circle",
+    "ts": 1789656007000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "SEC Clears a Path for Tokenized Stocks After Clarity Act Stumbles",
+    "link": "https://decrypt.co/378492/sec-innovation-exemption-tokenized-stocks-clarity-act",
+    "ts": 1789656723000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "FCA Targets Three More London Sites Over Unregistered P2P Crypto Trading",
+    "link": "https://decrypt.co/378495/fca-targets-three-more-london-sites-over-unregistered-p2p-crypto-trading",
+    "ts": 1789658479000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Financial Data Giant S&#038;P Global Moves Deeper Into Crypto With OpenZeppelin Deal",
+    "link": "https://decrypt.co/378505/sp-global-acquire-crypto-openzeppelin",
+    "ts": 1789662792000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Bitcoin Bounces as Markets Brace for the Fed’s Next Move",
+    "link": "https://decrypt.co/378506/bitcoin-bounces-wall-street-fed-next-move",
+    "ts": 1789664463000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "WisdomTree, MoonPay team up to expand US access to tokenized money market fund",
+    "link": "https://cointelegraph.com/news/wisdomtree-moonpay-team-up-to-expand-us-access-to-tokenized-money-market-fund?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789666272000,
+    "day": "2026-09-17",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "King Charles Convenes OpenAI, Anthropic, Nvidia and Google for AI Safety Summit",
+    "link": "https://decrypt.co/378504/king-charles-openai-anthropic-nvidia-google-deepmind-ai-safety",
+    "ts": 1789666562000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Andrew Yang Calls for AI Kill Switch as Safety Fears Mount",
+    "link": "https://decrypt.co/378522/andrew-yang-ai-kill-switch-safety-fears",
+    "ts": 1789668363000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Ethereum Founder Vitalik Buterin Says AI Won’t Doom Crypto Security",
+    "link": "https://decrypt.co/378544/ethereum-vitalik-buterin-ai-crypto-security",
+    "ts": 1789671665000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "CFTC expands regulatory relief for passive trading software providers",
+    "link": "https://cointelegraph.com/news/cftc-expands-regulatory-relief-for-passive-trading-software-providers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789673448000,
+    "day": "2026-09-17",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "OpenAI Says It's Made Progress on a Second $1 Million Math Problem",
+    "link": "https://decrypt.co/378551/openai-progress-second-millennium-prize-math-problem",
+    "ts": 1789673542000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "CFTC Opens Door for Crypto Apps to Offer Regulated Derivatives Access",
+    "link": "https://decrypt.co/378560/cftc-crypto-apps-regulated-derivatives-access",
+    "ts": 1789676164000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Why Is Chipotle Now Working With the CIA-Funded Palantir?",
+    "link": "https://decrypt.co/378553/why-chipotle-working-with-palantir",
+    "ts": 1789677963000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Your Data Could Outlive the Startup You Gave It To. Elon Musk Wants to Buy What's Left",
+    "link": "https://decrypt.co/378573/elon-musk-spacex-buy-startup-data-train-ai",
+    "ts": 1789679763000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Security Experts Want the US and China to Promise Never to Let AI Control Nukes",
+    "link": "https://decrypt.co/378575/us-china-never-let-ai-control-nukes",
+    "ts": 1789681563000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "OpenAI Models Are Writing Their Own Jailbreak Instructions—And Sometimes Obeying Them",
+    "link": "https://decrypt.co/378582/openai-models-ai-jailbreak-instructions-obeying",
+    "ts": 1789684263000,
+    "day": "2026-09-17",
+    "feed": "decrypt"
+   },
+   {
+    "title": "North Korea drives onchain malware surge, CoinEx shuts: Asia Express",
+    "link": "https://cointelegraph.com/magazine/north-korea-drives-onchain-malware-surge-coinex-shuts-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789688963000,
+    "day": "2026-09-17",
+    "feed": "cointelegraph"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "holdDay": "2026-09-19",
+  "reportDay": "2026-09-18",
+  "briefs": {
+   "BTCUSDT": {
+    "t": 1789776000000,
+    "day": "2026-09-19",
+    "px": 80883.87,
+    "ret24h": 0.0585,
+    "ret7d": 0.0474,
+    "vol24d": 0.0174,
+    "pos7d": 0.92,
+    "hi7d": 81400,
+    "lo7d": 74967.97
+   },
+   "ETHUSDT": {
+    "t": 1789776000000,
+    "day": "2026-09-19",
+    "px": 2612.14,
+    "ret24h": 0.0674,
+    "ret7d": 0.038,
+    "vol24d": 0.022,
+    "pos7d": 0.882,
+    "hi7d": 2646,
+    "lo7d": 2358.88
+   }
+  },
+  "headlines": [
+   {
+    "title": "US sanctions Iran’s BitBank, saying it processes ‘Hormuz Safe’ Bitcoin payments",
+    "link": "https://cointelegraph.com/news/us-sanctions-irans-bitbank-saying-it-processes-hormuz-safe-bitcoin-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789695234000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "World launches self-custodial ‘super app’ World Money",
+    "link": "https://cointelegraph.com/news/world-launches-self-custodial-super-app-world-money?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789702828000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Cardano’s IOG warns users to avoid YouTube channel amid apparent hijack",
+    "link": "https://cointelegraph.com/news/cardanos-iog-warns-users-to-avoid-youtube-channel-amid-giveaway-scam?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789704700000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Zcash targets November for NU7 mainnet upgrade with 25-second blocks",
+    "link": "https://cointelegraph.com/news/zcash-nu7-november-mainnet-activation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789707089000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Bitcoin cycle bottom may already be in at $58K, says analyst James Check",
+    "link": "https://cointelegraph.com/markets/bitcoin-cycle-bottom-58k-james-check?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789721240000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Binance brushes off Lagarde MiCA speculation, reaffirms Europe commitment",
+    "link": "https://cointelegraph.com/news/binance-cites-speculation-report-ecb-chief-mica-intervention?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789721438000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Treasury Sanctions Crypto Exchange Behind Iran's Bitcoin Tolls on Hormuz Ships",
+    "link": "https://decrypt.co/378604/treasury-sanctions-crypto-exchange-behind-irans-bitcoin-tolls-on-hormuz-ships",
+    "ts": 1789722115000,
+    "day": "2026-09-18",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Stablecoin payments firm dtcpay closes $25M round with SBI backing",
+    "link": "https://cointelegraph.com/news/dtcpay-25m-series-a-sbi-stablecoin-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789722843000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "UAE, Sweden Arrest Seven Over $7.1M Crypto Laundering Ring Linked to Contract Killings",
+    "link": "https://decrypt.co/378611/uae-sweden-arrest-seven-over-7-1m-crypto-laundering-ring-linked-to-contract-killings",
+    "ts": 1789725453000,
+    "day": "2026-09-18",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Bitcoin adds to bull-market hopes as price metric prints fourth-ever bullish cross",
+    "link": "https://cointelegraph.com/markets/bitcoin-adds-to-bull-market-hopes-as-price-metric-prints-fourth-ever-bullish-cross?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789728377000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Dragonfly’s Qureshi calls for end to Zcash dev fund after 2028",
+    "link": "https://cointelegraph.com/news/dragonflys-qureshi-end-zcash-dev-fund-2028?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789730544000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "HYPE hits record above $90 as Hyperliquid launches manual borrowing",
+    "link": "https://cointelegraph.com/markets/hype-ath-above-90-hyperliquid-manual-borrowing-lending?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789732464000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Morning Minute: SEC Approves ‘Innovation Exemption’ Moving Tokenized Stocks Forward",
+    "link": "https://decrypt.co/378619/morning-minute-sec-approves-innovation-exemption-moving-tokenized-stocks-forward",
+    "ts": 1789734890000,
+    "day": "2026-09-18",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Ethereum Institutional signals support for Ethlabs’ motion to reduce Ethereum block times",
+    "link": "https://cointelegraph.com/news/ethereum-institutional-support-ethlabs-reduce-ethereum-block-times?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789735204000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Microsoft Staff Asked If AI Scraping Was 'Largest Theft of Labor in Human History'",
+    "link": "https://decrypt.co/378622/microsoft-staff-asked-if-ai-scraping-was-largest-theft-of-labor-in-human-history",
+    "ts": 1789735923000,
+    "day": "2026-09-18",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Banks double on EU MiCA crypto provider list as share hits 23%",
+    "link": "https://cointelegraph.com/news/banks-double-eu-mica-crypto-register-esma?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789740283000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Bitcoin Blasts Past $80K and a Fresh Short Squeeze Is On",
+    "link": "https://decrypt.co/378630/bitcoin-blasts-short-squeeze-crypto-liquidations",
+    "ts": 1789744969000,
+    "day": "2026-09-18",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Bitcoin hits $81K as US bond yields rebound on global oil woes",
+    "link": "https://cointelegraph.com/markets/bitcoin-hits-81k-as-us-bond-yields-rebound-on-global-oil-woes?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789745759000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Bitcoin Community Recognizes Quantum Computing Risk: VanEck",
+    "link": "https://bitcoinmagazine.com/news/bitcoin-community-recognizes-quantum-risk",
+    "ts": 1789746952000,
+    "day": "2026-09-18",
+    "feed": "bitcoinmagazine"
+   },
+   {
+    "title": "CFTC submits crypto market regulation plan for White House review",
+    "link": "https://cointelegraph.com/news/cftc-submits-crypto-market-regulation-plan-for-white-house-review?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789747462000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "CFTC Kicks Off Crypto Rulemaking, Bypassing a Stalled Congress",
+    "link": "https://decrypt.co/378638/cftc-crypto-rules-white-house-congress-clarity-act",
+    "ts": 1789747693000,
+    "day": "2026-09-18",
+    "feed": "decrypt"
+   },
+   {
+    "title": "XRP Surges 6.9% as Bitcoin Rebound Reopens Door to Golden Cross",
+    "link": "https://decrypt.co/378641/xrp-surges-bitcoin-rebound-reopens-golden-cross",
+    "ts": 1789749752000,
+    "day": "2026-09-18",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Bitcoin Price Surges Over $81,000 Despite Clarity Act Fail and Interest Rate Hike",
+    "link": "https://bitcoinmagazine.com/markets/bitcoin-price-jumps-over-81000",
+    "ts": 1789750008000,
+    "day": "2026-09-18",
+    "feed": "bitcoinmagazine"
+   },
+   {
+    "title": "Crypto stocks rebound after CLARITY Act selloff",
+    "link": "https://cointelegraph.com/news/crypto-stocks-rebound-after-clarity-selloff-as-us-regulators-move-ahead?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789754157000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Bitcoin Will Hit $1 Million, Says Kevin O’Leary—But There’s a Quantum Catch",
+    "link": "https://decrypt.co/378664/kevin-oleary-bitcoin-1-million-quantum-catch",
+    "ts": 1789756554000,
+    "day": "2026-09-18",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Binance launches 24/7 FX perps with weekend pricing system",
+    "link": "https://cointelegraph.com/news/binance-expands-tradfi-push-with-247-foreign-exchange-perpetuals?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789758390000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Zcash Is Running—Devs Want to Make It Faster",
+    "link": "https://decrypt.co/378667/zcash-upgrade-make-private-payments-3x-faster",
+    "ts": 1789758963000,
+    "day": "2026-09-18",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Ethereum ETFs Experience $366 Million Loss in Just Two Days as Whales Capitalize on the Dip",
+    "link": "https://247wallst.com/investing/cryptocurrency/2026/09/18/ethereum-etfs-experience-366-million-loss-in-just-two-days-as-whales-capitalize-on-the-dip/?.tsrc=rss",
+    "ts": 1789760041000,
+    "day": "2026-09-18",
+    "feed": "yahoo-eth"
+   },
+   {
+    "title": "Coinbase files to bring single-stock perpetual futures to US market",
+    "link": "https://cointelegraph.com/news/coinbase-files-to-bring-single-stock-perpetual-futures-to-us-market?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789761234000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "CFTC Sends Proposal To Regulate Crypto Transactions Following Clarity Act Fail",
+    "link": "https://bitcoinmagazine.com/news/cftc-proposes-rules-following-clarity-fail",
+    "ts": 1789761613000,
+    "day": "2026-09-18",
+    "feed": "bitcoinmagazine"
+   },
+   {
+    "title": "Crypto whale dumps $46 million in Bitcoin for rival",
+    "link": "https://www.thestreet.com/crypto/markets/trader-dumps-46m-in-bitcoin-for-rival?.tsrc=rss",
+    "ts": 1789763376000,
+    "day": "2026-09-18",
+    "feed": "yahoo-eth"
+   },
+   {
+    "title": "Here’s what happened in crypto today",
+    "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789765200000,
+    "day": "2026-09-18",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Coinbase Files to List Single-Stock Perps on Apple, Tesla and Nvidia",
+    "link": "https://decrypt.co/378681/coinbase-single-stock-perps-apple-tesla-nvidia",
+    "ts": 1789765290000,
+    "day": "2026-09-18",
+    "feed": "decrypt"
+   },
+   {
+    "title": "European Central Bank President Blocked Binance’s EU Entry: Report",
+    "link": "https://bitcoinmagazine.com/news/eu-central-bank-president-blocked-binance",
+    "ts": 1789768081000,
+    "day": "2026-09-18",
+    "feed": "bitcoinmagazine"
+   },
+   {
+    "title": "Weekly Wrap: Bitcoin Climbs Back Above $80,000",
+    "link": "https://www.cryptoprowl.com/releases/weekly-wrap-bitcoin-climbs-back-above-80000-7093?.tsrc=rss",
+    "ts": 1789768860000,
+    "day": "2026-09-18",
+    "feed": "yahoo-eth"
+   },
+   {
+    "title": "Ethereum Reclaims $2,600 After Key Trendline Holds, Following Two Failed Attempts",
+    "link": "https://247wallst.com/investing/cryptocurrency/2026/09/18/ethereum-reclaims-2600-after-key-trendline-holds-following-two-failed-attempts/?.tsrc=rss",
+    "ts": 1789773531000,
+    "day": "2026-09-18",
+    "feed": "yahoo-eth"
+   },
+   {
+    "title": "Is Solana a Good Investment Right Now? It Reclaimed $100 After Losing It on the Vote.",
+    "link": "https://247wallst.com/investing/cryptocurrency/2026/09/18/is-solana-a-good-investment-right-now-it-reclaimed-100-after-losing-it-on-the-vote/?.tsrc=rss",
+    "ts": 1789775667000,
+    "day": "2026-09-18",
+    "feed": "yahoo-eth"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "holdDay": "2026-09-20",
+  "reportDay": "2026-09-19",
+  "briefs": {
+   "BTCUSDT": {
+    "t": 1789862400000,
+    "day": "2026-09-20",
+    "px": 81249.99,
+    "ret24h": 0.0045,
+    "ret7d": 0.0514,
+    "vol24d": 0.0181,
+    "pos7d": 0.9,
+    "hi7d": 81951,
+    "lo7d": 74967.97
+   },
+   "ETHUSDT": {
+    "t": 1789862400000,
+    "day": "2026-09-20",
+    "px": 2632.69,
+    "ret24h": 0.0079,
+    "ret7d": 0.0423,
+    "vol24d": 0.0223,
+    "pos7d": 0.886,
+    "hi7d": 2668,
+    "lo7d": 2358.88
+   }
+  },
+  "headlines": [
+   {
+    "title": "Which Crypto ETF Drew the Most Money Last Week? Not Bitcoin, and Not Ethereum",
+    "link": "https://beincrypto.com/zcash-ethereum-crypto-etf-weekly-flows/?.tsrc=rss",
+    "ts": 1789803592000,
+    "day": "2026-09-19",
+    "feed": "yahoo-eth"
+   },
+   {
+    "title": "Hong Kong jails ex-banker over $1.6B false credit, cryptocurrency bribes: Report",
+    "link": "https://cointelegraph.com/news/hong-kong-jails-former-banker-over-16b-false-credit-cryptocurrency-bribes-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789804320000,
+    "day": "2026-09-19",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Prediction: The Hard Times Are Ending for These 3 Leading Cryptocurrencies",
+    "link": "https://www.fool.com/investing/2026/09/19/prediction-the-hard-times-are-ending-for-these-3-l/?.tsrc=rss",
+    "ts": 1789809240000,
+    "day": "2026-09-19",
+    "feed": "yahoo-eth"
+   },
+   {
+    "title": "After a Long Hiatus, Crypto ETFs Are Making a Comeback. Here's the 1 Crypto ETF You Need to Own.",
+    "link": "https://www.fool.com/investing/2026/09/19/after-a-long-hiatus-crypto-etfs-are-making-a-comeb/?.tsrc=rss",
+    "ts": 1789816320000,
+    "day": "2026-09-19",
+    "feed": "yahoo-eth"
+   },
+   {
+    "title": "Bastion wins conditional OCC approval for national trust bank charter",
+    "link": "https://cointelegraph.com/news/bastion-wins-conditional-occ-approval-for-national-trust-bank-charter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789818660000,
+    "day": "2026-09-19",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "Solana's Heartbeat Quickens: Block Times Fall 17% in Latest Speed Upgrade",
+    "link": "https://decrypt.co/378674/solana-heartbeat-quickens-speed-upgrade",
+    "ts": 1789822864000,
+    "day": "2026-09-19",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Grayscale Is Making Its Red-Hot Zcash ETF More Affordable",
+    "link": "https://decrypt.co/378675/grayscale-zcash-etf-more-affordable-split",
+    "ts": 1789830063000,
+    "day": "2026-09-19",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Bitcoin's Sharpest Rally in Two Years Ran Almost Entirely on Short Liquidations",
+    "link": "https://decrypt.co/378686/bitcoin-sharpest-rally-two-years-short-liquidations",
+    "ts": 1789833663000,
+    "day": "2026-09-19",
+    "feed": "decrypt"
+   },
+   {
+    "title": "VanEck criticizes Metaplanet over executive dilution despite compensation cuts",
+    "link": "https://cointelegraph.com/news/vaneck-labels-metaplanet-compensation-bad?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789834800000,
+    "day": "2026-09-19",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "How the Clarity Act's Defeat Handed the SEC and CFTC the Wheel on Crypto",
+    "link": "https://decrypt.co/378688/how-clarity-act-defeat-sec-cftc-wheel-crypto",
+    "ts": 1789837263000,
+    "day": "2026-09-19",
+    "feed": "decrypt"
+   },
+   {
+    "title": "Kalshi joins Coinbase with own filing for US stock perpetual futures",
+    "link": "https://cointelegraph.com/news/kalshi-joins-coinbase-with-filing-for-us-stock-perpetual-futures?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789843200000,
+    "day": "2026-09-19",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "REX launches 2x leveraged ETF tied to Bitcoin treasury firm Strive",
+    "link": "https://cointelegraph.com/news/rex-launches-2x-leveraged-etf-tied-to-bitcoin-treasury-firm-strive?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "ts": 1789845480000,
+    "day": "2026-09-19",
+    "feed": "cointelegraph"
+   },
+   {
+    "title": "XRP ETFs Have Been Frozen at $1.71 Billion. When Will Inflows Reach $2 Billion?",
+    "link": "https://247wallst.com/investing/cryptocurrency/2026/09/19/xrp-etfs-have-been-frozen-at-1-71-billion-when-will-inflows-reach-2-billion/?.tsrc=rss",
+    "ts": 1789857395000,
+    "day": "2026-09-19",
+    "feed": "yahoo-eth"
+   },
+   {
+    "title": "Bitcoin ETFs Now Own 6.29% of Every Bitcoin. What Happens When They Hit 10%?",
+    "link": "https://247wallst.com/investing/cryptocurrency/2026/09/19/bitcoin-etfs-now-own-6-29-of-every-bitcoin-what-happens-when-they-hit-10/?.tsrc=rss",
+    "ts": 1789860916000,
+    "day": "2026-09-19",
+    "feed": "yahoo-btc"
+   },
+   {
+    "title": "Bitcoin ETFs Now Own 6.29% of Every Bitcoin. What Happens When They Hit 10%?",
+    "link": "https://247wallst.com/investing/cryptocurrency/2026/09/19/bitcoin-etfs-now-own-6-29-of-every-bitcoin-what-happens-when-they-hit-10/?.tsrc=rss",
+    "ts": 1789860916000,
+    "day": "2026-09-19",
+    "feed": "yahoo-eth"
+   }
+  ],
+  "ok": true
+ }
+]

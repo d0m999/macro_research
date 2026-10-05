@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "package_type": "video-research-agent-data",
+  "video": {
+    "id": "market-overview-2026-05-14",
+    "title": "前高盛 FICC 高管 Herman Jin：半导体缺货利好的是追赶者！光模块「应买尽买」，长鑫和长江存储是中国最值得投资公司 @shanghaojin",
+    "date": "2026-05-14",
+    "source_url": "https://www.youtube.com/watch?v=gGqxBY2L4wI",
+    "duration_seconds": 7959.963,
+    "language": "zh"
+  },
+  "files": {
+    "transcript": "transcript.jsonl",
+    "deck": null,
+    "slides_directory": null,
+    "ocr_directory": null
+  },
+  "related_materials": {
+    "readable_html": null,
+    "source_directory": "../../_source/market-overview-2026-05-14/"
+  },
+  "transcript": {
+    "record_count": 5414,
+    "kind": "automatic_generated",
+    "timing": "native_segment_start_end",
+    "source_label": "faster-whisper small on audio extracted from YouTube progressive format 18",
+    "original_file": null,
+    "fields": [
+      "id",
+      "start",
+      "end",
+      "text",
+      "chapter",
+      "source"
+    ]
+  },
+  "deck": null,
+  "chapters": [
+    {
+      "id": "chapter-01",
+      "start": 0.0,
+      "end": 1326.66,
+      "label": "宏观、利率与流动性"
+    },
+    {
+      "id": "chapter-02",
+      "start": 1326.66,
+      "end": 2653.321,
+      "label": "估值、盈利与市场定价"
+    },
+    {
+      "id": "chapter-03",
+      "start": 2653.321,
+      "end": 3979.981,
+      "label": "风险情景与交易框架"
+    },
+    {
+      "id": "chapter-04",
+      "start": 3979.981,
+      "end": 5306.642,
+      "label": "估值、盈利与市场定价"
+    },
+    {
+      "id": "chapter-05",
+      "start": 5306.642,
+      "end": 6633.303,
+      "label": "估值、盈利与市场定价"
+    },
+    {
+      "id": "chapter-06",
+      "start": 6633.303,
+      "end": 7959.963,
+      "label": "估值、盈利与市场定价"
+    }
+  ],
+  "acquisition": {
+    "method": "yt-dlp public progressive format fallback",
+    "requested_format": "bestaudio[ext=m4a]/bestaudio",
+    "actual_format_id": "18",
+    "actual_container": "mp4",
+    "actual_width": 640,
+    "actual_height": 358,
+    "actual_fps": 24,
+    "fallback_reason": "DASH media streams (140/251/249/139) returned HTTP 403 Forbidden; public progressive format 18 was readable.",
+    "temporary_source_retained_only_during_processing": true
+  },
+  "evidence_boundary": "Automatic transcript may misrecognize proper nouns, figures, and labels; no slide/OCR evidence was captured for this package. Use source media for verification. 本包非 Herman Jin 频道《市场概述》系列，而是 168X 频道（@168X_Fortune）对 Herman Jin 的专访；按用户指示归入 market-overview/ 目录，仅含转录，未做抽帧 OCR。",
+  "generated_on": "2026-09-20"
+}

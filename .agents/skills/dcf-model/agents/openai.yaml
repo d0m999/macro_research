@@ -1,5 +1,0 @@
-interface:
-  display_name: "DCF Model"
-  short_description: "建立来源清晰、公式驱动、可复算的 DCF 估值模型"
-policy:
-  allow_implicit_invocation: true

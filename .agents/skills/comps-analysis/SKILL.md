@@ -10,6 +10,7 @@ description: "建立上市公司可比分析、经营指标与估值倍数表，
 ## 必读契约
 
 - 收集输入前读取 [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md)。
+- 具体数据源路由以 [`../../data-sources.jsonl`](../../data-sources.jsonl) 为准（本项目 skill 数据源路由的单一事实来源）：按 `data_types` × `markets` 过滤，经 `policy_status`/`auth`/`cost` 校验；无匹配时 fail-closed。
 - 创建或修改 `.xlsx` 前读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 - 构建 peer set 和口径时读取 [`references/peer-selection.md`](references/peer-selection.md)。
 - 编写 workbook 公式时读取 [`references/formulas.md`](references/formulas.md)。

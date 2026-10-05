@@ -1,5 +1,0 @@
-interface:
-  display_name: "Process Letter"
-  short_description: "起草卖方流程信、IOI/final bid 指引与会议安排"
-policy:
-  allow_implicit_invocation: false

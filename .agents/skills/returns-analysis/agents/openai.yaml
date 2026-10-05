@@ -1,5 +1,0 @@
-interface:
-  display_name: "Returns Analysis"
-  short_description: "建立 PE IRR/MOIC 回报分析与关键驱动敏感性"
-policy:
-  allow_implicit_invocation: false

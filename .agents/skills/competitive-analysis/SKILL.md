@@ -10,6 +10,7 @@ description: "研究公司竞争格局、同行定位、市场地图与战略差
 ## 必读契约
 
 - 研究前读取 [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md)。
+- 具体数据源路由以 [`../../data-sources.jsonl`](../../data-sources.jsonl) 为准（本项目 skill 数据源路由的单一事实来源）：按 `data_types` × `markets` 过滤，经 `policy_status`/`auth`/`cost` 校验；无匹配时 fail-closed。
 - 输出 `.pptx`、`.xlsx` 或 `.docx` 时读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 - 需要市场地图或框架选择时读取 [`references/frameworks.md`](references/frameworks.md)。
 - 需要交易表、情景表或 slide schema 时读取 [`references/schemas.md`](references/schemas.md)。

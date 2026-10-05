@@ -1,0 +1,971 @@
+{
+  "scope": "语料规模与检索线索；主题命中量不是观点数或研究覆盖率",
+  "x_date_basis": "UTC created_at",
+  "datasets": [
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-01-07/transcript.jsonl",
+      "records": 780,
+      "characters": 7769,
+      "median_characters": 9.0,
+      "max_characters": 39,
+      "first_date": "2025-01-07",
+      "last_date": "2025-01-07",
+      "theme_match_records": {
+        "ai_capex": 0,
+        "semiconductor_supply": 0,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-01-14/transcript.jsonl",
+      "records": 721,
+      "characters": 7776,
+      "median_characters": 10,
+      "max_characters": 31,
+      "first_date": "2025-01-14",
+      "last_date": "2025-01-14",
+      "theme_match_records": {
+        "ai_capex": 0,
+        "semiconductor_supply": 0,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-01-21/transcript.jsonl",
+      "records": 949,
+      "characters": 9681,
+      "median_characters": 7,
+      "max_characters": 158,
+      "first_date": "2025-01-21",
+      "last_date": "2025-01-21",
+      "theme_match_records": {
+        "ai_capex": 0,
+        "semiconductor_supply": 0,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-02-11/transcript.jsonl",
+      "records": 1285,
+      "characters": 12998,
+      "median_characters": 10,
+      "max_characters": 42,
+      "first_date": "2025-02-11",
+      "last_date": "2025-02-11",
+      "theme_match_records": {
+        "ai_capex": 11,
+        "semiconductor_supply": 7,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-02-18/transcript.jsonl",
+      "records": 1145,
+      "characters": 8741,
+      "median_characters": 7,
+      "max_characters": 25,
+      "first_date": "2025-02-18",
+      "last_date": "2025-02-18",
+      "theme_match_records": {
+        "ai_capex": 2,
+        "semiconductor_supply": 4,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-02-25/transcript.jsonl",
+      "records": 606,
+      "characters": 7434,
+      "median_characters": 11.0,
+      "max_characters": 63,
+      "first_date": "2025-02-25",
+      "last_date": "2025-02-25",
+      "theme_match_records": {
+        "ai_capex": 2,
+        "semiconductor_supply": 0,
+        "optical": 1
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-03-04/transcript.jsonl",
+      "records": 830,
+      "characters": 8424,
+      "median_characters": 9.5,
+      "max_characters": 34,
+      "first_date": "2025-03-04",
+      "last_date": "2025-03-04",
+      "theme_match_records": {
+        "ai_capex": 1,
+        "semiconductor_supply": 0,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-03-11/transcript.jsonl",
+      "records": 877,
+      "characters": 10493,
+      "median_characters": 11,
+      "max_characters": 40,
+      "first_date": "2025-03-11",
+      "last_date": "2025-03-11",
+      "theme_match_records": {
+        "ai_capex": 0,
+        "semiconductor_supply": 0,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-03-18/transcript.jsonl",
+      "records": 931,
+      "characters": 10020,
+      "median_characters": 10,
+      "max_characters": 147,
+      "first_date": "2025-03-18",
+      "last_date": "2025-03-18",
+      "theme_match_records": {
+        "ai_capex": 2,
+        "semiconductor_supply": 0,
+        "optical": 2
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-04-01/transcript.jsonl",
+      "records": 849,
+      "characters": 9062,
+      "median_characters": 10,
+      "max_characters": 33,
+      "first_date": "2025-04-01",
+      "last_date": "2025-04-01",
+      "theme_match_records": {
+        "ai_capex": 0,
+        "semiconductor_supply": 1,
+        "optical": 1
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-04-08/transcript.jsonl",
+      "records": 697,
+      "characters": 7601,
+      "median_characters": 10,
+      "max_characters": 34,
+      "first_date": "2025-04-08",
+      "last_date": "2025-04-08",
+      "theme_match_records": {
+        "ai_capex": 0,
+        "semiconductor_supply": 0,
+        "optical": 1
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-04-15/transcript.jsonl",
+      "records": 889,
+      "characters": 9628,
+      "median_characters": 10,
+      "max_characters": 31,
+      "first_date": "2025-04-15",
+      "last_date": "2025-04-15",
+      "theme_match_records": {
+        "ai_capex": 0,
+        "semiconductor_supply": 5,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-04-22/transcript.jsonl",
+      "records": 875,
+      "characters": 9461,
+      "median_characters": 10,
+      "max_characters": 30,
+      "first_date": "2025-04-22",
+      "last_date": "2025-04-22",
+      "theme_match_records": {
+        "ai_capex": 1,
+        "semiconductor_supply": 0,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-04-29/transcript.jsonl",
+      "records": 922,
+      "characters": 10146,
+      "median_characters": 10.0,
+      "max_characters": 37,
+      "first_date": "2025-04-29",
+      "last_date": "2025-04-29",
+      "theme_match_records": {
+        "ai_capex": 5,
+        "semiconductor_supply": 6,
+        "optical": 1
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-05-13/transcript.jsonl",
+      "records": 760,
+      "characters": 9830,
+      "median_characters": 12.0,
+      "max_characters": 41,
+      "first_date": "2025-05-13",
+      "last_date": "2025-05-13",
+      "theme_match_records": {
+        "ai_capex": 2,
+        "semiconductor_supply": 5,
+        "optical": 2
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-05-20/transcript.jsonl",
+      "records": 894,
+      "characters": 10830,
+      "median_characters": 11.0,
+      "max_characters": 36,
+      "first_date": "2025-05-20",
+      "last_date": "2025-05-20",
+      "theme_match_records": {
+        "ai_capex": 0,
+        "semiconductor_supply": 1,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-06-03/transcript.jsonl",
+      "records": 872,
+      "characters": 9953,
+      "median_characters": 11.0,
+      "max_characters": 40,
+      "first_date": "2025-06-03",
+      "last_date": "2025-06-03",
+      "theme_match_records": {
+        "ai_capex": 5,
+        "semiconductor_supply": 7,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-06-10/transcript.jsonl",
+      "records": 947,
+      "characters": 9677,
+      "median_characters": 9,
+      "max_characters": 41,
+      "first_date": "2025-06-10",
+      "last_date": "2025-06-10",
+      "theme_match_records": {
+        "ai_capex": 3,
+        "semiconductor_supply": 4,
+        "optical": 1
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-06-24/transcript.jsonl",
+      "records": 1088,
+      "characters": 8122,
+      "median_characters": 7.0,
+      "max_characters": 24,
+      "first_date": "2025-06-24",
+      "last_date": "2025-06-24",
+      "theme_match_records": {
+        "ai_capex": 0,
+        "semiconductor_supply": 0,
+        "optical": 1
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-07-02/transcript.jsonl",
+      "records": 1048,
+      "characters": 10943,
+      "median_characters": 10.0,
+      "max_characters": 39,
+      "first_date": "2025-07-02",
+      "last_date": "2025-07-02",
+      "theme_match_records": {
+        "ai_capex": 0,
+        "semiconductor_supply": 7,
+        "optical": 1
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-07-08/transcript.jsonl",
+      "records": 944,
+      "characters": 9335,
+      "median_characters": 9.0,
+      "max_characters": 35,
+      "first_date": "2025-07-08",
+      "last_date": "2025-07-08",
+      "theme_match_records": {
+        "ai_capex": 0,
+        "semiconductor_supply": 18,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-07-22/transcript.jsonl",
+      "records": 937,
+      "characters": 9776,
+      "median_characters": 10,
+      "max_characters": 31,
+      "first_date": "2025-07-22",
+      "last_date": "2025-07-22",
+      "theme_match_records": {
+        "ai_capex": 18,
+        "semiconductor_supply": 25,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-08-05/transcript.jsonl",
+      "records": 554,
+      "characters": 6420,
+      "median_characters": 11.0,
+      "max_characters": 33,
+      "first_date": "2025-08-05",
+      "last_date": "2025-08-05",
+      "theme_match_records": {
+        "ai_capex": 1,
+        "semiconductor_supply": 4,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-08-12/transcript.jsonl",
+      "records": 679,
+      "characters": 7423,
+      "median_characters": 10,
+      "max_characters": 32,
+      "first_date": "2025-08-12",
+      "last_date": "2025-08-12",
+      "theme_match_records": {
+        "ai_capex": 5,
+        "semiconductor_supply": 5,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-09-02/transcript.jsonl",
+      "records": 804,
+      "characters": 9732,
+      "median_characters": 11.0,
+      "max_characters": 114,
+      "first_date": "2025-09-02",
+      "last_date": "2025-09-02",
+      "theme_match_records": {
+        "ai_capex": 3,
+        "semiconductor_supply": 0,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-09-09/transcript.jsonl",
+      "records": 893,
+      "characters": 9230,
+      "median_characters": 10,
+      "max_characters": 31,
+      "first_date": "2025-09-09",
+      "last_date": "2025-09-09",
+      "theme_match_records": {
+        "ai_capex": 6,
+        "semiconductor_supply": 0,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-09-23/transcript.jsonl",
+      "records": 810,
+      "characters": 8939,
+      "median_characters": 10.0,
+      "max_characters": 30,
+      "first_date": "2025-09-23",
+      "last_date": "2025-09-23",
+      "theme_match_records": {
+        "ai_capex": 6,
+        "semiconductor_supply": 1,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-09-30/transcript.jsonl",
+      "records": 745,
+      "characters": 8467,
+      "median_characters": 11,
+      "max_characters": 34,
+      "first_date": "2025-09-30",
+      "last_date": "2025-09-30",
+      "theme_match_records": {
+        "ai_capex": 14,
+        "semiconductor_supply": 0,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-10-14/transcript.jsonl",
+      "records": 894,
+      "characters": 9822,
+      "median_characters": 10.0,
+      "max_characters": 113,
+      "first_date": "2025-10-14",
+      "last_date": "2025-10-14",
+      "theme_match_records": {
+        "ai_capex": 3,
+        "semiconductor_supply": 3,
+        "optical": 1
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-10-28/transcript.jsonl",
+      "records": 874,
+      "characters": 9708,
+      "median_characters": 10.0,
+      "max_characters": 33,
+      "first_date": "2025-10-28",
+      "last_date": "2025-10-28",
+      "theme_match_records": {
+        "ai_capex": 0,
+        "semiconductor_supply": 4,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-11-18/transcript.jsonl",
+      "records": 1191,
+      "characters": 8899,
+      "median_characters": 7,
+      "max_characters": 26,
+      "first_date": "2025-11-18",
+      "last_date": "2025-11-18",
+      "theme_match_records": {
+        "ai_capex": 9,
+        "semiconductor_supply": 14,
+        "optical": 1
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-11-25/transcript.jsonl",
+      "records": 892,
+      "characters": 10198,
+      "median_characters": 11.0,
+      "max_characters": 48,
+      "first_date": "2025-11-25",
+      "last_date": "2025-11-25",
+      "theme_match_records": {
+        "ai_capex": 3,
+        "semiconductor_supply": 1,
+        "optical": 1
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-12-09/transcript.jsonl",
+      "records": 1024,
+      "characters": 10591,
+      "median_characters": 10.0,
+      "max_characters": 37,
+      "first_date": "2025-12-09",
+      "last_date": "2025-12-09",
+      "theme_match_records": {
+        "ai_capex": 0,
+        "semiconductor_supply": 46,
+        "optical": 1
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-12-16/transcript.jsonl",
+      "records": 612,
+      "characters": 7615,
+      "median_characters": 12.0,
+      "max_characters": 32,
+      "first_date": "2025-12-16",
+      "last_date": "2025-12-16",
+      "theme_match_records": {
+        "ai_capex": 2,
+        "semiconductor_supply": 5,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2025-12-30/transcript.jsonl",
+      "records": 1207,
+      "characters": 9805,
+      "median_characters": 8,
+      "max_characters": 38,
+      "first_date": "2025-12-30",
+      "last_date": "2025-12-30",
+      "theme_match_records": {
+        "ai_capex": 1,
+        "semiconductor_supply": 69,
+        "optical": 10
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-01-06/transcript.jsonl",
+      "records": 946,
+      "characters": 9405,
+      "median_characters": 9.0,
+      "max_characters": 33,
+      "first_date": "2026-01-06",
+      "last_date": "2026-01-06",
+      "theme_match_records": {
+        "ai_capex": 15,
+        "semiconductor_supply": 51,
+        "optical": 5
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-01-20/transcript.jsonl",
+      "records": 968,
+      "characters": 9901,
+      "median_characters": 9.0,
+      "max_characters": 35,
+      "first_date": "2026-01-20",
+      "last_date": "2026-01-20",
+      "theme_match_records": {
+        "ai_capex": 2,
+        "semiconductor_supply": 22,
+        "optical": 5
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-01-27/transcript.jsonl",
+      "records": 924,
+      "characters": 9932,
+      "median_characters": 10.0,
+      "max_characters": 34,
+      "first_date": "2026-01-27",
+      "last_date": "2026-01-27",
+      "theme_match_records": {
+        "ai_capex": 4,
+        "semiconductor_supply": 9,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-02-03/transcript.jsonl",
+      "records": 924,
+      "characters": 9363,
+      "median_characters": 9.0,
+      "max_characters": 36,
+      "first_date": "2026-02-03",
+      "last_date": "2026-02-03",
+      "theme_match_records": {
+        "ai_capex": 15,
+        "semiconductor_supply": 6,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-02-10/transcript.jsonl",
+      "records": 1083,
+      "characters": 11489,
+      "median_characters": 10,
+      "max_characters": 34,
+      "first_date": "2026-02-10",
+      "last_date": "2026-02-10",
+      "theme_match_records": {
+        "ai_capex": 4,
+        "semiconductor_supply": 13,
+        "optical": 1
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-03-03/transcript.jsonl",
+      "records": 944,
+      "characters": 10420,
+      "median_characters": 10.0,
+      "max_characters": 35,
+      "first_date": "2026-03-03",
+      "last_date": "2026-03-03",
+      "theme_match_records": {
+        "ai_capex": 13,
+        "semiconductor_supply": 5,
+        "optical": 4
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-03-10/transcript.jsonl",
+      "records": 769,
+      "characters": 8490,
+      "median_characters": 10,
+      "max_characters": 31,
+      "first_date": "2026-03-10",
+      "last_date": "2026-03-10",
+      "theme_match_records": {
+        "ai_capex": 1,
+        "semiconductor_supply": 9,
+        "optical": 3
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-03-17/transcript.jsonl",
+      "records": 792,
+      "characters": 9098,
+      "median_characters": 11.0,
+      "max_characters": 40,
+      "first_date": "2026-03-17",
+      "last_date": "2026-03-17",
+      "theme_match_records": {
+        "ai_capex": 20,
+        "semiconductor_supply": 7,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-03-24/transcript.jsonl",
+      "records": 849,
+      "characters": 8706,
+      "median_characters": 9,
+      "max_characters": 32,
+      "first_date": "2026-03-24",
+      "last_date": "2026-03-24",
+      "theme_match_records": {
+        "ai_capex": 5,
+        "semiconductor_supply": 2,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-04-14/transcript.jsonl",
+      "records": 1038,
+      "characters": 10437,
+      "median_characters": 9.0,
+      "max_characters": 27,
+      "first_date": "2026-04-14",
+      "last_date": "2026-04-14",
+      "theme_match_records": {
+        "ai_capex": 4,
+        "semiconductor_supply": 5,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-04-21/transcript.jsonl",
+      "records": 976,
+      "characters": 10212,
+      "median_characters": 10.0,
+      "max_characters": 29,
+      "first_date": "2026-04-21",
+      "last_date": "2026-04-21",
+      "theme_match_records": {
+        "ai_capex": 10,
+        "semiconductor_supply": 28,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-05-05/transcript.jsonl",
+      "records": 951,
+      "characters": 10547,
+      "median_characters": 10,
+      "max_characters": 32,
+      "first_date": "2026-05-05",
+      "last_date": "2026-05-05",
+      "theme_match_records": {
+        "ai_capex": 10,
+        "semiconductor_supply": 38,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-05-14/transcript.jsonl",
+      "records": 5414,
+      "characters": 39786,
+      "median_characters": 7.0,
+      "max_characters": 42,
+      "first_date": "2026-05-14",
+      "last_date": "2026-05-14",
+      "theme_match_records": {
+        "ai_capex": 49,
+        "semiconductor_supply": 196,
+        "optical": 8
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-05-19/transcript.jsonl",
+      "records": 870,
+      "characters": 9193,
+      "median_characters": 10.0,
+      "max_characters": 25,
+      "first_date": "2026-05-19",
+      "last_date": "2026-05-19",
+      "theme_match_records": {
+        "ai_capex": 9,
+        "semiconductor_supply": 48,
+        "optical": 2
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-06-02/transcript.jsonl",
+      "records": 1040,
+      "characters": 10205,
+      "median_characters": 9.0,
+      "max_characters": 28,
+      "first_date": "2026-06-02",
+      "last_date": "2026-06-02",
+      "theme_match_records": {
+        "ai_capex": 12,
+        "semiconductor_supply": 48,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-06-09/transcript.jsonl",
+      "records": 868,
+      "characters": 9496,
+      "median_characters": 10.0,
+      "max_characters": 44,
+      "first_date": "2026-06-09",
+      "last_date": "2026-06-09",
+      "theme_match_records": {
+        "ai_capex": 24,
+        "semiconductor_supply": 43,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-06-23/transcript.jsonl",
+      "records": 529,
+      "characters": 9399,
+      "median_characters": 12,
+      "max_characters": 62,
+      "first_date": "2026-06-23",
+      "last_date": "2026-06-23",
+      "theme_match_records": {
+        "ai_capex": 19,
+        "semiconductor_supply": 9,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-06-30/transcript.jsonl",
+      "records": 653,
+      "characters": 8239,
+      "median_characters": 11,
+      "max_characters": 61,
+      "first_date": "2026-06-30",
+      "last_date": "2026-06-30",
+      "theme_match_records": {
+        "ai_capex": 3,
+        "semiconductor_supply": 21,
+        "optical": 1
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-07-14/transcript.jsonl",
+      "records": 937,
+      "characters": 9436,
+      "median_characters": 10,
+      "max_characters": 29,
+      "first_date": "2026-07-14",
+      "last_date": "2026-07-14",
+      "theme_match_records": {
+        "ai_capex": 27,
+        "semiconductor_supply": 40,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-07-21/transcript.jsonl",
+      "records": 963,
+      "characters": 10202,
+      "median_characters": 10,
+      "max_characters": 34,
+      "first_date": "2026-07-21",
+      "last_date": "2026-07-21",
+      "theme_match_records": {
+        "ai_capex": 15,
+        "semiconductor_supply": 33,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-08-04/transcript.jsonl",
+      "records": 863,
+      "characters": 10874,
+      "median_characters": 12,
+      "max_characters": 40,
+      "first_date": "2026-08-04",
+      "last_date": "2026-08-04",
+      "theme_match_records": {
+        "ai_capex": 6,
+        "semiconductor_supply": 23,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-08-25/transcript.jsonl",
+      "records": 771,
+      "characters": 9145,
+      "median_characters": 11,
+      "max_characters": 38,
+      "first_date": "2026-08-25",
+      "last_date": "2026-08-25",
+      "theme_match_records": {
+        "ai_capex": 8,
+        "semiconductor_supply": 11,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-09-01/transcript.jsonl",
+      "records": 1038,
+      "characters": 10344,
+      "median_characters": 9.0,
+      "max_characters": 35,
+      "first_date": "2026-09-01",
+      "last_date": "2026-09-01",
+      "theme_match_records": {
+        "ai_capex": 2,
+        "semiconductor_supply": 6,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-09-08/transcript.jsonl",
+      "records": 961,
+      "characters": 10813,
+      "median_characters": 10,
+      "max_characters": 34,
+      "first_date": "2026-09-08",
+      "last_date": "2026-09-08",
+      "theme_match_records": {
+        "ai_capex": 1,
+        "semiconductor_supply": 3,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin video",
+      "path": "Herman Jin/market-overview/market-overview-2026-09-15/transcript.jsonl",
+      "records": 836,
+      "characters": 9556,
+      "median_characters": 10.0,
+      "max_characters": 48,
+      "first_date": "2026-09-15",
+      "last_date": "2026-09-15",
+      "theme_match_records": {
+        "ai_capex": 3,
+        "semiconductor_supply": 0,
+        "optical": 0
+      }
+    },
+    {
+      "name": "Herman Jin X",
+      "path": "Herman Jin/x-archive/x-2026-09-25/posts.jsonl",
+      "records": 1305,
+      "characters": 100911,
+      "median_characters": 60,
+      "max_characters": 342,
+      "first_date": "2026-01-01T04:31:20.000Z",
+      "last_date": "2026-09-25T09:42:23.000Z",
+      "theme_match_records": {
+        "ai_capex": 65,
+        "semiconductor_supply": 160,
+        "optical": 28
+      }
+    },
+    {
+      "name": "Herman Jin X",
+      "path": "Herman Jin/x-archive/x-2026-09-25/replies.jsonl",
+      "records": 6494,
+      "characters": 177482,
+      "median_characters": 18.0,
+      "max_characters": 278,
+      "first_date": "2026-01-01T04:19:57.000Z",
+      "last_date": "2026-09-25T13:51:21.000Z",
+      "theme_match_records": {
+        "ai_capex": 102,
+        "semiconductor_supply": 363,
+        "optical": 134
+      }
+    },
+    {
+      "name": "Serenity X",
+      "path": "Serenity/data/clean/posts.jsonl",
+      "records": 1794,
+      "characters": 406752,
+      "median_characters": 270.0,
+      "max_characters": 359,
+      "first_date": "2025-07-02T10:48:09.000Z",
+      "last_date": "2026-09-21T05:27:38.000Z",
+      "theme_match_records": {
+        "ai_capex": 90,
+        "semiconductor_supply": 204,
+        "optical": 674
+      }
+    },
+    {
+      "name": "Serenity X",
+      "path": "Serenity/data/clean/replies.jsonl",
+      "records": 5061,
+      "characters": 923029,
+      "median_characters": 195,
+      "max_characters": 336,
+      "first_date": "2025-07-02T10:48:11.000Z",
+      "last_date": "2026-09-21T05:40:07.000Z",
+      "theme_match_records": {
+        "ai_capex": 228,
+        "semiconductor_supply": 225,
+        "optical": 1247
+      }
+    }
+  ],
+  "lexical_patterns": {
+    "ai_capex": "capex|capital expend|cash flow|FCF|融资|融資|資本開支|资本开支|neocloud|data center",
+    "semiconductor_supply": "HBM|DRAM|NAND|memory|半導體|半导体|缺貨|缺货|存儲|存储|晶圓|晶圆|wafer|foundry",
+    "optical": "photon|optical|CPO|InP|光通信|光模|光子|磷化銦|磷化铟|AXTI|LITE|COHR|SIVE"
+  }
+}

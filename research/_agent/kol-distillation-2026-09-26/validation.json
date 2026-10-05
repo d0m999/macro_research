@@ -1,0 +1,233 @@
+{
+  "recorded_at": "2026-09-26T14:29:39.632836+08:00",
+  "status": "pass",
+  "scope": "首轮抽取的结构、引用锚点与源文件完整性检查；不等同于产业事实或方法有效性验证",
+  "summary": {
+    "Herman Jin": {
+      "cases": 27,
+      "themes": {
+        "ai_capex": 9,
+        "semiconductor_supply": 9,
+        "optical": 9
+      },
+      "date_first": "2025-02-11",
+      "date_last": "2026-09-25",
+      "completeness": {
+        "usable_reasoning": 26,
+        "context_limited": 1
+      },
+      "source_references": 46,
+      "methods": 6,
+      "method_status": {
+        "supported_in_sample": 5,
+        "candidate": 1
+      }
+    },
+    "Serenity": {
+      "cases": 28,
+      "themes": {
+        "ai_capex": 8,
+        "semiconductor_supply": 8,
+        "optical": 12
+      },
+      "date_first": "2025-09-14",
+      "date_last": "2026-09-14",
+      "completeness": {
+        "usable_reasoning": 28
+      },
+      "source_references": 36,
+      "methods": 6,
+      "method_status": {
+        "supported_in_sample": 4,
+        "candidate": 2
+      }
+    }
+  },
+  "totals": {
+    "cases": 55,
+    "methods": 12,
+    "supported_in_sample": 9,
+    "candidate": 3,
+    "source_references": 82,
+    "source_files_in_snapshot": 185,
+    "online_supplement_records": 8,
+    "markdown_local_links": 301
+  },
+  "machine_checks": {
+    "source_exists": 185,
+    "case_required_fields": 55,
+    "case_id_and_line_order": 55,
+    "case_id_unique": 55,
+    "case_person": 55,
+    "theme_enum": 55,
+    "completeness_enum": 55,
+    "confidence_enum": 55,
+    "outcome_not_evaluated": 55,
+    "horizon_type": 55,
+    "event_key_present": 55,
+    "case_has_source": 55,
+    "reference_path": 82,
+    "reference_snapshot_or_supplement": 82,
+    "reference_line_bounds": 82,
+    "short_quote_matches": 82,
+    "source_url_present": 82,
+    "video_time_bounds": 16,
+    "video_time_matches_lines": 16,
+    "reasoning_attribution": 175,
+    "reasoning_source_indexes": 175,
+    "assumption_or_invalidation_attribution": 61,
+    "method_required_fields": 12,
+    "method_id_and_line_order": 12,
+    "method_id_unique": 12,
+    "method_person": 12,
+    "method_status_enum": 12,
+    "method_branch_schema": 30,
+    "support_case_unique": 12,
+    "supported_core_minimum_count": 12,
+    "candidate_below_threshold": 12,
+    "online_id_and_line_order": 8,
+    "online_local_post_id": 8,
+    "online_url_post_id": 8,
+    "online_utc_publication_date": 8,
+    "online_record_status": 8,
+    "online_full_text_not_retained": 8,
+    "artifact_json_parse": 8,
+    "case_structure_recheck": 55,
+    "source_reference_recheck": 82,
+    "case_method_exists": 80,
+    "case_method_backlink": 80,
+    "source_status_id_matches_url": 66,
+    "method_structure_recheck": 12,
+    "method_case_exists": 89,
+    "method_case_backlink": 89,
+    "method_case_same_person": 89,
+    "distinct_event_key_count": 12,
+    "markdown_trailing_whitespace": 5,
+    "markdown_local_link": 301,
+    "markdown_line_anchor": 278,
+    "markdown_id_matches_line": 139,
+    "markdown_source_matches_case": 47,
+    "source_sha256_unchanged": 185,
+    "source_bytes_unchanged": 185,
+    "source_lines_unchanged": 185
+  },
+  "errors": [],
+  "semantic_review": {
+    "record": "review-notes.md",
+    "case_summaries_reviewed": 55,
+    "methods_reviewed": 12,
+    "confirmed_issues_fixed": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6"
+    ],
+    "local_scope": "每个所选案例的本地引用范围；未审读全库、声轨或全部图片",
+    "online_scope": "主流程在官方 X 页面阅读 8 条展开正文；独立审阅仅核对保存的摘要与短引文，未二次打开全部原帖",
+    "independence_scope": "机器仅计数不同 independent_event 字符串；事件适用性由语义审阅检查，不表示统计独立",
+    "main_report_reviewed": true
+  },
+  "limitations": [
+    "样本为目的性抽样，不能推算全库覆盖率或预测能力。",
+    "online-evidence.jsonl 保留现场摘要与短引文，未保存完整在线正文或附图；引用匹配只验证记录内部一致性。",
+    "在线正文为访问时可见版本；SR-W06 显示编辑标记，编辑历史未核验。",
+    "未独立验证财报、技术关系、合同、持仓或作者引用的第三方预测。",
+    "未实施盲测、收益回测或投资能力比较。",
+    "方法卡整体为跨案例归纳，单例分支和分析者建议在卡片中单列。"
+  ],
+  "outcome_evaluated": false,
+  "source_corpus_modified": false,
+  "task_files": [
+    "research/_agent/kol-distillation-2026-09-26/PROTOCOL.md",
+    "research/_agent/kol-distillation-2026-09-26/README.md",
+    "research/_agent/kol-distillation-2026-09-26/corpus-profile.json",
+    "research/_agent/kol-distillation-2026-09-26/herman-jin-cases.jsonl",
+    "research/_agent/kol-distillation-2026-09-26/herman-jin-methods.jsonl",
+    "research/_agent/kol-distillation-2026-09-26/herman-jin.md",
+    "research/_agent/kol-distillation-2026-09-26/online-evidence.jsonl",
+    "research/_agent/kol-distillation-2026-09-26/review-notes.md",
+    "research/_agent/kol-distillation-2026-09-26/serenity-cases.jsonl",
+    "research/_agent/kol-distillation-2026-09-26/serenity-methods.jsonl",
+    "research/_agent/kol-distillation-2026-09-26/serenity.md",
+    "research/_agent/kol-distillation-2026-09-26/source-snapshot.json",
+    "research/_agent/kol-distillation-2026-09-26/validation.json"
+  ],
+  "navigation_update": "research/_agent/README.md 新增两个阅读入口，保留原有内容",
+  "structural_corrections": [
+    {
+      "cases": [
+        "HJ-002",
+        "HJ-009"
+      ],
+      "change": "移除 HJ-M02 弱关联，保留主要支持 HJ-M01；双向关联复核通过，方法支持数不变。"
+    }
+  ],
+  "check_conventions": {
+    "status_url_identity": "主帖使用 post_id，回复使用 reply_id；在线补证使用 post_id。",
+    "markdown_identity": "案例文件链接核对 case_id；直接原文链接核对该案例 source_refs 路径与行范围。"
+  },
+  "artifact_sha256": [
+    {
+      "path": "research/_agent/kol-distillation-2026-09-26/PROTOCOL.md",
+      "bytes": 3479,
+      "sha256": "d7290551fb39d0a9562c7eb2584cee31c6541d96ee9ccbd8da587196d58680ee"
+    },
+    {
+      "path": "research/_agent/kol-distillation-2026-09-26/README.md",
+      "bytes": 13550,
+      "sha256": "990d5c179f80d059136b5f9fb16f0df6a9c755d4efbefd05aab931d690efaab2"
+    },
+    {
+      "path": "research/_agent/kol-distillation-2026-09-26/corpus-profile.json",
+      "bytes": 27986,
+      "sha256": "e923afd295731247a6780f57f43917f742050e75615a76000307b763e7f0487f"
+    },
+    {
+      "path": "research/_agent/kol-distillation-2026-09-26/herman-jin-cases.jsonl",
+      "bytes": 63063,
+      "sha256": "b32dabb47d6f5dffdd976cadcca674697c8ae0ae120d2790f04bddbdbef1ecc2"
+    },
+    {
+      "path": "research/_agent/kol-distillation-2026-09-26/herman-jin-methods.jsonl",
+      "bytes": 10472,
+      "sha256": "3e889a59d3f1c0bba18ed73f345a4de076a1f8f50eac677993ca90ff0933fcaa"
+    },
+    {
+      "path": "research/_agent/kol-distillation-2026-09-26/herman-jin.md",
+      "bytes": 27267,
+      "sha256": "2954e5bab4881e65f0b3b02151ff17b6661cffdde312dc243e9344e2c34b146f"
+    },
+    {
+      "path": "research/_agent/kol-distillation-2026-09-26/online-evidence.jsonl",
+      "bytes": 10165,
+      "sha256": "e6d51cee7035bccd9dccfa3aff2ff4f16e11b9cbef709b8ac37a3bd4a71039f2"
+    },
+    {
+      "path": "research/_agent/kol-distillation-2026-09-26/review-notes.md",
+      "bytes": 10799,
+      "sha256": "29c1637a5f3eccd8c79c80297929abfb022e70814fca6fa1530f39a76aba5749"
+    },
+    {
+      "path": "research/_agent/kol-distillation-2026-09-26/serenity-cases.jsonl",
+      "bytes": 57677,
+      "sha256": "08655b3fb7d9de2ed5c6ac8837c68ddb360f14047cab7852fb3cb002cadb038c"
+    },
+    {
+      "path": "research/_agent/kol-distillation-2026-09-26/serenity-methods.jsonl",
+      "bytes": 10689,
+      "sha256": "877461c2f0504746fe9f554c18906698032aa04826b0b6b3dd1a2893bc3a3965"
+    },
+    {
+      "path": "research/_agent/kol-distillation-2026-09-26/serenity.md",
+      "bytes": 28704,
+      "sha256": "f9fdb60e3d361c3913de59518c688bfac01a87b75bd4408058e5334a26365cf4"
+    },
+    {
+      "path": "research/_agent/kol-distillation-2026-09-26/source-snapshot.json",
+      "bytes": 41133,
+      "sha256": "f69f94d7d875ac58d9a4677ce52d004bc524cb174f7616218f4838e72d0cb055"
+    }
+  ]
+}

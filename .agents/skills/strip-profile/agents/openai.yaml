@@ -1,5 +1,0 @@
-interface:
-  display_name: "Strip Profile"
-  short_description: "制作来源清晰、数字一致的投资银行公司 strip profile"
-policy:
-  allow_implicit_invocation: false

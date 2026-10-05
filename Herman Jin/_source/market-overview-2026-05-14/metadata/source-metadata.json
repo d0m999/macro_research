@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "metadata_type": "youtube-video-source-metadata",
+  "observed_on": "2026-09-20",
+  "channel": {
+    "name": "168X",
+    "handle": "@168X_Fortune",
+    "id": "UC7uBWFk5h27k6BtduZ9hdIA",
+    "url": "https://www.youtube.com/@168X_Fortune"
+  },
+  "video": {
+    "id": "gGqxBY2L4wI",
+    "title": "前高盛 FICC 高管 Herman Jin：半导体缺货利好的是追赶者！光模块「应买尽买」，长鑫和长江存储是中国最值得投资公司 @shanghaojin",
+    "source_url": "https://www.youtube.com/watch?v=gGqxBY2L4wI",
+    "upload_date": "2026-05-14",
+    "timestamp": 1778755677,
+    "timestamp_utc": "2026-05-14T10:47:57Z",
+    "duration_seconds": 7960,
+    "availability": "public",
+    "live_status": "not_live",
+    "channel": "168X",
+    "channel_id": "UC7uBWFk5h27k6BtduZ9hdIA",
+    "playlist_index": null
+  },
+  "resolution": {
+    "highest_available": {
+      "width": 1280,
+      "height": 714,
+      "fps": 24,
+      "format_id": "136",
+      "ext": "mp4"
+    },
+    "accepted_max_height": 2160,
+    "selection_expression": "bestvideo[height<=2160]+bestaudio/best[height<=2160]"
+  },
+  "captions": {
+    "automatic_languages": [],
+    "manual_languages": []
+  }
+}

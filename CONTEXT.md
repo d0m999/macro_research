@@ -1,5 +1,9 @@
 # TradingView Open Interest Research
 
+> **范围声明**：本文件的术语表只服务于 **TradingView / PineScript / OI 研究线**（本仓库当前处于休眠状态）。
+> 它不是仓库的全局词汇表——KOL 语料蒸馏线与基本面研究线各有自己的术语来源，
+> 见 `docs/agents/domain.md`。涉及那两条线时不要从这里取词。
+
 本上下文统一 TradingView OI 研究中的数据范围和单位语言，避免把单一合约、单一交易所与聚合市场口径混为一谈。
 
 ## Language

@@ -8,6 +8,7 @@ description: "在财报发布前建立指标清单、公开 guidance 基线和 b
 生成或修改 `.docx`、`.xlsx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 
 **Public-source gate:** Read [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md) first. Use the issuer's official calendar, prior earnings materials and dated guidance. Do not invent external estimates, survey figures or option inputs.
+Resolve every concrete source from [`../../data-sources.jsonl`](../../data-sources.jsonl) (single source of truth for skill data-source routing): filter by `data_types` × `markets`; honor `policy_status`/`auth`/`cost`; fail closed when nothing matches.
 
 ## Workflow
 

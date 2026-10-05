@@ -10,6 +10,7 @@ description: "完成或填充三表联动财务模型模板，建立利润表、
 ## 必读契约
 
 - 填入事实或假设前读取 [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md)。
+- 具体数据源路由以 [`../../data-sources.jsonl`](../../data-sources.jsonl) 为准（本项目 skill 数据源路由的单一事实来源）：按 `data_types` × `markets` 过滤，经 `policy_status`/`auth`/`cost` 校验；无匹配时 fail-closed。
 - 创建或修改 `.xlsx` 前读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 - 只有需要 SEC 取数时读取 [`references/sec-filings.md`](references/sec-filings.md)。
 - 需要补建公式和 schedule 时读取 [`references/formulas.md`](references/formulas.md)。

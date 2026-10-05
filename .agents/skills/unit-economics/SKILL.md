@@ -10,6 +10,7 @@ description: "分析用户或公开材料中的 ARR cohorts、LTV/CAC、retentio
 ## User-material and public-source gate
 
 Read [`PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md). Customer-level data, ARR bridges, cohorts, contract terms, and retention metrics require a user-supplied file or an opened issuer filing/IR disclosure and must be labeled accordingly. Benchmark thresholds are heuristics unless backed by a fully accessible public source; otherwise label them `MODEL_DERIVED`. Do not infer customer economics from a private database or an inaccessible benchmark report.
+Resolve every concrete source from [`../../data-sources.jsonl`](../../data-sources.jsonl) (single source of truth for skill data-source routing): filter by `data_types` × `markets`; honor `policy_status`/`auth`/`cost`; fail closed when nothing matches.
 
 ## Workflow
 

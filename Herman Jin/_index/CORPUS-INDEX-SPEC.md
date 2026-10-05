@@ -1,5 +1,7 @@
 # Herman Jin 语料索引：建设与维护规范
 
+> **2026-10-03 语料维护更新**：唯一正文入口为 `market-overview/*/transcript.jsonl`。40 期逐项校订已合入；状态和依据见 `_review/review-checklist.json`。下文的旧快照数量及“已定格”描述保留为历史记录，当前数量/哈希以 `market-overview/transcript-sha256.json` 为准。
+
 > 面向对象：需要"在这批语料里查东西"的 agent。
 > 本文既是**建设规范**（如何从零建索引），也是**使用规范**（如何查、如何引用）。
 > 维护者：任何具备 shell 与 Python 执行能力的 agent。

@@ -10,6 +10,7 @@ description: "分析用户指定或最新季度财报，更新关键指标、估
 ## 必读契约
 
 - 收集数据前读取 [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md)。
+- 具体数据源路由以 [`../../data-sources.jsonl`](../../data-sources.jsonl) 为准（本项目 skill 数据源路由的单一事实来源）：按 `data_types` × `markets` 过滤，经 `policy_status`/`auth`/`cost` 校验；无匹配时 fail-closed。
 - 创建或修改 `.docx`/`.xlsx` 前读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
 - 执行期间定位、材料收集和分析时读取 [`references/workflow.md`](references/workflow.md)。
 - 需要正式报告结构时读取 [`references/report-structure.md`](references/report-structure.md)。

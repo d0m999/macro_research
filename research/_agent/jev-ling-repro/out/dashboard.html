@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>trade the news · 复刻最小闭环</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1280px;height:720px;overflow:hidden;background:#0B1220;color:#E6EAF2;
+  font-family:-apple-system,"PingFang SC","Helvetica Neue",Arial,sans-serif}
+header{height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;
+  border-bottom:1px solid rgba(255,255,255,.09)}
+h1{font-size:17px;font-weight:600;letter-spacing:.2px}
+h1 span{font-weight:400;color:#8A93A6;font-size:12px;margin-left:10px}
+.speed{font-size:12px;color:#8A93A6}
+.speed b{color:#E6EAF2;font-weight:600}
+#row1{display:flex;gap:12px;padding:12px 20px 0;height:322px}
+#row2{display:flex;gap:12px;padding:12px 20px 0;height:266px}
+.panel{background:#111A2B;border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px 14px;overflow:hidden}
+.ptitle{font-size:12px;color:#8A93A6;margin-bottom:8px;display:flex;justify-content:space-between}
+.ptitle b{color:#C9D1E0;font-weight:500}
+#curve{flex:1;display:flex;flex-direction:column}
+#dec{width:376px}
+#hold{width:596px}
+#news{flex:1}
+svg{display:block}
+.legend{display:flex;gap:16px;font-size:11px;color:#8A93A6;margin-top:6px}
+.legend i{display:inline-block;width:14px;height:3px;border-radius:2px;margin-right:5px;vertical-align:middle}
+.dsym{font-size:13px;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.chip{font-size:11px;padding:1px 7px;border-radius:4px;font-weight:600}
+.c-buy{background:rgba(226,75,74,.18);color:#F09B9A;border:1px solid rgba(226,75,74,.5)}
+.c-sell{background:rgba(29,158,117,.18);color:#6FD3AE;border:1px solid rgba(29,158,117,.5)}
+.c-hold{background:rgba(255,255,255,.07);color:#B4BAC8;border:1px solid rgba(255,255,255,.18)}
+.prow{display:flex;align-items:center;gap:7px;font-size:11px;color:#8A93A6;margin-top:3px}
+.prow span:first-child{width:30px}
+.track{flex:1;height:7px;background:rgba(255,255,255,.07);border-radius:4px;overflow:hidden}
+.fill{height:100%;border-radius:4px;transition:none}
+.pv{width:38px;text-align:right;color:#C9D1E0;font-variant-numeric:tabular-nums}
+.bar{height:16px;background:rgba(255,255,255,.07);border-radius:4px;position:relative;overflow:hidden;margin-top:3px}
+.bar i{position:absolute;left:0;top:0;bottom:0;border-radius:4px}
+.hrow{display:flex;align-items:center;gap:8px;font-size:11px;color:#8A93A6}
+.hrow span:first-child{width:38px;color:#C9D1E0}
+.hrow span:last-child{width:44px;text-align:right;color:#C9D1E0;font-variant-numeric:tabular-nums}
+.news{font-size:11px;color:#98A2B6;line-height:1.55}
+.news div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-bottom:2px}
+.news em{color:#5B6478;font-style:normal}
+.ntag{color:#5C6680;margin-right:5px}
+footer{position:absolute;bottom:0;left:0;right:0;height:34px;display:flex;align-items:center;
+  padding:0 20px;font-size:10.5px;color:#6B7488;border-top:1px solid rgba(255,255,255,.07)}
+footer b{color:#C08A4A;font-weight:600}
+</style></head>
+<body>
+<header>
+  <h1>trade the news<span>复刻最小闭环 · BTC / ETH · 小时级盯市</span></h1>
+  <div class="speed">回放加速 <b id="spd">–</b> · 本片 <b id="dur">–</b></div>
+</header>
+<section id="row1">
+  <div class="panel" id="curve">
+    <div class="ptitle"><span>账户净值（起点 $100,000）</span><span id="eqline">–</span></div>
+    <svg id="chart" width="820" height="246"></svg>
+    <div class="legend">
+      <span><i style="background:#E24B4A"></i>本策略（规则替代源）</span>
+      <span><i style="background:#6B7488"></i>等权买入持有</span>
+      <span id="replaydate" style="margin-left:auto;color:#C9D1E0"></span>
+    </div>
+  </div>
+  <div class="panel" id="dec">
+    <div class="ptitle"><span>当日决策</span><span id="decrep">–</span></div>
+    <div id="declist"></div>
+  </div>
+</section>
+<section id="row2">
+  <div class="panel" id="hold">
+    <div class="ptitle"><span>目标仓位（P(买) − P(卖)，按标的均分，其余现金）</span><span id="gross">–</span></div>
+    <div id="holdlist"></div>
+  </div>
+  <div class="panel" id="news">
+    <div class="ptitle"><span>当日投资简报（真实 RSS 标题）</span><span id="ncount">–</span></div>
+    <div class="news" id="newslist"></div>
+  </div>
+</section>
+<footer>
+  决策源：<b id="srcnote">–</b>｜仪表盘由 research/_agent/jev-ling-repro/make_dashboard.mjs 生成，<b>非 Ling-3.0-flash-VL 产出</b>｜数据：Binance 小时 K 线 + 公开 RSS
+</footer>
+<script>
+var D = {"config":{"INIT_EQUITY":100000,"FEE_BPS":10,"symbols":["BTCUSDT","ETHUSDT"],"days":4,"decisionSource":"rule","model":null,"INIT":100000},"days":[{"holdDay":"2026-09-17","reportDay":"2026-09-16","answers":{"BTCUSDT":{"type":"choice","choice":"buy","probabilities":{"buy":0.3702,"hold":0.332,"sell":0.2977},"confidence":0.3702,"debug":{"news":0,"mom":0.399,"pos":-0.496,"score":0.045}},"ETHUSDT":{"type":"choice","choice":"sell","probabilities":{"buy":0.3234,"hold":0.3332,"sell":0.3433},"confidence":0.3433,"debug":{"news":0,"mom":0.266,"pos":-0.614,"score":-0.012}}},"targetWeights":{"BTCUSDT":0.0362,"ETHUSDT":0},"grossExposure":0.0362,"prevWeights":{"BTCUSDT":0,"ETHUSDT":0},"turnover":0.0362,"fee":3.62,"equityStart":100000,"equityEnd":100006.41,"benchStart":99900,"benchEnd":100637.73,"ret":0.0001,"retBench":0.0074,"equityPath":[100002.88,100004.38,100004.18,100007.6,100012.25,100002.46,100009.29,100008.59,100013.91,100008.84,100005.7,100009.5,100021.61,100019.59,100010.48,100023.68,100022.42,100018.34,100013.97,100014.83,100013.02,100006.36,100006.55,100006.41],"benchPath":[100002.87,100202.56,100230.79,100422.35,100613.49,100375.03,100559.4,100607.61,100707.37,100499.12,100387.88,100583.86,101111.59,101133.91,100985.8,101350.53,101340.97,101123.75,100840.44,100788.24,100860.2,100644.2,100610.36,100637.73],"openPrice":{"BTCUSDT":76206,"ETHUSDT":2418.26},"headlines":[{"feed":"decrypt","title":"Meta May Have Found a Fix for Its 'Pervert Glasses'","link":"https://decrypt.co/378448/meta-fix-pervert-glasses"},{"feed":"decrypt","title":"Crypto Tax Bill Clears House Committee After Clarity Act Setback","link":"https://decrypt.co/378449/crypto-tax-bill-clears-house-committee"}],"nHeadlines":2},{"holdDay":"2026-09-18","reportDay":"2026-09-17","answers":{"BTCUSDT":{"type":"choice","choice":"sell","probabilities":{"buy":0.3238,"hold":0.3332,"sell":0.343},"confidence":0.343,"debug":{"news":0,"mom":0.166,"pos":-0.412,"score":-0.012}},"ETHUSDT":{"type":"choice","choice":"buy","probabilities":{"buy":0.3764,"hold":0.3316,"sell":0.2921},"confidence":0.3764,"debug":{"news":0,"mom":0.388,"pos":-0.424,"score":0.053}}},"targetWeights":{"BTCUSDT":0,"ETHUSDT":0.0421},"grossExposure":0.0421,"prevWeights":{"BTCUSDT":0.0362,"ETHUSDT":0},"turnover":0.0784,"fee":7.84,"equityStart":100006.41,"equityEnd":100282.51,"benchStart":100637.73,"benchEnd":106970.82,"ret":0.0028,"retBench":0.0629,"equityPath":[100000.4,100016.38,100025.42,100053.96,100059.33,100055.99,100067.89,100072.15,100098.67,100103.87,100113.12,100103.35,100093.23,100183.46,100231.58,100234.15,100256.86,100274.41,100284.25,100324.82,100316.63,100307.55,100296.1,100282.51],"benchPath":[100773.01,101065.64,101334.2,101935.48,102126.1,102032.17,102247.13,102425.31,103054.19,103077.15,103236.13,102972.62,102838.79,105251.49,106395.41,106287.07,106638.92,106962.31,107027.44,107688.65,107528.22,107503.39,107301.03,106970.82],"openPrice":{"BTCUSDT":76417.01,"ETHUSDT":2447.28},"headlines":[{"feed":"decrypt","title":"House Committee Advances US Bitcoin Reserve Bill on Party-Line Split","link":"https://decrypt.co/378457/house-committee-advances-us-bitcoin-reserve-bill-on-party-line-split"},{"feed":"decrypt","title":"Zcash Closes On $1,400 After Coinholders Vote to Keep Bitcoin-Style Halvings","link":"https://decrypt.co/378460/zcash-closes-on-1400-after-coinholders-vote-to-keep-bitcoin-style-halvings"},{"feed":"decrypt","title":"Morning Minute: Crypto Rebounds After The Fed’s First Hike Since 2023","link":"https://decrypt.co/378462/morning-minute-crypto-rebounds-after-the-feds-first-hike-since-2023"},{"feed":"decrypt","title":"Revolut Hackers Demand $3M Monero Ransom, Threaten to Sell Customer Data: Report","link":"https://decrypt.co/378472/revolut-hackers-demand-3m-monero-ransom-threaten-to-sell-customer-data-report"},{"feed":"decrypt","title":"What Is Arc? The Stablecoin Blockchain From USDC Issuer Circle","link":"https://decrypt.co/resources/what-is-arc-the-stablecoin-blockchain-from-usdc-issuer-circle"},{"feed":"decrypt","title":"SEC Clears a Path for Tokenized Stocks After Clarity Act Stumbles","link":"https://decrypt.co/378492/sec-innovation-exemption-tokenized-stocks-clarity-act"},{"feed":"decrypt","title":"FCA Targets Three More London Sites Over Unregistered P2P Crypto Trading","link":"https://decrypt.co/378495/fca-targets-three-more-london-sites-over-unregistered-p2p-crypto-trading"},{"feed":"decrypt","title":"Financial Data Giant S&#038;P Global Moves Deeper Into Crypto With OpenZeppelin Deal","link":"https://decrypt.co/378505/sp-global-acquire-crypto-openzeppelin"},{"feed":"decrypt","title":"Bitcoin Bounces as Markets Brace for the Fed’s Next Move","link":"https://decrypt.co/378506/bitcoin-bounces-wall-street-fed-next-move"}],"nHeadlines":21},{"holdDay":"2026-09-19","reportDay":"2026-09-18","answers":{"BTCUSDT":{"type":"choice","choice":"buy","probabilities":{"buy":0.8114,"hold":0.1579,"sell":0.0307},"confidence":0.8114,"debug":{"news":0.467,"mom":0.998,"pos":0.84,"score":0.682}},"ETHUSDT":{"type":"choice","choice":"buy","probabilities":{"buy":0.8062,"hold":0.1615,"sell":0.0323},"confidence":0.8062,"debug":{"news":0.467,"mom":0.996,"pos":0.764,"score":0.67}}},"targetWeights":{"BTCUSDT":0.3904,"ETHUSDT":0.387},"grossExposure":0.7773,"prevWeights":{"BTCUSDT":0,"ETHUSDT":0.0421},"turnover":0.7351,"fee":73.72,"equityStart":100282.51,"equityEnd":100690.91,"benchStart":106970.82,"benchEnd":107635.26,"ret":0.0041,"retBench":0.0062,"equityPath":[100805.8,100410.49,100578.13,100450.08,100388.19,100533.54,100515,100533.24,100907.05,100849.13,100758.68,100819.98,100866.47,100831.85,100947.38,101003.32,101232.95,100983.23,100869.21,100773.72,100693.67,100548.65,100668.79,100690.91],"benchPath":[107787.82,107244.54,107477.39,107302.15,107217.99,107419.96,107393.95,107418.49,107934.93,107854.1,107730.14,107813.94,107878.15,107829.38,107986.26,108063.23,108379.2,108038.28,107880.25,107748.68,107640.76,107439.93,107604.29,107635.26],"openPrice":{"BTCUSDT":80883.86,"ETHUSDT":2612.14},"headlines":[{"feed":"cointelegraph","title":"US sanctions Iran’s BitBank, saying it processes ‘Hormuz Safe’ Bitcoin payments","link":"https://cointelegraph.com/news/us-sanctions-irans-bitbank-saying-it-processes-hormuz-safe-bitcoin-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"},{"feed":"cointelegraph","title":"World launches self-custodial ‘super app’ World Money","link":"https://cointelegraph.com/news/world-launches-self-custodial-super-app-world-money?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"},{"feed":"cointelegraph","title":"Cardano’s IOG warns users to avoid YouTube channel amid apparent hijack","link":"https://cointelegraph.com/news/cardanos-iog-warns-users-to-avoid-youtube-channel-amid-giveaway-scam?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"},{"feed":"cointelegraph","title":"Zcash targets November for NU7 mainnet upgrade with 25-second blocks","link":"https://cointelegraph.com/news/zcash-nu7-november-mainnet-activation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"},{"feed":"cointelegraph","title":"Bitcoin cycle bottom may already be in at $58K, says analyst James Check","link":"https://cointelegraph.com/markets/bitcoin-cycle-bottom-58k-james-check?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"},{"feed":"cointelegraph","title":"Binance brushes off Lagarde MiCA speculation, reaffirms Europe commitment","link":"https://cointelegraph.com/news/binance-cites-speculation-report-ecb-chief-mica-intervention?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"},{"feed":"decrypt","title":"Treasury Sanctions Crypto Exchange Behind Iran's Bitcoin Tolls on Hormuz Ships","link":"https://decrypt.co/378604/treasury-sanctions-crypto-exchange-behind-irans-bitcoin-tolls-on-hormuz-ships"},{"feed":"cointelegraph","title":"Stablecoin payments firm dtcpay closes $25M round with SBI backing","link":"https://cointelegraph.com/news/dtcpay-25m-series-a-sbi-stablecoin-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"},{"feed":"decrypt","title":"UAE, Sweden Arrest Seven Over $7.1M Crypto Laundering Ring Linked to Contract Killings","link":"https://decrypt.co/378611/uae-sweden-arrest-seven-over-7-1m-crypto-laundering-ring-linked-to-contract-killings"}],"nHeadlines":37},{"holdDay":"2026-09-20","reportDay":"2026-09-19","answers":{"BTCUSDT":{"type":"choice","choice":"buy","probabilities":{"buy":0.6872,"hold":0.2335,"sell":0.0793},"confidence":0.6872,"debug":{"news":0.467,"mom":0.244,"pos":0.8,"score":0.45}},"ETHUSDT":{"type":"choice","choice":"buy","probabilities":{"buy":0.7029,"hold":0.2251,"sell":0.0721},"confidence":0.7029,"debug":{"news":0.467,"mom":0.34,"pos":0.772,"score":0.475}}},"targetWeights":{"BTCUSDT":0.3039,"ETHUSDT":0.3154},"grossExposure":0.6194,"prevWeights":{"BTCUSDT":0.3904,"ETHUSDT":0.387},"turnover":0.158,"fee":15.9,"equityStart":100690.91,"equityEnd":100798.78,"benchStart":107635.26,"benchEnd":107846.68,"ret":0.0011,"retBench":0.002,"equityPath":[100627.06,100462.17,99623.89,99848.65,99728.94,99734.41,99617.62,99646.91,99610.36,99742.86,99582.97,99743.28,99758.44,99790.66,99893.14,100311.44,100793.61,100560.71,100519.15,100655.36,100637.16,100535.47,100748.49,100798.78],"benchPath":[107553.81,107269.38,105825.73,106212.28,106006.7,106016.7,105814.77,105864.94,105801.86,106030.93,105755.52,106031.88,106057.86,106113.78,106290.52,107009.29,107839.46,107438.66,107366.32,107601.05,107568.99,107393.17,107761.03,107846.68],"openPrice":{"BTCUSDT":81249.99,"ETHUSDT":2632.7},"headlines":[{"feed":"yahoo-eth","title":"Which Crypto ETF Drew the Most Money Last Week? Not Bitcoin, and Not Ethereum","link":"https://beincrypto.com/zcash-ethereum-crypto-etf-weekly-flows/?.tsrc=rss"},{"feed":"cointelegraph","title":"Hong Kong jails ex-banker over $1.6B false credit, cryptocurrency bribes: Report","link":"https://cointelegraph.com/news/hong-kong-jails-former-banker-over-16b-false-credit-cryptocurrency-bribes-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"},{"feed":"yahoo-eth","title":"Prediction: The Hard Times Are Ending for These 3 Leading Cryptocurrencies","link":"https://www.fool.com/investing/2026/09/19/prediction-the-hard-times-are-ending-for-these-3-l/?.tsrc=rss"},{"feed":"yahoo-eth","title":"After a Long Hiatus, Crypto ETFs Are Making a Comeback. Here's the 1 Crypto ETF You Need to Own.","link":"https://www.fool.com/investing/2026/09/19/after-a-long-hiatus-crypto-etfs-are-making-a-comeb/?.tsrc=rss"},{"feed":"cointelegraph","title":"Bastion wins conditional OCC approval for national trust bank charter","link":"https://cointelegraph.com/news/bastion-wins-conditional-occ-approval-for-national-trust-bank-charter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"},{"feed":"decrypt","title":"Solana's Heartbeat Quickens: Block Times Fall 17% in Latest Speed Upgrade","link":"https://decrypt.co/378674/solana-heartbeat-quickens-speed-upgrade"},{"feed":"decrypt","title":"Grayscale Is Making Its Red-Hot Zcash ETF More Affordable","link":"https://decrypt.co/378675/grayscale-zcash-etf-more-affordable-split"},{"feed":"decrypt","title":"Bitcoin's Sharpest Rally in Two Years Ran Almost Entirely on Short Liquidations","link":"https://decrypt.co/378686/bitcoin-sharpest-rally-two-years-short-liquidations"},{"feed":"cointelegraph","title":"VanEck criticizes Metaplanet over executive dilution despite compensation cuts","link":"https://cointelegraph.com/news/vaneck-labels-metaplanet-compensation-bad?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"}],"nHeadlines":15}],"summary":{"finalEquity":100798.78,"totalReturn":0.008,"benchFinal":107846.68,"benchReturn":0.0785,"excess":-0.0705,"maxDrawdown":0,"totalFee":101.08,"winDays":4},"summaryTotalHeadlines":75};
+var CFG = {"W":1280,"H":720,"FPS":30,"FRAMES_PER_HOUR":3};
+var INIT = D.config.INIT;
+var days = D.days, NH = days.length * 24, FRAMES = NH * CFG.FRAMES_PER_HOUR;
+var strat = [], bench = [];
+for (var i = 0; i < days.length; i++) {
+  for (var h = 0; h < 24; h++) { strat.push(days[i].equityPath[h]); bench.push(days[i].benchPath[h]); }
+}
+var pad = { l: 52, r: 62, t: 10, b: 18 };
+var W = 820, Hh = 246;
+function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+var lo = Math.min.apply(null, strat.concat(bench)), hi = Math.max.apply(null, strat.concat(bench));
+// 规整刻度：先按目标 4 格求 nice step，再把上下界吸附到 step 的整数倍
+function niceStep(range, target) {
+  var raw = range / target;
+  var p = Math.pow(10, Math.floor(Math.log10(raw)));
+  var m = raw / p;
+  var s = m <= 1 ? 1 : m <= 2 ? 2 : m <= 2.5 ? 2.5 : m <= 5 ? 5 : 10;
+  return s * p;
+}
+var padFrac = (hi - lo) * 0.12; lo -= padFrac; hi += padFrac;
+var step = niceStep(hi - lo, 4);
+lo = Math.floor(lo / step) * step;
+hi = Math.ceil(hi / step) * step;
+function X(i) { return pad.l + (i / (NH - 1)) * (W - pad.l - pad.r); }
+function Y(v) { return Hh - pad.b - ((v - lo) / (hi - lo)) * (Hh - pad.t - pad.b); }
+function interp(a, x) { var i = Math.floor(x), j = Math.min(a.length - 1, i + 1), f = x - i; return a[i] * (1 - f) + a[j] * f; }
+function cls(c) { return c === 'buy' ? 'c-buy' : c === 'sell' ? 'c-sell' : 'c-hold'; }
+function label(c) { return c === 'buy' ? '买' : c === 'sell' ? '卖' : '不动'; }
+function money(v) { return '$' + Math.round(v).toLocaleString('en-US'); }
+
+// 网格与基准线（静态部分）
+var g = '';
+for (var v = lo; v <= hi + 1e-9; v += step) {
+  var yy = Y(v);
+  g += '<line x1="' + pad.l + '" y1="' + yy + '" x2="' + (W - pad.r) + '" y2="' + yy + '" stroke="rgba(255,255,255,.06)"/>';
+  g += '<text x="' + (pad.l - 6) + '" y="' + (yy + 3) + '" fill="#5C6678" font-size="9" text-anchor="end">'
+     + '$' + (v / 1000).toFixed(v % 1000 === 0 ? 0 : 1) + 'k</text>';
+}
+var zeroY = Y(INIT);
+g += '<line x1="' + pad.l + '" y1="' + zeroY + '" x2="' + (W - pad.r) + '" y2="' + zeroY + '" stroke="rgba(255,255,255,.18)" stroke-dasharray="3 3"/>';
+
+document.getElementById('spd').textContent = Math.round(NH / (FRAMES / CFG.FPS)) + 'x';
+document.getElementById('dur').textContent = (FRAMES / CFG.FPS).toFixed(1) + 's';
+document.getElementById('srcnote').textContent = D.config.decisionSource === 'jev'
+  ? ('Jev 1.13（' + D.config.model + '）')
+  : '规则替代（确定性规则，非 Jev 1.13）';
+document.getElementById('ncount').textContent = '合计 ' + D.summaryTotalHeadlines + ' 条';
+
+function seek(fr) {
+  var hour = Math.min(NH - 0.0001, Math.max(0, fr / CFG.FRAMES_PER_HOUR));
+  var di = Math.min(days.length - 1, Math.floor(hour / 24));
+  var day = days[di];
+  var cur = interp(strat, hour), curB = interp(bench, hour);
+
+  var pts = '', ptsB = '';
+  var upto = Math.floor(hour);
+  for (var i = 0; i <= upto; i++) { pts += X(i) + ',' + Y(strat[i]) + ' '; ptsB += X(i) + ',' + Y(bench[i]) + ' '; }
+  pts += X(hour) + ',' + Y(cur); ptsB += X(hour) + ',' + Y(curB);
+  var svg = g
+    + '<polyline points="' + ptsB + '" fill="none" stroke="#6B7488" stroke-width="1.3"/>'
+    + '<polyline points="' + pts + '" fill="none" stroke="#E24B4A" stroke-width="2"/>'
+    + '<circle cx="' + X(hour) + '" cy="' + Y(cur) + '" r="3.2" fill="#E24B4A"/>'
+    + '<text x="' + (X(hour) + 7) + '" y="' + (Y(cur) - 5) + '" fill="#F09B9A" font-size="10">' + money(cur) + '</text>'
+    + '<text x="' + (X(hour) + 7) + '" y="' + (Y(curB) + 11) + '" fill="#8A93A6" font-size="10">' + money(curB) + '</text>';
+  document.getElementById('chart').innerHTML = svg;
+
+  var ret = cur / INIT - 1, retB = curB / INIT - 1;
+  document.getElementById('eqline').innerHTML =
+    '<b style="color:' + (ret >= 0 ? '#F09B9A' : '#6FD3AE') + '">' + (ret * 100).toFixed(2) + '%</b>'
+    + ' <span style="color:#8A93A6">vs 基准 ' + (retB * 100).toFixed(2) + '%</span>';
+  document.getElementById('replaydate').textContent = day.holdDay + ' UTC · 第 ' + (Math.floor(hour) % 24) + ' 小时';
+
+  // 决策矩阵
+  document.getElementById('decrep').textContent = '报告日 ' + day.reportDay;
+  var dl = '';
+  for (var s in day.answers) {
+    var a = day.answers[s], p = a.probabilities;
+    dl += '<div class="dsym">' + s.replace('USDT', '') + '<span class="chip ' + cls(a.choice) + '">' + label(a.choice) + '</span>'
+        + '<span style="font-size:10px;color:#6B7488;font-weight:400">置信 ' + a.confidence.toFixed(2) + '</span></div>';
+    var rows = [['买', p.buy, '#E24B4A'], ['不动', p.hold, '#6B7488'], ['卖', p.sell, '#1D9E75']];
+    for (var r = 0; r < rows.length; r++) {
+      dl += '<div class="prow"><span>' + rows[r][0] + '</span><div class="track">'
+          + '<i class="fill" style="width:' + (rows[r][1] * 100).toFixed(1) + '%;background:' + rows[r][2] + '"></i></div>'
+          + '<span class="pv">' + (rows[r][1] * 100).toFixed(1) + '%</span></div>';
+    }
+  }
+  document.getElementById('declist').innerHTML = dl;
+
+  // 目标仓位
+  var hl = '';
+  for (var s2 in day.targetWeights) {
+    var w = day.targetWeights[s2];
+    hl += '<div class="hrow"><span>' + s2.replace('USDT', '') + '</span><div class="bar">'
+        + '<i style="width:' + Math.min(100, w * 100).toFixed(1) + '%;background:' + (w > 0 ? '#E24B4A' : '#2A3446') + '"></i></div>'
+        + '<span>' + (w * 100).toFixed(0) + '%</span></div>';
+  }
+  var cashW = 1 - Object.keys(day.targetWeights).reduce(function (x, k) { return x + day.targetWeights[k]; }, 0);
+  hl += '<div class="hrow" style="margin-top:6px"><span>现金</span><div class="bar">'
+      + '<i style="width:' + (cashW * 100).toFixed(1) + '%;background:#39445A"></i></div>'
+      + '<span>' + (cashW * 100).toFixed(0) + '%</span></div>';
+  hl += '<div style="font-size:10.5px;color:#6B7488;margin-top:9px">换手 ' + (day.turnover * 100).toFixed(0)
+      + '%　手续费 ' + day.fee.toFixed(2) + '　当日 ' + (day.ret * 100).toFixed(2) + '%　基准 ' + (day.retBench * 100).toFixed(2) + '%</div>';
+  document.getElementById('holdlist').innerHTML = hl;
+  document.getElementById('gross').textContent = '总敞口 ' + (day.grossExposure * 100).toFixed(0) + '%';
+
+  // 新闻
+  var nl = '';
+  for (var n = 0; n < day.headlines.length; n++) {
+    nl += '<div><span class="ntag">' + esc(day.headlines[n].feed) + '</span>' + esc(day.headlines[n].title) + '</div>';
+  }
+  document.getElementById('newslist').innerHTML = nl || '<div style="color:#6B7488">当日无标题</div>';
+}
+window.__seek = seek;
+window.__total = FRAMES;
+window.__cfg = CFG;
+seek(0);
+</script>
+</body></html>

@@ -10,6 +10,7 @@ description: "用可公开核验的筛选条件和主题研究生成多空候选
 ## Public-source gate
 
 Read [`PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md) before screening. Use only SEC EDGAR or other official regulator filings, issuer IR materials, government or official exchange pages, and validated public market-history pages or user-provided exports. Historical ratios may be calculated from cited inputs. Forward multiples or estimates require dated issuer guidance, a `USER_PROVIDED` estimate, or an explicitly labeled `MODEL_DERIVED` case; do not substitute analyst consensus or whisper data. If a required input cannot be opened and cited, record `SOURCE_UNAVAILABLE` and omit the ranking rather than filling it in.
+Resolve every concrete source from [`../../data-sources.jsonl`](../../data-sources.jsonl) (single source of truth for skill data-source routing): filter by `data_types` × `markets`; honor `policy_status`/`auth`/`cost`; fail closed when nothing matches.
 
 ## Workflow
 

@@ -1,0 +1,1116 @@
+{
+  "recorded_at": "2026-09-26T14:02:02.109636+08:00",
+  "scope": "首轮案例蒸馏；源只读；在线补证独立记录",
+  "source_files": [
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-01-07/deck.jsonl",
+      "bytes": 6581,
+      "sha256": "57c07fc6f3f269f2ddd414535e960362b03ed4357e20baddfbf7e04fde826835",
+      "lines": 9
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-01-07/manifest.json",
+      "bytes": 2740,
+      "sha256": "98bc06035f79348ab0c6c02627163df7452e62198aec2f18d7ef62e2f99aaa4b",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-01-07/transcript.jsonl",
+      "bytes": 108741,
+      "sha256": "878e61490d76c06461ab85916b98e4d9b606da1a8dc2619bcdd59b766b370f8a",
+      "lines": 780
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-01-14/deck.jsonl",
+      "bytes": 9825,
+      "sha256": "c6636d446bc0742437ae608ecdae9692c94e2f6af469802ca46fcfb698beff92",
+      "lines": 11
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-01-14/manifest.json",
+      "bytes": 2749,
+      "sha256": "942c7549ac0defca9b2fede440bc9662c623134106b87042eefc55301a96c83c",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-01-14/transcript.jsonl",
+      "bytes": 102965,
+      "sha256": "c55868c6e1a54c8c42a262ca0a75cedffb700a52c67337276ff0733473aadcdc",
+      "lines": 721
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-01-21/deck.jsonl",
+      "bytes": 3597,
+      "sha256": "67f448b8d187a949a29334ad36e424b73c0132c782e85fd9815a9a52bb82386e",
+      "lines": 3
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-01-21/manifest.json",
+      "bytes": 2741,
+      "sha256": "62380f5f9297a72389dc6872dc8b3b97bc9e1448c44f84b312a1bfebcb4343c6",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-01-21/transcript.jsonl",
+      "bytes": 131437,
+      "sha256": "b4e298a17d307692f5b96a961fd4d32e388735af625b4a145e7c1d5c767c1206",
+      "lines": 949
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-02-11/deck.jsonl",
+      "bytes": 15142,
+      "sha256": "5d687888885127e4b90854728c4f282f8a03e52c681a0cf9974e3dc48acded75",
+      "lines": 14
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-02-11/manifest.json",
+      "bytes": 2741,
+      "sha256": "df0b7c6352dbeb0b65a8e3d86d2bbf881c7259a927e0c0f556dfc9d7847899a3",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-02-11/transcript.jsonl",
+      "bytes": 180801,
+      "sha256": "08ba504ae7a51969376767838624dd08a12556ed6d5dd4200ddf490eb0e33dea",
+      "lines": 1285
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-02-18/deck.jsonl",
+      "bytes": 7233,
+      "sha256": "f4f011ab1561ba2a614644f1a6f7f2b3bf4113501015d229c723079253c3f67b",
+      "lines": 8
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-02-18/manifest.json",
+      "bytes": 2748,
+      "sha256": "0f6e695f7128559f8182e49b8767b2311fafb850a56c23fb2d3c3202b2f458ef",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-02-18/transcript.jsonl",
+      "bytes": 150521,
+      "sha256": "b98737c0a50886d689bbd7957b03098e095d297db0a8f61e33e81abd1767c806",
+      "lines": 1145
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-02-25/deck.jsonl",
+      "bytes": 22893,
+      "sha256": "4d62ed37e15ddf7191a4cdbe38ff273c9a8807b4328e5657e2d4f1d0621c58ae",
+      "lines": 27
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-02-25/manifest.json",
+      "bytes": 2740,
+      "sha256": "ad33a641c4aafc3bc2849db2c0d7f893ece79fe1e6feae882a2b05e8b6a9a9b3",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-02-25/transcript.jsonl",
+      "bytes": 87941,
+      "sha256": "cd8110f3deab8fc10a75a0abb84c1268e276e16d281a3dfcc8df8eeaa38e9034",
+      "lines": 606
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-03-04/deck.jsonl",
+      "bytes": 8926,
+      "sha256": "2dccd4c2247bce9938b4e7d9e6990c3ada1e44884f59dde49f64ce78328834e1",
+      "lines": 8
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-03-04/manifest.json",
+      "bytes": 2721,
+      "sha256": "232ae142080b002e083f21570918f3ac32def7b8503cdcb084d89f7f5fdd521d",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-03-04/transcript.jsonl",
+      "bytes": 117236,
+      "sha256": "01f5755b2350e4bf689b131cbb839b4b7b2c19e4d2eb3e205df452576b149d62",
+      "lines": 830
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-03-11/deck.jsonl",
+      "bytes": 22867,
+      "sha256": "4d7d0ad8302ec1935fb3c931cc4b8fd48db113c75e647567756b74deaa28aaa9",
+      "lines": 26
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-03-11/manifest.json",
+      "bytes": 2752,
+      "sha256": "4b7e1b1c1eb5d7564434be5953cb92db751ba0ec09e8f800dc6f09ae7a37621e",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-03-11/transcript.jsonl",
+      "bytes": 127529,
+      "sha256": "951eb2bf0dc0b8b92f28dc99d4333ede8f8ed250cb85c2753e9bf0063878df3e",
+      "lines": 877
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-03-18/deck.jsonl",
+      "bytes": 17315,
+      "sha256": "c8156d2fb89cc77dbc611a4934fb427e17f2c7c5bd46d48c0d82daa12835a7ae",
+      "lines": 23
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-03-18/manifest.json",
+      "bytes": 2781,
+      "sha256": "016ec295ce630f5cb496905f89cabfb259ff406510954719c67c8ec4d27bf466",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-03-18/transcript.jsonl",
+      "bytes": 132436,
+      "sha256": "ad9f8e2a60fd2d43a64f429b14853531838bed8b68ee2fd220a18d34733bf317",
+      "lines": 931
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-01/deck.jsonl",
+      "bytes": 8734,
+      "sha256": "d278a7781503928b476c8745168cd5ead2b078991edeb112f2c931039099ffa1",
+      "lines": 9
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-01/manifest.json",
+      "bytes": 2759,
+      "sha256": "63574d694b1746f03a4f42920d117f43da652b3ffecf3abc01b2dcbad9350c35",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-01/transcript.jsonl",
+      "bytes": 120142,
+      "sha256": "35320bc8c56734c15c54a327a307e86675466f8fb750ee8146aa6b270b45ebdc",
+      "lines": 849
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-08/deck.jsonl",
+      "bytes": 19570,
+      "sha256": "30b2b109e2d5b0a61c05677f392b0fb212c3d23cf4eb3994f9f5f8124e7aeaaf",
+      "lines": 19
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-08/manifest.json",
+      "bytes": 2772,
+      "sha256": "0d0a51fcbb847258b8d5ce22772fed7bff7c5b84253accb8ab1d31f9d53de767",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-08/transcript.jsonl",
+      "bytes": 100677,
+      "sha256": "10b8d931978db218b2f25eb5b9bd5604c4a5ed0a2261a787e67f65b44401b650",
+      "lines": 697
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-15/deck.jsonl",
+      "bytes": 20288,
+      "sha256": "a951d0c2a272b6e292632941b8d8a5284807f35645243457b037cbc7f316a04b",
+      "lines": 22
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-15/manifest.json",
+      "bytes": 2761,
+      "sha256": "9295b81195353648ed93c6b3b64e4d01bd30396b302b516c5a0b89721c0c8125",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-15/transcript.jsonl",
+      "bytes": 127097,
+      "sha256": "86390b9924188eeb3f83c65babbdaaf1f739d73f215264e4fe386e85c00f219c",
+      "lines": 889
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-22/deck.jsonl",
+      "bytes": 12828,
+      "sha256": "3a2de634b60d34d7b4e6c104271a0e75ce7c31fe90de3d3c275231e18275c14d",
+      "lines": 16
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-22/manifest.json",
+      "bytes": 2765,
+      "sha256": "4aa9a768a9da371d7857fe7f03c2ed0f001605f6efc53b045689858700f76021",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-22/transcript.jsonl",
+      "bytes": 123657,
+      "sha256": "5d2ef48c7216ed2f2e6220b09d71c6a875e6e9d4cf8e93337a2c3c5e1f25b063",
+      "lines": 875
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-29/deck.jsonl",
+      "bytes": 4490,
+      "sha256": "e0d29006ea1475d44ca47db3b518d10df7c1b979373289e90e9092c2726ae3bb",
+      "lines": 5
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-29/manifest.json",
+      "bytes": 2732,
+      "sha256": "20000b225224d53442275e6d38efb8fb7af231fa5b146d102f59d51404879d2a",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-04-29/transcript.jsonl",
+      "bytes": 131667,
+      "sha256": "e11262d2c7721d6489c61a88b75b7d65fa6d05a228f4760c11da110705a17b4e",
+      "lines": 922
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-05-13/deck.jsonl",
+      "bytes": 12204,
+      "sha256": "98000fef04269fa21f7db7d1fdf5c52573d53a5a72789950419ddb25926b8fd4",
+      "lines": 15
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-05-13/manifest.json",
+      "bytes": 2776,
+      "sha256": "7ebbe201c3164d307218cc0b8ab22e1cb9f67764af410710a5f73bbc92334737",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-05-13/transcript.jsonl",
+      "bytes": 110581,
+      "sha256": "c1cae7e4fab664cf2e8d1e9d968ef2e744cbdab874e47d0dd4e86aacc60231e1",
+      "lines": 760
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-05-20/deck.jsonl",
+      "bytes": 18477,
+      "sha256": "8266dd3b026a1b2f5a1d4bdc9aab0f3af0ad05421a45287d626d5e7c35d3b7cd",
+      "lines": 24
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-05-20/manifest.json",
+      "bytes": 2761,
+      "sha256": "a2a721a863513338d0fffd5ed801028d854918d1de91e4ab2b6179773af60c45",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-05-20/transcript.jsonl",
+      "bytes": 128720,
+      "sha256": "d8e8567c4d85d77b95f08741f8da527c66dfc0d701abaeafe540dee1b70dcdf2",
+      "lines": 894
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-06-03/deck.jsonl",
+      "bytes": 11508,
+      "sha256": "1265fbda254e7b9f0627286c3f156cb118567d7ffff61004f57c77ced0df0fbb",
+      "lines": 12
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-06-03/manifest.json",
+      "bytes": 2772,
+      "sha256": "07b5ed0665e4a4ac905c81c2d3d4fe51f860774f9bc29be7c3b16f410913eb18",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-06-03/transcript.jsonl",
+      "bytes": 124048,
+      "sha256": "f0074b49e9211caa5d5516b8131f7c9a06c6b4b07be7a61d3a6ca218c105ef52",
+      "lines": 872
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-06-10/deck.jsonl",
+      "bytes": 11440,
+      "sha256": "90b0b655c8d794c34a7e979aa1680798a1227bfaf478af858e1a67aac5f6ada5",
+      "lines": 14
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-06-10/manifest.json",
+      "bytes": 2761,
+      "sha256": "d9b8c1cfa9dc8c081ba72a73300a2e900b1eb7322fda62ea6321c76f692ee886",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-06-10/transcript.jsonl",
+      "bytes": 133093,
+      "sha256": "87aef84e737949b4d513537db8ae41f08a4a4648feb6071bba52c68901d1e4c2",
+      "lines": 947
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-06-24/deck.jsonl",
+      "bytes": 6598,
+      "sha256": "988558ca03836a13e23f19a8d6b895333771977cacd6c8462cb2fad0ceda5218",
+      "lines": 9
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-06-24/manifest.json",
+      "bytes": 2770,
+      "sha256": "8f469d8a13d6f9778636ee86aebebc89aab3a5db5382703750511c9ffa0723c3",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-06-24/transcript.jsonl",
+      "bytes": 143793,
+      "sha256": "40a0c3aa20f7bbe2e5b4c3c74447cc066ebcb5d6d94fae2073ac179d9a729890",
+      "lines": 1088
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-07-02/deck.jsonl",
+      "bytes": 4662,
+      "sha256": "f4fb1a3a9acedd4a705ba106903bc3cacb86e16d08f799e22a0eca2c58cb046d",
+      "lines": 5
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-07-02/manifest.json",
+      "bytes": 2783,
+      "sha256": "097cc6bc2da6406abbc2b5a70eb06e514f11b4c7615f56cdf5b1fd100262e00f",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-07-02/transcript.jsonl",
+      "bytes": 148823,
+      "sha256": "c080272749884e363a6764b61d3be790ea7c87c92073bb48335c3a7f57b3d83e",
+      "lines": 1048
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-07-08/deck.jsonl",
+      "bytes": 9438,
+      "sha256": "827e949d83cc81dbcc0bd544caa6b04b26550d4582c04b370bc7e69cb0fc983a",
+      "lines": 12
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-07-08/manifest.json",
+      "bytes": 2746,
+      "sha256": "32f6097931f28138c45292a21ee0981f059e6b48911248ffef013c75b3d22fdd",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-07-08/transcript.jsonl",
+      "bytes": 131783,
+      "sha256": "10cffe2fd7ec748ebf6795648d9d768fd0bd1551bf9d74dffd1578fe488451a7",
+      "lines": 944
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-07-22/deck.jsonl",
+      "bytes": 6146,
+      "sha256": "a79a73c48504e5add5c2249b7c5edf9759825ee57fb602d0a8df272a2f9bffde",
+      "lines": 6
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-07-22/manifest.json",
+      "bytes": 2724,
+      "sha256": "2c2b0707d65ed12e701cc160306dd257a58d7738b3fe0c058fa006ab60c15c5b",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-07-22/transcript.jsonl",
+      "bytes": 133164,
+      "sha256": "5af2d630769615e5fe3ef6e92ad0db08a2d7362c131445d79c9d193bd033fab1",
+      "lines": 937
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-08-05/deck.jsonl",
+      "bytes": 4986,
+      "sha256": "15c5e71017b57d529936273afeaad9683fc6cd06b4a9951ab871b5ad6bd81f05",
+      "lines": 6
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-08-05/manifest.json",
+      "bytes": 2703,
+      "sha256": "ef44d2e607732d09dc96cafc856283771af8d8b40e16bcc4952ae23618181232",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-08-05/transcript.jsonl",
+      "bytes": 79948,
+      "sha256": "cdc5cbd1d9c31746d3e3cc2564217f3b538c778645e999e00ca96b645112eb5a",
+      "lines": 554
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-08-12/deck.jsonl",
+      "bytes": 4718,
+      "sha256": "1f176f6c53ad5699af9302b5b7942f6d8acac4e33cedb9c366862a36ff231305",
+      "lines": 5
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-08-12/manifest.json",
+      "bytes": 2744,
+      "sha256": "8c79a39323c2dda66d8e5f6c8d57f1c3b6b568ed9e116127ff073a5dc2520e25",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-08-12/transcript.jsonl",
+      "bytes": 96396,
+      "sha256": "a271fc6d898e57286cb7afb13d3bbb01f38a8ecc1b715d35cc0e87810d3646ee",
+      "lines": 679
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-09-02/deck.jsonl",
+      "bytes": 3646,
+      "sha256": "3a09b7828977881fc469e672ab063211eeb0023b199969298c219f386bbe9bd1",
+      "lines": 4
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-09-02/manifest.json",
+      "bytes": 2751,
+      "sha256": "10f66cdb0515ae8e6ea34ce415cecee25bcd753f46e3d0037856fe7d1379e617",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-09-02/transcript.jsonl",
+      "bytes": 116859,
+      "sha256": "0aad1f6621cd9a0e50a779acc644919406ea0a95855e2af2667727039edb5d38",
+      "lines": 804
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-09-09/deck.jsonl",
+      "bytes": 6044,
+      "sha256": "ab1bd209c12fff2ce2d6b83b7ae95b355c1cb1b123d494824d72eee39ba12511",
+      "lines": 6
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-09-09/manifest.json",
+      "bytes": 2743,
+      "sha256": "c4b0b788919c5a02de6dac49ea988560e717dcd2c9daec4ba6af72fd49e1ac0d",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-09-09/transcript.jsonl",
+      "bytes": 126389,
+      "sha256": "938ef21917d212bc8c61c3f873c545a00b908686da5c2b1a6a3de510e8efaabf",
+      "lines": 893
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-09-23/deck.jsonl",
+      "bytes": 10574,
+      "sha256": "fc7dc4434769ae962101b442a5aa4a8d5a43b353639ed2522e1297e0c1bb5881",
+      "lines": 11
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-09-23/manifest.json",
+      "bytes": 2729,
+      "sha256": "0403542e2ad823cfb01cdeddf7e707d718bbc933900aba60e215fc8f6b1b0a35",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-09-23/transcript.jsonl",
+      "bytes": 116185,
+      "sha256": "995d5bde8570db3acefeac46930b900ca0a0f9abf21d4062093f59172d7e4e8e",
+      "lines": 810
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-09-30/deck.jsonl",
+      "bytes": 4828,
+      "sha256": "c7469e395db40e1bab18ffd7bf018ffdc3868c375e18ac30983954c4397c6eb6",
+      "lines": 5
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-09-30/manifest.json",
+      "bytes": 2769,
+      "sha256": "f7943dc2ab1a5f1c0a1985977b850af0b9cee897dd2f92f3fd1ce1d7ef985d90",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-09-30/transcript.jsonl",
+      "bytes": 107588,
+      "sha256": "19dccba5cedfd4e0f1e52acdc274d3132fa2e1feb726df73800d09c3efcbe912",
+      "lines": 745
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-10-14/deck.jsonl",
+      "bytes": 9429,
+      "sha256": "1a941130c36117164151f7414b09af6a7127a74da9736cbd2a8690b820681166",
+      "lines": 10
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-10-14/manifest.json",
+      "bytes": 2764,
+      "sha256": "f13ac76b533ce6842b36bf2980e3a5dd26be3668b67bb35d74c7c9d6edfe8e2f",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-10-14/transcript.jsonl",
+      "bytes": 127023,
+      "sha256": "48ded17087b12660685d8e93ee51cd5a5eb1661c6dbfe0982d6002455355653e",
+      "lines": 894
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-10-28/deck.jsonl",
+      "bytes": 8750,
+      "sha256": "4e98a29ef2dcdbb866572974ab0c5bc394fe3d7fd911f372fa783452d9612bcf",
+      "lines": 9
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-10-28/manifest.json",
+      "bytes": 2731,
+      "sha256": "dfb77a53477a70212e07d707346544b1cf800dd468b6a0bf2a034d8c7a18ef3d",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-10-28/transcript.jsonl",
+      "bytes": 124926,
+      "sha256": "e494f80f6a6d338e01319bb78106bce621ff4d2e9ee789204f3a33cd113d4239",
+      "lines": 874
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-11-18/deck.jsonl",
+      "bytes": 12354,
+      "sha256": "6aa07fedce3391a296a1a8ca3db132ac5135d74fddecea92e919e3c9d2988af8",
+      "lines": 17
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-11-18/manifest.json",
+      "bytes": 2722,
+      "sha256": "a34eca6195c4b83a1e8367cdbea8e895fa1c6c46f379c052a972a6115565ec98",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-11-18/transcript.jsonl",
+      "bytes": 157094,
+      "sha256": "5a2d1c32ed6fad04f2c15ce9fde858b2d71e29a42f1eff85cadb0f244b8b20fe",
+      "lines": 1191
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-11-25/deck.jsonl",
+      "bytes": 18341,
+      "sha256": "26c52018a97cded93005746cb0e85918714fbfc0c25f2861dc896354e6b377f2",
+      "lines": 28
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-11-25/manifest.json",
+      "bytes": 2751,
+      "sha256": "51acd31674d1c25c4ae2d37a61f0f448230a9f99de9003e1f635b2f920effedc",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-11-25/transcript.jsonl",
+      "bytes": 127965,
+      "sha256": "679a7077a6d2c518e34231c16e85519f71586cdbd00c859af34876fe6ee36443",
+      "lines": 892
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-12-09/deck.jsonl",
+      "bytes": 8427,
+      "sha256": "d28885a8f8ab42188245bc1e9eee1ffb3fcd291a4bbc9477439b649f312f5789",
+      "lines": 9
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-12-09/manifest.json",
+      "bytes": 2728,
+      "sha256": "afa0a9c15b9369b450753e3fd45a7c2e19fac1631aa1035144c790c5c6cf4384",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-12-09/transcript.jsonl",
+      "bytes": 144419,
+      "sha256": "eef7d618965758c817555de21409640acbc1ad0fe2fe5defafed47030a8f042a",
+      "lines": 1024
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-12-16/deck.jsonl",
+      "bytes": 10296,
+      "sha256": "97739645faa27c8ced1712840f4dceb9705df7f3e177e41d1b24de9f720f463b",
+      "lines": 12
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-12-16/manifest.json",
+      "bytes": 2723,
+      "sha256": "ed03fb57ffb6078a9f8842470012a8e36af0fe3f2cb716eb743258e56407254c",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-12-16/transcript.jsonl",
+      "bytes": 89092,
+      "sha256": "0bdb585bb164a9c7cfe660a6508b7cc9347952ce7ced9c596887c188a1176776",
+      "lines": 612
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-12-30/deck.jsonl",
+      "bytes": 11729,
+      "sha256": "b3545daae9e9348d82394fb024b0b2796a388ebc19bbcf30100d672b10041219",
+      "lines": 14
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-12-30/manifest.json",
+      "bytes": 2723,
+      "sha256": "6ca23d26448281acc0e3261cb7000ad027bde17aa8b1fc52be3e5da3b3cf82f3",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2025-12-30/transcript.jsonl",
+      "bytes": 161341,
+      "sha256": "539a0eae659c13c4764e4e1b0f8ee7e27dc8aee74b88c00721eb93b0dc460169",
+      "lines": 1207
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-01-06/deck.jsonl",
+      "bytes": 37501,
+      "sha256": "cf51fe7ad3e150f2e86e33861bef960a86d8fac17d15a45ce1dcc15f7abae4d7",
+      "lines": 38
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-01-06/manifest.json",
+      "bytes": 2708,
+      "sha256": "f3658cd4b56944a8ec444f7831178226b99eb3f20b95a3281fedb81982a09596",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-01-06/transcript.jsonl",
+      "bytes": 131238,
+      "sha256": "4c9f323c664cbba75309cc4459c32ce8f3867f0995451528947844eb0fe58960",
+      "lines": 946
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-01-20/deck.jsonl",
+      "bytes": 6502,
+      "sha256": "520a14cfbed7b114b30bfc4b4faf76e6afb0100aaa164733252ade36e4f77f39",
+      "lines": 7
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-01-20/manifest.json",
+      "bytes": 2737,
+      "sha256": "3c0ba284bfd59cff486633acc027c560fee76416c3dcb2c72fe6c8f719b067c5",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-01-20/transcript.jsonl",
+      "bytes": 136665,
+      "sha256": "8976687e587444f72073011b0b1d3f84577bad13079a1ca995960bd7184d58c9",
+      "lines": 968
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-01-27/deck.jsonl",
+      "bytes": 23372,
+      "sha256": "12015cd52cfce6f0c59f55f28e62ed188de3586f8670c12302a0f1bd377e95b8",
+      "lines": 32
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-01-27/manifest.json",
+      "bytes": 2749,
+      "sha256": "9f6c3ad990e71c08b4a5af9c04c29f24ee873d62a5510f0a4a576c2018b50bc5",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-01-27/transcript.jsonl",
+      "bytes": 131604,
+      "sha256": "66b0964fdc76dd84730f83e599d216006c7688ef177dffd46fa890f1e51f9e78",
+      "lines": 924
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-02-03/deck.jsonl",
+      "bytes": 9751,
+      "sha256": "dce813973c6ca422af2f5570a2cafde3d04b0cef5ef902024d9c29c6a1a772b9",
+      "lines": 11
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-02-03/manifest.json",
+      "bytes": 2759,
+      "sha256": "bc7b8c6512cf23f914c706eab50e585ef37d60ca2226c83fb3bf8e2b6ae5fc5f",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-02-03/transcript.jsonl",
+      "bytes": 130100,
+      "sha256": "ab2c33000ba05d992c728b6d883f7b50882e55e355b63cd980ea3f78ef561379",
+      "lines": 924
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-02-10/deck.jsonl",
+      "bytes": 9851,
+      "sha256": "f804d2aa67aa226b414b65780819916da5089225062c266718a96bd57919f575",
+      "lines": 12
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-02-10/manifest.json",
+      "bytes": 2715,
+      "sha256": "f3cd21aa70b7c7d7f5d331a5ead8c950641790097c0e63f22e22b17473b4946a",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-02-10/transcript.jsonl",
+      "bytes": 152717,
+      "sha256": "6576f359a5159099ae9f94d51e513c9b2f5584778363c6e3c5c221d54f4b841b",
+      "lines": 1083
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-03-03/deck.jsonl",
+      "bytes": 22496,
+      "sha256": "7baed3c4674a681dcd1eee6a9ab8850454e3a96fb5c597cd863189db896b3e04",
+      "lines": 26
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-03-03/manifest.json",
+      "bytes": 2736,
+      "sha256": "5fc9a09e183f38a84af4ff718f85e73d32c77272603b0dc9effcef63e3dd3a62",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-03-03/transcript.jsonl",
+      "bytes": 132933,
+      "sha256": "dce53e89f2ddc022ab4365ea8f100ded57584c22bd940fd14c9f50040d5bc23c",
+      "lines": 944
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-03-10/deck.jsonl",
+      "bytes": 12591,
+      "sha256": "b2f104bfca95c5b427217701857b467c62347db8d1abdd9c03f41d0410dd5719",
+      "lines": 12
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-03-10/manifest.json",
+      "bytes": 2749,
+      "sha256": "088e82c99b480c1cb192c5aa35bc17fec4c25fc1a233a0ad748c543a66e0463b",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-03-10/transcript.jsonl",
+      "bytes": 109161,
+      "sha256": "04f96afd9d40af1853d1a2b80d486100d98773785f12b4364cd986680b1036c5",
+      "lines": 769
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-03-17/deck.jsonl",
+      "bytes": 21472,
+      "sha256": "a782d14ab8f4fb1e74230dbb0117a654ba712ef80c52ea437ef3ec033f9e855c",
+      "lines": 24
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-03-17/manifest.json",
+      "bytes": 2767,
+      "sha256": "6ed708175f992ed1507610dff92a0e9aae530dc47d4682956496dbd83b073124",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-03-17/transcript.jsonl",
+      "bytes": 113860,
+      "sha256": "2cf8f0d0f0a711644397dad4ef47ebd1b8300ca1e4218682016a37df81e17526",
+      "lines": 792
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-03-24/deck.jsonl",
+      "bytes": 8572,
+      "sha256": "ee9d56c55fe7116bef3b7d4cb5149c460d6ec4614e7e0e9a35a45de5c4f11a19",
+      "lines": 9
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-03-24/manifest.json",
+      "bytes": 2757,
+      "sha256": "dd313c269e8c0031937a6f837e479f6dfc3ffd72d97b1044243bf055268f37cc",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-03-24/transcript.jsonl",
+      "bytes": 119842,
+      "sha256": "5cd580b0509496a15d4d4e738bf02c13590c025962f5f62466880631b6410e63",
+      "lines": 849
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-04-14/deck.jsonl",
+      "bytes": 12603,
+      "sha256": "88cebb1080d8d259bfde71439c13f204671d8e3e188f814688e6f7409e419037",
+      "lines": 13
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-04-14/manifest.json",
+      "bytes": 2745,
+      "sha256": "e82c965bec4412c72193ae4474accd529610e9c32b0b39f5669b9a51f6c6de9f",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-04-14/transcript.jsonl",
+      "bytes": 145856,
+      "sha256": "5e52d41b6787ce4885fad2b0f8015bfeab8d7e0b5745cc14b204926088bbfb52",
+      "lines": 1038
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-04-21/deck.jsonl",
+      "bytes": 11616,
+      "sha256": "a022bbd4e162eb721f48d0f9ac126c3fcd401f77c0271a2db70cc7f451a2c28e",
+      "lines": 11
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-04-21/manifest.json",
+      "bytes": 2723,
+      "sha256": "ed2149ba50e64557c9c999fdf7620c0a9bc2fa0e9a613e862dc25615f9b7922e",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-04-21/transcript.jsonl",
+      "bytes": 138147,
+      "sha256": "543fd59edf9f6e104492b4eea674daf7ba57e2504332b8a04a755fd5f8af195e",
+      "lines": 976
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-05-05/deck.jsonl",
+      "bytes": 9392,
+      "sha256": "c9246064577a801ca1a9a1939b0dcc8b265d8f55a04576ed643e39dec12922f9",
+      "lines": 12
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-05-05/manifest.json",
+      "bytes": 2759,
+      "sha256": "1db2de5916b8d12395ff49e3c4c7099da3cfbaea257bc5a868e99b0faf95f28f",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-05-05/transcript.jsonl",
+      "bytes": 135783,
+      "sha256": "5d0a35b5504fe45cce3ed2baaf75b707679f4ad19e51a7eb690d3b0b652a18f9",
+      "lines": 951
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-05-14/manifest.json",
+      "bytes": 2802,
+      "sha256": "b292203d33317c2f57f972b1ffbdcd34d04058104003fc185042a87be9a589bf",
+      "lines": 89
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-05-14/transcript.jsonl",
+      "bytes": 727168,
+      "sha256": "09add531fcd78c41ab19b0d11263ada5443aef68b6263bf915d6296761441947",
+      "lines": 5414
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-05-19/deck.jsonl",
+      "bytes": 7456,
+      "sha256": "2f37652f87bf909e2b75c06360515e19d2a319cac84ee3af386d3fbfef1f005a",
+      "lines": 7
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-05-19/manifest.json",
+      "bytes": 2740,
+      "sha256": "aa2b8cd8f133dcaa58a0e51cb639be1e13f2a26562b18f3eb0c0f742965caca1",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-05-19/transcript.jsonl",
+      "bytes": 123500,
+      "sha256": "04b792bfd996b1a21355b773dad37122f7b079a01fbd1e249b68cac839c76a75",
+      "lines": 870
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-06-02/deck.jsonl",
+      "bytes": 2189,
+      "sha256": "fccc5d6e77c0505d93499680454c16ba3a3ef40f28bf57bfc5c5fb81946a04a9",
+      "lines": 1
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-06-02/manifest.json",
+      "bytes": 2725,
+      "sha256": "595df793aaa613cdfb27a4b2f53935928e143eee419465837323ff4bffa01823",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-06-02/transcript.jsonl",
+      "bytes": 146164,
+      "sha256": "620ab2b719ab0ce305eebae5b05a575c9736bc81bd58f2dbfd8e78442e26fd7c",
+      "lines": 1040
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-06-09/deck.jsonl",
+      "bytes": 38763,
+      "sha256": "223f830c9e499e1b704a05f2fc6a6a20035de6973448a7387fe60e52346b9c29",
+      "lines": 48
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-06-09/manifest.json",
+      "bytes": 2722,
+      "sha256": "c5db8ef05dcb81ff71704790a7864453b721e1e2b54852f39ad4b59a3d363b43",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-06-09/transcript.jsonl",
+      "bytes": 124160,
+      "sha256": "5ce1f6fbe4e0fc1a1819d1dd4775a0aae0711ec469046303b95ed64a70351355",
+      "lines": 868
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-06-23/deck.jsonl",
+      "bytes": 13097,
+      "sha256": "6df34775db8b9b0f06ae4c1635ff010f20386fbd97119870b0391fdf5031cc32",
+      "lines": 17
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-06-23/manifest.json",
+      "bytes": 2752,
+      "sha256": "bab79472b8e6cb0817fd1b074ed4cd594a800e0d6ab508bb931fad2a94310701",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-06-23/transcript.jsonl",
+      "bytes": 86389,
+      "sha256": "38a498f5d00eb42b8db0c217fc3fae30107ee22f6dffcfef782fbf7b917e1c66",
+      "lines": 529
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-06-30/deck.jsonl",
+      "bytes": 13158,
+      "sha256": "e4e2bd525857bdd0bb57e1dfb1846fae7a954dc813aa7016e1487a9fb409f7ef",
+      "lines": 5
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-06-30/manifest.json",
+      "bytes": 2301,
+      "sha256": "e6201cf5e87244162e0a92007d3298eb6ae51d14e0be1b49ebf32995913217a9",
+      "lines": 94
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-06-30/transcript.jsonl",
+      "bytes": 101937,
+      "sha256": "a6d5a5116936d592729b8444e21cb7d5537e04818e0a0abe0610ac4b4282820b",
+      "lines": 653
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-07-14/deck.jsonl",
+      "bytes": 8776,
+      "sha256": "64224b8a02bc4d430f3393a53a8e36bb510618e5f9c787f83656e4cb79803db5",
+      "lines": 11
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-07-14/manifest.json",
+      "bytes": 2714,
+      "sha256": "ef40dc1b19bd30606f354aae420058bd5158db3ceb9f102337540120065ca795",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-07-14/transcript.jsonl",
+      "bytes": 131435,
+      "sha256": "6a993b0288198e012e376901a609445d976d4dc25ddcc3e487315f65d6c98a0e",
+      "lines": 937
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-07-21/deck.jsonl",
+      "bytes": 8342,
+      "sha256": "64e07fc40f4451b059a69d2320d2e211b6e433c6b9ab9a68f65660a5b16810c1",
+      "lines": 8
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-07-21/manifest.json",
+      "bytes": 2753,
+      "sha256": "d0878b3afd192e3207303f9ed60b76de94a29ed47b2f42e2c5b5c3a8f167bf80",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-07-21/transcript.jsonl",
+      "bytes": 136069,
+      "sha256": "8f4efff9433117e78834b9535b0a027487963c4c09ccd3b051351ccc91daa939",
+      "lines": 963
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-08-04/deck.jsonl",
+      "bytes": 9219,
+      "sha256": "7f1d85798692a78308979c1cd10e4868d408e78e8f525e1117b874c2d412102e",
+      "lines": 8
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-08-04/manifest.json",
+      "bytes": 2216,
+      "sha256": "625674d75c391a16e813c70739a123afa357a7fbc933acd11bdb4064fccc635b",
+      "lines": 94
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-08-04/transcript.jsonl",
+      "bytes": 125544,
+      "sha256": "eea5666247478cd4abb2ef6b53cb796c5a162f2cb9a43815c39aff7ab0c6d33c",
+      "lines": 863
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-08-25/deck.jsonl",
+      "bytes": 8126,
+      "sha256": "2c81b14845186e75a4e6b94709d7b06a7cbaac658f274ac2d974fb95d5430f6e",
+      "lines": 6
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-08-25/manifest.json",
+      "bytes": 2329,
+      "sha256": "0bb1bcbbc0581d4c253d2b0d72f7e7be5b100b601e3ecb0b0c3cde4b4fabbc2b",
+      "lines": 100
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-08-25/transcript.jsonl",
+      "bytes": 115413,
+      "sha256": "02e8b85e076900b841cef5472908c6506c2e2bc0b3227111e082c578e82a210d",
+      "lines": 771
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-09-01/deck.jsonl",
+      "bytes": 16693,
+      "sha256": "6c5a4677292af10987242d688e0a27228669c19d0464a4e3e42ba0553e0a22b1",
+      "lines": 19
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-09-01/manifest.json",
+      "bytes": 2746,
+      "sha256": "082191afb8e86ef1b099dc0796cba922a321525da80e649f11fcec62c580757d",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-09-01/transcript.jsonl",
+      "bytes": 145751,
+      "sha256": "58c23f639de5f91212f1f06f5e94bc22cb3a0fc2f8635ab38de6d8946649fc4a",
+      "lines": 1038
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-09-08/deck.jsonl",
+      "bytes": 23455,
+      "sha256": "353cb6372acd946e81defd921ad1c9c78589f2d3fdfc199049db17efb6f7cf71",
+      "lines": 27
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-09-08/manifest.json",
+      "bytes": 2738,
+      "sha256": "2361fda712be138b54a30a4e1276e03a3a04fc2d5b4bca1944484680bd98d50a",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-09-08/transcript.jsonl",
+      "bytes": 137571,
+      "sha256": "f873c8fca70c39c71c96aa772e3bbfe622962446994844ab39a8002dc3bd9498",
+      "lines": 961
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-09-15/deck.jsonl",
+      "bytes": 14879,
+      "sha256": "f661684dd0990073deb29b3ea47d27696260843ca1c8f00dc79be780b1313f85",
+      "lines": 17
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-09-15/manifest.json",
+      "bytes": 2727,
+      "sha256": "f1926489d191024e6913a09282ede6796b5b3accef43295999696f177dbbb0c1",
+      "lines": 105
+    },
+    {
+      "path": "Herman Jin/market-overview/market-overview-2026-09-15/transcript.jsonl",
+      "bytes": 120037,
+      "sha256": "04ea1fa80e1ef7eb9df0d78535532cc8842c4fcfd11966e32d18a030a1def798",
+      "lines": 836
+    },
+    {
+      "path": "Herman Jin/x-archive/x-2026-09-25/manifest.json",
+      "bytes": 2254,
+      "sha256": "27b874845f2b0d556a3061d5e550f64845571337a17e45af0533c6a9a2b977fb",
+      "lines": 50
+    },
+    {
+      "path": "Herman Jin/x-archive/x-2026-09-25/posts.jsonl",
+      "bytes": 442352,
+      "sha256": "6da3b39d55cdc36b6a3c7f5a6b14cca2764fd9001e9f249dd8a1fe772f1a3c5c",
+      "lines": 1305
+    },
+    {
+      "path": "Herman Jin/x-archive/x-2026-09-25/replies.jsonl",
+      "bytes": 2260923,
+      "sha256": "0b536870321a98ac2368ed03b0aafa1d93e9c1841a33345180e667111c3d2e5b",
+      "lines": 6494
+    },
+    {
+      "path": "Serenity/agent-index.json",
+      "bytes": 1460,
+      "sha256": "6ee201341147c1ea30e84f1229b605ae88e8396a17f30aab86fec721c7d82d1b",
+      "lines": 20
+    },
+    {
+      "path": "Serenity/data/clean/posts.jsonl",
+      "bytes": 762513,
+      "sha256": "22252e94b4e022abe170ff0ad1323144bac846089100318a92f42db9ec42e7bb",
+      "lines": 1794
+    },
+    {
+      "path": "Serenity/data/clean/replies.jsonl",
+      "bytes": 2752703,
+      "sha256": "6adaa0c1551f09938560caded78f9d4a8c7cb7d8bcfec16d6f3f92e5ae88332a",
+      "lines": 5061
+    }
+  ]
+}

@@ -1,0 +1,1039 @@
+[
+  {
+    "date": "2026-09-01",
+    "filename": "source.m4a",
+    "video_duration": 2074.587,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 1,
+          "duration": "2074.586848"
+        }
+      ],
+      "format": {
+        "duration": "2074.586848",
+        "size": "19029744"
+      }
+    },
+    "api_duration": 2074.586,
+    "uploaded": 182978638,
+    "local_bytes": 19029744,
+    "aac_estimated_duration_seconds": 2075.136681,
+    "aac_bytes": 19296696,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-07-21",
+    "filename": "source.m4a",
+    "video_duration": 2065.322,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "2065.322086"
+        }
+      ],
+      "format": {
+        "duration": "2065.322086",
+        "size": "12570832"
+      }
+    },
+    "api_duration": 2032.518,
+    "uploaded": 358536410,
+    "local_bytes": 12570832,
+    "aac_estimated_duration_seconds": 2032.51888,
+    "aac_bytes": 12703243,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-07-14",
+    "filename": "source.m4a",
+    "video_duration": 1960.205,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 1,
+          "duration": "1960.205351"
+        }
+      ],
+      "format": {
+        "duration": "1960.205351",
+        "size": "17980471"
+      }
+    },
+    "api_duration": 1936.464,
+    "uploaded": 170796242,
+    "local_bytes": 17980471,
+    "aac_estimated_duration_seconds": 1936.464447,
+    "aac_bytes": 18232781,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-06-30",
+    "filename": "音频.mp3",
+    "video_duration": 1806.48,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "16000",
+          "channels": 1,
+          "duration": "1806.480000"
+        }
+      ],
+      "format": {
+        "duration": "1806.480000",
+        "size": "5419880"
+      }
+    },
+    "api_duration": 1806.552,
+    "uploaded": 5419880,
+    "local_bytes": 5419880
+  },
+  {
+    "date": "2026-06-23",
+    "filename": "source.m4a",
+    "video_duration": 1898.51,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1898.509932"
+        }
+      ],
+      "format": {
+        "duration": "1898.509932",
+        "size": "11555575"
+      }
+    },
+    "api_duration": 1850.517,
+    "uploaded": 326431306,
+    "local_bytes": 11555575,
+    "aac_estimated_duration_seconds": 1850.517174,
+    "aac_bytes": 11677226,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-06-09",
+    "filename": "source.m4a",
+    "video_duration": 1962.597,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 1,
+          "duration": "1962.597007"
+        }
+      ],
+      "format": {
+        "duration": "1962.597007",
+        "size": "18002444"
+      }
+    },
+    "api_duration": 1962.597,
+    "uploaded": 173101134,
+    "local_bytes": 18002444,
+    "aac_estimated_duration_seconds": 1963.117217,
+    "aac_bytes": 18255027,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-05-19",
+    "filename": "source.m4a",
+    "video_duration": 1938.193,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 1,
+          "duration": "1938.192834"
+        }
+      ],
+      "format": {
+        "duration": "1938.192834",
+        "size": "17778578"
+      }
+    },
+    "api_duration": 1919.432,
+    "uploaded": 169294044,
+    "local_bytes": 17778578,
+    "aac_estimated_duration_seconds": 1919.432731,
+    "aac_bytes": 18028032,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-05-05",
+    "filename": "source.m4a",
+    "video_duration": 2109.742,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 1,
+          "duration": "2109.741859"
+        }
+      ],
+      "format": {
+        "duration": "2109.741859",
+        "size": "19352139"
+      }
+    },
+    "api_duration": 2109.741,
+    "uploaded": 186079310,
+    "local_bytes": 19352139,
+    "aac_estimated_duration_seconds": 2109.875576,
+    "aac_bytes": 19623689,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-04-21",
+    "filename": "source.m4a",
+    "video_duration": 2053.526,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "2053.526349"
+        }
+      ],
+      "format": {
+        "duration": "2053.526349",
+        "size": "12499042"
+      }
+    },
+    "api_duration": 2009.256,
+    "uploaded": 354432990,
+    "local_bytes": 12499042,
+    "aac_estimated_duration_seconds": 2009.25687,
+    "aac_bytes": 12630691,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-04-14",
+    "filename": "source.m4a",
+    "video_duration": 2110.485,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 1,
+          "duration": "2110.484898"
+        }
+      ],
+      "format": {
+        "duration": "2110.484898",
+        "size": "19358955"
+      }
+    },
+    "api_duration": 2043.816,
+    "uploaded": 180264684,
+    "local_bytes": 19358955,
+    "aac_estimated_duration_seconds": 2043.816395,
+    "aac_bytes": 19630601,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-03-24",
+    "filename": "source.m4a",
+    "video_duration": 1878.494,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1878.494331"
+        }
+      ],
+      "format": {
+        "duration": "1878.494331",
+        "size": "11433745"
+      }
+    },
+    "api_duration": 1838.619,
+    "uploaded": 324332566,
+    "local_bytes": 11433745,
+    "aac_estimated_duration_seconds": 1838.619537,
+    "aac_bytes": 11554115,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-03-17",
+    "filename": "source.m4a",
+    "video_duration": 1902.248,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 1,
+          "duration": "1902.248345"
+        }
+      ],
+      "format": {
+        "duration": "1902.248345",
+        "size": "17448898"
+      }
+    },
+    "api_duration": 1859.338,
+    "uploaded": 163993720,
+    "local_bytes": 17448898,
+    "aac_estimated_duration_seconds": 1859.338334,
+    "aac_bytes": 17693696,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-03-10",
+    "filename": "source.m4a",
+    "video_duration": 1767.131,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 1,
+          "duration": "1767.131429"
+        }
+      ],
+      "format": {
+        "duration": "1767.131429",
+        "size": "16209553"
+      }
+    },
+    "api_duration": 1741.982,
+    "uploaded": 153642922,
+    "local_bytes": 16209553,
+    "aac_estimated_duration_seconds": 1741.982354,
+    "aac_bytes": 16436910,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-03-03",
+    "filename": "source.m4a",
+    "video_duration": 2122.536,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 1,
+          "duration": "2122.536054"
+        }
+      ],
+      "format": {
+        "duration": "2122.536054",
+        "size": "19469467"
+      }
+    },
+    "api_duration": 2058.728,
+    "uploaded": 181579954,
+    "local_bytes": 19469467,
+    "aac_estimated_duration_seconds": 2058.728747,
+    "aac_bytes": 19742694,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-01-27",
+    "filename": "source.m4a",
+    "video_duration": 1969.656,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 1,
+          "duration": "1969.655873"
+        }
+      ],
+      "format": {
+        "duration": "1969.655873",
+        "size": "18067189"
+      }
+    },
+    "api_duration": 1911.416,
+    "uploaded": 168586974,
+    "local_bytes": 18067189,
+    "aac_estimated_duration_seconds": 1911.416059,
+    "aac_bytes": 18320684,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-01-20",
+    "filename": "source.m4a",
+    "video_duration": 1939.261,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 1,
+          "duration": "1939.260952"
+        }
+      ],
+      "format": {
+        "duration": "1939.260952",
+        "size": "17788447"
+      }
+    },
+    "api_duration": 1916.129,
+    "uploaded": 169002728,
+    "local_bytes": 17788447,
+    "aac_estimated_duration_seconds": 1916.12981,
+    "aac_bytes": 18037967,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2026-01-06",
+    "filename": "source.m4a",
+    "video_duration": 1907.45,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 1,
+          "duration": "1907.449615"
+        }
+      ],
+      "format": {
+        "duration": "1907.449615",
+        "size": "17496605"
+      }
+    },
+    "api_duration": 1890.597,
+    "uploaded": 166750768,
+    "local_bytes": 17496605,
+    "aac_estimated_duration_seconds": 1890.597403,
+    "aac_bytes": 17742075,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-12-30",
+    "filename": "source.m4a",
+    "video_duration": 1999.145,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 1,
+          "duration": "1999.145215"
+        }
+      ],
+      "format": {
+        "duration": "1999.145215",
+        "size": "18337665"
+      }
+    },
+    "api_duration": 1999.145,
+    "uploaded": 176324686,
+    "local_bytes": 18337665,
+    "aac_estimated_duration_seconds": 1999.675019,
+    "aac_bytes": 18594978,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-12-09",
+    "filename": "source.m4a",
+    "video_duration": 2032.35,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "2032.349751"
+        }
+      ],
+      "format": {
+        "duration": "2032.349751",
+        "size": "32868863"
+      }
+    },
+    "api_duration": 2015.285,
+    "uploaded": 355496354,
+    "local_bytes": 32868863,
+    "aac_estimated_duration_seconds": 2015.285015,
+    "aac_bytes": 33130278,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-09-30",
+    "filename": "source.m4a",
+    "video_duration": 1672.487,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1672.486893"
+        }
+      ],
+      "format": {
+        "duration": "1672.486893",
+        "size": "27048957"
+      }
+    },
+    "api_duration": 1672.486,
+    "uploaded": 295026766,
+    "local_bytes": 27048957,
+    "aac_estimated_duration_seconds": 1672.585872,
+    "aac_bytes": 27263986,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-09-23",
+    "filename": "source.m4a",
+    "video_duration": 1758.54,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1758.540045"
+        }
+      ],
+      "format": {
+        "duration": "1758.540045",
+        "size": "28441067"
+      }
+    },
+    "api_duration": 1741.834,
+    "uploaded": 307259702,
+    "local_bytes": 28441067,
+    "aac_estimated_duration_seconds": 1741.834609,
+    "aac_bytes": 28667114,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-09-02",
+    "filename": "source.m4a",
+    "video_duration": 1942.814,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1942.813605"
+        }
+      ],
+      "format": {
+        "duration": "1942.813605",
+        "size": "31420792"
+      }
+    },
+    "api_duration": 1942.813,
+    "uploaded": 342712398,
+    "local_bytes": 31420792,
+    "aac_estimated_duration_seconds": 1942.913661,
+    "aac_bytes": 31670707,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-08-12",
+    "filename": "source.m4a",
+    "video_duration": 1471.936,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1471.936145"
+        }
+      ],
+      "format": {
+        "duration": "1471.936145",
+        "size": "23805645"
+      }
+    },
+    "api_duration": 1460.62,
+    "uploaded": 257653606,
+    "local_bytes": 23805645,
+    "aac_estimated_duration_seconds": 1460.620901,
+    "aac_bytes": 23994715,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-08-05",
+    "filename": "source.m4a",
+    "video_duration": 1289.868,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1289.868481"
+        }
+      ],
+      "format": {
+        "duration": "1289.868481",
+        "size": "20861126"
+      }
+    },
+    "api_duration": 1273.913,
+    "uploaded": 224718490,
+    "local_bytes": 20861126,
+    "aac_estimated_duration_seconds": 1273.913893,
+    "aac_bytes": 21026745,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-07-08",
+    "filename": "source.m4a",
+    "video_duration": 1890.545,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1890.545488"
+        }
+      ],
+      "format": {
+        "duration": "1890.545488",
+        "size": "30575470"
+      }
+    },
+    "api_duration": 1883.32,
+    "uploaded": 332217850,
+    "local_bytes": 30575470,
+    "aac_estimated_duration_seconds": 1883.320704,
+    "aac_bytes": 30818660,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-07-02",
+    "filename": "source.m4a",
+    "video_duration": 2182.467,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "2182.466757"
+        }
+      ],
+      "format": {
+        "duration": "2182.466757",
+        "size": "35296519"
+      }
+    },
+    "api_duration": 2164.306,
+    "uploaded": 381783678,
+    "local_bytes": 35296519,
+    "aac_estimated_duration_seconds": 2164.306115,
+    "aac_bytes": 35577405,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-06-24",
+    "filename": "source.m4a",
+    "video_duration": 1686.605,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1686.604626"
+        }
+      ],
+      "format": {
+        "duration": "1686.604626",
+        "size": "27277534"
+      }
+    },
+    "api_duration": 1686.604,
+    "uploaded": 297517134,
+    "local_bytes": 27277534,
+    "aac_estimated_duration_seconds": 1686.717524,
+    "aac_bytes": 27494339,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-06-03",
+    "filename": "source.m4a",
+    "video_duration": 1783.803,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1783.803356"
+        }
+      ],
+      "format": {
+        "duration": "1783.803356",
+        "size": "28849348"
+      }
+    },
+    "api_duration": 1783.803,
+    "uploaded": 314662990,
+    "local_bytes": 28849348,
+    "aac_estimated_duration_seconds": 1783.908898,
+    "aac_bytes": 29078607,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-05-13",
+    "filename": "source.m4a",
+    "video_duration": 1828.943,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1828.942948"
+        }
+      ],
+      "format": {
+        "duration": "1828.942948",
+        "size": "29579286"
+      }
+    },
+    "api_duration": 1821.299,
+    "uploaded": 321277350,
+    "local_bytes": 29579286,
+    "aac_estimated_duration_seconds": 1821.299735,
+    "aac_bytes": 29814449,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-04-29",
+    "filename": "source.m4a",
+    "video_duration": 1927.14,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1927.140136"
+        }
+      ],
+      "format": {
+        "duration": "1927.140136",
+        "size": "31167329"
+      }
+    },
+    "api_duration": 1927.14,
+    "uploaded": 339947598,
+    "local_bytes": 31167329,
+    "aac_estimated_duration_seconds": 1927.254195,
+    "aac_bytes": 31415207,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-04-22",
+    "filename": "source.m4a",
+    "video_duration": 1874.222,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1874.221859"
+        }
+      ],
+      "format": {
+        "duration": "1874.221859",
+        "size": "30311749"
+      }
+    },
+    "api_duration": 1874.221,
+    "uploaded": 330612814,
+    "local_bytes": 30311749,
+    "aac_estimated_duration_seconds": 1874.3441,
+    "aac_bytes": 30552746,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-04-15",
+    "filename": "source.m4a",
+    "video_duration": 1873.084,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1873.084082"
+        }
+      ],
+      "format": {
+        "duration": "1873.084082",
+        "size": "30293116"
+      }
+    },
+    "api_duration": 1873.084,
+    "uploaded": 330412110,
+    "local_bytes": 30293116,
+    "aac_estimated_duration_seconds": 1873.194933,
+    "aac_bytes": 30534014,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-04-08",
+    "filename": "source.m4a",
+    "video_duration": 1547.215,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1547.215238"
+        }
+      ],
+      "format": {
+        "duration": "1547.215238",
+        "size": "25023082"
+      }
+    },
+    "api_duration": 1547.215,
+    "uploaded": 272928846,
+    "local_bytes": 25023082,
+    "aac_estimated_duration_seconds": 1547.30677,
+    "aac_bytes": 25221874,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-04-01",
+    "filename": "source.m4a",
+    "video_duration": 1728.749,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1728.748844"
+        }
+      ],
+      "format": {
+        "duration": "1728.748844",
+        "size": "27958844"
+      }
+    },
+    "api_duration": 1728.748,
+    "uploaded": 304951374,
+    "local_bytes": 27958844,
+    "aac_estimated_duration_seconds": 1728.758341,
+    "aac_bytes": 28181138,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-03-18",
+    "filename": "source.m4a",
+    "video_duration": 1887.202,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1887.201814"
+        }
+      ],
+      "format": {
+        "duration": "1887.201814",
+        "size": "30521738"
+      }
+    },
+    "api_duration": 1887.201,
+    "uploaded": 332902478,
+    "local_bytes": 30521738,
+    "aac_estimated_duration_seconds": 1887.327873,
+    "aac_bytes": 30764388,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-03-11",
+    "filename": "source.m4a",
+    "video_duration": 1883.603,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1883.602721"
+        }
+      ],
+      "format": {
+        "duration": "1883.602721",
+        "size": "30463178"
+      }
+    },
+    "api_duration": 1879.002,
+    "uploaded": 331456102,
+    "local_bytes": 30463178,
+    "aac_estimated_duration_seconds": 1879.00241,
+    "aac_bytes": 30705483,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-02-25",
+    "filename": "source.m4a",
+    "video_duration": 1411.286,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1411.285624"
+        }
+      ],
+      "format": {
+        "duration": "1411.285624",
+        "size": "22824712"
+      }
+    },
+    "api_duration": 1411.285,
+    "uploaded": 248950862,
+    "local_bytes": 22824712,
+    "aac_estimated_duration_seconds": 1411.293342,
+    "aac_bytes": 23006022,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-02-18",
+    "filename": "source.m4a",
+    "video_duration": 1609.421,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1609.421497"
+        }
+      ],
+      "format": {
+        "duration": "1609.421497",
+        "size": "26029090"
+      }
+    },
+    "api_duration": 1609.421,
+    "uploaded": 283902030,
+    "local_bytes": 26029090,
+    "aac_estimated_duration_seconds": 1609.492017,
+    "aac_bytes": 26235927,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-01-14",
+    "filename": "source.m4a",
+    "video_duration": 1651.612,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1651.612154"
+        }
+      ],
+      "format": {
+        "duration": "1651.612154",
+        "size": "26711281"
+      }
+    },
+    "api_duration": 1631.912,
+    "uploaded": 287869406,
+    "local_bytes": 26711281,
+    "aac_estimated_duration_seconds": 1631.912294,
+    "aac_bytes": 26923697,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  },
+  {
+    "date": "2025-01-07",
+    "filename": "source.m4a",
+    "video_duration": 1638.354,
+    "audio_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "sample_rate": "44100",
+          "channels": 2,
+          "duration": "1638.353560"
+        }
+      ],
+      "format": {
+        "duration": "1638.353560",
+        "size": "26496967"
+      }
+    },
+    "api_duration": 1638.353,
+    "uploaded": 289005646,
+    "local_bytes": 26496967,
+    "aac_estimated_duration_seconds": 1638.375094,
+    "aac_bytes": 26707562,
+    "api_matches_min_source_or_aac_estimate_within_10ms": true
+  }
+]

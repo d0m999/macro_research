@@ -10,6 +10,7 @@ description: "汇总隔夜公开事件、覆盖公司变化和可验证的交易
 ## Public-source gate
 
 Read [`PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md) first. Use opened issuer releases and IR pages, SEC or other regulator filings, official government/exchange pages, and validated public market pages or user-provided exports. If an overnight item or price is not publicly accessible and citable, mark it `SOURCE_UNAVAILABLE` and do not infer it. Do not use private terminals, paid news, analyst consensus, or whisper data.
+Resolve every concrete source from [`../../data-sources.jsonl`](../../data-sources.jsonl) (single source of truth for skill data-source routing): filter by `data_types` × `markets`; honor `policy_status`/`auth`/`cost`; fail closed when nothing matches.
 
 ## Workflow
 

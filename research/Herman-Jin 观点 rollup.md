@@ -6,9 +6,9 @@
 | 素材 | 59 期 market-overview；52,518 条转录 + 814 条幻灯片/OCR 记录 |
 | 复核日期 | 2026-09-17 |
 | 资料入口 | [agent-index](/Users/d0m999/Desktop/vibe-trading/Herman%20Jin/agent-index.json "citation") ／ [归档说明](/Users/d0m999/Desktop/vibe-trading/Herman%20Jin/_source/_pipeline/final-report.md "citation") |
-| 社媒信源 | [herman-jin-社媒推荐标的与言论-2026-09-17](/Users/d0m999/Desktop/vibe-trading/research/herman-jin-%E7%A4%BE%E5%AA%92%E6%8E%A8%E8%8D%90%E6%A0%87%E7%9A%84%E4%B8%8E%E8%A8%80%E8%AE%BA-2026-09-17.md "citation")（X 长文／168X 深访／X 视频逐字引文） |
+| 社媒信源 | [herman-jin-社媒推荐标的与言论-2026-09-17](/Users/d0m999/Desktop/vibe-trading/research/_agent/herman-jin-%E7%A4%BE%E5%AA%92%E6%8E%A8%E8%8D%90%E6%A0%87%E7%9A%84%E4%B8%8E%E8%A8%80%E8%AE%BA-2026-09-17.md "citation")（X 长文／168X 深访／X 视频逐字引文） |
 | 价格验证 | [herman-jin-core-views-price-validation-2025-2026](/Users/d0m999/Desktop/vibe-trading/Herman%20Jin/research/herman-jin-core-views-price-validation-2025-2026.md "citation") |
-| 数据复核 | [Herman-Jin 观点 rollup 数据复核 2026-09-18](/Users/d0m999/Desktop/vibe-trading/research/Herman-Jin%20%E8%A7%82%E7%82%B9%20rollup%20%E6%95%B0%E6%8D%AE%E5%A4%8D%E6%A0%B8%202026-09-18.md "citation")（13 处问题 · 17 项不可核实清单 · 22 条英文 reference；修订记录见文末） |
+| 数据复核 | [Herman-Jin 观点 rollup 数据复核 2026-09-18](/Users/d0m999/Desktop/vibe-trading/research/_agent/Herman-Jin%20%E8%A7%82%E7%82%B9%20rollup%20%E6%95%B0%E6%8D%AE%E5%A4%8D%E6%A0%B8%202026-09-18.md "citation")（13 处问题 · 17 项不可核实清单 · 22 条英文 reference；修订记录见文末） |
 
 > **证据口径**：转录与 OCR 均为自动生成，专名与数字可能误识别。本报告把高精度结论建立在多期重复、上下文与幻灯片交叉验证之上，不把单句 ASR 当作唯一证据。
 
@@ -111,7 +111,7 @@ Herman Jin 自 2025 年以来的核心框架不是“宏观预测 → 买股票�
 
 > **口径说明**：Azure 为 “Azure and other cloud services” 增速；Alibaba 2023Q1 为旧 Cloud 分部口径，2023Q2 起为 Cloud Intelligence Group，2026Q2 起为 AI Cloud and Compute Services。
 
-![Hyperscaler 云收入同比增速（2023Q1–2026Q2）](hyperscaler-cloud-growth-2023-2026.png)
+> **图件说明**：原配图 `_agent/hyperscaler-cloud-growth-2023-2026.png`（标签口径「Azure（GAAP）」与正文不一致）已于 2026-09-22 移入废纸篓；逐季数值与端点核实见上文正文，绘图脚本如需重建可依上文数据重绘。
 
 ---
 
@@ -195,12 +195,12 @@ Herman Jin 自 2025 年以来的核心框架不是“宏观预测 → 买股票�
 
 **图 1：CoWoS 与 HBM 产能爬坡（2023–2028E）**
 
-![CoWoS 先进封装与 HBM 产能爬坡（2023–2028E）](supply-capacity-cowos-hbm-2023-2028.png)
+![CoWoS 先进封装与 HBM 产能爬坡（2023–2028E）](_agent/supply-capacity-cowos-hbm-2023-2028.png)
 
 三个面板：① **CoWoS 先进封装产能** —— 2023→2028 共 5 年 15.7 倍，但绝对增量是 +20 → +37.5 → +47.5 → +58.5 → +56.5 kwpm，**递增后趋稳，并非恒定**；② **HBM 出货量的两个口径必须并置**（2025 年 交银 21.6 vs UBS 27.3；2026E 40.8 vs 39.0）—— 两者不是同一物理量的两组测量，而是两种建模假设，**取平均是错的**；③ **增速检验** —— 供给增速逐年递减；**CoWoS 在 2027 年向下穿越其乘法参考线（CAGR 73.4%，由 CoWoS 首尾锚定）**，由“准乘法”转入“加法”节奏；**HBM 的对应参考线为 55.9%**（21.6→81.6，3 年），按其自身参考线检验 **HBM 在 2026E 就已穿越**（+88.9% → 2027E +47.1% ＜ 55.9%）——**穿越年份取决于看哪条序列：CoWoS 是 2027、HBM 是 2026**。此外，两条互相独立的供给曲线（先进封装 vs 存储器）增速路径几乎重合（2027E：48.8% vs 47.1%），说明供给端受**共同的物理与资本节奏**约束，而非各自独立的经营决策。
 
 
-> **口径与限制**：CoWoS（千片/月）与 HBM（bn Gb）**单位不同，禁止相加或折算为同一总量**；2026E 及以后为卖方预测。完整数据表与六条限制见 [supply-capacity-notes-2026-09-17](supply-capacity-notes-2026-09-17.md)。
+> **口径与限制**：CoWoS（千片/月）与 HBM（bn Gb）**单位不同，禁止相加或折算为同一总量**；2026E 及以后为卖方预测；HBM 主口径为交银国际（TrendForce 23.7 bn Gb 锚点，UBS 为对照口径·偏高 15–30%）。原配套笔记 `supply-capacity-notes-2026-09-17.md` 已于 2026-09-22 移入废纸篓，数据表见上文正文与复现脚本 `_agent/make_supply_capacity_chart.py`。
 
 → **判定须拆两栏**：**方向 ✅ 成立** —— 供给端确实在收敛到线性形态；**时点 ❌ 偏早** —— 他在 2025-07 就把供给描述为“线性扩产”，而实测 **2024–2026 年供给增速在 +66% ~ +133% 之间**。**他把一个 2027 年才出现的状态，在 2025 年当既定条件用了。** 其结果是他的结论**比他给出的理由更强**：缺口并非来自“需求指数化 + 供给线性化”，而是需求与供给同时高速增长、需求增速持续高于供给增速。
 
@@ -210,17 +210,17 @@ Herman Jin 自 2025 年以来的核心框架不是“宏观预测 → 买股票�
 
 **图 2：需求端 CAPEX 与供需增速对决（2023Q1–2026Q2）**
 
-![四大云厂 CAPEX 与供需增速对决（2023–2026）](demand-capex-vs-supply-2023-2026.png)
+![四大云厂 CAPEX 与供需增速对决（2023–2026）](_agent/demand-capex-vs-supply-2023-2026.png)
 
 三个面板：① **规模** —— 四家季度 CAPEX 堆叠，2026Q2 单季 165.0 bn 已**超过 2023 年全年** 147.2 bn；② **需求增速的形状** —— 季度同比从 2024Q1 的 +31% 抬升至 2026Q2 的 +87%，**台阶式上行、非单调（中途 3 次回落：2025Q1 62.3%、Q3 65.3%、Q4 64.0%）**。**“乘法”在数学上应当是水平线（增速恒定），实测却是持续上台阶**，即需求端比“乘法”更强；③ **供需增速对决** —— 2026 年需求 +84.1% 首次超过 CoWoS 供给 +65.5%。
 
 > **可复核性**：逐季 YoY（四家合计）实测为 30.5 → 58.1 → 59.3 → 68.5 → 62.3 → 67.0 → 65.3 → 64.0 → 80.5 → 87.0（%），已用 SEC XBRL 独立重算 14 季 ×4 家 = 56 个单季值，与本图**逐值一致**。
 
-> **口径说明**：2026 为 **H1 vs H1** 实测口径，非年化；CAPEX 为现金流口径的 property & equipment 付款额，**不含融资租赁**，因此系统性低于卖方「AI CAPEX」口径（MSFT、META 尤其明显）。完整数据表见 [demand-capex-notes-2026-09-17](demand-capex-notes-2026-09-17.md)。
+> **口径说明**：2026 为 **H1 vs H1** 实测口径，非年化；CAPEX 为现金流口径的 property & equipment 付款额，**不含融资租赁**，因此系统性低于卖方「AI CAPEX」口径（MSFT、META 尤其明显）。逐季序列见上文「可复核性」行与 `_agent/data-hyperscaler-capex-quarterly.{csv,json}`；原配套笔记 `demand-capex-notes-2026-09-17.md` 已于 2026-09-22 移入废纸篓。
 
 **图 3：供需缺口（2024–2027E）**
 
-![供需缺口：需求增速减有效供给增速（2024–2027E）](supply-demand-gap-2024-2027.png)
+![供需缺口：需求增速减有效供给增速（2024–2027E）](_agent/supply-demand-gap-2024-2027.png)
 
 缺口**不能在上两图中直接“看”出来** —— 两图只是把需求与供给并排放在同一条年份轴上，从未做减法。且两侧量纲不同（百万美元 / 千片·月 / bn Gb），**水平值相减没有意义**；唯一成立的相减维度是同比增速：
 
@@ -250,7 +250,7 @@ Herman Jin 自 2025 年以来的核心框架不是“宏观预测 → 买股票�
 另：2026 年 CoWoS 增速比 HBM 低 **23.4pp**（65.5% vs 88.9%），瓶颈明确落在**先进封装**；但 2027 年起两者增速差收敛到 4.3pp 以内（2027 差 1.7pp / 2028 差 4.3pp），**“卡在哪个环节”这个问题本身失去意义**。
 
 
-> 三张图的完整数据表、口径限制与复现脚本见 [supply-capacity-notes-2026-09-17](supply-capacity-notes-2026-09-17.md)、[demand-capex-notes-2026-09-17](demand-capex-notes-2026-09-17.md)、[supply-demand-gap-notes-2026-09-17](supply-demand-gap-notes-2026-09-17.md)。
+> 三张图的复现脚本：`_agent/make_supply_capacity_chart.py`、`_agent/make_demand_capex_chart.py`、`_agent/make_supply_demand_gap_chart.py`；需求侧一手数据 `_agent/data-hyperscaler-capex-quarterly.{csv,json}`（取数 `_agent/fetch_hyperscaler_capex.py`）。原三份 notes 笔记已于 2026-09-22 移入废纸篓，其口径已并入本节正文。
 
 ---
 
@@ -292,7 +292,7 @@ Herman Jin 自 2025 年以来的核心框架不是“宏观预测 → 买股票�
 >
 > 他本人的限定语：「我很難去推薦單票。」（[168X 访谈 2026-05-15](https://168x.club/writings/herman-jin-semiconductor-supply-chain "citation")）故下表一律标注**极性**，不按「荐股」处理。
 >
-> 社媒逐字引文全文见 [herman-jin-社媒推荐标的与言论-2026-09-17](/Users/d0m999/Desktop/vibe-trading/research/herman-jin-%E7%A4%BE%E5%AA%92%E6%8E%A8%E8%8D%90%E6%A0%87%E7%9A%84%E4%B8%8E%E8%A8%80%E8%AE%BA-2026-09-17.md "citation")。
+> 社媒逐字引文全文见 [herman-jin-社媒推荐标的与言论-2026-09-17](/Users/d0m999/Desktop/vibe-trading/research/_agent/herman-jin-%E7%A4%BE%E5%AA%92%E6%8E%A8%E8%8D%90%E6%A0%87%E7%9A%84%E4%B8%8E%E8%A8%80%E8%AE%BA-2026-09-17.md "citation")。
 
 | 产业链 | 转录语料点名 | 社媒补充：持仓／操作 | 极性 |
 |---|---|---|---|
@@ -341,6 +341,15 @@ Herman Jin 自 2025 年以来的核心框架不是“宏观预测 → 买股票�
 他同时警告：存储/光模块即使终局上涨，也可能中途出现 **30%–50% 回撤**；**缺货逻辑不等于任何价格都能买**。
 
 > [transcript 2025-12-30](/Users/d0m999/Desktop/vibe-trading/Herman%20Jin/market-overview/market-overview-2025-12-30/transcript.jsonl "citation") L1044-L1059
+
+### 现实进度对照（价格腿：CPU vs 内存）
+
+> 2026-09-26 增补。数字来自机构测算与公开报道（访问日 2026-09-26，非独立复算），全表与来源口径见 [INTC/CPU 报告 §1.1](./_agent/intc-cpu-analysis-2026-09-26/README.md)。
+
+- **同属“全方位缺货”，弹性差一个数量级**：服务器 CPU 官方 RCP 累计 **+10~25%**（Intel 2026-03、2026-07 两轮，AMD 2026-04 跟进）；对照常规 DRAM 合约价 2026Q1 **单季 +90~95%**、服务器 DRAM **约 +90%**、NAND **+55~60%**，DDR5 模组 2025 初→2026Q1 **+100~116%**。
+- **对 HJ-012 的数量级支持**：「CPU 缺货不会立刻复制存储股盈利」——涨价顺序上存储在前、CPU 在后且幅度小；Intel 自身称 2026Q2 服务器 ASP +48% **主要来自高端产品组合**，非缺货提价。
+- **成本侧反噬**：内存是服务器 BOM 成本项，其涨价同时推高 Intel 投入成本与下游 OEM/云厂商成本，呼应 HJ-017「把存储涨价放回每 token 成本约束」。
+- **口径**：合约价 QoQ、月度现货、累计涨幅不可加总；不同产品等级不可混用。
 
 ### 现实进度对照（电力/并网腿）
 
@@ -741,8 +750,8 @@ Herman Jin 自 2025 年以来的核心框架不是“宏观预测 → 买股票�
 
 ## 数据修订记录（2026-09-18）
 
-> 依据：[Herman-Jin 观点 rollup 数据复核 2026-09-18](/Users/d0m999/Desktop/vibe-trading/research/Herman-Jin%20%E8%A7%82%E7%82%B9%20rollup%20%E6%95%B0%E6%8D%AE%E5%A4%8D%E6%A0%B8%202026-09-18.md "citation")（13 处问题 · 22 条英文 reference）。
-> **MD5 轨迹**：修订前基线 `0961264e7ad74bdc9222e78753370dad`（54,756 B／723 行）→ 第一轮 `d8fe04c43db305abc4cdc04279809753`（66,164 B／774 行）→ **第二轮（当前值见 [数据复核报告 2026-09-18](/Users/d0m999/Desktop/vibe-trading/research/Herman-Jin%20%E8%A7%82%E7%82%B9%20rollup%20%E6%95%B0%E6%8D%AE%E5%A4%8D%E6%A0%B8%202026-09-18.md "citation") 第八节 8.0）**。
+> 依据：[Herman-Jin 观点 rollup 数据复核 2026-09-18](/Users/d0m999/Desktop/vibe-trading/research/_agent/Herman-Jin%20%E8%A7%82%E7%82%B9%20rollup%20%E6%95%B0%E6%8D%AE%E5%A4%8D%E6%A0%B8%202026-09-18.md "citation")（13 处问题 · 22 条英文 reference）。
+> **MD5 轨迹**：修订前基线 `0961264e7ad74bdc9222e78753370dad`（54,756 B／723 行）→ 第一轮 `d8fe04c43db305abc4cdc04279809753`（66,164 B／774 行）→ **第二轮（当前值见 [数据复核报告 2026-09-18](/Users/d0m999/Desktop/vibe-trading/research/_agent/Herman-Jin%20%E8%A7%82%E7%82%B9%20rollup%20%E6%95%B0%E6%8D%AE%E5%A4%8D%E6%A0%B8%202026-09-18.md "citation") 第八节 8.0）**。
 > 处理原则（第一轮 2026-09-18 上午）：**只改正 4 处事实错误；口径类问题一律"不动数字、就地加注"；券商独家数字统一加标签。**
 > 处理原则（第二轮 2026-09-18 下午）：**按已核对口径把"原文＋注"体例化改写为正文直接采用新口径**——措辞类就地改正、表 2 改用主口径、图 1／图 3 重绘、未核实百分比删除。两轮合计 25 项，逐条见下。
 
@@ -764,7 +773,7 @@ Herman Jin 自 2025 年以来的核心框架不是“宏观预测 → 买股票�
 | 14 | 元信息表 | — | 新增「数据复核」行与「外部数据口径」声明 | 问题 12 · 防复发 |
 | 15 | 观点 2/3/4/9 四处券商数据区块 | — | 统一加「券商测算，未经独立验证」标签 | 复核报告第四节 |
 | 16 | 上游社媒文档 `herman-jin-社媒推荐标的与言论-2026-09-17.md` 第 5 节同名表 | 电力链 GEV／光模块 ticker／服务器链"无点名" | 同步修订（**GEV 错误源头在此**） | 问题 3/10/11 |
-| 17 | 三份 notes 文件头（supply-capacity／demand-capex／supply-demand-gap） | 基线 MD5 `6d4a64c3…` | 更新为当前 MD5 | 问题 12 |
+| 17 | 三份 notes 文件头（supply-capacity／demand-capex／supply-demand-gap） | 基线 MD5 `6d4a64c3…` | 更新为当前 MD5（**三份 notes 已于 2026-09-22 移入废纸篓，口径并入正文**） | 问题 12 |
 
 > **注**：上表第 5–13 项的"加注"形态已于**第二轮**被体例化改写——注中结论已并入正文，原值统一记录于本表与复核报告。
 
@@ -783,6 +792,12 @@ Herman Jin 自 2025 年以来的核心框架不是“宏观预测 → 买股票�
 | — | 观点 9 CDS | 补英文来源逐项印证（Oracle 212–215bp／Meta ~95bp／NVDA ~82bp／AVGO +48bp） |
 | — | 观点 9 FCF | 谷歌补可复核口径（2026Q2 FCF −$58.6 亿，上市以来首负） |
 | — | 观点 4 现实进度 | 「美国政府 2025-08 入股」来源改为 **Intel 公告 2025-08-22**（一手） |
+
+### 第三轮（2026-09-26，观点 3 增补价格对照）
+
+| # | 位置 | 处理 |
+|---|---|---|
+| 26 | 观点 3 | 新增「现实进度对照（价格腿：CPU vs 内存）」：CPU 官方 RCP 累计 +10~25% vs DRAM/NAND 单季 +55~95% 的数量级对照，接口 HJ-012／HJ-017；数字与来源口径集中在 [INTC/CPU 报告 §1.1](./_agent/intc-cpu-analysis-2026-09-26/README.md) 的 `MEM-CPU-PRICE` 行 |
 
 **仍未处理（留待决定）**：① 表 1 的 CoWoS 2027E 区间（UBS 已于 SEMICON Taiwan 2026 上修至 260kwpm，本表仍用 7 月口径）是否更新；② 图 2（demand-capex）图件未重绘，其面板 ② 标注仍写「持续上台阶」，与正文新表述一致，无需改。
 

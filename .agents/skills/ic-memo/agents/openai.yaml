@@ -1,5 +1,0 @@
-interface:
-  display_name: "IC Memo"
-  short_description: "把尽调、财务和交易事实整理为结构化投资委员会 memo"
-policy:
-  allow_implicit_invocation: false

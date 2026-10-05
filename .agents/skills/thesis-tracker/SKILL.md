@@ -10,6 +10,7 @@ description: "维护持仓或观察名单的投资 thesis、关键证据、催�
 ## Public-source gate
 
 Read [`PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md) before adding a data point. Cite an opened filing, issuer/regulator/government page, validated public market page, or mark the item `USER_PROVIDED`. Do not treat an inaccessible feed, private note, analyst consensus, or uncited market commentary as evidence; record `SOURCE_UNAVAILABLE` when a required fact cannot be verified.
+Resolve every concrete source from [`../../data-sources.jsonl`](../../data-sources.jsonl) (single source of truth for skill data-source routing): filter by `data_types` × `markets`; honor `policy_status`/`auth`/`cost`; fail closed when nothing matches.
 
 ## Workflow
 
