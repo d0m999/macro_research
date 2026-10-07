@@ -1,0 +1,34 @@
+name: Offline repository checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /.agents/
+            /requirements-test.txt
+            /tools/validation/
+            /Herman Jin/agent-index.json
+            /Serenity/agent-index.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install test-only dependency
+        run: python -m pip install -r requirements-test.txt
+      - name: Check corpus index paths from the local Git tree
+        run: python .agents/scripts/check_corpus_index_paths.py
+      - name: Run financial artifact and index tests
+        run: python -m unittest discover -s .agents/tests -p 'test_*.py' -v
+      - name: Run offline OI validation tests
+        run: python -m unittest discover -s tools/validation/tests -p 'test_*.py' -v

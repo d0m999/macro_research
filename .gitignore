@@ -39,3 +39,6 @@ cookies.json
 # Independent local repository
 dropbox-2026-06-15/
 罗老师-2026-06-15/
+
+# Per-machine Claude Code approvals and settings
+**/.claude/settings.local.json

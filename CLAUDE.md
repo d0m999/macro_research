@@ -23,10 +23,10 @@ Python/FreqTrade 程序化交易引擎、回测运行环境、交易数据库、
 
 ### 支线：基本面研究
 
-- `research/_agent/intc-cpu-analysis-2026-09-26/`：**在跑的个股深研**，主文档 `README.md`（「INTC 与 CPU 行业：把需求、交付和股东收益接起来」）。它把主线蒸馏出的 Herman Jin / Serenity 方法卡套用到 INTC 上，是两条线的接口。配套 `chain-2-price-margin.md`（链条二 缺货与价格·利润）、`intel-primary.md`（一手财报/SEC 证据）。**进度：四条检查链条中仅链条二成稿，链条三（架构与份额）、链条四（代工/摊薄/估值）待做。** 另有 9/27 遗留项：美光 FY26Q4 业绩（2026-09-30 公布）是链条二的关键验证点，未回填。
+- `research/_agent/intc-cpu-analysis-2026-09-26/`：**在跑的个股深研**，主文档 `README.md`（「INTC 与 CPU 行业：把需求、交付和股东收益接起来」）。它把主线蒸馏出的 Herman Jin / Serenity 方法卡套用到 INTC 上，是两条线的接口。链条二、三、四均已有对应材料：`chain-2-price-margin.md`、`chain-3-architecture-share.md`、`chain-4-foundry-dilution-valuation.md`；另有 `chain-2-micron-fy26q4-verify-2026-10-04.md` 与 `fact-check-2026-10-05.md`。不要再把链条三/四标成待做或把 Micron FY26Q4 核查标成未回填；各材料中的未决问题以对应文件为准。
   - ⚠ 易混淆：`research/Herman-Jin 观点 rollup.md` 是人物观点库（按观点编号组织），**不是** CPU 行业研究的主文档。
 - `GLW/`：Corning（CIK 0000024741）的 11 类公开数据源通道验证，含 `PASS` / `PARTIAL` / `SOURCE_UNAVAILABLE` 分级。是一次性验证产物，可作「公开来源优先、付费能力可选」工作流的样板。
-- `.agents/skills/`：16 个金融分析 skill（3-statement-model / comps-analysis / earnings-analysis / initiating-coverage / thesis-tracker 等），源自 Anthropic financial-services 导入。
+- `.agents/skills/`：15 个金融分析 skill（3-statement-model / comps-analysis / earnings-analysis / initiating-coverage / thesis-tracker 等），源自 Anthropic financial-services 导入。
 - `fundamental-research/`：Anthropic / Claude 官方金融研究工作流的调研记录。
 
 ### 既有研究线：Pine 与 OI
@@ -40,6 +40,8 @@ Python/FreqTrade 程序化交易引擎、回测运行环境、交易数据库、
 ## 研究约束
 
 ### 语料与观点蒸馏（主线，必读）
+
+- **共享边界：** GitHub 仓库当前公开可见；公开可见不代表获得再发布第三方原始帖子或转录的授权。原始语料只用于私人分析。不要把原始内容、凭据或本机配置放进 PR 描述、CI 日志或 artifacts。
 
 - **交付物是「逻辑链 + 观点清单 + 验证状态 + 极性」，不是 persona。** 用户明确不要角色扮演、表达 DNA、盲测这类产物。
 - **检索必须覆盖繁简两种字形。** `Herman Jin/` 60 个包里 30 个以简体为主、30 个以繁体为主，只用一种字形做关键词检索会漏掉约一半语料。一律用 `繁體|简体` 双形正则（如 `電力|电力`、`缺貨|缺货`）。
@@ -61,7 +63,15 @@ Python/FreqTrade 程序化交易引擎、回测运行环境、交易数据库、
 - PineScript：优先做静态扫描、版本/语法检查和 TradingView 内的人工编译与图表验收。
 - 研究 artifact：核对文件版本、Git 状态和数据来源，不覆盖用户的未跟踪文件。
 - 图表类产物：脚本末尾打印关键数值自检，配 `*-notes-YYYY-MM-DD.md` 记录数据表、口径限制与复现命令。
-- 自动化校验：`.agents/tests/` 下有一组 unittest（金融 artifact 结构校验，4 个用例）——`python3 -m unittest discover -s .agents/tests -p 'test_*.py'`。**本机没有 pytest**，不要写 pytest 命令。
+- 离线自动化校验分两组：`.agents/tests/` 包含 4 个金融 artifact 测试和 7 个索引路径测试；`tools/validation/tests/` 包含 17 个 OI 校验测试。OI 用例通过模拟 HTTP 响应运行，不连接真实交易所。
+  ```bash
+  python3 -m pip install -r requirements-test.txt  # openpyxl 仅用于工作簿测试
+  python3 .agents/scripts/check_corpus_index_paths.py
+  python3 -m unittest discover -s .agents/tests -p 'test_*.py' -v
+  python3 -m unittest discover -s tools/validation/tests -p 'test_*.py' -v
+  ```
+  测试只需 Python 3.10+ 标准库及 `requirements-test.txt` 中的可选 `openpyxl`；不使用 pytest。路径检查只读两个索引 JSON 和本地 Git 树名，不读取语料文件。
+- 后续事项（本次不修）：OI `collect` 命令在已输出 `ready_for_compare` 后仍返回 `EXIT_INCONCLUSIVE`；应另行确定 CLI 退出码契约并补命令级测试。不要把采集器作为离线验证命令运行。
 - 没有程序化交易运行命令，也不要重建一套。
 
 ## Git 约束

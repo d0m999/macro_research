@@ -55,7 +55,7 @@
       "package_type": "x-archive",
       "manifest": "x-archive/x-2026-09-19/manifest.json",
       "readable": null,
-      "source": "_source/x-2026-09-19/"
+      "source": "x-archive/x-2026-09-19/raw/"
     },
     {
       "id": "market-overview-2026-09-15",
