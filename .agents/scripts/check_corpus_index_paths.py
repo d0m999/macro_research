@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 """Check repository-local paths referenced by corpus index JSON files.
 
-This reads index metadata and Git tree names only; it never opens corpus files
-or accesses the network.
+This reads working-tree index metadata and Git tree names only; it never opens
+corpus files or accesses the network. --ref selects the tree used for target
+existence checks, not a historical version of the index JSON.
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from dataclasses import dataclass
@@ -84,15 +86,16 @@ def reference_exists(reference: IndexReference, tracked_paths: set[str]) -> bool
 
 def git_tree_paths(root: Path, ref: str) -> set[str]:
     completed = subprocess.run(
-        ["git", "-C", str(root), "ls-tree", "-r", "--name-only", ref],
+        ["git", "-C", str(root), "ls-tree", "-r", "--name-only", "-z", ref],
         check=False,
         capture_output=True,
-        text=True,
     )
     if completed.returncode:
-        detail = completed.stderr.strip() or f"git ls-tree exited {completed.returncode}"
+        detail = os.fsdecode(completed.stderr).strip() or f"git ls-tree exited {completed.returncode}"
         raise RuntimeError(detail)
-    return {line for line in completed.stdout.splitlines() if line}
+    # NUL-delimited bytes avoid Git's core.quotePath escaping and preserve
+    # filenames containing tabs/newlines without text-mode newline conversion.
+    return {os.fsdecode(path) for path in completed.stdout.split(b"\0") if path}
 
 
 def check_indexes(root: Path, ref: str = "HEAD") -> tuple[int, list[str]]:
@@ -131,7 +134,11 @@ def check_indexes(root: Path, ref: str = "HEAD") -> tuple[int, list[str]]:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[2])
-    parser.add_argument("--ref", default="HEAD", help="local Git ref to inspect (default: HEAD)")
+    parser.add_argument(
+        "--ref",
+        default="HEAD",
+        help="Git ref for tracked targets; index JSON stays in the working tree (default: HEAD)",
+    )
     args = parser.parse_args(argv)
     root = args.root.resolve()
     try:

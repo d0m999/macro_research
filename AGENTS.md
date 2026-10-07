@@ -21,7 +21,7 @@ rg -n '^//@version=|request\.security|lookahead|barstate\.isconfirmed' PineScrip
 git diff --check
 ```
 
-There are two offline unittest groups: `.agents/tests/` has 4 financial-artifact tests and 5 corpus-index checker tests; `tools/validation/tests/` has 17 OI validator tests. The OI tests use mocked HTTP responses and temporary files; they do not contact an exchange. `pytest` is not used.
+There are two offline unittest groups: `.agents/tests/` has 4 financial-artifact tests and 7 corpus-index checker tests; `tools/validation/tests/` has 17 OI validator tests. The OI tests use mocked HTTP responses and temporary files; they do not contact an exchange. `pytest` is not used.
 
 ```bash
 python3 -m pip install -r requirements-test.txt  # openpyxl for the workbook test

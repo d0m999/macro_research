@@ -63,7 +63,7 @@ Python/FreqTrade 程序化交易引擎、回测运行环境、交易数据库、
 - PineScript：优先做静态扫描、版本/语法检查和 TradingView 内的人工编译与图表验收。
 - 研究 artifact：核对文件版本、Git 状态和数据来源，不覆盖用户的未跟踪文件。
 - 图表类产物：脚本末尾打印关键数值自检，配 `*-notes-YYYY-MM-DD.md` 记录数据表、口径限制与复现命令。
-- 离线自动化校验分两组：`.agents/tests/` 包含 4 个金融 artifact 测试和 5 个索引路径测试；`tools/validation/tests/` 包含 17 个 OI 校验测试。OI 用例通过模拟 HTTP 响应运行，不连接真实交易所。
+- 离线自动化校验分两组：`.agents/tests/` 包含 4 个金融 artifact 测试和 7 个索引路径测试；`tools/validation/tests/` 包含 17 个 OI 校验测试。OI 用例通过模拟 HTTP 响应运行，不连接真实交易所。
   ```bash
   python3 -m pip install -r requirements-test.txt  # openpyxl 仅用于工作簿测试
   python3 .agents/scripts/check_corpus_index_paths.py
