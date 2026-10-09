@@ -3,7 +3,6 @@
 Thumbs.db
 .vscode/
 .vscode/**
-.gstack/
 
 # Local Python tooling used only by optional research skills
 __pycache__/
