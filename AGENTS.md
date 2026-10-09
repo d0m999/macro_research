@@ -24,7 +24,7 @@ git diff --check
 The financial-artifact validator in `.agents/` is the only automated test in the repo:
 
 ```bash
-python3 -m unittest discover -s .agents/tests -p 'test_*.py'   # 4 tests, unittest; pytest is not installed
+python3 -m unittest discover -s .agents/tests -p 'test_*.py'   # 5 tests, unittest; pytest is not installed
 python3 .agents/scripts/validate_financial_artifact.py <artifact.xlsx|.pptx|.docx>
 ```
 

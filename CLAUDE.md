@@ -61,7 +61,7 @@ Python/FreqTrade 程序化交易引擎、回测运行环境、交易数据库、
 - PineScript：优先做静态扫描、版本/语法检查和 TradingView 内的人工编译与图表验收。
 - 研究 artifact：核对文件版本、Git 状态和数据来源，不覆盖用户的未跟踪文件。
 - 图表类产物：脚本末尾打印关键数值自检，配 `*-notes-YYYY-MM-DD.md` 记录数据表、口径限制与复现命令。
-- 自动化校验：`.agents/tests/` 下有一组 unittest（金融 artifact 结构校验，4 个用例）——`python3 -m unittest discover -s .agents/tests -p 'test_*.py'`。**本机没有 pytest**，不要写 pytest 命令。
+- 自动化校验：`.agents/tests/` 下有一组 unittest（金融 artifact 结构校验，5 个用例）——`python3 -m unittest discover -s .agents/tests -p 'test_*.py'`。**本机没有 pytest**，不要写 pytest 命令。
 - 没有程序化交易运行命令，也不要重建一套。
 
 ## Git 约束

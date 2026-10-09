@@ -56,26 +56,42 @@ def resolve_package_target(base: str, target: str) -> str:
 
 
 def formula_has_unquoted_excel_error(formula_text: str) -> bool:
-    """Return whether a formula contains an Excel error outside string literals."""
+    """Detect error tokens outside string literals and quoted references."""
     unquoted: list[str] = []
-    in_string = False
-    string_start: int | None = None
+    quote_character: str | None = None
+    quote_start: int | None = None
+    bracket_depth = 0
     index = 0
     while index < len(formula_text):
         character = formula_text[index]
-        if character != '"':
-            if not in_string:
-                unquoted.append(character)
+        if quote_character is not None:
+            if character == quote_character:
+                if index + 1 < len(formula_text) and formula_text[index + 1] == quote_character:
+                    index += 2
+                    continue
+                quote_character = None
+                quote_start = None
+                unquoted.append(" ")
             index += 1
             continue
-        if in_string and index + 1 < len(formula_text) and formula_text[index + 1] == '"':
+        if bracket_depth == 0 and character in {'"', "'"}:
+            quote_character = character
+            quote_start = index
+            index += 1
+            continue
+        # An escaped column-name character cannot start a formula error token.
+        if bracket_depth and character == "'" and index + 1 < len(formula_text):
+            unquoted.append(" ")
             index += 2
             continue
-        in_string = not in_string
-        string_start = index if in_string else None
+        if character == "[":
+            bracket_depth += 1
+        elif character == "]" and bracket_depth:
+            bracket_depth -= 1
+        unquoted.append(character)
         index += 1
-    if string_start is not None:
-        unquoted.extend(formula_text[string_start:])
+    if quote_start is not None:
+        unquoted.extend(formula_text[quote_start:])
     searchable_text = "".join(unquoted)
     return any(token in searchable_text for token in EXCEL_ERROR_TOKENS)
 
