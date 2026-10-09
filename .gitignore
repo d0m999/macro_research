@@ -36,6 +36,9 @@ data/reports/
 cookies.json
 .account_pool/
 
+# Generated hypothesis registry (state file, not deliverable)
+research/hypotheses/registry.jsonl
+
 # Independent local repository
 dropbox-2026-06-15/
 罗老师-2026-06-15/
