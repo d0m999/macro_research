@@ -5,7 +5,7 @@
 This repository holds **two active work streams plus one dormant research line**. Read `CLAUDE.md` first — it defines which stream a task belongs to and carries the hard constraints. Do not assume a task is Pine-related just because `PineScript/` exists.
 
 1. **Active, primary — KOL corpus archiving and view distillation.** `Herman Jin/` (1.6 GB, @ShanghaoJin) and `Serenity/` (@aleabitoreddit — a *different* person, do not conflate) hold scraped X posts/replies and YouTube transcripts. Deliverable is reasoning chains and a verified view list, **not** persona replication. Output lives in `research/Herman-Jin 观点 rollup.md` (untracked in git — see `CLAUDE.md` for the edit protocol) and `research/_agent/`.
-2. **Active, secondary — US equity / AI supply-chain fundamental research.** Hyperscaler CAPEX, CoWoS/HBM supply-demand gaps, single-name quick takes in `research/_agent/`; public-source channel validation in `GLW/`; 16 financial analysis skills under `.agents/skills/`.
+2. **Active, secondary — US equity / AI supply-chain fundamental research.** Hyperscaler CAPEX, CoWoS/HBM supply-demand gaps, single-name quick takes in `research/_agent/`; public-source channel validation in `GLW/`; 9 financial analysis skills under `.agents/skills/` (7 auto-discoverable, 2 explicit-invocation only: `audit-xls`, `datapack-builder`), consolidated from 15 on 2026-10-09 — see `fundamental-research/claude-financial-services-public/SOURCE-AUDIT.md` for the merge map.
 3. **Dormant — TradingView/Pine Script research.** `PineScript/` contains standalone indicators grouped into `_L∞p/` core studies, `Open Interest/`, `Oscillator/`, `Price_Zones/`, and `Vol/`. `strategy-notes/` holds strategy assumptions and checklists; `strategy-notes/design/` contains self-contained HTML visualization mockups. No new commits since 2026-09.
 
 `docs/` contains methodology and process notes.
@@ -21,14 +21,15 @@ rg -n '^//@version=|request\.security|lookahead|barstate\.isconfirmed' PineScrip
 git diff --check
 ```
 
-The financial-artifact validator in `.agents/` is the only automated test in the repo:
+Two validators in `.agents/` are covered by the unittest suite:
 
 ```bash
-python3 -m unittest discover -s .agents/tests -p 'test_*.py'   # 5 tests, unittest; pytest is not installed
+python3 -m unittest discover -s .agents/tests -p 'test_*.py'   # 10 tests, unittest; pytest is not installed
 python3 .agents/scripts/validate_financial_artifact.py <artifact.xlsx|.pptx|.docx>
+python3 .agents/scripts/validate_skills.py   # skill frontmatter, links, 7+2 invocation policy, single-source routing sentence
 ```
 
-Run it after touching `.agents/skills/` or any generated Office artifact.
+Run the artifact validator after generating Office files and the skill validator after touching `.agents/skills/` (see the 2026-10-11 convergence pass in `fundamental-research/claude-financial-services-public/SOURCE-AUDIT.md`).
 
 For Pine changes, paste the modified file into the TradingView Pine Editor, compile it, and inspect representative symbols and timeframes. Check data availability, closed-bar behavior, multi-timeframe requests, and alerts when relevant.
 
@@ -54,6 +55,6 @@ Use concise imperative subjects with the repository’s established prefixes: `f
 
 Never commit `.env`, credentials, logs, or generated data.
 
-**Current repo state (2026-10-05).** 239 changes are uncommitted (`38 ?? + 93 D + 108 M`); the 93 deletions are all under `.agents/skills/`, which has been trimmed from a larger Anthropic import down to 16 skills. `.git` is 1.5 GB because `Herman Jin/` was committed wholesale in the past (3369 files, including 1717 PNGs and 57 m4a files) — see `CLAUDE.md` before proposing any history rewrite. A root `.env` exists with live exchange/OKX credentials; it is git-ignored but should be rotated or removed only on explicit instruction. Do not reintroduce the removed Python/FreqTrade execution layer, Docker deployment, or trading database without explicit authorization. Keep TradingView price data, exchange OI feeds, and native exchange OI claims clearly distinguished in code comments and research notes.
+**Current repo state (2026-10-09).** `main` tracks `origin/main` at `a89c7b6`. The 2026-10-05 inventory of 239 uncommitted changes (`38 ?? + 93 D + 108 M`), the deletions all under `.agents/skills/`, has since been committed — earlier notes said "16 skills remain" because they counted the since-removed `skill-creator`. On 2026-10-09 those 15 skills were consolidated to 9 by merging same-job skills (merge map in `fundamental-research/claude-financial-services-public/SOURCE-AUDIT.md`); that change is **staged but not committed**, so check `git status` before editing skills. `.git` is 1.5 GB because `Herman Jin/` was committed wholesale in the past (3395 files, including 1708 PNGs, 896 txt and 58 m4a files) — see `CLAUDE.md` before proposing any history rewrite. A root `.env` exists with live exchange/OKX credentials; it is git-ignored but should be rotated or removed only on explicit instruction. Do not reintroduce the removed Python/FreqTrade execution layer, Docker deployment, or trading database without explicit authorization. Keep TradingView price data, exchange OI feeds, and native exchange OI claims clearly distinguished in code comments and research notes.
 
 **Corpus scope.** `research/_agent/` contains corpus updates, single-name deep dives, chart scripts with PNG/CSV, and one-off demos (`jev-ling-repro/`). Date-based corpus update packages are grouped under `research/_agent/corpus-updates/YYYY-MM-DD/`; chart assets and other files with established document or reproduction links retain their current paths. See the `_agent` README for navigation. `Serenity/` is **not** structured like `Herman Jin/`: it holds only `agent-index.json` plus six files under `data/clean/`, with no `x-archive/` or `_source/` yet. `Herman Jin/` is 1.6 GB — never `git add` it wholesale; stage named packages. Scraped social data is for private analysis only: do not republish raw transcripts or posts, and do not attribute derived views to a person beyond what the corpus actually supports. Scraping credentials and session state stay out of the repo. Distilled output is the user's research, not a publication.

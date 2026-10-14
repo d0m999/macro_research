@@ -5,158 +5,168 @@ description: "审计用户提供的 spreadsheet、sheet 或 range，检查公式
 
 # Audit Spreadsheet
 
-审计或交付 `.xlsx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)；结构验证不等于公式已求值。
+审计 workbook 的公式与数据，发现错误与失误。深度由范围决定——从选中区域的快速公式检查到完整财务模型完整性审计。
 
-Audit formulas and data for accuracy and mistakes. Scope determines depth — from quick formula checks on a selection up to full financial-model integrity audits.
+## 必读契约
 
-## Input boundary
+- 审计或交付 `.xlsx` 前读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)；结构验证不等于公式已求值，验证器状态与限制按其口径披露。
 
-Audit only the workbook or range supplied by the user. Preserve existing source comments and labels; do not retrieve missing financial inputs from external databases or private systems. If a claim cannot be checked from the supplied workbook, report it as not verifiable.
+## 输入边界
 
-## Step 1: Determine scope
+只审计用户提供的 workbook 或 range。保留现有批注与标签；不从外部数据库或私有系统补齐缺失财务输入。无法从该 workbook 核实的主张，报告为不可核实。
 
-If the user already gave a scope, use it. Otherwise **ask them**:
+## Step 1：确定范围
 
-> What scope do you want me to audit?
-> - **selection** — just the currently selected range
-> - **sheet** — the current active sheet only
-> - **model** — the whole workbook, including financial-model integrity checks (BS balance, cash tie-out, roll-forwards, logic sanity)
+用户已给出范围时直接使用，否则**询问用户**：
 
-The **model** scope is the deepest — use it for DCF, LBO, 3-statement, merger, comps, or any integrated financial model before sending to a client or IC.
+> 希望审计什么范围？
+> - **selection** — 只检查当前选中区域
+> - **sheet** — 只检查当前活动 sheet
+> - **model** — 整个 workbook，含财务模型完整性检查（BS 平衡、现金勾稽、roll-forward、逻辑合理性）
 
----
-
-## Step 2: Formula-level checks (ALL scopes)
-
-Run these regardless of scope:
-
-| Check | What to look for |
-|---|---|
-| Formula errors | `#REF!`, `#VALUE!`, `#N/A`, `#DIV/0!`, `#NAME?` |
-| Hardcodes inside formulas | `=A1*1.05` — the `1.05` should be a cell reference |
-| Inconsistent formulas | A formula that breaks the pattern of its neighbors in a row/column |
-| Off-by-one ranges | `SUM`/`AVERAGE` that misses the first or last row |
-| Pasted-over formulas | Cell that looks like a formula but is actually a hardcoded value |
-| Circular references | Intentional or accidental |
-| Broken cross-sheet links | References to cells that moved or were deleted |
-| Unit/scale mismatches | Thousands mixed with millions, % stored as whole numbers |
-| Hidden rows/tabs | Could contain overrides or stale calculations |
+**model** 范围最深——用于 DCF、LBO、三表、并购、comps 或任何综合财务模型在发给客户或 IC 之前。
 
 ---
 
-## Step 3: Model-integrity checks (MODEL scope only)
+## Step 2：公式级检查（所有范围）
 
-If scope is **model**, identify the model type (DCF / LBO / 3-statement / merger / comps / custom) and run the appropriate integrity checks below.
+无论范围如何，以下检查都执行：
 
-### 3a. Structural review
-
-| Check | What to look for |
+| 检查 | 关注点 |
 |---|---|
-| Input/formula separation | Are inputs clearly separated from calculations? |
-| Color convention | Blue=input, black=formula, green=link — or whatever the model uses, applied consistently? |
-| Tab flow | Logical order (Assumptions → IS → BS → CF → Valuation)? |
-| Date headers | Consistent across all tabs? |
-| Units | Consistent (thousands vs millions vs actuals)? |
-
-### 3b. Balance Sheet
-
-| Check | Test |
-|---|---|
-| BS balances | Total Assets = Total Liabilities + Equity (every period) |
-| RE rollforward | Prior RE + Net Income − Dividends = Current RE |
-| Goodwill/intangibles | Flow from acquisition assumptions (if M&A) |
-
-If BS doesn't balance, **quantify the gap per period and trace where it breaks** — nothing else matters until this is fixed.
-
-### 3c. Cash Flow Statement
-
-| Check | Test |
-|---|---|
-| Cash tie-out | CF Ending Cash = BS Cash (every period) |
-| CF sums | CFO + CFI + CFF = Δ Cash |
-| D&A match | D&A on CF = D&A on IS |
-| CapEx match | CapEx on CF matches PP&E rollforward on BS |
-| WC changes | Signs match BS movements (ΔAR, ΔAP, ΔInventory) |
-
-### 3d. Income Statement
-
-| Check | Test |
-|---|---|
-| Revenue build | Ties to segment/product detail |
-| Tax | Tax expense = Pre-tax income × tax rate (allow for deferred tax adj) |
-| Share count | Ties to dilution schedule (options, converts, buybacks) |
-
-### 3e. Circular references
-
-- Interest → debt balance → cash → interest is a common intentional circ in LBO/3-stmt models
-- If intentional: verify iteration toggle exists and works
-- If unintentional: trace the loop and flag how to break it
-
-### 3f. Logic & reasonableness
-
-| Check | Flag if |
-|---|---|
-| Growth rates | Unexplained step-change versus company history, sourced peers, user rules, or a labeled `MODEL_DERIVED` scenario |
-| Margins | Outside industry norms |
-| Terminal value reliance | Compare against the model's sourced forecast horizon and user-supplied review bounds; do not apply a fixed pass/fail percentage |
-| Hockey-stick | Projections ramp unrealistically in out-years |
-| Compounding | EBITDA compounds to absurd $ by Year 10 |
-| Edge cases | Model breaks at 0% or negative growth, negative EBITDA, leverage goes negative |
-
-### 3g. Model-type-specific bugs
-
-**DCF:**
-- Discount rate applied to wrong period (mid-year vs end-of-year)
-- Terminal value not discounted back
-- WACC uses book values instead of market values
-- FCF includes interest expense (should be unlevered)
-- Tax shield double-counted
-
-**LBO:**
-- Debt paydown doesn't match cash sweep mechanics
-- PIK interest not accruing to principal
-- Management rollover not reflected in returns
-- Exit multiple applied to wrong EBITDA (LTM vs NTM)
-- Fees/expenses not deducted from Day 1 equity
-
-**Merger:**
-- Accretion/dilution uses wrong share count (pre- vs post-deal)
-- Synergies not phased in
-- Purchase price allocation doesn't balance
-- Foregone interest on cash not included
-- Transaction fees not in sources & uses
-
-**3-statement:**
-- Working capital changes have wrong sign
-- Depreciation doesn't match PP&E schedule
-- Debt maturity schedule doesn't match principal payments
-- Dividends exceed net income without explanation
+| 公式错误 | `#REF!`、`#VALUE!`、`#N/A`、`#DIV/0!`、`#NAME?` |
+| 公式内硬编码 | `=A1*1.05` — `1.05` 应改为单元格引用 |
+| 公式不一致 | 破坏行/列邻项模式的公式 |
+| 范围差一位 | `SUM`/`AVERAGE` 漏掉首行或末行 |
+| 公式被粘贴覆盖 | 看起来是公式、实际是硬编码数值的单元格 |
+| 循环引用 | 有意或无意 |
+| 跨表链接断裂 | 引用了已移动或删除的单元格 |
+| 单位/量级混用 | 千与百万混用、百分比存成整数 |
+| 隐藏行/标签页 | 可能藏有覆盖值或过期计算 |
 
 ---
 
-## Step 4: Report
+## Step 3：模型完整性检查（仅 model 范围）
 
-Output a findings table:
+若范围为 **model**，先识别模型类型（DCF / LBO / 三表 / 并购 / comps / 自定义），执行下面对应的完整性检查。本节的勾稽检查表同时是 [`../financial-model/SKILL.md`](../financial-model/SKILL.md) 交付前校验的正本。
 
-| # | Sheet | Cell/Range | Severity | Category | Issue | Suggested Fix |
+### 3a. 结构审阅
+
+| 检查 | 关注点 |
+|---|---|
+| 输入/公式分离 | 输入与计算是否清晰分开？ |
+| 颜色约定 | 蓝=输入、黑=公式、绿=链接——或模型自用的约定，是否一致执行？ |
+| 标签页顺序 | 逻辑顺序（假设 → 利润表 → 资产负债表 → 现金流 → 估值）？ |
+| 日期表头 | 所有标签页一致？ |
+| 单位 | 一致（千 / 百万 / 原值）？ |
+
+### 3b. 资产负债表
+
+| 检查 | 测试 |
+|---|---|
+| BS 平衡 | 总资产 = 总负债 + 权益（每期） |
+| RE 滚动 | 上期 RE + 净利润 − 分红 = 本期 RE |
+| 商誉/无形资产 | 随收购假设流动（如有 M&A） |
+
+若 BS 不平衡，**量化每期缺口并追踪断裂点**——在此之前其他问题都不重要。
+
+### 3c. 现金流量表
+
+| 检查 | 测试 |
+|---|---|
+| 现金勾稽 | CF 期末现金 = BS 现金（每期） |
+| CF 合计 | CFO + CFI + CFF = Δ 现金 |
+| D&A 一致 | CF 上 D&A = 利润表上 D&A |
+| CapEx 一致 | CF 上 CapEx 与 BS 上 PP&E roll-forward 匹配 |
+| 营运资本变动 | 符号与 BS 变动方向一致（ΔAR、ΔAP、Δ存货） |
+
+### 3d. 利润表
+
+| 检查 | 测试 |
+|---|---|
+| 收入构建 | 与分部/产品明细一致 |
+| 税项 | 税费 = 税前利润 × 税率（允许递延税项调整） |
+| 股本数 | 与稀释计划一致（期权、可转债、回购） |
+
+### 3e. 循环引用
+
+- 利息 → 债务余额 → 现金 → 利息是 LBO/三表模型中常见的有意循环
+- 有意的：确认迭代开关存在且可用
+- 无意的：追踪循环路径并标记如何打破
+
+### 3f. 逻辑与合理性
+
+| 检查 | 什么情况下标记 |
+|---|---|
+| 增长率 | 相对公司历史、有来源同业、用户规则或明确标为 `MODEL_DERIVED` 的情景出现无法解释的阶段跳变 |
+| 利润率 | 超出行业常态 |
+| 终值依赖 | 与模型的有来源预测期及用户提供的复核边界比较；不套用固定通过/否决百分比 |
+| 曲棍球棒 | 预测期外段不切实际地陡升 |
+| 复利失控 | EBITDA 复利到第 10 年得出荒谬数值 |
+| 边界情形 | 0% 或负增长、负 EBITDA、杠杆转负时模型断裂 |
+
+### 3g. 按模型类型的常见 bug
+
+**DCF：**
+- 折现期错误（年中 vs 年末）
+- 终值未折回
+- WACC 用账面价值而非市场价值
+- FCF 包含利息费用（应为无杠杆）
+- 税盾重复计算
+
+**LBO：**
+- 债务偿还与现金清扫机制不一致
+- PIK 利息未计入本金
+- 管理层滚存未反映在回报中
+- 退出倍数乘在错误的 EBITDA 上（LTM vs NTM）
+- 费用/支出未从 Day 1 股权中扣除
+
+**并购：**
+- 增厚/摊薄用错股本数（交易前 vs 交易后）
+- 协同效应未分阶段
+- 购买价分配不平衡
+- 现金的机会成本利息未计入
+- 交易费用未列入资金来源与用途
+
+**三表：**
+- 营运资本变动符号错误
+- 折旧与 PP&E 计划不匹配
+- 债务到期计划与本金偿还不匹配
+- 分红超过净利润且无说明
+
+---
+
+## Step 4：报告
+
+输出发现表：
+
+| # | Sheet | 单元格/区域 | 严重度 | 类别 | 问题 | 建议修复 |
 |---|---|---|---|---|---|---|
 
-**Severity:**
-- **Critical** — wrong output (BS doesn't balance, formula broken, cash doesn't tie)
-- **Warning** — risky (hardcodes, inconsistent formulas, edge-case failures)
-- **Info** — style/best-practice (color coding, layout, naming)
+**严重度分级：**
+- **Critical** — 输出错误（BS 不平衡、公式断裂、现金不勾稽）
+- **Warning** — 有风险（硬编码、公式不一致、边界情形失败）
+- **Info** — 风格/最佳实践（颜色、版式、命名）
 
-For **model** scope, prepend a summary line:
+**model** 范围在发现表前加一行摘要：
 
-> Model type: [DCF/LBO/3-stmt/...] — Overall: [Clean / Minor Issues / Major Issues] — [N] critical, [N] warnings, [N] info
+> 模型类型：[DCF/LBO/三表/…] — 总体：[Clean / Minor Issues / Major Issues] — [N] critical、[N] warnings、[N] info
 
-**Don't change anything without asking** — report first, fix on request.
+**未经询问不做任何改动**——先报告，按要求再修复。
 
 ---
 
-## Notes
+## 注意事项
 
-- **BS balance first** — if it doesn't balance, everything downstream is suspect
-- **Hardcoded overrides are the #1 source of silent bugs** — search aggressively
-- **Sign convention errors** (positive vs negative for cash outflows) are extremely common
-- If the model uses VBA macros, note any macro-driven calculations that can't be audited from formulas alone
+- **BS 平衡优先**——不平衡则下游一切存疑
+- **硬编码覆盖是静默 bug 的头号来源**——积极搜索
+- **符号约定错误**（现金流出的正负号）极其常见
+- 若模型使用 VBA 宏，注明哪些计算无法仅从公式审计
+
+## 完成条件
+
+- 只审计用户提供的 workbook 或 range；范围（selection / sheet / model）与用户要求一致，未越界到外部数据补齐；无法从该 workbook 核实的项明确标为不可核实。
+- 发现按 `# | Sheet | Cell/Range | Severity | Category | Issue | Suggested Fix` 输出，severity 分级有依据；model 范围前置一行模型类型与总体结论。
+- 每个 Critical 项定位到具体断开点（哪一项勾稽在哪一期断开、哪个公式破坏了行列模式），不只报症状。
+- 报告先行、不经要求不改动；按请求修复后复跑同类检查，确认原问题消除且未引入新错误。
+- 结构性问题可由 `.agents/scripts/validate_financial_artifact.py` 佐证；该验证器不计算公式，公式求值与渲染限制按契约披露。

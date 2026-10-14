@@ -10,3 +10,5 @@
 6. 完成资产负债、现金、retained earnings、debt、shares 和 scenario checks。
 
 完成时模型中的每个 hardcode 有状态，每个派生值可追踪；金融经验参数不得作为事实默认值。
+
+建模的公式、schedule、SEC 取数和格式判据以 [`../../financial-model/SKILL.md`](../../financial-model/SKILL.md) 及其 references 为准；本文件只规定 initiating coverage 的范围与顺序。

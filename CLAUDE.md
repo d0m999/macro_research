@@ -26,7 +26,7 @@ Python/FreqTrade 程序化交易引擎、回测运行环境、交易数据库、
 - `research/_agent/intc-cpu-analysis-2026-09-26/`：**在跑的个股深研**，主文档 `README.md`（「INTC 与 CPU 行业：把需求、交付和股东收益接起来」）。它把主线蒸馏出的 Herman Jin / Serenity 方法卡套用到 INTC 上，是两条线的接口。配套 `chain-2-price-margin.md`（链条二 缺货与价格·利润）、`intel-primary.md`（一手财报/SEC 证据）。**进度：四条检查链条中仅链条二成稿，链条三（架构与份额）、链条四（代工/摊薄/估值）待做。** 另有 9/27 遗留项：美光 FY26Q4 业绩（2026-09-30 公布）是链条二的关键验证点，未回填。
   - ⚠ 易混淆：`research/Herman-Jin 观点 rollup.md` 是人物观点库（按观点编号组织），**不是** CPU 行业研究的主文档。
 - `GLW/`：Corning（CIK 0000024741）的 11 类公开数据源通道验证，含 `PASS` / `PARTIAL` / `SOURCE_UNAVAILABLE` 分级。是一次性验证产物，可作「公开来源优先、付费能力可选」工作流的样板。
-- `.agents/skills/`：16 个金融分析 skill（3-statement-model / comps-analysis / earnings-analysis / initiating-coverage / thesis-tracker 等），源自 Anthropic financial-services 导入。
+- `.agents/skills/`：9 个金融分析 skill（earnings-analysis / financial-model / initiating-coverage / thesis-tracker / sector-overview / catalyst-calendar / idea-generation / datapack-builder / audit-xls），源自 Anthropic financial-services 导入。2026-10-09 由 15 个合并而来：同 job 的两个时间点、同一工件的两个生命周期、同一研究对象的两个切入角各并成一个带模式判别的 skill，合并对账见 `fundamental-research/claude-financial-services-public/SOURCE-AUDIT.md`。其中 7 个允许隐式调用，2 个只允许显式调用（`$audit-xls`、`$datapack-builder`）。
 - `fundamental-research/`：Anthropic / Claude 官方金融研究工作流的调研记录。
 
 ### 既有研究线：Pine 与 OI
@@ -61,7 +61,7 @@ Python/FreqTrade 程序化交易引擎、回测运行环境、交易数据库、
 - PineScript：优先做静态扫描、版本/语法检查和 TradingView 内的人工编译与图表验收。
 - 研究 artifact：核对文件版本、Git 状态和数据来源，不覆盖用户的未跟踪文件。
 - 图表类产物：脚本末尾打印关键数值自检，配 `*-notes-YYYY-MM-DD.md` 记录数据表、口径限制与复现命令。
-- 自动化校验：`.agents/tests/` 下有一组 unittest（金融 artifact 结构校验，5 个用例）——`python3 -m unittest discover -s .agents/tests -p 'test_*.py'`。**本机没有 pytest**，不要写 pytest 命令。
+- 自动化校验：`.agents/tests/` 下有一组 unittest（金融 artifact 结构校验 5 个用例 + skill 包结构校验 5 个用例，共 10 个；skill 校验锁定 frontmatter、相对链接、7 隐式 + 2 显式调用分层、路由单一事实来源句不复述、交付物总量配额反向扫描）——`python3 -m unittest discover -s .agents/tests -p 'test_*.py'`；改 `.agents/skills/` 后单独跑 `python3 .agents/scripts/validate_skills.py`。**本机没有 pytest**，不要写 pytest 命令。
 - 没有程序化交易运行命令，也不要重建一套。
 
 ## Git 约束
@@ -69,12 +69,13 @@ Python/FreqTrade 程序化交易引擎、回测运行环境、交易数据库、
 - 保留用户已有的未跟踪 artifact；不要使用 `git add -A`、强制重置或覆盖式清理。
 - 修改、提交、推送和发布是分开的授权；本仓库默认只做本地修改。
 
-### Git 现状（2026-10-05 盘点）
+### Git 现状（2026-10-09 盘点）
 
-- **239 项改动未提交**：`38 ?? + 93 D + 108 M`。其中 **93 个删除全在 `.agents/skills/`**（Anthropic 导入包被裁剪，剩余 16 个）。落库前先逐批确认，不要一次 `git add -A`。
-- **`.git` 1.5 GB 来自 Herman Jin 整体入库**：`git ls-files | grep "Herman Jin"` = 3369 个文件（png 1717 / txt 903 / json 350 / jsonl 184 / srt 57 / m4a 57 / vtt 56 / csv 15 / md 14）。这是历史既成事实，与本条「不要 wholesale 提交语料」的约束相悖；出库方案（会重写历史、影响已推送分支）待用户确认后再动。
+- **skill 合并已暂存未提交**：2026-10-09 把 `.agents/skills/` 的 15 个合并为 9 个（删除 7 个目录、迁移并重命名 9 份 references），改动已入索引但**未提交**；动 skill 前先看 `git status`。合并前工作区是干净的（HEAD = `a89c7b6`）。
+- **`.agents/skills/` 现存 9 个 skill**：2026-10-09 由 15 个合并而来（earnings-preview/unit-economics → `earnings-analysis`；morning-note → `catalyst-calendar`；3-statement-model/model-update → `financial-model`；competitive-analysis → `sector-overview`；comps-analysis → `initiating-coverage` Task 3）。合并对账见 `fundamental-research/claude-financial-services-public/SOURCE-AUDIT.md`。此前「剩余 16 个」的说法是把随后移除的 `skill-creator` 算了进去。
+- **`.git` 1.5 GB 来自 Herman Jin 整体入库**：`git ls-files | grep "Herman Jin"` = 3395 个文件（png 1708 / txt 896 / json 356 / jsonl 188 / srt 58 / m4a 58 / vtt 57 / md 50 / csv 15 / jpg 7 / py 2）。这是历史既成事实，与本条「不要 wholesale 提交语料」的约束相悖；出库方案（会重写历史、影响已推送分支）待用户确认后再动。
 - **`.env` 未被跟踪**（`.gitignore` 已覆盖），但内含真实凭据：交易所 API key/secret、OKX 只读密钥、JWT/WS token、DB_URL、Telegram token —— 全部是已移出的 FreqTrade 遗留物，权限 600。**处置方式（轮换或删除）待用户决定，不得自行删除。**
-- **顶层 `罗老师-2026-06-15/`**（356 KB）被 `.gitignore` 忽略、不入库，且三份文档此前均未提及；属独立本地仓库性质的目录。
+- **顶层 `罗老师-2026-06-15/`**（356 KB）被 `.gitignore` 忽略、不入库；属独立本地仓库性质的目录。
 
 ## Agent skills
 

@@ -3,7 +3,6 @@
 This document provides examples, tips for success, common mistakes to avoid, and comprehensive quality checklists.
 
 **Source gate:** Use [`../../../PUBLIC-SOURCE-POLICY.md`](../../../PUBLIC-SOURCE-POLICY.md). Treat company guidance and opened filings as facts; label prior model inputs `USER_PROVIDED` and calculations `MODEL_DERIVED`. If no dated public comparison exists, use `SOURCE_UNAVAILABLE`.
-Resolve every concrete source from [`../../../data-sources.jsonl`](../../../data-sources.jsonl) (single source of truth for skill data-source routing): filter by `data_types` × `markets`; honor `policy_status`/`auth`/`cost`; fail closed when nothing matches.
 
 ## Example Headlines
 
@@ -20,7 +19,7 @@ Resolve every concrete source from [`../../../data-sources.jsonl`](../../../data
 
 ## Tips for Success
 
-1. **Speed matters**: Published 24-48hrs post-earnings, not days later
+1. **Timeliness**: State the delivery time relative to the earnings release; if materially late, label it a delayed reaction
 
 2. **Lead with conclusion**: Beat or miss? Up or down estimates?
 
@@ -100,7 +99,7 @@ Before delivering earnings update, verify all items below:
 ### Format & Length Checklist
 
 **Overall Structure:**
-- [ ] Report is 8-12 pages (not shorter, not longer)
+- [ ] Report length follows the user's request and the evidence; no fixed page quota
 - [ ] Page 1 has earnings summary format
 - [ ] Page 1 has "EARNINGS UPDATE" in title (NOT "Initiating Coverage")
 - [ ] Event-driven title (e.g., "Strong Q3 Results...")
@@ -113,7 +112,7 @@ Before delivering earnings update, verify all items below:
 - [ ] Estimates table shows old vs. new with change column
 
 **Charts:**
-- [ ] 8-12 charts embedded throughout document
+- [ ] Every embedded chart supports a specific point; chart count follows the argument, not a quota
 - [ ] All charts have "Figure X - [Title]" caption above
 - [ ] All charts have "Source: [Source]" line below
 - [ ] Charts focus on quarterly trends
@@ -178,8 +177,8 @@ Before delivering earnings update, verify all items below:
 ### Timeliness Checklist
 
 **Publication Timing:**
-- [ ] Report published within 24-48 hours of earnings release
-- [ ] If later than 48 hours, acknowledged as "delayed reaction"
+- [ ] Delivery time relative to the earnings release is stated
+- [ ] If delivered materially later than the release, it is acknowledged as a delayed reaction
 - [ ] ✅ **VERIFIED all data is from LATEST quarter by searching for recent earnings**
 - [ ] ✅ **Did NOT rely on knowledge cutoff - actively searched for current data**
 - [ ] Any public guidance or `USER_PROVIDED` estimate is pre-earnings and dated
@@ -208,10 +207,10 @@ Run through this quick final check before sending report to user:
 ### 5-Minute Final Review:
 1. **Page 1**: Rating clear? Price target updated? Key takeaways compelling?
 2. **Numbers**: Do reported results match company's press release exactly?
-3. **Citations**: Spot check 3-4 figures/tables - all have sources with clickable hyperlinks?
+3. **Citations**: Spot check figures/tables - all have sources with clickable hyperlinks?
 4. **Estimates**: Old vs. new clearly shown? Changes explained?
-5. **Charts**: All 8-12 embedded? All numbered and captioned?
-6. **Length**: Is it 8-12 pages (not 6, not 15)?
+5. **Charts**: All numbered and captioned? Each one supports a specific point?
+6. **Length**: Does the length match the user's request and the evidence?
 7. **Hyperlinks**: Test 3-4 hyperlinks - do they work with Ctrl+Click?
 8. **Timeliness**: Is this being published within 48 hours of earnings?
 
@@ -241,8 +240,8 @@ Rating: [MAINTAINED / RAISED / LOWERED] [RATING]
 Price Target: $XXX (prior: $XXX) - [+/-]XX% upside
 
 Deliverables:
-✓ 8-12 page earnings update report (DOCX)
-✓ 8-12 embedded charts
+✓ Earnings update report (DOCX) at the requested length
+✓ Embedded charts, each tied to a specific point
 ✓ Updated estimates with old/new comparison
 ✓ Complete sources section with clickable hyperlinks
 ✓ [Optional: Updated XLS financial model]

@@ -5,70 +5,79 @@ description: "维护持仓或观察名单的投资 thesis、关键证据、催�
 
 # Thesis Tracker
 
-生成或修改 `.xlsx`、`.docx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
+维护持仓或观察名单的 thesis。每个新数据点都要落到具体支柱的影响方向上，对证伪证据与证实证据同样严格地跟踪。
 
-## Public-source gate
+## 必读契约
 
-Read [`PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md) before adding a data point. Cite an opened filing, issuer/regulator/government page, validated public market page, or mark the item `USER_PROVIDED`. Do not treat an inaccessible feed, private note, analyst consensus, or uncited market commentary as evidence; record `SOURCE_UNAVAILABLE` when a required fact cannot be verified.
-Resolve every concrete source from [`../../data-sources.jsonl`](../../data-sources.jsonl) (single source of truth for skill data-source routing): filter by `data_types` × `markets`; honor `policy_status`/`auth`/`cost`; fail closed when nothing matches.
+- 来源合规与数据源路由遵循 [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md)（含路由登记表 [`../../data-sources.jsonl`](../../data-sources.jsonl)，无匹配时 fail-closed）。
+- 生成或修改 Office 产物前读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)；验证器状态与限制按其口径披露。
 
-## Workflow
+## 工作流
 
-### Step 1: Define or Load Thesis
+### Step 1：定义或载入 thesis
 
-If creating a new thesis:
-- **Company**: Name and ticker
-- **Position**: Long or Short
-- **Thesis statement**: 1-2 sentence core thesis (e.g., "Long ACME — margin expansion from pricing power + operating leverage as mix shifts to software")
-- **Key pillars**: 3-5 supporting arguments
-- **Key risks**: 3-5 risks that would invalidate the thesis
-- **Catalysts**: Upcoming events that could prove/disprove the thesis (earnings, product launches, regulatory decisions)
-- **Target price / valuation**: What's it worth if the thesis plays out
-- **Stop-loss trigger**: What would make you exit
+新建 thesis 时向用户确认：
+- **公司**：名称与 ticker
+- **方向**：多或空
+- **thesis 陈述**：1-2 句核心论点（如「多 ACME——定价权驱动的利润率扩张 + 结构转向软件的经营杠杆」）
+- **关键支柱**：3-5 条支撑论据
+- **关键风险**：3-5 条会使 thesis 失效的风险
+- **催化剂**：可能证明/证伪 thesis 的 upcoming 事件（财报、产品发布、监管决定）
+- **目标价/估值**：thesis 兑现时值多少
+- **止损触发**：什么情况退出
 
-If updating an existing thesis, ask the user for the new data point or development.
+更新已有 thesis 时，向用户确认新数据点或新进展。
 
-### Step 2: Update Log
+### Step 2：更新日志
 
-For each new data point or development:
+每个新数据点或进展记录：
 
-- **Date**: When this happened
-- **Data point**: What changed (earnings beat, management departure, competitor move, etc.)
-- **Thesis impact**: Does this strengthen, weaken, or neutralize a specific pillar?
-- **Action**: No change / Increase position / Trim / Exit
-- **Updated conviction**: High / Medium / Low
+- **日期**：何时发生
+- **数据点**：什么变了（财报 beat、管理层离职、竞争对手动作等）
+- **thesis 影响**：加强、削弱还是中性，作用于哪条支柱
+- **行动**：不变 / 加仓 / 减仓 / 退出
+- **更新后确信度**：高 / 中 / 低
 
-### Step 3: Thesis Scorecard
+### Step 3：thesis 记分卡
 
-Maintain a running scorecard:
+维护滚动记分卡：
 
-| Pillar | Original Expectation | Current Status | Trend |
+| 支柱 | 原始预期 | 当前状态 | 趋势 |
 |--------|---------------------|----------------|-------|
-| Revenue growth above thesis threshold (`MODEL_DERIVED` example) | On track | Q3 matched the sourced threshold | Stable |
-| Margin expansion | Behind | Margins flat YoY | Concerning |
-| New product launch | Pending | Delayed to Q2 | Watch |
+| 收入增长高于 thesis 阈值（`MODEL_DERIVED` 示例） | 正轨 | Q3 达到有来源阈值 | 稳定 |
+| 利润率扩张 | 落后 | 利润率同比持平 | 关注 |
+| 新产品发布 | 待定 | 推迟到 Q2 | 观察 |
 
-### Step 4: Catalyst Calendar
+### Step 4：催化剂日历
 
-Track upcoming catalysts:
+跟踪 upcoming 催化剂：
 
-| Date | Event | Expected Impact | Notes |
+| 日期 | 事件 | 预期影响 | 备注 |
 |------|-------|-----------------|-------|
 | | | | |
 
-### Step 5: Output
+催化剂事件与 [`../catalyst-calendar/SKILL.md`](../catalyst-calendar/SKILL.md) 的覆盖公司日历指向同一事件记录，不重复取数。
 
-Thesis summary suitable for:
-- Morning meeting discussion
-- Portfolio review
-- Risk committee presentation
+### Step 5：输出
 
-Format: Concise markdown or Word doc with the scorecard, recent updates, and current conviction level.
+thesis 摘要适用于：
+- 晨会讨论
+- 组合复盘
+- 风控委员会汇报
 
-## Important Notes
+格式：简洁 Markdown 或 Word 文档，含记分卡、近期更新和当前确信度。
 
-- A thesis should be falsifiable — if nothing could disprove it, it's not a thesis
-- Track disconfirming evidence as rigorously as confirming evidence
-- Review theses at least quarterly, even when nothing dramatic has happened
-- If the user manages multiple positions, offer to do a full portfolio thesis review
-- Store thesis data in a structured format so it can be referenced across sessions
+## 注意事项
+
+- thesis 必须可证伪——没有任何东西能证伪它，它就不是 thesis
+- 对证伪证据与证实证据同样严格地跟踪
+- 至少每季度复核 thesis，即使没有大事发生
+- 用户管理多个持仓时，主动提议做全组合 thesis 复核
+- thesis 数据用结构化格式存储，保证可跨会话引用
+
+## 完成条件
+
+- thesis 可证伪：支柱、失效条件、催化剂、目标价推导和退出触发都明确；不存在无法被证伪的叙述。
+- 每条新数据点带日期、来源状态（已打开公开来源或 `USER_PROVIDED`）和对具体支柱的影响方向（加强/削弱/中性），以及是否触发行动。
+- scorecard 区分「原始预期」与「当前状态」；更新日志记录信念变化而非只记事件；持仓与内部 thesis 标为用户输入，不作为公共来源事实。
+- 结构化格式可跨会话复用；催化剂与覆盖公司日历指向同一事件记录，不重复取数。

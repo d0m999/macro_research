@@ -2,6 +2,8 @@
 
 这是从 Anthropic `financial-services` 官方仓库筛选并改写的项目级 Codex skill 集合。当前面向二级市场基本面研究，保留公司与行业研究、财报分析、估值、建模及财务数据整理；主动数据来源限于可以公开核验的来源。
 
+> **2026-10-09 合并（15 → 9）**：导入的 15 个 skill 中有 6 个是同一条工作流的时间点或生命周期拆分，已合并为带模式判别的单一 skill。现行清单与本文件的调用分层描述以 `.agents/skills/` 为准；本轮合并的上游对账见 [SOURCE-AUDIT.md](SOURCE-AUDIT.md) 的合并表。
+
 ## 上游与范围
 
 - 上游仓库：<https://github.com/anthropics/financial-services>
@@ -25,9 +27,9 @@
 
 ## 调用分层
 
-以下 11 个研究与估值入口允许自动发现：`catalyst-calendar`、`earnings-analysis`、`earnings-preview`、`idea-generation`、`initiating-coverage`、`model-update`、`morning-note`、`sector-overview`、`thesis-tracker`、`competitive-analysis`、`comps-analysis`。
+以下 7 个入口允许自动发现：`catalyst-calendar`、`earnings-analysis`、`financial-model`、`idea-generation`、`initiating-coverage`、`sector-overview`、`thesis-tracker`。
 
-另外 4 个 skill 使用显式调用：`$3-statement-model`、`$audit-xls`、`$datapack-builder`、`$unit-economics`。
+另外 2 个 skill 使用显式调用：`$audit-xls`、`$datapack-builder`。
 
 每个 active skill 的 `agents/openai.yaml` 只维护 UI 名称、短说明和调用 policy；入口使用条件化 reference 指针做渐进披露。
 

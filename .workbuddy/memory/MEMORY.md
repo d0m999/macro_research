@@ -6,11 +6,11 @@
 
 1. **主线（活跃）**：KOL 语料归档 → 观点与推理链蒸馏（`Herman Jin/` 1.6G + `Serenity/`），
    交付物是逻辑链/观点清单/验证状态/极性，非 persona。
-2. **支线（活跃）**：美股 / AI 产业链基本面研究（`research/_agent/`、`GLW/`、`.agents/skills/` 16 个金融 skill）。
+2. **支线（活跃）**：美股 / AI 产业链基本面研究（`research/_agent/`、`GLW/`、`.agents/skills/` 15 个金融 skill）。
 3. **休眠**：PineScript 与 OI 研究，27 个 .pine，2026-09 起无新提交。
 
 新任务进来先判断属于哪条线，不要默认按 Pine 解释。
-本机**没有 pytest**；`.agents/tests/` 是 unittest（4 用例），跑法
+本机**没有 pytest**；`.agents/tests/` 是 unittest（5 用例），跑法
 `python3 -m unittest discover -s .agents/tests -p 'test_*.py'`。
 
 ## 核心文档 `research/Herman-Jin 观点 rollup.md`
@@ -87,13 +87,15 @@
 - **来源耐久性**：口语/英文为主（非 Herman Jin 的繁简混排问题），但同样存在 ASR-free 的
   DOM 抓取边界（见包内 `evidence_boundary`：回复对象多由 with_replies 邻接推断、长帖 Show more 折叠）。
 
-## 仓库结构现状（2026-10-05 全量盘点）
+## 仓库结构现状（2026-10-09 更新）
 
-- **`.git` 1.5G 的成因**：`Herman Jin/` 已整体入库，3369 文件（png 1717 / txt 903 / json 350 /
-  jsonl 184 / srt 57 / m4a 57 / vtt 56 / csv 15 / md 14）。与 CLAUDE.md「不得 wholesale 提交语料」
-  相悖，是历史既成事实；出库需重写历史、影响已推送分支，未获授权前不动。
-- **未提交改动 239 项** = `38 ?? + 93 D + 108 M`；93 个 D 全在 `.agents/skills/`
-  （Anthropic 导入包裁剪后剩 16 个）。落库须逐批确认。
+- **工作区干净**：`main` 跟踪 `origin/main`，HEAD = `a89c7b6`。2026-10-05 盘点的 239 项未提交
+  （`38 ?? + 93 D + 108 M`，93 个 D 全在 `.agents/skills/`）已全部落库；旧记「裁剪后剩 16 个」
+  是把随后移除的 `skill-creator` 算进去了；2026-10-09 又由 15 个合并为 9 个（同 job 的时间点/生命周期
+  拆分各并成一个带模式判别的 skill），现行 7 隐式 + 2 显式（`audit-xls`、`datapack-builder`）。
+- **`.git` 1.5G 的成因**：`Herman Jin/` 已整体入库，3395 文件（png 1708 / txt 896 / json 356 /
+  jsonl 188 / srt 58 / m4a 58 / vtt 57 / md 50 / csv 15 / jpg 7 / py 2）。与 CLAUDE.md「不得
+  wholesale 提交语料」相悖，是历史既成事实；出库需重写历史、影响已推送分支，未获授权前不动。
 - **`Herman Jin/x-archive/` 有 3 个包**：x-2026-09-19 / x-2026-09-25 / x-2026-10-02。
 - **`research/_agent/` 是杂物抽屉**：语料更新包 + 个股深研子目录 + 图表脚本/PNG/CSV
   + 一次性 demo（`jev-ling-repro/` 含 `backtest.mjs`、`out/`、`trade-the-news-demo.mp4`）同级平铺。

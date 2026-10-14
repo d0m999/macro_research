@@ -5,119 +5,126 @@ description: "用可公开核验的筛选条件和主题研究生成多空候选
 
 # Idea Generation
 
-生成或修改 `.docx`、`.xlsx` 或 `.pptx` 时，先读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
+用可公开核验的筛选条件产生多空候选；筛选结果不是投资结论，每个入选标的都需要后续基本面工作。
 
-## Public-source gate
+## 必读契约
 
-Read [`PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md) before screening. Use only SEC EDGAR or other official regulator filings, issuer IR materials, government or official exchange pages, and validated public market-history pages or user-provided exports. Historical ratios may be calculated from cited inputs. Forward multiples or estimates require dated issuer guidance, a `USER_PROVIDED` estimate, or an explicitly labeled `MODEL_DERIVED` case; do not substitute analyst consensus or whisper data. If a required input cannot be opened and cited, record `SOURCE_UNAVAILABLE` and omit the ranking rather than filling it in.
-Resolve every concrete source from [`../../data-sources.jsonl`](../../data-sources.jsonl) (single source of truth for skill data-source routing): filter by `data_types` × `markets`; honor `policy_status`/`auth`/`cost`; fail closed when nothing matches.
+- 来源合规与数据源路由遵循 [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md)（含路由登记表 [`../../data-sources.jsonl`](../../data-sources.jsonl)，无匹配时 fail-closed）。
+- 生成或修改 Office 产物前读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)；验证器状态与限制按其口径披露。
 
-## Workflow
+## 工作流
 
-### Step 1: Define Search Criteria
+### Step 1：定义筛选条件
 
-Ask the user for parameters:
-- **Direction**: Long ideas, short ideas, or both
-- **Market cap**: Large, mid, small, micro
-- **Sector**: Specific sector or cross-sector
-- **Style**: Value, growth, quality, special situation, event-driven
-- **Geography**: US, international, global
-- **Theme**: Any specific thematic angle (AI, reshoring, aging demographics, etc.)
+向用户确认参数：
+- **方向**：多头、空头或两者
+- **市值**：大盘、中盘、小盘、微盘
+- **行业**：指定行业或跨行业
+- **风格**：价值、成长、质量、特殊情形、事件驱动
+- **地域**：美国、国际、全球
+- **主题**：特定主题角度（AI、回流制造、人口老龄化等）
 
-### Step 2: Quantitative Screens
+### Step 2：定量筛选
 
-Build screens from cited, reproducible inputs. Market cap may be calculated as a cited public price multiplied by a cited share count. Insider activity may use public regulator filings such as SEC Forms 3/4/5. Short interest, ownership, and coverage counts are allowed only when an official or fully public source is opened and cited; otherwise mark them `SOURCE_UNAVAILABLE`.
+每个阈值必须来自用户标准、已引用的公司历史、已打开的公开同业分布，或明确标为 `MODEL_DERIVED` 的筛选情景；不把下列条目当作固定 cutoff。市值可由已引用的公开价格 × 已引用的股本数计算；内部人交易可用 SEC Form 3/4/5 等公开监管文件；空头兴趣、机构持仓与分析师覆盖数量只在本次打开并可引用的官方或完全公开来源上给出，否则标 `SOURCE_UNAVAILABLE`。
 
-Run screens based on the style. Every threshold must come from the user's criteria, the company's cited history, an opened public peer distribution, or an explicitly labeled `MODEL_DERIVED` screen; do not use the examples below as fixed cutoffs:
+按风格执行筛选：
 
-**Value Screen**
-- P/E below sector median
-- EV/EBITDA below historical average
-- Free cash flow yield above the selected sourced comparison threshold
-- Price/book below the selected sourced comparison threshold
-- Insider buying over the user-selected, disclosed filing window
-- Dividend yield above market average
+**价值筛选**
+- P/E 低于行业中位数
+- EV/EBITDA 低于历史均值
+- FCF 收益率高于选定的有来源比较阈值
+- 市净率低于选定的有来源比较阈值
+- 内部人在用户选定且已披露的窗口内买入
+- 股息率高于市场均值
 
-**Growth Screen**
-- Revenue growth above the selected historical/peer threshold
-- Earnings growth above the selected historical/peer threshold
-- Revenue acceleration (growth rate increasing)
-- Expanding margins
-- Return on invested capital above the selected sourced comparison
-- Net retention above the selected company-history or public-peer comparison
+**成长筛选**
+- 收入增长高于选定的历史/同业阈值
+- 盈利增长高于选定的历史/同业阈值
+- 收入加速（增速上升）
+- 利润率扩张
+- ROIC 高于选定的有来源比较
+- NDR 高于公司历史或公开同业比较
 
-**Quality Screen**
-- Consistent revenue growth over the available comparable history
-- Stable or expanding margins
-- ROE above the selected sourced comparison
-- Low debt/equity
-- High free cash flow conversion
-- Insider ownership relative to the selected public comparison set
+**质量筛选**
+- 可比较历史内收入持续增长
+- 利润率稳定或扩张
+- ROE 高于选定的有来源比较
+- 低债务/权益比
+- 高 FCF 转化
+- 内部人持股相对选定公开比较集
 
-**Short Screen**
-- Declining revenue or decelerating growth
-- Margin compression
-- Rising receivables / inventory vs. sales
-- Insider selling
-- Valuation premium to peers without justification
-- High short interest with deteriorating fundamentals
-- Accounting red flags (auditor changes, restatements)
+**空头筛选**
+- 收入下滑或增速放缓
+- 利润率压缩
+- 应收/存货相对销售上升
+- 内部人卖出
+- 相对同业估值溢价且无理由
+- 高空头兴趣且基本面恶化
+- 会计红旗（审计师变更、重述）
 
-**Special Situation Screen**
-- Recent IPOs / SPACs with lockup expirations
-- Recent spin-offs within the user-selected event window
-- Companies emerging from restructuring
-- Activist involvement
-- Management changes at underperforming companies
+**特殊情形筛选**
+- 锁定期届满的近期 IPO / SPAC
+- 用户选定事件窗口内的近期分拆
+- 重组后走出的公司
+- 激进投资者介入
+- 表现不佳公司的管理层变更
 
-### Step 3: Thematic Sweep
+### Step 3：主题扫描
 
-For thematic ideas, research the theme and identify beneficiaries:
+主题型想法先研究主题再识别受益者：
 
-1. Define the thesis (e.g., "AI infrastructure spending accelerates through 2026")
-2. Map the value chain — who benefits directly vs. indirectly?
-3. Identify pure-play vs. diversified exposure
-4. Assess which names are already "priced in" vs. under-appreciated
-5. Look for second-order beneficiaries that the market hasn't connected to the theme
+1. 定义 thesis（如「AI 基础设施开支到 2026 持续加速」）
+2. 映射价值链——谁直接受益、谁间接受益？
+3. 区分纯标的与多元化敞口
+4. 评估哪些名字已被定价、哪些尚未被充分认识
+5. 寻找市场尚未连接到主题的二阶受益者
 
-### Step 4: Idea Presentation
+### Step 4：想法呈现
 
-For each idea that passes the screen, present:
+每个通过筛选的 idea 按以下格式呈现：
 
-**[Company Name] — [Long/Short] — [One-Line Thesis]**
+**[公司名] — [多/空] — [一句话 thesis]**
 
-| Metric | Value | vs. Peers |
+| 指标 | 数值 | vs. 同业 |
 |--------|-------|-----------|
-| Market cap | | |
-| EV/EBITDA (forward, if public guidance/model-derived) | | |
-| P/E (forward, if public guidance/model-derived) | | |
-| Revenue growth | | |
-| EBITDA margin | | |
-| FCF yield | | |
+| 市值 | | |
+| EV/EBITDA（forward，限公开 guidance/模型推导） | | |
+| P/E（forward，限公开 guidance/模型推导） | | |
+| 收入增长 | | |
+| EBITDA 利润率 | | |
+| FCF 收益率 | | |
 
-**Thesis (3-5 bullets):**
-- Why this is mispriced
-- What the market is missing
-- Catalyst to realize value
+**Thesis（3-5 条）：**
+- 为什么被错误定价
+- 市场忽略了什么
+- 价值兑现的催化剂
 
-**Key Risks:**
-- What would make this wrong
+**关键风险：**
+- 什么情况证明它是错的
 
-**Suggested Next Steps:**
-- Build full model? Deep-dive diligence? Expert call?
+**建议下一步：**
+- 建完整模型？深度尽调？专家访谈？
 
-### Step 5: Output
+### Step 5：输出
 
-- Shortlist of 5-10 ideas with one-page summaries
-- Screening criteria and methodology documented
-- Comparison table across all ideas
-- Prioritized list: which ideas to research first
+- 5-10 个 idea 的 shortlist，各带一页摘要
+- 筛选条件与方法论记录
+- 全部 idea 的横向对比表
+- 优先级排序：先研究哪些
 
-## Important Notes
+## 注意事项
 
-- Screens surface candidates, not conclusions — every screen output needs fundamental work
-- The best ideas often come from intersections (e.g., quality company at value price due to temporary headwind)
-- Avoid crowded trades — check ownership data or short interest only from opened public sources; analyst-coverage counts are optional and must be `SOURCE_UNAVAILABLE` when no public source is citable
-- Contrarian ideas need a catalyst — being early without a catalyst is the same as being wrong
-- Track idea hit rates over time — which screens and approaches produce the best ideas?
-- Short ideas need higher conviction — timing is harder and risk is asymmetric
+- 筛选产出的是候选，不是结论——每个筛选结果都需要基本面工作
+- 最好的想法常在交叉处（如优质公司因暂时性逆风落到价值价格）
+- 避免拥挤交易——持仓与空头兴趣只从已打开的公开来源检查；分析师覆盖数量为可选项，无可引用公开来源时标 `SOURCE_UNAVAILABLE`
+- 逆向想法需要催化剂——没有催化剂的「早」等同于「错」
+- 跟踪 idea 命中率——哪些筛选方法持续产出最好的想法
+- 空头想法需要更高确信度——择时更难、风险不对称
+
+## 完成条件
+
+- 筛选条件（方向、市值、行业、风格、地域、主题）来自用户输入；每个阈值标注为用户标准、已引用的公司历史/同业分布或 `MODEL_DERIVED` 情景，不把文档示例当固定 cutoff。
+- 每个入选标的的指标有 source record；缺输入的排名项整项省略而非补数；ownership、short interest 和 coverage 只在本次打开并可引用的公开来源上给出，否则标 `SOURCE_UNAVAILABLE`。
+- 筛选结果与投资结论分开表述：shortlist 附筛选方法论文档、横向对比表和研究优先级，每个 idea 含 thesis、关键风险和下一步建议。
+- 反向 idea 与特殊情形 idea 都明确写出催化剂和失效条件；不输出没有催化剂的「只是便宜」。

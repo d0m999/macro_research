@@ -35,7 +35,21 @@ Active skills 直接维护在仓库根目录 [`.agents/skills/`](../../.agents/s
 ## 原生能力与调用方式
 
 - 上游选择中的通用 `skill-creator`、`xlsx-author`、`pptx-author` 不再维护项目副本。Skill 创建使用当前 Codex 官方 `skill-creator`；Office artifact 按 [Codex 执行契约](../../.agents/CODEX-EXECUTION-POLICY.md)路由到 Spreadsheets、Presentations、Documents，并在能力不可用时受限回退。
-- Active inventory 为 15 个上游金融 skill；其中 11 个允许隐式调用，4 个只允许显式调用。
+
+## 合并对账（2026-10-09，15 → 9）
+
+上表的 15 行仍是对上游导入的审计记录，不回改。2026-10-09 按下表把「同一 job 的两个时间点 / 同一工件的两个生命周期 / 同一研究对象的两个切入角」合并为带模式判别的单一 skill，分类一并继承，未新增或放宽任何来源边界：
+
+| 现行 skill | 吸收的上游 skill | 合并理由 | 分类继承 |
+|---|---|---|---|
+| `earnings-analysis` | `earnings-preview`、`unit-economics` | actual 未发布/已发布是同一分析的两个时间点；单位经济是可叠加的指标深挖模式 | `PUBLIC_RESEARCH` + `MIXED_FAIL_CLOSED` |
+| `catalyst-calendar` | `morning-note` | 晨会的「今日关键事件」是日历在当前时间窗上的切片 | `PUBLIC_RESEARCH` |
+| `financial-model` | `3-statement-model`、`model-update` | 三表模型的新建与刷新是同一工件的两个生命周期 | `PUBLIC_RESEARCH` |
+| `sector-overview` | `competitive-analysis` | 行业自上而下与时点公司对同业是同一研究对象的两个切入角 | `PUBLIC_RESEARCH` |
+| `initiating-coverage` | `comps-analysis` | comps 是其 Task 3（估值）的一种方法，references 转为 `task3-comps-*` | `MIXED_FAIL_CLOSED` |
+| `audit-xls`、`datapack-builder`、`idea-generation`、`thesis-tracker` | — | 无同 job 重复，保留 | 各自继承 |
+
+合并后调用分层：7 个允许隐式调用（`catalyst-calendar`、`earnings-analysis`、`financial-model`、`idea-generation`、`initiating-coverage`、`sector-overview`、`thesis-tracker`），2 个只允许显式调用（`audit-xls`、`datapack-builder`）。`financial-model` 由显式改隐式，原因是原名以数字开头导致的误触发顾虑随合并改名消失。
 
 ## 移除的上游来源类别
 
@@ -45,10 +59,11 @@ Active skills 直接维护在仓库根目录 [`.agents/skills/`](../../.agents/s
 
 ## 审计完成条件
 
-- 当前保留的 15/15 个上游金融 `SKILL.md` 已在上表分类。
+- 当前保留的 15/15 个上游金融 `SKILL.md` 已在上表分类；上表为导入审计记录，2026-10-09 的合并不回改该表，另以「合并对账」记录去向。
 - active skill 文本不再把付费/授权 provider 作为数据入口或优先级。
 - 所有数据敏感 skill 指向 [`.agents/PUBLIC-SOURCE-POLICY.md`](../../.agents/PUBLIC-SOURCE-POLICY.md)。
 - 项目级 skill 集合不包含 `.mcp.json`，不声明远程金融数据连接器。
+- 合并后的每个 skill 都保留原上游 skill 的来源分类与失败关闭规则，且 `mode` 判别写在 SKILL.md 顶部，避免 skill 合并退化成模式歧义。
 
 ## 代表性公开来源验证（2026-08-26）
 
@@ -71,6 +86,7 @@ Active skills 直接维护在仓库根目录 [`.agents/skills/`](../../.agents/s
 
 ## 结构校验
 
+- 2026-10-11 收敛轮：skill 结构校验自动化为 [`.agents/scripts/validate_skills.py`](../../.agents/scripts/validate_skills.py)（unittest 新增 5 个用例，全套件 10 个）。现自动化覆盖：SKILL.md frontmatter（name 与目录一致、description 非空）、`agents/openai.yaml` 解析与合并后 7 隐式 + 2 显式调用分层（与 skill 集合双向对账）、相对 Markdown 链接解析、`mcp__`/`.mcp.json` 反向扫描、路由单一事实来源句在 skill 文本中 0 复述、交付物总量配额反向扫描（数字范围 + 量词名词 `pages/charts/bullets/words` 等，锚定避免误伤 `PAGES x-y` 导航标签与示例数据）、trailing whitespace。仍手工执行：上游导入时的官方 `quick_validate.py`、付费 provider 名称级反向扫描（名称保留在上游刷新审计文档，不入库）。同轮内容收敛：9 个 SKILL.md 契约块去重为指针、三个英文正文 skill 转中文、`audit-xls` Step 3 勾稽检查表确立为 `financial-model` 交付校验正本、`earnings-analysis` references 移除与 SKILL.md 冲突的固定页数/图表数配额（`best-practices.md` 总量配额 + `report-structure.md` 逐节配额改为「as warranted」软表述）。
 - Codex 项目发现目录：仓库根目录 `.agents/skills/`。
 - 独立 plugin manifest：已移除；不进行用户级或系统级安装。
 - 15/15 个 active `SKILL.md` frontmatter 通过官方 `quick_validate.py`。

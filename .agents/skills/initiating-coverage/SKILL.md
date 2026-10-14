@@ -1,17 +1,18 @@
 ---
 name: initiating-coverage
-description: "顺序完成上市公司首次覆盖：公司研究、财务模型、估值、图表和正式报告。用于 initiating coverage、首次覆盖、深度个股研究或完整研究报告请求。"
+description: "顺序完成上市公司首次覆盖：公司研究、财务模型、估值、图表和正式报告。用于 initiating coverage、首次覆盖、深度个股研究、完整研究报告、可比公司分析、comps、同业估值或 trading comparables 请求。"
 ---
 
 # Initiating Coverage
 
 生成首次覆盖研究包。用户要求完整报告时，按依赖顺序连续执行全部五项任务；每项通过内部完成条件后进入下一项，不要求逐项再次授权。只有缺少会改变研究对象、估值或交付格式的必需输入时暂停。
 
-## 全程契约
+## 必读契约
 
-- Task 1 前读取 [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md)，此后全程沿用同一 source manifest。
-- 具体数据源路由以 [`../../data-sources.jsonl`](../../data-sources.jsonl) 为准（本项目 skill 数据源路由的单一事实来源）：按 `data_types` × `markets` 过滤，经 `policy_status`/`auth`/`cost` 校验；无匹配时 fail-closed。
-- 创建或修改 `.xlsx`/`.docx` 前读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)。
+- 来源合规与数据源路由遵循 [`../../PUBLIC-SOURCE-POLICY.md`](../../PUBLIC-SOURCE-POLICY.md)（含路由登记表 [`../../data-sources.jsonl`](../../data-sources.jsonl)，无匹配时 fail-closed）；Task 1 建立的 source manifest 全程沿用。
+- 创建或修改 Office 产物前读取 [`../../CODEX-EXECUTION-POLICY.md`](../../CODEX-EXECUTION-POLICY.md)；验证器状态与限制按其口径披露。
+- Task 2 的建模规则、公式与勾稽判据以 [`../financial-model/SKILL.md`](../financial-model/SKILL.md) 及其 references 为准；本 skill 只定 initiating coverage 的范围、顺序和完成条件，不重复建模规则。
+- Task 1 的行业与竞争口径沿用 [`../sector-overview/SKILL.md`](../sector-overview/SKILL.md)；本 skill 只补公司研究 header、治理和 thesis inputs。
 - 用户只要求其中一项时，仅执行该项及其真正必需的前置工作，不扩大为完整报告。
 - 金融假设、估值区间和权重必须来自公司历史、公开同业数据、用户输入，或带推导的 `MODEL_DERIVED` 情景。
 
@@ -33,7 +34,9 @@ description: "顺序完成上市公司首次覆盖：公司研究、财务模型
 
 读取 [`references/task3-valuation.md`](references/task3-valuation.md)。根据可用输入选择 DCF、trading comps 或其他适用方法；方法权重表达分析判断，不使用固定默认。估值时点、market inputs、EV bridge 和 sensitivity 均可追踪。
 
-完成条件：估值方法输入有来源/状态；数学硬错误为零；每个区间和权重有本案理由。
+只做 trading comps 时（用户点名 comps、可比公司、同业估值）：在同一份 task3 判据下执行，并读取 [`references/task3-comps-peers.md`](references/task3-comps-peers.md)、[`references/task3-comps-formulas.md`](references/task3-comps-formulas.md)、[`references/task3-comps-workbook.md`](references/task3-comps-workbook.md)。peer 集按商业模式、客户、地域、规模、增长、利润率和资本强度建立，记录纳入/排除理由，不为凑数量放宽核心可比性；用 workbook 公式计算 market cap、EV、经营指标、倍数、分位数和隐含估值，统计结果不替代可比性判断，异常值保留并说明是否排除。
+
+完成条件：估值方法输入有来源/状态；数学硬错误为零；每个区间和权重有本案理由；comps 的 peer 选择、口径调整和异常值处理有明确理由，隐含估值可从源数据重算。
 
 ### Task 4：图表
 

@@ -38,7 +38,7 @@ Key Takeaways:
 ■ [Takeaway 3 - one sentence]
 ```
 
-**Main Content - Investment Impact (3-4 bullets):**
+**Main Content - Investment Impact (bullets as warranted):**
 
 Use ■ character with **bold headers** and paragraph-length explanations:
 
@@ -128,7 +128,7 @@ Key Drivers:
 - [Negative driver 2]
 ```
 
-**Embed 2-3 charts on these pages:**
+**Embed charts as warranted on these pages:**
 - Chart 1: Quarterly revenue progression
 - Chart 2: Quarterly EPS progression
 - Chart 3: Margin trends
@@ -171,7 +171,7 @@ FY2024E EPS          $X.XX-X.XX      $X.XX-X.XX      Raised    $X.XX
 Our Take: [Brief assessment of guidance]
 ```
 
-**Embed 2-3 charts:**
+**Embed charts as warranted:**
 - Chart 4: Key metrics trends
 - Chart 5: Guidance vs. our dated model comparison
 - Chart 6: Revenue by segment/geography
@@ -180,7 +180,7 @@ Our Take: [Brief assessment of guidance]
 
 ## PAGES 6-7: UPDATED INVESTMENT THESIS
 
-### Thesis Impact Assessment (1-2 pages)
+### Thesis Impact Assessment
 
 For each key thesis pillar, assess impact of results:
 
@@ -190,7 +190,7 @@ For each key thesis pillar, assess impact of results:
 Status: [STRENGTHENED / UNCHANGED / WEAKENED]
 
 Q[X] results [supported / challenged] this thesis pillar because [specific
-evidence from results]. [Detailed analysis of 150-200 words explaining how
+evidence from results]. [Detailed analysis explaining how
 results impact this specific thesis element.]
 
 ■ **Thesis Pillar 2: [Original thesis statement]**
@@ -202,12 +202,12 @@ results impact this specific thesis element.]
 [Similar analysis]
 ```
 
-### Risks Update (0.5 pages)
+### Risks Update
 - Any new risks identified?
 - Have existing risks been mitigated or worsened?
 - Brief assessment
 
-**Embed 1-2 charts:**
+**Embed charts as warranted:**
 - Chart 7: Valuation vs. historical
 - Chart 8: Estimate revision comparison
 
@@ -215,7 +215,7 @@ results impact this specific thesis element.]
 
 ## PAGES 8-10: VALUATION & ESTIMATES
 
-### Updated Valuation (1-2 pages)
+### Updated Valuation
 
 **DCF Update:**
 ```
@@ -276,7 +276,7 @@ EV/EBITDA (x)        XX.Xx    XX.Xx              XX.Xx
 Source: `MODEL_DERIVED` scenarios or dated `USER_PROVIDED` estimates
 ```
 
-**Embed 1-2 charts:**
+**Embed charts as warranted:**
 - Chart 9: P/E or EV/EBITDA bands
 - Chart 10: Price target walk (old → new)
 
@@ -309,7 +309,7 @@ Source: `MODEL_DERIVED` scenarios or dated `USER_PROVIDED` estimates
 - Clear rating (MAINTAIN OUTPERFORM, RAISE TO BUY, etc.)
 - Updated price target prominently displayed
 - Summary table with old/new estimates
-- 3-4 paragraph-length bullets with ■ character
+- paragraph-length bullets with ■ character
 
 ### 2. All Tables Requirements
 - Source line at bottom

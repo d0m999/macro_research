@@ -1,0 +1,5 @@
+interface:
+  display_name: "Financial Model"
+  short_description: "在模板中完成或新建三表联动模型，并用新财报与 guidance 刷新估计和估值桥"
+policy:
+  allow_implicit_invocation: true
