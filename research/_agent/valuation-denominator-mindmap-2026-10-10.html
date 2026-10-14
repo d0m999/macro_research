@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>估值分母切换 · 市场情绪推理链（2026-10-10）</title>
+<style>
+  :root{
+    --bg:#0a0e14;
+    --ink:#e8eef7;
+    --dim:#8b98ab;
+    --faint:#5b6779;
+    --line:#1d2634;
+    --card:#111927;
+    --sensor:#3ec6b8;
+    --judge:#8b7cf6;
+    --trigger:#f5a524;
+    --result:#f2637f;
+    --frame:#4cc38a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+    min-height:100vh;overflow-x:auto;
+  }
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+
+  header{padding:32px 48px 20px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#0d1420 0%,var(--bg) 100%)}
+  .kicker{font-size:11px;letter-spacing:.22em;color:var(--trigger);text-transform:uppercase;margin-bottom:10px;font-weight:600}
+  h1{font-size:24px;font-weight:700;letter-spacing:.01em}
+  h1 em{font-style:normal;color:var(--trigger)}
+  .sub{margin-top:8px;font-size:13px;color:var(--dim)}
+  .sub b{color:var(--ink);font-weight:600}
+  .hint{margin-top:10px;font-size:11.5px;color:var(--faint)}
+  .hint b{color:var(--sensor);font-weight:600}
+
+  .rootwrap{display:flex;justify-content:center;padding:30px 24px 4px}
+  #root{
+    width:620px;max-width:92vw;text-align:center;
+    background:linear-gradient(180deg,#16202f,#101825);
+    border:1px solid #2a3a52;border-radius:14px;padding:18px 26px 16px;
+    box-shadow:0 0 0 1px rgba(245,165,36,.08),0 18px 50px -18px rgba(0,0,0,.7);
+    position:relative;
+  }
+  #root::before{
+    content:"";position:absolute;inset:-1px;border-radius:14px;padding:1px;
+    background:linear-gradient(90deg,transparent,rgba(245,165,36,.5),transparent);
+    -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;
+  }
+  #root .rt{font-size:18px;font-weight:700;letter-spacing:.02em}
+  #root .rq{margin-top:9px;font-size:12.5px;line-height:1.7;color:var(--dim);border-top:1px dashed #2a3a52;padding-top:9px}
+  #root .rq b{color:var(--trigger);font-weight:600}
+  #root .rc{margin-top:6px;font-size:10.5px;color:var(--faint)}
+
+  #canvas{position:relative;padding:10px 48px 30px;min-width:1480px}
+  #wires{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+  .edge{fill:none;stroke-width:1.5;opacity:.34;transition:opacity .2s,stroke-width .2s}
+  #wires.focus .edge{opacity:.05}
+  #wires.focus .edge.lit{opacity:.95;stroke-width:2.2}
+  .edge-label{font-size:10px;fill:#aab6c8;paint-order:stroke;stroke:#0a0e14;stroke-width:4px;transition:opacity .2s;font-family:inherit}
+  #wires.focus .edge-label{opacity:.1}
+  #wires.focus .edge-label.lit{opacity:1}
+
+  /* ---------- bands ---------- */
+  .band{display:flex;gap:0;margin-bottom:14px;--accent:#888}
+  .band-label{
+    width:148px;flex:none;position:relative;padding:14px 14px 14px 0;
+  }
+  .band-label::after{
+    content:"";position:absolute;right:0;top:0;bottom:-14px;width:2px;
+    background:linear-gradient(180deg,var(--accent),transparent);
+  }
+  .band-label .bl-num{
+    display:inline-block;font-size:11px;font-weight:700;color:var(--accent);
+    border:1px solid var(--accent);border-radius:5px;padding:1px 7px;margin-bottom:8px;letter-spacing:.08em;
+  }
+  .band-label .bl-t{font-size:14.5px;font-weight:700;color:var(--accent);line-height:1.35}
+  .band-label .bl-s{font-size:11px;color:var(--dim);margin-top:6px;line-height:1.6}
+  .band-nodes{flex:1;display:flex;gap:14px;padding:14px 0 14px 18px;align-items:stretch}
+  .node{
+    flex:1;background:var(--card);border:1px solid var(--line);border-radius:9px;
+    padding:10px 12px;position:relative;z-index:2;
+    transition:transform .18s,border-color .18s,box-shadow .18s;
+    display:flex;flex-direction:column;
+  }
+  .node:hover{transform:translateY(-2px)}
+  .node.lit{border-color:var(--accent);box-shadow:0 0 18px -4px var(--accent)}
+  .node .nt{font-size:12.5px;font-weight:650}
+  .node .nd{font-size:11px;color:var(--dim);line-height:1.6;margin-top:4px;flex:1}
+  .node .nc{font-size:9.5px;color:var(--faint);margin-top:6px}
+  .node .nd b{color:var(--ink);font-weight:600}
+  .node .nd .hl{color:var(--trigger);font-weight:600}
+  .node.note{border-style:dashed;background:#0e1520}
+  .node.note .nt{color:var(--dim)}
+
+  .band.b-sensor{--accent:var(--sensor)}
+  .band.b-judge{--accent:var(--judge)}
+  .band.b-trigger{--accent:var(--trigger)}
+  .band.b-result{--accent:var(--result)}
+  .band.b-frame{--accent:var(--frame)}
+
+  .band.b-trigger .node{border-color:#3a2f16;background:linear-gradient(180deg,#161b26,#121824)}
+  .band.b-trigger .node:hover{border-color:var(--trigger)}
+  .band.b-trigger .node.note{background:#0e1520;border-color:#2a2415}
+  .bolt{color:var(--trigger);font-weight:700}
+
+  .band-tag{
+    display:inline-block;font-size:9.5px;color:var(--faint);
+    border:1px solid var(--line);border-radius:4px;padding:0 5px;margin-left:6px;vertical-align:1px;
+  }
+
+  .summary{
+    margin:10px 48px 0;padding:15px 22px;
+    border:1px solid var(--line);border-left:3px solid var(--trigger);
+    border-radius:10px;background:#101825;
+    font-size:12.5px;line-height:1.9;color:var(--dim);
+  }
+  .summary b{color:var(--ink)}
+  .summary .hl{color:var(--trigger);font-weight:600}
+
+  footer{margin:16px 48px 40px;color:var(--faint);font-size:11px;line-height:1.9}
+  .legend{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:8px}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .dot{width:9px;height:9px;border-radius:2px;display:inline-block}
+  .disclaimer{margin-top:8px;border-top:1px solid var(--line);padding-top:10px}
+
+  .fade{opacity:0;transform:translateY(8px);animation:fadeUp .55s ease forwards}
+  @keyframes fadeUp{to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="kicker">Reasoning Map · Herman Jin Corpus</div>
+  <h1>估值分母切换 · 市场情绪推理链 —— <em>⚡ 标出触发分母转换的边际因素</em></h1>
+  <div class="sub">语料：<b>@ShanghaoJin</b> X 帖子/回复（2026-01 ~ 10，x-archive 09-19 / 09-25 / 10-02 快照）· 核验截点 <b>2026-10-10</b> · 10-08 板块归因引自 <b>research/_agent/intc-cpu-analysis-2026-09-26</b></div>
+  <div class="hint">读法：自上而下五个阶段 flows，<b>悬停任一节点</b>高亮它出入的推理连线（箭头带文字=关键环节）；虚线卡=纪律/检查表，不参与推理。</div>
+</header>
+
+<div class="rootwrap fade" style="animation-delay:.05s">
+  <div id="root">
+    <div class="rt">市场定价公式会切换：估值分母转换</div>
+    <div class="rq">「预期变化不实际改变缺货现状，<b>但情绪切换会严重扭曲估值基础。涨、杀估值而非盈利</b>」<br>基本面不动，换的是市场用什么变量定价——利润表 或 现金流表。</div>
+    <div class="rc mono">2026-06-29 · posts.jsonl:743</div>
+  </div>
+</div>
+
+<div id="canvas">
+  <svg id="wires">
+    <defs>
+      <marker id="arr-sensor"  viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3ec6b8"/></marker>
+      <marker id="arr-judge"   viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8b7cf6"/></marker>
+      <marker id="arr-trigger" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f5a524"/></marker>
+      <marker id="arr-result"  viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f2637f"/></marker>
+      <marker id="arr-frame"   viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4cc38a"/></marker>
+    </defs>
+  </svg>
+
+  <!-- ① -->
+  <div class="band b-sensor fade" style="animation-delay:.12s">
+    <div class="band-label">
+      <div class="bl-num">① 感知层</div>
+      <div class="bl-t">传感器</div>
+      <div class="bl-s">不看新闻好坏，看「价格对同一信息的反应函数」+ 筹码与杠杆数据</div>
+    </div>
+    <div class="band-nodes">
+      <div class="node" id="n-react">
+        <div class="nt">价格反应函数</div>
+        <div class="nd">同等级利好，股价反射弧变了 = 换挡。<b>INTC 满分业绩，股价照样受压</b>——利好不再产生旧映射。</div>
+        <div class="nc mono">07-24 · posts.jsonl:896</div>
+      </div>
+      <div class="node" id="n-physical">
+        <div class="nt">实物市场 vs 股价</div>
+        <div class="nd">卡的租金、华强北现货、neocloud 租价 vs 股价——实物涨股票不涨 = 预期与现实的裂口。</div>
+        <div class="nc mono">03-11 · posts.jsonl:238</div>
+      </div>
+      <div class="node" id="n-option">
+        <div class="nt">期权链</div>
+        <div class="nd">半导体 <b>put IV 贵过 call、skew 完全逆转</b> = 杠杆平仓；VIX / neg gamma / CTA 净卖出 = 指数驱动。</div>
+        <div class="nc mono">07-23 · :890 ｜ 07-21 · :876</div>
+      </div>
+      <div class="node" id="n-people">
+        <div class="nt">人的行为（反指学）</div>
+        <div class="nd">嘴资出场越晚 = 情绪越顶；「过去 2 个月把产业资深信息当反指，奇准无比」；基金空仓等跌 = 抛压出尽。</div>
+        <div class="nc mono">06-27 · :735 ｜ 08-09 · :1023 ｜ 05-23 · :2618</div>
+      </div>
+      <div class="node" id="n-leverage">
+        <div class="nt">杠杆水位</div>
+        <div class="nd">US margin debt（FINRA 月频）；韩国 credit balance 蒸发约 <b>10 万亿韩元</b>——「情绪燃料还剩多少」的直读。<b>时间区间原帖未注明</b>，引用前需回原始数据核对。</div>
+        <div class="nc mono">08-04 · posts.jsonl:986 · id 2084516518839382170</div>
+      </div>
+      <div class="node" id="n-credit">
+        <div class="nt">信用市场</div>
+        <div class="nd">科技公司是一个 credit 池子：债市供给成倍增长、spread 极低不再——「股票债券都是供需矛盾」。</div>
+        <div class="nc mono">07-28 · posts.jsonl:932</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ② -->
+  <div class="band b-judge fade" style="animation-delay:.2s">
+    <div class="band-label">
+      <div class="bl-num">② 判定层</div>
+      <div class="bl-t">市场在问什么</div>
+      <div class="bl-s">市场提问的落点 = 当前的定价变量</div>
+    </div>
+    <div class="band-nodes">
+      <div class="node" id="n-old">
+        <div class="nt">旧公式：需求真不真</div>
+        <div class="nd">定价 = <b>利润表</b>（收入 / margin / EPS）。利好证据 = 缺货、订单、提价、供给紧张。</div>
+        <div class="nc mono">贯穿 2026 上半年语料</div>
+      </div>
+      <div class="node" id="n-new">
+        <div class="nt">新公式：谁来付钱</div>
+        <div class="nd">定价 = <b>现金流表</b>（capex / FCF / ROI / 融资）。利好证据 = 终端收入增速、租金 ROI、融资能力。</div>
+        <div class="nc mono">07-28 · posts.jsonl:923</div>
+      </div>
+      <div class="node" id="n-switch">
+        <div class="nt">判据：提问换题<span class="band-tag">关键</span></div>
+        <div class="nd">市场疑问从「EPS 多少」变成「capex 多大、FCF 多少、钱从哪来」——<b>换题即换公式的直接证据</b>。07-24 他顺着新问题追问云厂：「你们准备咋办？」</div>
+        <div class="nc mono">07-24 · posts.jsonl:896</div>
+      </div>
+      <div class="node note" id="n-discipline">
+        <div class="nt">纪律（不参与推理）</div>
+        <div class="nd">「基本面不等同交易」（06-04）；「行研前瞻，<b>主导短期的是筹码与仓位</b>」（07-10）——感知情绪与分析基本面是两门手艺。</div>
+        <div class="nc mono">:616 ｜ :803</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ③ -->
+  <div class="band b-trigger fade" style="animation-delay:.28s">
+    <div class="band-label">
+      <div class="bl-num">③ ⚡ 边际触发</div>
+      <div class="bl-t">分母转换触发器</div>
+      <div class="bl-s">分子没崩，分母被换：这些边际因素出现时，市场换用现金流表定价</div>
+    </div>
+    <div class="band-nodes">
+      <div class="node" id="n-capex">
+        <div class="nt"><span class="bolt">⚡</span> capex↑ + FCF↓<span class="band-tag">核心案例</span></div>
+        <div class="nd"><b>07-24 INTC</b>：满分业绩，但预期投入加大、调整后 FCF 只剩 8bil，股价照样受压——催化利润表的钥匙打不开现金流表的锁。</div>
+        <div class="nc mono">posts.jsonl:896</div>
+      </div>
+      <div class="node" id="n-money">
+        <div class="nt"><span class="bolt">⚡</span> 叙事资金退潮</div>
+        <div class="nd">credit margin 退潮（←①杠杆）+ 科技债供给爆发（←①信用）= <b>讲故事的钱没了</b>。资金供给决定谁被定价，杀估值不杀盈利。</div>
+        <div class="nc mono">:986 ｜ :932</div>
+      </div>
+      <div class="node" id="n-openai">
+        <div class="nt"><span class="bolt">⚡</span> 终端付费证伪</div>
+        <div class="nd">OpenAI 年化 680 → <b>500 亿美元</b>（口径差曝光），全链定价权假设同时折价：INTC -5.3% / ORCL -5.5% / NVDA -2.9%。</div>
+        <div class="nc mono">10-08 · update-2026-10-09 §3</div>
+      </div>
+      <div class="node" id="n-squeeze">
+        <div class="nt"><span class="bolt">⚡</span> 杠杆挤压（←①期权）</div>
+        <div class="nd">put IV 反超、neg gamma、CTA 净卖出、机构 gross margin 高位——下跌由强平而非基本面引发，跌的是估值基础。</div>
+        <div class="nc mono">:876 ｜ :889 ｜ :890</div>
+      </div>
+      <div class="node note" id="n-endgame">
+        <div class="nt">终局三信号<span class="band-tag">检查表</span></div>
+        <div class="nd">① 通胀回归 ② OAI/Anthropic IPO 空头 give-in 式爆涨 ③ 养老金买满 DC 债券——末期一起发生 = 分母彻底切换。</div>
+        <div class="nc mono">02-09 · posts.jsonl:168</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ④ -->
+  <div class="band b-result fade" style="animation-delay:.36s">
+    <div class="band-label">
+      <div class="bl-num">④ 结果层</div>
+      <div class="bl-t">价格行为</div>
+      <div class="bl-s">EPS 不动，PE 压缩：业绩好 ≠ 会涨</div>
+    </div>
+    <div class="band-nodes">
+      <div class="node" id="n-kill">
+        <div class="nt">杀估值 ≠ 杀盈利</div>
+        <div class="nd">基本面数据不变，压缩的是倍数。「业绩好股价跌」不是市场犯错，是定价公式换了题。</div>
+        <div class="nc mono">06-29 · posts.jsonl:743</div>
+      </div>
+      <div class="node" id="n-branch">
+        <div class="nt">归因分叉<span class="band-tag">关键路口</span></div>
+        <div class="nd">「业绩好 + 跌」两条路：→ <b>momentum 错杀</b>＝框架有效，等回归基本面（08-06）；→ <b>公式切换</b>＝框架失效，勿抄。</div>
+        <div class="nc mono">08-06 · posts.jsonl:998</div>
+      </div>
+      <div class="node" id="n-indiscriminate">
+        <div class="nt">无差别强平（←⚡挤压）</div>
+        <div class="nd">去杠杆末段「赚钱的补跌更猛」——2008 年 AAPL/GOOG/GS 全真赚钱照样腰斩。利好利差全部失效。</div>
+        <div class="nc mono">02-09 · posts.jsonl:168</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⑤ -->
+  <div class="band b-frame fade" style="animation-delay:.44s">
+    <div class="band-label">
+      <div class="bl-num">⑤ 框架接线</div>
+      <div class="bl-t">抄底框架</div>
+      <div class="bl-s">推理链的输出：何时框架有效、何时失效</div>
+    </div>
+    <div class="band-nodes">
+      <div class="node" id="n-ok">
+        <div class="nt">✓ 有效条件</div>
+        <div class="nd">跌自情绪/资金面 + <b>公式未换</b> + 标的提前在「池子」研究过——研究过的才敢下手。</div>
+        <div class="nc mono">04-23 · :377 ｜ 07-28 · :931</div>
+      </div>
+      <div class="node" id="n-f1">
+        <div class="nt">✗ 失效① 系统性去杠杆</div>
+        <div class="nd">无差别强平，「跌穿业绩前」之后继续跌穿——先识别 forced selling 结束再动手。</div>
+        <div class="nc mono">02-09 · :168</div>
+      </div>
+      <div class="node" id="n-f2">
+        <div class="nt">✗ 失效② 负叙事未证伪</div>
+        <div class="nd">市场定价生存概率（「会不会被 AI 整死」）——「业绩好都没用」，估值不构成底。</div>
+        <div class="nc mono">04-13 · :337</div>
+      </div>
+      <div class="node" id="n-f3">
+        <div class="nt">✗ 失效③ 现金流定价</div>
+        <div class="nd">分母换成 capex/FCF 后，利润表催化剂失效——<span class="hl">跌穿也不反弹</span>。</div>
+        <div class="nc mono">07-24 · :896</div>
+      </div>
+      <div class="node note" id="n-exec">
+        <div class="nt">执行纪律（不参与推理）</div>
+        <div class="nd">不赌财报（08-12 祖训）；财报后出手；等跌穿业绩公布前；买还没涨回去的 1/2。</div>
+        <div class="nc mono">08-12 · :1074 ｜ 07-28 · :931</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="summary">
+    <b>读图一句话：</b>①传感器发现「利好不再推升股价」→ ②判定层确认市场从「需求真不真」换题到「谁来付钱」→ ③<span class="hl">⚡ 边际触发</span>（capex↑+FCF↓ / 叙事资金退潮 / 终端付费证伪 / 杠杆挤压）完成分母切换 → ④只杀估值不杀盈利，路口分叉 → ⑤框架仅在「跌自情绪资金面且公式未换」时有效；三种失效分别换掉了「业绩好」对应的反弹催化剂。
+  </div>
+</div>
+
+<footer>
+  <div class="legend">
+    <span><i class="dot" style="background:var(--sensor)"></i>① 传感器（输入）</span>
+    <span><i class="dot" style="background:var(--judge)"></i>② 判定逻辑</span>
+    <span><i class="dot" style="background:var(--trigger)"></i>③ ⚡ 边际触发（分母切换触发器）</span>
+    <span><i class="dot" style="background:var(--result)"></i>④ 输出 / 价格行为</span>
+    <span><i class="dot" style="background:var(--frame)"></i>⑤ 抄底框架接线</span>
+    <span style="color:var(--dim)">连线颜色 = 来源阶段；虚线卡 = 纪律/检查表</span>
+  </div>
+  <div>数据可得性：✅ 公开可复现——margin debt、期权 IV/skew、信用利差、breadth、实物现货价；❌ 无公开数据源——CTA 仓位、token 需求序列、机构杠杆（Herman 指标清单标 ❌ 项）。</div>
+  <div>来源：Herman Jin X 语料（x-archive 快照 posts/replies.jsonl，行号即本地截断行）；板块级归因引自本仓 INTC 深研增量核验件（2026-10-09）。</div>
+  <div class="disclaimer">本图为语料观点结构化整理 + 本工作区归纳，用于理解推理链，不构成投资建议。KOL 个人观点标记为 [D] 级证据；10-08 板块归因为媒体/数据商来源 [B]/[C]。</div>
+</footer>
+
+<script>
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  var COLORS={sensor:'#3ec6b8',judge:'#8b7cf6',trigger:'#f5a524',result:'#f2637f',frame:'#4cc38a'};
+
+  /* 推理链（仅相邻阶段之间的垂直流）: ①→②→③→④→⑤ */
+  var EDGES=[
+    {f:'root',      t:'n-react',      c:'sensor'},
+    {f:'n-react',   t:'n-old',        c:'sensor', l:'利好不再产生旧映射'},
+    {f:'n-react',   t:'n-new',        c:'sensor', l:'反射弧断了'},
+    {f:'n-physical',t:'n-old',        c:'sensor'},
+    {f:'n-option',  t:'n-switch',     c:'sensor', l:'平仓信号确认'},
+    {f:'n-people',  t:'n-new',        c:'sensor'},
+    {f:'n-switch',  t:'n-capex',      c:'judge',  l:'换题：谁付钱'},
+    {f:'n-new',     t:'n-money',      c:'judge',  l:'现金流定价'},
+    {f:'n-capex',   t:'n-kill',       c:'trigger',l:'分子没崩，分母换'},
+    {f:'n-money',   t:'n-kill',       c:'trigger'},
+    {f:'n-openai',  t:'n-kill',       c:'trigger'},
+    {f:'n-squeeze', t:'n-branch',     c:'trigger',l:'强平 or 基本面？'},
+    {f:'n-squeeze', t:'n-indiscriminate',c:'trigger'},
+    {f:'n-kill',    t:'n-f3',         c:'result', l:'利润表催化剂失效'},
+    {f:'n-branch',  t:'n-ok',         c:'result', l:'momentum 错杀'},
+    {f:'n-branch',  t:'n-f1',         c:'result', l:'公式切换'},
+    {f:'n-branch',  t:'n-f2',         c:'result'},
+    {f:'n-indiscriminate',t:'n-f1',   c:'result', l:'跌穿后继续跌穿'}
+  ];
+
+  var svg=document.getElementById('wires');
+  var canvas=document.getElementById('canvas');
+  var edgeEls=[];
+
+  function rel(el,axis){
+    var r=el.getBoundingClientRect(), c=canvas.getBoundingClientRect();
+    if(axis==='bottom')return {x:r.left+r.width/2-c.left, y:r.bottom-c.top};
+    if(axis==='top')   return {x:r.left+r.width/2-c.left, y:r.top-c.top};
+    if(axis==='right') return {x:r.right-c.left, y:r.top+r.height/2-c.top};
+    return {x:r.left-c.left, y:r.top+r.height/2-c.top};
+  }
+
+  function draw(){
+    svg.querySelectorAll('path.edge,text.edge-label').forEach(function(el){el.remove();});
+    edgeEls=[];
+    EDGES.forEach(function(e,idx){
+      var a=document.getElementById(e.f), b=document.getElementById(e.t);
+      if(!a||!b)return;
+      var from=(e.f==='root')?rel(a,'bottom'):rel(a,'bottom');
+      var to=(e.t==='n-react')?rel(b,'top'):rel(b,'top');
+      var dy=Math.max(30,(to.y-from.y)*0.55);
+      var d='M '+from.x+' '+from.y+' C '+from.x+' '+(from.y+dy)+', '+to.x+' '+(to.y-dy)+', '+to.x+' '+to.y;
+      var p=document.createElementNS(NS,'path');
+      p.setAttribute('d',d);
+      p.setAttribute('class','edge');
+      p.setAttribute('stroke',COLORS[e.c]);
+      p.setAttribute('marker-end','url(#arr-'+e.c+')');
+      svg.appendChild(p);
+      var rec={path:p,label:null,f:e.f,t:e.t};
+      if(e.l){
+        var len=p.getTotalLength();
+        var pt=p.getPointAtLength(len*0.5);
+        var jitter=([-16,0,16])[idx%3];
+        var tx=document.createElementNS(NS,'text');
+        tx.setAttribute('x',pt.x);
+        tx.setAttribute('y',pt.y+jitter);
+        tx.setAttribute('text-anchor','middle');
+        tx.setAttribute('class','edge-label');
+        tx.textContent=e.l;
+        svg.appendChild(tx);
+        rec.label=tx;
+      }
+      edgeEls.push(rec);
+    });
+  }
+
+  function clearFocus(){
+    svg.classList.remove('focus');
+    edgeEls.forEach(function(e){
+      e.path.classList.remove('lit');
+      if(e.label)e.label.classList.remove('lit');
+    });
+    document.querySelectorAll('.node.lit').forEach(function(n){n.classList.remove('lit');});
+  }
+
+  function focus(id){
+    clearFocus();
+    svg.classList.add('focus');
+    edgeEls.forEach(function(e){
+      if(e.f===id||e.t===id){
+        e.path.classList.add('lit');
+        if(e.label)e.label.classList.add('lit');
+        var other=document.getElementById(e.f===id?e.t:e.f);
+        if(other&&other.classList.contains('node'))other.classList.add('lit');
+      }
+    });
+    var me=document.getElementById(id);
+    if(me&&me.classList.contains('node'))me.classList.add('lit');
+  }
+
+  window.addEventListener('load',draw);
+  window.addEventListener('resize',draw);
+  setTimeout(draw,400);
+
+  document.querySelectorAll('.node,#root').forEach(function(n){
+    if(!n.id)return;
+    n.addEventListener('mouseenter',function(){focus(n.id);});
+    n.addEventListener('mouseleave',clearFocus);
+  });
+})();
+</script>
+</body>
+</html>

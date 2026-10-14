@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>美股 AI 产业链 14 只标的 · 近 3 个月投行研报共识梳理（2026-10-10）</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#ffffff; --ink:#1a1d24; --ink2:#4a5160; --ink3:#7b8394;
+    --line:#e5e8ee; --accent:#c0392b; --down:#1f8a5f; --blue:#2b5fa8; --amber:#b5822a;
+    --chip:#eef1f6;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:14px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1180px;margin:0 auto;padding:28px 22px 80px;}
+  header.top{border-bottom:2px solid var(--ink);padding-bottom:16px;margin-bottom:22px;}
+  h1{font-size:25px;margin:0 0 6px;letter-spacing:-.3px;}
+  .sub{color:var(--ink3);font-size:13px;}
+  h2{font-size:19px;margin:38px 0 12px;padding-left:10px;border-left:4px solid var(--accent);}
+  h3{font-size:16px;margin:26px 0 8px;}
+  h4{font-size:13.5px;margin:16px 0 6px;color:var(--ink2);letter-spacing:.3px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:14px 0;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  @media(max-width:820px){.grid2,.grid3{grid-template-columns:1fr;}}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;}
+  .kpi .lab{font-size:12px;color:var(--ink3);}
+  .kpi .val{font-size:22px;font-weight:700;margin:4px 0 2px;letter-spacing:-.5px;}
+  .kpi .note{font-size:12px;color:var(--ink3);}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin:10px 0;}
+  th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:right;}
+  th:first-child,td:first-child{text-align:left;}
+  thead th{background:#f2f4f8;color:var(--ink2);font-weight:600;font-size:12.5px;border-bottom:1px solid #d9dee7;}
+  tbody tr:hover{background:#fafbfd;}
+  .up{color:var(--accent);font-weight:600;}
+  .dn{color:var(--down);font-weight:600;}
+  .code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:600;}
+  .tag{display:inline-block;padding:1px 7px;border-radius:999px;font-size:11.5px;background:var(--chip);color:var(--ink2);margin-right:4px;}
+  .tag.buy{background:#fdecea;color:#a8342a;}
+  .tag.hold{background:#f3f0e6;color:#8a6d24;}
+  .tag.sell{background:#e8f4ef;color:#16624a;}
+  ul{margin:6px 0 6px;padding-left:20px;}
+  li{margin:3px 0;}
+  .src{font-size:11.5px;color:var(--ink3);margin-top:6px;}
+  .box{border-left:3px solid var(--blue);background:#f4f7fc;padding:10px 14px;border-radius:0 8px 8px 0;margin:10px 0;font-size:13px;}
+  .box.warn{border-color:var(--amber);background:#fbf7ee;}
+  .chartbox{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px 4px;margin:14px 0;}
+  .chart{width:100%;height:400px;}
+  footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--ink3);}
+  .disc{background:#fdf6f5;border:1px solid #f0d5d1;border-radius:10px;padding:14px 16px;font-size:12.5px;color:#6b3a34;margin-top:20px;}
+  .legend-note{font-size:11.5px;color:var(--ink3);margin-top:-4px;}
+  /* 口径标签 */
+  .tk{display:inline-block;padding:0 5px;border-radius:3px;font-size:10.5px;margin:0 2px;font-weight:600;letter-spacing:.2px;white-space:nowrap;}
+  .tk.a{background:#e8f4ef;color:#16624a;}
+  .tk.n{background:#f3f0e6;color:#8a6d24;}
+  .tk.f{background:#eef1f6;color:#4a5160;}
+  .tk.u{background:#fdecea;color:#a8342a;}
+  .tk.g{background:#fdecea;color:#a8342a;}
+  /* 纯 CSS 柱状图（无 JS 依赖） */
+  .bars{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+  @media(max-width:820px){.bars{grid-template-columns:1fr;}}
+  .brow{display:grid;grid-template-columns:52px 1fr 62px;align-items:center;gap:8px;margin:4px 0;}
+  .blab{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:600;font-size:12px;color:var(--ink2);text-align:right;}
+  .btrack{position:relative;height:15px;background:#f0f2f6;border-radius:3px;}
+  .bfill{position:absolute;top:0;height:15px;border-radius:3px;}
+  .bfill.pos{background:#c0392b;}
+  .bfill.neg{background:#1f8a5f;}
+  .bzero{position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:#c3c9d4;}
+  .bval{font-size:11.5px;text-align:right;font-variant-numeric:tabular-nums;}
+  .bhead{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-bottom:6px;}
+  @media(max-width:820px){.bhead{grid-template-columns:1fr;}}
+  .bhead .bh{font-size:12.5px;font-weight:600;color:var(--ink2);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>美股 AI 产业链 14 只标的 · 近 3 个月投行研报共识梳理</h1>
+  <div class="sub">数据时点：2026-10-09 美股收盘（行情）／2026-10-10（机构评级整合）&nbsp;·&nbsp;覆盖区间：2026-07-10 ~ 2026-10-10&nbsp;·&nbsp;币种：美元</div>
+  <div class="sub" style="margin-top:6px"><span class="tag buy" style="background:#e8f4ef;color:#16624a">已用本库数据源合集逐条核实</span>westock CLI（行情/三大表）+ NeoData Financial Search（财季财务/机构评级）。核实明细见 <b>第四章 · 数据核实附录</b>；4 处口径问题的<b>成因分析</b>见 <b>第六章</b>；「核实原文」的操作定义见 <b>6.3 节</b>。</div>
+</header>
+
+<!-- ============ 口径标签图例 ============ -->
+<div class="card" style="padding:12px 18px">
+<div style="font-size:12.5px;color:var(--ink2);margin-bottom:6px"><b>口径标签说明</b>（本报告所有数字均带标签，用于区分第六章所述的 6 类差异成因）</div>
+<span class="tk a">实测</span> 数据源已核实（GAAP / 已抵销 / 已披露）
+<span class="tk n">Non-GAAP</span> 调整后口径（已剔除 SBC、摊销、一次性损益）
+<span class="tk n">未抵销</span> 分部毛口径（含内部交易，未减 Eliminations）
+<span class="tk f">预测</span> 分析师模型输出
+<span class="tk f">指引</span> 公司自身 guidance
+<span class="tk u">待核实</span> 数据源未覆盖，需回研报原文
+<div style="font-size:11.5px;color:var(--ink3);margin-top:6px">同一标的内 <span class="tk a">实测</span> 与 <span class="tk n">Non-GAAP</span> 不可直接相减比较；<span class="tk n">未抵销</span> 数值必然高于 <span class="tk a">实测</span> 合并数。</div>
+</div>
+
+<!-- ============ 首屏结论 ============ -->
+<div class="card">
+<h3 style="margin-top:0">一句话结论</h3>
+<ul>
+  <li><b>共识强度分四档</b>：① 高一致看多——<span class="code">AMZN / MSFT / MU / AMD</span>（买入占比 82%~98%，零或近零卖出）；② 看多但有分歧——<span class="code">LITE / SNDK / GLW / ARM / TWST</span>；③ 中性/分歧显著——<span class="code">INTC</span>（持有 ~60%）、<span class="code">NBIS</span>（卖出 8%）、<span class="code">ILMN / TXG</span>（持有 38%、61%）；④ 零卖出评级阵营仅 5 只（AMZN、MSFT、LITE、GLW、AMD）。</li>
+  <li><b>卖方目标价整体跑输股价</b>：14 只美股中有 <b>3 只现价已高于机构目标均价</b>（TWST −5.9%、TXG −13.9%、ILMN −14.7%），全部集中在 AI4S 与生命科学工具——该板块上涨由 AI 叙事与指数纳入驱动，非卖方目标价驱动。</li>
+  <li><b>两条真正的产业主线</b>：① <b>云厂商资本开支 → 存储/光互联紧缺</b>（MU/SNDK 的 DRAM/NAND 长协、LITE/GLW 的光器件缺口 ~30%）；② <b>Agentic AI 重估 CPU</b>（AMD 零卖出、INTC 服务器 CPU 价格同比 +48%）。两条线在"景气能持续多久"上存在共同分歧点，而非"能不能兑现"。</li>
+  <li><b>最被高估的叙事 vs 最被低估的分歧</b>：市场普遍知道"AI 需求强"；尚未充分定价的是 <b>2027–2028 年新产能释放窗口</b>（Wedbush 对 NAND、Goldman 对 MU 均指向 2028 年才实质宽松），以及 <b>云厂商自由现金流被资本开支压负</b>——数据源实测：AMZN 2026Q2 单季 capex 542.08 亿已超 CFO 453.87 亿、单季 FCF <b>−88.21 亿</b>（Q1 为 −181.71 亿）；MSFT 单季 capex 由 170.79 亿一路升至 <b>308.76 亿</b>。<span style="color:#b5822a">原引"AMZN TTM FCF −76 亿 / MSFT FCF 196 亿"本库未直出，已标注待核实。</span></li>
+  <li><b>分歧的结构性来源是"无法用 PE 定价"</b>：NBIS / AAOI / INTC / TWST / TXG 共 5 只 PE(TTM) 为负，只能用 PS / ARR / 分部估值衡量，因此目标价区间跨度普遍超过 2 倍（NBIS 84–410、ARM 130–480、INTC 80–200、TWST 45–215）。</li>
+  <li><b>本次核实最重要的副产品：GAAP 与调整后的落差本身就是信号</b>——三只标的出现"一个口径盈利、另一个口径亏损"：<span class="code">AAOI</span> 调整后 EPS +0.06 vs GAAP −0.2793；<span class="code">NBIS</span> 调整后 EBITDA +2.36 亿 vs GAAP 净亏 1.90 亿；<span class="code">LITE</span> 调整后毛利率 50.4% vs GAAP 46.01%，且 GAAP 全年净亏 69.35 亿<b>全部来自 77.62 亿一次性损益</b>。机构给 87% 买入是在给"调整后口径"定价，而看空方（Rothschild、晨星）盯的是 GAAP 与稀释——<b>双方不一定矛盾，只是在看两张不同的表</b>。</li>
+  <li><b>但落差的性质分三档，不能一概而论（深挖会计科目后的修正）</b>——
+    <b>① 最干净：<span class="code">MU</span></b>，数据源 FY26Q4 <b>非经常性损益 = 0</b>，GAAP 基本 EPS <b>33.36</b> vs Non-GAAP 33.42，<b>差仅 0.2%</b>——它的利润完全来自经营（营业利润率 81.6%），"GAAP vs 调整后"这条争议在 MU 上根本不适用；
+    <b>② 会计减值：<span class="code">LITE</span>（77.62 亿）、<span class="code">INTC</span>（126.74 亿）</b>，巨亏是纸面减值/重组，经营层面未崩；
+    <b>③ 营业外收益：<span class="code">NBIS</span></b>，2025 财年营业利润 <b>−6.117 亿</b>却录得净利 <b>+0.825 亿</b>（SEC 一手 <code>NetIncomeLoss</code>；聚合源误报 0.098 亿）——<b>约 6.94 亿利润来自营业外，质量最差</b>。这直接支撑 Rothschild 给 84 美元、晨星给 150 美元公允价值的看空逻辑。</li>
+  <li><b><span class="code">TWST</span>：指引能否达成取决于尚未披露的 Q4（SEC 一手修正，此前结论已撤回）</b>——SEC 10-Q 显示 FY2026 <b>前三季累计 3.32789 亿美元</b>（Q1 1.037 + Q2 1.107 + Q3 1.184），<b>Q4（截至 2026-09-30）尚未披露</b>。达成指引 4.56–4.57 亿需 Q4 单季 <b>1.237 亿</b>，即环比 Q3 <b>+4.5%</b>、同比去年 Q4（0.990 亿）<b>+25%</b>。<b>此前"全年 4.318 亿、已低于指引 5.5%"已被证伪</b>——该数把 FY2025Q4 的 0.990 亿错加进 FY2026（聚合源自然季标签错位所致）。<b>结论改为"待 Q4 披露后判定"。</b></li>
+  <li><b><span class="code">ARM</span> 与 <span class="code">TXG</span> 的待核实已由 SEC 一手数据解除</b>——ARM FY27Q1（2026-04-01→06-30）营收 <b>12.89 亿美元</b>（6-K），与研报<b>完全一致</b>；TXG 2026Q2 营收 1.51036 亿，SEC 同口径 2025Q2 为 1.72908 亿，<b>同比 −12.65%</b>，与研报 −12.7% <b>精确吻合</b>。<b>两处"数据源未覆盖"实为聚合源滞后，不是研报错。</b></li>
+</ul>
+</div>
+
+<div class="grid3">
+  <div class="kpi"><div class="lab">覆盖标的</div><div class="val">14 只美股</div><div class="note">+ 三星电子（韩国主板，另注）</div></div>
+  <div class="kpi"><div class="lab">共识评级为"买入/强力买入"</div><div class="val">5 只</div><div class="note">AMZN · MSFT · LITE · AMD · TWST</div></div>
+  <div class="kpi"><div class="lab">目标均价隐含上行空间</div><div class="val up">MU +56%<span style="font-size:14px;color:var(--ink3)"> 最高</span></div><div class="note">最低为 TXG/ILMN/TWST（负值）</div></div>
+</div>
+
+<!-- ============ 速览表 ============ -->
+<h2>一、全标的一致性速览</h2>
+<div class="card" style="overflow-x:auto">
+<table>
+<thead><tr>
+  <th>板块</th><th>标的</th><th>2026-10-09 收盘</th><th>覆盖机构数</th><th>目标均价</th><th>隐含空间</th>
+  <th>买入/增持</th><th>持有</th><th>卖出</th><th>共识倾向</th>
+</tr></thead>
+<tbody>
+<tr><td>CLOUD</td><td><span class="code">AMZN</span> 亚马逊</td><td>262.43</td><td>62</td><td>332.78</td><td class="up">+26.8%</td><td>97%</td><td>3%</td><td>0%</td><td>高度一致看多</td></tr>
+<tr><td>CLOUD</td><td><span class="code">MSFT</span> 微软</td><td>535.07</td><td>50</td><td>582.40</td><td class="up">+8.8%</td><td>98%</td><td>2%</td><td>0%</td><td>共识度最高</td></tr>
+<tr><td>CLOUD</td><td><span class="code">NBIS</span> Nebius</td><td>221.07</td><td>21</td><td>289.19</td><td class="up">+30.8%</td><td>65%</td><td>27%</td><td>8%</td><td>分歧明显</td></tr>
+<tr><td>闪存</td><td><span class="code">MU</span> 美光</td><td>1,029.00</td><td>46</td><td>1,602.37</td><td class="up">+55.7%</td><td>93%</td><td>6%</td><td>1%</td><td>强看多</td></tr>
+<tr><td>闪存</td><td><span class="code">SNDK</span> 闪迪</td><td>1,581.82</td><td>26</td><td>2,275.85</td><td class="up">+43.9%</td><td>81%</td><td>16%</td><td>3%</td><td>看多，估值分歧较大</td></tr>
+<tr><td>CPO</td><td><span class="code">AAOI</span> 应用光电</td><td>109.64</td><td>6</td><td>170.50</td><td class="up">+55.5%</td><td>63%</td><td>37%</td><td>0%</td><td>持有（口径分歧大）</td></tr>
+<tr><td>CPO</td><td><span class="code">LITE</span> Lumentum</td><td>1,103.36</td><td>27</td><td>1,163.70</td><td class="up">+5.5%</td><td>87%</td><td>13%</td><td>0%</td><td>买入（趋势向上）</td></tr>
+<tr><td>CPO</td><td><span class="code">GLW</span> 康宁</td><td>156.68</td><td>16</td><td>191.25</td><td class="up">+22.1%</td><td>74%</td><td>26%</td><td>0%</td><td>适度买入</td></tr>
+<tr><td>CPU</td><td><span class="code">AMD</span> 超威</td><td>608.10</td><td>47</td><td>654.37</td><td class="up">+7.6%</td><td>82%</td><td>18%</td><td>0%</td><td>强买入（零卖出）</td></tr>
+<tr><td>CPU</td><td><span class="code">INTC</span> 英特尔</td><td>104.70</td><td>40</td><td>120.83</td><td class="up">+15.4%</td><td>37%</td><td>60%</td><td>3%</td><td>中性偏多（最分裂）</td></tr>
+<tr><td>CPU</td><td><span class="code">ARM</span> 安谋</td><td>266.28</td><td>36</td><td>300.48</td><td class="up">+12.9%</td><td>67%</td><td>29%</td><td>4%</td><td>偏多，估值最高</td></tr>
+<tr><td>AI4S</td><td><span class="code">TWST</span> Twist Bio</td><td>159.78</td><td>12</td><td>150.33</td><td class="dn">−5.9%</td><td>69%</td><td>23%</td><td>8%</td><td>买入共识，股价领先</td></tr>
+<tr><td>AI4S</td><td><span class="code">ILMN</span> Illumina</td><td>278.17</td><td>19</td><td>237.16</td><td class="dn">−14.7%</td><td>46%</td><td>38%</td><td>16%</td><td>持有偏中性</td></tr>
+<tr><td>AI4S</td><td><span class="code">TXG</span> 10x Genomics</td><td>80.65</td><td>15</td><td>69.47</td><td class="dn">−13.9%</td><td>33%</td><td>61%</td><td>6%</td><td>持有，目标价严重滞后</td></tr>
+</tbody>
+</table>
+<div class="src">来源：机构评级整合口径（neodata，更新于 2026-10-10 23:27 CST）；行情为 2026-10-09 美股收盘。评级占比为 2026-10 月度口径。目标均价为各数据源聚合值，与 TipRanks/StockAnalysis/S&amp;P 等第三方口径存在差异，下文逐只标注。隐含空间 = 目标均价 ÷ 10-09 收盘价 − 1。</div>
+</div>
+
+<!-- ============ 图 ============ -->
+<div class="chartbox">
+  <h4 style="margin:0 0 2px">图 1：机构目标均价隐含空间（左）／共识强度——买入·增持机构占比（右）</h4>
+  <div class="legend-note">左图以 0 为中轴（灰竖线），<span class="up">红＝正隐含空间</span>、<span class="dn">绿＝负隐含空间</span>（依中式配色习惯）；右图数值为 2026-10 月度"买入/增持"机构占比，红≥80%、琥珀 60–79%、灰&lt;60%。</div>
+  <div class="bhead">
+    <div class="bh">隐含上行空间（目标均价 ÷ 10-09 收盘 − 1）</div>
+    <div class="bh">买入/增持机构占比（2026-10）</div>
+  </div>
+  <div class="bars">
+    <div>
+      <div class="brow"><span class="blab">MU</span><div class="btrack"><span class="bzero"></span><div class="bfill pos" style="left:50%;width:50.00%"></div></div><span class="bval up">+55.7%</span></div>
+      <div class="brow"><span class="blab">AAOI</span><div class="btrack"><span class="bzero"></span><div class="bfill pos" style="left:50%;width:49.82%"></div></div><span class="bval up">+55.5%</span></div>
+      <div class="brow"><span class="blab">SNDK</span><div class="btrack"><span class="bzero"></span><div class="bfill pos" style="left:50%;width:39.41%"></div></div><span class="bval up">+43.9%</span></div>
+      <div class="brow"><span class="blab">NBIS</span><div class="btrack"><span class="bzero"></span><div class="bfill pos" style="left:50%;width:27.65%"></div></div><span class="bval up">+30.8%</span></div>
+      <div class="brow"><span class="blab">AMZN</span><div class="btrack"><span class="bzero"></span><div class="bfill pos" style="left:50%;width:24.06%"></div></div><span class="bval up">+26.8%</span></div>
+      <div class="brow"><span class="blab">GLW</span><div class="btrack"><span class="bzero"></span><div class="bfill pos" style="left:50%;width:19.84%"></div></div><span class="bval up">+22.1%</span></div>
+      <div class="brow"><span class="blab">INTC</span><div class="btrack"><span class="bzero"></span><div class="bfill pos" style="left:50%;width:13.82%"></div></div><span class="bval up">+15.4%</span></div>
+      <div class="brow"><span class="blab">ARM</span><div class="btrack"><span class="bzero"></span><div class="bfill pos" style="left:50%;width:11.58%"></div></div><span class="bval up">+12.9%</span></div>
+      <div class="brow"><span class="blab">MSFT</span><div class="btrack"><span class="bzero"></span><div class="bfill pos" style="left:50%;width:7.90%"></div></div><span class="bval up">+8.8%</span></div>
+      <div class="brow"><span class="blab">AMD</span><div class="btrack"><span class="bzero"></span><div class="bfill pos" style="left:50%;width:6.82%"></div></div><span class="bval up">+7.6%</span></div>
+      <div class="brow"><span class="blab">LITE</span><div class="btrack"><span class="bzero"></span><div class="bfill pos" style="left:50%;width:4.94%"></div></div><span class="bval up">+5.5%</span></div>
+      <div class="brow"><span class="blab">TWST</span><div class="btrack"><span class="bzero"></span><div class="bfill neg" style="left:44.70%;width:5.30%"></div></div><span class="bval dn">−5.9%</span></div>
+      <div class="brow"><span class="blab">TXG</span><div class="btrack"><span class="bzero"></span><div class="bfill neg" style="left:37.52%;width:12.48%"></div></div><span class="bval dn">−13.9%</span></div>
+      <div class="brow"><span class="blab">ILMN</span><div class="btrack"><span class="bzero"></span><div class="bfill neg" style="left:36.80%;width:13.20%"></div></div><span class="bval dn">−14.7%</span></div>
+    </div>
+    <div>
+      <div class="brow"><span class="blab">MSFT</span><div class="btrack"><div class="bfill pos" style="left:0;width:98%"></div></div><span class="bval">98%</span></div>
+      <div class="brow"><span class="blab">AMZN</span><div class="btrack"><div class="bfill pos" style="left:0;width:97%"></div></div><span class="bval">97%</span></div>
+      <div class="brow"><span class="blab">MU</span><div class="btrack"><div class="bfill pos" style="left:0;width:93%"></div></div><span class="bval">93%</span></div>
+      <div class="brow"><span class="blab">LITE</span><div class="btrack"><div class="bfill pos" style="left:0;width:87%"></div></div><span class="bval">87%</span></div>
+      <div class="brow"><span class="blab">AMD</span><div class="btrack"><div class="bfill pos" style="left:0;width:82%"></div></div><span class="bval">82%</span></div>
+      <div class="brow"><span class="blab">SNDK</span><div class="btrack"><div class="bfill pos" style="left:0;width:81%"></div></div><span class="bval">81%</span></div>
+      <div class="brow"><span class="blab">GLW</span><div class="btrack"><div class="bfill" style="left:0;width:74%;background:#b5822a"></div></div><span class="bval">74%</span></div>
+      <div class="brow"><span class="blab">TWST</span><div class="btrack"><div class="bfill" style="left:0;width:69%;background:#b5822a"></div></div><span class="bval">69%</span></div>
+      <div class="brow"><span class="blab">ARM</span><div class="btrack"><div class="bfill" style="left:0;width:67%;background:#b5822a"></div></div><span class="bval">67%</span></div>
+      <div class="brow"><span class="blab">NBIS</span><div class="btrack"><div class="bfill" style="left:0;width:65%;background:#b5822a"></div></div><span class="bval">65%</span></div>
+      <div class="brow"><span class="blab">AAOI</span><div class="btrack"><div class="bfill" style="left:0;width:63%;background:#b5822a"></div></div><span class="bval">63%</span></div>
+      <div class="brow"><span class="blab">ILMN</span><div class="btrack"><div class="bfill" style="left:0;width:46%;background:#7b8394"></div></div><span class="bval">46%</span></div>
+      <div class="brow"><span class="blab">INTC</span><div class="btrack"><div class="bfill" style="left:0;width:37%;background:#7b8394"></div></div><span class="bval">37%</span></div>
+      <div class="brow"><span class="blab">TXG</span><div class="btrack"><div class="bfill" style="left:0;width:33%;background:#7b8394"></div></div><span class="bval">33%</span></div>
+    </div>
+  </div>
+  <div class="src" style="padding-bottom:8px">来源：机构评级整合口径（neodata，2026-10-10 23:27 CST）；行情 2026-10-09 美股收盘。</div>
+</div>
+
+<!-- ============ 分组明细 ============ -->
+<h2>二、逐只标的：共识观点与数据支撑</h2>
+
+<!-- ===== CLOUD ===== -->
+<h3>▎CLOUD 板块</h3>
+
+<div class="card">
+<h4>AMZN 亚马逊 · 262.43 美元 <span class="tag buy">买入/增持 97%</span><span class="tag">目标均价 332.78（62 家）</span><span class="tag">隐含 +26.8%</span></h4>
+<h4 style="color:#a8342a">共识多头论据</h4>
+<ul>
+  <li><b>AWS 增速重新加速是核心</b>：FY26Q2（8 月初披露）AWS 同比约 <b>+37%</b>，为 18 个季度最快；摩根大通（10/5，买入，目标价 350）预计 Q3 AWS 同比从 37% 进一步加速至 <b>约 +41%</b>，对应 Q3 营收约 2,020 亿美元、经营利润约 276 亿美元（较市场一致预期高约 6%）。</li>
+  <li><b>广告与自研芯片构成第二/第三引擎</b>：广告单季约 <b>198 亿美元、同比 +26%</b>；自研芯片年化收入约 <b>250 亿美元</b>。</li>
+  <li><b>AI 广告工具转化率验证</b>：Cantor Fitzgerald（9/28，增持，320）援引 unBoxed 2026 大会数据，Full-Funnel Campaigns 测试期长期 ROAS 提升 <b>67%</b>。</li>
+</ul>
+<h4 style="color:var(--down)">共识分歧点</h4>
+<ul>
+  <li><b>资本开支吞噬自由现金流</b> <span class="tk a">实测</span>：2026Q2 单季 capex <b>542.08 亿美元</b>已<b>超过</b>同期经营现金流 453.87 亿，单季自由现金流 <b>−88.21 亿</b>（Q1 亦为 −181.71 亿），数据源 TTM 口径合计 <b>−116.25 亿</b>。年资本开支指引约 2,000 亿美元 <span class="tk f">指引</span>。<span class="tk u">待核实</span>研报口径的"TTM FCF −76 亿"与数据源 −116.25 亿差 40.25 亿，源于 capex 定义分歧（第六章 ④）——<b>但"FCF 转负"这一结论在任何定义下都成立</b>。</li>
+  <li><b>"AI 侵蚀广告经济性"</b>：Rosenblatt（9/30，买入，360）明确反驳该担忧被高估——即该论点本身已构成市场分歧。</li>
+</ul>
+<h4>近 3 个月关键投行动作</h4>
+<table>
+<thead><tr><th>日期</th><th>机构</th><th>动作</th><th>目标价</th><th>核心理由</th></tr></thead>
+<tbody>
+<tr><td>2026-10-06</td><td>Tigress Financial</td><td>上调</td><td>315 → <b>385</b></td><td>AWS 需求超供给，2027 年产能已大量被预订</td></tr>
+<tr><td>2026-10-05</td><td>摩根大通</td><td>维持买入</td><td>350</td><td>Q3 营收/营业利润高于一致预期约 6%，AWS 加速至 ~41%</td></tr>
+<tr><td>2026-10-01</td><td>Wells Fargo</td><td>维持增持</td><td>338</td><td>AWS 定价能力（GPU 预留价格年内第 4 次上调）</td></tr>
+<tr><td>2026-09-30</td><td>Rosenblatt</td><td>维持买入</td><td>→ 360</td><td>"AI 侵蚀广告"担忧被高估</td></tr>
+<tr><td>2026-09-28</td><td>Cantor Fitzgerald</td><td>重申增持</td><td>320</td><td>AI 广告工具 ROAS +67%</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="card">
+<h4>MSFT 微软 · 535.07 美元 <span class="tag buy">买入/增持 98%</span><span class="tag">目标均价 582.40（50 家）</span><span class="tag">隐含 +8.8%</span></h4>
+<h4 style="color:#a8342a">共识多头论据</h4>
+<ul>
+  <li><b>Azure 加速＋首次突破千亿</b>：FY26Q4（7/29 披露）Azure 同比 <b>+43%</b>（Q3 为 39%），全年 Azure 收入首破 1,000 亿美元至 <b>1,019 亿</b>；微软云收入 593 亿、同比 +27%；当季营收 900 亿、同比 +18%，经营利润 406 亿、同比 +18%。</li>
+  <li><b>Copilot 席位与 RPO 验证 AI 变现</b>：M365 Copilot 付费席位超 <b>3,000 万</b>（净增环比翻倍），RPO 同比 <b>+84%</b>（美银，9/1，买入，500→600，基于 28x CY27 P/E）。</li>
+  <li><b>11 只标的中评级共识度最高</b>：近 6 个月买入占比 95%→98%，10 月零持有以外评级为零卖出。</li>
+  <li><b>授权与计费模式打开第二曲线</b>：Piper Sandler（9/30，增持，550→610）测算 E5→E7 每 10% 席位迁移带来约 <b>20 亿美元</b>年化收入；Copilot/Cowork 按用量计费有望在 FY2028 达 20 亿美元年化跑率。</li>
+</ul>
+<h4 style="color:var(--down)">共识分歧点</h4>
+<ul>
+  <li><b>毛利率 vs 资本开支</b> <span class="tk a">实测</span>／<span class="tk u">待核实</span>：营收 <b>900.07 亿</b>与营业利润 <b>406.03 亿</b>已由数据源确认；<b>可核实的压力来自 capex 单季序列 170.79 → 193.94 → 298.76 → 308.76 亿美元的单调上行</b>（不到一年翻倍）。<span class="tk u">待核实</span>"资本开支激增 110%""FCF 196 亿、同比 −23%"两数本库未直出该财季口径（第六章 ④）；Morningstar 对 AI 数据中心压低毛利率的警示属第三方观点。</li>
+  <li><b>目标价上行空间最窄（+8.8%）</b>：股价被认为已较充分反映乐观预期；Stifel 的评级上调（持有→买入）恰恰说明此前分歧在"是否已太贵"。</li>
+</ul>
+<h4>近 3 个月关键投行动作</h4>
+<table>
+<thead><tr><th>日期</th><th>机构</th><th>动作</th><th>目标价</th><th>核心理由</th></tr></thead>
+<tbody>
+<tr><td>2026-09-30</td><td>Piper Sandler</td><td>维持增持</td><td>550 → <b>610</b></td><td>"Super App"、E7 企业授权、Copilot 用量计费</td></tr>
+<tr><td>2026-09-22/23</td><td>Stifel</td><td><b>持有 → 买入</b></td><td>530 → <b>575</b></td><td>LLM-agnostic 策略、OpenAI 合约修订取消分成支出、资本开支纪律</td></tr>
+<tr><td>2026-09-23</td><td>Oppenheimer</td><td>维持跑赢大盘</td><td>515 → 570</td><td>Azure 与 M365 商业版 FY2027 有望加速</td></tr>
+<tr><td>2026-09-03</td><td>摩根士丹利</td><td>维持增持</td><td>600</td><td>FY27 分部重组提升业务可见度</td></tr>
+<tr><td>2026-09-01</td><td>美银证券</td><td>维持买入</td><td>500 → <b>600</b></td><td>28x CY27 P/E；Azure 43%→指引 45%</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="card">
+<h4>NBIS Nebius · 221.07 美元 <span class="tag hold">买入 65% / 持有 27% / 卖出 8%</span><span class="tag">目标均价 289.19（21 家）</span><span class="tag">隐含 +30.8%</span></h4>
+<div class="box warn"><b>本篇是 14 只标的中目标价分歧最大的一只</b>：区间 84~410 美元（相差近 5 倍），且是 CLOUD 三只中唯一存在明确"卖出"阵营的标的（8%）；现价 221.07 处于区间中下部。</div>
+<h4 style="color:#a8342a">共识多头论据</h4>
+<ul>
+  <li><b>营收爆发式增长</b> <span class="tk a">实测</span>：Q2（8/12 披露）营收 <b>5.823 亿美元</b>（数据源 582.30 百万，完全一致）、同比 <b>+454%</b>；其中 AI 云收入 5.749 亿（占 98%）、同比 <b>+514%</b>；毛利率 32.46%。</li>
+  <li><b>盈利质量：GAAP 与调整后的巨大落差</b> <span class="tk a">实测</span>／<span class="tk n">Non-GAAP</span>：调整后 EBITDA <b>+2.362 亿</b>（去年同期为亏损 0.21 亿）——但这是 <b>Non-GAAP</b>；<b>GAAP 口径 Q2 净亏 1.904 亿美元、BasicEPS −0.6791</b>。<span class="tk u">待核实</span>坊间流传的"实际 EPS −0.12"需剔除约 1.58 亿非经常项目才成立（第六章 ②）。<b>旁证调整幅度之大</b>：2026-03-31 期净利 <b>+6.212 亿</b> → 06-30 期 <b>−1.904 亿</b>，单季摆动近 8 亿。这正是 Rothschild 与晨星看空逻辑（"高利润依赖暂时性供需失衡"）的数据基础。</li>
+  <li><b>ARR 与订单能见度</b>：年化营收跑率（ARR）由 3 月的 19 亿升至 6 月末的 <b>30 亿美元</b>；9 月 Palantir 将其列为"首选主权 AI 基础设施伙伴"，公司称新增产能"上线即售罄"。BNP Paribas（9/24，中性→跑赢，260→<b>399</b>）认为其 2027 年底可接近 <b>220 亿美元</b>年化经常性收入。</li>
+  <li><b>机构覆盖密集上修</b>：三季度为该股首次覆盖潮（Rosenblatt 10/8 买入 304、Truist 9/9 买入 355、高盛买入 286→328、Baird 250→340、Northland 248→410）。</li>
+</ul>
+<h4 style="color:var(--down)">共识空头论据（Rothschild &amp; Co / 晨星）</h4>
+<ul>
+  <li>Rothschild &amp; Co（9/21，首次覆盖"<b>卖出</b>"，目标价 <b>84</b>，较现价 −62%）为全场最低。</li>
+  <li>晨星给出的公允价值为 <b>150 美元</b>，逻辑是未来五年近 <b>300 亿美元</b>现金消耗将带来剧烈股权稀释，且高利润依赖暂时性 GPU 供需失衡（GPU 现货租赁费率年内翻三倍，管理层已转向 3–6 个月短约策略捕捉价格峰值）。</li>
+  <li>估值口径：尚未盈利，PE(TTM) 为负，只能以 ARR/PS 衡量——这是分歧的结构性来源。</li>
+</ul>
+</div>
+
+<!-- ===== 闪存 ===== -->
+<h3>▎闪存（DRAM / NAND）板块</h3>
+
+<div class="card">
+<h4>MU 美光 · 1,029.00 美元 <span class="tag buy">买入/增持 93%</span><span class="tag">目标均价 1,602.37（46 家）</span><span class="tag">隐含 +55.7%</span></h4>
+<h4 style="color:#a8342a">共识多头论据</h4>
+<ul>
+  <li><b>FY26Q4 业绩"收入大超、利润率略逊"</b> <span class="tk a">实测</span>（报告期 2026-Q4，统计截止 <b>2026-09-03</b>）：营收 <b>542.29 亿美元</b>（环比 +30.8%，超 consensus 约 5%）；<b>GAAP</b> 毛利率 <b>86.76%</b>、稀释 EPS <b>32.87</b>、单季净利 377.01 亿、单季自由现金流 <b>328.63 亿</b>。FY26 全年：营收 <b>1,331.88 亿</b>、净利 849.69 亿。<span class="tk n">Non-GAAP</span> 毛利率 <b>87%</b>、EPS <b>33.42</b>（预期 31.57–31.72）——<b>两组数字都对，只是口径不同，不要混用</b>。</li>
+  <li><b>指引</b> <span class="tk f">指引</span>：FY27Q1 营收 <b>615±15 亿美元</b>、Non-GAAP EPS <b>38.15±1 美元</b>，均大幅超一致预期（注意：这是公司 guidance，不是已实现值）。</li>
+  <li><b>长协锁定景气长度</b>：已签 <b>26 份 SCA 战略客户协议</b>，覆盖至 2030 年约 <b>35%</b> 营收，其中 2027 年约 <b>75% 产能已售出</b>；客户预付款约 <b>320 亿美元</b>、剩余履约义务约 <b>1,500 亿美元</b>（上季为 16 份 SCA / 220 亿预付款）。</li>
+  <li><b>"景气高度 → 景气长度"的框架切换</b>：摩根士丹利（10/2，增持，1,200）指出公司已将定性供需指引延伸至 <b>2028 年</b>，预计 2027–2028 年供需比 2026 年更紧；上调 FY27 收入/EPS 至 2,810 亿美元 / 182.52 美元，FY28 EPS 225.09 美元，测算到 2028 年底累计盈利接近当前市值一半。</li>
+  <li><b>股东回报拐点</b>：计划自 2026-12-09 起提高资本回报力度（届时不再受 CHIPS 法案回购限制），并预计长期将 100% 超额现金返还股东（DA Davidson，10/7，买入，2,100→<b>3,000</b>，为华尔街最高，对应约 19x FY27E 盈利）。</li>
+</ul>
+<h4 style="color:var(--down)">共识分歧点</h4>
+<ul>
+  <li><b>毛利率可持续性</b>：Non-GAAP 毛利率已达 87%，进一步上行空间有限（华泰，10/1，买入，目标价 1,800→<b>1,600</b>，主题"景气高度或已兑现，景气长度仍待验证"）；营业利润率 80.7% 低于 Bernstein 预估 2.3pct，主因员工激励薪酬在费用与销货成本两端挤占。</li>
+  <li><b>NAND 持续性弱于 DRAM</b>：华泰明确警示 NAND 面临更大挑战（铠侠/闪迪供给协同、长江存储扩产）；高盛（10/2 及 10/10，中性，1,100→<b>1,250</b>）虽上调目标价，但认为最早至 <b>2028 年</b>才会出现有意义的市场宽松。</li>
+  <li><b>历史目标价大幅滞后</b>：华兴证券 361 美元、Melius 700 美元等更早期目标价已远低于现价，说明卖方定价被行情持续倒逼。</li>
+</ul>
+<h4>近 3 个月关键投行动作</h4>
+<table>
+<thead><tr><th>日期</th><th>机构</th><th>评级</th><th>目标价</th><th>核心判断</th></tr></thead>
+<tbody>
+<tr><td>2026-10-10</td><td>国泰海通</td><td>季度点评</td><td>—</td><td>27–28 年供需持续偏紧，HBM 提价与股东回报为新催化</td></tr>
+<tr><td>2026-10-07/10</td><td>DA Davidson</td><td>买入</td><td>2,100 → <b>3,000</b></td><td>AI 将内存从周期商品变为"任务关键元件"；2027–2028 需求均超供给</td></tr>
+<tr><td>2026-10-10</td><td>高盛</td><td><b>中性</b></td><td>1,100 → 1,250</td><td>新签 10 份长协约占至 FY30 收入 35%，75% 含结构化定价；2028 年才实质宽松</td></tr>
+<tr><td>2026-10-02</td><td>摩根士丹利</td><td>增持</td><td>1,200</td><td>指引延伸至 2028 年，2027–2028 供需更紧</td></tr>
+<tr><td>2026-10-01</td><td>Bernstein</td><td>跑赢大盘</td><td>1,300</td><td>NAND ASP 环比 +约 30%（原预测 18%），看不到短缺终点</td></tr>
+<tr><td>2026-10-01</td><td>华泰证券</td><td>买入</td><td>1,800 → 1,600</td><td>景气长度待验证；估值倍数下调至 9.5x FY27E（前值 11.7x）</td></tr>
+</tbody>
+</table>
+<div class="src">注：机构聚合目标均价 1,602.37 美元显著高于 TipRanks/其他口径（约 1,469–1,564 美元），因覆盖机构数与更新时点不同。</div>
+</div>
+
+<div class="card">
+<h4>SNDK 闪迪 · 1,581.82 美元 <span class="tag buy">买入/增持 81%</span><span class="tag">目标均价 2,275.85（26 家）</span><span class="tag">隐含 +43.9%</span></h4>
+<h4 style="color:#a8342a">共识多头论据</h4>
+<ul>
+  <li><b>纯 NAND / 数据中心 SSD 弹性标的</b>：数据中心收入约 30 亿美元、占比约 38%，管理层预计可升至 <b>50%</b>；AI 数据中心将 KV cache 卸载至 SSD 的需求被花旗（10/1–10/2，买入，2,100）视为具持续性的关键驱动。</li>
+  <li><b>NBM 长协提供"价格保护"</b>：已签 <b>8 份 NBM 长协</b>，最低定价合计约 <b>939 亿美元</b>，覆盖 FY27 约一半、FY28 约三分之二的位元需求，含 <b>165 亿美元</b>财务担保及价格上下限（Bernstein，9/29，跑赢大盘，目标价 <b>3,000</b>，为华尔街最高）。</li>
+  <li><b>已披露实际值</b> <span class="tk a">实测</span>（FY26Q4，截至 2026-07-03）：营收 <b>89.65 亿美元</b>、毛利率 <b>84.57%</b>、营业利润 70.37 亿、摊薄 EPS <b>43.97</b>；FY26 全年营收 <b>202.48 亿</b>、净利 114.33 亿。<b>关键</b>：花旗"毛利率升至 84%"是 FY27E 预测，而 <b>实测 FY26Q4 已达 84.57%——预测已被实际追平</b>（第六章 ⑤）。</li>
+  <li><b>盈利预测与估值</b> <span class="tk f">预测</span>：花旗 FY27E EPS <b>205.36 美元</b>、营收 <b>466.79 亿</b>（<b>较 FY26 实际 202.48 亿需 +130%</b>）、毛利率 84%，目标价对应 9x FY27E PE（高于同行 6–8x，源于长协确定性溢价）；Rosenblatt 预计 FY30 调整后 EPS 约 300 美元。<span class="tk u">待核实</span>8 份 NBM 长协"最低定价合计约 939 亿美元"、数据中心收入占比 38%、管理层预计升至 50% <span class="tk f">指引</span>——均属研报与公司口径，数据源未覆盖。</li>
+  <li><b>股东回报力度强</b>：上季自由现金流利润率超 55%，单季回购 45 亿美元，剩余回购额度约 145 亿美元。</li>
+</ul>
+<h4 style="color:var(--down)">共识分歧点</h4>
+<ul>
+  <li><b>持有阵营占比 16%（高于美光）</b>：Wells Fargo 持有 1,550、RBC 持有 1,600，估值分歧大于美光。</li>
+  <li><b>产能释放时间窗口</b>：Wedbush 警示 <b>2027 年底至 2028 年</b>为潜在风险窗口（新制造产能可能释放可观供给），且价格涨幅已开始趋缓。</li>
+  <li><b>企业级份额与竞争</b>：花旗列三大下行风险——企业级份额不及预期、宏观恶化、供需失衡或同业竞争引发价格战；香橼曾于 2026-02 做空（认为供应紧张是"海市蜃楼"）。</li>
+</ul>
+<div class="box"><b>下一个关键催化：2026-10-29 财报</b>。华尔街预期 EPS <b>43.12 美元</b>（去年同期 1.22）、营收 <b>104.7 亿美元</b>（去年同期 23.1 亿），当前 PE 约 24x。</div>
+</div>
+
+<div class="box warn" style="margin-bottom:0">
+<b>关于闪存板块的第 3 个标的：005930（三星电子）</b>——该标的为<b>韩国交易所（KOSPI）上市</b>，非美股，故不计入上表与图。仅补充可获取的机构口径：Bernstein（2026-09-03）给三星电子"跑赢大盘"、目标价 <b>KRW 440,000</b>，同一报告给 SK 海力士"跑赢大盘"（KRW 3,300,000）、铠侠"跑输大盘"（JPY 40,000）。如需三星的完整券商研报共识，需另行检索韩国市场数据源。
+</div>
+
+<!-- ===== CPO ===== -->
+<h3>▎CPO / 光互联板块</h3>
+
+<div class="card">
+<h4>AAOI 应用光电 · 109.64 美元 <span class="tag hold">买入 63% / 持有 37%</span><span class="tag">目标均价 170.50（6 家）</span><span class="tag">隐含 +55.5%</span></h4>
+<div class="box warn">本篇的三只 CPO 标的中<b>共识最弱、口径分歧最大</b>：不同数据源目标均价落在 139.40~170.50 美元区间；最低目标价 54 美元（B. Riley）与最高 220 美元（Rosenblatt）相差 4 倍以上。</div>
+<h4 style="color:#a8342a">共识多头论据</h4>
+<ul>
+  <li><b>营收高速扩张</b> <span class="tk a">实测</span>：Q2 营收 <b>1.919 亿美元</b>（数据源 191.922 百万，完全一致）、同比 +86%；毛利率 27.67%。</li>
+  <li><b>盈利：GAAP 实亏、调整后微利</b> <span class="tk a">实测</span>／<span class="tk n">Non-GAAP</span>：调整后 EPS <b>+0.06 美元</b>（共识 0.02）——但 <b>GAAP 口径 Q2 净亏 0.228 亿美元、BasicEPS <b>−0.2793</b></b>。这是本报告内 <b>GAAP 与 Non-GAAP 反差最大</b>的一处（第六章 ②）：同一季度，一个口径微利、另一个口径亏损。<span class="tk f">指引</span> Q3 营收 2.55–2.90 亿；2026 全年营收目标 <b>11 亿美元（同比 +137%）</b>。</li>
+  <li><b>供需错配</b>：800G/1.6T 需求超过现有产能，公司为美国最大 AI 光模块制造商，德州产能持续扩张（Rosenblatt 8/19 买入 220、Needham 8/7 买入 190、Raymond James 8/11 买入 178）。</li>
+</ul>
+<h4 style="color:var(--down)">共识空头论据</h4>
+<ul>
+  <li>B. Riley（7/31，持有，94）指出：<b>产能是收入瓶颈</b>、激光器与 DSP 供应链紧张、客户集中度高、约 190 万美元关税影响盈利，估值偏高（P/S 约 16.5x）。</li>
+  <li>尚未盈利，PE(TTM) 为负（约 −142x），基本面处于早期，是三家光互联标的中不确定性最高者。</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>LITE Lumentum · 1,103.36 美元 <span class="tag buy">买入/增持 87%</span><span class="tag">目标均价 1,163.70（27 家）</span><span class="tag">隐含 +5.5%</span></h4>
+<div class="box">近 6 个月买入占比由 81%（5 月）持续升至 87%（9–10 月），<b>评级趋势向上</b>，是 CPO 三家中共识最坚挺的标的。</div>
+<h4 style="color:#a8342a">共识多头论据</h4>
+<ul>
+  <li><b>FY26Q4 营收与调整后盈利</b> <span class="tk a">实测</span>＋<span class="tk n">Non-GAAP</span>（报告期 2026-Q4，统计截止 2026-06-27）：营收 <b>10.063 亿美元</b>、同比 +109.3%；<b>GAAP</b> 毛利率 <b>46.01%</b>、营业利润 2.847 亿；<b>调整后</b>毛利率 <b>50.4%</b>（同比 +1,260bp）、EPS <b>3.23</b>（预期 2.97）、营业利润率 36.6%（同比 +2,160bp）。<b>两组口径都对，差异约 440bp。</b></li>
+  <li><b>GAAP 净利的真相</b> <span class="tk a">实测</span>：FY26Q4 单季归母净利 <b>−71.62 亿美元</b>、FY26 全年 <b>−69.351 亿</b>——但<b>非经常性损益高达 77.62 亿</b>，即亏损几乎全部来自一次性项目（减值/重组），<b>与经营层面无关</b>。这正是"PE(TTM) 为负但机构仍给 87% 买入"的原因，也是必须用调整后口径看这只票的理由。</li>
+  <li><b>长期盈利指引抬高天花板</b>：CEO 在德银会议给出 <b>FY2028 每股盈利约 40 美元</b>的长期指引；Needham 预计 FY27 营收 55 亿美元并首次给出 FY2028 EPS 约 35 美元预估。</li>
+  <li><b>"卖铲人"逻辑对冲技术路线风险</b>：德银（9/1，首次覆盖买入，1,200）认为 III-V 激光器技术不可替代，无论可插拔 / CPO / NPO 哪种架构胜出均受益。OCS（光路交换）与 CPO/NPO 激光器已积累数十亿美元订单积压。</li>
+  <li><b>供需缺口量化</b>：广发证券指出公司供应能力仍较需求<b>低约 30%</b>，即便计划同比提升约 50% 产能仍供不应求；EML、泵浦激光器、窄线宽激光器基本处于"售罄"状态，泵浦激光器已成比 EML 更严重的瓶颈。</li>
+</ul>
+<h4 style="color:var(--down)">共识分歧点</h4>
+<ul>
+  <li><b>催化剂时点偏晚</b>：摩根士丹利（8/12，<b>持股观望</b>，900→1,000）认为明确催化需等到秋季或 2027 年 OFC 会议、NPO 新订单更明朗时；美银（中性，1,100→1,000）与 TD Cowen（持有，800→820）同属"下调目标价"阵营，理由是估值。</li>
+  <li><b>上行空间已被压缩至 +5.5%</b>：27 家机构目标均价仅高于现价 5.5%，意味着共识认为"已基本到位"。</li>
+  <li>PE(TTM) 为负（一次性减值/重组拖累，FY2026 归母净利润约 −69 亿美元），估值只能用成长性框架衡量。</li>
+</ul>
+<table>
+<thead><tr><th>日期</th><th>机构</th><th>评级</th><th>目标价</th></tr></thead>
+<tbody>
+<tr><td>2026-10-05</td><td>Rosenblatt</td><td>买入</td><td>1,300</td></tr>
+<tr><td>2026-10-05</td><td>Stifel</td><td>买入</td><td>1,100 → 1,232</td></tr>
+<tr><td>2026-09-30</td><td>Bernstein</td><td>首次覆盖跑赢大盘</td><td>1,220</td></tr>
+<tr><td>2026-09-28</td><td>花旗</td><td>买入</td><td>1,200 → <b>1,400</b>（区间高点）</td></tr>
+<tr><td>2026-09-01</td><td>德意志银行</td><td>首次覆盖买入</td><td>1,200</td></tr>
+<tr><td>2026-08-12</td><td>摩根大通</td><td>增持</td><td>1,165 → 1,280</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="card">
+<h4>GLW 康宁 · 156.68 美元 <span class="tag buy">买入/增持 74%</span><span class="tag">目标均价 191.25（16 家）</span><span class="tag">隐含 +22.1%</span></h4>
+<div class="box warn">三家 CPO 标的中<b>估值争议最尖锐</b>：PE(TTM) 约 72x，且光通信仅占收入 30%~40%，市场却按"纯 AI 光纤"定价。JPMorgan 是"下调评级但上调目标价"的典型。</div>
+<h4 style="color:#a8342a">共识多头论据</h4>
+<ul>
+  <li><b>公司整体业绩</b> <span class="tk a">实测</span>：2026 Q2 总营收 <b>45.05 亿美元</b>、毛利率 35.05%、净利 5.59 亿、EPS 0.6485。</li>
+  <li><b>分部结构（数据源实测，FY2025）</b> <span class="tk a">实测</span>：<b>Optical Communications 62.74 亿、占比 40.14%、同比 +34.72%</b>（唯一双位数增长且增速最高的分部）；Display 36.97 亿（23.65%，<b>−4.52%</b>）、Specialty Materials 22.11 亿（14.15%）、Automotive 17.94 亿（11.48%）、Hemlock &amp; Emerging Growth 14.60 亿（9.34%）、Life Sciences 9.72 亿（6.22%，−0.72%）、Reconciling Items −7.79 亿；合计 <b>156.29 亿</b>。</li>
+  <li><b>光通信占比正在快速上升</b> <span class="tk a">实测</span>＋<span class="tk n">未抵销</span>：FY2025 占比 40.14% → 研报口径 2026Q2 光通信 20.7 亿 ÷ <span class="tk a">实测</span> Q2 总营收 45.05 亿 = <b>约 45.9%</b>。<b>这意味着摩根大通"约 60% 业务与非光通信相关"虽在 FY2025 精确成立（100%−40.14% = 59.86%），但已滞后约一年——按 2026H1 推算非光通信已降至约 54%。</b></li>
+  <li><b>大客户订单锁定</b> <span class="tk u">待核实</span>：与 Meta 签订 <b>60 亿美元</b>光纤大单；与英伟达合作建厂。</li>
+  <li><b>业绩兑现节奏提前</b> <span class="tk f">指引</span>：管理层给出 2026 Q3 营收 <b>49–50 亿美元</b>指引（对照 <span class="tk a">实测</span> Q2 的 45.05 亿，环比约 +10%），<b>提前一个季度达成 200 亿美元年化销售</b>；2030 年营收目标 400 亿美元属长期目标，非承诺。</li>
+  <li><b>机构评级温和上行</b>：买入占比由 5 月 65% 升至 9–10 月 74%；Truist 8/3 由持有上调至买入；华兴资本 9/8 首次覆盖买入、目标价 <b>238</b>（区间高点）。</li>
+</ul>
+<h4 style="color:var(--down)">共识空头论据</h4>
+<ul>
+  <li><b>估值几乎没有容错空间</b>：摩根大通测算 GLW 对应 2028 年预期 PE 已超 30x（光通信业务隐含 PE 约 40x）；其"约 60% 业务与非光通信相关"的论点<b>已被数据源证实</b> <span class="tk a">实测</span>——FY2025 非光通信占比 <b>59.86%</b>。7 月曾将其列入"负面催化剂观察"名单并下调目标价至 170。</li>
+  <li><b>增长高度集中于单一分部</b> <span class="tk a">实测</span>：FY2025 六个分部中，只有光通信（+34.72%）与 Hemlock（+14.24%）双位数增长，<b>Display 同比 −4.52%、Life Sciences −0.72%</b>。即<b>约 30% 的收入（Display + Life Sciences）在零增长或负增长</b>——这是"PE 72x 但整体毛利率仅 35%"的结构性原因。</li>
+  <li><b>Barclays 给区间最低目标价 129</b>（中性）；Bernstein（9/30 首次覆盖）给 <b>Market Perform / 140</b>，认为 AI 机会已充分反映在股价中；Morningstar 公允价值 95 美元。</li>
+  <li><b>7 月末一轮目标价集中下调</b>：Citi $240→220、Oppenheimer $230→200、JPM $200→170、摩根士丹利 $180→165、Barclays $180→129。</li>
+</ul>
+</div>
+
+<!-- ===== CPU ===== -->
+<h3>▎CPU 板块</h3>
+
+<div class="card">
+<h4>AMD 超威半导体 · 608.10 美元 <span class="tag buy">买入/增持 82% · 零卖出</span><span class="tag">目标均价 654.37（47 家）</span><span class="tag">隐含 +7.6%</span></h4>
+<div class="box"><b>CPU 三只中唯一"零卖出评级"的标的</b>（INTC 卖出 3%、ARM 卖出 4%）；14 只中共 5 只零卖出（AMZN、MSFT、LITE、GLW、AMD），AMD 为其中之一。</div>
+<h4 style="color:#a8342a">共识多头论据</h4>
+<ul>
+  <li><b>Agentic AI 令 CPU 与 GPU 需求互补</b> <span class="tk f">预测</span>：中金（把目标价上调至 <b>640</b>，维持 35x 27E PE）上调 27/28E 总营收 <b>14.0%/27.6%</b> 至 1,161/1,500 亿美元，上调 27/28E Non-GAAP 归母净利润 18.5%/40.0% 至 298/408 亿美元；判断估值将复刻 2023 年 MI300 放量时点。</li>
+  <li><b>Helios 机架级系统与订单能见度</b>：国泰海通（8/11）"CPU 与 HELIOS 同步放量，2027 强劲增长年"；中金（8/6）"GW 级订单 + 供给锁定夯实 2027 年可见度"。</li>
+  <li><b>已披露业绩基数</b> <span class="tk a">实测</span>：2026 Q2 营收 <b>115.36 亿美元</b>、毛利率 51.31%、净利 23.05 亿、EPS 1.4075。中金/华兴的 27/28E 预测以此为基数——<b>注意 Q2 年化约 460 亿，距 27E 的 1,161 亿仍需两年翻倍以上</b>。</li>
+  <li><b>中东主权客户打开增量</b>：华兴证券（9/11，买入，631）——AMD 联合 Cisco 及沙特 PIF 旗下 HUMAIN，基于 MI355X GPU + EPYC CPU 的生产级 AI 基础设施已在沙特上线，下一阶段规划 <b>高达 250MW</b>，维持 2030 年前累计 <b>1GW</b> 目标。</li>
+  <li><b>海外投行密集上调</b>：花旗（10/6）575→<b>800</b>；瑞穗（10/6）580→705；Stifel（10/5）635→700；美银（9/25）620→720 并将其列为 CPU 首选股。</li>
+</ul>
+<h4 style="color:var(--down)">共识分歧点</h4>
+<ul>
+  <li><b>估值极高</b>：PE(TTM) 约 <b>155.9x</b>、PB 约 14.8x；隐含上行空间仅 +7.6%，说明股价已跑在多数目标价之前（第三方 StockAnalysis 口径 55 家均值 636.21，隐含仅 +4.6%）。</li>
+  <li><b>生态仍是长期变量</b>：华泰（8/5）以"关注 HELIOS 放量节奏与 ROCm 生态破局"为题，即 CUDA 生态替代进度是主要跟踪点。</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>INTC 英特尔 · 104.70 美元 <span class="tag hold">买入 37% / 持有 60% / 卖出 3%</span><span class="tag">目标均价 120.83（40 家）</span><span class="tag">隐含 +15.4%</span></h4>
+<div class="box warn"><b>本篇共识最为分裂</b>：近 6 个月"持有"占比稳定在 57%~61%，目标价区间 80~200 美元（相差 2.5 倍），多空分歧集中在代工能否扭亏与 x86 份额流失。</div>
+<h4 style="color:#a8342a">共识多头论据</h4>
+<div class="box warn" style="margin:6px 0 10px"><b>口径结论（第六章 ① ，已证实）</b>：下方 <span class="tk n">未抵销</span> 的分部数字之和（89+63+58 = 210 亿）与 <span class="tk a">实测</span> 合并营收 161.28 亿的差额，<b>来自分部间内部交易抵销（Intersegment Eliminations）</b>——NeoData 主营构成接口显示 Intel 该项常年占营收 −20%~−34%（FY2025 实测 −176.83 亿、−33.46%）。<b>看分部景气度用毛口径，算占比与估值必须用净口径 161.28 亿。</b></div>
+<ul>
+  <li><b>服务器 CPU 重回增长</b> <span class="tk a">实测</span>：26Q2 合并营收 <b>161.28 亿美元、同比 +25.42%</b>、毛利率 40.36%、营业利润 <b>17.96 亿</b>（SEC 一手 <code>OperatingIncomeLoss</code>；聚合源 19.66 亿系口径差，以 SEC 为准）、自由现金流 43.54 亿。分部看 <span class="tk n">未抵销</span> DCAI 63 亿（<b>同比 +59%、环比 +24%</b>，营业利润 25 亿、环比 +约 10 亿）、CCPG 89 亿（+13%）；公司再度上调服务器 CPU 需求预期，预计今明两年行业出货量"strong double-digit"增长，<b>景气延续至 2028 年</b>（招商证券，7/26）。</li>
+  <li><b>18A 制程兑现</b>：Q2 18A 晶圆产出超内部目标约 <b>25%</b>，环比产量增幅超 50%，良率持续优于预期；已启动 18A-P 风险量产；14A 的 PDK 0.9 版本计划 10 月交付，风险试产计划 2027 下半年。</li>
+  <li><b>代工亏损收窄</b> <span class="tk n">未抵销</span>：Intel Foundry 营收 58 亿美元、同比 +32%；外部代工营收 2.93 亿美元，营业亏损 21 亿美元、<b>环比改善 3.48 亿美元</b>。</li>
+  <li><b>GAAP 巨亏的构成</b> <span class="tk a">实测</span>：26Q2 归母净利 <b>−110.33 亿美元</b>（同比 −278%），但其中<b>非经常性损益达 126.74 亿</b>——即巨亏主要来自一次性项目，而非经营层面（营业利润仍为正的 <b>17.96 亿</b>，SEC 一手；聚合源 19.66 亿已弃用）。<b>这是多头与空头分歧的核心：看营业利润是改善的，看净利润是崩塌的。</b></li>
+  <li><b>SOTP 估值给高目标价</b>：华泰采用分部估值（CCG 27E <b>24x</b> PE、DCAI <b>30x</b> PE、代工按 7 万美元/wafer），加总目标市值 7,552 亿美元、对应目标价 <b>150</b> 美元。</li>
+</ul>
+<h4 style="color:var(--down)">共识空头论据</h4>
+<ul>
+  <li><b>x86 份额持续流失</b>：x86 市占率近期跌破 <b>70%</b>（1995 年以来最低）；外部代工订单 <b>95%</b> 仍为内部客户，代工商业模式成熟度存疑。</li>
+  <li><b>制程仍面临晶圆价值折价</b>：华泰指出对英特尔给予 7 万美元/片（对比台积电更高水平）的折价，基于先进制程客户数量、外部收入占比、良率稳定性与代工模式成熟度。</li>
+  <li><b>空方代表</b>：摩根士丹利（7/24）目标价 75 美元、Rosenblatt（7/24）"卖出"80 美元；UBS（8/12，中性）121→112、瑞穗（9/4，中性）109→92，理由是代工投资周期压制利润率与估值倍数压缩风险。</li>
+  <li>PE(TTM) 为负（约 −50x，近 12 个月 GAAP 亏损）；股价年内一度上涨约 126%，随后自高点回吐约三分之一。</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>ARM 安谋 · 266.28 美元 <span class="tag hold">买入 67% / 持有 29% / 卖出 4%</span><span class="tag">目标均价 300.48（36 家）</span><span class="tag">隐含 +12.9%</span></h4>
+<h4 style="color:#a8342a">共识多头论据</h4>
+<ul>
+  <li><b>数据源可核实的最新一期</b> <span class="tk a">实测</span>：FY26Q2（截至 2025-09-30）营收 <b>11.35 亿美元、同比 +34.48%</b>、净利 2.38 亿、毛利率 95.02%；westock 序列最新期营收 <b>12.42 亿</b>、毛利率 94.20%。</li>
+  <li><b>FY27Q1 业绩超指引上限</b> <span class="tk a">实测</span>（营收已由 SEC 6-K 证实）：营收 <b>12.89 亿美元、同比 +22%</b>——SEC <code>ifrs-full</code> 同期值 1,289 百万，<b>精确一致</b>（见 4.5 节）；<span class="tk n">Non-GAAP</span> EPS <b>0.45 美元、同比 +29%</b>（高于指引上限 0.44）；授权收入 5.74 亿（+23%，其中<b>数据中心授权收入同比翻倍以上</b>）、版税收入 7.15 亿（+22%）；年化合同价值 ACV 达 <b>17.32 亿美元（+13%）</b>。<b>授权/版税拆分与 ACV 本库无分解，该两项仍保留研报值</b>。</li>
+  <li><b>数据中心向 Arm 架构转型加速</b>：IDC 称过去两个季度基于 Arm 架构的加速服务器平台支出<b>几乎翻倍并已超过 x86</b>；英伟达 Vera CPU 已全面投产（性能比同类 x86 系统高 50%、能效提升 1 倍）；谷歌、亚马逊均在推进自研 Arm CPU 上 AI 基础设施；高通计划推出 Dragonfly C1000。</li>
+  <li><b>自研 AGI CPU 需求超预期</b>：首批已交付，<b>FY27+FY28 客户需求已超 20 亿美元</b>，公司已锁定可支撑 FY27/FY28 各 10 亿美元营收的产能；新增 FY29 Non-GAAP 净利润预测 31.77 亿美元（光大证券，8/5，买入）。</li>
+</ul>
+<h4 style="color:var(--down)">共识分歧点</h4>
+<ul>
+  <li><b>估值最高</b>：PE(TTM) 约 <b>271.7x</b>、PB 约 <b>33.0x</b>；即便按机构前瞻口径，光大给出 FY27/28 PE 仍达 <b>111x/87x</b>，目标价区间 130~480 美元（相差 3.7 倍），为三只 CPU 标的中分歧最大。</li>
+  <li><b>手机业务短期承压</b>：浦银国际（8/5）以"短期手机业务承压，不改 AGI CPU 长期乐观"为题；FY27Q2 利润指引偏弱（Non-GAAP EPS 0.43~0.51 美元）。</li>
+  <li><b>自研芯片与客户关系潜在冲突</b>：进入量产芯片领域后与授权客户形成潜在竞争，是机构必列风险项。空方代表为汇丰（减持，90 美元）。</li>
+</ul>
+</div>
+
+<!-- ===== AI4S ===== -->
+<h3>▎AI4S（AI for Science / 生命科学工具）板块</h3>
+<div class="box">该板块是本次梳理中<b>唯一"卖方目标价整体跑输股价"</b>的一组：三只标的现价均高于或接近机构目标均价，上涨主要由 AI 药物发现叙事、指数纳入（ILMN 于 9/21 纳入标普 500）与资金面驱动。</div>
+
+<div class="card">
+<h4>TWST Twist Bioscience · 159.78 美元 <span class="tag buy">买入 69% / 持有 23% / 卖出 8%</span><span class="tag">目标均价 150.33（12 家）</span><span class="tag">隐含 −5.9%</span></h4>
+<h4 style="color:#a8342a">共识多头论据</h4>
+<ul>
+  <li><b>AI 药物发现的"卖铲人"定位</b>：与礼来 <b>TuneLab</b> 签署抗体表征数据服务协议（数据接入礼来 AI 药物发现栈）；与 Anthropic 合作探索 AI 设计 mini-binder 蛋白。</li>
+  <li><b>目标价被大幅上修</b>（9–10 月集中发生）：Barclays（10/7，增持）<b>112 → 215</b>（上调 92%）；Guggenheim（10/1，买入）<b>107 → 212</b>；Leerink（9/29，跑赢大盘）160→190（9 月内两次上调 120→160→190），理由是可比公司估值与药企采用能见度提升。</li>
+  <li><b>已披露实际值</b> <span class="tk a">实测</span>：最新单季营收 <b>1.184 亿美元</b>、毛利率 <b>52.76%</b>、单季净亏 0.351 亿。<b>FY2025（截至 2025-09-30）营收 3.766 亿、同比 +20.32%、净亏 0.777 亿、EPS −1.30</b>。</li>
+  <li><b>⚠ 指引 vs 实际（SEC 一手修正，此前结论已撤回）</b> <span class="tk a">实测</span> vs <span class="tk f">指引</span>：SEC 10-Q 确认 FY2026 <b>前三季累计 3.32789 亿美元</b>（Q1 1.0370 + Q2 1.1072 + Q3 1.1838）；<b>FY2026 Q4（截至 2026-09-30）截至本报告时点尚未披露</b>。达成指引 4.56–4.57 亿需 Q4 单季 <b>1.237 亿</b>——环比 Q3 <b>+4.5%</b>、同比去年 Q4 的 0.990 亿 <b>+25%</b>。<br><b>撤回说明</b>：本报告此前据聚合源得出"全年 4.318 亿、已低于指引 5.5%"，<b>该结论已被 SEC 证伪</b>——4.318 亿实为「前三季 3.32789 + FY2025Q4 的 0.990」，聚合源把 FY2025Q4 错标为 2026-09-30 导致<b>跨财年错误加总</b>。<b>现结论：指引能否达成待 Q4 披露后判定，不预先断言。</b></li>
+  <li><b>其余承诺</b> <span class="tk f">指引</span>：目标 Q4 FY26 实现<b>调整后</b> EBITDA 盈亏平衡 <span class="tk n">Non-GAAP</span>；管理层维持 FY2031 营收翻倍至 10 亿美元的目标（Leerink 认为偏保守）。<b>指引能否达成待 Q4（尚未披露）落地后判定，达成这两项目标的前提同样系于 Q4。</b></li>
+</ul>
+<h4 style="color:var(--down)">共识分歧点</h4>
+<ul>
+  <li><b>估值门槛过高</b>：Jefferies（10/8）<b>首次覆盖即给"持有"</b>、目标价 150，明确称"估值溢价设定了很高的门槛，已内含大量未来成功预期"。P/S 约 23.9x、P/B 约 23x，GF Value 测算显示 200%+ 高估。</li>
+  <li><b>仍处亏损</b>：EBIT 利润率约 −31.8%、ROE 约 −30%，PE(TTM) 为负；过去三个月内部人（含 CEO）净卖出约 1.19 亿美元。</li>
+  <li><b>评级强度在下滑</b>：买入占比由 5 月的 100% 降至 10 月的 <b>69%</b>，持有升至 23%、卖出 8%（BWS Financial 9/18 重申卖出、目标价 45）。</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>ILMN Illumina · 278.17 美元 <span class="tag hold">买入 46% / 持有 38% / 卖出 16%</span><span class="tag">目标均价 237.16（19 家）</span><span class="tag">隐含 −14.7%</span></h4>
+<h4 style="color:#a8342a">共识多头论据</h4>
+<ul>
+  <li><b>Q2 超预期</b> <span class="tk a">实测</span>（7/30 披露）：营收 <b>11.61 亿美元</b>（数据源 1,161 百万，完全一致）、毛利率 66.49%、净利 2.07 亿、BasicEPS 1.3709。<span class="tk n">Non-GAAP</span> EPS <b>1.31 美元</b>（超预期 6.5%）。</li>
+  <li><b>全年指引上调</b> <span class="tk f">指引</span>：营收 <b>46.0–46.4 亿美元</b>、Non-GAAP EPS <b>5.30–5.40 美元</b>；剔除中国外的<b>有机增长指引上调至 5% 以上</b>。<span class="tk u">待核实</span>"约 44% 收入来自学术与政府客户"属研报口径，数据源无客户结构分解。</li>
+  <li><b>UBS 于 9/9 上调评级</b>（中性→买入，135→<b>260</b>），为近 90 天内唯一一次评级上调，理由指向利润率扩张与 Q2 强劲业绩。</li>
+  <li><b>目标价 9–10 月密集上调</b>：RBC（10/5，跑赢大盘）230→<b>310</b>（最乐观之一，强调临床测序为"可持续的中双位数增长引擎"）；Guggenheim（10/1，买入）226→305；Leerink（9/29）220→300；Piper Sandler（9/28）225→305；Argus（9/3）180→235。</li>
+  <li><b>资金面催化</b>：2026-09-21 正式纳入标普 500 成分股，带来被动资金流入；无股息。</li>
+</ul>
+<h4 style="color:var(--down)">共识分歧点</h4>
+<ul>
+  <li><b>目标价跑输股价</b>：目标均价 237.16 美元低于现价 278.17（−14.7%），说明上涨主要由业绩超预期与指数纳入驱动，而非卖方定价；评级自 2025 年 2 月由"适度买入"下调至"持有"后一直维持。</li>
+  <li><b>空方阵营明确且占比 16%</b>：Barclays（10/7，<b>减持</b>，160→200，仍属最看空）、花旗（8/3，<b>卖出</b>，95→113）、德意志银行（8/5 下调至持有）。</li>
+  <li><b>收入结构风险</b>：约 <b>44%</b> 收入来自学术与政府客户，研究类耗材全年指引为中高个位数下滑——政策与经费波动直接冲击这一块。</li>
+  <li>估值：PE(TTM) 约 <b>51.9x</b>、PB 约 14.8x。</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>TXG 10x Genomics · 80.65 美元 <span class="tag hold">买入 33% / 持有 61% / 卖出 6%</span><span class="tag">目标均价 69.47（15 家）</span><span class="tag">隐含 −13.9%</span></h4>
+<div class="box warn">这是本次梳理中<b>股价与卖方目标价背离最极端</b>的标的：年内涨幅约 <b>+394%</b>，现价 80.65 美元显著高于目标均价（另一口径仅 58.60 美元），"持有"占比 61% 为 14 只标的中最高。</div>
+<h4 style="color:#a8342a">共识多头论据</h4>
+<ul>
+  <li><b>Atera 空间生物学平台需求超产能</b>：平台开始商业出货、需求超过当前产能，是近期看多的核心主线——Argus Research（9/28）据此<b>首次覆盖即给"买入"、目标价 110</b>（区间最高，隐含较当时股价约 28% 上行空间）。</li>
+  <li><b>亏损收窄</b>：Q2 EPS 亏损 <b>0.14 美元</b>，好于市场预期的亏损 0.24 美元。</li>
+  <li><b>目标价 9 月被集中上修</b>（虽评级未变）：Leerink 40→90、Piper Sandler 47→80、德意志银行 40→70。</li>
+</ul>
+<h4 style="color:var(--down)">共识分歧点</h4>
+<ul>
+  <li><b>Q2 实际值</b> <span class="tk a">实测</span>：营收 <b>1.51036 亿美元</b>、BasicEPS <b>−0.138</b>（与研报的 1.51 亿 / −0.14 完全一致）、毛利率 74.36%、单季经营现金流 +0.170 亿。研报所称"<b>同比 −12.7%</b>"<span class="tk a">实测</span>已由 SEC 一手解除：SEC 同口径 2025Q2 营收 <b>1.72908 亿</b>，<b>151.036/172.908−1 = −12.65%</b>，与研报<b>精确吻合</b>——空头论据的基期与数值均成立（见 4.5 节）。</li>
+  <li><b>评级结构最差</b>：买入占比由 5 月的 40% 降至 10 月的 <b>33%</b>，持有升至 61%；9 月三份首次覆盖（UBS 68、RBC 70）与多份维持均为"持有"。</li>
+  <li><b>内部人净卖出</b>：CEO Serge Saxonov 及董事过去一年净卖出约 <b>1,440 万美元</b>。</li>
+</ul>
+</div>
+
+<!-- ============ 横向 ============ -->
+<h2>三、跨板块横向结论</h2>
+<div class="card">
+<table>
+<thead><tr><th>观察维度</th><th>结论</th><th>数据支撑</th></tr></thead>
+<tbody>
+<tr><td>共识强度排序</td><td>MSFT 98% &gt; AMZN 97% &gt; MU 93% &gt; LITE 87% &gt; AMD 82% &gt; SNDK 81% &gt; GLW 74% &gt; TWST 69% &gt; ARM 67% &gt; NBIS 65% &gt; AAOI 63% &gt; ILMN 46% &gt; INTC 37% &gt; TXG 33%</td><td>2026-10 月度"买入/增持"机构占比</td></tr>
+<tr><td>零卖出评级的标的</td><td>AMZN、MSFT、LITE、GLW、AMD（5 只）</td><td>近 6 个月各月"减持/卖出"占比均为 0</td></tr>
+<tr><td>现价已高于机构目标均价</td><td>TWST（−5.9%）、TXG（−13.9%）、ILMN（−14.7%）</td><td>目标均价 ÷ 10-09 收盘 − 1</td></tr>
+<tr><td>评级趋势向上（买入占比逐月升）</td><td>LITE（81%→87%）、GLW（65%→74%）；MU 峰值 95% 后回落至 93%；TWST、TXG、ILMN 反向走弱</td><td>2026-05 ~ 2026-10 月度序列</td></tr>
+<tr><td>估值最高的 3 只</td><td>ARM（PE 271.7x / PB 33.0x）、AMD（155.9x / 14.8x）、GLW（72.2x）</td><td>2026-10-09 行情，TTM 口径</td></tr>
+<tr><td>目标价区间跨度最大</td><td>NBIS（84–410，≈4.9x）、ARM（130–480，≈3.7x）、INTC（80–200，≈2.5x）、TWST（45–215，≈4.8x）</td><td>各源聚合口径的最高/最低目标价</td></tr>
+<tr><td>未盈利（PE 为负）</td><td>NBIS、AAOI、INTC、TWST、TXG</td><td>TTM 口径</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="card">
+<h4>三条可执行的观察线索（含证伪条件）</h4>
+<ul>
+  <li><b>线索 1｜存储"景气长度"是否延续至 2028 年</b>——多头共识锚点是美光 26 份 SCA / 闪迪 8 份 NBM 与"2027 年 75% 产能已售出"。<b>证伪条件</b>：2027 年底至 2028 年新产能释放带来 ASP 环比转负（Wedbush 提示的风险窗口）；长江存储扩产超预期。跟踪：闪迪 10-29 财报的 NBM 出货占比与价格指引。</li>
+  <li><b>线索 2｜云厂商资本开支能否转化为自由现金流</b>——AMZN 与 MSFT 均因 AI 资本开支压制现金流，而卖方仍给 97%/98% 买入。<b>本库数据源可核实的部分</b>：AMZN 2026Q2 单季 capex <b>542.08 亿</b>已超 CFO 453.87 亿、单季 FCF <b>−88.21 亿</b>（Q1 亦为 −181.71 亿）；MSFT 单季 capex 呈 170.79→193.94→298.76→308.76 亿递增。<b>证伪条件</b>：连续两个季度 FCF 未改善且折旧开始压制经营利润率。<span style="color:#b5822a">注：原引"AMZN TTM FCF −76 亿""MSFT FCF 196 亿 / −23%"两数本库未直出，已标待核实，但方向被上述实测序列支持。</span></li>
+  <li><b>线索 3｜AI4S 三只的"叙事 vs 目标价"回补方向</b>——TWST/ILMN/TXG 现价均高于目标均价，属于"股价领先卖方"。<b>双向条件</b>：若 Q3 财报（ILMN、TWST 均临近）兑现指引上修 → 卖方目标价被迫二次上修（9–10 月已发生一轮，TWST 的 Barclays 112→215 增幅 92% 为标志）；若指引不及，则估值回补压力最大（TXG 内部人净卖出、TWST 内部人 1.19 亿美元净卖出是先行信号）。</li>
+</ul>
+</div>
+
+<!-- ============ 核实附录 ============ -->
+<h2>四、数据核实附录（本库数据源逐条复核）</h2>
+
+<div class="box">
+<b>核实方法</b>：全部 14 只标的的行情、估值与财务数据，均通过本库数据源合集逐条复核——
+<b>① westock CLI</b>（<code>quote</code> 行情 / <code>finance</code> 三大表，腾讯自选股接口）与
+<b>② NeoData Financial Search</b>（<code>scripts/query.py</code>，公司财季口径的结构化财务）。
+机构评级与目标价来自同一 NeoData 的「机构评级目标价与盈利预测」接口。
+<b>关键发现</b>：westock <code>finance</code> 对美股返回的「自然季标签」与其财季实际结束日存在系统性错位（如 LITE 的 2026-09-30 行实为 FY26Q3），
+因此<b>凡涉及财季数字一律以 NeoData 的「报告期 / 统计截止日期」口径为准</b>，westock 仅用于交叉校验与取现金流序列。
+<b>另需补记一处自查更正</b>：本附录初稿曾断言"GLW 分部数据本库未覆盖"，实为<b>未检索即下结论</b>——NeoData 提供「主营业务构成」接口（查询词含"主营业务收入构成 / 分部业务收入"即可召回），
+GLW 与 INTC 的分部收入均可直接取到，并据此证实了摩根大通"约 60% 非光通信"的空头论点（FY2025 实测 59.86%）。
+<b>该接口返回的是上一个完整报告期（非最新季），使用时需标注期间。</b>
+</div>
+
+<h3>4.1 行情与估值核实（westock quote，2026-10-09 收盘）</h3>
+<div class="card" style="overflow-x:auto">
+<table>
+<thead><tr><th>标的</th><th>收盘价</th><th>当日涨跌</th><th>年初至今</th><th>PE(TTM)</th><th>PB</th><th>股息率 TTM</th><th>报告是否一致</th></tr></thead>
+<tbody>
+<tr><td><span class="code">AMZN</span></td><td>262.43</td><td class="up">+3.29%</td><td class="up">+13.69%</td><td>21.11</td><td>5.13</td><td>0</td><td>✓ 一致</td></tr>
+<tr><td><span class="code">MSFT</span></td><td>535.07</td><td class="up">+2.38%</td><td class="up">+11.35%</td><td>29.81</td><td>8.98</td><td><b>0.69%</b></td><td>✓ 一致</td></tr>
+<tr><td><span class="code">NBIS</span></td><td>221.07</td><td class="up">+0.62%</td><td class="up">+164.09%</td><td>−2,763.38（亏损）</td><td>5.81</td><td>0</td><td>✓ 一致（报告仅写"为负"，此处补精确值）</td></tr>
+<tr><td><span class="code">MU</span></td><td>1,029.00</td><td class="dn">−0.66%</td><td class="up">+260.75%</td><td>13.84</td><td>8.40</td><td><b>0.05%</b></td><td>✓ 一致</td></tr>
+<tr><td><span class="code">SNDK</span></td><td>1,581.82</td><td class="dn">−1.72%</td><td class="up">+566.37%</td><td>21.45</td><td>14.53</td><td>0</td><td>✓ 一致</td></tr>
+<tr><td><span class="code">AAOI</span></td><td>109.64</td><td class="up">+3.53%</td><td class="up">+214.52%</td><td>−142.39（亏损）</td><td>5.58</td><td>0</td><td>✓ 一致</td></tr>
+<tr><td><span class="code">LITE</span></td><td>1,103.36</td><td class="up">+5.22%</td><td class="up">+199.34%</td><td>−11.87（一次性减值）</td><td>21.52</td><td>0</td><td>✓ 一致</td></tr>
+<tr><td><span class="code">GLW</span></td><td>156.68</td><td class="up">+2.52%</td><td class="up">+79.89%</td><td><b>72.20</b></td><td>10.75</td><td><b>0.71%</b></td><td>✓ 一致（PE 72.2x 已核实）</td></tr>
+<tr><td><span class="code">AMD</span></td><td>608.10</td><td class="dn">−2.03%</td><td class="up">+183.95%</td><td><b>155.92</b></td><td>14.77</td><td>0</td><td>✓ 一致（PE 155.9x / PB 14.8x 已核实）</td></tr>
+<tr><td><span class="code">INTC</span></td><td>104.70</td><td class="dn">−2.22%</td><td class="up">+183.74%</td><td>−50.10（亏损）</td><td>6.32</td><td>0</td><td>✓ 一致</td></tr>
+<tr><td><span class="code">ARM</span></td><td>266.28</td><td class="dn">−3.27%</td><td class="up">+143.60%</td><td><b>271.71</b></td><td><b>32.95</b></td><td>0</td><td>✓ 一致（PE 271.7x / PB 33.0x 已核实）</td></tr>
+<tr><td><span class="code">TWST</span></td><td>159.78</td><td class="up">+5.08%</td><td class="up">+403.72%</td><td>−71.65（亏损）</td><td>23.77</td><td>0</td><td>✓ 一致（P/B 23x 已核实）</td></tr>
+<tr><td><span class="code">ILMN</span></td><td>278.17</td><td class="up">+5.14%</td><td class="up">+112.08%</td><td>51.90</td><td>14.80</td><td>0</td><td>✓ 一致</td></tr>
+<tr><td><span class="code">TXG</span></td><td>80.65</td><td class="up">+4.36%</td><td class="up">+394.48%</td><td>−135.93（亏损）</td><td>12.73</td><td>0</td><td>✓ 一致</td></tr>
+</tbody>
+</table>
+<div class="src">14 只标的的收盘价、当日涨跌幅、年内涨幅与 PE/PB 与报告正文<b>全部一致</b>，无一修正。<b>股息率修正</b>：并非全部为零——MSFT 0.69%、GLW 0.71%、MU 0.05% 有股息，其余 11 只为 0。</div>
+</div>
+
+<h3>4.2 财务数据核实（NeoData 财季口径 + westock 交叉校验）</h3>
+<div class="card" style="overflow-x:auto">
+<table>
+<thead><tr><th>标的 / 财季</th><th>报告引用数字</th><th>本库数据源实测</th><th>判定</th></tr></thead>
+<tbody>
+<tr><td><span class="code">MU</span> FY26Q4（截至 2026-09-03）</td><td>营收 542.3 亿</td><td><b>542.29 亿美元</b>（NeoData）</td><td class="up">✓ 一致</td></tr>
+<tr><td><span class="code">MU</span> FY26Q4</td><td>毛利率 87%（Non-GAAP）</td><td>GAAP 毛利率 <b>86.76%</b>；<b>基本 EPS 33.36</b>、稀释 32.87；营业利润 <b>442.75 亿</b>（利润率 81.6%）；<b>非经常性损益 = 0.00</b></td><td class="up">✓ 一致；<b>且 GAAP 与 Non-GAAP 差仅 0.2%</b>（见 6.4）</td></tr>
+<tr><td><span class="code">MU</span> FY26 全年</td><td>营收 1,331.9 亿</td><td><b>1,331.88 亿</b>；净利 849.69 亿；FCF 589.63 亿</td><td class="up">✓ 一致</td></tr>
+<tr><td><span class="code">MU</span> FY26Q4 现金流</td><td>（报告未列）</td><td>单季经营现金流 <b>439.73 亿</b>、自由现金流 <b>328.63 亿</b></td><td>新增</td></tr>
+<tr><td><span class="code">SNDK</span> FY26Q4（截至 2026-07-03）</td><td>毛利率"升至 84%"（Citi 预测）</td><td>实测毛利率 <b>84.57%</b>、营收 <b>89.65 亿</b>、摊薄 EPS <b>43.97</b></td><td class="up">✓ 预测已被实际印证</td></tr>
+<tr><td><span class="code">SNDK</span> FY26 全年</td><td>FY27E 营收 466.79 亿（Citi）</td><td>FY26 实际营收 <b>202.48 亿</b>（基数）；FY26Q4 单季已达 89.65 亿</td><td>预测，需 +130% YoY 方能达成</td></tr>
+<tr><td><span class="code">NBIS</span> 2026 Q2</td><td>营收 5.823 亿（+454%）</td><td><b>582.30 百万 = 5.823 亿</b>；毛利率 32.46%；净利 <b>−1.904 亿</b>（BasicEPS −0.6791）。<br>2025 财年：营收 5.298 亿、<b>营业利润 −6.117 亿</b>、<b>净利 +0.825 亿</b>（SEC 20-F 一手；聚合源误报 0.098 亿）、EPS 0.34</td><td class="up">✓ 营收一致；<b>EPS 口径修正</b>（见 4.3）；<b>盈利质量最差</b>（见 6.4）</td></tr>
+<tr><td><span class="code">AAOI</span> 2026 Q2</td><td>营收 1.919 亿（+86%）</td><td><b>191.922 百万 = 1.919 亿</b>；毛利率 27.67%；净利 −0.228 亿</td><td class="up">✓ 一致</td></tr>
+<tr><td><span class="code">LITE</span> FY26Q4（截至 2026-06-27）</td><td>营收 10.06 亿、调整后毛利率 50.4%</td><td>营收 <b>10.063 亿</b>；GAAP 毛利率 <b>46.01%</b>；单季净利 <b>−71.62 亿</b>（非经常性损益 77.62 亿）</td><td class="up">✓ 营收一致；毛利率需区分 GAAP/adjusted</td></tr>
+<tr><td><span class="code">LITE</span> FY26 全年</td><td>归母净利 −69.35 亿</td><td><b>−69.351 亿</b>；全年营收 <b>30.14 亿</b>（印证第三方"TTM revenue 3.01B"）</td><td class="up">✓ 一致</td></tr>
+<tr><td><span class="code">GLW</span> FY2025 分部</td><td>光通信分部营收 20.7 亿（Q2 单季，+32%）；空头称"约 60% 业务与非光通信相关"</td><td><b>分部数据本库可查</b>：FY2025 Optical Communications <b>62.74 亿、占比 40.14%、同比 +34.72%</b>；Display 36.97 亿（23.65%，−4.52%）、Specialty Materials 22.11 亿（14.15%）、Automotive 17.94 亿（11.48%）、Hemlock 14.60 亿（9.34%）、Life Sciences 9.72 亿（6.22%）、Reconciling Items −7.79 亿；<b>合计 156.29 亿</b></td><td class="up">✓ <b>空头论点被证实</b>：100%−40.14% = <b>59.86%</b>，与"约 60% 非光通信"精确吻合</td></tr>
+<tr><td><span class="code">MSFT</span> FY26Q4（截至 2026-06-30）</td><td>营收 900 亿（+18%）、经营利润 406 亿（+18%）</td><td>营收 <b>900.07 亿</b>；营业利润 <b>406.03 亿</b>；净利 357.66 亿；基本 EPS 4.82</td><td class="up">✓ 一致</td></tr>
+<tr><td><span class="code">MSFT</span> FY26Q4 现金流</td><td>capex +110%、FCF 196 亿（−23%）</td><td>本库未直出该财季 FCF；westock 现金流序列显示单季 capex 由 170.79→193.94→298.76→308.76 亿持续上行</td><td class="dn">⚠ capex 上升趋势印证；<b>FCF 196 亿与 −23% 两数待核实原文</b></td></tr>
+<tr><td><span class="code">AMD</span> 2026 Q2</td><td>（报告仅引分析师预测）</td><td>营收 <b>115.36 亿</b>；毛利率 51.31%；净利 23.05 亿；EPS 1.4075</td><td>新增实际值</td></tr>
+<tr><td><span class="code">INTC</span> 2026 Q2（截至 2026-06-27）</td><td>分部合计 CCPG 89+DCAI 63+Foundry 58 = <b>210 亿</b></td><td><b>总营收 161.28 亿</b>（同比 +25.42%）；毛利率 40.36%；归母净利 <b>−110.33 亿</b>（非经常性损益 126.74 亿）；FCF 43.54 亿</td><td class="dn">✗ <b>冲突</b>：分部合计高于数据源总营收约 30%</td></tr>
+<tr><td><span class="code">ARM</span> FY27Q1</td><td>营收 12.89 亿</td><td>NeoData 库内最新为 FY26Q2（截至 2025-09-30）营收 <b>11.35 亿</b>、同比 +34.48%；westock 序列最新期 <b>12.42 亿</b>、毛利率 94.20%</td><td class="dn">⚠ <b>差异</b>：数据源未能直出 12.89 亿</td></tr>
+<tr><td><span class="code">TWST</span> FY2026</td><td>营收指引 4.56–4.57 亿</td><td><b>SEC 修正版</b>：10-Q 前三季累计 <b>3.32789 亿</b>（Q4 尚未披露）；最新单季 1.184 亿；毛利率 <b>52.76%</b>；单季净利 −0.351 亿</td><td class="dn">此前"4.318 亿、差 5–6%"系聚合源跨财年错加，<b>已撤回，待 Q4 判定</b>；毛利率 52% ✓</td></tr>
+<tr><td><span class="code">ILMN</span> 2026 Q2</td><td>营收 11.6 亿（+9.5%）、Non-GAAP EPS 1.31</td><td><b>11.61 亿</b>；毛利率 66.49%；净利 2.07 亿；BasicEPS 1.3709</td><td class="up">✓ 一致</td></tr>
+<tr><td><span class="code">TXG</span> 2026 Q2</td><td>营收 1.51 亿、EPS −0.14、同比 <b>−12.7%</b></td><td>营收 <b>1.51036 亿</b>、BasicEPS <b>−0.138</b>、毛利率 74.36%</td><td class="up">✓✓ 营收/EPS 一致；<b>同比 −12.65% 已由 SEC 证实</b>（2025Q2 基数 1.72908 亿，与研报 −12.7% 吻合）</td></tr>
+<tr><td><span class="code">AMZN</span> 2026 Q2</td><td>（报告引 JPM 预测 Q3 营收约 2,020 亿）</td><td>Q2 实际营收 <b>2,006.06 亿</b>；CFO 453.87 亿；capex <b>542.08 亿</b>；单季 FCF <b>−88.21 亿</b></td><td class="dn">⚠ 报告"TTM FCF ≈ −76 亿"待核实原文</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.3 必须提示的 4 处口径问题</h3>
+<div class="card">
+<div class="box" style="margin:0 0 12px">这 4 处<b>为什么会产生差异</b>、以及「需核实原文」具体要核什么，见 <b>第六章 · 数据差异成因分析</b>。</div>
+<ol style="padding-left:20px">
+  <li><b>INTC 分部营收（✗ 冲突，最严重）</b>：报告引用的分部合计（210 亿）高于本库数据源的 26Q2 总营收（161.28 亿）约 30%。<b>以数据源为准</b>：26Q2 总营收 161.28 亿、同比 +25.42%；分部数字应视为研报口径，需核实原文是否含内部抵销或未按 NEX 并表调整。</li>
+  <li><b>NBIS Q2 EPS（✗ 口径错配）</b>：报告引用"实际 EPS −0.12（优于预估 −0.6358）"，但数据源显示 Q2 净利 −1.904 亿美元、BasicEPS <b>−0.6791</b>。两者不可互证，−0.12 应属另一口径（可能含一次性项目调整）。<b>营收 5.823 亿、同比 +454% 已核实无误</b>。</li>
+  <li><b>AMZN / MSFT 的自由现金流（⚠ 待核实）</b>：报告所引 AMZN「TTM FCF ≈ −76 亿」与 MSFT「FCF 196 亿、同比 −23%」在库中未找到对应财季口径的直出值。可核实的是方向一致：AMZN 2026Q2 单季 capex 542.08 亿、单季 FCF −88.21 亿（capex 已超 CFO）；MSFT capex 呈 170.79→193.94→298.76→308.76 亿的单季递增序列。</li>
+  <li><b>ARM / TWST / TXG 的同比与全年数（✓✓ 已全部由 SEC EDGAR 一手源解决，见 4.5 节）</b>：<b>TWST</b>——SEC 10-Q 证实 FY2026 前三季累计仅 <b>3.32789 亿</b>、<b>Q4（截至 2026-09-30）尚未披露</b>；此前"全年 4.318 亿、低于指引 5.5%"系聚合源把 FY2025Q4 的 0.990 亿错加进 FY2026（跨财年错误加总），<b>该结论已撤回</b>，改为"待 Q4 披露后判定"；<b>TXG</b>——SEC 同口径 2025Q2 基数 1.72908 亿，同比 <b>−12.65%</b> 与研报 −12.7% 精确吻合；<b>ARM</b>——SEC 6-K FY27Q1 营收 <b>12.89 亿</b>与研报完全一致。三处"待核实"全部解除，且证实<b>是聚合源滞后，不是研报错</b>。</li>
+</ol>
+</div>
+
+<h3>4.4 评级与目标价核实结论（NeoData 机构研究观点接口）</h3>
+<div class="card">
+<ul>
+  <li><b>目标均价与覆盖机构数</b>：14 只全部取自 NeoData「机构评级目标价与盈利预测」接口（更新时点 2026-10-10 23:27 CST），<b>与报告正文一致</b>，包括 AMZN 332.78（62 家）、MSFT 582.40（50 家）、NBIS 289.19（21 家）、MU 1,602.37（46 家）、SNDK 2,275.85（26 家）、AAOI 170.50（6 家）、LITE 1,163.70（27 家）、GLW 191.25（16 家）、AMD 654.37（47 家）、INTC 120.83（40 家）、ARM 300.48（36 家）、TWST 150.33（12 家）、ILMN 237.16（19 家）、TXG 69.47（15 家）。</li>
+  <li><b>月度评级分布</b>：近 6 个月（2026-05 ~ 2026-10）买入/持有/卖出占比逐月序列与报告一致，趋势判断（LITE 81%→87%、GLW 65%→74% 上行；TWST 100%→69%、TXG 40%→33% 下行）均可用该接口复现。</li>
+  <li><b>个股投行动作与事件性数字</b>（如 Barclays 112→215、DA Davidson 2,100→3,000、Meta 60 亿光纤订单、26 份 SCA / 8 份 NBM 长协）属<b>卖方研报与新闻内容，本库两个数据源不提供逐条评级动作流</b>，仍保留「非一手来源 · 需核实原文」标注，不在本附录内重新核实。</li>
+</ul>
+</div>
+
+<!-- ============ 口径 ============ -->
+<h3>4.5 SEC EDGAR 一手源复核（14 只全覆盖）</h3>
+<div class="card">
+<div class="box">SEC EDGAR 是公司披露的<b>一手来源</b>，等级高于 NeoData / westock 这类第三方聚合源。本节用 <code>data.sec.gov/api/xbrl/companyconcept</code>（us-gaap 与 ifrs-full 双 taxonomy）重取全部 14 只标的的核心科目，与报告逐项对照。
+<b>注意</b>：NBIS（荷兰）与 ARM（英国）为外国发行人，报 <b>20-F / 6-K</b> 而非 10-K / 10-Q，科目走 ifrs-full。</div>
+<table>
+<thead><tr><th>标的 / CIK</th><th>SEC 报表 · 期间</th><th>营收</th><th>营业利润</th><th>净利</th><th>基本 / 摊薄 EPS</th><th>对照结论</th></tr></thead>
+<tbody>
+<tr><td><span class="code">AMZN</span> 1018724</td><td>10-Q · 2026Q2 单季</td><td>200,606</td><td>27,461</td><td>62,647</td><td>5.82 / 5.75</td><td class="up">✓ 与报告 2,006.06 亿一致</td></tr>
+<tr><td><span class="code">MSFT</span> 789019</td><td>10-K · FY2026 全年<br>（10-Q 最新到 2026Q3）</td><td>331,839</td><td>155,237</td><td>133,749</td><td>18.00 / 17.95</td><td class="up">✓ <b>Q4 反算验证</b>：331,839 − 前三季 241,832 = <b>90,007</b> = 900.07 亿；营业利润 155,237 − 114,634 = <b>40,603</b> = 406.03 亿，与报告<b>完全一致</b></td></tr>
+<tr><td><span class="code">MU</span> 723125</td><td>10-K · FY2026 全年</td><td>133,188</td><td>99,340</td><td>84,969</td><td>75.38 / 74.33</td><td class="up">✓ <b>Q4 反算验证</b>：133,188 − 前三季 78,959 = <b>54,229</b> = 542.29 亿，与报告<b>完全一致</b></td></tr>
+<tr><td><span class="code">SNDK</span> 2023554</td><td>10-K · FY2026 全年</td><td>20,248</td><td>12,389</td><td>11,433</td><td>77.78 / 73.76</td><td class="up">✓ 营收/净利/EPS 一致；营业利润 SEC 12,389 vs 聚合源 12,468（差 0.79 亿）</td></tr>
+<tr><td><span class="code">AAOI</span> 1158114</td><td>10-Q · 2026Q2 单季</td><td>191.9</td><td>−24.7</td><td>−22.8</td><td>−0.28 / −0.28</td><td class="up">✓ 与报告 1.9192 亿 / EPS −0.2793 一致</td></tr>
+<tr><td><span class="code">LITE</span> 1633978</td><td>10-K · FY2026 全年</td><td>3,014</td><td>524.8</td><td><b>−6,935.1</b></td><td>−92.96 / −92.96</td><td class="up">✓ 与报告 30.14 亿 / −69.351 亿<b>完全一致</b>；营业利润 SEC 524.8 vs 聚合源 545.2（差 2,040 万）</td></tr>
+<tr><td><span class="code">GLW</span> 24741</td><td>10-Q · 2026Q2 单季</td><td>4,505</td><td>698</td><td>559</td><td>0.65 / 0.64</td><td class="up">✓ 与报告 45.05 亿 / 5.59 亿一致</td></tr>
+<tr><td><span class="code">AMD</span> 2488</td><td>10-Q · 2026Q2 单季</td><td>11,536</td><td>1,990</td><td>2,297</td><td>1.40 / 1.38</td><td class="up">✓ 营收一致；净利 SEC 2,297 vs 聚合源 2,305（差 800 万）</td></tr>
+<tr><td><span class="code">INTC</span> 50863</td><td>10-Q · 2026Q2 单季</td><td>16,128</td><td><b>1,796</b></td><td>−11,033</td><td>−2.16 / −2.16</td><td class="dn">⚠ 营收/净利/EPS 一致；<b>营业利润 SEC 17.96 亿 vs 聚合源 19.66 亿，差 1.7 亿</b>——以 SEC 为准，报告已改</td></tr>
+<tr><td><span class="code">ARM</span> 1973239</td><td><b>6-K</b> · FY2027Q1<br>（2026-04-01→06-30）</td><td><b>1,289</b></td><td>91</td><td>270</td><td>0.25 / 0.25</td><td class="up">✓✓ <b>研报的 12.89 亿被 SEC 精确证实</b>——"待核实"解除</td></tr>
+<tr><td><span class="code">TWST</span> 1581280</td><td>10-Q · FY2026 <b>前三季</b>累计<br>（2025-10-01→2026-06-30）</td><td><b>332.8</b><br>（Q1 103.7＋Q2 110.7＋Q3 118.4）</td><td>−115.0</td><td>−109.6</td><td>−1.78（累计）</td><td class="dn">✗ <b>推翻此前结论</b>：Q4（截至 2026-09-30）<b>未披露</b>；此前"全年 4.318 亿"把 FY2025Q4 的 0.990 亿错加进来。达成指引需 Q4 单季 <b>1.237 亿</b>（环比 +4.5%、同比 +25%）</td></tr>
+<tr><td><span class="code">ILMN</span> 1110803</td><td>10-Q · 2026Q2 单季</td><td>1,159</td><td>245</td><td>207</td><td>1.37 / 1.35</td><td class="up">✓ 基本吻合；SEC 11.59 亿 vs 聚合源 11.61 亿（差 200 万）</td></tr>
+<tr><td><span class="code">TXG</span> 1770787</td><td>10-Q · 2026Q2 单季<br>（对照 2025Q2 同口径）</td><td><b>151.0</b><br>（2025Q2 = <b>172.9</b>）</td><td>−19.6</td><td>−17.9</td><td>−0.14 / −0.14</td><td class="up">✓✓ <b>同比 = 151.036/172.908−1 = −12.65%</b>，与研报 −12.7% <b>精确吻合</b>——"待核实"解除</td></tr>
+<tr><td><span class="code">NBIS</span> 1513845</td><td><b>20-F</b> · FY2025 全年</td><td>529.8</td><td><b>−611.7</b></td><td><b>+82.5</b></td><td>0.34 / 0.33</td><td class="dn">⚠ 营收/营业利润一致；<b>净利 SEC 0.825 亿 vs 聚合源 0.098 亿</b>（聚合源误取了另一口径字段）。<b>营业外贡献 = 0.825−(−6.117) = 6.94 亿</b>，看空逻辑不变</td></tr>
+</tbody>
+</table>
+<div class="src">单位：百万美元（AAOI / TWST / NBIS 为百万，已按实际值标注）。数据源：SEC EDGAR XBRL <code>companyconcept</code>，概念含 <code>Revenues</code>、<code>OperatingIncomeLoss</code>、<code>NetIncomeLoss</code>、<code>EarningsPerShareBasic/Diluted</code>、<code>WeightedAverageNumberOfSharesOutstandingBasic/Diluted</code>；NBIS / ARM 走 <code>ifrs-full</code>。取数时间 2026-10-11 01:13（UTC+8）。</div>
+</div>
+
+<h2>五、数据口径与使用说明</h2>
+<div class="card">
+<ul>
+  <li><b>口径标签体系</b>：正文所有关键数字已按第六章的成因分类打上标签——
+    <span class="tk a">实测</span>（数据源已核实，GAAP/已抵销/已披露）、
+    <span class="tk n">Non-GAAP</span>（调整后）、<span class="tk n">未抵销</span>（分部毛口径）、
+    <span class="tk f">预测</span>（分析师模型）、<span class="tk f">指引</span>（公司 guidance）、
+    <span class="tk u">待核实</span>（数据源未覆盖，需回研报原文）。
+    <b>同一标的内不同标签的数字不可直接相减或比较。</b></li>
+  <li><b>核实声明</b>：本报告全部行情、估值与可获取的财务数字已通过本库数据源合集（westock CLI + NeoData Financial Search）逐条复核，明细见第四章。核实结论：14 只标的的行情/估值 <b>100% 一致、零修正</b>；财季财务多数一致（MU、LITE、SNDK、NBIS、AAOI、ILMN、TXG、MSFT 的核心数字均可精确复现）；<b>4 处需标注</b>——INTC 分部营收冲突、NBIS EPS 口径错配、AMZN/MSFT 自由现金流待核实、ARM/TWST/TXG 部分同比与全年数待核实。<b>其后 4.5 节 SEC EDGAR 一手复核（2026-10-11）又推进一轮</b>：ARM / TXG 两处待核实全部解除、TWST 错误结论撤回改为"待 Q4 判定"、NBIS 净利修正为 0.825 亿、INTC 营业利润修正为 17.96 亿；目前仍待核实的只剩 AMZN/MSFT 的 FCF 具体数值与部分研报内容型数字。</li>
+  <li><b>覆盖区间</b>：本报告"近 3 个月"聚焦 2026-07-10 ~ 2026-10-10 的评级/目标价变动；共识评级占比采用 2026-05 ~ 2026-10 的月度滚动序列（数据源按近 6 个月统计）。</li>
+  <li><b>来源分级</b>：① 机构评级与目标价聚合数据（一手来源为各卖方研报，此处为二次聚合，<b>需核实原文</b>）；② 中资券商研报摘要（华泰、中金、招商、华兴、光大、交银、浦银等，<b>需核实原文</b>）；③ 海外投行动作（来自 TipRanks / MarketBeat / StockAnalysis / TheFly 等二次引用，<b>需核实原文</b>）；④ 行情数据（2026-10-09 收盘）。</li>
+  <li><b>目标均价口径分歧（重要）</b>：不同聚合源在覆盖机构数与均值上差异显著，本报告已并列标注主要分歧，例如——AAOI 目标均价 139.40~170.50；MU 1,469~1,602.37；LITE 1,044.67~1,163.70；GLW 174.87~191.40；TXG 58.60~69.47；TWST 45~215（区间）。<b>不要单一口径当作唯一事实</b>。</li>
+  <li><b>已剔除的滞后数据</b>：部分 2026-04~06 的目标价（如华兴对 MU 的 361 美元、Melius 的 700 美元、华泰对 INTC 的 71.5 美元）已被后续大幅上修取代，本报告仅在其能说明"卖方被行情倒逼"时引用。</li>
+  <li><b>标的范围</b>：截图中的 005930（三星电子）为韩国交易所上市，非美股，未计入上表与图表，已在闪存板块以注释方式补充可获取的机构口径。</li>
+</ul>
+</div>
+
+<!-- ============ 成因分析 ============ -->
+<h2>六、数据差异成因分析</h2>
+
+<div class="box">
+<b>先给结论</b>：上一章的 4 处差异<b>不是"数据源错了"或"研报错了"，而是两类数据本来就在回答不同问题</b>。
+研报写的是「调整后、未抵销、前瞻预测、按公司财年」的数字；本库数据源给的是「GAAP、已抵销、已披露实际、按报告期」的数字。
+差异的成因共 6 类，其中 <b>3 类可用数据源直接证实</b>，2 类高度可能，1 类属数据源覆盖滞后。
+</div>
+
+<h3>6.1 成因分类（按可确认程度排序）</h3>
+<div class="card" style="overflow-x:auto">
+<table>
+<thead><tr><th>#</th><th>成因类别</th><th>机制</th><th>影响的差异项</th><th>可确认程度</th></tr></thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td><b>分部间内部交易抵销未扣除</b></td>
+  <td>研报引用的分部营收是<b>未抵销</b>口径（含分部间内部销售），合并报表收入需减去 <code>Intersegment Eliminations</code>。Intel 该项常年在营收的 −20%~−34%。</td>
+  <td><span class="code">INTC</span> 210 亿 vs 161.28 亿</td>
+  <td class="up"><b>已证实</b>（数据源直接给出抵销行）</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td><b>GAAP vs Non-GAAP（调整后）口径</b></td>
+  <td>研报惯例报 Non-GAAP（剔除股权激励、无形资产摊销、重组与一次性损益）；数据源报 GAAP。两者不可直接比较。</td>
+  <td><span class="code">NBIS</span> EPS；<span class="code">MU</span> 毛利率 87%/86.76%；<span class="code">LITE</span> 50.4%/46.01%；<span class="code">AAOI</span> EPS 0.06/−0.2793；<span class="code">ILMN</span> 1.31/1.3709</td>
+  <td class="up"><b>已证实该口径差存在</b>；逐项归属为高度可能</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td><b>财年/财季定义与标签错位</b></td>
+  <td>14 只标的财年各不相同（MU 9 月制、MSFT/LITE/SNDK 6 月底制、ARM 3 月制、TWST 9 月制）。westock 的「自然季 EndDate」与其财季实际截止日<b>系统性错位</b>；NeoData 有「报告期 + 统计截止日期」两列可对齐。</td>
+  <td><span class="code">ARM</span> 12.89 亿；<span class="code">TWST</span> 4.56–4.57 亿；<span class="code">TXG</span> 同比 −12.7%；以及 westock 全表</td>
+  <td class="up"><b>已证实</b>（LITE、MU 可精确比对出错位量）</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td><b>自由现金流（FCF）定义分歧</b></td>
+  <td>FCF = CFO − capex，但 capex 的边界各家不同：是否含融资租赁本金偿付、是否含无形资产购置、是否含投资性支出。差额即定义差。</td>
+  <td><span class="code">AMZN</span> TTM −76 亿；<span class="code">MSFT</span> 196 亿（−23%）</td>
+  <td class="dn">高度可能（方向已被 capex 序列印证，具体差额未锁定）</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td><b>预测 / 公司指引 vs 已披露实际</b></td>
+  <td>分析师 EPS、公司 guidance、已实现实际值三者混用。数据源只有实际值，预测值本库不提供。</td>
+  <td><span class="code">SNDK</span> 毛利率"升至 84%"（预测，实测已 84.57%）；<span class="code">AMD</span> 27/28E 营收；<span class="code">MU</span> FY27Q1 指引 615 亿</td>
+  <td class="up"><b>已证实</b>（SNDK 预测已被实际追平）</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td><b>数据源字段缺失或异常 / 覆盖滞后</b></td>
+  <td>MU 数据源「基本每股收益」字段返回 0.0000（异常）；westock <code>eps_ttm</code> 全表为 0（不可用）；NeoData 库内 ARM 财报停在 FY26Q2；主营构成数据停在上一个报告期。</td>
+  <td><span class="code">MU</span> 基本 EPS；<span class="code">ARM</span> 最新财季缺失；全部标的 TTM EPS</td>
+  <td class="up"><b>已证实</b>（字段可直接观察）</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h3>6.2 逐项归因（含置信度与验算）</h3>
+
+<h4>① INTC —— 已证实：分部间抵销（Intersegment Eliminations）</h4>
+<div class="card">
+<p>数据源「主营业务构成」直接给出了答案（报告期 2025-12-31）：</p>
+<table>
+<thead><tr><th>分部</th><th>营业收入</th><th>占比</th></tr></thead>
+<tbody>
+<tr><td>Client Computing Group</td><td>322.28 亿</td><td>60.98%</td></tr>
+<tr><td>Intel Foundry</td><td>178.26 亿</td><td>33.73%</td></tr>
+<tr><td>Data Center and AI</td><td>169.19 亿</td><td>32.01%</td></tr>
+<tr><td>All Other</td><td>35.63 亿</td><td>6.74%</td></tr>
+<tr><td><b>Intersegment Eliminations（分部间抵销）</b></td><td class="dn"><b>−176.83 亿</b></td><td class="dn"><b>−33.46%</b></td></tr>
+<tr><td><b>合计（合并收入）</b></td><td><b>528.53 亿</b></td><td>100.00%</td></tr>
+</tbody>
+</table>
+<p><b>验算</b>：分部之和（不含抵销）705.36 亿，减去抵销 176.83 亿后 = 528.53 亿 = 合并收入。
+招商证券的 26Q2 分部数 89+63+58 = <b>210 亿是未抵销口径</b>；数据源的 <b>161.28 亿是已抵销的合并收入</b>。
+隐含抵销额约 <b>48.7 亿、抵销率约 23%</b>——与 Intel 结构性的 20%~34% 抵销区间吻合（季度间会波动）。</p>
+<p class="up"><b>结论：这不是错误，是"毛口径 vs 净口径"的差异。研报看分部景气度用毛口径（更能反映 Foundry 对外部+内部的供货强度），估值必须用净口径。</b></p>
+<div class="src">来源：NeoData 主营业务构成接口，报告期 2025-12-31（该接口滞后一个报告期，但抵销机制是结构性的，不随期改变）。</div>
+</div>
+
+<h4>② NBIS EPS —— 高度可能：GAAP vs 调整后</h4>
+<div class="card">
+<p><b>验算</b>：数据源 Q2 净亏损 <b>1.904 亿美元</b>；NBIS 总股本约 <b>2.72 亿股</b>（数据源 <code>total_shares = 271,855,218</code>）。</p>
+<ul>
+<li>若 EPS = <b>−0.6791</b>（数据源 BasicEPS）→ 隐含亏损 1.848 亿 ✓ 与 1.904 亿吻合 → <b>这是 GAAP 口径</b>。</li>
+<li>若 EPS = <b>−0.12</b> → 隐含亏损仅 <b>0.326 亿</b>，即需从 GAAP 亏损中剔除约 <b>1.58 亿</b>的非经常性/非现金项目 → 只能是<b>调整后（Non-GAAP）口径</b>。</li>
+<li>旁证：NBIS 2026-03-31 期净利为 <b>+6.212 亿</b>（盈利）、2026-06-30 期为 <b>−1.904 亿</b>（亏损），单季摆动近 8 亿美元——这种量级的摆动<b>几乎必然来自非经常性项目</b>（公允价值变动、一次性费用），正是 Non-GAAP 调整的典型对象。</li>
+</ul>
+<p class="dn"><b>判定：高置信度推测（量级完全自洽，但缺原文佐证）。</b>另需注意：坊间"优于预估 −0.6358"中的 −0.6358 与数据源 GAAP −0.6791 量级接近，说明市场一致预期本身也是 GAAP 口径，而 −0.12 是另一套口径——<b>这两组数字在同一篇转述里被混用，属于二手来源加工时最常见的错误</b>。</p>
+</div>
+
+<h4>③ AMZN / MSFT 自由现金流 —— 高度可能：FCF 定义分歧（方向已证实）</h4>
+<div class="card">
+<p><b>AMZN 验算</b>：按数据源单季自由现金流序列（2025Q3 +4.30 → 2025Q4 +149.37 → 2026Q1 −181.71 → 2026Q2 −88.21），
+TTM 合计 = <b>−116.25 亿美元</b>；研报口径为 <b>−76 亿</b>，差 <b>40.25 亿</b>。</p>
+<ul>
+<li>差额 40.25 亿 ≈ 单季 capex 口径差。数据源 2026Q2 单季 capex 为 <b>542.08 亿</b>；若研报的 capex 口径少计约 40 亿（例如不含融资租赁相关的资产购置、或把部分支出归入投资活动而非 capex），两者即对齐。</li>
+<li><b>方向已被独立佐证</b>：2026Q2 单季 capex 542.08 亿 <b>已超过</b>同期 CFO 453.87 亿——这本身就足以支撑"FCF 转负"的结论，无论用哪个 FCF 定义。</li>
+</ul>
+<p><b>MSFT 同理</b>：数据源未直出 FY26Q4 财季的 FCF 字段，但单季 capex 呈 <b>170.79 → 193.94 → 298.76 → 308.76 亿</b> 的单调递增，与"资本开支激增、FCF 受压"的定性结论一致。</p>
+<p class="dn"><b>判定：方向已证实，具体数值（−76 亿 / 196 亿 / −23%）归属为高度可能但需回原文确认 FCF 定义。</b></p>
+</div>
+
+<h4>④ ARM / TWST / TXG —— 已证实为覆盖滞后与财季对齐问题</h4>
+<div class="card">
+<ul>
+<li><span class="code">ARM</span>：NeoData 库内最新财季停在 <b>FY26Q2</b>（截至 2025-09-30，营收 11.35 亿、同比 +34.48%），即<b>数据源覆盖滞后于 ARM 已披露的 FY27Q1</b>；westock 序列最新期为 12.42 亿。两者都无法复现研报的 12.89 亿 → <b>属数据源缺口，不是研报错</b>。<b>【SEC 复核收尾】6-K 证实 FY27Q1 营收 1,289 百万，研报值精确正确。</b></li>
+<li><span class="code">TWST</span>：<b>【SEC 复核推翻原推断】</b>此前据聚合源得出"滚动四季度 4.318 亿 vs 指引差 5–6%"，SEC 10-Q 证实 FY2026 前三季仅 <b>3.32789 亿</b>——4.318 亿是把 <b>FY2025Q4 的 0.990 亿错加进 FY2026</b>（聚合源用自然季 EndDate 标签、TWST 财年 10 月–次年 9 月，跨财年错误加总）。<b>这正是 ③ 类"财季标签错位"的实锤案例</b>，其后果不只是数字对不上，还会诱导出"指引未达成"的错误结论。</li>
+<li><span class="code">TXG</span>：营收 <b>1.51036 亿</b> 与 EPS <b>−0.138</b> 均与数据源<b>精确一致</b>，"同比 −12.7%"无法复现——因为需要去年同期<b>同一财季</b>的数值，而 westock 的 EndDate 标签错位使对齐不可靠。<b>【SEC 复核收尾】同口径 2025Q2 = 1.72908 亿，同比 −12.65%，研报值精确正确。</b></li>
+</ul>
+<p class="dn"><b>判定（SEC 复核后更新）</b>：这三处的根因确实是"本库聚合源覆盖能力"问题。<b>ARM / TXG 两处的研报值已被 SEC 精确证实（研报无误）；TWST 一处则反过来——聚合源的 4.318 亿本身是跨财年错误加总，研报并未给出该错误数字</b>。教训：聚合源无法复现时，"保留研报值"与"弃用聚合源值"要分开判断，不能默认二者必有一对。</p>
+</div>
+
+<h3>6.3 「精读研报原文数据」到底指什么</h3>
+<div class="card">
+<p>本报告在 40 余处标注了「<b>非一手来源 · 需核实原文</b>」。这个说法<b>不是免责话术，而是一个具体的操作定义</b>——它指的是：
+<b>回到卖方机构发布的 PDF 研报原件，把二手转述里被丢掉的"口径标签"逐一还原。</b></p>
+
+<h4>为什么必须回原文：二手转述会丢掉 5 样东西</h4>
+<table>
+<thead><tr><th>被丢掉的东西</th><th>丢了会怎样</th><th>本报告的实例</th></tr></thead>
+<tbody>
+<tr><td>① GAAP / Non-GAAP 标记</td><td>把调整后数字当实际数字比较</td><td>NBIS −0.12 vs −0.6791；LITE 50.4% vs 46.01%</td></tr>
+<tr><td>② 分部是否含内部抵销</td><td>分部之和远超合并收入</td><td>INTC 210 亿 vs 161.28 亿</td></tr>
+<tr><td>③ actual / estimate / guidance 标记</td><td>把预测当既成事实</td><td>SNDK"毛利率升至 84%"（预测→实测已 84.57%）</td></tr>
+<tr><td>④ 财季归属与截止日</td><td>跨财年制比较出错</td><td>MU FY26Q4 截至 2026-09-03；ARM FY27Q1 = 自然年 2026Q2</td></tr>
+<tr><td>⑤ 估值倍数与模型假设</td><td>无法判断目标价的支撑强度</td><td>BofA 28x CY27 P/E；DA Davidson 19x FY27E</td></tr>
+</tbody>
+</table>
+
+<h4>精读原文的 6 项必查清单</h4>
+<ol style="padding-left:20px">
+  <li><b>财报口径脚注</b>——数字上方是否标 <code>Non-GAAP</code> / <code>adjusted</code>；脚注里列了哪些剔除项（SBC、摊销、重组、一次性损益）。</li>
+  <li><b>分部表的"抵销行"</b>——是否有 <code>All Other</code>、<code>Corporate/Eliminations</code> 行；分部之和能否加回合并收入；是否因业务重组（如 Intel 把 NEX 并入 CCG/DCAI）而 <b>restated</b> 过历史。</li>
+  <li><b>实际 / 预测 / 指引三态标记</b>——表格抬头是 <code>actual</code>、<code>estimate</code> 还是 <code>guidance</code>；预测值的基准年是哪一年。</li>
+  <li><b>财季归属</b>——报告期与统计截止日期，换算成自然年季度，与公司 FY 定义对齐。</li>
+  <li><b>估值方法与倍数</b>——目标价由什么倍数推出（PE / EV-EBITDA / SOTP / DCF），对应哪一年的盈利预测，是否给了牛市/熊市情景。</li>
+  <li><b>发布日期与利益冲突声明</b>——研报发布日 vs 财报日（财报前的预测可能已被推翻）；做市/投行关系披露；分析师持仓。</li>
+</ol>
+
+<h4>针对本报告：最该回原文的 5 处</h4>
+<table>
+<thead><tr><th>优先级</th><th>标的</th><th>要回原文确认什么</th></tr></thead>
+<tbody>
+<tr><td>★★★</td><td><span class="code">INTC</span></td><td>招商证券 26Q2 跟踪报告的分部表：是否含 <code>Intersegment Eliminations</code> 行、是否 restated、是否有 <code>All Other</code>。这决定了 210 亿与 161.28 亿哪个可用来算分部占比。</td></tr>
+<tr><td>★★★</td><td><span class="code">NBIS</span></td><td>调整后 EPS −0.12 的<b>完整调整项清单</b>；以及"优于预估 −0.6358"用的是哪套口径。这两数在一篇转述里混用，必须回到原件才能分清。</td></tr>
+<tr><td>★★</td><td><span class="code">AMZN</span> / <span class="code">MSFT</span></td><td>两家 FCF 的<b>计算公式脚注</b>（capex 是否含融资租赁本金、是否含无形资产）。这决定 −76 亿 / 196 亿能否与数据源序列比较。</td></tr>
+<tr><td>★★</td><td><span class="code">MU</span> / <span class="code">SNDK</span></td><td>NAND/DRAM 位元出货增速与 ASP 环比的具体口径（是公司口径还是券商测算）；NBM/SCA 长协的"最低定价"是保底额还是保底价。</td></tr>
+<tr><td>★</td><td><span class="code">ARM</span> / <span class="code">TWST</span></td><td>FY27Q1 营收 12.89 亿的精确报告期；FY2026 指引 4.56–4.57 亿是会计口径营收还是管理层展望。</td></tr>
+</tbody>
+</table>
+<div class="src">说明：本库数据源（westock、NeoData）提供的是<b>交易所/公司披露层面的结构化财务与行情</b>，
+不提供卖方研报的 PDF 原文、逐条评级动作流与模型假设。二者是<b>互补关系而非替代关系</b>——
+前者用来验证"实际发生了什么"，后者用来理解"市场认为会发生什么及其理由"。
+本报告的核实工作只能完成前一半，后一半必须回原文。</div>
+</div>
+
+<h3>6.4 深挖会计科目明细后的结论更新</h3>
+<div class="card">
+<p>本节是对 4.3「待核实」清单的<b>追加攻坚</b>——用更细的会计科目（非经常性损益、营业利润 vs 净利、财年累计、同比字段、股本科目）重新检验，得到 3 项可更新结论与 2 项仍然存疑。<b>其后 4.5 节的 SEC EDGAR 一手复核又把存疑的 2 项（TXG、ARM）全部解除，并证伪撤回本节第 2 项（TWST）的结论</b>——下表已同步更新为 SEC 修正版。</p>
+
+<table>
+<thead><tr><th>#</th><th>标的</th><th>深挖得到的数据</th><th>结论变化</th></tr></thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td><span class="code">MU</span></td>
+  <td>利润表 FY26Q4（统计截止 2026-09-03）：营业利润 <b>442.75 亿</b>、净利 377.01 亿、<b>非经常性损益 = 0.00</b>、基本 EPS <b>33.36</b>、摊薄 32.87</td>
+  <td class="up"><b>升级</b>：MU 的 GAAP 与 Non-GAAP 差仅 0.2%，<b>不存在调整项争议</b>；营业利润率 81.6% 全部来自经营。<br>同时<b>修正一处数据源误读</b>：「综合财务指标」表的基本 EPS 返回 0.0000 属<b>该表字段异常</b>，利润表的 33.36 才是正确值——不可因单表异常就判数据缺失。</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td><span class="code">TWST</span></td>
+  <td>FY2025（截至 2025-09-30）营收 <b>3.766 亿</b>、同比 <b>+20.32%</b>、净亏 0.777 亿、EPS −1.30；<b>SEC 10-Q</b>：FY2026 前三季累计 <b>3.32789 亿</b>（Q1 1.0370 + Q2 1.1072 + Q3 1.1838），Q4 尚未披露</td>
+  <td class="dn"><b>推翻并修正（SEC 一手）</b>：此前"四季合计 4.318 亿、低于指引 5.5%"把 FY2025Q4 的 0.990 亿错加进 FY2026（聚合源自然季标签跨财年错位），<b>该结论已被 SEC 证伪并撤回</b>。现结论：达成指引 4.56–4.57 亿需 Q4 单季 <b>1.237 亿</b>（环比 Q3 +4.5%、同比 +25%），<b>待 Q4 披露后判定，不预先断言</b>。</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td><span class="code">NBIS</span></td>
+  <td>2025 财年：营收 5.298 亿、<b>营业利润 −6.117 亿</b>、<b>净利润 +0.825 亿</b>（SEC 20-F 一手 <code>NetIncomeLoss</code>）、基本 EPS 0.34；聚合源净利 +0.098 亿系误取另一口径字段</td>
+  <td class="up"><b>强化空头（数字已修正）</b>：营业亏损 6.12 亿却录得净利 0.825 亿，<b>差额约 6.94 亿来自营业外项目</b>（此前按聚合源 0.098 亿低估为 6.2 亿）。<b>盈利质量仍是 14 只标的中最差的一只</b>，直接支撑 Rothschild 84 美元与晨星 150 美元公允价值。</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td><span class="code">TXG</span></td>
+  <td>数据源最新期为 2025-Q4：营收 <b>1.6603 亿</b>、同比 <b>+0.61%</b>；2026Q2 为 1.51036 亿</td>
+  <td class="up"><b>已解除（SEC 一手）</b>：SEC 同口径 2025Q2 基数 <b>1.72908 亿</b>，<b>151.036/172.908−1 = −12.65%</b>，与研报 −12.7% <b>精确吻合</b>——此前"缺 2025Q2 基数"只是聚合源滞后。2025Q4→2026Q2 跨期 −9% 的方向判断亦被支持。</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td><span class="code">ARM</span></td>
+  <td>数据源最新仍为 FY2026-Q2（截至 2025-09-30）：营收 11.35 亿、同比 +34.48%</td>
+  <td class="up"><b>已解除（SEC 一手）</b>：SEC 6-K FY27Q1（2026-04-01→06-30）营收 <b>1,289 百万</b>与研报 12.89 亿<b>完全一致</b>——"库内无该期"只是聚合源滞后，不是研报错。</td>
+</tr>
+</tbody>
+</table>
+
+<div class="box warn" style="margin-top:12px">
+<b>由第 1、3 项合并得出的新分层结论（已写入首屏结论第 6 条）</b>：<br>
+<b>第一档 · 利润最干净</b>——<span class="code">MU</span>：非经常性损益 0，GAAP 与调整后差 0.2%，营业利润率 81.6%；<br>
+<b>第二档 · 会计减值</b>——<span class="code">LITE</span>（77.62 亿）、<span class="code">INTC</span>（126.74 亿）：巨亏是纸面减值/重组，经营层面未崩；<br>
+<b>第三档 · 营业外收益</b>——<span class="code">NBIS</span>：营业亏损靠营业外项目转正，质量最差。<br>
+<b>投资含义</b>：同为"调整后口径很漂亮"，MU 的漂亮是可持续的，NBIS 的漂亮是一次性的——<b>这正是两者买入占比 93% vs 65%、目标价区间 361–3000 vs 84–410 的根本差异。</b>
+</div>
+<div class="src">深挖口径：NeoData 利润表（含非经常性损益、基本/摊薄 EPS、营业利润）＋综合财务指标（成长性同比、财年累计）＋ westock finance 季度序列。注意：NeoData 对 TWST、NBIS、TXG、ARM 的覆盖均滞后于 westock，需两源互补。</div>
+</div>
+
+<div class="disc">
+<b>免责声明</b>：以上内容基于公开数据和量化分析，仅供参考，不构成投资建议。市场有风险，投资需谨慎。任何投资决策应结合个人风险承受能力、资金状况和投资目标独立判断，必要时咨询持牌专业机构。过往表现不预示未来收益。
+</div>
+
+<footer>
+生成时间：2026-10-10 23:30 (GMT+8)　·　数据核实：2026-10-10 23:40–23:55 经 westock CLI + NeoData Financial Search 复核；2026-10-11 01:13 增补 SEC EDGAR XBRL 一手复核（14 只全覆盖，见 4.5）　·　数据时点：行情 2026-10-09 美股收盘；机构评级整合 2026-10-10　·　覆盖标的：AMZN / MSFT / NBIS / MU / SNDK / AAOI / LITE / GLW / AMD / INTC / ARM / TWST / ILMN / TXG（+ 三星电子 005930 注释）
+</footer>
+
+</div>
+</body>
+</html>
