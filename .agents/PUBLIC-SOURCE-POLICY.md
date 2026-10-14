@@ -7,6 +7,7 @@
 ## 数据源核验补充
 
 - [13FInsight 上游、字段与限制（2026-10-07）](../docs/data-sources/13finsight-2026-10-07.md)：已确认 SEC 上游并入登记表既有 `sec-edgar`，保持 free-only 收录规则；13FInsight 分层订阅产品本身仅作核验说明，不新增可路由来源。
+- [融资余额数据源：FINRA 与 A 股两融（2026-10-10）](../docs/data-sources/margin-financing-statistics-2026-10-10.md)：新增 `finra-margin-statistics`（US 客户融资余额，月频）与 `cn-margin-daily`（A 股两融余额，日频，上游为沪深交易所申报）。两者测的是券商客户融资存量，与 `finra-short-interest` 的空头持仓分属多空两个维度；港股无等价客户余额序列，本轮不并入融资余额路由。
 
 ## 来源状态
 
